@@ -11,11 +11,17 @@ Computer Science Reading Whitelist
 
 ## Git
 
-* [RU] [Learn Git Branching](https://learngitbranching.js.org/): интерактивный тур-игра
-* [RU] [First Aid Git](http://firstaidgit.ru/#/): FAQ в переводе HTML Academy
-* [RU] [Pro Git](https://git-scm.com/book/ru/v2): настольная книга
-* [RU] [Git Tutorial](https://learn.javascript.ru/screencast/git): скринкаст от Learn.javascript.ru
-* [RU] [Git How To](https://githowto.com/ru): интерактивный тур
+* [RU] [First Aid Git](http://firstaidgit.ru/#/)  
+подробнейший FAQ в переводе HTML Academy
+* [RU] [Pro Git](https://git-scm.com/book/ru/v2)  
+настольная книга
+* [RU] [Git How To](https://githowto.com/ru)  
+интерактивный тур
+* [RU] [Git Tutorial](https://learn.javascript.ru/screencast/git)  
+скринкаст от Learn.javascript.ru
+* [RU] [Learn Git Branching](https://learngitbranching.js.org/)  
+интерактивный тур-игра
+
 
 ## CSS
 
