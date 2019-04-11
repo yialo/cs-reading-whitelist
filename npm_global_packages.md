@@ -5,3 +5,4 @@
 - gulp-cli
 - npm
 - npm-check-updates
+- webpack-cli
