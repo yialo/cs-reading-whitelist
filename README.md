@@ -3,7 +3,7 @@
 ## Содержание
 
 * [[UNSORTED]](#unsorted)
-* [HTML & CSS: common](#html--&-css-common)
+* [HTML & CSS: common](#html--css-common)
 * [CSS naming, BEM](#css-naming-bem)
 * [CSS Grid Layout](#css-grid-layout)
 * [Sass](#sass)
