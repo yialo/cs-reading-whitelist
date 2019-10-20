@@ -5,16 +5,19 @@
 * [[UNSORTED]](#unsorted)
 * [Git](#git)
 * [CSS](#css)
+* [JavaScript](#javascript)
+* [Graphics](#graphics)
 * [Fonts](#fonts)
 * [Code editors](code-editors)
 * [Build tools](#build-tools)
-* [Backend](#backend)
+* [Node JS](#node-js)
 
 ## [UNSORTED]
 
 * [ru] [Frontend WhiteList](https://github.com/melnik909/frontend-whitelist) _#favourite_  
 \- список полезных и интересных авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов
-* [ru] [Словарь фронтенд-терминов](https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md) _#favourite_  
+* [ru] [Словарь фронтенд-терминов](https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md) _#favourite_
+* [ru] [Установка Apache 2.4 + PHP 5.6 + MySQL 5.6 на Windows 7 ­- 10](https://blog.denisbondar.com/post/apache24php56win7) _#seen_
 
 ## Git
 
@@ -33,7 +36,7 @@
 ## CSS
 
 * [ru] [Организация отступов в верстке (margin/padding)](https://habr.com/ru/post/340420/) _#seen_
-* [ru] [Десять заповедей логичных файлов стилей](http://css-live.ru/articles/desyat-zapovedej-logichnyx-fajlov-stilej.html) _#seen_
+* [ru] [Десять заповедей логичных файлов стилей](https://css-live.ru/articles/desyat-zapovedej-logichnyx-fajlov-stilej.html) _#seen_
 * [ru] [Типовые названия CSS-классов](https://github.com/yialo/css-common-classnames) _#favourite_
 * [ru] [Как правильно использовать переменные в препроцессорах LESS и SASS](https://habr.com/ru/post/332382/) _#seen_
 * [ru] [Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали](https://ru.hexlet.io/blog/posts/new-and-old-css-units) _#seen_
@@ -43,6 +46,22 @@
 * [en] [A Sliding Nightmare: Understanding the Range Input](https://css-tricks.com/sliding-nightmare-understanding-range-input/) _#seen_
 * [en] [Styling Cross-Browser Compatible Range Inputs with CSS](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/) _#seen_
 * [ru] [Упорядочивание багов кроссбраузерности Flexbox](https://css-live.ru/articles/uporyadochivanie-bagov-krossbrauzernosti-flexbox.html) _#seen_
+* [ru] [Парадоксы display:contents и будущее текста в CSS](https://css-live.ru/css/paradoksy-displaycontents-i-budushhee-teksta-v-css.html) _#seen_
+* [ru] [Где всё сложно с переносами строк. Вот все CSS- и HTML-хитрости для этого](https://css-live.ru/articles/gde-vsyo-slozhno-s-perenosami-strok-vot-vse-css-i-html-xitrosti-dlya-etogo.html) _#seen_
+
+## JavaScript
+
+* [en] [Understanding the Critical Rendering Path](https://bitsofco.de/understanding-the-critical-rendering-path/) _#4consider_
+
+## Graphics
+
+* [en] [Picturefill](https://scottjehl.github.io/picturefill/) _#library_  
+\- полифил для поддержки элемента \<picture\> в IE
+* [en] [Everything you always wanted to know about touch icons](https://mathiasbynens.be/notes/touch-icons) _#4consider_  
+\- как подготовить favicons, touch icons, tile icons
+* [en] [Real Favicon Generator](https://realfavicongenerator.net/) _#tool_  
+\- онлайн-сервис для создания полного набора favicon для всех современных платформ и устройств
+* [ru] [Какие нужны фавиконки — HTML Шорты](https://www.youtube.com/watch?v=iG9WF8VpogY) _#seen_
 
 ## Fonts
 
@@ -66,6 +85,6 @@
 * [ru] [A quick guide for switching to gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0) _#seen_  
 \- изменения в синтаксисе Gulp после выхода 4-й версии
 
-## Backend
+## Node JS
 
-* [ru] [Установка Apache 2.4 + PHP 5.6 + MySQL 5.6 на Windows 7 ­- 10](https://blog.denisbondar.com/post/apache24php56win7) _#seen_
+* [ru] [Полезные команды для работы с Node.js](https://htmlacademy.ru/blog/useful/nodejs/useful-commands-for-working-with-nodejs) _#seen_
