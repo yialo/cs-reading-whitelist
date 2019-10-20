@@ -11,8 +11,8 @@ HEAD не может находиться на удалённой ветке.
 
 **Относительные ссылки**:
 
-* `^[ n ]?` – родительский коммит, _n_ – номер родителя.
-* `~[ n ]?` – сдвиг на _n_ коммитов назад по неразвевтвлённой цепи.
+* `^[n]?` – родительский коммит, _n_ – номер родителя.
+* `~[n]?` – сдвиг на _n_ коммитов назад по неразвевтвлённой цепи.
 
 ## Разное
 
@@ -29,35 +29,35 @@ HEAD не может находиться на удалённой ветке.
 
 Коммит с сообщением и индексацией всех _уже_ отслеживаемых файлов:
 
-`$ git commit [ [ -a -m ] | -am ] <commit_message>`
+    git commit [ [ -a -m ] | -am ] <commit_message>
 
 ### tag
 
 Добавление тега:
 
-`$ git tag <tag_name> <target_ref>?`
+    git tag <tag_name> <target_ref>?
 
 Если *target_ref* не указан, тег добавится на текущую позицию.
 
 Удаление тега:
 
-`$ git tag -d <tag_name>`
+    git tag -d <tag_name>
 
 ### describe
 
 Показать ближайший к указанному положению тег:
 
-`$ git describe [ <ref>? && --tags ]`
+    git describe [ <ref>? && --tags ]
 
 Формат вывода:
 
-`<tag_name>-<commits_amount>-<target_hash>`
+    <tag_name>-<commits_amount>-<target_hash>
 
 ### rebase
 
 Перебазирование ветки
 
-`$ git rebase <target_ref> <branch_to_rebase>?`
+    git rebase <target_ref> <branch_to_rebase>?
 
 Если *branch_to_rebase* не указано, перебазируется активная ветка.  
 Перебазированная ветка становится активной.  
@@ -67,24 +67,24 @@ Rebase переносит теги.
 
 Отобразить ветки:
 
-`$ git branch [ [ --all | -a ] | [ --local | -l ] | [ --remote | -r ] ]?`
+    git branch [ [ --all | -a ] | [ --local | -l ] | [ --remote | -r ] ]?
 
 Показать связи (tracking) между локальными и удалёнными ветками:
 
-`$ git branch -vv`
+    git branch -vv
 
 Создать новую ветку:
 
-`$ git branch <branch_name> <target_ref>?`
+    git branch <branch_name> <target_ref>?
 
 Если *target_ref* не указан, ветка будет создана на текущей позиции.
 
 Удалить ветку:
 
-`$ git branch -d <branch_name>`
+    git branch -d <branch_name>
 
 Перенос ветки в другое положение:
 
-`$ git branch -f <branch_to_move> <target_ref>?`
+    git branch -f <branch_to_move> <target_ref>?
 
 Если *target_ref* не указан, ветка переносится на текущую позицию.

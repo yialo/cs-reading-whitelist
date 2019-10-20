@@ -1,13 +1,9 @@
-Computer Science Reading Whitelist
-==================================
+# Computer Science Reading Whitelist
 
-Содержание
-----------
+## Содержание
 
 * [Git](#git)
 * [CSS](#css)
-
-<a name="git">
 
 ## Git
 
@@ -20,8 +16,7 @@ Computer Science Reading Whitelist
 * [RU] [Git Tutorial](https://learn.javascript.ru/screencast/git)  
 скринкаст от Learn.javascript.ru
 * [RU] [Learn Git Branching](https://learngitbranching.js.org/)  
-интерактивный тур-игра
-
+интерактивный тур в игровом формате
 
 ## CSS
 
