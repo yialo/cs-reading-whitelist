@@ -12,4 +12,5 @@
 1. Make as SPA
     * search by name, hashtag, url substring
     * filtering
+    * проверка ссылок на повторы
 2. Make full public bookmarks keeper as SPA
