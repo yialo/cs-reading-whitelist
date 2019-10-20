@@ -3,6 +3,7 @@
 ## Содержание
 
 * [[UNSORTED]](#unsorted)
+* [Blogs & journals](#blogs--journals)
 * [HTML & CSS: common](#html--css-common)
 * [CSS naming, BEM](#css-naming-bem)
 * [CSS Grid Layout](#css-grid-layout)
@@ -24,10 +25,23 @@
 * [ru] [Словарь фронтенд-терминов](https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md) _#favourite_
 * [ru] [Установка Apache 2.4 + PHP 5.6 + MySQL 5.6 на Windows 7 ­- 10](https://blog.denisbondar.com/post/apache24php56win7) _#seen_
 * [ru] [Рекомендуемые книги по frontend-разработке](https://web-standards.ru/books/) _#favourites_
-* [ru] [Персональный журнал заметок Владимира Кузнецова](https://noteskeeper.ru/topic/markup/) _#seen_  
-\- глубокий блог, много полезного по БЭМ
 * [en] [Floating Point Math](http://0.30000000000000004.com/) _#seen_
 * [ru] [(Законы Акина) законы космической инженерии](https://habr.com/ru/post/354936/) _#seen_
+
+## Blogs & journals
+
+* [ru] [Веб-стандарты](https://web-standards.ru/)
+* [ru] [CSS-live](https://css-live.ru/)
+* [ru] [noteskeeper.ru](https://noteskeeper.ru/)
+\- персональный журнал заметок Владимира Кузнецова
+* [ru] [nicothin.pro](https://nicothin.pro/)
+\- блог Николая Громова о веб-разработке
+* [ru] [Типичный верстальщик](http://tpverstak.ru/blog/)
+* [ru] [Прогрессор](http://prgssr.ru/)
+* [en] [CSS Wizardry](https://csswizardry.com/)
+\- Front-end Architecture and Performance Engineering by Harry Roberts
+* [en] [CSS-Tricks](https://css-tricks.com)
+* [en] [Flavio Copes](https://flaviocopes.com/)
 
 ## HTML & CSS: common
 
