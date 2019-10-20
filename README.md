@@ -108,7 +108,7 @@
 * [ru] [Ещё одна коллекция интересных фактов про CSS-гриды (CSS Grid Layout)](https://css-live.ru/articles/eshhyo-odna-kollekciya-interesnyx-faktov-pro-css-gridy-css-grid-layout.html) _#seen_
 * [ru] [Большая статья про гриды (CSS Grid Layout)](https://css-live.ru/css/bolshaya-statya-pro-gridy-css-grid-layout.html) _#!important_
 * [ru] [Подробно о размещении элементов в грид-раскладке (CSS Grid Layout)](https://css-live.ru/articles/podrobno-o-razmeshhenii-elementov-v-grid-raskladke-css-grid-layout.html) _#4consider_
-* [ru] [7 способов размещения элементов с помощью макета CSS Grid] _#4consider_
+* [ru] [7 способов размещения элементов с помощью макета CSS Grid](https://webformyself.com/7-sposobov-razmeshheniya-elementov-s-pomoshhyu-maketa-css-grid/) _#4consider_
 * [en] [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) _#4consider_
 * [ru] [Подсетки в Grid Layout жизненно важны](https://css-live.ru/articles/podsetki-v-grid-layout-zhiznenno-vazhny.html) _#seen_
 * [ru] [Мысли вслух о подсетках в CSS Grid Layout](https://css-live.ru/articles/mysli-vslux-o-podsetkax-v-css-grid-layout.html) _#seen_
