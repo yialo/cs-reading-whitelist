@@ -5,7 +5,7 @@
 * [[UNSORTED]](#unsorted)
 * [Git](#git)
 * [HTML](#html)
-* [CSS](volume/css.md)
+* [CSS](https://github.com/yialo/cs-reading-whitelist/blob/master/volumes/css.md)
 * [JavaScript](#javascript)
 * [Graphics](#graphics)
 * [Fonts](#fonts)
