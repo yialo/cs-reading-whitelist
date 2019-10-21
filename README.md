@@ -12,7 +12,7 @@
 * [JavaScript](#javascript)
 * [Node JS, NPM](#node-js-npm)
 * [Vue.js](#vuejs)
-* [Graphics](#graphics)
+* [Graphics, animations](#graphics-animations)
 * [Fonts](#fonts)
 * [Git](#git)
 * [Code editors](code-editors)
@@ -29,7 +29,6 @@
 * [ru] [(Законы Акина) законы космической инженерии](https://habr.com/ru/post/354936/) _#seen_
 * [en] [Tips on Code Refactoring, From a Former Addict](https://snipcart.com/blog/tips-on-code-refactoring-from-a-former-addict) _#seen_
 * [ru] [Учите ванильный JavaScript, прежде чем браться за фреймворки](https://www.cat-in-web.ru/vanilla-js/) _#seen_
-
 
 ## Blogs & journals
 
@@ -79,6 +78,8 @@
 * [ru] [DocumentFragment: что это такое и как с ним (не) бороться](https://habr.com/ru/post/413287/) _#seen_
 * [en] [Understanding the Critical Rendering Path](https://bitsofco.de/understanding-the-critical-rendering-path/) _#4consider_
 * [en] [Styling a Select Like It’s 2019](https://www.filamentgroup.com/lab/select-css.html) _#seen_
+* [en] [Houdini: Maybe The Most Exciting Development In CSS You’ve Never Heard Of](https://www.smashingmagazine.com/2016/03/houdini-maybe-the-most-exciting-development-in-css-youve-never-heard-of/) _#seen_
+* [ru] [Варианты «clearfix-хака» и его замен: сводная таблица](https://css-live.ru/articles-css/clearfix-block-formatting-context-methods-cheatsheet.html) _#seen_
 
 ## CSS naming, BEM
 
@@ -123,6 +124,7 @@
 \- интерактивный тур в игровом формате
 * [en] [Why Flexboxes Aren't Good for Page Layout](https://www.xanthir.com/blog/b4580) _#seen_  
 \- Таб Аткинс описывает минусы флексбоксов и представляет прототип будущих гридов
+* [ru] [Как работает функция minmax()](https://css-live.ru/articles/kak-rabotaet-funkciya-minmax.html) _#seen_
 
 ## Sass
 
@@ -149,13 +151,12 @@
 * [ru] [Красивый и чистый: инструменты, которые помогают добиться почти идеального кода](https://habr.com/ru/company/skillbox/blog/428231/) _#seen_
 * [en] [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript/) _#favourite_
 * [en] [Integrating Prettier + ESLint + Airbnb Style Guide in VSCode](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a) _#seen_
-* [en] [anime.js](https://animejs.com/) _#library_  
-\- JavaScript animation engine
 * [ru] [Как кодить на JavaScript в 2019? Тренды, тенденции, предсказания](https://proglib.io/p/javascript-2019/) _#seen_  
 \- обзор содержит большую подборку ссылок на учебные материалы, которые будут актуальны и после 2019 года
 * [ru] [Всегда чистый код: 5 инструментов для JavaScript-разработчика](https://proglib.io/p/clean-code-tools/) _#seen_
 * [ru] [https://habr.com/ru/post/323790/](https://habr.com/ru/post/323790/) _#seen_
 * [ru] [Веб-фреймворки: введение для новичков](https://tproger.ru/translations/web-frameworks-how-to-get-started/) _#4consider_
+* [ru] [Babel / JS: Настройка окружения](https://ru.hexlet.io/courses/js-setup-environment/lessons/babel/theory_unit) _#seen_
 
 ## Node JS, NPM
 
@@ -169,7 +170,7 @@
 
 * [en] [Vue.js official](https://vuejs.org/) _#library_
 
-## Graphics
+## Graphics, animations
 
 * [en] [Picturefill](https://scottjehl.github.io/picturefill/) _#library_  
 \- полифил для поддержки элемента `<picture>` в IE
@@ -185,6 +186,9 @@
 * [ru] [Сколько нужно верстальщиков, чтобы вставить `<picture>`? (Вадим Макеев)](https://www.youtube.com/watch?v=Szo-2D7TtEU) _#seen_
 * [ru] [Иллюстратор для верстальщиков](https://www.youtube.com/watch?v=h6CHstX40rE) _#seen_
 * [ru] [Погружение в `object-fit: cover` с полифилом и без (Вадим Макеев)](https://www.youtube.com/watch?v=aZJMOVpMhtc) _#seen_
+* [en] [anime.js](https://animejs.com/) _#library_  
+\- JavaScript animation engine
+* [ru] [SVG маски и вау-эффекты: о магии простыми словами](https://habr.com/ru/post/349362/) _#seen_
 
 ## Fonts
 
