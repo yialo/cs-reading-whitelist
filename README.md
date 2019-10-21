@@ -89,7 +89,7 @@
 \- для чего нужны модификаторы состояний и почему псевдоклассов может быть недостаточно
 * [ru] [Как работать с CSS-препроцессорами и БЭМ](https://nicothin.pro/idiomatic-pre-CSS/) _#seen_  
 \- список рекомендаций по неусложнению жизни себе и другим участникам проекта по вёрстке
-* [ru] [Sensible CSS Guidelines for large scale projects](https://github.com/chris-pearce/css-guidelines) _#4consider_  
+* [en] [Sensible CSS Guidelines for large scale projects](https://github.com/chris-pearce/css-guidelines) _#4consider_  
 \- много полезного, в частности: набор вариантов написания CSS-классов для состояний (JS hooks), глобальные и локальные переменные
 * [en] [Battling BEM CSS: 10 Common Problems And How To Avoid Them](https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/) _#seen_
 * [ru] [Десять заповедей логичных файлов стилей](https://css-live.ru/articles/desyat-zapovedej-logichnyx-fajlov-stilej.html) _#seen_
@@ -116,7 +116,7 @@
 * [en] [Grid Garden](http://cssgridgarden.com) _#seen_  
 \- интерактивный тур в игровом формате
 * [en] [Why Flexboxes Aren't Good for Page Layout](https://www.xanthir.com/blog/b4580) _#seen_  
-\- Таб Аткинс описывает минусы флексбокосов и представляет прототип будущих гридов
+\- Таб Аткинс описывает минусы флексбоксов и представляет прототип будущих гридов
 
 ## Sass
 
@@ -158,7 +158,6 @@
 \- онлайн-сервис для создания полного набора favicon для всех современных платформ и устройств
 * [ru] [Какие нужны фавиконки — HTML Шорты](https://www.youtube.com/watch?v=iG9WF8VpogY) _#seen_
 * [ru] [Теория цвета в цифрах](https://habr.com/ru/post/189766/) _#seen_
-* [en] [Prevention of double font preloading in Blink-based browsers](https://github.com/cds-snc/ircc-rescheduler/pull/374) _#seen_
 * [en] [Srcset and sizes](https://ericportis.com/posts/2014/srcset-sizes/) _#4consider_  
 \- углублённый разбор функционала элемента `<picture>`
 * [ru] [Сколько нужно верстальщиков, чтобы вставить `<picture>`? (Вадим Макеев)](https://www.youtube.com/watch?v=Szo-2D7TtEU) _#seen_
@@ -172,6 +171,7 @@
 * [ru] [Подключение нестандартных шрифтов. Часть вторая](https://fontstorage.com/blog/about-font-face-part-two/) _#seen_
 * [ru] [Иконочные шрифты и почему они не нужны](https://nicothin.pro/page/icon-fonts-2017) _#4consider_
 * [ru] [Управляем поведением font-face в CSS](https://ymatuhin.ru/front-end/font-display/) _#seen_
+* [en] [Prevention of double font preloading in Blink-based browsers](https://github.com/cds-snc/ircc-rescheduler/pull/374) _#seen_
 
 ## Git
 
@@ -203,8 +203,8 @@
 * [ru] [Скринкаст по Webpack](https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn) _#4consider_  
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
 * [ru] [Gulp для самых маленьких](https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html) _#4consider_
-* [ru] [A quick guide for switching to gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0) _#seen_  
-\- изменения в синтаксисе Gulp после выхода 4-й версии
+* [ru] [A quick guide for switching to Gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0) _#seen_  
+\- изменения в Gulp API после выхода 4-й версии
 * [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/) _#seen_  
 \- советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug
 
