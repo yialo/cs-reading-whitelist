@@ -10,13 +10,13 @@
 * [Sass](#sass)
 * [Accessibility, semantics](#accessibility-semantics)
 * [JavaScript](#javascript)
+* [Node JS, NPM](#node-js-npm)
 * [Vue.js](#vuejs)
 * [Graphics](#graphics)
 * [Fonts](#fonts)
 * [Git](#git)
 * [Code editors](code-editors)
 * [Build tools](#build-tools)
-* [Node JS](#node-js)
 
 ## [UNSORTED]
 
@@ -27,6 +27,9 @@
 * [ru] [Рекомендуемые книги по frontend-разработке](https://web-standards.ru/books/) _#favourites_
 * [en] [Floating Point Math](http://0.30000000000000004.com/) _#seen_
 * [ru] [(Законы Акина) законы космической инженерии](https://habr.com/ru/post/354936/) _#seen_
+* [en] [Tips on Code Refactoring, From a Former Addict](https://snipcart.com/blog/tips-on-code-refactoring-from-a-former-addict) _#seen_
+* [ru] [Учите ванильный JavaScript, прежде чем браться за фреймворки](https://www.cat-in-web.ru/vanilla-js/) _#seen_
+
 
 ## Blogs & journals
 
@@ -73,6 +76,9 @@
 * [ru] [Прототип изоляции стилей для Shower на веб-компонентах (Вадим Макеев)](https://www.youtube.com/watch?v=_FRIRJZYlxU) _#4consider_
 * [en] [Pug '&attributes' and 'attributes' escaping behaviour](https://codepen.io/yialo/pen/vvPGGE) _#mine_  
 \- примеры экранирования атрибутов HTML-препроцессором Pug
+* [ru] [DocumentFragment: что это такое и как с ним (не) бороться](https://habr.com/ru/post/413287/) _#seen_
+* [en] [Understanding the Critical Rendering Path](https://bitsofco.de/understanding-the-critical-rendering-path/) _#4consider_
+* [en] [Styling a Select Like It’s 2019](https://www.filamentgroup.com/lab/select-css.html) _#seen_
 
 ## CSS naming, BEM
 
@@ -129,10 +135,12 @@
 ## Accessibility, semantics
 
 * [ru] [Семантическая верстка HTML5: начало будущего](http://codeacademy.ru/blog/62/semanticheskaya-verstka-html5-nachalo-budushchego) _#seen_
+* [ru] [Правила использования ARIA в HTML](https://habr.com/ru/post/323876/) _#4consider_
+* [en] [HTML For Screen Readers - Labelling Elements](https://bitsofco.de/html-for-screen-readers-labelling-elements/) _#seen_
+* [ru] [Семантика для циников (Вадим Макеев)](https://www.youtube.com/watch?v=bDYEnNzprzE) _#seen_
 
 ## JavaScript
 
-* [en] [Understanding the Critical Rendering Path](https://bitsofco.de/understanding-the-critical-rendering-path/) _#4consider_
 * [ru] [Современный учебник JavaScript](https://learn.javascript.ru/) _#!important_  
 \- пожалуй, лучший русскоязычный учебник по JavaScript
 * [en] [The Complete JavaScript Handbook (by Flavio Copes)](https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/) _#seen_
@@ -143,6 +151,19 @@
 * [en] [Integrating Prettier + ESLint + Airbnb Style Guide in VSCode](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a) _#seen_
 * [en] [anime.js](https://animejs.com/) _#library_  
 \- JavaScript animation engine
+* [ru] [Как кодить на JavaScript в 2019? Тренды, тенденции, предсказания](https://proglib.io/p/javascript-2019/) _#seen_  
+\- обзор содержит большую подборку ссылок на учебные материалы, которые будут актуальны и после 2019 года
+* [ru] [Всегда чистый код: 5 инструментов для JavaScript-разработчика](https://proglib.io/p/clean-code-tools/) _#seen_
+* [ru] [https://habr.com/ru/post/323790/](https://habr.com/ru/post/323790/) _#seen_
+* [ru] [Веб-фреймворки: введение для новичков](https://tproger.ru/translations/web-frameworks-how-to-get-started/) _#4consider_
+
+## Node JS, NPM
+
+* [ru] [Полезные команды для работы с Node.js](https://htmlacademy.ru/blog/useful/nodejs/useful-commands-for-working-with-nodejs) _#seen_
+* [ru] [10 привычек довольного node.js разработчика](https://habr.com/ru/company/Voximplant/blog/277707/) _#seen_
+* [ru] [Вы не знаете npm](https://habr.com/ru/sandbox/108916/) _#seen_
+* [en] [The package.json guide](https://flaviocopes.com/package-json/) _#seen_
+* [ru] [Разбираемся с версиями пакетов в node](https://monsterlessons.com/project/lessons/razbiraemsya-s-versiyami-paketov-v-node) _#seen_
 
 ## Vue.js
 
@@ -157,6 +178,7 @@
 * [en] [Real Favicon Generator](https://realfavicongenerator.net/) _#tool_  
 \- онлайн-сервис для создания полного набора favicon для всех современных платформ и устройств
 * [ru] [Какие нужны фавиконки — HTML Шорты](https://www.youtube.com/watch?v=iG9WF8VpogY) _#seen_
+* [ru] [Favicon сегодня: форматы, поддержка, автоматизация](https://habr.com/ru/post/330584/) _#seen_
 * [ru] [Теория цвета в цифрах](https://habr.com/ru/post/189766/) _#seen_
 * [en] [Srcset and sizes](https://ericportis.com/posts/2014/srcset-sizes/) _#4consider_  
 \- углублённый разбор функционала элемента `<picture>`
@@ -172,6 +194,8 @@
 * [ru] [Иконочные шрифты и почему они не нужны](https://nicothin.pro/page/icon-fonts-2017) _#4consider_
 * [ru] [Управляем поведением font-face в CSS](https://ymatuhin.ru/front-end/font-display/) _#seen_
 * [en] [Prevention of double font preloading in Blink-based browsers](https://github.com/cds-snc/ircc-rescheduler/pull/374) _#seen_
+* [en] [The Inter typeface family](https://rsms.me/inter/) _#library_  
+\- крутой шрифт, разработанный специально для комфортного чтения с экрана
 
 ## Git
 
@@ -190,6 +214,7 @@
 * [ru] [Режим fast-forward в Git](http://zencoder.ru/git/fast-forward-git/) _#seen_
 * [ru] [Самые типичные ошибки и вопросы, связанные с Git, и удобные способы их решения](https://tproger.ru/translations/most-common-git-screwupsquestions-and-solutions/) _#seen_
 * [ru] [Правильные способы исключения файлов в Git](https://habr.com/ru/post/202696/) _#seen_
+* [ru] [Как склеить коммиты и зачем это нужно](https://htmlacademy.ru/blog/useful/git/how-to-squash-commits-and-why-it-is-needed) _#seen_
 
 ## Code editors
 
@@ -207,7 +232,3 @@
 \- изменения в Gulp API после выхода 4-й версии
 * [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/) _#seen_  
 \- советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug
-
-## Node JS
-
-* [ru] [Полезные команды для работы с Node.js](https://htmlacademy.ru/blog/useful/nodejs/useful-commands-for-working-with-nodejs) _#seen_
