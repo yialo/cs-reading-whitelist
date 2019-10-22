@@ -83,7 +83,6 @@
 * [ru] [Устойчивый, декларативный, контекстный (новый взгляд на сильные стороны CSS)](https://css-live.ru/articles/ustojchivyj-deklarativnyj-kontekstnyj-novyj-vzglyad-na-silnye-storony-css.html) _#seen_
 * [ru] [Фокусы со стилями для фокуса](https://css-live.ru/articles/fokusy-so-stilyami-dlya-fokusa.html) _#seen_
 * [ru] [Как работает `z-index`](https://www.internet-technologies.ru/articles/kak-rabotaet-z-index.html) _#seen_
-* [ru] [Элемент HTML `<time>`](https://habr.com/ru/post/229291/) _#seen_
 * [ru] [Свойства `object-fit` и `object-position`. Масштабируем пропорционально](https://html5book.ru/svoystva-object-fit-i-object-position/) _#seen_
 * [ru] [Сторонний CSS небезопасен](https://css-live.ru/articles-css/storonnij-css-nebezopasen.html) _#seen_
 * [ru] [Новый display:flow-root — не clearfix, но что это и зачем?](https://css-live.ru/faq/displayflow-root-not-clearfix.html) _#seen_
@@ -158,6 +157,7 @@
 * [ru] [Правила использования ARIA в HTML](https://habr.com/ru/post/323876/) _#4consider_
 * [en] [HTML For Screen Readers - Labelling Elements](https://bitsofco.de/html-for-screen-readers-labelling-elements/) _#seen_
 * [ru] [Семантика для циников (Вадим Макеев)](https://www.youtube.com/watch?v=bDYEnNzprzE) _#seen_
+* [ru] [Элемент HTML `<time>`](https://habr.com/ru/post/229291/) _#seen_
 
 ## JavaScript
 
