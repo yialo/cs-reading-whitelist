@@ -7,7 +7,7 @@
 * [HTML & CSS: common](#html--css-common)
 * [CSS class naming, BEM](#css-class-naming-bem)
 * [CSS Grid Layout](#css-grid-layout)
-* [Sass](#sass)
+* [Preprocessors, templating engines](#preprocessors-templating-engines)
 * [Accessibility, semantics](#accessibility-semantics)
 * [JavaScript](#javascript)
 * [Node JS, NPM](#node-js-npm)
@@ -20,7 +20,7 @@
 
 ## [UNSORTED]
 
-* [ru] [Frontend WhiteList](https://github.com/melnik909/frontend-whitelist) _#favourite_  
+* [ru] [Frontend WhiteList](https://github.com/melnik909/frontend-whitelist) _#favourite_\
 \- список ценных авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов
 * [ru] [Словарь фронтенд-терминов](https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md) _#favourite_
 * [ru] [Установка Apache 2.4 + PHP 5.6 + MySQL 5.6 на Windows 7 ­- 10](https://blog.denisbondar.com/post/apache24php56win7) _#seen_
@@ -48,7 +48,7 @@
 
 * [ru] [Организация отступов в верстке (margin/padding)](https://habr.com/ru/post/340420/) _#seen_
 * [ru] [Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали](https://ru.hexlet.io/blog/posts/new-and-old-css-units) _#seen_
-* [ru] [HTML & CSS: как не надо](https://yoksel.github.io/bad-practices/) _#4consider_  
+* [ru] [HTML & CSS: как не надо](https://yoksel.github.io/bad-practices/) _#4consider_\
 \- подборка антипаттернов
 * [ru] [Мой ванильный CSS (Вадим Макеев)](https://www.youtube.com/watch?v=CaDnbOjXjRg) _#seen_
 * [en] [A Sliding Nightmare: Understanding the Range Input](https://css-tricks.com/sliding-nightmare-understanding-range-input/) _#seen_
@@ -68,12 +68,10 @@
 * [en] [Building a Circular Navigation with CSS Transforms](https://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/) _#seen_
 * [ru] [Длинная телега про Bootstrap](https://gist.github.com/iAdramelk/d328b73c72cab92ef95f) _#seen_
 * [ru] [Как на самом деле работают `z-index`](https://habr.com/ru/post/431046/) _#seen_
-* [ru] [Единицы измерения: px, em, rem и другие](https://learn.javascript.ru/css-units#protsenty) _#seen_  
+* [ru] [Единицы измерения: px, em, rem и другие](https://learn.javascript.ru/css-units#protsenty) _#seen_\
 \- особенности вычисления размеров, заданных в процентах
 * [ru] [Как вставить двадцать видео с Ютуба и не скачать слона (Вадим Макеев)](https://www.youtube.com/watch?v=4JS70KB9GS0) _#seen_
 * [ru] [Прототип изоляции стилей для Shower на веб-компонентах (Вадим Макеев)](https://www.youtube.com/watch?v=_FRIRJZYlxU) _#4consider_
-* [en] [Pug '&attributes' and 'attributes' escaping behaviour](https://codepen.io/yialo/pen/vvPGGE) _#mine_  
-\- примеры экранирования атрибутов HTML-препроцессором Pug
 * [ru] [DocumentFragment: что это такое и как с ним (не) бороться](https://habr.com/ru/post/413287/) _#seen_
 * [en] [Understanding the Critical Rendering Path](https://bitsofco.de/understanding-the-critical-rendering-path/) _#4consider_
 * [en] [Styling a Select Like It’s 2019](https://www.filamentgroup.com/lab/select-css.html) _#seen_
@@ -99,34 +97,31 @@
 
 ## CSS class naming, BEM
 
-* [ru] [CSS common classnames](https://github.com/yialo/css-common-classnames/blob/master/README.md) _#favourite_  
+* [ru] [CSS common classnames](https://github.com/yialo/css-common-classnames/blob/master/README.md) _#favourite_\
 \- типовые названия CSS-классов
 * [ru] [БЭМ — норм, (Вадим Макеев, WSD в Новосибирске)](https://www.youtube.com/watch?v=RM55tkWfHDc) _#seen_
 * [ru] [Как называть css-классы](https://habr.com/ru/post/303174/) _#seen_
 * [en] [BEM modifiers: multiple classes vs @extend](https://www.bensmithett.com/bem-modifiers-multiple-classes-vs-extend/) _#seen_
 * [ru] [Режимы и квази-режимы](https://noteskeeper.ru/62/) _#seen_
-* [ru] [CSS GuideLines: именование классов](https://habr.com/ru/post/236047/) _#seen_  
+* [ru] [CSS GuideLines: именование классов](https://habr.com/ru/post/236047/) _#seen_\
 \- ценные замечания насчёт именования классов для состояний и касательно использования data-атрибутов в соответствии со спецификацией
 * [ru] [БЭМ: про обёртки](https://ru.bem.info/forum/656/) _#seen_
-* [ru] [БЭМ: псевдоклассы vs. модификаторы](https://ru.bem.info/forum/1495/) _#seen_  
+* [ru] [БЭМ: псевдоклассы vs. модификаторы](https://ru.bem.info/forum/1495/) _#seen_\
 \- для чего нужны модификаторы состояний и почему псевдоклассов может быть недостаточно
-* [ru] [Как работать с CSS-препроцессорами и БЭМ](https://nicothin.pro/idiomatic-pre-CSS/) _#seen_  
+* [ru] [Как работать с CSS-препроцессорами и БЭМ](https://nicothin.pro/idiomatic-pre-CSS/) _#seen_\
 \- список рекомендаций по неусложнению жизни себе и другим участникам проекта по вёрстке
-* [en] [Sensible CSS Guidelines for large scale projects](https://github.com/chris-pearce/css-guidelines) _#4consider_  
+* [en] [Sensible CSS Guidelines for large scale projects](https://github.com/chris-pearce/css-guidelines) _#4consider_\
 \- много полезного, в частности: набор вариантов написания CSS-классов для состояний (JS hooks), глобальные и локальные переменные
 * [en] [Battling BEM CSS: 10 Common Problems And How To Avoid Them](https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/) _#seen_
 * [ru] [Десять заповедей логичных файлов стилей](https://css-live.ru/articles/desyat-zapovedej-logichnyx-fajlov-stilej.html) _#seen_
-* [ru] [Как правильно использовать переменные в препроцессорах LESS и SASS](https://habr.com/ru/post/332382/) _#seen_
 * [en] [Nesting Components](http://simurai.com/blog/2015/05/11/nesting-components) _#seen_
-* [ru] [Организация кода для CSS-препроцессора](https://canonium.com/articles/organizing-code-in-project) _#seen_
-* [ru] [Организация кода для HTML-препроцессоров](https://canonium.com/articles/organizing-html-code-in-project) _#seen_
 * [ru] [idiomatic-css: Принципы написания однородного CSS-кода](https://github.com/necolas/idiomatic-css/blob/master/translations/ru-RU/README.md) _#seen_
 * [en] [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css) _#seen_
 
 ## CSS Grid Layout
 
 * [en] [CSS Grid cheatsheet (by Malven Co.)](http://grid.malven.co/) _#tool_
-* [ru] [Что может поломать макет на гридах (CSS Grid Layout)](https://css-live.ru/articles/chto-mozhet-polomat-maket-na-gridax-css-grid-layout.html) _#seen_  
+* [ru] [Что может поломать макет на гридах (CSS Grid Layout)](https://css-live.ru/articles/chto-mozhet-polomat-maket-na-gridax-css-grid-layout.html) _#seen_\
 \- об особенностях свойств overflow-x, min-width, max-width флекс- и грид-элементов
 * [ru] [Ещё одна коллекция интересных фактов про CSS-гриды (CSS Grid Layout)](https://css-live.ru/articles/eshhyo-odna-kollekciya-interesnyx-faktov-pro-css-gridy-css-grid-layout.html) _#seen_
 * [ru] [Большая статья про гриды (CSS Grid Layout)](https://css-live.ru/css/bolshaya-statya-pro-gridy-css-grid-layout.html) _#!important_
@@ -136,20 +131,28 @@
 * [ru] [Подсетки в Grid Layout жизненно важны](https://css-live.ru/articles/podsetki-v-grid-layout-zhiznenno-vazhny.html) _#seen_
 * [ru] [Мысли вслух о подсетках в CSS Grid Layout](https://css-live.ru/articles/mysli-vslux-o-podsetkax-v-css-grid-layout.html) _#seen_
 * [ru] [Простая сетка на гридах с фолбэками с помощью @supports](https://css-live.ru/articles/verstka-prostoj-setki-s-folbekami-ispolzuyushhimi-direktivu-supports-feature-queries.html) _#seen_
-* [en] [Grid Garden](http://cssgridgarden.com) _#seen_  
+* [en] [Grid Garden](http://cssgridgarden.com) _#seen_\
 \- интерактивный тур в игровом формате
-* [en] [Why Flexboxes Aren't Good for Page Layout](https://www.xanthir.com/blog/b4580) _#seen_  
+* [en] [Why Flexboxes Aren't Good for Page Layout](https://www.xanthir.com/blog/b4580) _#seen_\
 \- Таб Аткинс описывает минусы флексбоксов и представляет прототип будущих гридов
 * [ru] [Как работает функция `minmax()`](https://css-live.ru/articles/kak-rabotaet-funkciya-minmax.html) _#seen_
 * [ru] [CSS-гриды + CSS-колонки](https://css-live.ru/articles/css-gridy-css-kolonki-%E2%99%A5.html) _#seen_
 
-## Sass
+## Preprocessors, templating engines
 
 * [en] [Sass official](https://sass-lang.com/documentation) _#library_
 * [en] [Sass Guidelines](https://sass-guidelin.es/) _#seen_
-* [ru] [sass-mq](https://github.com/sass-mq/sass-mq) _#library_  
+* [ru] [sass-mq](https://github.com/sass-mq/sass-mq) _#library_\
 \- Media Queries with superpowers
 * [en] [How To Write Your Own Custom Sass Functions](https://vanseodesign.com/css/custom-sass-functions/) _#seen_
+* [en] [Pug '&attributes' and 'attributes' escaping behaviour](https://codepen.io/yialo/pen/vvPGGE) _#mine_\
+\- примеры экранирования атрибутов HTML-препроцессором Pug
+* [ru] [Как правильно использовать переменные в препроцессорах LESS и SASS](https://habr.com/ru/post/332382/) _#seen_
+* [ru] [Организация кода для CSS-препроцессора](https://canonium.com/articles/organizing-code-in-project) _#seen_
+* [ru] [Организация кода для HTML-препроцессоров](https://canonium.com/articles/organizing-html-code-in-project) _#seen_
+* [en] [Markdown official](https://daringfireball.net/projects/markdown/) _#favourite_
+* [en] [Markdown Guide](https://www.markdownguide.org/) _#favourite_
+* [en] [CommonMark Markdown](https://commonmark.org/) _#favourite_
 
 ## Accessibility, semantics
 
@@ -161,7 +164,7 @@
 
 ## JavaScript
 
-* [ru] [Современный учебник JavaScript](https://learn.javascript.ru/) _#!important_  
+* [ru] [Современный учебник JavaScript](https://learn.javascript.ru/) _#!important_\
 \- пожалуй, лучший русскоязычный учебник по JavaScript
 * [en] [The Complete JavaScript Handbook (by Flavio Copes)](https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/) _#seen_
 * [ru] [Осваиваем замыкания в Javascript](https://medium.com/@sshambir/%D0%BE%D1%81%D0%B2%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-5b83267ef7d1) _#seen_
@@ -169,7 +172,7 @@
 * [ru] [Красивый и чистый: инструменты, которые помогают добиться почти идеального кода](https://habr.com/ru/company/skillbox/blog/428231/) _#seen_
 * [en] [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript/) _#favourite_
 * [en] [Integrating Prettier + ESLint + Airbnb Style Guide in VSCode](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a) _#seen_
-* [ru] [Как кодить на JavaScript в 2019? Тренды, тенденции, предсказания](https://proglib.io/p/javascript-2019/) _#seen_  
+* [ru] [Как кодить на JavaScript в 2019? Тренды, тенденции, предсказания](https://proglib.io/p/javascript-2019/) _#seen_\
 \- обзор содержит большую подборку ссылок на учебные материалы, которые будут актуальны и после 2019 года
 * [ru] [Всегда чистый код: 5 инструментов для JavaScript-разработчика](https://proglib.io/p/clean-code-tools/) _#seen_
 * [ru] [https://habr.com/ru/post/323790/](https://habr.com/ru/post/323790/) _#seen_
@@ -196,21 +199,21 @@
 
 ## Graphics, SVG, animations
 
-* [en] [Picturefill](https://scottjehl.github.io/picturefill/) _#library_  
+* [en] [Picturefill](https://scottjehl.github.io/picturefill/) _#library_\
 \- полифил для поддержки элемента `<picture>` в IE
-* [en] [Everything you always wanted to know about touch icons](https://mathiasbynens.be/notes/touch-icons) _#4consider_  
+* [en] [Everything you always wanted to know about touch icons](https://mathiasbynens.be/notes/touch-icons) _#4consider_\
 \- как подготовить favicons, touch icons, tile icons
-* [en] [Real Favicon Generator](https://realfavicongenerator.net/) _#tool_  
+* [en] [Real Favicon Generator](https://realfavicongenerator.net/) _#tool_\
 \- онлайн-сервис для создания полного набора favicon для всех современных платформ и устройств
 * [ru] [Какие нужны фавиконки — HTML Шорты](https://www.youtube.com/watch?v=iG9WF8VpogY) _#seen_
 * [ru] [Favicon сегодня: форматы, поддержка, автоматизация](https://habr.com/ru/post/330584/) _#seen_
 * [ru] [Теория цвета в цифрах](https://habr.com/ru/post/189766/) _#seen_
-* [en] [Srcset and sizes](https://ericportis.com/posts/2014/srcset-sizes/) _#4consider_  
+* [en] [Srcset and sizes](https://ericportis.com/posts/2014/srcset-sizes/) _#4consider_\
 \- углублённый разбор функционала элемента `<picture>`
 * [ru] [Сколько нужно верстальщиков, чтобы вставить `<picture>`? (Вадим Макеев)](https://www.youtube.com/watch?v=Szo-2D7TtEU) _#seen_
 * [ru] [Иллюстратор для верстальщиков](https://www.youtube.com/watch?v=h6CHstX40rE) _#seen_
 * [ru] [Погружение в `object-fit: cover` с полифилом и без (Вадим Макеев)](https://www.youtube.com/watch?v=aZJMOVpMhtc) _#seen_
-* [en] [anime.js](https://animejs.com/) _#library_  
+* [en] [anime.js](https://animejs.com/) _#library_\
 \- JavaScript animation engine
 * [ru] [SVG маски и вау-эффекты: о магии простыми словами](https://habr.com/ru/post/349362/) _#seen_
 * [en] [Styling SVG `<use>` Content with CSS](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/) _#seen_
@@ -229,21 +232,21 @@
 * [ru] [Иконочные шрифты и почему они не нужны](https://nicothin.pro/page/icon-fonts-2017) _#4consider_
 * [ru] [Управляем поведением font-face в CSS](https://ymatuhin.ru/front-end/font-display/) _#seen_
 * [en] [Prevention of double font preloading in Blink-based browsers](https://github.com/cds-snc/ircc-rescheduler/pull/374) _#seen_
-* [en] [The Inter typeface family](https://rsms.me/inter/) _#library_  
+* [en] [The Inter typeface family](https://rsms.me/inter/) _#library_\
 \- крутой шрифт, разработанный специально для комфортного чтения с экрана
 
 ## Git
 
-* [ru] [First Aid Git](http://firstaidgit.ru/) _#favourite_  
+* [ru] [First Aid Git](http://firstaidgit.ru/) _#favourite_\
 \- подробнейший FAQ в переводе HTML Academy
-* [en] [Pro Git](https://git-scm.com/book/en/v2) _#!important_  
+* [en] [Pro Git](https://git-scm.com/book/en/v2) _#!important_\
 \- настольная книга
-* [ru] [Скринкаст по Git](https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h) _#4consider_  
+* [ru] [Скринкаст по Git](https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h) _#4consider_\
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
-* [ru] [Learn Git Branching](https://learngitbranching.js.org/) _#favourite_  
+* [ru] [Learn Git Branching](https://learngitbranching.js.org/) _#favourite_\
 \- интерактивный тур в игровом формате
-* [ru] [Словарь терминов Git и GitHub](https://github.com/web-standards-ru/dictionary/blob/master/git.md) _#favourite_  
-* [en] [Git How To](https://githowto.com/) _#seen_  
+* [ru] [Словарь терминов Git и GitHub](https://github.com/web-standards-ru/dictionary/blob/master/git.md) _#favourite_\
+* [en] [Git How To](https://githowto.com/) _#seen_\
 \- интерактивный тур
 * [ru] [Шпаргалка по консольным командам Git](https://github.com/nicothin/web-development/blob/master/git/readme.md) _#favourite_
 * [ru] [Режим fast-forward в Git](http://zencoder.ru/git/fast-forward-git/) _#seen_
@@ -262,12 +265,12 @@
 
 ## Build tools
 
-* [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#4consider_  
+* [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#4consider_\
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
-* [ru] [Скринкаст по Webpack](https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn) _#4consider_  
+* [ru] [Скринкаст по Webpack](https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn) _#4consider_\
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
 * [ru] [Gulp для самых маленьких](https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html) _#4consider_
-* [ru] [A quick guide for switching to Gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0) _#seen_  
+* [ru] [A quick guide for switching to Gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0) _#seen_\
 \- изменения в Gulp API после выхода 4-й версии
-* [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/) _#seen_  
+* [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/) _#seen_\
 \- советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug
