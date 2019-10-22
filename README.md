@@ -5,14 +5,14 @@
 * [[UNSORTED]](#unsorted)
 * [Blogs & journals](#blogs--journals)
 * [HTML & CSS: common](#html--css-common)
-* [CSS naming, BEM](#css-naming-bem)
+* [CSS class naming, BEM](#css-class-naming-bem)
 * [CSS Grid Layout](#css-grid-layout)
 * [Sass](#sass)
 * [Accessibility, semantics](#accessibility-semantics)
 * [JavaScript](#javascript)
 * [Node JS, NPM](#node-js-npm)
 * [Vue.js](#vuejs)
-* [Graphics, animations](#graphics-animations)
+* [Graphics, SVG, animations](#graphics-svg-animations)
 * [Fonts](#fonts)
 * [Git](#git)
 * [Code editors](code-editors)
@@ -21,14 +21,13 @@
 ## [UNSORTED]
 
 * [ru] [Frontend WhiteList](https://github.com/melnik909/frontend-whitelist) _#favourite_  
-\- список полезных и интересных авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов
+\- список ценных авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов
 * [ru] [Словарь фронтенд-терминов](https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md) _#favourite_
 * [ru] [Установка Apache 2.4 + PHP 5.6 + MySQL 5.6 на Windows 7 ­- 10](https://blog.denisbondar.com/post/apache24php56win7) _#seen_
-* [ru] [Рекомендуемые книги по frontend-разработке](https://web-standards.ru/books/) _#favourites_
+* [ru] [Рекомендуемые книги по frontend-разработке](https://web-standards.ru/books/) _#favourite_
 * [en] [Floating Point Math](http://0.30000000000000004.com/) _#seen_
 * [ru] [(Законы Акина) законы космической инженерии](https://habr.com/ru/post/354936/) _#seen_
 * [en] [Tips on Code Refactoring, From a Former Addict](https://snipcart.com/blog/tips-on-code-refactoring-from-a-former-addict) _#seen_
-* [ru] [Учите ванильный JavaScript, прежде чем браться за фреймворки](https://www.cat-in-web.ru/vanilla-js/) _#seen_
 
 ## Blogs & journals
 
@@ -62,13 +61,13 @@
 * [en] [Advanced CSS Theming with Custom Properties and JavaScript](https://www.sitepoint.com/css-theming-custom-properties-javascript/) _#4consider_
 * [ru] [Пользовательские CSS-атрибуты как механизм передачи данных из JavaScript в CSS](https://css-live.ru/articles/polzovatelskie-css-atributy-kak-mexanizm-peredachi-dannyx-iz-javascript-v-css.html) _#seen_
 * [ru] [Архитектура CSS](https://web-standards.ru/articles/css-architecture/) _#seen_
-* [en] [My approach to using z-index](https://medium.com/hackernoon/my-approach-to-using-z-index-eca67feb079c) _#seen_
+* [en] [My approach to using `z-index`](https://medium.com/hackernoon/my-approach-to-using-z-index-eca67feb079c) _#seen_
 * [ru] [Псевдоэлементы, которых не может быть](https://css-live.ru/articles-css/impossible-pseudos.html) _#seen_
 * [ru] [«Запашки» CSS-кода](https://css-live.ru/articles/zapashki-css-koda.html) _#seen_
 * [en] [A Tale of `width` and `max-width`](https://css-tricks.com/tale-width-max-width/) _#seen_
 * [en] [Building a Circular Navigation with CSS Transforms](https://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/) _#seen_
 * [ru] [Длинная телега про Bootstrap](https://gist.github.com/iAdramelk/d328b73c72cab92ef95f) _#seen_
-* [ru] [Как на самом деле работают z-index](https://habr.com/ru/post/431046/) _#seen_
+* [ru] [Как на самом деле работают `z-index`](https://habr.com/ru/post/431046/) _#seen_
 * [ru] [Единицы измерения: px, em, rem и другие](https://learn.javascript.ru/css-units#protsenty) _#seen_  
 \- особенности вычисления размеров, заданных в процентах
 * [ru] [Как вставить двадцать видео с Ютуба и не скачать слона (Вадим Макеев)](https://www.youtube.com/watch?v=4JS70KB9GS0) _#seen_
@@ -80,8 +79,26 @@
 * [en] [Styling a Select Like It’s 2019](https://www.filamentgroup.com/lab/select-css.html) _#seen_
 * [en] [Houdini: Maybe The Most Exciting Development In CSS You’ve Never Heard Of](https://www.smashingmagazine.com/2016/03/houdini-maybe-the-most-exciting-development-in-css-youve-never-heard-of/) _#seen_
 * [ru] [Варианты «clearfix-хака» и его замен: сводная таблица](https://css-live.ru/articles-css/clearfix-block-formatting-context-methods-cheatsheet.html) _#seen_
+* [ru] [Почему мы не добавим в HTML элемент <чудесный>?](https://css-live.ru/faq/pochemu-my-ne-dobavim-v-html-element.html) _#seen_
+* [ru] [Устойчивый, декларативный, контекстный (новый взгляд на сильные стороны CSS)](https://css-live.ru/articles/ustojchivyj-deklarativnyj-kontekstnyj-novyj-vzglyad-na-silnye-storony-css.html) _#seen_
+* [ru] [Фокусы со стилями для фокуса](https://css-live.ru/articles/fokusy-so-stilyami-dlya-fokusa.html) _#seen_
+* [ru] [Как работает `z-index`](https://www.internet-technologies.ru/articles/kak-rabotaet-z-index.html) _#seen_
+* [ru] [Элемент HTML `<time>`](https://habr.com/ru/post/229291/) _#seen_
+* [ru] [Свойства `object-fit` и `object-position`. Масштабируем пропорционально](https://html5book.ru/svoystva-object-fit-i-object-position/) _#seen_
+* [ru] [Сторонний CSS небезопасен](https://css-live.ru/articles-css/storonnij-css-nebezopasen.html) _#seen_
+* [ru] [Новый display:flow-root — не clearfix, но что это и зачем?](https://css-live.ru/faq/displayflow-root-not-clearfix.html) _#seen_
+* [ru] [О «призраках» в CSS и борьбе с ними: анонимные боксы](https://css-live.ru/articles/mysterious-css-anonymous-boxes.html) _#seen_
+* [ru] [То, что вам никто не говорил о z-index в статье «То, что вам никто не говорил о z-index»](https://habr.com/ru/post/225721/) _#seen_
+* [ru] [`display: contents` и его новые друзья спешат на помощь](https://css-live.ru/articles/display-contents-practice.html) _#seen_
+* [ru] [CSS-свойство `display` и контексты форматирования](https://css-live.ru/articles-css/display-and-formatting-contexts.html) _#seen_
+* [ru] [Каждый раз, когда вы называете проприетарную фичу словом «CSS3», в мире умирает котенок](https://css-live.ru/articles-css/kazhdyj-raz-kogda-vy-nazyvaete-proprietarnuyu-fichu-slovom-css3-v-mire-umiraet-kotenok.html) _#seen_
+* [ru] [Стандарт для нестандартного](https://css-live.ru/articles-css/standart-dlya-nestandartnogo.html) _#seen_
+* [ru] [Постепенная деградация](https://htmlacademy.ru/blog/useful/html/graceful-degradation) _#4consider_
+* [ru] [Правильная шпаргалка по CSS-каскаду](https://css-live.ru/css/pravilnaya-shpargalka-po-css-kaskadu.html) _#!important_
+* [en] [CSS Triggers](https://csstriggers.com/) _#tool_
+* [ru] [CSS и производительность сети](https://css-live.ru/articles/css-i-proizvoditelnost-seti.html) _#!important_
 
-## CSS naming, BEM
+## CSS class naming, BEM
 
 * [ru] [CSS common classnames](https://github.com/yialo/css-common-classnames/blob/master/README.md) _#favourite_  
 \- типовые названия CSS-классов
@@ -124,7 +141,8 @@
 \- интерактивный тур в игровом формате
 * [en] [Why Flexboxes Aren't Good for Page Layout](https://www.xanthir.com/blog/b4580) _#seen_  
 \- Таб Аткинс описывает минусы флексбоксов и представляет прототип будущих гридов
-* [ru] [Как работает функция minmax()](https://css-live.ru/articles/kak-rabotaet-funkciya-minmax.html) _#seen_
+* [ru] [Как работает функция `minmax()`](https://css-live.ru/articles/kak-rabotaet-funkciya-minmax.html) _#seen_
+* [ru] [CSS-гриды + CSS-колонки](https://css-live.ru/articles/css-gridy-css-kolonki-%E2%99%A5.html) _#seen_
 
 ## Sass
 
@@ -157,6 +175,11 @@
 * [ru] [https://habr.com/ru/post/323790/](https://habr.com/ru/post/323790/) _#seen_
 * [ru] [Веб-фреймворки: введение для новичков](https://tproger.ru/translations/web-frameworks-how-to-get-started/) _#4consider_
 * [ru] [Babel / JS: Настройка окружения](https://ru.hexlet.io/courses/js-setup-environment/lessons/babel/theory_unit) _#seen_
+* [ru] [Учите ванильный JavaScript, прежде чем браться за фреймворки](https://www.cat-in-web.ru/vanilla-js/) _#seen_
+* [ru] [JS для начинающих. Урок 1.11: Циклы](https://true-coder.ru/js-dlya-nachinayushhix/js-dlya-nachinayushhix-urok-1-11-cikly.html) _#seen_
+* [ru] [Вы освоили азы JavaScript. Но что дальше?](https://css-live.ru/articles/vy-osvoili-azy-javascript-no-chto-dalshe.html) _#seen_
+* [ru] [Опережающие и ретроспективные проверки в регулярных выражениях](https://habr.com/ru/post/159483/) _#4consider_
+* [en] [JSON Schema Reference](https://json-schema.org/understanding-json-schema/reference/index.html) _#favourite_
 
 ## Node JS, NPM
 
@@ -169,8 +192,9 @@
 ## Vue.js
 
 * [en] [Vue.js official](https://vuejs.org/) _#library_
+* [en] [Vue JS 2 Tutorial (by _The Net Ninja_)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) _#4consider_
 
-## Graphics, animations
+## Graphics, SVG, animations
 
 * [en] [Picturefill](https://scottjehl.github.io/picturefill/) _#library_  
 \- полифил для поддержки элемента `<picture>` в IE
@@ -189,12 +213,19 @@
 * [en] [anime.js](https://animejs.com/) _#library_  
 \- JavaScript animation engine
 * [ru] [SVG маски и вау-эффекты: о магии простыми словами](https://habr.com/ru/post/349362/) _#seen_
+* [en] [Styling SVG `<use>` Content with CSS](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/) _#seen_
+* [ru] [SVG: группировка и переиспользование элементов](http://css.yoksel.ru/svg-groups-use/) _#seen_
+* [ru] [Размеры в SVG](http://css.yoksel.ru/svg-sizes/) _#seen_
+* [en] [Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, viewBox, and preserveAspectRatio](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) _#seen_ _#chain_
+* [en] [Understanding SVG Coordinate Systems and Transformations (Part 2) — The transform Attribute](https://www.sarasoueidan.com/blog/svg-transformations/) _#4consider_ _#chain_
+* [en] [Understanding SVG Coordinate Systems and Transformations (Part 3) — Establishing New Viewports](https://www.sarasoueidan.com/blog/nesting-svgs/) _#4consider_ _#chain_
+* [ru] [Карманное руководство по написанию SVG](https://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html) _#4consider_ _#chain_
 
 ## Fonts
 
 * [ru] [Подключение шрифта к странице: как нужно делать сейчас](https://nicothin.pro/page/web-fonts) _#seen_
-* [ru] [Подключение нестандартных шрифтов. Часть первая](https://fontstorage.com/blog/about-font-face-part-one/) _#seen_
-* [ru] [Подключение нестандартных шрифтов. Часть вторая](https://fontstorage.com/blog/about-font-face-part-two/) _#seen_
+* [ru] [Подключение нестандартных шрифтов. Часть первая](https://fontstorage.com/blog/about-font-face-part-one/) _#seen_ _#chain_
+* [ru] [Подключение нестандартных шрифтов. Часть вторая](https://fontstorage.com/blog/about-font-face-part-two/) _#seen_ _#chain_
 * [ru] [Иконочные шрифты и почему они не нужны](https://nicothin.pro/page/icon-fonts-2017) _#4consider_
 * [ru] [Управляем поведением font-face в CSS](https://ymatuhin.ru/front-end/font-display/) _#seen_
 * [en] [Prevention of double font preloading in Blink-based browsers](https://github.com/cds-snc/ircc-rescheduler/pull/374) _#seen_
@@ -219,6 +250,10 @@
 * [ru] [Самые типичные ошибки и вопросы, связанные с Git, и удобные способы их решения](https://tproger.ru/translations/most-common-git-screwupsquestions-and-solutions/) _#seen_
 * [ru] [Правильные способы исключения файлов в Git](https://habr.com/ru/post/202696/) _#seen_
 * [ru] [Как склеить коммиты и зачем это нужно](https://htmlacademy.ru/blog/useful/git/how-to-squash-commits-and-why-it-is-needed) _#seen_
+* [ru] [Как оформлять коммиты, чтобы потом не было больно](https://habr.com/ru/company/voximplant/blog/276695/) _#4consider_
+* [ru] [11 концепций и команд git, которые заставят вас плакать](https://proglib.io/p/painful-git/) _#4consider_
+* [ru] [Про Git, Github и Gitflow простыми словами](https://proglib.io/p/git-github-gitflow/) _#4consider_
+* [ru] [10 полезных Git команд, которые облегчат работу](https://proglib.io/p/10-tips-git/) _#4consider_
 
 ## Code editors
 

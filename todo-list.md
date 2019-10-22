@@ -6,7 +6,8 @@
     * Move parts to separate MD files: *consideren/seen* etc. (_think about name_)
     * Merge with *css-common-classnames* and *libs/various* content
 2. Move browser bookmarks related to computer science and userful services here
-3. Change 'lang' mark.
+3. Change _lang_ mark.
+4. Organize article chains to collections.
 
 ## More far future
 
