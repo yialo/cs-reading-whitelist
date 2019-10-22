@@ -10,13 +10,14 @@
 * [Preprocessors, templating engines](#preprocessors-templating-engines)
 * [Accessibility, semantics](#accessibility-semantics)
 * [JavaScript](#javascript)
-* [Node JS, NPM](#node-js-npm)
+* [Node JS, npm](#node-js-npm)
 * [Vue.js](#vuejs)
 * [Graphics, SVG, animations](#graphics-svg-animations)
-* [Fonts](#fonts)
+* [Fonts, typography](#fonts-typography)
 * [Git](#git)
 * [Code editors](code-editors)
 * [Build tools](#build-tools)
+* [Testing](#testing)
 
 ## [UNSORTED]
 
@@ -28,6 +29,7 @@
 * [en] [Floating Point Math](http://0.30000000000000004.com/) _#seen_
 * [ru] [(Законы Акина) законы космической инженерии](https://habr.com/ru/post/354936/) _#seen_
 * [en] [Tips on Code Refactoring, From a Former Addict](https://snipcart.com/blog/tips-on-code-refactoring-from-a-former-addict) _#seen_
+* [en] [How To Learn Anything Faster - 5 Tips to Increase your Learning Speed (feat. _Project Better Self_)](https://www.youtube.com/watch?v=rA2XHWM__yE) _#seen_
 
 ## Blogs & journals
 
@@ -94,6 +96,10 @@
 * [ru] [Правильная шпаргалка по CSS-каскаду](https://css-live.ru/css/pravilnaya-shpargalka-po-css-kaskadu.html) _#!important_
 * [en] [CSS Triggers](https://csstriggers.com/) _#tool_
 * [ru] [CSS и производительность сети](https://css-live.ru/articles/css-i-proizvoditelnost-seti.html) _#!important_
+* [ru] [Равномерное выравнивание блоков по ширине](https://css-live.ru/articles-css/ravnomernoe-vyravnivanie-blokov-po-shirine.html) _#seen_
+* [ru] [Ссылки против кнопок в современных веб-приложениях](https://css-live.ru/articles/ssylki-protiv-knopok-v-sovremennyx-veb-prilozheniyax.html) _#seen_
+* [en] [Aspect Ratio Boxes](https://css-tricks.com/aspect-ratio-boxes/) _#seen_
+* [ru] [Изучаем матрицы трансформаций в CSS](https://css-live.ru/articles/izuchaem-matricy-transformacij-v-css.html) _#seen_
 
 ## CSS class naming, BEM
 
@@ -184,8 +190,9 @@
 * [ru] [Опережающие и ретроспективные проверки в регулярных выражениях](https://habr.com/ru/post/159483/) _#4consider_
 * [en] [JSON Schema Reference](https://json-schema.org/understanding-json-schema/reference/index.html) _#favourite_
 
-## Node JS, NPM
+## Node JS, npm
 
+* [ru] [npm Documentation](https://docs.npmjs.com/) _#library_
 * [ru] [Полезные команды для работы с Node.js](https://htmlacademy.ru/blog/useful/nodejs/useful-commands-for-working-with-nodejs) _#seen_
 * [ru] [10 привычек довольного node.js разработчика](https://habr.com/ru/company/Voximplant/blog/277707/) _#seen_
 * [ru] [Вы не знаете npm](https://habr.com/ru/sandbox/108916/) _#seen_
@@ -224,7 +231,7 @@
 * [en] [Understanding SVG Coordinate Systems and Transformations (Part 3) — Establishing New Viewports](https://www.sarasoueidan.com/blog/nesting-svgs/) _#4consider_ _#chain_
 * [ru] [Карманное руководство по написанию SVG](https://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html) _#4consider_ _#chain_
 
-## Fonts
+## Fonts, typography
 
 * [ru] [Подключение шрифта к странице: как нужно делать сейчас](https://nicothin.pro/page/web-fonts) _#seen_
 * [ru] [Подключение нестандартных шрифтов. Часть первая](https://fontstorage.com/blog/about-font-face-part-one/) _#seen_ _#chain_
@@ -262,6 +269,7 @@
 
 * [ru] [Просто о Vim](http://rus-linux.net/MyLDP/BOOKS/Vim/prosto-o-vim-01.html) _#4consider_
 * [en] [10 essential Vim plugins for 2018](https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9) _#seen_
+* [ru] [Как настроить VS Code для разработки на JavaScript](https://guides.hexlet.io/vscode-js-setup/) _#seen_
 
 ## Build tools
 
@@ -274,3 +282,7 @@
 \- изменения в Gulp API после выхода 4-й версии
 * [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/) _#seen_\
 \- советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug
+
+## Testing
+
+* [en] [The Three Types of Performance Testing](https://csswizardry.com/2018/10/three-types-of-performance-testing/) _#seen_
