@@ -13,6 +13,7 @@
 * [Node JS, npm](#node-js-npm)
 * [Vue.js](#vuejs)
 * [Graphics, SVG, animations](#graphics-svg-animations)
+* [UX & UI](#ux--ui)
 * [Fonts, typography](#fonts-typography)
 * [Git](#git)
 * [Code editors](code-editors)
@@ -30,6 +31,8 @@
 * [ru] [(Законы Акина) законы космической инженерии](https://habr.com/ru/post/354936/) _#seen_
 * [en] [Tips on Code Refactoring, From a Former Addict](https://snipcart.com/blog/tips-on-code-refactoring-from-a-former-addict) _#seen_
 * [en] [How To Learn Anything Faster - 5 Tips to Increase your Learning Speed (feat. _Project Better Self_)](https://www.youtube.com/watch?v=rA2XHWM__yE) _#seen_
+* [en] [10 Tips for Writing Cleaner & Better Code](https://www.makeuseof.com/tag/10-tips-writing-cleaner-better-code/) _#seen_
+* [ru] [Без вопросов, без плана, зато с рюшечками: что общего между узбекскими строителями и плохими разработчиками?](https://cmsmagazine.ru/journal/items-no-questions-no-plan/) _#seen_
 
 ## Blogs & journals
 
@@ -70,8 +73,8 @@
 * [en] [Building a Circular Navigation with CSS Transforms](https://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/) _#seen_
 * [ru] [Длинная телега про Bootstrap](https://gist.github.com/iAdramelk/d328b73c72cab92ef95f) _#seen_
 * [ru] [Как на самом деле работают `z-index`](https://habr.com/ru/post/431046/) _#seen_
-* [ru] [Единицы измерения: px, em, rem и другие](https://learn.javascript.ru/css-units#protsenty) _#seen_\
-\- особенности вычисления размеров, заданных в процентах
+* [ru] [Единицы измерения: px, em, rem и другие](https://learn.javascript.ru/css-units) _#seen_\
+\- приводятся особенности вычисления размеров, заданных в процентах
 * [ru] [Как вставить двадцать видео с Ютуба и не скачать слона (Вадим Макеев)](https://www.youtube.com/watch?v=4JS70KB9GS0) _#seen_
 * [ru] [Прототип изоляции стилей для Shower на веб-компонентах (Вадим Макеев)](https://www.youtube.com/watch?v=_FRIRJZYlxU) _#4consider_
 * [ru] [DocumentFragment: что это такое и как с ним (не) бороться](https://habr.com/ru/post/413287/) _#seen_
@@ -143,6 +146,9 @@
 \- Таб Аткинс описывает минусы флексбоксов и представляет прототип будущих гридов
 * [ru] [Как работает функция `minmax()`](https://css-live.ru/articles/kak-rabotaet-funkciya-minmax.html) _#seen_
 * [ru] [CSS-гриды + CSS-колонки](https://css-live.ru/articles/css-gridy-css-kolonki-%E2%99%A5.html) _#seen_
+* [ru] [Золотая рыбка CSS3 Grid Layout (часть 1)](https://css-live.ru/css/zolotaya-rybka-css3-grid-layout.html) _#seen_ _#series_
+* [ru] [Золотая рыбка CSS3 Grid Layout (часть 2)](https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-2.html) _#seen_ _#series_
+* [ru] [Золотая рыбка CSS3 Grid Layout (часть 3)](https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-3.html) _#seen_ _#series_
 
 ## Preprocessors, templating engines
 
@@ -159,6 +165,7 @@
 * [en] [Markdown official](https://daringfireball.net/projects/markdown/) _#favourite_
 * [en] [Markdown Guide](https://www.markdownguide.org/) _#favourite_
 * [en] [CommonMark Markdown](https://commonmark.org/) _#favourite_
+* [ru] [7 техник Sass для написания хорошего кода](https://techrocks.ru/2017/07/19/sass-techniques/) _#4consider_
 
 ## Accessibility, semantics
 
@@ -167,6 +174,7 @@
 * [en] [HTML For Screen Readers - Labelling Elements](https://bitsofco.de/html-for-screen-readers-labelling-elements/) _#seen_
 * [ru] [Семантика для циников (Вадим Макеев)](https://www.youtube.com/watch?v=bDYEnNzprzE) _#seen_
 * [ru] [Элемент HTML `<time>`](https://habr.com/ru/post/229291/) _#seen_
+* [en] [The Difference Between `role="presentation"` and `aria-hidden="true"`](https://timwright.org/blog/2016/11/19/difference-rolepresentation-aria-hiddentrue/) _#seen_
 
 ## JavaScript
 
@@ -189,6 +197,8 @@
 * [ru] [Вы освоили азы JavaScript. Но что дальше?](https://css-live.ru/articles/vy-osvoili-azy-javascript-no-chto-dalshe.html) _#seen_
 * [ru] [Опережающие и ретроспективные проверки в регулярных выражениях](https://habr.com/ru/post/159483/) _#4consider_
 * [en] [JSON Schema Reference](https://json-schema.org/understanding-json-schema/reference/index.html) _#favourite_
+* [ru] [Как работает рекурсия – объяснение в блок-схемах и видео](https://habr.com/ru/post/337030/) _#seen_
+* [ru] [Формы в HTML5: JavaScript и API для принудительной валидации форм](https://www.internet-technologies.ru/articles/formy-v-html5-javascript-i-api-dlya-prinuditelnoy-validacii-form.html) _#seen_
 
 ## Node JS, npm
 
@@ -215,9 +225,10 @@
 * [ru] [Какие нужны фавиконки — HTML Шорты](https://www.youtube.com/watch?v=iG9WF8VpogY) _#seen_
 * [ru] [Favicon сегодня: форматы, поддержка, автоматизация](https://habr.com/ru/post/330584/) _#seen_
 * [ru] [Теория цвета в цифрах](https://habr.com/ru/post/189766/) _#seen_
-* [en] [Srcset and sizes](https://ericportis.com/posts/2014/srcset-sizes/) _#4consider_\
+* [en] [`srcset` and `sizes`](https://ericportis.com/posts/2014/srcset-sizes/) _#4consider_\
 \- углублённый разбор функционала элемента `<picture>`
 * [ru] [Сколько нужно верстальщиков, чтобы вставить `<picture>`? (Вадим Макеев)](https://www.youtube.com/watch?v=Szo-2D7TtEU) _#seen_
+* [ru] [Почему гибкие изображения?](https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) _#seen_
 * [ru] [Иллюстратор для верстальщиков](https://www.youtube.com/watch?v=h6CHstX40rE) _#seen_
 * [ru] [Погружение в `object-fit: cover` с полифилом и без (Вадим Макеев)](https://www.youtube.com/watch?v=aZJMOVpMhtc) _#seen_
 * [en] [anime.js](https://animejs.com/) _#library_\
@@ -226,16 +237,20 @@
 * [en] [Styling SVG `<use>` Content with CSS](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/) _#seen_
 * [ru] [SVG: группировка и переиспользование элементов](http://css.yoksel.ru/svg-groups-use/) _#seen_
 * [ru] [Размеры в SVG](http://css.yoksel.ru/svg-sizes/) _#seen_
-* [en] [Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, viewBox, and preserveAspectRatio](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) _#seen_ _#chain_
-* [en] [Understanding SVG Coordinate Systems and Transformations (Part 2) — The transform Attribute](https://www.sarasoueidan.com/blog/svg-transformations/) _#4consider_ _#chain_
-* [en] [Understanding SVG Coordinate Systems and Transformations (Part 3) — Establishing New Viewports](https://www.sarasoueidan.com/blog/nesting-svgs/) _#4consider_ _#chain_
-* [ru] [Карманное руководство по написанию SVG](https://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html) _#4consider_ _#chain_
+* [en] [Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, viewBox, and preserveAspectRatio](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) _#seen_ _#series_
+* [en] [Understanding SVG Coordinate Systems and Transformations (Part 2) — The transform Attribute](https://www.sarasoueidan.com/blog/svg-transformations/) _#4consider_ _#series_
+* [en] [Understanding SVG Coordinate Systems and Transformations (Part 3) — Establishing New Viewports](https://www.sarasoueidan.com/blog/nesting-svgs/) _#4consider_ _#series_
+* [ru] [Карманное руководство по написанию SVG](https://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html) _#4consider_ _#series_
+
+## UX & UI
+
+* [ru] [Введение в систему 8pt сеток](https://habr.com/ru/company/digital-ecosystems/blog/319700/) _#4consider_
 
 ## Fonts, typography
 
 * [ru] [Подключение шрифта к странице: как нужно делать сейчас](https://nicothin.pro/page/web-fonts) _#seen_
-* [ru] [Подключение нестандартных шрифтов. Часть первая](https://fontstorage.com/blog/about-font-face-part-one/) _#seen_ _#chain_
-* [ru] [Подключение нестандартных шрифтов. Часть вторая](https://fontstorage.com/blog/about-font-face-part-two/) _#seen_ _#chain_
+* [ru] [Подключение нестандартных шрифтов. Часть первая](https://fontstorage.com/blog/about-font-face-part-one/) _#seen_ _#series_
+* [ru] [Подключение нестандартных шрифтов. Часть вторая](https://fontstorage.com/blog/about-font-face-part-two/) _#seen_ _#series_
 * [ru] [Иконочные шрифты и почему они не нужны](https://nicothin.pro/page/icon-fonts-2017) _#4consider_
 * [ru] [Управляем поведением font-face в CSS](https://ymatuhin.ru/front-end/font-display/) _#seen_
 * [en] [Prevention of double font preloading in Blink-based browsers](https://github.com/cds-snc/ircc-rescheduler/pull/374) _#seen_

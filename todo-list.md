@@ -8,6 +8,7 @@
 2. Move browser bookmarks related to computer science and userful services here
 3. Change _lang_ mark.
 4. Organize article chains to collections.
+5. Remove _#seen_ mark for corresponding items.
 
 ## More far future
 
