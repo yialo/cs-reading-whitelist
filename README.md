@@ -263,7 +263,10 @@
 * [ru] [Как оформлять коммиты, чтобы потом не было больно](https://habr.com/ru/company/voximplant/blog/276695/) _#4consider_
 * [ru] [11 концепций и команд git, которые заставят вас плакать](https://proglib.io/p/painful-git/) _#4consider_
 * [ru] [Про Git, Github и Gitflow простыми словами](https://proglib.io/p/git-github-gitflow/) _#4consider_
-* [ru] [10 полезных Git команд, которые облегчат работу](https://proglib.io/p/10-tips-git/) _#4consider_
+* [ru] [10 полезных Git команд, которые облегчат работу](https://proglib.io/p/10-tips-git/) _#seen_
+* [ru] [Про Git, Github и Gitflow простыми словами](https://proglib.io/p/git-github-gitflow/) _#seen_
+* [ru] [Удачная модель ветвления для Git](https://habr.com/ru/post/106912/) _#seen_
+* [en] [Git and Git Flow Cheat Sheet](http://bilalarslan.me/git-cheat-sheet/) _#favourite_
 
 ## Code editors
 
