@@ -11,6 +11,7 @@
 * [Accessibility, semantics](#accessibility-semantics)
 * [JavaScript](#javascript)
 * [Node.js, npm](#nodejs-npm)
+* [React + Redux](#react--redux)
 * [Vue.js](#vuejs)
 * [Graphics, SVG, animations](#graphics-svg-animations)
 * [Fonts, typography](#fonts-typography)
@@ -293,6 +294,17 @@
 * [ru] [Как запустить JavaScript с помощью Node.js](https://htmlacademy.ru/blog/useful/javascript/how-start-javascript-on-nodejs)
 * [ru] [11 простых npm трюков, которые вас удивят](https://medium.com/@echobrain/11-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D1%85-npm-%D1%82%D1%80%D1%8E%D0%BA%D0%BE%D0%B2-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B2%D0%B0%D1%81-%D1%83%D0%B4%D0%B8%D0%B2%D1%8F%D1%82-d00510587ec)
 
+## React + Redux
+
+* [en] [React official](https://reactjs.org/) _#library_
+* [en] [Redux official](https://redux.js.org/) _#library_
+* [en] [GatsbyJS official](https://www.gatsbyjs.org/) _#library_
+* [ru] [React Things](https://github.com/rtivital/react-things) _#4consider_\
+\- коллекция материалов для изучения ES2015, React, Redux, Webpack, Babel и всего остального.
+* [ru] [Скринкаст по React](https://www.youtube.com/playlist?list=PLDyvV36pndZEz2unvD0a2Spv7RehBrpDO) _#video_ _#4consider_
+* [ru] [Понимаем React за 5 минут](https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D0%BC-react-%D0%B7%D0%B0-5-%D0%BC%D0%B8%D0%BD%D1%83%D1%82-2611122c6fbf) _#4consider_
+* [ru] [ReactJS для глупых людей](https://habr.com/ru/post/249107/) _#4consider_
+
 ## Vue.js
 
 * [en] [Vue.js official](https://vuejs.org/) _#library_
@@ -319,7 +331,7 @@
 * [en] [anime.js](https://animejs.com/) _#library_\
 \- JavaScript animation engine
 * [ru] [SVG маски и вау-эффекты: о магии простыми словами](https://habr.com/ru/post/349362/)
-* [en] [Styling SVG `<use>` Content with CSS](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/)
+* [en] [Styling SVG `<use>` content with CSS](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/)
 * [ru] [SVG: группировка и переиспользование элементов](http://css.yoksel.ru/svg-groups-use/)
 * [ru] [Размеры в SVG](http://css.yoksel.ru/svg-sizes/)
 * [en] [Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, viewBox, and preserveAspectRatio](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) _#series_
