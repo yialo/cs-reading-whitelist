@@ -1,5 +1,7 @@
 # Computer Science Reading Whitelist
 
+Links to useful development tools and good articles about computer science
+
 ## Содержание
 
 * [[UNSORTED]](#unsorted)
