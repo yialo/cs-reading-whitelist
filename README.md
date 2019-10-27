@@ -140,6 +140,11 @@
 * [ru] [Почему я в восторге от «родных» CSS-переменных](https://css-live.ru/articles/about-native-css-variables.html)
 * [ru] [Оформление модальных окон](http://prgssr.ru/development/oformlenie-modalnyh-okon.html)
 * [en] [WebAssembly’s post-MVP future: A cartoon skill tree](https://hacks.mozilla.org/2018/10/webassemblys-post-mvp-future/)
+* [ru] [`flex-grow` странный. Так ли это?](https://css-live.ru/articles/flex-grow-strannyj-tak-li-eto.html)
+* [en] [What’s next for CSS?](https://cssdb.org/) _#tool_\
+\- CSS features stage database
+* [ru] [Фантастические веб-спецификации и где они обитают](https://css-live.ru/css/fantasticheskie-veb-specifikacii-i-gde-oni-obitayut.html)
+* [ru] [Аксиоматический CSS и лоботомированные совы](https://frontender.info/axiomatic-css-and-lobotomized-owls/)
 
 ## CSS class naming, BEM
 
@@ -169,6 +174,7 @@
 * [ru] [Семантический CSS](https://css-live.ru/articles/semanticheskij-css.html)
 * [ru] [БЭМантика: пишите осмысленные стили без повторов](https://css-live.ru/articles/bemantika-pishite-osmyslennye-stili-bez-povtorov.html)
 * [ru] [Как работают в флексбоксе `z-index` и автоотступы](http://prgssr.ru/development/kak-rabotayut-v-fleksbokse-z-index-i-avtootstupy.html)
+* [ru] [Пишем БЭМ правильно (Игорь Зенич)](https://www.youtube.com/watch?v=kBgHdSOj33A) _#video_ _#4consider_
 
 ## CSS Grid Layout
 
@@ -270,7 +276,7 @@
 * [ru] [Разъяснения насчёт JavaScript, ECMA–262, TC39 и транскомпиляторов ECMAScript](https://frontender.info/javascript-ecma-262-tc39-and-ecmascript-transpilers-explained/)
 * [en] [Asyncstepping](http://asyncstepping.glitch.me/) _#tool_\
 \- наглядный пример для тестирования асинхронного JS в (Chrome) DevTools
-* [en] [Properties in JavaScript: definition versus assignment](https://2ality.com/2012/08/property-definition-assignment.html) _#4consider_
+* [en] [Properties in JavaScript: definition versus assignment (by Dr. Axel Rauschmayer)](https://2ality.com/2012/08/property-definition-assignment.html) _#4consider_
 * [en] [await vs return vs return await](https://jakearchibald.com/2017/await-vs-return-vs-return-await/)
 * [ru] [Почему использовать `return await` плохая идея?](https://medium.com/@kanby/%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-return-await-%D0%BF%D0%BB%D0%BE%D1%85%D0%B0%D1%8F-%D0%B8%D0%B4%D0%B5%D1%8F-e87b70015f0c)
 * [ru] [Полное понимание синхронного и асинхронного JavaScript с `async/await`](https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B0%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-javascript-%D1%81-async-await-ba5f47f4436)
@@ -291,6 +297,7 @@
 
 * [en] [Vue.js official](https://vuejs.org/) _#library_
 * [en] [Vue JS 2 Tutorial (by _The Net Ninja_)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) _#4consider_
+* [ru] [10 советов и приемов, которые помогут вам стать лучшим разработчиком на VueJS](https://habr.com/ru/post/471212/) _#4consider_
 
 ## Graphics, SVG, animations
 
@@ -332,6 +339,8 @@
 * [en] [The Inter typeface family](https://rsms.me/inter/) _#library_\
 \- крутой шрифт, разработанный специально для комфортного чтения с экрана
 * [en] [A comprehensive guide to font loading strategies](https://www.zachleat.com/web/comprehensive-webfonts/) _#4consider_
+* [ru] [Ответ на главный вопрос в CSS (Михаил Иванкив)](https://www.youtube.com/watch?v=cO2-zYzjyD0) _#video_\
+\- подходы к решению проблемы масштабирования текста
 
 ## UX/UI
 
@@ -374,6 +383,8 @@
 \- советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug
 * [en] [Using rollup.js with gulp.js](https://duske.me/using-rollup-js-with-gulp-js/)
 * [en] [BemGo](https://github.com/werty1001/bemgo) _#bem_ _#build_
+* [ru] [Готовим идеальный CSS](https://habr.com/ru/company/constanta/blog/428800/)
+\- подключение и оптимизация стилей с помощью Webpack
 
 ## Git
 
