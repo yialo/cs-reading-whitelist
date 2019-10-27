@@ -37,6 +37,7 @@
 * [ru] [Хороший разработчик и его образ мышления, часть 2](https://techrocks.ru/2019/04/15/good-developer-mindset-2/) _#series_
 * [ru] [Бизнес, у которого никогда не будет клиентов из интернета](https://vc.ru/marketing/60262-biznes-u-kotorogo-nikogda-ne-budet-klientov-iz-interneta)
 * [en] [An A-Z Index of the Linux command line: bash + utilities](https://ss64.com/bash/)
+* [ru] [Оценка задач фронтендера](https://frontender.info/estimating-a-front-end-web-dev-job/)
 
 ## Blogs & journals
 
@@ -109,6 +110,9 @@
 * [en] [Aspect Ratio Boxes](https://css-tricks.com/aspect-ratio-boxes/)
 * [ru] [Изучаем матрицы трансформаций в CSS](https://css-live.ru/articles/izuchaem-matricy-transformacij-v-css.html)
 * [ru] [CSS3 3D-трансформации](https://html5book.ru/3d-transform/)
+* [en] [CSS border-image clarifying](https://codepen.io/yialo/pen/mZJVBq) _#mine_\
+\- мои примеры различных значений CSS-свойства border-image. В частности, можно увидеть, что количество фрагментов при border-image-repeat: round вычисляется по правилам округления до целого (`Math.round()` в JS, например): [0, 0.5) ‒ в меньшую сторону, [0.5, 1) ‒ в б**о**льшую. Округляется частное от деления размера области бокса, предназначенной для размещения боковой части рамки, на размер соответствующей области выбранного в border-image-source изображения, оставшейся доступным после применения к нему border-image-slice.
+* [en] [`font-feature-settings`](https://css-tricks.com/almanac/properties/f/font-feature-settings/)
 
 ## CSS class naming, BEM
 
@@ -132,6 +136,9 @@
 * [en] [Nesting Components](http://simurai.com/blog/2015/05/11/nesting-components)
 * [ru] [idiomatic-css: Принципы написания однородного CSS-кода](https://github.com/necolas/idiomatic-css/blob/master/translations/ru-RU/README.md)
 * [en] [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
+* [ru] [Разбираемся с border-image из CSS3](https://css-live.ru/articles-css/razbiraemsya-s-border-image-iz-css3.html)
+* [en] [`border-image` generator](https://border-image.com/) _#tool_
+* [ru] [Что такое CSS-модули и зачем они нам?](https://frontender.info/css-modules-part-1-need/)
 
 ## CSS Grid Layout
 
@@ -215,6 +222,9 @@
 * [ru] [Ключевое слово this в javascript — учимся определять контекст на практике](https://habr.com/ru/post/149516/)
 * [en] [The art of naming variables](https://hackernoon.com/the-art-of-naming-variables-52f44de00aad)
 * [ru] [Что такое Throttling и Debouncing?](https://medium.com/nuances-of-programming/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-throttling-%D0%B8-debouncing-4f0a839769ef)
+* [ru] [Что за черт, Javascript](https://habr.com/ru/company/mailru/blog/335292/) _#4consider_
+* [ru] [Prototype, proto и оператор `new`](https://habr.com/ru/post/140810/)\
+\- разбор действий, которые выполняет движок при обработке инструкций, содержащих `new`
 
 ## Node JS, npm
 
