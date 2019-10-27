@@ -27,12 +27,12 @@
 * [ru] [Frontend WhiteList](https://github.com/melnik909/frontend-whitelist) _#favourite_\
 \- список ценных авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов
 * [ru] [Словарь фронтенд-терминов](https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md) _#favourite_
-* [ru] [Установка Apache 2.4 + PHP 5.6 + MySQL 5.6 на Windows 7 ­- 10](https://blog.denisbondar.com/post/apache24php56win7)
+* [ru] [Установка Apache 2.4 + PHP 5.6 + MySQL 5.6 на Windows 7-10](https://blog.denisbondar.com/post/apache24php56win7)
 * [ru] [Рекомендуемые книги по frontend-разработке](https://web-standards.ru/books/) _#favourite_
 * [en] [Floating Point Math](http://0.30000000000000004.com/)
 * [ru] [(Законы Акина) законы космической инженерии](https://habr.com/ru/post/354936/)
 * [en] [Tips on Code Refactoring, From a Former Addict](https://snipcart.com/blog/tips-on-code-refactoring-from-a-former-addict)
-* [en] [How To Learn Anything Faster - 5 Tips to Increase your Learning Speed (feat. _Project Better Self_)](https://www.youtube.com/watch?v=rA2XHWM__yE)
+* [en] [How To Learn Anything Faster - 5 Tips to Increase your Learning Speed (feat. _Project Better Self_)](https://www.youtube.com/watch?v=rA2XHWM__yE) _#video_
 * [en] [10 Tips for Writing Cleaner & Better Code](https://www.makeuseof.com/tag/10-tips-writing-cleaner-better-code/)
 * [ru] [Без вопросов, без плана, зато с рюшечками: что общего между узбекскими строителями и плохими разработчиками?](https://cmsmagazine.ru/journal/items-no-questions-no-plan/)
 * [ru] [Хороший разработчик и его образ мышления, часть 1](https://techrocks.ru/2019/04/14/good-developer-mindset-1/) _#series_
@@ -146,6 +146,7 @@
 \- CSS features stage database
 * [ru] [Фантастические веб-спецификации и где они обитают](https://css-live.ru/css/fantasticheskie-veb-specifikacii-i-gde-oni-obitayut.html)
 * [ru] [Аксиоматический CSS и лоботомированные совы](https://frontender.info/axiomatic-css-and-lobotomized-owls/)
+* [ru] [12 базовых рефлексов верстальщика](https://nicothin.pro/page/reflex)
 
 ## CSS class naming, BEM
 
@@ -308,8 +309,16 @@
 ## Vue.js
 
 * [en] [Vue.js official](https://vuejs.org/) _#library_
-* [en] [Vue JS 2 Tutorial (by _The Net Ninja_)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) _#4consider_
+* [en] [Vue Test Utils](https://vue-test-utils.vuejs.org/) _#library_
+* [en] [Vuetify official](https://vuetifyjs.com/en/) _#library_
+* [en] [eslint-plugin-vue](https://eslint.vuejs.org/) _#library_
+* [en] [Nuxt.js](https://nuxtjs.org/) _#library_
+* [en] [Vue Mastery](https://www.vuemastery.com/courses) _#4consider_
+* [en] [Vue JS 2 Tutorial (by _The Net Ninja_)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) _#4consider_ _#video_
+* [ru] [Фреймворк VueJS (Владилен Минин)](https://www.youtube.com/playlist?list=PLD-piGJ3Dtl0C2gVy-_vZoxYRFWRwUvWL) _#4consider_ _#video_
 * [ru] [10 советов и приемов, которые помогут вам стать лучшим разработчиком на VueJS](https://habr.com/ru/post/471212/) _#4consider_
+* [ru] [Подборка инструментов для быстрой разработки приложений на Vue.js](https://tproger.ru/translations/tools-for-vue-js/) _#4consider_
+* [ru] [Как создавать Vue-компоненты, словно профи](https://css-live.ru/articles/kak-sozdavat-vue-komponenty-slovno-profi.html) _#4consider_
 
 ## Graphics, SVG, animations
 
@@ -326,7 +335,7 @@
 \- углублённый разбор функционала элемента `<picture>`
 * [ru] [Сколько нужно верстальщиков, чтобы вставить `<picture>`? (Вадим Макеев)](https://www.youtube.com/watch?v=Szo-2D7TtEU) _#video_
 * [ru] [Почему гибкие изображения?](https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-* [ru] [Иллюстратор для верстальщиков](https://www.youtube.com/watch?v=h6CHstX40rE)
+* [ru] [Иллюстратор для верстальщиков](https://www.youtube.com/watch?v=h6CHstX40rE) _#video_
 * [ru] [Погружение в `object-fit: cover` с полифилом и без (Вадим Макеев)](https://www.youtube.com/watch?v=aZJMOVpMhtc) _#video_
 * [en] [anime.js](https://animejs.com/) _#library_\
 \- JavaScript animation engine
