@@ -1,11 +1,65 @@
 {
+  "tags": {
+    "themes": [
+      "a11y",
+      "angular",
+      "animations",
+      "bem",
+      "build-tools",
+      "canvas",
+      "css",
+      "css-grid",
+      "editors",
+      "git",
+      "graphics",
+      "html",
+      "javascript",
+      "nodejs",
+      "npm",
+      "oop",
+      "oop-design-patterns",
+      "postcss",
+      "pug",
+      "react",
+      "redux",
+      "rxjs",
+      "sass",
+      "semantics",
+      "svg",
+      "templating",
+      "testing",
+      "twig",
+      "typography",
+      "ux/ui",
+      "vuejs"
+    ],
+    "types": [
+      "!important",
+      "4consider",
+      "blog",
+      "docs",
+      "favourite",
+      "journal",
+      "library",
+      "mine",
+      "official",
+      "audio",
+      "video",
+      "sandbox",
+      "screencast",
+      "series",
+      "tools",
+      "tutorials"
+    ]
+  },
   "entries": [
     {
       "caption": "Frontend WhiteList",
       "url": "https://github.com/melnik909/frontend-whitelist",
       "lang": "ru",
       "tags": [
-        "favourite"
+        "favourite",
+        "unsorted"
       ],
       "legend": "список ценных авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов"
     },
@@ -14,7 +68,8 @@
       "url": "https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md",
       "lang": "ru",
       "tags": [
-        "favourite"
+        "favourite",
+        "unsorted"
       ],
       "legend": ""
     }

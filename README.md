@@ -11,7 +11,7 @@
 * [Accessibility, semantics](#accessibility-semantics)
 * [JavaScript](#javascript)
 * [Node.js, npm](#nodejs-npm)
-* [React + Redux](#react--redux)
+* [React](#react)
 * [Vue.js](#vuejs)
 * [Graphics, SVG, animations](#graphics-svg-animations)
 * [Fonts, typography](#fonts-typography)
@@ -132,7 +132,7 @@
 * [en] [CSS border-image clarifying](https://codepen.io/yialo/pen/mZJVBq) _#mine_\
 \- мои примеры различных значений CSS-свойства border-image. В частности, можно увидеть, что количество фрагментов при border-image-repeat: round вычисляется по правилам округления до целого (`Math.round()` в JS, например): [0, 0.5) ‒ в меньшую сторону, [0.5, 1) ‒ в б**о**льшую. Округляется частное от деления размера области бокса, предназначенной для размещения боковой части рамки, на размер соответствующей области выбранного в border-image-source изображения, оставшейся доступным после применения к нему border-image-slice.
 * [en] [`font-feature-settings`](https://css-tricks.com/almanac/properties/f/font-feature-settings/)
-* [en] [CSS Diner](https://flukeout.github.io/) _#simulator_\
+* [en] [CSS Diner](https://flukeout.github.io/) _#tutorial_\
 \- tutorial по CSS-селекторам
 * [ru] [Компоненты и разделение ответственности](https://css-live.ru/articles/komponenty-i-razdelenie-otvetstvennosti.html)
 * [ru] [Отладка CSS](https://css-live.ru/articles/otladka-css.html)
@@ -295,7 +295,7 @@
 * [ru] [Как запустить JavaScript с помощью Node.js](https://htmlacademy.ru/blog/useful/javascript/how-start-javascript-on-nodejs)
 * [ru] [11 простых npm трюков, которые вас удивят](https://medium.com/@echobrain/11-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D1%85-npm-%D1%82%D1%80%D1%8E%D0%BA%D0%BE%D0%B2-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B2%D0%B0%D1%81-%D1%83%D0%B4%D0%B8%D0%B2%D1%8F%D1%82-d00510587ec)
 
-## React + Redux
+## React
 
 * [en] [React official](https://reactjs.org/) _#library_
 * [en] [Redux official](https://redux.js.org/) _#library_
@@ -415,7 +415,7 @@
 \- настольная книга
 * [ru] [Скринкаст по Git](https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h) _#4consider_ _#video_\
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
-* [ru] [Learn Git Branching](https://learngitbranching.js.org/) _#simulator_ _#favourite_\
+* [ru] [Learn Git Branching](https://learngitbranching.js.org/) _#tutorial_ _#favourite_\
 \- интерактивный тур в игровом формате
 * [ru] [Словарь терминов Git и GitHub](https://github.com/web-standards-ru/dictionary/blob/master/git.md) _#favourite_
 * [en] [Git How To](https://githowto.com/)\

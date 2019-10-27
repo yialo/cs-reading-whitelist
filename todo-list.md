@@ -9,9 +9,8 @@
 3. Change _lang_ mark.
 4. Organize article chains to collections.
 5. Add ***author*** field.
-6. Prepare full hashtag list, by volumes.
-7. Add Chrome bookmarks and ***edu*** books.
-8. Add volume with interesting fonts.
+6. Add Chrome bookmarks.
+7. Add volume with interesting fonts.
 
 ## More far future
 
