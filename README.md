@@ -49,9 +49,12 @@
 * [ru] [36 (Вадим Макишвили)](https://www.youtube.com/watch?v=xPPCzryZK44) _#video_
 * [ru] [5 минут (Вадим Макишвили)](https://www.youtube.com/watch?v=iBHr8gKc5L8) _#video_
 * [ru] [Введение в понятие алгоритма](https://inf1.info/algorithmbasics)
-* [ru] [Как UX/UI дизайнеру достичь баланса между работой и обучением?]/
-/- рекомендации актуальны для всех работников IT-сферы
+* [ru] [Как UX/UI дизайнеру достичь баланса между работой и обучением?](https://vc.ru/design/84443-kak-ux-ui-dizayneru-dostich-balansa-mezhdu-rabotoy-i-obucheniem)\
+\- рекомендации актуальны для всех работников IT-сферы
 * [ru] [Тяжела ли работа программиста — взгляд с точки зрения психофизиологии](https://habr.com/ru/post/468277/)
+* [en] [Multiple Commands On A Single Windows Command Line](https://htipe.wordpress.com/2009/07/19/multiple-commands-on-a-single-windows-command-line/)\
+\- difference between `&` and `&&` in command line
+* [en] [Dr. Richard Felder's Study Checklist](https://www.engr.ncsu.edu/wp-content/uploads/drive/1Ib-0f_OMXAtmzDxncBziM4G0YWqRtret/1999-r_memo.pdf?fbclid=IwAR02E5DPt8muE6Na6MTF67BbALMoWpkpH0n0IaXwOlg3xH6MOsb-CTxrYaw)
 
 ## Blogs & journals
 
@@ -134,6 +137,9 @@
 * [ru] [Отладка CSS](https://css-live.ru/articles/otladka-css.html)
 * [en] [MaintainableCSS](https://maintainablecss.com/)\
 \- ещё один взгляд на модулярный CSS
+* [ru] [Почему я в восторге от «родных» CSS-переменных](https://css-live.ru/articles/about-native-css-variables.html)
+* [ru] [Оформление модальных окон](http://prgssr.ru/development/oformlenie-modalnyh-okon.html)
+* [en] [WebAssembly’s post-MVP future: A cartoon skill tree](https://hacks.mozilla.org/2018/10/webassemblys-post-mvp-future/)
 
 ## CSS class naming, BEM
 
@@ -206,6 +212,7 @@
 * [ru] [7 техник Sass для написания хорошего кода](https://techrocks.ru/2017/07/19/sass-techniques/) _#4consider_
 * [ru] [Справочник по синтаксису Razor для ASP.NET Core](https://docs.microsoft.com/ru-ru/aspnet/core/mvc/views/razor)
 * [en] [PostCSS Preset Env: Babel for CSS](https://dev.to/adrianbdesigns/postcss-preset-env-babel-for-css-12hp)
+* [ru] [Расставание с Sass: дело не в тебе, дело во мне](https://css-live.ru/articles/rasstavanie-s-sass-delo-ne-v-tebe-delo-vo-mne.html)
 
 ## Accessibility, semantics
 
@@ -264,6 +271,9 @@
 * [en] [Asyncstepping](http://asyncstepping.glitch.me/) _#tool_\
 \- наглядный пример для тестирования асинхронного JS в (Chrome) DevTools
 * [en] [Properties in JavaScript: definition versus assignment](https://2ality.com/2012/08/property-definition-assignment.html) _#4consider_
+* [en] [await vs return vs return await](https://jakearchibald.com/2017/await-vs-return-vs-return-await/)
+* [ru] [Почему использовать `return await` плохая идея?](https://medium.com/@kanby/%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-return-await-%D0%BF%D0%BB%D0%BE%D1%85%D0%B0%D1%8F-%D0%B8%D0%B4%D0%B5%D1%8F-e87b70015f0c)
+* [ru] [Полное понимание синхронного и асинхронного JavaScript с `async/await`](https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B0%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-javascript-%D1%81-async-await-ba5f47f4436)
 
 ## Node.js, npm
 
@@ -363,6 +373,7 @@
 * [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/)\
 \- советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug
 * [en] [Using rollup.js with gulp.js](https://duske.me/using-rollup-js-with-gulp-js/)
+* [en] [BemGo](https://github.com/werty1001/bemgo) _#bem_ _#build_
 
 ## Git
 
