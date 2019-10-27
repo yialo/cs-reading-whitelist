@@ -10,15 +10,16 @@
 * [Preprocessors, templating engines](#preprocessors-templating-engines)
 * [Accessibility, semantics](#accessibility-semantics)
 * [JavaScript](#javascript)
-* [Node JS, npm](#node-js-npm)
+* [Node.js, npm](#nodejs-npm)
 * [Vue.js](#vuejs)
 * [Graphics, SVG, animations](#graphics-svg-animations)
-* [UX & UI](#ux--ui)
 * [Fonts, typography](#fonts-typography)
+* [UX/UI](#uxui)
+* [OOP, design patterns](#oop-design-patterns)
+* [Testing](#testing)
+* [Build tools](#build-tools)
 * [Git](#git)
 * [Code editors](code-editors)
-* [Build tools](#build-tools)
-* [Testing](#testing)
 
 ## [UNSORTED]
 
@@ -38,6 +39,19 @@
 * [ru] [Бизнес, у которого никогда не будет клиентов из интернета](https://vc.ru/marketing/60262-biznes-u-kotorogo-nikogda-ne-budet-klientov-iz-interneta)
 * [en] [An A-Z Index of the Linux command line: bash + utilities](https://ss64.com/bash/)
 * [ru] [Оценка задач фронтендера](https://frontender.info/estimating-a-front-end-web-dev-job/)
+* [ru] [О jQuery и Bootstrap: расставляем точки над «i»](https://frontender.info/whats-wrong-with-jquery-and-bootstrap/)
+* [ru] [Как я победила 7-летний недосып и стала жаворонком](https://lifehacker.ru/pobedila-7-letnij-nedosyp/)
+* [ru] [Чем хорош язык Go и зачем его изучать? Все плюшки Golang](https://proglib.io/p/language-go/)
+* [ru] [Как я перестал верить технологиям (Алексей Симоненко)](https://www.youtube.com/watch?v=f4uXBpP_xxY) _#video_
+* [ru] [Лебедь рак и щука: как технологии тянут фронтенд на дно (Евгений Гусев)](https://www.youtube.com/watch?v=jPbqeSSDuug) _#video_
+* [ru] [Anti hype как не гнаться за технологиями и начать жить (Andrey Listochkin)](https://www.youtube.com/watch?v=xPFRUM_oDKA) _#video_
+* [ru] [Мерцание технологий, или Инжиниринг 21-го века (Максим Юзва)](https://www.youtube.com/watch?v=MzTng78DCm4) _#video_
+* [ru] [36 (Вадим Макишвили)](https://www.youtube.com/watch?v=xPPCzryZK44) _#video_
+* [ru] [5 минут (Вадим Макишвили)](https://www.youtube.com/watch?v=iBHr8gKc5L8) _#video_
+* [ru] [Введение в понятие алгоритма](https://inf1.info/algorithmbasics)
+* [ru] [Как UX/UI дизайнеру достичь баланса между работой и обучением?]/
+/- рекомендации актуальны для всех работников IT-сферы
+* [ru] [Тяжела ли работа программиста — взгляд с точки зрения психофизиологии](https://habr.com/ru/post/468277/)
 
 ## Blogs & journals
 
@@ -54,6 +68,7 @@
 * [en] [CSS-Tricks](https://css-tricks.com)
 * [en] [Flavio Copes](https://flaviocopes.com/)
 * [ru] [METANIT](https://metanit.com/)
+* [en] [VS Code can do that?!](https://vscodecandothat.com/) _#editors_
 
 ## HTML & CSS: common
 
@@ -61,7 +76,7 @@
 * [ru] [Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали](https://ru.hexlet.io/blog/posts/new-and-old-css-units)
 * [ru] [HTML & CSS: как не надо](https://yoksel.github.io/bad-practices/) _#4consider_\
 \- подборка антипаттернов
-* [ru] [Мой ванильный CSS (Вадим Макеев)](https://www.youtube.com/watch?v=CaDnbOjXjRg)
+* [ru] [Мой ванильный CSS (Вадим Макеев)](https://www.youtube.com/watch?v=CaDnbOjXjRg) _#video_
 * [en] [A Sliding Nightmare: Understanding the Range Input](https://css-tricks.com/sliding-nightmare-understanding-range-input/)
 * [en] [Styling Cross-Browser Compatible Range Inputs with CSS](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
 * [ru] [Упорядочивание багов кроссбраузерности Flexbox](https://css-live.ru/articles/uporyadochivanie-bagov-krossbrauzernosti-flexbox.html)
@@ -81,8 +96,8 @@
 * [ru] [Как на самом деле работают `z-index`](https://habr.com/ru/post/431046/)
 * [ru] [Единицы измерения: px, em, rem и другие](https://learn.javascript.ru/css-units)\
 \- приводятся особенности вычисления размеров, заданных в процентах
-* [ru] [Как вставить двадцать видео с Ютуба и не скачать слона (Вадим Макеев)](https://www.youtube.com/watch?v=4JS70KB9GS0)
-* [ru] [Прототип изоляции стилей для Shower на веб-компонентах (Вадим Макеев)](https://www.youtube.com/watch?v=_FRIRJZYlxU) _#4consider_
+* [ru] [Как вставить двадцать видео с Ютуба и не скачать слона (Вадим Макеев)](https://www.youtube.com/watch?v=4JS70KB9GS0) _#video_
+* [ru] [Прототип изоляции стилей для Shower на веб-компонентах (Вадим Макеев)](https://www.youtube.com/watch?v=_FRIRJZYlxU) _#4consider_ _#video_
 * [ru] [DocumentFragment: что это такое и как с ним (не) бороться](https://habr.com/ru/post/413287/)
 * [en] [Understanding the Critical Rendering Path](https://bitsofco.de/understanding-the-critical-rendering-path/) _#4consider_
 * [en] [Styling a Select Like It’s 2019](https://www.filamentgroup.com/lab/select-css.html)
@@ -113,17 +128,23 @@
 * [en] [CSS border-image clarifying](https://codepen.io/yialo/pen/mZJVBq) _#mine_\
 \- мои примеры различных значений CSS-свойства border-image. В частности, можно увидеть, что количество фрагментов при border-image-repeat: round вычисляется по правилам округления до целого (`Math.round()` в JS, например): [0, 0.5) ‒ в меньшую сторону, [0.5, 1) ‒ в б**о**льшую. Округляется частное от деления размера области бокса, предназначенной для размещения боковой части рамки, на размер соответствующей области выбранного в border-image-source изображения, оставшейся доступным после применения к нему border-image-slice.
 * [en] [`font-feature-settings`](https://css-tricks.com/almanac/properties/f/font-feature-settings/)
+* [en] [CSS Diner](https://flukeout.github.io/) _#simulator_\
+\- tutorial по CSS-селекторам
+* [ru] [Компоненты и разделение ответственности](https://css-live.ru/articles/komponenty-i-razdelenie-otvetstvennosti.html)
+* [ru] [Отладка CSS](https://css-live.ru/articles/otladka-css.html)
+* [en] [MaintainableCSS](https://maintainablecss.com/)\
+\- ещё один взгляд на модулярный CSS
 
 ## CSS class naming, BEM
 
 * [ru] [CSS common classnames](https://github.com/yialo/css-common-classnames/blob/master/README.md) _#favourite_\
 \- типовые названия CSS-классов
-* [ru] [БЭМ — норм, (Вадим Макеев, WSD в Новосибирске)](https://www.youtube.com/watch?v=RM55tkWfHDc)
+* [ru] [БЭМ — норм, (Вадим Макеев, WSD в Новосибирске)](https://www.youtube.com/watch?v=RM55tkWfHDc) _#video_
 * [ru] [Как называть css-классы](https://habr.com/ru/post/303174/)
 * [en] [BEM modifiers: multiple classes vs @extend](https://www.bensmithett.com/bem-modifiers-multiple-classes-vs-extend/)
 * [ru] [Режимы и квази-режимы](https://noteskeeper.ru/62/)
-* [ru] [CSS GuideLines: именование классов](https://habr.com/ru/post/236047/)\
-\- ценные замечания насчёт именования классов для состояний и касательно использования data-атрибутов в соответствии со спецификацией
+* [en] [CSS Guidelines (by Harry Roberts)](https://cssguidelin.es/) _#favourite_\
+\- огромный набор рекомендаций по БЭМ
 * [ru] [БЭМ: про обёртки](https://ru.bem.info/forum/656/)
 * [ru] [БЭМ: псевдоклассы vs. модификаторы](https://ru.bem.info/forum/1495/)\
 \- для чего нужны модификаторы состояний и почему псевдоклассов может быть недостаточно
@@ -139,6 +160,9 @@
 * [ru] [Разбираемся с border-image из CSS3](https://css-live.ru/articles-css/razbiraemsya-s-border-image-iz-css3.html)
 * [en] [`border-image` generator](https://border-image.com/) _#tool_
 * [ru] [Что такое CSS-модули и зачем они нам?](https://frontender.info/css-modules-part-1-need/)
+* [ru] [Семантический CSS](https://css-live.ru/articles/semanticheskij-css.html)
+* [ru] [БЭМантика: пишите осмысленные стили без повторов](https://css-live.ru/articles/bemantika-pishite-osmyslennye-stili-bez-povtorov.html)
+* [ru] [Как работают в флексбоксе `z-index` и автоотступы](http://prgssr.ru/development/kak-rabotayut-v-fleksbokse-z-index-i-avtootstupy.html)
 
 ## CSS Grid Layout
 
@@ -181,15 +205,17 @@
 * [en] [CommonMark Markdown](https://commonmark.org/) _#favourite_
 * [ru] [7 техник Sass для написания хорошего кода](https://techrocks.ru/2017/07/19/sass-techniques/) _#4consider_
 * [ru] [Справочник по синтаксису Razor для ASP.NET Core](https://docs.microsoft.com/ru-ru/aspnet/core/mvc/views/razor)
+* [en] [PostCSS Preset Env: Babel for CSS](https://dev.to/adrianbdesigns/postcss-preset-env-babel-for-css-12hp)
 
 ## Accessibility, semantics
 
 * [ru] [Семантическая верстка HTML5: начало будущего](http://codeacademy.ru/blog/62/semanticheskaya-verstka-html5-nachalo-budushchego)
 * [ru] [Правила использования ARIA в HTML](https://habr.com/ru/post/323876/) _#4consider_
 * [en] [HTML For Screen Readers - Labelling Elements](https://bitsofco.de/html-for-screen-readers-labelling-elements/)
-* [ru] [Семантика для циников (Вадим Макеев)](https://www.youtube.com/watch?v=bDYEnNzprzE)
+* [ru] [Семантика для циников (Вадим Макеев)](https://www.youtube.com/watch?v=bDYEnNzprzE) _#video_
 * [ru] [Элемент HTML `<time>`](https://habr.com/ru/post/229291/)
 * [en] [The Difference Between `role="presentation"` and `aria-hidden="true"`](https://timwright.org/blog/2016/11/19/difference-rolepresentation-aria-hiddentrue/)
+* [ru] [Понимание семантики](https://css-live.ru/articles/ponimanie-semantiki.html)
 
 ## JavaScript
 
@@ -225,8 +251,21 @@
 * [ru] [Что за черт, Javascript](https://habr.com/ru/company/mailru/blog/335292/) _#4consider_
 * [ru] [Prototype, proto и оператор `new`](https://habr.com/ru/post/140810/)\
 \- разбор действий, которые выполняет движок при обработке инструкций, содержащих `new`
+* [en] [Javascript Anomaly](https://github.com/ufocoder/javascript.anomaly)
+* [ru] [ES6: Реструктуризующее присваивание](http://jsraccoon.ru/es6-destructuring)
+* [ru] [Паттерны для масштабируемых JavaScript-приложений (Эдди Османи)](http://largescalejs.ru/) _#4consider_
+* [ru] [Глубокое погружение в ES-модули в картинках](https://medium.com/web-standards/es-modules-cartoon-dive-71f42c1e851a)
+* [en] [Logical XOR in JavaScript](http://www.howtocreate.co.uk/xor.html)
+* [ru] [HTMLCollection, NodeList и массив объектов](https://medium.com/@kanby/htmlcollection-nodelist-%D0%B8-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-582cbd9ae1fc)
+* [ru] [ES6: Расширение литерала объектов](http://jsraccoon.ru/es6-object-literal)
+* [ru] [Справочник современных концепций JavaScript: часть 1](https://medium.com/devschacht/glossary-of-modern-javascript-concepts-1198b24e8f56) _#series_
+* [ru] [Справочник современных концепций JavaScript: часть 2](https://medium.com/devschacht/%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B9-javascript-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-8ecf07f3f36a) _#series_ _#4consider_
+* [ru] [Разъяснения насчёт JavaScript, ECMA–262, TC39 и транскомпиляторов ECMAScript](https://frontender.info/javascript-ecma-262-tc39-and-ecmascript-transpilers-explained/)
+* [en] [Asyncstepping](http://asyncstepping.glitch.me/) _#tool_\
+\- наглядный пример для тестирования асинхронного JS в (Chrome) DevTools
+* [en] [Properties in JavaScript: definition versus assignment](https://2ality.com/2012/08/property-definition-assignment.html) _#4consider_
 
-## Node JS, npm
+## Node.js, npm
 
 * [ru] [npm Documentation](https://docs.npmjs.com/) _#library_
 * [ru] [Полезные команды для работы с Node.js](https://htmlacademy.ru/blog/useful/nodejs/useful-commands-for-working-with-nodejs)
@@ -235,6 +274,8 @@
 * [en] [The package.json guide](https://flaviocopes.com/package-json/)
 * [ru] [Разбираемся с версиями пакетов в node](https://monsterlessons.com/project/lessons/razbiraemsya-s-versiyami-paketov-v-node)
 * [en] [8 npm Tricks You Can Use to Impress Your Colleagues](https://www.freecodecamp.org/news/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e/)
+* [ru] [Как запустить JavaScript с помощью Node.js](https://htmlacademy.ru/blog/useful/javascript/how-start-javascript-on-nodejs)
+* [ru] [11 простых npm трюков, которые вас удивят](https://medium.com/@echobrain/11-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D1%85-npm-%D1%82%D1%80%D1%8E%D0%BA%D0%BE%D0%B2-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B2%D0%B0%D1%81-%D1%83%D0%B4%D0%B8%D0%B2%D1%8F%D1%82-d00510587ec)
 
 ## Vue.js
 
@@ -254,10 +295,10 @@
 * [ru] [Теория цвета в цифрах](https://habr.com/ru/post/189766/)
 * [en] [`srcset` and `sizes`](https://ericportis.com/posts/2014/srcset-sizes/) _#4consider_\
 \- углублённый разбор функционала элемента `<picture>`
-* [ru] [Сколько нужно верстальщиков, чтобы вставить `<picture>`? (Вадим Макеев)](https://www.youtube.com/watch?v=Szo-2D7TtEU)
+* [ru] [Сколько нужно верстальщиков, чтобы вставить `<picture>`? (Вадим Макеев)](https://www.youtube.com/watch?v=Szo-2D7TtEU) _#video_
 * [ru] [Почему гибкие изображения?](https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 * [ru] [Иллюстратор для верстальщиков](https://www.youtube.com/watch?v=h6CHstX40rE)
-* [ru] [Погружение в `object-fit: cover` с полифилом и без (Вадим Макеев)](https://www.youtube.com/watch?v=aZJMOVpMhtc)
+* [ru] [Погружение в `object-fit: cover` с полифилом и без (Вадим Макеев)](https://www.youtube.com/watch?v=aZJMOVpMhtc) _#video_
 * [en] [anime.js](https://animejs.com/) _#library_\
 \- JavaScript animation engine
 * [ru] [SVG маски и вау-эффекты: о магии простыми словами](https://habr.com/ru/post/349362/)
@@ -270,11 +311,6 @@
 * [ru] [Карманное руководство по написанию SVG](https://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html) _#4consider_ _#series_
 * [ru] [Структурирование, группировка и привязка в SVG — элементы `<g>`, `<use>`, `<defs>` и `<symbol>`](https://habr.com/ru/post/230443/)
 
-## UX & UI
-
-* [ru] [Введение в систему 8pt сеток](https://habr.com/ru/company/digital-ecosystems/blog/319700/) _#4consider_
-* [ru] [Как озаглавить форму записи в парикмахерскую](https://bureau.ru/soviet/20190514/)
-
 ## Fonts, typography
 
 * [ru] [Подключение шрифта к странице: как нужно делать сейчас](https://nicothin.pro/page/web-fonts)
@@ -285,6 +321,48 @@
 * [en] [Prevention of double font preloading in Blink-based browsers](https://github.com/cds-snc/ircc-rescheduler/pull/374)
 * [en] [The Inter typeface family](https://rsms.me/inter/) _#library_\
 \- крутой шрифт, разработанный специально для комфортного чтения с экрана
+* [en] [A comprehensive guide to font loading strategies](https://www.zachleat.com/web/comprehensive-webfonts/) _#4consider_
+
+## UX/UI
+
+* [ru] [Введение в систему 8pt сеток](https://habr.com/ru/company/digital-ecosystems/blog/319700/) _#4consider_
+* [ru] [Как озаглавить форму записи в парикмахерскую](https://bureau.ru/soviet/20190514/)
+* [ru] [Развиваем дизайнерское чутье](https://medium.com/russian/%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B5-%D1%87%D1%83%D1%82%D1%8C%D0%B5-b7cac4a84b56)
+* [ru] [Слышал мнение, что частица «не» не воспринимается читателем. Это правда?](https://bureau.ru/soviet/20190630/)
+* [ru] [Табличка на экране оплаты Эпл‑пея](https://bureau.ru/soviet/20190625/)
+* [ru] [О метафорах в иконках](https://bureau.ru/soviet/20190629/)
+* [ru] [Различие между иконкой и логотипом](https://bureau.ru/soviet/20190720/)
+* [ru] [Дорожный указатель «Фрамир двери»](https://bureau.ru/soviet/20190716/)\
+\- проработка дизайна дорожного указателя
+* [ru] [Подписи «переключателей»](https://bureau.ru/soviet/20190723/)
+
+## OOP, design patterns
+
+* [ru] [Паттерны ООП в метафорах](https://habr.com/ru/post/136766/)
+* [ru] [ООП в картинках](https://habr.com/ru/post/463125/) _#4consider_
+* [ru] [https://ota-solid.now.sh/](https://ota-solid.now.sh/) _#4consider_
+* [ru] [Код с запашком](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4_%D1%81_%D0%B7%D0%B0%D0%BF%D0%B0%D1%88%D0%BA%D0%BE%D0%BC) _#4consider_
+* [ru] [Рефакторинг](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3)
+* [ru] [Refactoring.guru](https://refactoring.guru/ru/) _#4consider_
+
+## Testing
+
+* [en] [The Three Types of Performance Testing](https://csswizardry.com/2018/10/three-types-of-performance-testing/)
+* [ru] [Три истории о тестировании (Марина Миронович)](https://www.youtube.com/watch?v=dfYZ6QejnnM) _#video_
+* [ru] [Как не надо тестировать (Иван Стрелков)](https://www.youtube.com/watch?v=ni9Zz1j8fI4) _#video_
+
+## Build tools
+
+* [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#4consider_  _#video_\
+\- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
+* [ru] [Скринкаст по Webpack](https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn) _#4consider_  _#video_\
+\- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
+* [ru] [Gulp для самых маленьких](https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html) _#4consider_
+* [ru] [A quick guide for switching to Gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0)\
+\- изменения в Gulp API после выхода 4-й версии
+* [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/)\
+\- советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug
+* [en] [Using rollup.js with gulp.js](https://duske.me/using-rollup-js-with-gulp-js/)
 
 ## Git
 
@@ -292,11 +370,11 @@
 \- подробнейший FAQ в переводе HTML Academy
 * [en] [Pro Git](https://git-scm.com/book/en/v2) _#!important_\
 \- настольная книга
-* [ru] [Скринкаст по Git](https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h) _#4consider_\
+* [ru] [Скринкаст по Git](https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h) _#4consider_ _#video_\
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
-* [ru] [Learn Git Branching](https://learngitbranching.js.org/) _#favourite_\
+* [ru] [Learn Git Branching](https://learngitbranching.js.org/) _#simulator_ _#favourite_\
 \- интерактивный тур в игровом формате
-* [ru] [Словарь терминов Git и GitHub](https://github.com/web-standards-ru/dictionary/blob/master/git.md) _#favourite_\
+* [ru] [Словарь терминов Git и GitHub](https://github.com/web-standards-ru/dictionary/blob/master/git.md) _#favourite_
 * [en] [Git How To](https://githowto.com/)\
 \- интерактивный тур
 * [ru] [Шпаргалка по консольным командам Git](https://github.com/nicothin/web-development/blob/master/git/readme.md) _#favourite_
@@ -317,19 +395,3 @@
 * [ru] [Просто о Vim](http://rus-linux.net/MyLDP/BOOKS/Vim/prosto-o-vim-01.html) _#4consider_
 * [en] [10 essential Vim plugins for 2018](https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9)
 * [ru] [Как настроить VS Code для разработки на JavaScript](https://guides.hexlet.io/vscode-js-setup/)
-
-## Build tools
-
-* [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#4consider_\
-\- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
-* [ru] [Скринкаст по Webpack](https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn) _#4consider_\
-\- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
-* [ru] [Gulp для самых маленьких](https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html) _#4consider_
-* [ru] [A quick guide for switching to Gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0)\
-\- изменения в Gulp API после выхода 4-й версии
-* [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/)\
-\- советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug
-
-## Testing
-
-* [en] [The Three Types of Performance Testing](https://csswizardry.com/2018/10/three-types-of-performance-testing/)

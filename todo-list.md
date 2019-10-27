@@ -8,7 +8,9 @@
 2. Move browser bookmarks related to computer science and userful services here
 3. Change _lang_ mark.
 4. Organize article chains to collections.
-5. Remove _#seen_ mark for corresponding items.
+5. Add ***author*** field.
+6. Prepare full hashtag list, by volumes.
+7. Add Chrome bookmarks and ***edu*** books.
 
 ## More far future
 
