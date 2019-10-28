@@ -1,5 +1,10 @@
+const fs = require('fs');
 const path = require('path');
-const cssExtractPlugin = require('mini-css-extract-plugin');
+
+const CssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const HtmlPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const Path = {
   SRC: path.resolve(__dirname, './src'),
