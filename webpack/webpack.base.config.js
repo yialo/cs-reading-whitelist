@@ -7,16 +7,20 @@ const HtmlPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const Path = {
-  SRC: path.resolve(__dirname, './src'),
-  DIST: path.resolve(__dirname, './dist'),
-  PUBLIC: path.resolve(__dirname, './public'),
+  SRC: path.join(__dirname, '../src'),
+  DIST: path.join(__dirname, '../dist'),
   ASSETS: 'assets/',
 };
+
+const PAGES_DIR = path.join(Path.SRC, './html');
+const PAGES = fs.readdirSync(PAGES_DIR).filter((filename) => filename.endsWith('.html'));
 
 module.exports = {
   context: Path.SRC,
 
-  entry: 'index.js',
+  entry: {
+    'app': Path.SRC,
+  },
 
   externals: {
     path: Path,
@@ -29,30 +33,87 @@ module.exports = {
         exclude: '/node_modules/',
         loader: 'babel-loader',
       },
+
+      // FIXME: find out reason of index.css emission
       {
         test: /\.css$/,
         exclude: '/node_modules/',
         use: [
           'style-loader',
+          CssExtractPlugin.loader,
           {
-            loader: cssExtractPlugin.loader,
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
           },
-          'css-loader',
-          'postcss-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
         ],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        exclude: '/node_modules/',
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        },
       },
     ],
   },
 
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          name: 'vendors',
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'all',
+          enforce: true,
+        },
+      },
+    },
+  },
+
   output: {
-    filename: 'bundle.js',
+    filename: `${Path.ASSETS}js/[name].[hash].js`,
     path: Path.DIST,
     publicPath: '/',
   },
 
   plugins: [
-    new cssExtractPlugin({
-      filename: '[name].css',
+    new CleanWebpackPlugin(),
+    new CopyPlugin([
+      {
+        from: Path.ASSETS,
+        to: `${Path.DIST}/${Path.ASSETS}`,
+      },
+    ]),
+    new CssExtractPlugin({
+      filename: `${Path.ASSETS}css/[name].[hash].css`,
     }),
+
+    // TODO: add favicon
+    ...PAGES.map((page) => (
+      new HtmlPlugin({
+        filename: page,
+        template: `${PAGES_DIR}/${page}`,
+      })
+    )),
   ],
+
+  resolve: {
+    alias: {
+      '~': Path.SRC,
+    },
+  },
+
+  stats: {
+    entrypoints: false,
+    modules: false,
+  },
 };
