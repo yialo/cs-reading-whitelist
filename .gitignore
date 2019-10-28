@@ -1,0 +1,16 @@
+# Build directory
+/dist
+
+# npm files
+node_modules/
+npm-debug.*
+package-lock.json
+
+# env files
+.env
+.env.local
+.env.*.local
+
+# Service files
+*.log*
+bash.exe.stackdump
