@@ -27,7 +27,7 @@ Links to useful development tools and good articles about computer science
 ## [UNSORTED]
 
 * [ru] [Frontend WhiteList](https://github.com/melnik909/frontend-whitelist) _#favourite_\
-\- список ценных авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов
+\- список авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов
 * [ru] [Словарь фронтенд-терминов](https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md) _#favourite_
 * [ru] [Установка Apache 2.4 + PHP 5.6 + MySQL 5.6 на Windows 7-10](https://blog.denisbondar.com/post/apache24php56win7)
 * [ru] [Рекомендуемые книги по frontend-разработке](https://web-standards.ru/books/) _#favourite_
@@ -385,7 +385,7 @@ Links to useful development tools and good articles about computer science
 * [ru] [SolidBook](https://ota-solid.now.sh/) _#4consider_
 * [ru] [Код с запашком](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4_%D1%81_%D0%B7%D0%B0%D0%BF%D0%B0%D1%88%D0%BA%D0%BE%D0%BC) _#4consider_
 * [ru] [Рефакторинг](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3)
-* [ru] [Refactoring.guru](https://refactoring.guru/ru/) _#4consider_
+* [ru] [Refactoring Guru](https://refactoring.guru/ru/) _#4consider_
 
 ## Testing
 
@@ -417,11 +417,12 @@ Links to useful development tools and good articles about computer science
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
 * [ru] [Learn Git Branching](https://learngitbranching.js.org/) _#tutorial_ _#favourite_\
 \- интерактивный тур в игровом формате
+* [ru] [First Aid Git](http://firstaidgit.ru/) _#favourite_\
+\- подробнейший FAQ в переводе [HTML Academy](https://htmlacademy.ru/)
 * [ru] [Словарь терминов Git и GitHub](https://github.com/web-standards-ru/dictionary/blob/master/git.md) _#favourite_
 * [ru] [Шпаргалка по консольным командам Git](https://github.com/nicothin/web-development/blob/master/git/readme.md) _#favourite_
-* [ru] [First Aid Git](http://firstaidgit.ru/) _#favourite_\
+* [ru] [Шпаргалка по git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html) _#favourite_
 * [en] [Git and Git Flow Cheat Sheet](http://bilalarslan.me/git-cheat-sheet/) _#favourite_
-\- подробнейший FAQ в переводе HTML Academy
 * [en] [Git How To](https://githowto.com/)\
 \- интерактивный тур
 * [ru] [Режим fast-forward в Git](http://zencoder.ru/git/fast-forward-git/)
