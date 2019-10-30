@@ -149,6 +149,9 @@ Links to useful development tools and good articles about computer science
 * [ru] [Фантастические веб-спецификации и где они обитают](https://css-live.ru/css/fantasticheskie-veb-specifikacii-i-gde-oni-obitayut.html)
 * [ru] [Аксиоматический CSS и лоботомированные совы](https://frontender.info/axiomatic-css-and-lobotomized-owls/)
 * [ru] [12 базовых рефлексов верстальщика](https://nicothin.pro/page/reflex)
+* [ru] [Разбираемся с border-image из CSS3](https://css-live.ru/articles-css/razbiraemsya-s-border-image-iz-css3.html)
+* [en] [`border-image` generator](https://border-image.com/) _#tool_
+* [ru] [Как работают в флексбоксе `z-index` и автоотступы](http://prgssr.ru/development/kak-rabotayut-v-fleksbokse-z-index-i-avtootstupy.html)
 
 ## CSS class naming, BEM
 
@@ -172,13 +175,10 @@ Links to useful development tools and good articles about computer science
 * [en] [Nesting Components](http://simurai.com/blog/2015/05/11/nesting-components)
 * [ru] [idiomatic-css: Принципы написания однородного CSS-кода](https://github.com/necolas/idiomatic-css/blob/master/translations/ru-RU/README.md)
 * [en] [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
-* [ru] [Разбираемся с border-image из CSS3](https://css-live.ru/articles-css/razbiraemsya-s-border-image-iz-css3.html)
-* [en] [`border-image` generator](https://border-image.com/) _#tool_
 * [ru] [Что такое CSS-модули и зачем они нам?](https://frontender.info/css-modules-part-1-need/)
 * [ru] [Семантический CSS](https://css-live.ru/articles/semanticheskij-css.html)
 * [ru] [БЭМантика: пишите осмысленные стили без повторов](https://css-live.ru/articles/bemantika-pishite-osmyslennye-stili-bez-povtorov.html)
-* [ru] [Как работают в флексбоксе `z-index` и автоотступы](http://prgssr.ru/development/kak-rabotayut-v-fleksbokse-z-index-i-avtootstupy.html)
-* [ru] [Пишем БЭМ правильно (Игорь Зенич)](https://www.youtube.com/watch?v=kBgHdSOj33A) _#video_ _#4consider_
+* [ru] [Пишем БЭМ правильно (Игорь Зенич)](https://www.youtube.com/watch?v=kBgHdSOj33A) _#video_
 
 ## CSS Grid Layout
 
@@ -223,6 +223,8 @@ Links to useful development tools and good articles about computer science
 * [ru] [Справочник по синтаксису Razor для ASP.NET Core](https://docs.microsoft.com/ru-ru/aspnet/core/mvc/views/razor)
 * [en] [PostCSS Preset Env: Babel for CSS](https://dev.to/adrianbdesigns/postcss-preset-env-babel-for-css-12hp)
 * [ru] [Расставание с Sass: дело не в тебе, дело во мне](https://css-live.ru/articles/rasstavanie-s-sass-delo-ne-v-tebe-delo-vo-mne.html)
+* [en] [AST explorer](https://astexplorer.net/) _#tool_\
+\- песочница для тестирования трансформаций JavaScript, CSS и многого другого, подходит для прототипирования PostCSS-плагинов
 
 ## Accessibility, semantics
 
@@ -364,6 +366,7 @@ Links to useful development tools and good articles about computer science
 * [en] [A comprehensive guide to font loading strategies](https://www.zachleat.com/web/comprehensive-webfonts/) _#4consider_
 * [ru] [Ответ на главный вопрос в CSS (Михаил Иванкив)](https://www.youtube.com/watch?v=cO2-zYzjyD0) _#video_\
 \- подходы к решению проблемы масштабирования текста
+* [Исчерпывающее руководство по стратегиям загрузки веб-шрифтов](https://css-live.ru/articles/ischerpyvayushhee-rukovodstvo-po-strategiyam-zagruzki-veb-shriftov.html) _#4consider_
 
 ## UX/UI
 
@@ -408,6 +411,7 @@ Links to useful development tools and good articles about computer science
 * [en] [BemGo](https://github.com/werty1001/bemgo) _#bem_ _#build_
 * [ru] [Готовим идеальный CSS](https://habr.com/ru/company/constanta/blog/428800/)
 \- подключение и оптимизация стилей с помощью Webpack
+* [ru] [Webpack 4 | Jack Coder](https://www.youtube.com/playlist?list=PLkCrmfIT6LBQWN02hNj6r1daz7965GxsV) _#video_
 
 ## Git
 
