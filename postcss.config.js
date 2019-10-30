@@ -25,6 +25,11 @@ module.exports = {
             {
               discardComments: true,
             },
+            {
+              normalizeCharset: {
+                add: true,
+              },
+            },
           ],
         }
         : false

@@ -1,16 +1,27 @@
 const merge = require('webpack-merge');
+const webpack = require('webpack');
+
+process.env.NODE_ENV = 'development';
+
 const baseConfig = require('./base.config');
 
-const Path = baseConfig.externals.path;
-
-module.exports = merge(baseConfig, {
+const devConfig = merge(baseConfig, {
   mode: 'development',
 
-  devtool: 'cheap-module-source-map',
-
   devServer: {
-    contentBase: Path.PUBLIC,
     overlay: true,
     port: 8081,
   },
+
+  devtool: 'cheap-module-eval-source-map',
+
+  plugins: [
+    new webpack.SourceMapDevToolPlugin({
+      filename: '[file].map',
+    }),
+  ],
+});
+
+module.exports = new Promise((resolve) => {
+  resolve(devConfig);
 });

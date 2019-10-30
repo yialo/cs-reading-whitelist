@@ -9,11 +9,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const Path = {
   SRC: path.join(__dirname, '../src'),
   DIST: path.join(__dirname, '../dist'),
-  ASSETS: 'assets/',
 };
 
-const PAGES_DIR = path.join(Path.SRC, './html');
-const PAGES = fs.readdirSync(PAGES_DIR).filter((filename) => filename.endsWith('.html'));
+const PAGES_DIR = path.join(Path.SRC, './pug/pages');
+const PAGES = fs.readdirSync(PAGES_DIR).filter((filename) => filename.endsWith('.pug'));
 
 module.exports = {
   context: Path.SRC,
@@ -22,12 +21,12 @@ module.exports = {
     'app': Path.SRC,
   },
 
-  externals: {
-    path: Path,
-  },
-
   module: {
     rules: [
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader',
+      },
       {
         test: /\.js$/,
         exclude: '/node_modules/',
@@ -45,6 +44,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               sourceMap: true,
+              importLoaders: 1,
             },
           },
           {
@@ -57,10 +57,18 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        exclude: '/node_modules/',
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]',
+          name: '[name].[hash].[ext]',
+          outputPath: 'assets/img',
+        },
+      },
+      {
+        test: /\.woff2?/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[hash].[ext]',
+          outputPath: 'assets/fonts',
         },
       },
     ],
@@ -80,26 +88,20 @@ module.exports = {
   },
 
   output: {
-    filename: `${Path.ASSETS}js/[name].[hash].js`,
+    filename: `assets/js/[name].[hash].js`,
     path: Path.DIST,
     publicPath: '/',
   },
 
   plugins: [
     new CleanWebpackPlugin(),
-    new CopyPlugin([
-      {
-        from: Path.ASSETS,
-        to: `${Path.DIST}/${Path.ASSETS}`,
-      },
-    ]),
     new CssExtractPlugin({
-      filename: `${Path.ASSETS}css/[name].[hash].css`,
+      filename: `assets/css/[name].[hash].css`,
     }),
 
-    // TODO: add favicon
     ...PAGES.map((page) => (
       new HtmlPlugin({
+        // favicon: 'favicons/favicon.ico',
         filename: page,
         template: `${PAGES_DIR}/${page}`,
       })
@@ -108,11 +110,12 @@ module.exports = {
 
   resolve: {
     alias: {
-      '~': Path.SRC,
+      '@': Path.SRC,
     },
   },
 
   stats: {
+    assets: false,
     entrypoints: false,
     modules: false,
   },
