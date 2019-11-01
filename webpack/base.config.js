@@ -102,7 +102,7 @@ module.exports = {
     ...PAGES.map((page) => (
       new HtmlPlugin({
         // favicon: 'favicons/favicon.ico',
-        filename: page,
+        filename: page.replace('.pug', '.html'),
         template: `${PAGES_DIR}/${page}`,
       })
     )),
