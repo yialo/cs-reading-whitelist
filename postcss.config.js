@@ -13,6 +13,7 @@ module.exports = {
         'not-pseudo-class': true,
       },
     },
+    './src/postcss/font-face-set': {},
     'cssnano': (
       process.env.NODE_ENV === 'production'
         ? {

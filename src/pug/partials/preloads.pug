@@ -1,9 +1,9 @@
 - const { fonts } = require('../../json/fonts.json');
 
 - for (const { fileNameBase, sets } of fonts)
-  - for (const { weigth, style } of sets)
+  - for (const { weight, style } of sets)
     link(
       rel='preload',
-      href=`/assets/fonts/${fileNameBase}_${weigth}_${style}.woff2`,
+      href=`/assets/fonts/${fileNameBase}_${weight}_${style}.woff2`,
       as='font',
     )

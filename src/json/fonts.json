@@ -9,7 +9,7 @@
       },
       "sets": [
         {
-          "weigth": 400,
+          "weight": 400,
           "style": "normal",
           "localSuffix": {
             "os": "Regular",
@@ -17,7 +17,7 @@
           }
         },
         {
-          "weigth": 400,
+          "weight": 400,
           "style": "italic",
           "localSuffix": {
             "os": "Italic",
@@ -25,7 +25,7 @@
           }
         },
         {
-          "weigth": 700,
+          "weight": 700,
           "style": "normal",
           "localSuffix": {
             "os": "Bold",
@@ -33,7 +33,7 @@
           }
         },
         {
-          "weigth": 700,
+          "weight": 700,
           "style": "italic",
           "localSuffix": {
             "os": "Bold Italic",
