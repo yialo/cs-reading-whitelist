@@ -1,10 +1,6 @@
-const normalize = require('postcss-normalize');
-
-const importConfig = normalize().postcssImport();
-
 module.exports = {
   plugins: {
-    'postcss-import': importConfig,
+    'postcss-import': {},
     'postcss-advanced-variables': {},
     'postcss-color-function': {},
     'postcss-preset-env': {

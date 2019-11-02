@@ -25,15 +25,20 @@ module.exports = {
     rules: [
       {
         test: /\.pug$/,
-        loader: 'pug-loader',
+        use: [
+          {
+            loader: 'pug-loader',
+            options: {
+              pretty: true,
+            },
+          },
+        ],
       },
       {
         test: /\.js$/,
         exclude: '/node_modules/',
         loader: 'babel-loader',
       },
-
-      // FIXME: find out reason of index.css emission
       {
         test: /\.css$/,
         exclude: '/node_modules/',
@@ -98,9 +103,16 @@ module.exports = {
     new CssExtractPlugin({
       filename: `assets/css/[name].[hash].css`,
     }),
+    new CopyPlugin([
+      {
+        from: path.join(Path.SRC, 'static/fonts'),
+        to: path.join(Path.DIST, 'assets/fonts'),
+      },
+    ]),
 
     ...PAGES.map((page) => (
       new HtmlPlugin({
+        // TODO: add favicon
         // favicon: 'favicons/favicon.ico',
         filename: page.replace('.pug', '.html'),
         template: `${PAGES_DIR}/${page}`,

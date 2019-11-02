@@ -6,7 +6,7 @@
     "not dead"
   ],
   "dependencies": {
-    "postcss-normalize": "8.0.1"
+    "@csstools/normalize.css": "10.1.0"
   },
   "description": "Links to useful development tools and good articles about computer science",
   "devDependencies": {
@@ -50,7 +50,8 @@
   },
   "scripts": {
     "build": "webpack --config webpack/production.config.js",
-    "dev": "webpack-dev-server --config webpack/development.config.js"
+    "dev": "webpack-dev-server --config webpack/development.config.js",
+    "start": "npm run dev"
   },
   "version": "0.1.3"
 }

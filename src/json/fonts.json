@@ -1,0 +1,46 @@
+{
+  "fonts": [
+    {
+      "family": "Source Sans Pro",
+      "fileNameBase": "source-sans-pro",
+      "localBase": {
+        "os": "Source Sans Pro",
+        "postScript": "SourceSansPro"
+      },
+      "sets": [
+        {
+          "weigth": 400,
+          "style": "normal",
+          "localSuffix": {
+            "os": "Regular",
+            "postScript": "Regular"
+          }
+        },
+        {
+          "weigth": 400,
+          "style": "italic",
+          "localSuffix": {
+            "os": "Italic",
+            "postScript": "Italic"
+          }
+        },
+        {
+          "weigth": 700,
+          "style": "normal",
+          "localSuffix": {
+            "os": "Bold",
+            "postScript": "Bold"
+          }
+        },
+        {
+          "weigth": 700,
+          "style": "italic",
+          "localSuffix": {
+            "os": "Bold Italic",
+            "postScript": "BoldItalic"
+          }
+        }
+      ]
+    }
+  ]
+}

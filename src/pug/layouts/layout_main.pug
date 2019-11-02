@@ -1,6 +1,13 @@
+block variables
+
 doctype html
-html
+html(lang='ru')
   head
     meta(charset='utf-8')
-  body
+    meta(name='author', content='Aleksei and Maria Arro')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title #{pageTitle}
+    include ../partials/preloads.pug
+  body.page
     block content

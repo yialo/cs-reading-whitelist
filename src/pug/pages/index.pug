@@ -1,4 +1,26 @@
 extends ../layouts/layout_main.pug
 
+block variables
+  - const pageTitle = 'Yialo\'s Reading Whitelist';
+
 block content
-  h1 Hello from Webpack!
+  .page__wrapper(id='app')
+    h1 Computer Science Reading Whitelist
+    section
+      h2 Tag cloud
+      p
+        -
+          const { tags } = require('../../json/tags.json');
+          const tagList = Object.values(tags)
+            .map((tagArr) => tagArr)
+            .flat();
+        each tag, i in tagList
+          span: a= `#${tag}`
+          if (i !== tagList.length - 1)
+            = ' '
+    section
+      h2 Содержание
+      ul.s-list
+        li: a [UNSORTED]
+        li: a Blogs & journals
+        li: a HTML & CSS: common

@@ -1,0 +1,14 @@
+.s-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.s-visually-hidden {
+  &:not(:active, :focus),
+  &:matches(input[type="checkbox"]),
+  &:matches(input[type="radio"]) {
+    @include visually-hiding();
+  }
+}
