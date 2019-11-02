@@ -1,0 +1,11 @@
+section.tag-cloud
+  h2.s-heading Tag cloud
+  p.tag-cloud__items
+    -
+      const { tags } = require('../../json/tags.json');
+      const tagList = Object.values(tags)
+        .map((tagArr) => tagArr)
+        .flat();
+    each tag, i in tagList
+      span.tag-cloud__item
+        a.tag-cloud__link #{tag}

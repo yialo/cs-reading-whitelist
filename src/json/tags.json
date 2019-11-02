@@ -31,7 +31,7 @@
       "twig",
       "typography",
       "ux/ui",
-      "vuejs"
+      "vue"
     ],
     "types": [
       "!important",

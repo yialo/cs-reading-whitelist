@@ -19,11 +19,6 @@ body {
   background-color: $color-page-background;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 img,
 svg,
 picture,

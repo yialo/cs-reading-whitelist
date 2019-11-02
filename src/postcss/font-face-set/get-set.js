@@ -28,7 +28,7 @@ module.exports = (fontList, srcMap) => {
           `local("${localBase.os} ${localSuffix.os}"),
           local("${localBase.postScript}-${localSuffix.postScript}"),
           url("${filePathBase}2") format("woff2"),
-          url("${filePathBase}") format("woff)`
+          url("${filePathBase}") format("woff")`
         );
 
         const srcDecl = postcss.decl({
