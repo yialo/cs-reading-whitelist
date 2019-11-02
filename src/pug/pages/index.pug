@@ -21,6 +21,6 @@ block content
     section
       h2 Содержание
       ul.s-list
-        li: a [UNSORTED]
-        li: a Blogs & journals
-        li: a HTML & CSS: common
+        - const { contents } = require('../../json/contents.json');
+        - for (const { text, anchor } of contents)
+          li: a(href=anchor) #{text}

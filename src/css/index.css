@@ -3,6 +3,7 @@
 @import "utils/mixins.css";
 @import "utils/selectors.css";
 
-@import "common/font-faces.css";
+/* FIXME: source map loss */
+/* @import "common/font-faces.css"; */
 @import "common/global.css";
 @import "common/scaffold.css";
