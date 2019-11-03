@@ -1,9 +1,8 @@
 .page__wrapper {
-  --color-conic-dark: #dddddd;
+  --color-conic-dark: #eeeeee;
 
   max-width: 672px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 100%;
   padding: 48px 24px;
   background-color: white;
   background-image: conic-gradient(

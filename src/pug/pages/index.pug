@@ -1,21 +1,23 @@
 extends ../layouts/layout_main.pug
 
+include ../mixins/chapter.pug
+include ../mixins/tag-cloud.pug
+
 block variables
   - const pageTitle = 'Yialo\'s Reading Whitelist';
 
-block content
-  .page__wrapper(id='app')
-    h1.s_text-block Computer Science Reading Whitelist
-    section.contents
-      h2.s_text-block.contents__heading Содержание
-      ul.s_list.contents__list
-        - const { contents } = require('../../json/contents.json');
-        - for (const { text, anchor } of contents)
-          li: a(href=anchor) #{text}
-    section.chapter
-      h2.s_text-block.chapter__heading [UNSORTED]
-      ul.s_list.chapter__list
-        - const { entries } = require('../../json/entries.json');
-        - for (const { caption, url, lang, tags, legend } of entries)
-          li #[a(href=url) #{caption}]#{legend ? ` - ${legend}` : ''}
-    include ../partials/tag-cloud.pug
+block body
+  body.page
+    .page__wrapper(id='app')
+      h1.s_text-block Computer Science Reading Whitelist
+      section.contents
+        h2.s_text-block.contents__heading Содержание
+        ul.s_list.contents__list
+          - const { contents } = require('../../json/contents.json');
+          - for (const { text, anchor } of contents)
+            li: a(href=anchor) #{text}
+      +chapter({
+        heading: '[UNSORTED]',
+        srcName: 'unsorted',
+      })
+      +tag-cloud()

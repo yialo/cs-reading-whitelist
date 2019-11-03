@@ -1,0 +1,15 @@
+mixin head()
+  - const { fonts } = require('../../json/fonts.json');
+  head
+    meta(charset='utf-8')
+    meta(name='author', content='Aleksei and Maria Arro')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title #{pageTitle}
+    - for (const { fileNameBase, sets } of fonts)
+      - for (const { weight, style } of sets)
+        link(
+          rel='preload',
+          href=`https://yialo.github.io/cs-reading-whitelist/assets/fonts/${fileNameBase}_${weight}_${style}.woff2`,
+          as='font',
+        )
