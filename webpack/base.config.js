@@ -62,22 +62,6 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[hash].[ext]',
-          outputPath: 'assets/img',
-        },
-      },
-      {
-        test: /\.woff2?/i,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[hash].[ext]',
-          outputPath: 'assets/fonts',
-        },
-      },
     ],
   },
 
@@ -95,7 +79,7 @@ module.exports = {
   },
 
   output: {
-    filename: `assets/js/[name].[hash].js`,
+    filename: `assets/js/[name].js`,
     path: Path.DIST,
     publicPath: '/',
   },
@@ -103,34 +87,35 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CssExtractPlugin({
-      filename: `assets/css/[name].[hash].css`,
+      filename: `assets/css/[name].css`,
     }),
     new CopyPlugin([
       {
-        from: path.join(Path.SRC, 'static/fonts'),
-        to: path.join(Path.DIST, 'assets/fonts'),
+        from: path.join(Path.SRC, 'static/fonts/'),
+        to: path.join(Path.DIST, 'assets/fonts/[name].[hash].[ext]'),
       },
     ]),
 
     ...PAGES.map((page) => (
       new HtmlPlugin({
-        // TODO: add favicon
-        // favicon: 'favicons/favicon.ico',
+        inject: false,
         filename: page.replace('.pug', '.html'),
         template: `${PAGES_DIR}/${page}`,
       })
     )),
   ],
 
+  // FIXME: aliases do not working now
   resolve: {
     alias: {
       '@': Path.SRC,
+      'Public': 'https://yialo.github.io/cs-reading-whitelist',
     },
   },
 
   stats: {
     assets: false,
-    entrypoints: false,
+    // entrypoints: false,
     modules: false,
   },
 };

@@ -4,7 +4,9 @@ include ../mixins/chapter.pug
 include ../mixins/tag-cloud.pug
 
 block variables
-  - const pageTitle = 'Yialo\'s Reading Whitelist';
+  -
+    const pageTitle = 'Yialo\'s Reading Whitelist';
+    const pathBase = 'https://yialo.github.io/cs-reading-whitelist';
 
 block body
   body.page
@@ -21,3 +23,4 @@ block body
         srcName: 'unsorted',
       })
       +tag-cloud()
+    +body-scripts()
