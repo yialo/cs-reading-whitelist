@@ -29,4 +29,3 @@
 
 * @angular/cli
 * @vue/cli
-* gulp-cli

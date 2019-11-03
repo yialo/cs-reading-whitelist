@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:--ab {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: var(--page-min-width);
+  min-height: 100vh;
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  color: black;
+  background-color: var(--color-page-background);
+}
+
+img,
+svg,
+picture,
+video {
+  display: block;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+}
