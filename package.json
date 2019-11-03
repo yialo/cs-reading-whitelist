@@ -53,5 +53,5 @@
     "dev": "webpack-dev-server --config webpack/development.config.js",
     "start": "npm run dev"
   },
-  "version": "0.1.3"
+  "version": "0.1.4"
 }
