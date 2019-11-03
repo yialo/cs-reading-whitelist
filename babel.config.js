@@ -1,3 +1,5 @@
+'use strict';
+
 // TODO: add corejs3
 
 module.exports = {

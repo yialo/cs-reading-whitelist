@@ -1,5 +1,6 @@
+'use strict';
+
 const merge = require('webpack-merge');
-const webpack = require('webpack');
 
 process.env.NODE_ENV = 'production';
 

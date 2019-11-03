@@ -1,3 +1,7 @@
-@import "tag-cloud__[v].css";
+@import "tag-cloud__heading.css";
 @import "tag-cloud__item.css";
 @import "tag-cloud__items.css";
+
+.tag-cloud {
+  --gutter: 4px;
+}

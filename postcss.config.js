@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   plugins: {
     'postcss-import': {},
@@ -7,6 +9,7 @@ module.exports = {
       stage: 3,
       features: {
         'custom-media-queries': true,
+        'custom-properties': false,
         'custom-selectors': true,
         'matches-pseudo-class': true,
         'nesting-rules': true,

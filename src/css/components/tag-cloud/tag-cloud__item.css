@@ -1,4 +1,4 @@
 .tag-cloud__item {
-  margin-left: $gutter;
-  margin-right: $gutter;
+  margin-left: var(--gutter);
+  margin-right: var(--gutter);
 }

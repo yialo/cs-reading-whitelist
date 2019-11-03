@@ -1,12 +1,15 @@
-* {
-  @nest .page__wrapper > * + & {
-    margin-top: 32px;
-  }
-}
-
 .page__wrapper {
-  width: 800px;
+  --color-conic-dark: #dddddd;
+
+  max-width: 672px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 32px;
+  padding: 48px 24px;
+  background-color: white;
+  background-image: conic-gradient(
+    at center,
+    var(--color-conic-dark) 120deg,
+    white 180deg,
+    var(--color-conic-dark) 360deg
+  );
 }
