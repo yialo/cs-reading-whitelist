@@ -10,7 +10,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const Path = {
   SRC: path.join(__dirname, '../src'),
-  DIST: path.join(__dirname, '../dist'),
+  DIST: path.join(__dirname, '../docs'),
 };
 
 const PAGES_DIR = path.join(Path.SRC, './pug/pages');
