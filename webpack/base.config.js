@@ -92,7 +92,7 @@ module.exports = {
     new CopyPlugin([
       {
         from: path.join(Path.SRC, 'static/fonts/'),
-        to: path.join(Path.DIST, 'assets/fonts/[name].[hash].[ext]'),
+        to: path.join(Path.DIST, 'assets/fonts'),
       },
     ]),
 

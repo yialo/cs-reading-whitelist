@@ -1,35 +1,20 @@
 env:
   browser: true
   es6: true
+  node: true
 overrides:
   - env:
       mocha: true
     files:
       - ./src/**/*.test.js
-    rules:
-      import/no-extraneous-dependencies: 'off'
-  - env:
-      node: true
-    files:
-      - ./*.js
-      - ./webpack/**/*.js
-      - ./src/postcss/**/*.js
+  - files:
+    - ./*.js
+    - ./src/postcss/**/*.js
+    - ./webpack/**/*.js
     parserOptions:
       sourceType: script
     rules:
-      callback-return: 'off'
-      global-require: 'off'
-      handle-callback-err: 'off'
-      import/no-dynamic-require: 'off'
       import/no-extraneous-dependencies: 'off'
-      no-buffer-constructor: error
-      no-mixed-requires: 'off'
-      no-new-require: error
-      no-path-concat: error
-      no-process-env: 'off'
-      no-process-exit: 'off'
-      no-restricted-modules: 'off'
-      no-sync: 'off'
       strict:
         - error
         - safe
@@ -162,7 +147,7 @@ rules:
   getter-return:
     - error
     - allowImplicit: true
-  global-require: error
+  global-require: 'off'
   guard-for-in: error
   id-blacklist: 'off'
   id-length: 'off'
@@ -208,7 +193,7 @@ rules:
   import/no-default-export: 'off'
   import/no-deprecated: 'off'
   import/no-duplicates: error
-  import/no-dynamic-require: error
+  import/no-dynamic-require: 'off'
   import/no-extraneous-dependencies:
     - error
     - devDependencies: false
