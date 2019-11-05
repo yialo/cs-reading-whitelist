@@ -11,6 +11,7 @@ const devConfig = merge(baseConfig, {
   mode: 'development',
 
   devServer: {
+    contentBase: baseConfig.externals.path.SRC,
     overlay: true,
     port: 8081,
   },

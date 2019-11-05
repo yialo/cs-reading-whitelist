@@ -23,6 +23,10 @@ module.exports = {
     'app': Path.SRC,
   },
 
+  externals: {
+    path: Path,
+  },
+
   module: {
     rules: [
       {
@@ -87,15 +91,17 @@ module.exports = {
   },
 
   output: {
-    filename: `assets/js/[name].js`,
+    filename: 'assets/js/[name].[hash].js',
     path: Path.DIST,
     publicPath: '/',
   },
 
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanStaleWebpackAssets: false,
+    }),
     new CssExtractPlugin({
-      filename: `assets/css/[name].css`,
+      filename: 'assets/css/[name].[hash].css',
     }),
     new CopyPlugin([
       {
@@ -106,7 +112,7 @@ module.exports = {
 
     ...PAGES.map((page) => (
       new HtmlPlugin({
-        inject: false,
+        // inject: false,
         filename: page.replace('.pug', '.html'),
         template: `${PAGES_DIR}/${page}`,
       })
