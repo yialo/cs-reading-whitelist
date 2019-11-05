@@ -91,7 +91,7 @@ module.exports = {
   },
 
   output: {
-    filename: 'assets/js/[name].[hash].js',
+    filename: 'assets/js/[name].js',
     path: Path.DIST,
     publicPath: '/',
   },
@@ -101,7 +101,7 @@ module.exports = {
       cleanStaleWebpackAssets: false,
     }),
     new CssExtractPlugin({
-      filename: 'assets/css/[name].[hash].css',
+      filename: 'assets/css/[name].css',
     }),
     new CopyPlugin([
       {
