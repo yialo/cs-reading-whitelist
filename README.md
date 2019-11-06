@@ -401,7 +401,6 @@ Links to useful development tools and good articles about computer science
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
 * [ru] [Скринкаст по Webpack](https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn) _#4consider_  _#video_\
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
-* [ru] [Gulp для самых маленьких](https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html) _#4consider_
 * [ru] [A quick guide for switching to Gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0)\
 \- изменения в Gulp API после выхода 4-й версии
 * [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/)\
