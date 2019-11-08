@@ -23,7 +23,9 @@
 * stylelint
 * todo-tree
 * twig-language-2
+* vetur
 * vscode-colorize
+* vscode-docker
 * vscode-eslint
 * vscode-html-css
 * vscode-language-babel
@@ -32,8 +34,10 @@
 * vscode-puglint
 * vscode-scss
 * vscode-sort-json
+* vscode-surround
 * vscode-svgviewer
 * vscode-template-literal-editor
 * vscode-versionlens
 * vscode-yaml-sort
+* vscodeintellicode
 * xml
