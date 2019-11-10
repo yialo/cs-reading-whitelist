@@ -1,0 +1,271 @@
+{
+  "entries": [
+    {
+      "caption": "Frontend WhiteList",
+      "url": "https://github.com/melnik909/frontend-whitelist",
+      "lang": "ru",
+      "tags": [
+        "favourite"
+      ],
+      "legend": "список авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов"
+    },
+    {
+      "caption": "Словарь фронтенд-терминов",
+      "url": "https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md",
+      "lang": "ru",
+      "tags": [
+        "favourite"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Рекомендуемые книги по frontend-разработке",
+      "url": "https://web-standards.ru/books/",
+      "lang": "ru",
+      "tags": [
+        "favourite"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Floating Point Math",
+      "url": "http://0.30000000000000004.com/",
+      "lang": "en",
+      "tags": [
+        "algorithms"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "(Законы Акина) законы космической инженерии",
+      "url": "https://habr.com/ru/post/354936/",
+      "lang": "ru",
+      "tags": [
+        "project-management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Tips on Code Refactoring, From a Former Addict",
+      "url": "https://snipcart.com/blog/tips-on-code-refactoring-from-a-former-addict",
+      "lang": "en",
+      "tags": [
+        "code-style"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "How To Learn Anything Faster - 5 Tips to Increase your Learning Speed (feat. _Project Better Self_)",
+      "url": "https://www.youtube.com/watch?v=rA2XHWM__yE",
+      "lang": "en",
+      "tags": [
+        "video",
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "10 Tips for Writing Cleaner & Better Code",
+      "url": "https://www.makeuseof.com/tag/10-tips-writing-cleaner-better-code/",
+      "lang": "en",
+      "tags": [
+        "code-style"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Без вопросов, без плана, зато с рюшечками: что общего между узбекскими строителями и плохими разработчиками?",
+      "url": "https://cmsmagazine.ru/journal/items-no-questions-no-plan/",
+      "lang": "ru",
+      "tags": [
+        "project-management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Хороший разработчик и его образ мышления, часть 1",
+      "url": "https://techrocks.ru/2019/04/14/good-developer-mindset-1/",
+      "lang": "ru",
+      "tags": [
+        "code-style",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Хороший разработчик и его образ мышления, часть 2",
+      "url": "https://techrocks.ru/2019/04/14/good-developer-mindset-2/",
+      "lang": "ru",
+      "tags": [
+        "code-style",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Бизнес, у которого никогда не будет клиентов из интернета",
+      "url": "https://vc.ru/marketing/60262-biznes-u-kotorogo-nikogda-ne-budet-klientov-iz-interneta",
+      "lang": "ru",
+      "tags": [
+        "project-management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "An A-Z Index of the Linux command line: bash + utilities",
+      "url": "https://ss64.com/bash/",
+      "lang": "en",
+      "tags": [
+        "cli",
+        "bash"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Оценка задач фронтендера",
+      "url": "https://frontender.info/estimating-a-front-end-web-dev-job/",
+      "lang": "ru",
+      "tags": [
+        "project-management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "О jQuery и Bootstrap: расставляем точки над «i»",
+      "url": "https://frontender.info/whats-wrong-with-jquery-and-bootstrap/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "js",
+        "bootstrap",
+        "jquery"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как я победила 7-летний недосып и стала жаворонком",
+      "url": "https://lifehacker.ru/pobedila-7-letnij-nedosyp/",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Чем хорош язык Go и зачем его изучать? Все плюшки Golang",
+      "url": "https://proglib.io/p/language-go/",
+      "lang": "ru",
+      "tags": [
+        "golang"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как я перестал верить технологиям (Алексей Симоненко)",
+      "url": "https://www.youtube.com/watch?v=f4uXBpP_xxY",
+      "lang": "ru",
+      "tags": [
+        "unsorted",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Лебедь рак и щука: как технологии тянут фронтенд на дно (Евгений Гусев)",
+      "url": "https://www.youtube.com/watch?v=jPbqeSSDuug",
+      "lang": "ru",
+      "tags": [
+        "unsorted",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Anti hype как не гнаться за технологиями и начать жить (Andrey Listochkin)",
+      "url": "https://www.youtube.com/watch?v=xPFRUM_oDKA",
+      "lang": "ru",
+      "tags": [
+        "unsorted",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Мерцание технологий, или Инжиниринг 21-го века (Максим Юзва)",
+      "url": "https://www.youtube.com/watch?v=MzTng78DCm4",
+      "lang": "ru",
+      "tags": [
+        "unsorted",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "36 (Вадим Макишвили)",
+      "url": "https://www.youtube.com/watch?v=xPPCzryZK44",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "soft-skills"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "5 минут (Вадим Макишвили)",
+      "url": "https://www.youtube.com/watch?v=iBHr8gKc5L8",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Введение в понятие алгоритма",
+      "url": "https://inf1.info/algorithmbasics",
+      "lang": "ru",
+      "tags": [
+        "algorithms"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как UX/UI дизайнеру достичь баланса между работой и обучением?",
+      "url": "https://vc.ru/design/84443-kak-ux-ui-dizayneru-dostich-balansa-mezhdu-rabotoy-i-obucheniem",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency",
+        "ux/ui"
+      ],
+      "legend": "рекомендации актуальны для всех работников IT-сферы"
+    },
+    {
+      "caption": "Тяжела ли работа программиста — взгляд с точки зрения психофизиологии",
+      "url": "https://habr.com/ru/post/468277/",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Multiple Commands On A Single Windows Command Line",
+      "url": "https://htipe.wordpress.com/2009/07/19/multiple-commands-on-a-single-windows-command-line/",
+      "lang": "en",
+      "tags": [
+        "cli",
+        "cmd"
+      ],
+      "legend": "difference between '&' and '&&' in command line"
+    },
+    {
+      "caption": "Dr. Richard Felder's Study Checklist",
+      "url": "https://www.engr.ncsu.edu/wp-content/uploads/drive/1Ib-0f_OMXAtmzDxncBziM4G0YWqRtret/1999-r_memo.pdf?fbclid=IwAR02E5DPt8muE6Na6MTF67BbALMoWpkpH0n0IaXwOlg3xH6MOsb-CTxrYaw",
+      "lang": "en",
+      "tags": [
+        "self-efficiency"
+      ],
+      "legend": ""
+    }
+  ]
+}

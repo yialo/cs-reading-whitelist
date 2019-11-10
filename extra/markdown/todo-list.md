@@ -19,4 +19,6 @@
     * search by name, hashtag, url substring
     * filtering
     * проверка ссылок на повторы
+    * maybe use schema.org
 2. Make full public bookmarks keeper as SPA
+3. Database import/export with XLSX/CSV formats
