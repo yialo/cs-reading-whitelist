@@ -1,11 +1,10 @@
 'use strict';
 
 const merge = require('webpack-merge');
-const webpack = require('webpack');
-
-process.env.NODE_ENV = 'development';
 
 const baseConfig = require('./base.config');
+
+process.env.NODE_ENV = 'development';
 
 const devConfig = merge(baseConfig, {
   mode: 'development',
@@ -17,12 +16,6 @@ const devConfig = merge(baseConfig, {
   },
 
   devtool: 'cheap-module-eval-source-map',
-
-  plugins: [
-    new webpack.SourceMapDevToolPlugin({
-      filename: '[file].map',
-    }),
-  ],
 });
 
 module.exports = new Promise((resolve) => {

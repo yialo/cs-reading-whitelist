@@ -79,8 +79,8 @@ Links to useful development tools and good articles about computer science
 
 * [ru] [Организация отступов в верстке (margin/padding)](https://habr.com/ru/post/340420/)
 * [ru] [Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали](https://ru.hexlet.io/blog/posts/new-and-old-css-units)
-* [ru] [HTML & CSS: как не надо](https://yoksel.github.io/bad-practices/) _#4consider_\
-\- подборка антипаттернов
+* [ru] [HTML & CSS: как не надо](https://yoksel.github.io/bad-practices/)\
+\- подборка антипаттернов вёрстки
 * [ru] [Мой ванильный CSS (Вадим Макеев)](https://www.youtube.com/watch?v=CaDnbOjXjRg) _#video_
 * [en] [A Sliding Nightmare: Understanding the Range Input](https://css-tricks.com/sliding-nightmare-understanding-range-input/)
 * [en] [Styling Cross-Browser Compatible Range Inputs with CSS](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)

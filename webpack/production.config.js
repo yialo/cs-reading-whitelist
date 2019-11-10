@@ -2,9 +2,9 @@
 
 const merge = require('webpack-merge');
 
-process.env.NODE_ENV = 'production';
-
 const baseConfig = require('./base.config');
+
+process.env.NODE_ENV = 'production';
 
 const productionConfig = merge(baseConfig, {
   mode: 'production',
