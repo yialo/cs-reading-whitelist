@@ -151,6 +151,8 @@ Links to useful development tools and good articles about computer science
 * [ru] [Разбираемся с border-image из CSS3](https://css-live.ru/articles-css/razbiraemsya-s-border-image-iz-css3.html)
 * [en] [`border-image` generator](https://border-image.com/) _#tool_
 * [ru] [Как работают в флексбоксе `z-index` и автоотступы](http://prgssr.ru/development/kak-rabotayut-v-fleksbokse-z-index-i-avtootstupy.html)
+* [ru] [CSS-features | Glo Academy](https://www.youtube.com/playlist?list=PL3LQJkGQtzc56HquxrkwPdQt9Q1wHm21P) _#video_ _#4consider_\
+\- разбор вёрстки сложных кейсов (3D-трансформации, анимации)
 
 ## CSS class naming, BEM
 
