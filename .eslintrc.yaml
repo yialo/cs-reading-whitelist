@@ -781,9 +781,7 @@ rules:
   rest-spread-spacing:
     - error
     - never
-  semi:
-    - error
-    - always
+  semi: 'off'
   semi-spacing:
     - error
     - after: true
