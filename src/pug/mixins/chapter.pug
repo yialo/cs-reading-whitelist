@@ -3,6 +3,6 @@ mixin chapter(props)
   section.chapter
     h2.s_text-block.chapter__heading #{heading}
     ul.s_list.chapter__list
-      - const { entries } = require(`../../json/subjects/${srcName}.json`);
+      - const { entries } = require(`../../json/subjects.json`);
       - for (const { caption, url, lang, tags, legend } of entries)
         li #[a(href=url) #{caption}]#{legend ? ` - ${legend}` : ''}
