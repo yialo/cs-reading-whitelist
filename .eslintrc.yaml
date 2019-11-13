@@ -18,12 +18,12 @@ overrides:
       strict:
         - error
         - safe
-# parser: babel-eslint
+parser: babel-eslint
 parserOptions:
   ecmaVersion: 2018
   sourceType: module
 plugins:
-  # - babel
+  - babel
   - import
 rules:
   accessor-pairs: 'off'
@@ -51,7 +51,7 @@ rules:
     - error
     - after: true
       before: true
-  # babel/semi: error
+  babel/semi: error
   block-scoped-var: error
   block-spacing:
     - error

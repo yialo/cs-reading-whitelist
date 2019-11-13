@@ -1,2 +1,2 @@
-require('@csstools/normalize.css');
-require('./css/index.css');
+import '@csstools/normalize.css';
+import './css/index.css';

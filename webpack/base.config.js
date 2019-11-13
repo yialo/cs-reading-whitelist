@@ -123,7 +123,7 @@ module.exports = {
   resolve: {
     alias: {
       '@': Path.SRC,
-      'Public': 'https://yialo.github.io/cs-reading-whitelist',
+      'Public': `https://yialo.github.io/cs-reading-whitelist`,
     },
   },
 
