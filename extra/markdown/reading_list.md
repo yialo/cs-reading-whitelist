@@ -1,20 +1,3 @@
-## Blogs & journals
-
-* [ru] [Веб-стандарты](https://web-standards.ru/)
-* [ru] [CSS-live](https://css-live.ru/)
-* [ru] [noteskeeper.ru](https://noteskeeper.ru/)
-\- персональный журнал заметок Владимира Кузнецова
-* [ru] [nicothin.pro](https://nicothin.pro/)
-\- блог Николая Громова о веб-разработке
-* [ru] [Типичный верстальщик](http://tpverstak.ru/blog/)
-* [ru] [Прогрессор](http://prgssr.ru/)
-* [en] [CSS Wizardry](https://csswizardry.com/)
-\- Front-end Architecture and Performance Engineering by Harry Roberts
-* [en] [CSS-Tricks](https://css-tricks.com)
-* [en] [Flavio Copes](https://flaviocopes.com/)
-* [ru] [METANIT](https://metanit.com/)
-* [en] [VS Code can do that?!](https://vscodecandothat.com/) _#editors_
-
 ## HTML & CSS: common
 
 * [ru] [Организация отступов в верстке (margin/padding)](https://habr.com/ru/post/340420/)
@@ -227,6 +210,7 @@
 * [en] [await vs return vs return await](https://jakearchibald.com/2017/await-vs-return-vs-return-await/)
 * [ru] [Почему использовать `return await` плохая идея?](https://medium.com/@kanby/%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-return-await-%D0%BF%D0%BB%D0%BE%D1%85%D0%B0%D1%8F-%D0%B8%D0%B4%D0%B5%D1%8F-e87b70015f0c)
 * [ru] [Полное понимание синхронного и асинхронного JavaScript с `async/await`](https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B0%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-javascript-%D1%81-async-await-ba5f47f4436)
+* [ru] [Введение в Immutable.js и основные концепции функционального программирования](https://medium.com/devschacht/sebasti%C3%A1n-peyrott-introduction-to-immutablejs-and-functional-programming-concepts-b3a6555af0ee)
 
 ## Node.js, npm
 

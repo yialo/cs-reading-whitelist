@@ -266,6 +266,106 @@
         "self-efficiency"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Веб-стандарты",
+      "url": "https://web-standards.ru/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS-live",
+      "url": "https://css-live.ru/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "noteskeeper.ru",
+      "url": "https://noteskeeper.ru/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": "персональный журнал заметок Владимира Кузнецова"
+    },
+    {
+      "caption": "nicothin.pro",
+      "url": "https://nicothin.pro/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": "блог Николая Громова о веб-разработке"
+    },
+    {
+      "caption": "Типичный верстальщик",
+      "url": "http://tpverstak.ru/blog/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Прогрессор",
+      "url": "http://prgssr.ru/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS Wizardry",
+      "url": "https://csswizardry.com/",
+      "lang": "en",
+      "tags": [
+        "blogs"
+      ],
+      "legend": "Front-end Architecture and Performance Engineering by Harry Roberts"
+    },
+    {
+      "caption": "CSS-Tricks",
+      "url": "https://css-tricks.com",
+      "lang": "en",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Flavio Copes",
+      "url": "https://flaviocopes.com/",
+      "lang": "en",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "METANIT",
+      "url": "https://metanit.com/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "VS Code can do that?!",
+      "url": "https://vscodecandothat.com/",
+      "lang": "en",
+      "tags": [
+        "blogs",
+        "editors"
+      ],
+      "legend": ""
     }
   ]
 }
