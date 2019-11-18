@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
+const CaseSensitivePathPlugin = require('case-sensitive-paths-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
@@ -97,6 +98,8 @@ module.exports = {
   },
 
   plugins: [
+    // TODO: check case-sensitive-plugin to work
+    new CaseSensitivePathPlugin(),
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: false,
     }),

@@ -367,9 +367,3 @@
 * [en] [Understanding Git Conceptually](https://www.sbf5.com/~cduan/technical/git/) _#4consider_\
 \- сверхглубокое погружение в Git
 * [ru] [Git — инструмент для совместной работы, с нуля и до регламента в команде (Сергей Сергеев)](https://www.youtube.com/watch?v=yDSs80lu3ak) _#video_ _#4consider_
-
-## Code editors
-
-* [ru] [Просто о Vim](http://rus-linux.net/MyLDP/BOOKS/Vim/prosto-o-vim-01.html) _#4consider_
-* [en] [10 essential Vim plugins for 2018](https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9)
-* [ru] [Как настроить VS Code для разработки на JavaScript](https://guides.hexlet.io/vscode-js-setup/)

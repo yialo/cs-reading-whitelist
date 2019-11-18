@@ -366,6 +366,34 @@
         "editors"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Просто о Vim",
+      "url": "http://rus-linux.net/MyLDP/BOOKS/Vim/prosto-o-vim-01.html",
+      "lang": "ru",
+      "tags": [
+        "editors",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "10 essential Vim plugins for 2018",
+      "url": "https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9",
+      "lang": "en",
+      "tags": [
+        "editors"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как настроить VS Code для разработки на JavaScript",
+      "url": "https://guides.hexlet.io/vscode-js-setup/",
+      "lang": "ru",
+      "tags": [
+        "editors"
+      ],
+      "legend": ""
     }
   ]
 }
