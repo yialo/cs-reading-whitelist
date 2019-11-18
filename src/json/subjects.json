@@ -426,47 +426,259 @@
       "legend": ""
     },
     {
-      "caption": "",
-      "url": "",
-      "lang": "",
+      "caption": "NPM Documentation",
+      "url": "https://docs.npmjs.com/",
+      "lang": "en",
       "tags": [
-        ""
+        "node.js",
+        "npm",
+        "docs"
       ],
       "legend": ""
     },
     {
-      "caption": "",
-      "url": "",
-      "lang": "",
+      "caption": "Полезные команды для работы с Node.js",
+      "url": "https://htmlacademy.ru/blog/useful/nodejs/useful-commands-for-working-with-nodejs",
+      "lang": "ru",
       "tags": [
-        ""
+        "node.js"
       ],
       "legend": ""
     },
     {
-      "caption": "",
-      "url": "",
-      "lang": "",
+      "caption": "10 привычек довольного node.js разработчика",
+      "url": "https://habr.com/ru/company/Voximplant/blog/277707/",
+      "lang": "ru",
       "tags": [
-        ""
+        "node.js"
       ],
       "legend": ""
     },
     {
-      "caption": "",
-      "url": "",
-      "lang": "",
+      "caption": "Вы не знаете npm",
+      "url": "https://habr.com/ru/sandbox/108916/",
+      "lang": "ru",
       "tags": [
-        ""
+        "node.js",
+        "npm"
       ],
       "legend": ""
     },
     {
-      "caption": "",
-      "url": "",
-      "lang": "",
+      "caption": "The package.json guide",
+      "url": "https://flaviocopes.com/package-json/",
+      "lang": "en",
       "tags": [
-        ""
+        "node.js",
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Разбираемся с версиями пакетов в node",
+      "url": "https://monsterlessons.com/project/lessons/razbiraemsya-s-versiyami-paketov-v-node",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "8 npm Tricks You Can Use to Impress Your Colleagues",
+      "url": "https://www.freecodecamp.org/news/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e/",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как запустить JavaScript с помощью Node.js",
+      "url": "https://htmlacademy.ru/blog/useful/javascript/how-start-javascript-on-nodejs",
+      "lang": "ru",
+      "tags": [
+        "node.js"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "11 простых npm трюков, которые вас удивят",
+      "url": "https://medium.com/@echobrain/11-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D1%85-npm-%D1%82%D1%80%D1%8E%D0%BA%D0%BE%D0%B2-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B2%D0%B0%D1%81-%D1%83%D0%B4%D0%B8%D0%B2%D1%8F%D1%82-d00510587ec",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Node.js official",
+      "url": "https://nodejs.org/en/",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Скринкаст по Node.JS (Learn.javascript.ru)",
+      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZFWfEQpNixIHVvp191Hb3Gg",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "video",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 1: Event Loop and the Big Picture",
+      "url": "https://blog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 2: Timers, Immediates and Process.nextTick",
+      "url": "https://blog.insiderattack.net/timers-immediates-and-process-nexttick-nodejs-event-loop-part-2-2c53fd511bb3",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 3: Promises, Next-Ticks, and Immediates",
+      "url": "https://blog.insiderattack.net/promises-next-ticks-and-immediates-nodejs-event-loop-part-3-9226cbe7a6aa",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 4: Handling IO",
+      "url": "https://blog.insiderattack.net/handling-io-nodejs-event-loop-part-4-418062f917d1",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 5: Event Loop Best Practices",
+      "url": "https://blog.insiderattack.net/event-loop-best-practices-nodejs-event-loop-part-5-e29b2b50bfe2",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 6: New Changes to the Timers and Microtasks in Node v11.0.0 (and above)",
+      "url": "https://blog.insiderattack.net/new-changes-to-timers-and-microtasks-from-node-v11-0-0-and-above-68d112743eb3",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "node-glob NPM package",
+      "url": "https://www.npmjs.com/package/glob",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "package"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "node-semver NPM package",
+      "url": "https://www.npmjs.com/package/semver",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "package"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "chokidar NPM package",
+      "url": "https://www.npmjs.com/package/chokidar",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "package"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "del NPM package",
+      "url": "https://www.npmjs.com/package/del",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "package"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "minimatch NPM package",
+      "url": "https://www.npmjs.com/package/minimatch",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "package"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "through2 NPM package",
+      "url": "https://www.npmjs.com/package/through2",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "package"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Уроки Node JS и Express (Гоша Дударь)",
+      "url": "https://www.youtube.com/playlist?list=PL0lO_mIqDDFX0qH9w5YQIDV6Wxy0oawet",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "video",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Курс Node.js (ITVDN)",
+      "url": "https://www.youtube.com/playlist?list=PLvItDmb0sZw-kihRjYqbnqCk8h1RJZUJu",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "video",
+        "4consider"
       ],
       "legend": ""
     }

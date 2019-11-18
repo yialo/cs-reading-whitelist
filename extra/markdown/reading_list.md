@@ -213,18 +213,6 @@
 * [ru] [Полное понимание синхронного и асинхронного JavaScript с `async/await`](https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B0%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-javascript-%D1%81-async-await-ba5f47f4436)
 * [ru] [Введение в Immutable.js и основные концепции функционального программирования](https://medium.com/devschacht/sebasti%C3%A1n-peyrott-introduction-to-immutablejs-and-functional-programming-concepts-b3a6555af0ee)
 
-## Node.js, npm
-
-* [ru] [npm Documentation](https://docs.npmjs.com/) _#library_
-* [ru] [Полезные команды для работы с Node.js](https://htmlacademy.ru/blog/useful/nodejs/useful-commands-for-working-with-nodejs)
-* [ru] [10 привычек довольного node.js разработчика](https://habr.com/ru/company/Voximplant/blog/277707/)
-* [ru] [Вы не знаете npm](https://habr.com/ru/sandbox/108916/)
-* [en] [The package.json guide](https://flaviocopes.com/package-json/)
-* [ru] [Разбираемся с версиями пакетов в node](https://monsterlessons.com/project/lessons/razbiraemsya-s-versiyami-paketov-v-node)
-* [en] [8 npm Tricks You Can Use to Impress Your Colleagues](https://www.freecodecamp.org/news/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e/)
-* [ru] [Как запустить JavaScript с помощью Node.js](https://htmlacademy.ru/blog/useful/javascript/how-start-javascript-on-nodejs)
-* [ru] [11 простых npm трюков, которые вас удивят](https://medium.com/@echobrain/11-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D1%85-npm-%D1%82%D1%80%D1%8E%D0%BA%D0%BE%D0%B2-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B2%D0%B0%D1%81-%D1%83%D0%B4%D0%B8%D0%B2%D1%8F%D1%82-d00510587ec)
-
 ## React
 
 * [en] [React official](https://reactjs.org/) _#library_
@@ -318,9 +306,9 @@
 
 ## Build tools
 
-* [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#4consider_  _#video_\
+* [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#4consider_ _#video_\
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
-* [ru] [Скринкаст по Webpack](https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn) _#4consider_  _#video_\
+* [ru] [Скринкаст по Webpack](https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn) _#4consider_ _#video_\
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
 * [ru] [A quick guide for switching to Gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0)\
 \- изменения в Gulp API после выхода 4-й версии
