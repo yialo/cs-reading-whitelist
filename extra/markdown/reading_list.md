@@ -308,17 +308,12 @@
 
 * [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#4consider_ _#video_\
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
-* [ru] [Скринкаст по Webpack](https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn) _#4consider_ _#video_\
-\- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
 * [ru] [A quick guide for switching to Gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0)\
 \- изменения в Gulp API после выхода 4-й версии
 * [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/)\
 \- советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug
 * [en] [Using rollup.js with gulp.js](https://duske.me/using-rollup-js-with-gulp-js/)
 * [en] [BemGo](https://github.com/werty1001/bemgo) _#bem_ _#build_
-* [ru] [Готовим идеальный CSS](https://habr.com/ru/company/constanta/blog/428800/)
-\- подключение и оптимизация стилей с помощью Webpack
-* [ru] [Webpack 4 | Jack Coder](https://www.youtube.com/playlist?list=PLkCrmfIT6LBQWN02hNj6r1daz7965GxsV) _#video_
 
 ## Git
 

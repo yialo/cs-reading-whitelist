@@ -606,7 +606,8 @@
       "lang": "en",
       "tags": [
         "node.js",
-        "package"
+        "npm-package",
+        "docs"
       ],
       "legend": ""
     },
@@ -616,7 +617,8 @@
       "lang": "en",
       "tags": [
         "node.js",
-        "package"
+        "npm-package",
+        "docs"
       ],
       "legend": ""
     },
@@ -626,7 +628,8 @@
       "lang": "en",
       "tags": [
         "node.js",
-        "package"
+        "npm-package",
+        "docs"
       ],
       "legend": ""
     },
@@ -636,7 +639,8 @@
       "lang": "en",
       "tags": [
         "node.js",
-        "package"
+        "npm-package",
+        "docs"
       ],
       "legend": ""
     },
@@ -646,7 +650,8 @@
       "lang": "en",
       "tags": [
         "node.js",
-        "package"
+        "npm-package",
+        "docs"
       ],
       "legend": ""
     },
@@ -656,7 +661,8 @@
       "lang": "en",
       "tags": [
         "node.js",
-        "package"
+        "npm-package",
+        "docs"
       ],
       "legend": ""
     },
@@ -681,6 +687,95 @@
         "4consider"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Webpack official",
+      "url": "https://webpack.js.org/configuration/",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Скринкаст по Webpack (Learn.javascript.ru)",
+      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn",
+      "lang": "ru",
+      "tags": [
+        "build",
+        "webpack",
+        "video",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Настройка Webpack 4 (Jack Coder)",
+      "url": "https://www.youtube.com/playlist?list=PLkCrmfIT6LBQWN02hNj6r1daz7965GxsV",
+      "lang": "ru",
+      "tags": [
+        "build",
+        "webpack",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "html-webpack-plugin",
+      "url": "https://github.com/jantimon/html-webpack-plugin",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "webpack-plugin",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "html-webpack-template EJS syntax",
+      "url": "https://github.com/jaketrent/html-webpack-template/blob/master/index.ejs",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Webpack Chart",
+      "url": "https://alexkuz.github.io/webpack-chart/",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "tool"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "webpack-analyse",
+      "url": "https://webpack.github.io/analyse/",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "tool"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Готовим идеальный CSS",
+      "url": "https://habr.com/ru/company/constanta/blog/428800/",
+      "lang": "ru",
+      "tags": [
+        "build",
+        "webpack"
+      ],
+      "legend": "подключение и оптимизация стилей с помощью Webpack"
     }
   ]
 }
