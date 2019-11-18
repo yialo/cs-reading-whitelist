@@ -394,6 +394,81 @@
         "editors"
       ],
       "legend": ""
+    },
+    {
+      "caption": "The Three Types of Performance Testing",
+      "url": "https://csswizardry.com/2018/10/three-types-of-performance-testing/",
+      "lang": "en",
+      "tags": [
+        "testing",
+        "performance"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Три истории о тестировании (Марина Миронович)",
+      "url": "https://www.youtube.com/watch?v=dfYZ6QejnnM",
+      "lang": "ru",
+      "tags": [
+        "testing",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как не надо тестировать (Иван Стрелков)",
+      "url": "https://www.youtube.com/watch?v=ni9Zz1j8fI4",
+      "lang": "ru",
+      "tags": [
+        "testing",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "",
+      "url": "",
+      "lang": "",
+      "tags": [
+        ""
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "",
+      "url": "",
+      "lang": "",
+      "tags": [
+        ""
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "",
+      "url": "",
+      "lang": "",
+      "tags": [
+        ""
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "",
+      "url": "",
+      "lang": "",
+      "tags": [
+        ""
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "",
+      "url": "",
+      "lang": "",
+      "tags": [
+        ""
+      ],
+      "legend": ""
     }
   ]
 }

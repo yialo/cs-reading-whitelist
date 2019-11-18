@@ -316,12 +316,6 @@
 * [ru] [Рефакторинг](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3)
 * [ru] [Refactoring Guru](https://refactoring.guru/ru/) _#4consider_
 
-## Testing
-
-* [en] [The Three Types of Performance Testing](https://csswizardry.com/2018/10/three-types-of-performance-testing/)
-* [ru] [Три истории о тестировании (Марина Миронович)](https://www.youtube.com/watch?v=dfYZ6QejnnM) _#video_
-* [ru] [Как не надо тестировать (Иван Стрелков)](https://www.youtube.com/watch?v=ni9Zz1j8fI4) _#video_
-
 ## Build tools
 
 * [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#4consider_  _#video_\

@@ -28,6 +28,10 @@ module.exports = {
     path: Path,
   },
 
+  /** TODO:
+   * test pug compile options
+   * https://pugjs.org/api/reference.html
+   */
   module: {
     rules: [
       {
