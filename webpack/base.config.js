@@ -98,7 +98,6 @@ module.exports = {
   },
 
   plugins: [
-    // TODO: check case-sensitive-plugin to work
     new CaseSensitivePathPlugin(),
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: false,

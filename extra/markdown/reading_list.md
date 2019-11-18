@@ -100,7 +100,7 @@
 * [ru] [idiomatic-css: Принципы написания однородного CSS-кода](https://github.com/necolas/idiomatic-css/blob/master/translations/ru-RU/README.md)
 * [en] [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
 * [ru] [Что такое CSS-модули и зачем они нам?](https://frontender.info/css-modules-part-1-need/)
-* [ru] [Семантический CSS](https://css-live.ru/articles/semanticheskij-css.html)
+* [ru] [Семантический CSS](https://css-live.ru/articles/semanticheskij-css.html) _#!important_
 * [ru] [БЭМантика: пишите осмысленные стили без повторов](https://css-live.ru/articles/bemantika-pishite-osmyslennye-stili-bez-povtorov.html)
 * [ru] [Пишем БЭМ правильно (Игорь Зенич)](https://www.youtube.com/watch?v=kBgHdSOj33A) _#video_
 
@@ -159,6 +159,7 @@
 * [ru] [Элемент HTML `<time>`](https://habr.com/ru/post/229291/)
 * [en] [The Difference Between `role="presentation"` and `aria-hidden="true"`](https://timwright.org/blog/2016/11/19/difference-rolepresentation-aria-hiddentrue/)
 * [ru] [Понимание семантики](https://css-live.ru/articles/ponimanie-semantiki.html)
+* [ru] [Почему семантический HTML важен, и как TypeScript помогает это понять](https://css-live.ru/articles/pochemu-semanticheskij-html-vazhen-i-kak-typescript-pomogaet-eto-ponyat.html)
 
 ## JavaScript
 
