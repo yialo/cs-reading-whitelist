@@ -304,17 +304,6 @@
 * [ru] [Рефакторинг](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3)
 * [ru] [Refactoring Guru](https://refactoring.guru/ru/) _#4consider_
 
-## Build tools
-
-* [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#video_\
-\- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
-* [ru] [A quick guide for switching to Gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0)\
-\- изменения в Gulp API после выхода 4-й версии
-* [ru] [Pug+Gulp](http://4webfan.ru/pug-gulp/)\
-\- советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug
-* [en] [Using rollup.js with gulp.js](https://duske.me/using-rollup-js-with-gulp-js/)
-* [en] [BemGo](https://github.com/werty1001/bemgo) _#bem_ _#build_
-
 ## Git
 
 * [en] [Pro Git](https://git-scm.com/book/en/v2) _#!important_\

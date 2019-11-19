@@ -775,6 +775,59 @@
         "webpack"
       ],
       "legend": "подключение и оптимизация стилей с помощью Webpack"
+    },
+    {
+      "caption": "Скринкаст по Gulp (Learn.javascript.ru)",
+      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ",
+      "lang": "ru",
+      "tags": [
+        "build",
+        "gulp",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "A quick guide for switching to Gulp 4",
+      "url": "https://codeburst.io/switching-to-gulp-4-0-271ae63530c0",
+      "lang": "en",
+      "tags": [
+        "build",
+        "gulp"
+      ],
+      "legend": "руководство по миграции с 3-й на 4-ю версии Gulp"
+    },
+    {
+      "caption": "Pug + Gulp",
+      "url": "http://4webfan.ru/pug-gulp/",
+      "lang": "ru",
+      "tags": [
+        "build",
+        "gulp",
+        "pug"
+      ],
+      "legend": "советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug"
+    },
+    {
+      "caption": "Using rollup.js with gulp.js",
+      "url": "https://duske.me/using-rollup-js-with-gulp-js/",
+      "lang": "en",
+      "tags": [
+        "build",
+        "gulp",
+        "rollup"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "BemGo",
+      "url": "https://github.com/werty1001/bemgo",
+      "lang": "en",
+      "tags": [
+        "build",
+        "bem"
+      ],
+      "legend": ""
     }
   ]
 }
