@@ -7,12 +7,17 @@ const CaseSensitivePathPlugin = require('case-sensitive-paths-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const Path = {
-  SRC: path.join(__dirname, '../src'),
-  DIST: path.join(__dirname, '../docs'),
+  SRC: path.resolve(__dirname, '../src'),
+  DIST: path.resolve(__dirname, '../docs'),
+  ROOT: path.resolve(__dirname, '../'),
 };
+
+const isProduction = (process.env.NODE_ENV === 'production');
+const assetHash = (isProduction ? '.[contenthash]' : '');
 
 const PAGES_DIR = path.join(Path.SRC, './pug/pages');
 const PAGES = fs.readdirSync(PAGES_DIR).filter((filename) => filename.endsWith('.pug'));
@@ -55,7 +60,13 @@ module.exports = {
         exclude: '/node_modules/',
         use: [
           'style-loader',
-          CssExtractPlugin.loader,
+          {
+            loader: CssExtractPlugin.loader,
+            options: {
+              hmr: !isProduction,
+              reloadAll: true,
+            },
+          },
           {
             loader: 'css-loader',
             options: {
@@ -67,6 +78,9 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
+              config: {
+                path: Path.ROOT,
+              },
             },
           },
         ],
@@ -75,7 +89,7 @@ module.exports = {
         test: /\.png$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]',
+          name: `[name]${assetHash}.[ext]`,
           outputPath: 'assets/img',
         },
       },
@@ -92,11 +106,13 @@ module.exports = {
           enforce: true,
         },
       },
+      minChunks: 2,
     },
+    noEmitOnErrors: true,
   },
 
   output: {
-    filename: 'assets/js/[name].js',
+    filename: `assets/js/[name]${assetHash}.js`,
     path: Path.DIST,
     publicPath: '/',
   },
@@ -104,7 +120,7 @@ module.exports = {
   plugins: [
     new CaseSensitivePathPlugin(),
     new CleanWebpackPlugin({
-      cleanStaleWebpackAssets: false,
+      cleanStaleWebpackAssets: isProduction,
     }),
     new CssExtractPlugin({
       filename: 'assets/css/[name].css',
@@ -115,7 +131,6 @@ module.exports = {
         to: path.join(Path.DIST, 'assets/fonts'),
       },
     ]),
-
     ...PAGES.map((page) => (
       new HtmlPlugin({
         // inject: false,
@@ -123,6 +138,9 @@ module.exports = {
         template: `${PAGES_DIR}/${page}`,
       })
     )),
+    new ManifestPlugin({
+      filter: (descriptor) => descriptor.isChunk,
+    }),
   ],
 
   // FIXME: aliases do not working now
@@ -135,7 +153,7 @@ module.exports = {
 
   stats: {
     assets: false,
-    // entrypoints: false,
+    entrypoints: false,
     modules: false,
   },
 };

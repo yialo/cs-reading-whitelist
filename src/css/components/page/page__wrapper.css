@@ -6,7 +6,7 @@
   padding: 48px 24px;
   background-color: white;
   background-image: conic-gradient(
-    at center,
+    at center 50vh,
     var(--color-conic-dark) 120deg,
     white 180deg,
     var(--color-conic-dark) 360deg

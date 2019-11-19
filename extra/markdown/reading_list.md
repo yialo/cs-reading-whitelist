@@ -306,7 +306,7 @@
 
 ## Build tools
 
-* [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#4consider_ _#video_\
+* [ru] [Скринкаст по Gulp](https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ) _#video_\
 \- видеокурс от [Learn.javascript.ru](https://learn.javascript.ru/)
 * [ru] [A quick guide for switching to Gulp 4](https://codeburst.io/switching-to-gulp-4-0-271ae63530c0)\
 \- изменения в Gulp API после выхода 4-й версии
