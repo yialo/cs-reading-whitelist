@@ -12,7 +12,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const Path = {
   SRC: path.resolve(__dirname, '../src'),
-  DIST: path.resolve(__dirname, '../docs'),
+  DIST: path.resolve(__dirname, '../dist'),
   ROOT: path.resolve(__dirname, '../'),
 };
 

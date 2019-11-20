@@ -11,3 +11,6 @@ package-lock.json
 # Service files
 *.log*
 bash.exe.stackdump
+
+# msc
+/dist/
