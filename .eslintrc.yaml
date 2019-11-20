@@ -789,17 +789,6 @@ rules:
   semi-style:
     - error
     - last
-  # sort-class-members/sort-class-members:
-  #   - 2
-  #   - accessorPairPositioning: getThenSet
-  #     order:
-  #       - '[properties]'
-  #       - '[arrow-function-properties]'
-  #       - 'constructor'
-  #       - '[everything-else]'
-  #       - '[static-properties]'
-  #       - '[static-methods]'
-  #     stopAfterFirstProblem: true
   sort-imports:
     - 'off'
     - ignoreCase: false
@@ -896,3 +885,5 @@ settings:
         - .js
         - .json
         - .mjs
+    webpack:
+      config: webpack/base.config.js

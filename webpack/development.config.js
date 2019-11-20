@@ -9,15 +9,17 @@ process.env.NODE_ENV = 'development';
 const devConfig = merge(baseConfig, {
   mode: 'development',
 
+  // FIXME: add hot-reload for HTML/Pug template update watching
   devServer: {
     hot: true,
     inline: true,
     contentBase: baseConfig.externals.path.SRC,
+    writeToDisk: true,
     overlay: true,
     port: 8081,
   },
 
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'source-map',
 
   watchOptions: {
     aggregateTimeout: 200,

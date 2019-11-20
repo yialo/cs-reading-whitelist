@@ -1,6 +1,5 @@
 'use strict';
 
-const fs = require('fs');
 const path = require('path');
 
 const CaseSensitivePathPlugin = require('case-sensitive-paths-webpack-plugin');
@@ -19,9 +18,6 @@ const Path = {
 const isProduction = (process.env.NODE_ENV === 'production');
 const assetHash = (isProduction ? '.[contenthash]' : '');
 
-const PAGES_DIR = path.join(Path.SRC, './pug/pages');
-const PAGES = fs.readdirSync(PAGES_DIR).filter((filename) => filename.endsWith('.pug'));
-
 module.exports = {
   context: Path.SRC,
 
@@ -33,10 +29,6 @@ module.exports = {
     path: Path,
   },
 
-  /** TODO:
-   * test pug compile options
-   * https://pugjs.org/api/reference.html
-   */
   module: {
     rules: [
       {
@@ -53,7 +45,14 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: '/node_modules/',
-        loader: 'babel-loader',
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              configFile: path.join(Path.ROOT, 'babel.config.js'),
+            },
+          },
+        ],
       },
       {
         test: /\.css$/,
@@ -131,19 +130,15 @@ module.exports = {
         to: path.join(Path.DIST, 'assets/fonts'),
       },
     ]),
-    ...PAGES.map((page) => (
-      new HtmlPlugin({
-        // inject: false,
-        filename: page.replace('.pug', '.html'),
-        template: `${PAGES_DIR}/${page}`,
-      })
-    )),
+    new HtmlPlugin({
+      filename: 'index.html',
+      template: path.join(Path.SRC, 'pug/pages/index.pug'),
+    }),
     new ManifestPlugin({
       filter: (descriptor) => descriptor.isChunk,
     }),
   ],
 
-  // FIXME: aliases do not working now
   resolve: {
     alias: {
       '@': Path.SRC,

@@ -1,27 +1,18 @@
 extends ../layouts/layout_main.pug
 
-include ../mixins/chapter.pug
 include ../mixins/tag-cloud.pug
 
 block variables
-  -
-    const pageTitle = 'Yialo\'s Reading Whitelist';
-    //- const pathBase = 'https://yialo.github.io/cs-reading-whitelist';
-    const pathBase = '.';
+  - const pageTitle = 'Yialo\'s Reading Whitelist';
 
 block body
   body.page
     .page__wrapper(id='app')
       h1.s_text-block Computer Science Reading Whitelist
-      section.contents
-        h2.s_text-block.contents__heading Содержание
-        ul.s_list.contents__list
-          - const { contents } = require('../../json/contents.json');
-          - for (const { text, anchor } of contents)
-            li: a(href=anchor) #{text}
-      +chapter({
-        heading: '[UNSORTED]',
-        srcName: 'unsorted',
-      })
+      main.chapter
+        ul.s_list.chapter__list
+          - const { entries } = require('@/json/subjects.json');
+          - for (const { caption, url, lang, tags, legend } of entries)
+            li #[a(href=url) #{caption}]#{legend ? ` - ${legend}` : ''}
       //- +tag-cloud()
     //- +body-scripts()
