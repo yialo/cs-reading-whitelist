@@ -1,15 +1,5 @@
 ## HTML & CSS: common
 
-* [ru] [Организация отступов в верстке (margin/padding)](https://habr.com/ru/post/340420/)
-* [ru] [Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали](https://ru.hexlet.io/blog/posts/new-and-old-css-units)
-* [ru] [HTML & CSS: как не надо](https://yoksel.github.io/bad-practices/)\
-\- подборка антипаттернов вёрстки
-* [ru] [Мой ванильный CSS (Вадим Макеев)](https://www.youtube.com/watch?v=CaDnbOjXjRg) _#video_
-* [en] [A Sliding Nightmare: Understanding the Range Input](https://css-tricks.com/sliding-nightmare-understanding-range-input/)
-* [en] [Styling Cross-Browser Compatible Range Inputs with CSS](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
-* [ru] [Упорядочивание багов кроссбраузерности Flexbox](https://css-live.ru/articles/uporyadochivanie-bagov-krossbrauzernosti-flexbox.html)
-* [ru] [Парадоксы `display: contents` и будущее текста в CSS](https://css-live.ru/css/paradoksy-displaycontents-i-budushhee-teksta-v-css.html)
-* [ru] [Где всё сложно с переносами строк. Вот все CSS- и HTML-хитрости для этого](https://css-live.ru/articles/gde-vsyo-slozhno-s-perenosami-strok-vot-vse-css-i-html-xitrosti-dlya-etogo.html)
 * [en] [CSS Flexbox cheatsheet (by Malven Co.)](http://flexbox.malven.co/) _#tool_
 * [ru] [Разбираемся с clip-path](https://getinstance.info/articles/css/making-sense-of-clip-path/)
 * [en] [Advanced CSS Theming with Custom Properties and JavaScript](https://www.sitepoint.com/css-theming-custom-properties-javascript/) _#4consider_

@@ -828,6 +828,89 @@
         "bem"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Организация отступов в верстке (margin/padding)",
+      "url": "https://habr.com/ru/post/340420/",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": "содержит и ценные советы, и спорные моменты"
+    },
+    {
+      "caption": "Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали",
+      "url": "https://ru.hexlet.io/blog/posts/new-and-old-css-units",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "HTML & CSS: как не надо",
+      "url": "https://yoksel.github.io/bad-practices/",
+      "lang": "ru",
+      "tags": [
+        "html",
+        "css"
+      ],
+      "legend": "подборка антипаттернов вёрстки"
+    },
+    {
+      "caption": "Мой ванильный CSS (Вадим Макеев)",
+      "url": "https://www.youtube.com/watch?v=CaDnbOjXjRg",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "A Sliding Nightmare: Understanding the Range Input",
+      "url": "https://css-tricks.com/sliding-nightmare-understanding-range-input/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Styling Cross-Browser Compatible Range Inputs with CSS",
+      "url": "https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Упорядочивание багов кроссбраузерности Flexbox",
+      "url": "https://css-live.ru/articles/uporyadochivanie-bagov-krossbrauzernosti-flexbox.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Парадоксы 'display: contents' и будущее текста в CSS",
+      "url": "https://css-live.ru/css/paradoksy-displaycontents-i-budushhee-teksta-v-css.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Где всё сложно с переносами строк. Вот все CSS- и HTML-хитрости для этого",
+      "url": "https://css-live.ru/articles/gde-vsyo-slozhno-s-perenosami-strok-vot-vse-css-i-html-xitrosti-dlya-etogo.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
     }
   ]
 }
