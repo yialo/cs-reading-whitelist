@@ -1,5 +1,5 @@
 import '@csstools/normalize.css';
-import './css/index.css';
+import '@/css/index.css';
 
 import listTemplate from '@/pug/mixins/test.pug';
 

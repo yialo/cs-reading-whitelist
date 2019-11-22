@@ -3,7 +3,7 @@
 const path = require('path');
 
 const CaseSensitivePathPlugin = require('case-sensitive-paths-webpack-plugin');
-const CssExtractPlugin = require('mini-css-extract-plugin');
+const CssExtractPlugin = require('extract-css-chunks-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
@@ -61,7 +61,7 @@ module.exports = {
           {
             loader: CssExtractPlugin.loader,
             options: {
-              hmr: !isProduction,
+              hot: !isProduction,
               reloadAll: true,
             },
           },

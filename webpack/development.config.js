@@ -1,20 +1,20 @@
 'use strict';
 
+process.env.NODE_ENV = 'development';
+
 const merge = require('webpack-merge');
 
 const baseConfig = require('./base.config');
 
-process.env.NODE_ENV = 'development';
-
 const devConfig = merge(baseConfig, {
   mode: 'development',
 
-  // FIXME: add hot-reload for HTML/Pug template update watching
   devServer: {
     hot: true,
     inline: true,
     contentBase: baseConfig.externals.path.SRC,
-    writeToDisk: true,
+    watchContentBase: true,
+    writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
     overlay: true,
     port: 8081,
   },
