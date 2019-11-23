@@ -121,7 +121,7 @@ module.exports = {
       cleanStaleWebpackAssets: isProduction,
     }),
     new CssExtractPlugin({
-      filename: 'assets/css/[name].css',
+      filename: `assets/css/[name]${assetHash}.css`,
     }),
     new CopyPlugin([
       {

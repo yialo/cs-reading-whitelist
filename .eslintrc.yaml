@@ -116,6 +116,8 @@ rules:
   default-case:
     - error
     - commentPattern: ^no default$
+  default-param-last:
+    - error
   dot-notation:
     - error
     - allowKeywords: true
@@ -148,6 +150,9 @@ rules:
     - error
     - allowImplicit: true
   global-require: 'off'
+  grouped-accessor-pairs:
+    - error
+    - getBeforeSet
   guard-for-in: error
   id-blacklist: 'off'
   id-length: 'off'
@@ -376,6 +381,7 @@ rules:
   no-console: 'off'
   no-const-assign: error
   no-constant-condition: warn
+  no-constructor-return: error
   no-continue: error
   no-control-regex: error
   no-debugger: warn
@@ -383,6 +389,7 @@ rules:
   no-div-regex: 'off'
   no-dupe-args: error
   no-dupe-class-members: error
+  no-dupe-else-if: error
   no-dupe-keys: error
   no-duplicate-case: error
   no-duplicate-imports: 'off'
@@ -635,6 +642,7 @@ rules:
     - props: false
   no-self-compare: error
   no-sequences: error
+  no-setter-return: error
   no-shadow: error
   no-shadow-restricted-names: error
   no-spaced-func: error
@@ -755,6 +763,7 @@ rules:
         array: false
         object: true
     - enforceForRenamedProperties: false
+  prefer-exponentiation-operator: error
   prefer-named-capture-group: 'off'
   prefer-numeric-literals: error
   prefer-object-spread: 'off'
