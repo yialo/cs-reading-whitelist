@@ -1,19 +1,5 @@
 ## HTML & CSS: common
 
-* [en] [CSS Flexbox cheatsheet (by Malven Co.)](http://flexbox.malven.co/) _#tool_
-* [ru] [Разбираемся с clip-path](https://getinstance.info/articles/css/making-sense-of-clip-path/)
-* [en] [Advanced CSS Theming with Custom Properties and JavaScript](https://www.sitepoint.com/css-theming-custom-properties-javascript/) _#4consider_
-* [ru] [Пользовательские CSS-атрибуты как механизм передачи данных из JavaScript в CSS](https://css-live.ru/articles/polzovatelskie-css-atributy-kak-mexanizm-peredachi-dannyx-iz-javascript-v-css.html)
-* [ru] [Архитектура CSS](https://web-standards.ru/articles/css-architecture/)
-* [en] [My approach to using `z-index`](https://medium.com/hackernoon/my-approach-to-using-z-index-eca67feb079c)
-* [ru] [Псевдоэлементы, которых не может быть](https://css-live.ru/articles-css/impossible-pseudos.html)
-* [ru] [«Запашки» CSS-кода](https://css-live.ru/articles/zapashki-css-koda.html)
-* [en] [A Tale of `width` and `max-width`](https://css-tricks.com/tale-width-max-width/)
-* [en] [Building a Circular Navigation with CSS Transforms](https://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/)
-* [ru] [Длинная телега про Bootstrap](https://gist.github.com/iAdramelk/d328b73c72cab92ef95f)
-* [ru] [Как на самом деле работают `z-index`](https://habr.com/ru/post/431046/)
-* [ru] [Единицы измерения: px, em, rem и другие](https://learn.javascript.ru/css-units)\
-\- приводятся особенности вычисления размеров, заданных в процентах
 * [ru] [Как вставить двадцать видео с Ютуба и не скачать слона (Вадим Макеев)](https://www.youtube.com/watch?v=4JS70KB9GS0) _#video_
 * [ru] [Прототип изоляции стилей для Shower на веб-компонентах (Вадим Макеев)](https://www.youtube.com/watch?v=_FRIRJZYlxU) _#4consider_ _#video_
 * [ru] [DocumentFragment: что это такое и как с ним (не) бороться](https://habr.com/ru/post/413287/)

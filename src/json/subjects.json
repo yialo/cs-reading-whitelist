@@ -853,7 +853,8 @@
       "lang": "ru",
       "tags": [
         "html",
-        "css"
+        "css",
+        "code-quality"
       ],
       "legend": "подборка антипаттернов вёрстки"
     },
@@ -909,6 +910,121 @@
       "lang": "ru",
       "tags": [
         "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS Flexbox cheatsheet (by Malven Co.)",
+      "url": "http://flexbox.malven.co/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "tool",
+        "cheatsheet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Разбираемся с clip-path",
+      "url": "https://getinstance.info/articles/css/making-sense-of-clip-path/",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Advanced CSS Theming with Custom Properties and JavaScript",
+      "url": "https://www.sitepoint.com/css-theming-custom-properties-javascript/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Пользовательские CSS-атрибуты как механизм передачи данных из JavaScript в CSS",
+      "url": "https://css-live.ru/articles/polzovatelskie-css-atributy-kak-mexanizm-peredachi-dannyx-iz-javascript-v-css.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Архитектура CSS",
+      "url": "https://web-standards.ru/articles/css-architecture/",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "My approach to using 'z-index'",
+      "url": "https://medium.com/hackernoon/my-approach-to-using-z-index-eca67feb079c",
+      "lang": "en",
+      "tags": [
+        "css",
+        "stacking-context"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Псевдоэлементы, которых не может быть",
+      "url": "https://css-live.ru/articles-css/impossible-pseudos.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "«Запашки» CSS-кода",
+      "url": "https://css-live.ru/articles/zapashki-css-koda.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "A Tale of 'width' and 'max-width'",
+      "url": "https://css-tricks.com/tale-width-max-width/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Building a Circular Navigation with CSS Transforms",
+      "url": "https://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Длинная телега про Bootstrap",
+      "url": "https://gist.github.com/iAdramelk/d328b73c72cab92ef95f",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "bootstrap"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как на самом деле работают 'z-index'",
+      "url": "https://habr.com/ru/post/431046/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "stacking-context"
       ],
       "legend": ""
     }
