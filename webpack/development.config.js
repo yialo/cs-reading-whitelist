@@ -1,27 +1,19 @@
 'use strict';
 
 const merge = require('webpack-merge');
-const webpack = require('webpack');
-
-process.env.NODE_ENV = 'development';
 
 const baseConfig = require('./base.config');
 
-const devConfig = merge(baseConfig, {
+const devConfig = merge(baseConfig.core, {
   mode: 'development',
 
   devServer: {
+    writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
     overlay: true,
     port: 8081,
   },
 
-  devtool: 'cheap-module-eval-source-map',
-
-  plugins: [
-    new webpack.SourceMapDevToolPlugin({
-      filename: '[file].map',
-    }),
-  ],
+  devtool: 'source-map',
 });
 
 module.exports = new Promise((resolve) => {

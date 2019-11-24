@@ -6,12 +6,14 @@ mixin head()
     meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     title #{pageTitle}
-    - for (const { fileNameBase, sets } of fonts)
-      - for (const { weight, style } of sets)
-        link(
-          rel='preload',
-          href=`${pathBase}/assets/fonts/${fileNameBase}_${weight}_${style}.woff2`,
-          as='font',
-        )
-    link(rel='stylesheet', href=`${pathBase}/assets/css/vendors.css`)
-    link(rel='stylesheet', href=`${pathBase}/assets/css/app.css`)
+
+    //- - for (const { fileNameBase, sets } of fonts)
+    //-   - for (const { weight, style } of sets)
+    //-     link(
+    //-       rel='preload',
+    //-       href=`${pathBase}/assets/fonts/${fileNameBase}_${weight}_${style}.woff2`,
+    //-       as='font',
+    //-     )
+
+    //- link(rel='stylesheet', href=`${pathBase}/assets/css/vendors.css`)
+    //- link(rel='stylesheet', href=`${pathBase}/assets/css/app.css`)

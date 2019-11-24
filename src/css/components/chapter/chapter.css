@@ -1,3 +1,13 @@
-.chapter__heading {
-  margin-bottom: 24px;
+.chapter__list > * + * {
+  margin-top: 8px;
+  line-height: 1.25;
+}
+
+.chapter__tags > * + * {
+  margin-left: 4px;
+}
+
+.chapter__tags {
+  display: inline-flex;
+  font-style: italic;
 }

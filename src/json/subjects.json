@@ -1,0 +1,1593 @@
+{
+  "entries": [
+    {
+      "caption": "Frontend WhiteList",
+      "url": "https://github.com/melnik909/frontend-whitelist",
+      "lang": "ru",
+      "tags": [
+        "cheatsheet"
+      ],
+      "legend": "список авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов"
+    },
+    {
+      "caption": "Словарь фронтенд-терминов",
+      "url": "https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md",
+      "lang": "ru",
+      "tags": [
+        "cheatsheet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Рекомендуемые книги по frontend-разработке",
+      "url": "https://web-standards.ru/books/",
+      "lang": "ru",
+      "tags": [
+        "cheatsheet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Floating Point Math",
+      "url": "http://0.30000000000000004.com/",
+      "lang": "en",
+      "tags": [
+        "algorithms"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "(Законы Акина) законы космической инженерии",
+      "url": "https://habr.com/ru/post/354936/",
+      "lang": "ru",
+      "tags": [
+        "project-management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Tips on Code Refactoring, From a Former Addict",
+      "url": "https://snipcart.com/blog/tips-on-code-refactoring-from-a-former-addict",
+      "lang": "en",
+      "tags": [
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "How To Learn Anything Faster - 5 Tips to Increase your Learning Speed (feat. _Project Better Self_)",
+      "url": "https://www.youtube.com/watch?v=rA2XHWM__yE",
+      "lang": "en",
+      "tags": [
+        "video",
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "10 Tips for Writing Cleaner & Better Code",
+      "url": "https://www.makeuseof.com/tag/10-tips-writing-cleaner-better-code/",
+      "lang": "en",
+      "tags": [
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Без вопросов, без плана, зато с рюшечками: что общего между узбекскими строителями и плохими разработчиками?",
+      "url": "https://cmsmagazine.ru/journal/items-no-questions-no-plan/",
+      "lang": "ru",
+      "tags": [
+        "project-management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Хороший разработчик и его образ мышления, часть 1",
+      "url": "https://techrocks.ru/2019/04/14/good-developer-mindset-1/",
+      "lang": "ru",
+      "tags": [
+        "code-quality",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Хороший разработчик и его образ мышления, часть 2",
+      "url": "https://techrocks.ru/2019/04/15/good-developer-mindset-2/",
+      "lang": "ru",
+      "tags": [
+        "code-quality",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Бизнес, у которого никогда не будет клиентов из интернета",
+      "url": "https://vc.ru/marketing/60262-biznes-u-kotorogo-nikogda-ne-budet-klientov-iz-interneta",
+      "lang": "ru",
+      "tags": [
+        "project-management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "An A-Z Index of the Linux command line: bash + utilities",
+      "url": "https://ss64.com/bash/",
+      "lang": "en",
+      "tags": [
+        "cli",
+        "bash"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Оценка задач фронтендера",
+      "url": "https://frontender.info/estimating-a-front-end-web-dev-job/",
+      "lang": "ru",
+      "tags": [
+        "project-management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "О jQuery и Bootstrap: расставляем точки над «i»",
+      "url": "https://frontender.info/whats-wrong-with-jquery-and-bootstrap/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "js",
+        "bootstrap",
+        "jquery"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как я победила 7-летний недосып и стала жаворонком",
+      "url": "https://lifehacker.ru/pobedila-7-letnij-nedosyp/",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Чем хорош язык Go и зачем его изучать? Все плюшки Golang",
+      "url": "https://proglib.io/p/language-go/",
+      "lang": "ru",
+      "tags": [
+        "golang"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как я перестал верить технологиям (Алексей Симоненко)",
+      "url": "https://www.youtube.com/watch?v=f4uXBpP_xxY",
+      "lang": "ru",
+      "tags": [
+        "unsorted",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Лебедь рак и щука: как технологии тянут фронтенд на дно (Евгений Гусев)",
+      "url": "https://www.youtube.com/watch?v=jPbqeSSDuug",
+      "lang": "ru",
+      "tags": [
+        "unsorted",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Anti hype как не гнаться за технологиями и начать жить (Andrey Listochkin)",
+      "url": "https://www.youtube.com/watch?v=xPFRUM_oDKA",
+      "lang": "ru",
+      "tags": [
+        "unsorted",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Мерцание технологий, или Инжиниринг 21-го века (Максим Юзва)",
+      "url": "https://www.youtube.com/watch?v=MzTng78DCm4",
+      "lang": "ru",
+      "tags": [
+        "unsorted",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "36 (Вадим Макишвили)",
+      "url": "https://www.youtube.com/watch?v=xPPCzryZK44",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "soft-skills"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "5 минут (Вадим Макишвили)",
+      "url": "https://www.youtube.com/watch?v=iBHr8gKc5L8",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Введение в понятие алгоритма",
+      "url": "https://inf1.info/algorithmbasics",
+      "lang": "ru",
+      "tags": [
+        "algorithms"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как UX/UI дизайнеру достичь баланса между работой и обучением?",
+      "url": "https://vc.ru/design/84443-kak-ux-ui-dizayneru-dostich-balansa-mezhdu-rabotoy-i-obucheniem",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency",
+        "ux/ui"
+      ],
+      "legend": "рекомендации актуальны для всех работников IT-сферы"
+    },
+    {
+      "caption": "Тяжела ли работа программиста — взгляд с точки зрения психофизиологии",
+      "url": "https://habr.com/ru/post/468277/",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Multiple Commands On A Single Windows Command Line",
+      "url": "https://htipe.wordpress.com/2009/07/19/multiple-commands-on-a-single-windows-command-line/",
+      "lang": "en",
+      "tags": [
+        "cli",
+        "cmd"
+      ],
+      "legend": "difference between '&' and '&&' in command line"
+    },
+    {
+      "caption": "Dr. Richard Felder's Study Checklist",
+      "url": "https://www.engr.ncsu.edu/wp-content/uploads/drive/1Ib-0f_OMXAtmzDxncBziM4G0YWqRtret/1999-r_memo.pdf?fbclid=IwAR02E5DPt8muE6Na6MTF67BbALMoWpkpH0n0IaXwOlg3xH6MOsb-CTxrYaw",
+      "lang": "en",
+      "tags": [
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Веб-стандарты",
+      "url": "https://web-standards.ru/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS-live",
+      "url": "https://css-live.ru/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "noteskeeper.ru",
+      "url": "https://noteskeeper.ru/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": "персональный журнал заметок Владимира Кузнецова"
+    },
+    {
+      "caption": "nicothin.pro",
+      "url": "https://nicothin.pro/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": "блог Николая Громова о веб-разработке"
+    },
+    {
+      "caption": "Типичный верстальщик",
+      "url": "http://tpverstak.ru/blog/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Прогрессор",
+      "url": "http://prgssr.ru/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS Wizardry",
+      "url": "https://csswizardry.com/",
+      "lang": "en",
+      "tags": [
+        "blogs"
+      ],
+      "legend": "Front-end Architecture and Performance Engineering by Harry Roberts"
+    },
+    {
+      "caption": "CSS-Tricks",
+      "url": "https://css-tricks.com",
+      "lang": "en",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Flavio Copes",
+      "url": "https://flaviocopes.com/",
+      "lang": "en",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "METANIT",
+      "url": "https://metanit.com/",
+      "lang": "ru",
+      "tags": [
+        "blogs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "VS Code can do that?!",
+      "url": "https://vscodecandothat.com/",
+      "lang": "en",
+      "tags": [
+        "blogs",
+        "editors"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Просто о Vim",
+      "url": "http://rus-linux.net/MyLDP/BOOKS/Vim/prosto-o-vim-01.html",
+      "lang": "ru",
+      "tags": [
+        "editors",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "10 essential Vim plugins for 2018",
+      "url": "https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9",
+      "lang": "en",
+      "tags": [
+        "editors"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как настроить VS Code для разработки на JavaScript",
+      "url": "https://guides.hexlet.io/vscode-js-setup/",
+      "lang": "ru",
+      "tags": [
+        "editors"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The Three Types of Performance Testing",
+      "url": "https://csswizardry.com/2018/10/three-types-of-performance-testing/",
+      "lang": "en",
+      "tags": [
+        "testing",
+        "performance"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Три истории о тестировании (Марина Миронович)",
+      "url": "https://www.youtube.com/watch?v=dfYZ6QejnnM",
+      "lang": "ru",
+      "tags": [
+        "testing",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как не надо тестировать (Иван Стрелков)",
+      "url": "https://www.youtube.com/watch?v=ni9Zz1j8fI4",
+      "lang": "ru",
+      "tags": [
+        "testing",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NPM Documentation",
+      "url": "https://docs.npmjs.com/",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "npm",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Полезные команды для работы с Node.js",
+      "url": "https://htmlacademy.ru/blog/useful/nodejs/useful-commands-for-working-with-nodejs",
+      "lang": "ru",
+      "tags": [
+        "node.js"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "10 привычек довольного node.js разработчика",
+      "url": "https://habr.com/ru/company/Voximplant/blog/277707/",
+      "lang": "ru",
+      "tags": [
+        "node.js"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Вы не знаете npm",
+      "url": "https://habr.com/ru/sandbox/108916/",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The package.json guide",
+      "url": "https://flaviocopes.com/package-json/",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Разбираемся с версиями пакетов в node",
+      "url": "https://monsterlessons.com/project/lessons/razbiraemsya-s-versiyami-paketov-v-node",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "8 npm Tricks You Can Use to Impress Your Colleagues",
+      "url": "https://www.freecodecamp.org/news/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e/",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как запустить JavaScript с помощью Node.js",
+      "url": "https://htmlacademy.ru/blog/useful/javascript/how-start-javascript-on-nodejs",
+      "lang": "ru",
+      "tags": [
+        "node.js"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "11 простых npm трюков, которые вас удивят",
+      "url": "https://medium.com/@echobrain/11-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D1%85-npm-%D1%82%D1%80%D1%8E%D0%BA%D0%BE%D0%B2-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B2%D0%B0%D1%81-%D1%83%D0%B4%D0%B8%D0%B2%D1%8F%D1%82-d00510587ec",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Node.js official",
+      "url": "https://nodejs.org/en/",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Скринкаст по Node.JS (Learn.javascript.ru)",
+      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZFWfEQpNixIHVvp191Hb3Gg",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "video",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 1: Event Loop and the Big Picture",
+      "url": "https://blog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 2: Timers, Immediates and Process.nextTick",
+      "url": "https://blog.insiderattack.net/timers-immediates-and-process-nexttick-nodejs-event-loop-part-2-2c53fd511bb3",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 3: Promises, Next-Ticks, and Immediates",
+      "url": "https://blog.insiderattack.net/promises-next-ticks-and-immediates-nodejs-event-loop-part-3-9226cbe7a6aa",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 4: Handling IO",
+      "url": "https://blog.insiderattack.net/handling-io-nodejs-event-loop-part-4-418062f917d1",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 5: Event Loop Best Practices",
+      "url": "https://blog.insiderattack.net/event-loop-best-practices-nodejs-event-loop-part-5-e29b2b50bfe2",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "NodeJS Event Loop Part 6: New Changes to the Timers and Microtasks in Node v11.0.0 (and above)",
+      "url": "https://blog.insiderattack.net/new-changes-to-timers-and-microtasks-from-node-v11-0-0-and-above-68d112743eb3",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "4consider",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "node-glob NPM package",
+      "url": "https://www.npmjs.com/package/glob",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "npm-package",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "node-semver NPM package",
+      "url": "https://www.npmjs.com/package/semver",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "npm-package",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "chokidar NPM package",
+      "url": "https://www.npmjs.com/package/chokidar",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "npm-package",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "del NPM package",
+      "url": "https://www.npmjs.com/package/del",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "npm-package",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "minimatch NPM package",
+      "url": "https://www.npmjs.com/package/minimatch",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "npm-package",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "through2 NPM package",
+      "url": "https://www.npmjs.com/package/through2",
+      "lang": "en",
+      "tags": [
+        "node.js",
+        "npm-package",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Уроки Node JS и Express (Гоша Дударь)",
+      "url": "https://www.youtube.com/playlist?list=PL0lO_mIqDDFX0qH9w5YQIDV6Wxy0oawet",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "video",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Курс Node.js (ITVDN)",
+      "url": "https://www.youtube.com/playlist?list=PLvItDmb0sZw-kihRjYqbnqCk8h1RJZUJu",
+      "lang": "ru",
+      "tags": [
+        "node.js",
+        "video",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Webpack official",
+      "url": "https://webpack.js.org/configuration/",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Скринкаст по Webpack (Learn.javascript.ru)",
+      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn",
+      "lang": "ru",
+      "tags": [
+        "build",
+        "webpack",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Настройка Webpack 4 (Jack Coder)",
+      "url": "https://www.youtube.com/playlist?list=PLkCrmfIT6LBQWN02hNj6r1daz7965GxsV",
+      "lang": "ru",
+      "tags": [
+        "build",
+        "webpack",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "html-webpack-plugin",
+      "url": "https://github.com/jantimon/html-webpack-plugin",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "webpack-plugin",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "html-webpack-template EJS syntax",
+      "url": "https://github.com/jaketrent/html-webpack-template/blob/master/index.ejs",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Webpack Chart",
+      "url": "https://alexkuz.github.io/webpack-chart/",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "tool"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "webpack-analyse",
+      "url": "https://webpack.github.io/analyse/",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "tool"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Готовим идеальный CSS",
+      "url": "https://habr.com/ru/company/constanta/blog/428800/",
+      "lang": "ru",
+      "tags": [
+        "build",
+        "webpack"
+      ],
+      "legend": "подключение и оптимизация стилей с помощью Webpack"
+    },
+    {
+      "caption": "Скринкаст по Gulp (Learn.javascript.ru)",
+      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ",
+      "lang": "ru",
+      "tags": [
+        "build",
+        "gulp",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "A quick guide for switching to Gulp 4",
+      "url": "https://codeburst.io/switching-to-gulp-4-0-271ae63530c0",
+      "lang": "en",
+      "tags": [
+        "build",
+        "gulp"
+      ],
+      "legend": "руководство по миграции с 3-й на 4-ю версии Gulp"
+    },
+    {
+      "caption": "Pug + Gulp",
+      "url": "http://4webfan.ru/pug-gulp/",
+      "lang": "ru",
+      "tags": [
+        "build",
+        "gulp",
+        "pug"
+      ],
+      "legend": "советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug"
+    },
+    {
+      "caption": "Using rollup.js with gulp.js",
+      "url": "https://duske.me/using-rollup-js-with-gulp-js/",
+      "lang": "en",
+      "tags": [
+        "build",
+        "gulp",
+        "rollup"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "BemGo",
+      "url": "https://github.com/werty1001/bemgo",
+      "lang": "en",
+      "tags": [
+        "build",
+        "bem"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Организация отступов в верстке (margin/padding)",
+      "url": "https://habr.com/ru/post/340420/",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": "содержит и ценные советы, и спорные моменты"
+    },
+    {
+      "caption": "Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали",
+      "url": "https://ru.hexlet.io/blog/posts/new-and-old-css-units",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "HTML & CSS: как не надо",
+      "url": "https://yoksel.github.io/bad-practices/",
+      "lang": "ru",
+      "tags": [
+        "html",
+        "css",
+        "code-quality"
+      ],
+      "legend": "подборка антипаттернов вёрстки"
+    },
+    {
+      "caption": "Мой ванильный CSS (Вадим Макеев)",
+      "url": "https://www.youtube.com/watch?v=CaDnbOjXjRg",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "A Sliding Nightmare: Understanding the Range Input",
+      "url": "https://css-tricks.com/sliding-nightmare-understanding-range-input/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Styling Cross-Browser Compatible Range Inputs with CSS",
+      "url": "https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Упорядочивание багов кроссбраузерности Flexbox",
+      "url": "https://css-live.ru/articles/uporyadochivanie-bagov-krossbrauzernosti-flexbox.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-flexbox"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Парадоксы 'display: contents' и будущее текста в CSS",
+      "url": "https://css-live.ru/css/paradoksy-displaycontents-i-budushhee-teksta-v-css.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Где всё сложно с переносами строк. Вот все CSS- и HTML-хитрости для этого",
+      "url": "https://css-live.ru/articles/gde-vsyo-slozhno-s-perenosami-strok-vot-vse-css-i-html-xitrosti-dlya-etogo.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS Flexbox cheatsheet (by Malven Co.)",
+      "url": "http://flexbox.malven.co/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css-flexbox",
+        "tool",
+        "cheatsheet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Разбираемся с clip-path",
+      "url": "https://getinstance.info/articles/css/making-sense-of-clip-path/",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Advanced CSS Theming with Custom Properties and JavaScript",
+      "url": "https://www.sitepoint.com/css-theming-custom-properties-javascript/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Пользовательские CSS-атрибуты как механизм передачи данных из JavaScript в CSS",
+      "url": "https://css-live.ru/articles/polzovatelskie-css-atributy-kak-mexanizm-peredachi-dannyx-iz-javascript-v-css.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Архитектура CSS",
+      "url": "https://web-standards.ru/articles/css-architecture/",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "My approach to using 'z-index'",
+      "url": "https://medium.com/hackernoon/my-approach-to-using-z-index-eca67feb079c",
+      "lang": "en",
+      "tags": [
+        "css",
+        "stacking-context"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Псевдоэлементы, которых не может быть",
+      "url": "https://css-live.ru/articles-css/impossible-pseudos.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "«Запашки» CSS-кода",
+      "url": "https://css-live.ru/articles/zapashki-css-koda.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "A Tale of 'width' and 'max-width'",
+      "url": "https://css-tricks.com/tale-width-max-width/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Building a Circular Navigation with CSS Transforms",
+      "url": "https://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Длинная телега про Bootstrap",
+      "url": "https://gist.github.com/iAdramelk/d328b73c72cab92ef95f",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "bootstrap"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как на самом деле работают 'z-index'",
+      "url": "https://habr.com/ru/post/431046/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "stacking-context"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как вставить двадцать видео с Ютуба и не скачать слона (Вадим Макеев)",
+      "url": "https://www.youtube.com/watch?v=4JS70KB9GS0",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "video",
+        "performance"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Прототип изоляции стилей для Shower на веб-компонентах (Вадим Макеев)",
+      "url": "https://www.youtube.com/watch?v=_FRIRJZYlxU",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "video",
+        "web-components",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "DocumentFragment: что это такое и как с ним (не) бороться",
+      "url": "https://habr.com/ru/post/413287/",
+      "lang": "ru",
+      "tags": [
+        "web-components",
+        "js"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Understanding the Critical Rendering Path",
+      "url": "https://bitsofco.de/understanding-the-critical-rendering-path/",
+      "lang": "en",
+      "tags": [
+        "performance",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Styling a Select Like It’s 2019",
+      "url": "https://www.filamentgroup.com/lab/select-css.html",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Houdini: Maybe The Most Exciting Development In CSS You’ve Never Heard Of",
+      "url": "https://www.smashingmagazine.com/2016/03/houdini-maybe-the-most-exciting-development-in-css-youve-never-heard-of/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Варианты «clearfix-хака» и его замен: сводная таблица",
+      "url": "https://css-live.ru/articles-css/clearfix-block-formatting-context-methods-cheatsheet.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Почему мы не добавим в HTML элемент <чудесный>?",
+      "url": "https://css-live.ru/faq/pochemu-my-ne-dobavim-v-html-element.html",
+      "lang": "ru",
+      "tags": [
+        "html"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Устойчивый, декларативный, контекстный (новый взгляд на сильные стороны CSS)",
+      "url": "https://css-live.ru/articles/ustojchivyj-deklarativnyj-kontekstnyj-novyj-vzglyad-na-silnye-storony-css.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Фокусы со стилями для фокуса",
+      "url": "https://css-live.ru/articles/fokusy-so-stilyami-dlya-fokusa.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как работает 'z-index'",
+      "url": "https://www.internet-technologies.ru/articles/kak-rabotaet-z-index.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "stacking-context"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Свойства 'object-fit' и 'object-position'. Масштабируем пропорционально",
+      "url": "https://html5book.ru/svoystva-object-fit-i-object-position/",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Сторонний CSS небезопасен",
+      "url": "https://css-live.ru/articles-css/storonnij-css-nebezopasen.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "security"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Новый 'display: flow-root' — не clearfix, но что это и зачем?",
+      "url": "https://css-live.ru/faq/displayflow-root-not-clearfix.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "О «призраках» в CSS и борьбе с ними: анонимные боксы",
+      "url": "https://css-live.ru/articles/mysterious-css-anonymous-boxes.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "То, что вам никто не говорил о 'z-index' в статье «То, что вам никто не говорил о z-index»",
+      "url": "https://habr.com/ru/post/225721/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "stacking-context"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "'display: contents' и его новые друзья спешат на помощь",
+      "url": "https://css-live.ru/articles/display-contents-practice.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS-свойство 'display' и контексты форматирования",
+      "url": "https://css-live.ru/articles-css/display-and-formatting-contexts.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Каждый раз, когда вы называете проприетарную фичу словом «CSS3», в мире умирает котенок",
+      "url": "https://css-live.ru/articles-css/kazhdyj-raz-kogda-vy-nazyvaete-proprietarnuyu-fichu-slovom-css3-v-mire-umiraet-kotenok.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Стандарт для нестандартного",
+      "url": "https://css-live.ru/articles-css/standart-dlya-nestandartnogo.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Постепенная деградация",
+      "url": "https://htmlacademy.ru/blog/useful/html/graceful-degradation",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Правильная шпаргалка по CSS-каскаду",
+      "url": "https://css-live.ru/css/pravilnaya-shpargalka-po-css-kaskadu.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "!important"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS Triggers",
+      "url": "https://csstriggers.com/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "tool"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS и производительность сети",
+      "url": "https://css-live.ru/articles/css-i-proizvoditelnost-seti.html",
+      "lang": "ru",
+      "tags": [
+        "!important",
+        "css",
+        "performance"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Равномерное выравнивание блоков по ширине",
+      "url": "https://css-live.ru/articles-css/ravnomernoe-vyravnivanie-blokov-po-shirine.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Ссылки против кнопок в современных веб-приложениях",
+      "url": "https://css-live.ru/articles/ssylki-protiv-knopok-v-sovremennyx-veb-prilozheniyax.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "a11y"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Aspect Ratio Boxes",
+      "url": "https://css-tricks.com/aspect-ratio-boxes/",
+      "lang": "en",
+      "tags": [
+        ""
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Изучаем матрицы трансформаций в CSS",
+      "url": "https://css-live.ru/articles/izuchaem-matricy-transformacij-v-css.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-transform"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS3 3D-трансформации",
+      "url": "https://html5book.ru/3d-transform/)",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-transform"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS border-image clarifying",
+      "url": "https://codepen.io/yialo/pen/mZJVBq",
+      "lang": "en",
+      "tags": [
+        "css",
+        "mine"
+      ],
+      "legend": "мои примеры различных значений CSS-свойства border-image. В частности, можно увидеть, что количество фрагментов при border-image-repeat: round вычисляется по правилам округления до целого ('Math.round()' в JS, например): [0, 0.5) ‒ в меньшую сторону, [0.5, 1) ‒ в б<em>о</em>льшую. Округляется частное от деления размера области бокса, предназначенной для размещения боковой части рамки, на размер соответствующей области выбранного в border-image-source изображения, оставшейся доступным после применения к нему border-image-slice."
+    },
+    {
+      "caption": "'font-feature-settings'",
+      "url": "https://css-tricks.com/almanac/properties/f/font-feature-settings/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "typography"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS Diner",
+      "url": "https://flukeout.github.io/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "tutorial"
+      ],
+      "legend": "tutorial по CSS-селекторам"
+    },
+    {
+      "caption": "Компоненты и разделение ответственности",
+      "url": "https://css-live.ru/articles/komponenty-i-razdelenie-otvetstvennosti.html",
+      "lang": "ru",
+      "tags": [
+        "design-patterns"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Отладка CSS",
+      "url": "https://css-live.ru/articles/otladka-css.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "debugging"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "MaintainableCSS",
+      "url": "https://maintainablecss.com/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": "ещё один взгляд на модулярный CSS"
+    },
+    {
+      "caption": "Почему я в восторге от «родных» CSS-переменных",
+      "url": "https://css-live.ru/articles/about-native-css-variables.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Оформление модальных окон",
+      "url": "http://prgssr.ru/development/oformlenie-modalnyh-okon.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "WebAssembly’s post-MVP future: A cartoon skill tree",
+      "url": "https://hacks.mozilla.org/2018/10/webassemblys-post-mvp-future/",
+      "lang": "en",
+      "tags": [
+        "wasm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "'flex-grow' странный. Так ли это?",
+      "url": "https://css-live.ru/articles/flex-grow-strannyj-tak-li-eto.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-flexbox"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "What’s next for CSS?",
+      "url": "https://cssdb.org/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "tool"
+      ],
+      "legend": "CSS features stage database"
+    },
+    {
+      "caption": "Фантастические веб-спецификации и где они обитают",
+      "url": "https://css-live.ru/css/fantasticheskie-veb-specifikacii-i-gde-oni-obitayut.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Аксиоматический CSS и лоботомированные совы",
+      "url": "https://frontender.info/axiomatic-css-and-lobotomized-owls/",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "12 базовых рефлексов верстальщика",
+      "url": "https://nicothin.pro/page/reflex",
+      "lang": "ru",
+      "tags": [
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Разбираемся с border-image из CSS3",
+      "url": "https://css-live.ru/articles-css/razbiraemsya-s-border-image-iz-css3.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "'border-image' generator",
+      "url": "https://border-image.com/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "tool"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как работают в флексбоксе 'z-index' и автоотступы",
+      "url": "http://prgssr.ru/development/kak-rabotayut-v-fleksbokse-z-index-i-avtootstupy.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "stacking-context",
+        "css-flexbox"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS-features | Glo Academy",
+      "url": "https://www.youtube.com/playlist?list=PL3LQJkGQtzc56HquxrkwPdQt9Q1wHm21P",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "video",
+        "4consider"
+      ],
+      "legend": "разбор вёрстки сложных кейсов (3D-трансформации, анимации)"
+    },
+    {
+      "caption": "Паттерны ООП в метафорах",
+      "url": "https://habr.com/ru/post/136766/",
+      "lang": "ru",
+      "tags": [
+        "oop",
+        "design-patterns"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "ООП в картинках",
+      "url": "https://habr.com/ru/post/463125/",
+      "lang": "ru",
+      "tags": [
+        "oop",
+        "design-patterns",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "SolidBook",
+      "url": "https://ota-solid.now.sh/",
+      "lang": "ru",
+      "tags": [
+        "oop",
+        "design-patterns",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Код с запашком",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4_%D1%81_%D0%B7%D0%B0%D0%BF%D0%B0%D1%88%D0%BA%D0%BE%D0%BC",
+      "lang": "ru",
+      "tags": [
+        "4consider",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Рефакторинг",
+      "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3",
+      "lang": "ru",
+      "tags": [
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Refactoring Guru",
+      "url": "https://refactoring.guru/ru/",
+      "lang": "ru",
+      "tags": [
+        "4consider",
+        "oop",
+        "design-patterns"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS common classnames",
+      "url": "https://github.com/yialo/css-common-classnames/blob/master/README.md",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-naming",
+        "cheatsheet",
+        "mine"
+      ],
+      "legend": "типовые названия CSS-классов"
+    },
+    {
+      "caption": "БЭМ — норм (Вадим Макеев)",
+      "url": "https://www.youtube.com/watch?v=RM55tkWfHDc",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "bem",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как называть css-классы",
+      "url": "https://habr.com/ru/post/303174/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-naming"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "BEM modifiers: multiple classes vs @extend",
+      "url": "https://www.bensmithett.com/bem-modifiers-multiple-classes-vs-extend/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "sass",
+        "bem"
+      ],
+      "legend": ""
+    }
+  ]
+}

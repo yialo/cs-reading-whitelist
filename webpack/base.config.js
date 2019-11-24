@@ -1,22 +1,24 @@
 'use strict';
 
-const fs = require('fs');
 const path = require('path');
 
-const CssExtractPlugin = require('mini-css-extract-plugin');
+const CaseSensitivePathPlugin = require('case-sensitive-paths-webpack-plugin');
+const CssExtractPlugin = require('extract-css-chunks-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const isProduction = (process.env.NODE_ENV === 'production');
+const assetHash = (isProduction ? '.[contenthash]' : '');
+
 const Path = {
-  SRC: path.join(__dirname, '../src'),
-  DIST: path.join(__dirname, '../docs'),
+  SRC: path.resolve(__dirname, '../src'),
+  DIST: path.resolve(__dirname, isProduction ? '../docs' : '../dist'),
+  ROOT: path.resolve(__dirname, '../'),
 };
 
-const PAGES_DIR = path.join(Path.SRC, './pug/pages');
-const PAGES = fs.readdirSync(PAGES_DIR).filter((filename) => filename.endsWith('.pug'));
-
-module.exports = {
+const config = {
   context: Path.SRC,
 
   entry: {
@@ -32,6 +34,7 @@ module.exports = {
             loader: 'pug-loader',
             options: {
               pretty: true,
+              self: true,
             },
           },
         ],
@@ -39,13 +42,19 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: '/node_modules/',
-        loader: 'babel-loader',
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              configFile: path.join(Path.ROOT, 'babel.config.js'),
+            },
+          },
+        ],
       },
       {
         test: /\.css$/,
         exclude: '/node_modules/',
         use: [
-          'style-loader',
           CssExtractPlugin.loader,
           {
             loader: 'css-loader',
@@ -58,9 +67,20 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
+              config: {
+                path: Path.ROOT,
+              },
             },
           },
         ],
+      },
+      {
+        test: /\.png$/,
+        loader: 'file-loader',
+        options: {
+          name: `[name]${assetHash}.[ext]`,
+          outputPath: 'assets/img',
+        },
       },
     ],
   },
@@ -75,47 +95,54 @@ module.exports = {
           enforce: true,
         },
       },
+      minChunks: 2,
     },
+    noEmitOnErrors: true,
   },
 
   output: {
-    filename: `assets/js/[name].js`,
+    filename: `assets/js/[name]${assetHash}.js`,
     path: Path.DIST,
-    publicPath: '/',
+    publicPath: isProduction ? 'https://yialo.github.io/cs-reading-whitelist/' : '/',
   },
 
   plugins: [
-    new CleanWebpackPlugin(),
+    new CaseSensitivePathPlugin(),
+    new CleanWebpackPlugin({
+      cleanStaleWebpackAssets: false,
+    }),
     new CssExtractPlugin({
-      filename: `assets/css/[name].css`,
+      filename: `assets/css/[name]${assetHash}.css`,
     }),
     new CopyPlugin([
       {
         from: path.join(Path.SRC, 'static/fonts/'),
-        to: path.join(Path.DIST, 'assets/fonts/[name].[hash].[ext]'),
+        to: path.join(Path.DIST, 'assets/fonts'),
       },
     ]),
-
-    ...PAGES.map((page) => (
-      new HtmlPlugin({
-        inject: false,
-        filename: page.replace('.pug', '.html'),
-        template: `${PAGES_DIR}/${page}`,
-      })
-    )),
+    new HtmlPlugin({
+      filename: 'index.html',
+      template: path.join(Path.SRC, 'pug/pages/index.pug'),
+    }),
+    new ManifestPlugin({
+      filter: (descriptor) => descriptor.isChunk,
+    }),
   ],
 
-  // FIXME: aliases do not working now
   resolve: {
     alias: {
       '@': Path.SRC,
-      'Public': 'https://yialo.github.io/cs-reading-whitelist',
     },
   },
 
   stats: {
     assets: false,
-    // entrypoints: false,
+    entrypoints: false,
     modules: false,
   },
+};
+
+module.exports = {
+  core: config,
+  path: Path,
 };

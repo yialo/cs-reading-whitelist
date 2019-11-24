@@ -17,22 +17,5 @@ module.exports = {
       },
     },
     './src/postcss/font-face-set': {},
-    'cssnano': (
-      process.env.NODE_ENV === 'production'
-        ? {
-          preset: [
-            'default',
-            {
-              discardComments: true,
-            },
-            {
-              normalizeCharset: {
-                add: true,
-              },
-            },
-          ],
-        }
-        : false
-    ),
   },
 };

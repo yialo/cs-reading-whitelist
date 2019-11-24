@@ -2,11 +2,11 @@
   --color-conic-dark: #eeeeee;
 
   max-width: 672px;
-  min-height: 100%;
+  min-height: 100vh;
   padding: 48px 24px;
   background-color: white;
   background-image: conic-gradient(
-    at center,
+    at center 50vh,
     var(--color-conic-dark) 120deg,
     white 180deg,
     var(--color-conic-dark) 360deg
