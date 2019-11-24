@@ -1,58 +1,3 @@
-## HTML & CSS: common
-
-* [ru] [Как вставить двадцать видео с Ютуба и не скачать слона (Вадим Макеев)](https://www.youtube.com/watch?v=4JS70KB9GS0) _#video_
-* [ru] [Прототип изоляции стилей для Shower на веб-компонентах (Вадим Макеев)](https://www.youtube.com/watch?v=_FRIRJZYlxU) _#4consider_ _#video_
-* [ru] [DocumentFragment: что это такое и как с ним (не) бороться](https://habr.com/ru/post/413287/)
-* [en] [Understanding the Critical Rendering Path](https://bitsofco.de/understanding-the-critical-rendering-path/) _#4consider_
-* [en] [Styling a Select Like It’s 2019](https://www.filamentgroup.com/lab/select-css.html)
-* [en] [Houdini: Maybe The Most Exciting Development In CSS You’ve Never Heard Of](https://www.smashingmagazine.com/2016/03/houdini-maybe-the-most-exciting-development-in-css-youve-never-heard-of/)
-* [ru] [Варианты «clearfix-хака» и его замен: сводная таблица](https://css-live.ru/articles-css/clearfix-block-formatting-context-methods-cheatsheet.html)
-* [ru] [Почему мы не добавим в HTML элемент <чудесный>?](https://css-live.ru/faq/pochemu-my-ne-dobavim-v-html-element.html)
-* [ru] [Устойчивый, декларативный, контекстный (новый взгляд на сильные стороны CSS)](https://css-live.ru/articles/ustojchivyj-deklarativnyj-kontekstnyj-novyj-vzglyad-na-silnye-storony-css.html)
-* [ru] [Фокусы со стилями для фокуса](https://css-live.ru/articles/fokusy-so-stilyami-dlya-fokusa.html)
-* [ru] [Как работает `z-index`](https://www.internet-technologies.ru/articles/kak-rabotaet-z-index.html)
-* [ru] [Свойства `object-fit` и `object-position`. Масштабируем пропорционально](https://html5book.ru/svoystva-object-fit-i-object-position/)
-* [ru] [Сторонний CSS небезопасен](https://css-live.ru/articles-css/storonnij-css-nebezopasen.html)
-* [ru] [Новый display:flow-root — не clearfix, но что это и зачем?](https://css-live.ru/faq/displayflow-root-not-clearfix.html)
-* [ru] [О «призраках» в CSS и борьбе с ними: анонимные боксы](https://css-live.ru/articles/mysterious-css-anonymous-boxes.html)
-* [ru] [То, что вам никто не говорил о z-index в статье «То, что вам никто не говорил о z-index»](https://habr.com/ru/post/225721/)
-* [ru] [`display: contents` и его новые друзья спешат на помощь](https://css-live.ru/articles/display-contents-practice.html)
-* [ru] [CSS-свойство `display` и контексты форматирования](https://css-live.ru/articles-css/display-and-formatting-contexts.html)
-* [ru] [Каждый раз, когда вы называете проприетарную фичу словом «CSS3», в мире умирает котенок](https://css-live.ru/articles-css/kazhdyj-raz-kogda-vy-nazyvaete-proprietarnuyu-fichu-slovom-css3-v-mire-umiraet-kotenok.html)
-* [ru] [Стандарт для нестандартного](https://css-live.ru/articles-css/standart-dlya-nestandartnogo.html)
-* [ru] [Постепенная деградация](https://htmlacademy.ru/blog/useful/html/graceful-degradation) _#4consider_
-* [ru] [Правильная шпаргалка по CSS-каскаду](https://css-live.ru/css/pravilnaya-shpargalka-po-css-kaskadu.html) _#!important_
-* [en] [CSS Triggers](https://csstriggers.com/) _#tool_
-* [ru] [CSS и производительность сети](https://css-live.ru/articles/css-i-proizvoditelnost-seti.html) _#!important_
-* [ru] [Равномерное выравнивание блоков по ширине](https://css-live.ru/articles-css/ravnomernoe-vyravnivanie-blokov-po-shirine.html)
-* [ru] [Ссылки против кнопок в современных веб-приложениях](https://css-live.ru/articles/ssylki-protiv-knopok-v-sovremennyx-veb-prilozheniyax.html)
-* [en] [Aspect Ratio Boxes](https://css-tricks.com/aspect-ratio-boxes/)
-* [ru] [Изучаем матрицы трансформаций в CSS](https://css-live.ru/articles/izuchaem-matricy-transformacij-v-css.html)
-* [ru] [CSS3 3D-трансформации](https://html5book.ru/3d-transform/)
-* [en] [CSS border-image clarifying](https://codepen.io/yialo/pen/mZJVBq) _#mine_\
-\- мои примеры различных значений CSS-свойства border-image. В частности, можно увидеть, что количество фрагментов при border-image-repeat: round вычисляется по правилам округления до целого (`Math.round()` в JS, например): [0, 0.5) ‒ в меньшую сторону, [0.5, 1) ‒ в б**о**льшую. Округляется частное от деления размера области бокса, предназначенной для размещения боковой части рамки, на размер соответствующей области выбранного в border-image-source изображения, оставшейся доступным после применения к нему border-image-slice.
-* [en] [`font-feature-settings`](https://css-tricks.com/almanac/properties/f/font-feature-settings/)
-* [en] [CSS Diner](https://flukeout.github.io/) _#tutorial_\
-\- tutorial по CSS-селекторам
-* [ru] [Компоненты и разделение ответственности](https://css-live.ru/articles/komponenty-i-razdelenie-otvetstvennosti.html)
-* [ru] [Отладка CSS](https://css-live.ru/articles/otladka-css.html)
-* [en] [MaintainableCSS](https://maintainablecss.com/)\
-\- ещё один взгляд на модулярный CSS
-* [ru] [Почему я в восторге от «родных» CSS-переменных](https://css-live.ru/articles/about-native-css-variables.html)
-* [ru] [Оформление модальных окон](http://prgssr.ru/development/oformlenie-modalnyh-okon.html)
-* [en] [WebAssembly’s post-MVP future: A cartoon skill tree](https://hacks.mozilla.org/2018/10/webassemblys-post-mvp-future/)
-* [ru] [`flex-grow` странный. Так ли это?](https://css-live.ru/articles/flex-grow-strannyj-tak-li-eto.html)
-* [en] [What’s next for CSS?](https://cssdb.org/) _#tool_\
-\- CSS features stage database
-* [ru] [Фантастические веб-спецификации и где они обитают](https://css-live.ru/css/fantasticheskie-veb-specifikacii-i-gde-oni-obitayut.html)
-* [ru] [Аксиоматический CSS и лоботомированные совы](https://frontender.info/axiomatic-css-and-lobotomized-owls/)
-* [ru] [12 базовых рефлексов верстальщика](https://nicothin.pro/page/reflex)
-* [ru] [Разбираемся с border-image из CSS3](https://css-live.ru/articles-css/razbiraemsya-s-border-image-iz-css3.html)
-* [en] [`border-image` generator](https://border-image.com/) _#tool_
-* [ru] [Как работают в флексбоксе `z-index` и автоотступы](http://prgssr.ru/development/kak-rabotayut-v-fleksbokse-z-index-i-avtootstupy.html)
-* [ru] [CSS-features | Glo Academy](https://www.youtube.com/playlist?list=PL3LQJkGQtzc56HquxrkwPdQt9Q1wHm21P) _#video_ _#4consider_\
-\- разбор вёрстки сложных кейсов (3D-трансформации, анимации)
-
 ## CSS class naming, BEM
 
 * [ru] [CSS common classnames](https://github.com/yialo/css-common-classnames/blob/master/README.md) _#favourite_\
@@ -270,15 +215,6 @@
 * [ru] [Дорожный указатель «Фрамир двери»](https://bureau.ru/soviet/20190716/)\
 \- проработка дизайна дорожного указателя
 * [ru] [Подписи «переключателей»](https://bureau.ru/soviet/20190723/)
-
-## OOP, design patterns
-
-* [ru] [Паттерны ООП в метафорах](https://habr.com/ru/post/136766/)
-* [ru] [ООП в картинках](https://habr.com/ru/post/463125/) _#4consider_
-* [ru] [SolidBook](https://ota-solid.now.sh/) _#4consider_
-* [ru] [Код с запашком](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4_%D1%81_%D0%B7%D0%B0%D0%BF%D0%B0%D1%88%D0%BA%D0%BE%D0%BC) _#4consider_
-* [ru] [Рефакторинг](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3)
-* [ru] [Refactoring Guru](https://refactoring.guru/ru/) _#4consider_
 
 ## Git
 
