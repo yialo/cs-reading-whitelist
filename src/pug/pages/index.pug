@@ -13,7 +13,8 @@ block body
         ul.s_list.chapter__list
           - const { entries } = require('@/json/subjects.json');
           - for (const { caption, url, lang, tags, legend } of entries)
-            li #[a(href=url) #{caption}]#{legend ? ` - ${legend}` : ''}
+            li #[a(href=url) #{caption}]
+              != legend ? ` - ${legend}` : ''
               ul.s_list.chapter__tags
                 each tag in tags
                   li ##{tag}
