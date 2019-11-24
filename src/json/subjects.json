@@ -94,7 +94,7 @@
     },
     {
       "caption": "Хороший разработчик и его образ мышления, часть 2",
-      "url": "https://techrocks.ru/2019/04/14/good-developer-mindset-2/",
+      "url": "https://techrocks.ru/2019/04/15/good-developer-mindset-2/",
       "lang": "ru",
       "tags": [
         "code-quality",
@@ -1558,7 +1558,7 @@
       "legend": "типовые названия CSS-классов"
     },
     {
-      "caption": "БЭМ — норм, (Вадим Макеев, WSD в Новосибирске)",
+      "caption": "БЭМ — норм (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=RM55tkWfHDc",
       "lang": "ru",
       "tags": [
