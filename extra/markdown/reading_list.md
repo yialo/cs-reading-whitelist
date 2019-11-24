@@ -1,10 +1,5 @@
 ## CSS class naming, BEM
 
-* [ru] [CSS common classnames](https://github.com/yialo/css-common-classnames/blob/master/README.md) _#favourite_\
-\- типовые названия CSS-классов
-* [ru] [БЭМ — норм, (Вадим Макеев, WSD в Новосибирске)](https://www.youtube.com/watch?v=RM55tkWfHDc) _#video_
-* [ru] [Как называть css-классы](https://habr.com/ru/post/303174/)
-* [en] [BEM modifiers: multiple classes vs @extend](https://www.bensmithett.com/bem-modifiers-multiple-classes-vs-extend/)
 * [ru] [Режимы и квази-режимы](https://noteskeeper.ru/62/)
 * [en] [CSS Guidelines (by Harry Roberts)](https://cssguidelin.es/) _#favourite_\
 \- огромный набор рекомендаций по БЭМ
