@@ -18,15 +18,11 @@ const Path = {
 const isProduction = (process.env.NODE_ENV === 'production');
 const assetHash = (isProduction ? '.[contenthash]' : '');
 
-module.exports = {
+const config = {
   context: Path.SRC,
 
   entry: {
     'app': Path.SRC,
-  },
-
-  externals: {
-    path: Path,
   },
 
   module: {
@@ -38,6 +34,7 @@ module.exports = {
             loader: 'pug-loader',
             options: {
               pretty: true,
+              self: true,
             },
           },
         ],
@@ -58,13 +55,7 @@ module.exports = {
         test: /\.css$/,
         exclude: '/node_modules/',
         use: [
-          {
-            loader: CssExtractPlugin.loader,
-            options: {
-              hot: !isProduction,
-              reloadAll: true,
-            },
-          },
+          CssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -118,7 +109,7 @@ module.exports = {
   plugins: [
     new CaseSensitivePathPlugin(),
     new CleanWebpackPlugin({
-      cleanStaleWebpackAssets: isProduction,
+      cleanStaleWebpackAssets: false,
     }),
     new CssExtractPlugin({
       filename: `assets/css/[name]${assetHash}.css`,
@@ -149,4 +140,9 @@ module.exports = {
     entrypoints: false,
     modules: false,
   },
+};
+
+module.exports = {
+  core: config,
+  path: Path,
 };

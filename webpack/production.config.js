@@ -1,7 +1,5 @@
 'use strict';
 
-process.env.NODE_ENV = 'production';
-
 const merge = require('webpack-merge');
 const cssnano = require('cssnano');
 const CssOptimizePlugin = require('optimize-css-assets-webpack-plugin');
@@ -9,7 +7,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 const baseConfig = require('./base.config');
 
-const productionConfig = merge(baseConfig, {
+const productionConfig = merge(baseConfig.core, {
   mode: 'production',
 
   optimization: {
