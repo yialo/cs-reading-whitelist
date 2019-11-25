@@ -1,7 +1,6 @@
 # npm files
 node_modules/
 npm-debug.*
-package-lock.json
 
 # env files
 .env
