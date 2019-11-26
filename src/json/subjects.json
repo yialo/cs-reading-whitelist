@@ -322,6 +322,15 @@
       "legend": ""
     },
     {
+      "caption": "Сайт Юлии Бухваловой (Yoksel)",
+      "url": "http://css.yoksel.ru/",
+      "lang": "",
+      "tags": [
+        ""
+      ],
+      "legend": "много неочевидного об SVG"
+    },
+    {
       "caption": "CSS Wizardry",
       "url": "https://csswizardry.com/",
       "lang": "en",
@@ -1563,13 +1572,14 @@
       "lang": "ru",
       "tags": [
         "css",
+        "css-naming",
         "bem",
         "video"
       ],
       "legend": ""
     },
     {
-      "caption": "Как называть css-классы",
+      "caption": "Как называть CSS-классы",
       "url": "https://habr.com/ru/post/303174/",
       "lang": "ru",
       "tags": [
@@ -1586,6 +1596,170 @@
         "css",
         "sass",
         "bem"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Режимы и квази-режимы",
+      "url": "https://noteskeeper.ru/62/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-naming",
+        "design-patterns"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS Guidelines (by Harry Roberts)",
+      "url": "https://cssguidelin.es/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css-naming",
+        "bem"
+      ],
+      "legend": "огромный набор рекомендаций по БЭМ"
+    },
+    {
+      "caption": "БЭМ: про обёртки",
+      "url": "https://ru.bem.info/forum/656/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-naming",
+        "bem"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "БЭМ: псевдоклассы vs. модификаторы",
+      "url": "https://ru.bem.info/forum/1495/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-naming",
+        "bem"
+      ],
+      "legend": "для чего нужны модификаторы состояний и почему псевдоклассов может быть недостаточно"
+    },
+    {
+      "caption": "Как работать с CSS-препроцессорами и БЭМ",
+      "url": "https://nicothin.pro/idiomatic-pre-CSS/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "sass",
+        "bem",
+        "code-quality"
+      ],
+      "legend": "список рекомендаций по неусложнению жизни себе и другим участникам проекта по вёрстке"
+    },
+    {
+      "caption": "Sensible CSS Guidelines for large scale projects",
+      "url": "https://github.com/chris-pearce/css-guidelines",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css-naming",
+        "4consider"
+      ],
+      "legend": "много полезного, в частности: набор вариантов написания CSS-классов для состояний (JS hooks), глобальные и локальные переменные"
+    },
+    {
+      "caption": "Battling BEM CSS: 10 Common Problems And How To Avoid Them",
+      "url": "https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css-naming",
+        "bem"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Десять заповедей логичных файлов стилей",
+      "url": "https://css-live.ru/articles/desyat-zapovedej-logichnyx-fajlov-stilej.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-naming",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Nesting Components",
+      "url": "http://simurai.com/blog/2015/05/11/nesting-components",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css-naming"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "idiomatic-css: Принципы написания однородного CSS-кода",
+      "url": "https://github.com/necolas/idiomatic-css/blob/master/translations/ru-RU/README.md",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Airbnb CSS / Sass Styleguide",
+      "url": "https://github.com/airbnb/css",
+      "lang": "en",
+      "tags": [
+        "css",
+        "sass",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Что такое CSS-модули и зачем они нам?",
+      "url": "https://frontender.info/css-modules-part-1-need/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-naming"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Семантический CSS",
+      "url": "https://css-live.ru/articles/semanticheskij-css.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-naming",
+        "!important"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "БЭМантика: пишите осмысленные стили без повторов",
+      "url": "https://css-live.ru/articles/bemantika-pishite-osmyslennye-stili-bez-povtorov.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-naming",
+        "bem"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Пишем БЭМ правильно (Игорь Зенич)",
+      "url": "https://www.youtube.com/watch?v=kBgHdSOj33A",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-naming",
+        "bem",
+        "video"
       ],
       "legend": ""
     }

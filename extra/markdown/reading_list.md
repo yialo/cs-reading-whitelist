@@ -1,24 +1,4 @@
-## CSS class naming, BEM
-
-* [ru] [Режимы и квази-режимы](https://noteskeeper.ru/62/)
-* [en] [CSS Guidelines (by Harry Roberts)](https://cssguidelin.es/) _#favourite_\
-\- огромный набор рекомендаций по БЭМ
-* [ru] [БЭМ: про обёртки](https://ru.bem.info/forum/656/)
-* [ru] [БЭМ: псевдоклассы vs. модификаторы](https://ru.bem.info/forum/1495/)\
-\- для чего нужны модификаторы состояний и почему псевдоклассов может быть недостаточно
-* [ru] [Как работать с CSS-препроцессорами и БЭМ](https://nicothin.pro/idiomatic-pre-CSS/)\
-\- список рекомендаций по неусложнению жизни себе и другим участникам проекта по вёрстке
-* [en] [Sensible CSS Guidelines for large scale projects](https://github.com/chris-pearce/css-guidelines) _#4consider_\
-\- много полезного, в частности: набор вариантов написания CSS-классов для состояний (JS hooks), глобальные и локальные переменные
-* [en] [Battling BEM CSS: 10 Common Problems And How To Avoid Them](https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/)
-* [ru] [Десять заповедей логичных файлов стилей](https://css-live.ru/articles/desyat-zapovedej-logichnyx-fajlov-stilej.html)
-* [en] [Nesting Components](http://simurai.com/blog/2015/05/11/nesting-components)
-* [ru] [idiomatic-css: Принципы написания однородного CSS-кода](https://github.com/necolas/idiomatic-css/blob/master/translations/ru-RU/README.md)
-* [en] [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
-* [ru] [Что такое CSS-модули и зачем они нам?](https://frontender.info/css-modules-part-1-need/)
-* [ru] [Семантический CSS](https://css-live.ru/articles/semanticheskij-css.html) _#!important_
-* [ru] [БЭМантика: пишите осмысленные стили без повторов](https://css-live.ru/articles/bemantika-pishite-osmyslennye-stili-bez-povtorov.html)
-* [ru] [Пишем БЭМ правильно (Игорь Зенич)](https://www.youtube.com/watch?v=kBgHdSOj33A) _#video_
+# Rest of entries
 
 ## CSS Grid Layout
 

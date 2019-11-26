@@ -13,7 +13,6 @@
 * language-postcss
 * LogFileHighlighter
 * material-icon-theme
-* metago
 * npm-intellisense
 * output-colorizer
 * path-intellisense

@@ -11,6 +11,11 @@
 5. Add ***author*** field.
 6. Add Chrome bookmarks.
 7. Add volume with interesting fonts.
+8. CSS hashtags
+    * 'css-naming' unnecessary with 'bem'?
+    * Add 'css-architecture'(??) hashtag: 'css-naming' + 'design-patterns'
+9. (?) Different hashtag types (maybe via prefixing)
+10. Change README.md: add npm cli commands
 
 ## More far future
 
