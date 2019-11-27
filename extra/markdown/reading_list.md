@@ -1,23 +1,5 @@
 # Rest of entries
 
-## JavaScript
-
-* [ru] [Глубокое погружение в ES-модули в картинках](https://medium.com/web-standards/es-modules-cartoon-dive-71f42c1e851a)
-* [en] [Logical XOR in JavaScript](http://www.howtocreate.co.uk/xor.html)
-* [ru] [HTMLCollection, NodeList и массив объектов](https://medium.com/@kanby/htmlcollection-nodelist-%D0%B8-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-582cbd9ae1fc)
-* [ru] [ES6: Расширение литерала объектов](http://jsraccoon.ru/es6-object-literal)
-* [ru] [Справочник современных концепций JavaScript: часть 1](https://medium.com/devschacht/glossary-of-modern-javascript-concepts-1198b24e8f56) _#series_
-* [ru] [Справочник современных концепций JavaScript: часть 2](https://medium.com/devschacht/%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B9-javascript-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-8ecf07f3f36a) _#series_ _#4consider_
-* [ru] [Разъяснения насчёт JavaScript, ECMA–262, TC39 и транскомпиляторов ECMAScript](https://frontender.info/javascript-ecma-262-tc39-and-ecmascript-transpilers-explained/)
-* [en] [Asyncstepping](http://asyncstepping.glitch.me/) _#tool_\
-\- наглядный пример для тестирования асинхронного JS в (Chrome) DevTools
-* [en] [Properties in JavaScript: definition versus assignment (by Dr. Axel Rauschmayer)](https://2ality.com/2012/08/property-definition-assignment.html) _#4consider_
-* [en] [await vs return vs return await](https://jakearchibald.com/2017/await-vs-return-vs-return-await/)
-* [ru] [Почему использовать `return await` плохая идея?](https://medium.com/@kanby/%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-return-await-%D0%BF%D0%BB%D0%BE%D1%85%D0%B0%D1%8F-%D0%B8%D0%B4%D0%B5%D1%8F-e87b70015f0c)
-* [ru] [Полное понимание синхронного и асинхронного JavaScript с `async/await`](https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B0%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-javascript-%D1%81-async-await-ba5f47f4436)
-* [ru] [Введение в Immutable.js и основные концепции функционального программирования](https://medium.com/devschacht/sebasti%C3%A1n-peyrott-introduction-to-immutablejs-and-functional-programming-concepts-b3a6555af0ee)
-* [--ADD_DESCRIPTION--] http://aem1k.com/
-
 ## React
 
 * [en] [React official](https://reactjs.org/) _#library_

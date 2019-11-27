@@ -2522,6 +2522,149 @@
         "4consider"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Глубокое погружение в ES-модули в картинках",
+      "url": "https://medium.com/web-standards/es-modules-cartoon-dive-71f42c1e851a",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "es2015+"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Logical XOR in JavaScript",
+      "url": "http://www.howtocreate.co.uk/xor.html",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "HTMLCollection, NodeList и массив объектов",
+      "url": "https://medium.com/@kanby/htmlcollection-nodelist-%D0%B8-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-582cbd9ae1fc",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "dom"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "ES6: Расширение литерала объектов",
+      "url": "http://jsraccoon.ru/es6-object-literal",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "es2015+"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Справочник современных концепций JavaScript: часть 1",
+      "url": "https://medium.com/devschacht/glossary-of-modern-javascript-concepts-1198b24e8f56",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Справочник современных концепций JavaScript: часть 2",
+      "url": "https://medium.com/devschacht/%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B9-javascript-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-8ecf07f3f36a",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "series",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Разъяснения насчёт JavaScript, ECMA–262, TC39 и транскомпиляторов ECMAScript",
+      "url": "https://frontender.info/javascript-ecma-262-tc39-and-ecmascript-transpilers-explained/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "es2015+",
+        "babel"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Asyncstepping",
+      "url": "http://asyncstepping.glitch.me/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "tool"
+      ],
+      "legend": "наглядный пример для тестирования асинхронного JS в (Chrome) DevTools"
+    },
+    {
+      "caption": "Properties in JavaScript: definition versus assignment (by Dr. Axel Rauschmayer)",
+      "url": "https://2ality.com/2012/08/property-definition-assignment.html",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "es2015+"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "JavaScript Hacks and Creative Coding (by Martin Kleppe)",
+      "url": "http://aem1k.com/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "fun"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "await vs return vs return await",
+      "url": "https://jakearchibald.com/2017/await-vs-return-vs-return-await/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "es2015+"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Почему использовать `return await` плохая идея?",
+      "url": "https://medium.com/@kanby/%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-return-await-%D0%BF%D0%BB%D0%BE%D1%85%D0%B0%D1%8F-%D0%B8%D0%B4%D0%B5%D1%8F-e87b70015f0c",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "es2015+"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Полное понимание синхронного и асинхронного JavaScript с 'async/await'",
+      "url": "https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B0%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-javascript-%D1%81-async-await-ba5f47f4436",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "es2015+"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Введение в Immutable.js и основные концепции функционального программирования",
+      "url": "https://medium.com/devschacht/sebasti%C3%A1n-peyrott-introduction-to-immutablejs-and-functional-programming-concepts-b3a6555af0ee",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "algorithms",
+        "functional-programming",
+        "immutable-js"
+      ],
+      "legend": ""
     }
   ]
 }
