@@ -2214,6 +2214,314 @@
         "a11y"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Современный учебник JavaScript",
+      "url": "https://learn.javascript.ru/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "!important",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The Complete JavaScript Handbook (by Flavio Copes)",
+      "url": "https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Осваиваем замыкания в Javascript",
+      "url": "https://medium.com/@sshambir/%D0%BE%D1%81%D0%B2%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-5b83267ef7d1",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Подключение JavaScript кода",
+      "url": "https://devman.org/encyclopedia/frontend/frontend_plug_js/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Красивый и чистый: инструменты, которые помогают добиться почти идеального кода",
+      "url": "https://habr.com/ru/company/skillbox/blog/428231/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Airbnb JavaScript Style Guide",
+      "url": "https://github.com/airbnb/javascript/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Integrating Prettier + ESLint + Airbnb Style Guide in VSCode",
+      "url": "https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "editors"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как кодить на JavaScript в 2019? Тренды, тенденции, предсказания",
+      "url": "https://proglib.io/p/javascript-2019/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": "обзор содержит большую подборку ссылок на учебные материалы, которые будут актуальны и после 2019 года"
+    },
+    {
+      "caption": "Всегда чистый код: 5 инструментов для JavaScript-разработчика",
+      "url": "https://proglib.io/p/clean-code-tools/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Асинхронный JavaScript против отложенного",
+      "url": "https://habr.com/ru/post/323790/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Веб-фреймворки: введение для новичков",
+      "url": "https://tproger.ru/translations/web-frameworks-how-to-get-started/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Babel / JS: Настройка окружения",
+      "url": "https://ru.hexlet.io/courses/js-setup-environment/lessons/babel/theory_unit",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "babel"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Учите ванильный JavaScript, прежде чем браться за фреймворки",
+      "url": "https://www.cat-in-web.ru/vanilla-js/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "JS для начинающих. Урок 1.11: Циклы",
+      "url": "https://true-coder.ru/js-dlya-nachinayushhix/js-dlya-nachinayushhix-urok-1-11-cikly.html",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "algorithms"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Вы освоили азы JavaScript. Но что дальше?",
+      "url": "https://css-live.ru/articles/vy-osvoili-azy-javascript-no-chto-dalshe.html",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Опережающие и ретроспективные проверки в регулярных выражениях",
+      "url": "https://habr.com/ru/post/159483/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "regexp",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "JSON Schema Reference",
+      "url": "https://json-schema.org/understanding-json-schema/reference/index.html",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "json",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как работает рекурсия – объяснение в блок-схемах и видео",
+      "url": "https://habr.com/ru/post/337030/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "algorithms"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Формы в HTML5: JavaScript и API для принудительной валидации форм",
+      "url": "https://www.internet-technologies.ru/articles/formy-v-html5-javascript-i-api-dlya-prinuditelnoy-validacii-form.html",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Немедленно вызываемые функции - IIFE (Immediately-Invoked Function Expression)",
+      "url": "https://getinstance.info/articles/javascript/immediately-invoked-function-expressions/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Нужно ли чистить строки в JavaScript?",
+      "url": "https://habr.com/ru/post/449368/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Ад обратных вызовов",
+      "url": "http://callbackhell.ru/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "12 хитростей JavaScript, которых вы не найдете в большинстве уроков",
+      "url": "http://jem-space.ru/12-khitrostiei-javascript-kotorykh-vy-nie-naidietie-v-bolshinstvie-urokov/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Hacks for Creating JavaScript Arrays",
+      "url": "https://www.freecodecamp.org/news/https-medium-com-gladchinda-hacks-for-creating-javascript-arrays-a1b80cb372b/",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Ключевое слово this в javascript — учимся определять контекст на практике",
+      "url": "https://habr.com/ru/post/149516/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The art of naming variables",
+      "url": "https://hackernoon.com/the-art-of-naming-variables-52f44de00aad",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Что такое Throttling и Debouncing?",
+      "url": "https://medium.com/nuances-of-programming/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-throttling-%D0%B8-debouncing-4f0a839769ef",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Что за черт, Javascript",
+      "url": "https://habr.com/ru/company/mailru/blog/335292/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Prototype, proto и оператор 'new'",
+      "url": "https://habr.com/ru/post/140810/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": "разбор действий, которые выполняет движок при обработке инструкций, содержащих 'new'"
+    },
+    {
+      "caption": "Javascript Anomaly",
+      "url": "https://github.com/ufocoder/javascript.anomaly",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "ES6: Реструктуризующее присваивание",
+      "url": "http://jsraccoon.ru/es6-destructuring",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "es2015+"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Паттерны для масштабируемых JavaScript-приложений (Эдди Османи)",
+      "url": "http://largescalejs.ru/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "design-patterns",
+        "4consider"
+      ],
+      "legend": ""
     }
   ]
 }

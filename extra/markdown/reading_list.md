@@ -2,41 +2,6 @@
 
 ## JavaScript
 
-* [ru] [Современный учебник JavaScript](https://learn.javascript.ru/) _#!important_\
-\- пожалуй, лучший русскоязычный учебник по JavaScript
-* [en] [The Complete JavaScript Handbook (by Flavio Copes)](https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/)
-* [ru] [Осваиваем замыкания в Javascript](https://medium.com/@sshambir/%D0%BE%D1%81%D0%B2%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-5b83267ef7d1)
-* [ru] [Подключение JavaScript кода](https://devman.org/encyclopedia/frontend/frontend_plug_js/)
-* [ru] [Красивый и чистый: инструменты, которые помогают добиться почти идеального кода](https://habr.com/ru/company/skillbox/blog/428231/)
-* [en] [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript/) _#favourite_
-* [en] [Integrating Prettier + ESLint + Airbnb Style Guide in VSCode](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
-* [ru] [Как кодить на JavaScript в 2019? Тренды, тенденции, предсказания](https://proglib.io/p/javascript-2019/)\
-\- обзор содержит большую подборку ссылок на учебные материалы, которые будут актуальны и после 2019 года
-* [ru] [Всегда чистый код: 5 инструментов для JavaScript-разработчика](https://proglib.io/p/clean-code-tools/)
-* [ru] [Асинхронный JavaScript против отложенного](https://habr.com/ru/post/323790/)
-* [ru] [Веб-фреймворки: введение для новичков](https://tproger.ru/translations/web-frameworks-how-to-get-started/) _#4consider_
-* [ru] [Babel / JS: Настройка окружения](https://ru.hexlet.io/courses/js-setup-environment/lessons/babel/theory_unit)
-* [ru] [Учите ванильный JavaScript, прежде чем браться за фреймворки](https://www.cat-in-web.ru/vanilla-js/)
-* [ru] [JS для начинающих. Урок 1.11: Циклы](https://true-coder.ru/js-dlya-nachinayushhix/js-dlya-nachinayushhix-urok-1-11-cikly.html)
-* [ru] [Вы освоили азы JavaScript. Но что дальше?](https://css-live.ru/articles/vy-osvoili-azy-javascript-no-chto-dalshe.html)
-* [ru] [Опережающие и ретроспективные проверки в регулярных выражениях](https://habr.com/ru/post/159483/) _#4consider_
-* [en] [JSON Schema Reference](https://json-schema.org/understanding-json-schema/reference/index.html) _#favourite_
-* [ru] [Как работает рекурсия – объяснение в блок-схемах и видео](https://habr.com/ru/post/337030/)
-* [ru] [Формы в HTML5: JavaScript и API для принудительной валидации форм](https://www.internet-technologies.ru/articles/formy-v-html5-javascript-i-api-dlya-prinuditelnoy-validacii-form.html)
-* [ru] [Немедленно вызываемые функции (Immediately-Invoked Function Expression) - IIFE](https://getinstance.info/articles/javascript/immediately-invoked-function-expressions/)
-* [ru] [Нужно ли чистить строки в JavaScript?](https://habr.com/ru/post/449368/) _#4consider_
-* [ru] [Ад обратных вызовов](http://callbackhell.ru/)
-* [ru] [12 хитростей JavaScript, которых вы не найдете в большинстве уроков](http://jem-space.ru/12-khitrostiei-javascript-kotorykh-vy-nie-naidietie-v-bolshinstvie-urokov/)
-* [en] [Hacks for Creating JavaScript Arrays](https://www.freecodecamp.org/news/https-medium-com-gladchinda-hacks-for-creating-javascript-arrays-a1b80cb372b/)
-* [ru] [Ключевое слово this в javascript — учимся определять контекст на практике](https://habr.com/ru/post/149516/)
-* [en] [The art of naming variables](https://hackernoon.com/the-art-of-naming-variables-52f44de00aad)
-* [ru] [Что такое Throttling и Debouncing?](https://medium.com/nuances-of-programming/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-throttling-%D0%B8-debouncing-4f0a839769ef)
-* [ru] [Что за черт, Javascript](https://habr.com/ru/company/mailru/blog/335292/) _#4consider_
-* [ru] [Prototype, proto и оператор `new`](https://habr.com/ru/post/140810/)\
-\- разбор действий, которые выполняет движок при обработке инструкций, содержащих `new`
-* [en] [Javascript Anomaly](https://github.com/ufocoder/javascript.anomaly)
-* [ru] [ES6: Реструктуризующее присваивание](http://jsraccoon.ru/es6-destructuring)
-* [ru] [Паттерны для масштабируемых JavaScript-приложений (Эдди Османи)](http://largescalejs.ru/) _#4consider_
 * [ru] [Глубокое погружение в ES-модули в картинках](https://medium.com/web-standards/es-modules-cartoon-dive-71f42c1e851a)
 * [en] [Logical XOR in JavaScript](http://www.howtocreate.co.uk/xor.html)
 * [ru] [HTMLCollection, NodeList и массив объектов](https://medium.com/@kanby/htmlcollection-nodelist-%D0%B8-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-582cbd9ae1fc)
@@ -51,6 +16,7 @@
 * [ru] [Почему использовать `return await` плохая идея?](https://medium.com/@kanby/%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-return-await-%D0%BF%D0%BB%D0%BE%D1%85%D0%B0%D1%8F-%D0%B8%D0%B4%D0%B5%D1%8F-e87b70015f0c)
 * [ru] [Полное понимание синхронного и асинхронного JavaScript с `async/await`](https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B0%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-javascript-%D1%81-async-await-ba5f47f4436)
 * [ru] [Введение в Immutable.js и основные концепции функционального программирования](https://medium.com/devschacht/sebasti%C3%A1n-peyrott-introduction-to-immutablejs-and-functional-programming-concepts-b3a6555af0ee)
+* [--ADD_DESCRIPTION--] http://aem1k.com/
 
 ## React
 
