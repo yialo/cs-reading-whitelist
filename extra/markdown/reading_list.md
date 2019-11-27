@@ -1,23 +1,5 @@
 # Rest of entries
 
-## CSS Grid Layout
-
-* [ru] [7 способов размещения элементов с помощью макета CSS Grid](https://webformyself.com/7-sposobov-razmeshheniya-elementov-s-pomoshhyu-maketa-css-grid/) _#4consider_
-* [en] [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) _#4consider_
-* [ru] [Подсетки в Grid Layout жизненно важны](https://css-live.ru/articles/podsetki-v-grid-layout-zhiznenno-vazhny.html)
-* [ru] [Мысли вслух о подсетках в CSS Grid Layout](https://css-live.ru/articles/mysli-vslux-o-podsetkax-v-css-grid-layout.html)
-* [ru] [Простая сетка на гридах с фолбэками с помощью @supports](https://css-live.ru/articles/verstka-prostoj-setki-s-folbekami-ispolzuyushhimi-direktivu-supports-feature-queries.html)
-* [en] [Grid Garden](http://cssgridgarden.com)\
-\- интерактивный тур в игровом формате
-* [en] [Why Flexboxes Aren't Good for Page Layout](https://www.xanthir.com/blog/b4580)\
-\- Таб Аткинс описывает минусы флексбоксов и представляет прототип будущих гридов
-* [ru] [Как работает функция `minmax()`](https://css-live.ru/articles/kak-rabotaet-funkciya-minmax.html)
-* [ru] [CSS-гриды + CSS-колонки](https://css-live.ru/articles/css-gridy-css-kolonki-%E2%99%A5.html)
-* [ru] [Золотая рыбка CSS3 Grid Layout (часть 1)](https://css-live.ru/css/zolotaya-rybka-css3-grid-layout.html) _#series_
-* [ru] [Золотая рыбка CSS3 Grid Layout (часть 2)](https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-2.html) _#series_
-* [ru] [Золотая рыбка CSS3 Grid Layout (часть 3)](https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-3.html) _#series_
-* [ru] [Химия CSS-гридов](https://css-live.ru/css/ximiya-css-gridov.html)
-
 ## Preprocessors, templating engines
 
 * [en] [Sass official](https://sass-lang.com/documentation) _#library_

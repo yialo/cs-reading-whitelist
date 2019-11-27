@@ -1818,6 +1818,142 @@
         "4consider"
       ],
       "legend": ""
+    },
+    {
+      "caption": "7 способов размещения элементов с помощью макета CSS Grid",
+      "url": "https://webformyself.com/7-sposobov-razmeshheniya-elementov-s-pomoshhyu-maketa-css-grid/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "A Complete Guide to Grid",
+      "url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css-grid",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Подсетки в Grid Layout жизненно важны",
+      "url": "https://css-live.ru/articles/podsetki-v-grid-layout-zhiznenno-vazhny.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Мысли вслух о подсетках в CSS Grid Layout",
+      "url": "https://css-live.ru/articles/mysli-vslux-o-podsetkax-v-css-grid-layout.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Простая сетка на гридах с фолбэками с помощью @supports",
+      "url": "https://css-live.ru/articles/verstka-prostoj-setki-s-folbekami-ispolzuyushhimi-direktivu-supports-feature-queries.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Grid Garden",
+      "url": "http://cssgridgarden.com/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css-grid",
+        "tutorial"
+      ],
+      "legend": "интерактивный тур в игровом формате"
+    },
+    {
+      "caption": "Why Flexboxes Aren't Good for Page Layout",
+      "url": "https://www.xanthir.com/blog/b4580",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css-grid"
+      ],
+      "legend": "Таб Аткинс описывает минусы флексбоксов и представляет прототип будущих гридов"
+    },
+    {
+      "caption": "Как работает функция 'minmax()'",
+      "url": "https://css-live.ru/articles/kak-rabotaet-funkciya-minmax.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CSS-гриды + CSS-колонки",
+      "url": "https://css-live.ru/articles/css-gridy-css-kolonki-%E2%99%A5.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Золотая рыбка CSS3 Grid Layout (часть 1)",
+      "url": "https://css-live.ru/css/zolotaya-rybka-css3-grid-layout.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Золотая рыбка CSS3 Grid Layout (часть 2)",
+      "url": "https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-2.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Золотая рыбка CSS3 Grid Layout (часть 3)",
+      "url": "https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-3.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Химия CSS-гридов",
+      "url": "https://css-live.ru/css/ximiya-css-gridov.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid"
+      ],
+      "legend": ""
     }
   ]
 }
