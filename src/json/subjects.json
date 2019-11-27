@@ -1954,6 +1954,266 @@
         "css-grid"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Sass official",
+      "url": "https://sass-lang.com/documentation",
+      "lang": "en",
+      "tags": [
+        "css",
+        "sass",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Sass Guidelines",
+      "url": "https://sass-guidelin.es/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "sass"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "sass-mq",
+      "url": "https://github.com/sass-mq/sass-mq",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "sass",
+        "library"
+      ],
+      "legend": "Media Queries with superpowers"
+    },
+    {
+      "caption": "How To Write Your Own Custom Sass Functions",
+      "url": "https://vanseodesign.com/css/custom-sass-functions/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "sass"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Pug '&attributes' and 'attributes' escaping behaviour",
+      "url": "https://codepen.io/yialo/pen/vvPGGE",
+      "lang": "en",
+      "tags": [
+        "html",
+        "template-engine",
+        "pug",
+        "mine"
+      ],
+      "legend": "примеры экранирования атрибутов HTML-препроцессором Pug"
+    },
+    {
+      "caption": "Как правильно использовать переменные в препроцессорах LESS и SASS",
+      "url": "https://habr.com/ru/post/332382/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "sass",
+        "less"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Организация кода для CSS-препроцессора",
+      "url": "https://canonium.com/articles/organizing-code-in-project",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "sass",
+        "less"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Организация кода для HTML-препроцессоров",
+      "url": "https://canonium.com/articles/organizing-html-code-in-project",
+      "lang": "ru",
+      "tags": [
+        "html",
+        "template-engine",
+        "pug"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Markdown official",
+      "url": "https://daringfireball.net/projects/markdown/",
+      "lang": "en",
+      "tags": [
+        "html",
+        "template-engine",
+        "markdown",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Markdown Guide",
+      "url": "https://www.markdownguide.org/",
+      "lang": "en",
+      "tags": [
+        "html",
+        "template-engine",
+        "markdown"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "CommonMark Markdown",
+      "url": "https://commonmark.org/",
+      "lang": "en",
+      "tags": [
+        "html",
+        "template-engine",
+        "markdown",
+        "commonmark",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "7 техник Sass для написания хорошего кода",
+      "url": "https://techrocks.ru/2017/07/19/sass-techniques/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "sass",
+        "code-quality",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Справочник по синтаксису Razor для ASP.NET Core",
+      "url": "https://docs.microsoft.com/ru-ru/aspnet/core/mvc/views/razor",
+      "lang": "ru",
+      "tags": [
+        "html",
+        "template-engine",
+        "c-sharp",
+        "dotnet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "PostCSS Preset Env: Babel for CSS",
+      "url": "https://dev.to/adrianbdesigns/postcss-preset-env-babel-for-css-12hp",
+      "lang": "en",
+      "tags": [
+        "css",
+        "postcss"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Расставание с Sass: дело не в тебе, дело во мне",
+      "url": "https://css-live.ru/articles/rasstavanie-s-sass-delo-ne-v-tebe-delo-vo-mne.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "sass",
+        "postcss"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "AST explorer",
+      "url": "https://astexplorer.net/",
+      "lang": "en",
+      "tags": [
+        "postcss",
+        "tool"
+      ],
+      "legend": "песочница для тестирования трансформаций JavaScript, CSS и многого другого, подходит для прототипирования PostCSS-плагинов"
+    },
+    {
+      "caption": "Семантическая верстка HTML5: начало будущего",
+      "url": "http://codeacademy.ru/blog/62/semanticheskaya-verstka-html5-nachalo-budushchego",
+      "lang": "ru",
+      "tags": [
+        "html",
+        "a11y"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Правила использования ARIA в HTML",
+      "url": "https://habr.com/ru/post/323876/",
+      "lang": "ru",
+      "tags": [
+        "html",
+        "a11y",
+        "aria",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "HTML For Screen Readers - Labelling Elements",
+      "url": "https://bitsofco.de/html-for-screen-readers-labelling-elements/",
+      "lang": "en",
+      "tags": [
+        "html",
+        "a11y",
+        "aria"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Семантика для циников (Вадим Макеев)",
+      "url": "https://www.youtube.com/watch?v=bDYEnNzprzE",
+      "lang": "ru",
+      "tags": [
+        "a11y",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Элемент HTML '<time>'",
+      "url": "https://habr.com/ru/post/229291/",
+      "lang": "ru",
+      "tags": [
+        "html",
+        "a11y"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The Difference Between 'role=\"presentation\"' and 'aria-hidden=\"true\"'",
+      "url": "https://timwright.org/blog/2016/11/19/difference-rolepresentation-aria-hiddentrue/",
+      "lang": "en",
+      "tags": [
+        "a11y",
+        "aria"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Понимание семантики",
+      "url": "https://css-live.ru/articles/ponimanie-semantiki.html",
+      "lang": "ru",
+      "tags": [
+        "a11y"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Почему семантический HTML важен, и как TypeScript помогает это понять",
+      "url": "https://css-live.ru/articles/pochemu-semanticheskij-html-vazhen-i-kak-typescript-pomogaet-eto-ponyat.html",
+      "lang": "ru",
+      "tags": [
+        "html",
+        "a11y"
+      ],
+      "legend": ""
     }
   ]
 }

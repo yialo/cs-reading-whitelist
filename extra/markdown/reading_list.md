@@ -1,38 +1,5 @@
 # Rest of entries
 
-## Preprocessors, templating engines
-
-* [en] [Sass official](https://sass-lang.com/documentation) _#library_
-* [en] [Sass Guidelines](https://sass-guidelin.es/)
-* [ru] [sass-mq](https://github.com/sass-mq/sass-mq) _#library_\
-\- Media Queries with superpowers
-* [en] [How To Write Your Own Custom Sass Functions](https://vanseodesign.com/css/custom-sass-functions/)
-* [en] [Pug '&attributes' and 'attributes' escaping behaviour](https://codepen.io/yialo/pen/vvPGGE) _#mine_\
-\- примеры экранирования атрибутов HTML-препроцессором Pug
-* [ru] [Как правильно использовать переменные в препроцессорах LESS и SASS](https://habr.com/ru/post/332382/)
-* [ru] [Организация кода для CSS-препроцессора](https://canonium.com/articles/organizing-code-in-project)
-* [ru] [Организация кода для HTML-препроцессоров](https://canonium.com/articles/organizing-html-code-in-project)
-* [en] [Markdown official](https://daringfireball.net/projects/markdown/) _#favourite_
-* [en] [Markdown Guide](https://www.markdownguide.org/) _#favourite_
-* [en] [CommonMark Markdown](https://commonmark.org/) _#favourite_
-* [ru] [7 техник Sass для написания хорошего кода](https://techrocks.ru/2017/07/19/sass-techniques/) _#4consider_
-* [ru] [Справочник по синтаксису Razor для ASP.NET Core](https://docs.microsoft.com/ru-ru/aspnet/core/mvc/views/razor)
-* [en] [PostCSS Preset Env: Babel for CSS](https://dev.to/adrianbdesigns/postcss-preset-env-babel-for-css-12hp)
-* [ru] [Расставание с Sass: дело не в тебе, дело во мне](https://css-live.ru/articles/rasstavanie-s-sass-delo-ne-v-tebe-delo-vo-mne.html)
-* [en] [AST explorer](https://astexplorer.net/) _#tool_\
-\- песочница для тестирования трансформаций JavaScript, CSS и многого другого, подходит для прототипирования PostCSS-плагинов
-
-## Accessibility, semantics
-
-* [ru] [Семантическая верстка HTML5: начало будущего](http://codeacademy.ru/blog/62/semanticheskaya-verstka-html5-nachalo-budushchego)
-* [ru] [Правила использования ARIA в HTML](https://habr.com/ru/post/323876/) _#4consider_
-* [en] [HTML For Screen Readers - Labelling Elements](https://bitsofco.de/html-for-screen-readers-labelling-elements/)
-* [ru] [Семантика для циников (Вадим Макеев)](https://www.youtube.com/watch?v=bDYEnNzprzE) _#video_
-* [ru] [Элемент HTML `<time>`](https://habr.com/ru/post/229291/)
-* [en] [The Difference Between `role="presentation"` and `aria-hidden="true"`](https://timwright.org/blog/2016/11/19/difference-rolepresentation-aria-hiddentrue/)
-* [ru] [Понимание семантики](https://css-live.ru/articles/ponimanie-semantiki.html)
-* [ru] [Почему семантический HTML важен, и как TypeScript помогает это понять](https://css-live.ru/articles/pochemu-semanticheskij-html-vazhen-i-kak-typescript-pomogaet-eto-ponyat.html)
-
 ## JavaScript
 
 * [ru] [Современный учебник JavaScript](https://learn.javascript.ru/) _#!important_\
