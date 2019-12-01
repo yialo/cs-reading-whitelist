@@ -1,18 +1,5 @@
 # Rest of entries
 
-## UX/UI
-
-* [ru] [Введение в систему 8pt сеток](https://habr.com/ru/company/digital-ecosystems/blog/319700/) _#4consider_
-* [ru] [Как озаглавить форму записи в парикмахерскую](https://bureau.ru/soviet/20190514/)
-* [ru] [Развиваем дизайнерское чутье](https://medium.com/russian/%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B5-%D1%87%D1%83%D1%82%D1%8C%D0%B5-b7cac4a84b56)
-* [ru] [Слышал мнение, что частица «не» не воспринимается читателем. Это правда?](https://bureau.ru/soviet/20190630/)
-* [ru] [Табличка на экране оплаты Эпл‑пея](https://bureau.ru/soviet/20190625/)
-* [ru] [О метафорах в иконках](https://bureau.ru/soviet/20190629/)
-* [ru] [Различие между иконкой и логотипом](https://bureau.ru/soviet/20190720/)
-* [ru] [Дорожный указатель «Фрамир двери»](https://bureau.ru/soviet/20190716/)\
-\- проработка дизайна дорожного указателя
-* [ru] [Подписи «переключателей»](https://bureau.ru/soviet/20190723/)
-
 ## Git
 
 * [en] [Pro Git](https://git-scm.com/book/en/v2) _#!important_\
