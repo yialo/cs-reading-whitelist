@@ -1,13 +1,11 @@
-.chapter__list > * + * {
-  margin-top: 8px;
+.chapter__item {
   line-height: 1.25;
-}
 
-.chapter__tags > * + * {
-  margin-left: 4px;
+  @nest .chapter__list > * + & {
+    margin-top: 16px;
+  }
 }
 
 .chapter__tags {
-  display: inline-flex;
   font-style: italic;
 }

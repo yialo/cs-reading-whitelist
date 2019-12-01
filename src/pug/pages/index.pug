@@ -8,14 +8,14 @@ block variables
 block body
   body.page
     .page__wrapper(id='app')
-      h1.s_text-block Computer Science Reading Whitelist
+      h1.s_text-block.page__heading Computer Science Reading Whitelist
       main.chapter
         ul.s_list.chapter__list
           - const { entries } = require('@/json/subjects.json');
           - for (const { caption, url, lang, tags, legend } of entries)
-            li #[a(href=url) #{caption}]
+            li.chapter__item #[a(href=url) #{caption}]
               != legend ? ` - ${legend}` : ''
-              ul.s_list.chapter__tags
-                each tag in tags
-                  li ##{tag}
-      //- +tag-cloud()
+              span.chapter__tags
+                each tag, i in tags
+                  = ' '
+                  span.chapter__tag ##{tag}

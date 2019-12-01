@@ -1,34 +1,5 @@
 # Rest of entries
 
-## Graphics, SVG, animations
-
-* [en] [Picturefill](https://scottjehl.github.io/picturefill/) _#library_\
-\- полифил для поддержки элемента `<picture>` в IE
-* [en] [Everything you always wanted to know about touch icons](https://mathiasbynens.be/notes/touch-icons) _#4consider_\
-\- как подготовить favicons, touch icons, tile icons
-* [en] [Real Favicon Generator](https://realfavicongenerator.net/) _#tool_\
-\- онлайн-сервис для создания полного набора favicon для всех современных платформ и устройств
-* [ru] [Какие нужны фавиконки — HTML Шорты](https://www.youtube.com/watch?v=iG9WF8VpogY)
-* [ru] [Favicon сегодня: форматы, поддержка, автоматизация](https://habr.com/ru/post/330584/)
-* [ru] [Теория цвета в цифрах](https://habr.com/ru/post/189766/)
-* [en] [`srcset` and `sizes`](https://ericportis.com/posts/2014/srcset-sizes/) _#4consider_\
-\- углублённый разбор функционала элемента `<picture>`
-* [ru] [Сколько нужно верстальщиков, чтобы вставить `<picture>`? (Вадим Макеев)](https://www.youtube.com/watch?v=Szo-2D7TtEU) _#video_
-* [ru] [Почему гибкие изображения?](https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-* [ru] [Иллюстратор для верстальщиков](https://www.youtube.com/watch?v=h6CHstX40rE) _#video_
-* [ru] [Погружение в `object-fit: cover` с полифилом и без (Вадим Макеев)](https://www.youtube.com/watch?v=aZJMOVpMhtc) _#video_
-* [en] [anime.js](https://animejs.com/) _#library_\
-\- JavaScript animation engine
-* [ru] [SVG маски и вау-эффекты: о магии простыми словами](https://habr.com/ru/post/349362/)
-* [en] [Styling SVG `<use>` content with CSS](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/)
-* [ru] [SVG: группировка и переиспользование элементов](http://css.yoksel.ru/svg-groups-use/)
-* [ru] [Размеры в SVG](http://css.yoksel.ru/svg-sizes/)
-* [en] [Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, viewBox, and preserveAspectRatio](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) _#series_
-* [en] [Understanding SVG Coordinate Systems and Transformations (Part 2) — The transform Attribute](https://www.sarasoueidan.com/blog/svg-transformations/) _#4consider_ _#series_
-* [en] [Understanding SVG Coordinate Systems and Transformations (Part 3) — Establishing New Viewports](https://www.sarasoueidan.com/blog/nesting-svgs/) _#4consider_ _#series_
-* [ru] [Карманное руководство по написанию SVG](https://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html) _#4consider_ _#series_
-* [ru] [Структурирование, группировка и привязка в SVG — элементы `<g>`, `<use>`, `<defs>` и `<symbol>`](https://habr.com/ru/post/230443/)
-
 ## Fonts, typography
 
 * [ru] [Подключение шрифта к странице: как нужно делать сейчас](https://nicothin.pro/page/web-fonts)

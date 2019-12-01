@@ -2635,7 +2635,7 @@
       "legend": ""
     },
     {
-      "caption": "Почему использовать `return await` плохая идея?",
+      "caption": "Почему использовать 'return await' плохая идея?",
       "url": "https://medium.com/@kanby/%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-return-await-%D0%BF%D0%BB%D0%BE%D1%85%D0%B0%D1%8F-%D0%B8%D0%B4%D0%B5%D1%8F-e87b70015f0c",
       "lang": "ru",
       "tags": [
@@ -2697,7 +2697,8 @@
       "tags": [
         "javascript",
         "library",
-        "docs"
+        "docs",
+        "statics-generator"
       ],
       "legend": ""
     },
@@ -2823,7 +2824,8 @@
         "javascript",
         "vue",
         "library",
-        "docs"
+        "docs",
+        "statics-generator"
       ],
       "legend": ""
     },
@@ -2892,6 +2894,244 @@
       "tags": [
         "javascript",
         "vue",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Picturefill",
+      "url": "https://scottjehl.github.io/picturefill/",
+      "lang": "en",
+      "tags": [
+        "html",
+        "graphics",
+        "polyfill"
+      ],
+      "legend": "полифил для поддержки элемента '<picture>' в IE"
+    },
+    {
+      "caption": "Everything you always wanted to know about touch icons",
+      "url": "https://mathiasbynens.be/notes/touch-icons",
+      "lang": "en",
+      "tags": [
+        "graphics",
+        "favicons",
+        "4consider"
+      ],
+      "legend": "как подготовить favicons, touch icons, tile icons"
+    },
+    {
+      "caption": "Real Favicon Generator",
+      "url": "https://realfavicongenerator.net/",
+      "lang": "en",
+      "tags": [
+        "graphics",
+        "favicons",
+        "tool"
+      ],
+      "legend": "онлайн-сервис для создания полного набора favicon для всех современных платформ и устройств"
+    },
+    {
+      "caption": "Какие нужны фавиконки (HTML Шорты)",
+      "url": "https://www.youtube.com/watch?v=iG9WF8VpogY",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "favicons",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Favicon сегодня: форматы, поддержка, автоматизация",
+      "url": "https://habr.com/ru/post/330584/",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "favicons"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Теория цвета в цифрах",
+      "url": "https://habr.com/ru/post/189766/",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "colors"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "'srcset' and 'sizes'",
+      "url": "https://ericportis.com/posts/2014/srcset-sizes/",
+      "lang": "en",
+      "tags": [
+        "graphics",
+        "html",
+        "4consider"
+      ],
+      "legend": "углублённый разбор функционала элемента '<picture>'"
+    },
+    {
+      "caption": "Сколько нужно верстальщиков, чтобы вставить '<picture>'? (Вадим Макеев)",
+      "url": "https://www.youtube.com/watch?v=Szo-2D7TtEU",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "html",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Почему гибкие изображения?",
+      "url": "https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "html"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Иллюстратор для верстальщиков",
+      "url": "https://www.youtube.com/watch?v=h6CHstX40rE",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "editors",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Погружение в 'object-fit: cover' с полифилом и без (Вадим Макеев)",
+      "url": "https://www.youtube.com/watch?v=aZJMOVpMhtc",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "css",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "anime.js",
+      "url": "https://animejs.com/",
+      "lang": "en",
+      "tags": [
+        "graphics",
+        "javascript",
+        "animations",
+        "library"
+      ],
+      "legend": "JavaScript animation engine"
+    },
+    {
+      "caption": "SVG маски и вау-эффекты: о магии простыми словами",
+      "url": "https://habr.com/ru/post/349362/",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "svg"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Styling SVG '<use>' content with CSS",
+      "url": "https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/",
+      "lang": "en",
+      "tags": [
+        "graphics",
+        "svg"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "SVG: группировка и переиспользование элементов",
+      "url": "http://css.yoksel.ru/svg-groups-use/",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "svg"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Размеры в SVG",
+      "url": "http://css.yoksel.ru/svg-sizes/",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "svg"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, viewBox, and preserveAspectRatio",
+      "url": "https://www.sarasoueidan.com/blog/svg-coordinate-systems/",
+      "lang": "en",
+      "tags": [
+        "graphics",
+        "svg",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Understanding SVG Coordinate Systems and Transformations (Part 2) — The transform Attribute",
+      "url": "https://www.sarasoueidan.com/blog/svg-transformations/",
+      "lang": "en",
+      "tags": [
+        "graphics",
+        "svg",
+        "series",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Understanding SVG Coordinate Systems and Transformations (Part 3) — Establishing New Viewports",
+      "url": "https://www.sarasoueidan.com/blog/nesting-svgs/",
+      "lang": "en",
+      "tags": [
+        "graphics",
+        "svg",
+        "series",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Карманное руководство по написанию SVG",
+      "url": "https://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "svg",
+        "series",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Структурирование, группировка и привязка в SVG — элементы '<g>', '<use>', '<defs>' и '<symbol>'",
+      "url": "https://habr.com/ru/post/230443/",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "svg"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Инлайновый контекст форматирования (ИКФ)",
+      "url": "https://css-live.ru/css/vvedenie-v-inlajnovyj-kontekst-formatirovaniya-ikf-osnovnye-ponyatiya-1-ya-publikaciya-cikla-tajny-css2-1.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "series",
         "4consider"
       ],
       "legend": ""

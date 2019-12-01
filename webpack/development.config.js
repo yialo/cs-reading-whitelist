@@ -11,6 +11,7 @@ const devConfig = merge(baseConfig.core, {
     writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
     overlay: true,
     port: 8081,
+    host: '0.0.0.0',
   },
 
   devtool: 'source-map',
