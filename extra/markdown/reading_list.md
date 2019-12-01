@@ -1,20 +1,5 @@
 # Rest of entries
 
-## Fonts, typography
-
-* [ru] [Подключение шрифта к странице: как нужно делать сейчас](https://nicothin.pro/page/web-fonts)
-* [ru] [Подключение нестандартных шрифтов. Часть первая](https://fontstorage.com/blog/about-font-face-part-one/) _#series_
-* [ru] [Подключение нестандартных шрифтов. Часть вторая](https://fontstorage.com/blog/about-font-face-part-two/) _#series_
-* [ru] [Иконочные шрифты и почему они не нужны](https://nicothin.pro/page/icon-fonts-2017) _#4consider_
-* [ru] [Управляем поведением font-face в CSS](https://ymatuhin.ru/front-end/font-display/)
-* [en] [Prevention of double font preloading in Blink-based browsers](https://github.com/cds-snc/ircc-rescheduler/pull/374)
-* [en] [The Inter typeface family](https://rsms.me/inter/) _#library_\
-\- крутой шрифт, разработанный специально для комфортного чтения с экрана
-* [en] [A comprehensive guide to font loading strategies](https://www.zachleat.com/web/comprehensive-webfonts/) _#4consider_
-* [ru] [Ответ на главный вопрос в CSS (Михаил Иванкив)](https://www.youtube.com/watch?v=cO2-zYzjyD0) _#video_\
-\- подходы к решению проблемы масштабирования текста
-* [Исчерпывающее руководство по стратегиям загрузки веб-шрифтов](https://css-live.ru/articles/ischerpyvayushhee-rukovodstvo-po-strategiyam-zagruzki-veb-shriftov.html) _#4consider_
-
 ## UX/UI
 
 * [ru] [Введение в систему 8pt сеток](https://habr.com/ru/company/digital-ecosystems/blog/319700/) _#4consider_

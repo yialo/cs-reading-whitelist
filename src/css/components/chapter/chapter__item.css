@@ -1,0 +1,7 @@
+.chapter__item {
+  line-height: 1.25;
+
+  @nest .chapter__list > * + & {
+    margin-top: 16px;
+  }
+}

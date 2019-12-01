@@ -3135,6 +3135,100 @@
         "4consider"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Подключение шрифта к странице: как нужно делать сейчас",
+      "url": "https://nicothin.pro/page/web-fonts",
+      "lang": "ru",
+      "tags": [
+        "typography",
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Подключение нестандартных шрифтов. Часть первая",
+      "url": "https://fontstorage.com/blog/about-font-face-part-one/",
+      "lang": "ru",
+      "tags": [
+        "typography",
+        "css",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Подключение нестандартных шрифтов. Часть вторая",
+      "url": "https://fontstorage.com/blog/about-font-face-part-two/",
+      "lang": "ru",
+      "tags": [
+        "typography",
+        "css",
+        "series"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Иконочные шрифты и почему они не нужны",
+      "url": "https://nicothin.pro/page/icon-fonts-2017",
+      "lang": "ru",
+      "tags": [
+        "typography",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Управляем поведением font-face в CSS",
+      "url": "https://ymatuhin.ru/front-end/font-display/",
+      "lang": "ru",
+      "tags": [
+        "typography",
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Prevention of double font preloading in Blink-based browsers",
+      "url": "https://github.com/cds-snc/ircc-rescheduler/pull/374",
+      "lang": "en",
+      "tags": [
+        "typography",
+        "performance"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The Inter typeface family",
+      "url": "https://rsms.me/inter/",
+      "lang": "en",
+      "tags": [
+        "typography",
+        "library"
+      ],
+      "legend": "крутой шрифт, разработанный специально для комфортного чтения с экрана"
+    },
+    {
+      "caption": "Ответ на главный вопрос в CSS (Михаил Иванкив)",
+      "url": "https://www.youtube.com/watch?v=cO2-zYzjyD0",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "typography",
+        "video"
+      ],
+      "legend": "подходы к решению проблемы масштабирования текста"
+    },
+    {
+      "caption": "Исчерпывающее руководство по стратегиям загрузки веб-шрифтов",
+      "url": "https://css-live.ru/articles/ischerpyvayushhee-rukovodstvo-po-strategiyam-zagruzki-veb-shriftov.html",
+      "lang": "ru",
+      "tags": [
+        "typography",
+        "performance",
+        "4consider"
+      ],
+      "legend": ""
     }
   ]
 }
