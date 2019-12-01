@@ -1,19 +1,5 @@
 # Rest of entries
 
-## Vue.js
-
-* [en] [Vue.js official](https://vuejs.org/) _#library_
-* [en] [Vue Test Utils](https://vue-test-utils.vuejs.org/) _#library_
-* [en] [Vuetify official](https://vuetifyjs.com/en/) _#library_
-* [en] [eslint-plugin-vue](https://eslint.vuejs.org/) _#library_
-* [en] [Nuxt.js](https://nuxtjs.org/) _#library_
-* [en] [Vue Mastery](https://www.vuemastery.com/courses) _#4consider_
-* [en] [Vue JS 2 Tutorial (by _The Net Ninja_)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) _#4consider_ _#video_
-* [ru] [Фреймворк VueJS (Владилен Минин)](https://www.youtube.com/playlist?list=PLD-piGJ3Dtl0C2gVy-_vZoxYRFWRwUvWL) _#4consider_ _#video_
-* [ru] [10 советов и приемов, которые помогут вам стать лучшим разработчиком на VueJS](https://habr.com/ru/post/471212/) _#4consider_
-* [ru] [Подборка инструментов для быстрой разработки приложений на Vue.js](https://tproger.ru/translations/tools-for-vue-js/) _#4consider_
-* [ru] [Как создавать Vue-компоненты, словно профи](https://css-live.ru/articles/kak-sozdavat-vue-komponenty-slovno-profi.html) _#4consider_
-
 ## Graphics, SVG, animations
 
 * [en] [Picturefill](https://scottjehl.github.io/picturefill/) _#library_\

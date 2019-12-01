@@ -687,9 +687,9 @@
       "legend": ""
     },
     {
-      "caption": "Курс Node.js (ITVDN)",
-      "url": "https://www.youtube.com/playlist?list=PLvItDmb0sZw-kihRjYqbnqCk8h1RJZUJu",
-      "lang": "ru",
+      "caption": "Node JS Tutorial for Beginners (The Net Ninja)",
+      "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
+      "lang": "en",
       "tags": [
         "node.js",
         "video",
@@ -2765,6 +2765,134 @@
         "4consider",
         "javascript",
         "react"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Vue.js official",
+      "url": "https://vuejs.org/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "docs",
+        "vue"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Vue Test Utils",
+      "url": "https://vue-test-utils.vuejs.org/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "vue",
+        "docs",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Vuetify official",
+      "url": "https://vuetifyjs.com/en/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "vue",
+        "library",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "eslint-plugin-vue",
+      "url": "https://eslint.vuejs.org/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "vue",
+        "docs",
+        "code-quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Nuxt.js",
+      "url": "https://nuxtjs.org/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "vue",
+        "library",
+        "docs"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Vue Mastery",
+      "url": "https://www.vuemastery.com/courses",
+      "lang": "en",
+      "tags": [
+        "4consider",
+        "video",
+        "javascript",
+        "vue"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Vue JS 2 Tutorial (by The Net Ninja)",
+      "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "vue",
+        "4consider",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Фреймворк VueJS (Владилен Минин)",
+      "url": "https://www.youtube.com/playlist?list=PLD-piGJ3Dtl0C2gVy-_vZoxYRFWRwUvWL",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "vue",
+        "4consider",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "10 советов и приемов, которые помогут вам стать лучшим разработчиком на VueJS",
+      "url": "https://habr.com/ru/post/471212/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "vue",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Подборка инструментов для быстрой разработки приложений на Vue.js",
+      "url": "https://tproger.ru/translations/tools-for-vue-js/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "vue",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как создавать Vue-компоненты, словно профи",
+      "url": "https://css-live.ru/articles/kak-sozdavat-vue-komponenty-slovno-profi.html",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "vue",
+        "4consider"
       ],
       "legend": ""
     }
