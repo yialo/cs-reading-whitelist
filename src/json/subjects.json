@@ -450,7 +450,9 @@
       "url": "https://htmlacademy.ru/blog/useful/nodejs/useful-commands-for-working-with-nodejs",
       "lang": "ru",
       "tags": [
-        "node.js"
+        "node.js",
+        "npm",
+        "cheatsheet"
       ],
       "legend": ""
     },
@@ -459,7 +461,9 @@
       "url": "https://habr.com/ru/company/Voximplant/blog/277707/",
       "lang": "ru",
       "tags": [
-        "node.js"
+        "node.js",
+        "npm",
+        "cheatsheet"
       ],
       "legend": ""
     },
@@ -469,7 +473,8 @@
       "lang": "ru",
       "tags": [
         "node.js",
-        "npm"
+        "npm",
+        "cheatsheet"
       ],
       "legend": ""
     },
@@ -499,7 +504,8 @@
       "lang": "en",
       "tags": [
         "node.js",
-        "npm"
+        "npm",
+        "cheatsheet"
       ],
       "legend": ""
     },
@@ -518,7 +524,8 @@
       "lang": "ru",
       "tags": [
         "node.js",
-        "npm"
+        "npm",
+        "cheatsheet"
       ],
       "legend": ""
     },
@@ -3309,6 +3316,226 @@
       "lang": "ru",
       "tags": [
         "ux/ui"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Pro Git",
+      "url": "https://git-scm.com/book/en/v2",
+      "lang": "en",
+      "tags": [
+        "4consider",
+        "git"
+      ],
+      "legend": "настольная книга"
+    },
+    {
+      "caption": "Скринкаст по Git (Learn.javascript.ru)",
+      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "4consider",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Learn Git Branching",
+      "url": "https://learngitbranching.js.org/",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "tutorial"
+      ],
+      "legend": "интерактивный тур в игровом формате"
+    },
+    {
+      "caption": "First Aid Git",
+      "url": "http://firstaidgit.ru/",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "cheatsheet"
+      ],
+      "legend": "подробнейший FAQ в переводе HTML Academy"
+    },
+    {
+      "caption": "Словарь терминов Git и GitHub",
+      "url": "https://github.com/web-standards-ru/dictionary/blob/master/git.md",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "cheatsheet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Шпаргалка по консольным командам Git",
+      "url": "https://github.com/nicothin/web-development/blob/master/git/readme.md",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "cheatsheet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Шпаргалка по git-flow",
+      "url": "https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "git-flow",
+        "cheatsheet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Git and Git Flow Cheat Sheet",
+      "url": "http://bilalarslan.me/git-cheat-sheet/",
+      "lang": "en",
+      "tags": [
+        "git",
+        "git-flow",
+        "cheatsheet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Git How To",
+      "url": "https://githowto.com/",
+      "lang": "en",
+      "tags": [
+        "git",
+        "tutorial"
+      ],
+      "legend": "интерактивный тур"
+    },
+    {
+      "caption": "Режим fast-forward в Git",
+      "url": "http://zencoder.ru/git/fast-forward-git/",
+      "lang": "ru",
+      "tags": [
+        "git"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Самые типичные ошибки и вопросы, связанные с Git, и удобные способы их решения",
+      "url": "https://tproger.ru/translations/most-common-git-screwupsquestions-and-solutions/",
+      "lang": "ru",
+      "tags": [
+        "git"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Правильные способы исключения файлов в Git",
+      "url": "https://habr.com/ru/post/202696/",
+      "lang": "ru",
+      "tags": [
+        "git"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как склеить коммиты и зачем это нужно",
+      "url": "https://htmlacademy.ru/blog/useful/git/how-to-squash-commits-and-why-it-is-needed",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "git-squash"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "10 полезных Git команд, которые облегчат работу",
+      "url": "https://proglib.io/p/10-tips-git/",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "cheatsheet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Про Git, Github и Gitflow простыми словами",
+      "url": "https://proglib.io/p/git-github-gitflow/",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "git-flow"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Удачная модель ветвления для Git",
+      "url": "https://habr.com/ru/post/106912/",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "git-flow"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Полезные команды для работы с Git",
+      "url": "https://htmlacademy.ru/blog/useful/git/useful-commands-for-working-with-git",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "cheatsheet"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Работа с Git через консоль",
+      "url": "https://htmlacademy.ru/blog/useful/git/git-console",
+      "lang": "ru",
+      "tags": [
+        "git"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как оформлять коммиты, чтобы потом не было больно",
+      "url": "https://habr.com/ru/company/voximplant/blog/276695/",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "11 концепций и команд git, которые заставят вас плакать",
+      "url": "https://proglib.io/p/painful-git/",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Understanding Git Conceptually",
+      "url": "https://www.sbf5.com/~cduan/technical/git/",
+      "lang": "en",
+      "tags": [
+        "git",
+        "4consider"
+      ],
+      "legend": "сверхглубокое погружение в Git"
+    },
+    {
+      "caption": "Git — инструмент для совместной работы, с нуля и до регламента в команде (Сергей Сергеев)",
+      "url": "https://www.youtube.com/watch?v=yDSs80lu3ak",
+      "lang": "ru",
+      "tags": [
+        "git",
+        "video",
+        "4consider"
       ],
       "legend": ""
     }
