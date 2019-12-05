@@ -17,6 +17,7 @@
 * output-colorizer
 * path-intellisense
 * prettier-vscode
+* project-manager
 * quick-run-panel
 * sort-lines
 * stylelint
