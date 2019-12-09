@@ -1,4 +1,5 @@
 *.html
 *.twig
 dist/
+docs/
 node_modules/
