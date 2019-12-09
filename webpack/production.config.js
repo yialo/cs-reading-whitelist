@@ -1,5 +1,3 @@
-'use strict';
-
 const merge = require('webpack-merge');
 const cssnano = require('cssnano');
 const CssOptimizePlugin = require('optimize-css-assets-webpack-plugin');

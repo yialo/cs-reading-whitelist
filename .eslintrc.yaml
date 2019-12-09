@@ -1,18 +1,20 @@
 env:
   browser: true
+  commonjs: true
   es6: true
-  node: true
 overrides:
   - env:
       mocha: true
     files:
       - ./src/**/*.test.js
-  - files:
-    - ./*.js
-    - ./src/postcss/**/*.js
-    - ./webpack/**/*.js
+  - env:
+      node: true
+    files:
+      - ./*.js
+      - ./src/postcss/**/*.js
+      - ./webpack/**/*.js
     parserOptions:
-      sourceType: script
+      impliedStrict: true
     rules:
       import/no-extraneous-dependencies: 'off'
       strict:
@@ -232,9 +234,9 @@ rules:
   import/order:
     - error
     - groups:
-        - - builtin
-          - external
-          - internal
+      - builtin
+      - external
+      - internal
   import/prefer-default-export: error
   import/unambiguous: 'off'
   indent:
@@ -242,7 +244,7 @@ rules:
     - 2
     - ArrayExpression: 1
       CallExpression:
-        arguments: 1
+        arguments: 2
       FunctionDeclaration:
         body: 1
         parameters: 1

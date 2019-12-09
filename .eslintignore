@@ -1,4 +1,4 @@
 *.html
 *.twig
-build/
+dist/
 node_modules/
