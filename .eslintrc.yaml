@@ -17,9 +17,7 @@ overrides:
       impliedStrict: true
     rules:
       import/no-extraneous-dependencies: 'off'
-      strict:
-        - error
-        - safe
+      strict: error
 parser: babel-eslint
 parserOptions:
   ecmaVersion: 2018
@@ -171,10 +169,11 @@ rules:
   import/exports-last: 'off'
   import/extensions:
     - error
-    - ignorePackages
-    - js: never
+    - css: always
+      js: never
       jsx: never
       mjs: never
+      test: always
   import/first: error
   import/group-exports: 'off'
   import/imports-first: 'off'
@@ -235,8 +234,6 @@ rules:
     - error
     - groups:
       - builtin
-      - external
-      - internal
   import/prefer-default-export: error
   import/unambiguous: 'off'
   indent:

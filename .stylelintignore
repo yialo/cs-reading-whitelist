@@ -1,4 +1,6 @@
 *.html
+*.css
+*.js
 dist/
 docs/
 node_modules/

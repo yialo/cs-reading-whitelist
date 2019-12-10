@@ -1,7 +1,9 @@
 module.exports = {
   plugins: {
     'postcss-import': {},
-    'postcss-advanced-variables': {},
+    'postcss-advanced-variables': {
+      disable: ['@each', '@for', '@if', '@else'],
+    },
     'postcss-color-function': {},
     'postcss-preset-env': {
       stage: 3,
