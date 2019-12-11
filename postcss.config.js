@@ -1,6 +1,7 @@
 module.exports = {
   plugins: {
     'postcss-import': {},
+    './src/postcss/font-face-set': {},
     'postcss-advanced-variables': {
       disable: ['@each', '@for', '@if', '@else'],
     },
@@ -16,6 +17,5 @@ module.exports = {
         'not-pseudo-class': true,
       },
     },
-    './src/postcss/font-face-set': {},
   },
 };

@@ -1,5 +1,3 @@
-'use strict';
-
 const postcss = require('postcss');
 
 module.exports = (fontList, srcMap) => {
@@ -23,12 +21,16 @@ module.exports = (fontList, srcMap) => {
         const styleDecl = getDecl('style', style);
         const displayDecl = getDecl('display', 'swap');
 
-        const filePathBase = `https://yialo.github.io/cs-reading-whitelist/assets/fonts/${fileNameBase}_${weight}_${style}.woff`;
+        const basePath = (process.env.NODE_ENV === 'production')
+          ? 'https://yialo.github.io/cs-reading-whitelist'
+          : '';
+
+        const filePath = `${basePath}/assets/fonts/${fileNameBase}_${weight}_${style}.woff`;
         const srcValue = (
           `local("${localBase.os} ${localSuffix.os}"),
           local("${localBase.postScript}-${localSuffix.postScript}"),
-          url("${filePathBase}2") format("woff2"),
-          url("${filePathBase}") format("woff")`
+          url("${filePath}2") format("woff2"),
+          url("${filePath}") format("woff")`
         );
 
         const srcDecl = postcss.decl({

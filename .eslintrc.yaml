@@ -233,7 +233,7 @@ rules:
   import/order:
     - error
     - groups:
-      - builtin
+        - builtin
   import/prefer-default-export: error
   import/unambiguous: 'off'
   indent:
