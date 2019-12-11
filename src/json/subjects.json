@@ -2323,7 +2323,6 @@
       "lang": "ru",
       "tags": [
         "javascript",
-        "4consider"
       ],
       "legend": ""
     },
@@ -3535,6 +3534,26 @@
         "git",
         "video",
         "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Джуность",
+      "url": "https://anmedio.github.io/junost/",
+      "lang": "ru",
+      "tags": [
+        "general"
+      ],
+      "legend": "грейды Digital-специалистов"
+    },
+    {
+      "caption": "Редакс в реальной жизни (Иван Акулов)",
+      "url": "https://iamakulov.com/talks/redux-in-real-life/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "flux",
+        "redux"
       ],
       "legend": ""
     }
