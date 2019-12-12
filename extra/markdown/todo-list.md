@@ -17,6 +17,7 @@
 9. (?) Different hashtag types (maybe via prefixing)
 10. Change README.md: add npm cli commands
 11. Add **stylelint** to project
+12. Add special markup for tag and code remarks in text.
 
 ## More far future
 

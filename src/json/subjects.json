@@ -2912,7 +2912,7 @@
         "graphics",
         "polyfill"
       ],
-      "legend": "полифил для поддержки элемента '<picture>' в IE"
+      "legend": "полифил для поддержки элемента &lt;picture&gt; в IE"
     },
     {
       "caption": "Everything you always wanted to know about touch icons",
@@ -2976,10 +2976,10 @@
         "html",
         "4consider"
       ],
-      "legend": "углублённый разбор функционала элемента '<picture>'"
+      "legend": "углублённый разбор функционала элемента &lt;picture&gt;"
     },
     {
-      "caption": "Сколько нужно верстальщиков, чтобы вставить '<picture>'? (Вадим Макеев)",
+      "caption": "Сколько нужно верстальщиков, чтобы вставить <picture>? (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=Szo-2D7TtEU",
       "lang": "ru",
       "tags": [

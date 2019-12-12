@@ -38,7 +38,7 @@ const config = {
         ],
       },
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: '/node_modules/',
         use: [
           {
