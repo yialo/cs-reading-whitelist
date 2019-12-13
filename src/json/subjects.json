@@ -3556,6 +3556,15 @@
         "redux"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Uncommon Use Cases For Pseudo Elements",
+      "url": "https://ishadeed.com/article/unusual-use-cases-pseudo-elements/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
     }
   ]
 }
