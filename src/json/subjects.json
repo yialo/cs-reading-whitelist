@@ -3565,6 +3565,25 @@
         "css"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Оформление строчных блоков кода (Роман Комаров)",
+      "url": "https://www.kizu.ru/ru/styling-inline-code/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "typography"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Articles & Experiments by Roman Komarov",
+      "url": "https://www.kizu.ru/",
+      "lang": "en",
+      "tags": [
+        "blogs"
+      ],
+      "legend": "блог Романа Комарова"
     }
   ]
 }
