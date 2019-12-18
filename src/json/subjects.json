@@ -3584,6 +3584,38 @@
         "blogs"
       ],
       "legend": "блог Романа Комарова"
+    },
+    {
+      "caption": "The world needs full-stack craftsmen (Антон Кекс)",
+      "url": "https://www.youtube.com/watch?v=qd9N9eU1Qn0",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "self-efficiency",
+        "project-management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Зачем программисту чувство стиля? (Антон Кекс)",
+      "url": "https://www.youtube.com/watch?v=d_oOvd793Lo",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Эти страшные буквы MV* (Александра Шинкевич)",
+      "url": "https://www.youtube.com/watch?v=5WgsKtlHUls",
+      "lang": "ru",
+      "tags": [
+        "design-patterns",
+        "video",
+        "4consider"
+      ],
+      "legend": "о паттернах MVC/MVP/MVVM/etc."
     }
   ]
 }
