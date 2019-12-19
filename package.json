@@ -6,17 +6,17 @@
     "not dead"
   ],
   "dependencies": {
-    "@babel/runtime-corejs3": "7.7.6",
+    "@babel/runtime-corejs3": "7.7.7",
     "@csstools/normalize.css": "10.1.0",
-    "core-js": "3.5.0",
+    "core-js": "3.6.0",
     "react": "16.12.0",
     "react-dom": "16.12.0"
   },
   "description": "Links to useful development tools and good articles about computer science",
   "devDependencies": {
-    "@babel/core": "7.7.5",
+    "@babel/core": "7.7.7",
     "@babel/plugin-transform-runtime": "7.7.6",
-    "@babel/preset-env": "7.7.6",
+    "@babel/preset-env": "7.7.7",
     "@babel/preset-react": "7.7.4",
     "babel-eslint": "10.0.3",
     "babel-loader": "8.0.6",
@@ -48,9 +48,9 @@
     "stylelint": "12.0.0",
     "stylelint-scss": "3.13.0",
     "terser-webpack-plugin": "2.3.1",
-    "webpack": "4.41.3",
+    "webpack": "4.41.4",
     "webpack-cli": "3.3.10",
-    "webpack-dev-server": "3.10.0",
+    "webpack-dev-server": "3.10.1",
     "webpack-manifest-plugin": "2.2.0",
     "webpack-merge": "4.2.2"
   },

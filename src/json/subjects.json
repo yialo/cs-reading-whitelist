@@ -3616,6 +3616,26 @@
         "4consider"
       ],
       "legend": "о паттернах MVC/MVP/MVVM/etc."
+    },
+    {
+      "caption": "Философия React",
+      "url": "https://ru.reactjs.org/docs/thinking-in-react.html",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "dom",
+        "react"
+      ],
+      "legend": "действенный подход к разработке web-интерфейсов в целом, не обязательно на React"
+    },
+    {
+      "caption": "Как быть начинающим разработчиком и не сойти с ума",
+      "url": "http://blog.csssr.ru/2016/09/19/how-to-be-a-beginner-developer",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency"
+      ],
+      "legend": ""
     }
   ]
 }
