@@ -3611,9 +3611,9 @@
       "url": "https://www.youtube.com/watch?v=5WgsKtlHUls",
       "lang": "ru",
       "tags": [
+        "javascript",
         "design-patterns",
-        "video",
-        "4consider"
+        "video"
       ],
       "legend": "о паттернах MVC/MVP/MVVM/etc."
     },
@@ -3634,6 +3634,28 @@
       "lang": "ru",
       "tags": [
         "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The Problem with gulp-util",
+      "url": "https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5",
+      "lang": "en",
+      "tags": [
+        "gulp",
+        "node.js",
+        "npm",
+        "build"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Twig Processing Order & Scope",
+      "url": "https://nystudio107.com/blog/twig-processing-order-and-scope",
+      "lang": "en",
+      "tags": [
+        "template-engine",
+        "twig"
       ],
       "legend": ""
     }
