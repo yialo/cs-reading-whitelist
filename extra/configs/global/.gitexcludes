@@ -1,0 +1,15 @@
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor directories and files
+.idea
+.vscode
+*.code-workspace
+*.njsproj
+*.ntvs*
+*.sln
+*.sublime*
+*.suo
+*.sw?
