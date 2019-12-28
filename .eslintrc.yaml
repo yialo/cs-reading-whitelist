@@ -1,7 +1,5 @@
----
 env:
   browser: true
-  commonjs: true
   es6: true
 extends:
   - 'plugin:react/recommended'
@@ -11,6 +9,7 @@ overrides:
     files:
       - ./src/**/*.test.js
   - env:
+      commonjs: true
       node: true
     files:
       - ./*.js
@@ -19,6 +18,7 @@ overrides:
     parserOptions:
       impliedStrict: true
     rules:
+      import/no-commonjs: 'off'
       import/no-extraneous-dependencies: 'off'
       strict: error
 parser: babel-eslint
@@ -166,9 +166,9 @@ rules:
   implicit-arrow-linebreak:
     - error
     - beside
-  import/default: 'off'
+  import/default: error
   import/dynamic-import-chunkname:
-    - 'off'
+    - error
     - importFunctions: []
       webpackChunknameFormat: '[0-9a-zA-Z-_/.]+'
   import/export: error
@@ -177,25 +177,18 @@ rules:
     - error
     - ignorePackages
   import/first: error
-  import/group-exports: 'off'
-  import/imports-first: 'off'
-  import/max-dependencies:
-    - 'off'
-    - max: 10
+  import/group-exports: error
+  import/max-dependencies: 'off'
   import/named: error
-  import/namespace: 'off'
+  import/namespace: error
   import/newline-after-import: error
   import/no-absolute-path: error
   import/no-amd: error
-  import/no-anonymous-default-export:
-    - 'off'
-    - allowAnonymousClass: false
-      allowAnonymousFunction: false
-      allowArray: false
-      allowArrowFunction: false
-      allowLiteral: false
-      allowObject: false
-  import/no-commonjs: 'off'
+  import/no-anonymous-default-export: 'off'
+  import/no-commonjs:
+    - error
+    - allowConditionalRequire: false
+      allowPrimitiveModules: false
   import/no-cycle:
     - error
   import/no-default-export: 'off'
