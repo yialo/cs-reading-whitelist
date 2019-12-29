@@ -201,9 +201,7 @@ rules:
       devDependencies: false
       optionalDependencies: false
       peerDependencies: false
-  import/no-internal-modules:
-    - 'off'
-    - allow: []
+  import/no-internal-modules: 'off'
   import/no-mutable-exports: error
   import/no-named-as-default: error
   import/no-named-as-default-member: error
