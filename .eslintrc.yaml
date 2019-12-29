@@ -16,15 +16,14 @@ overrides:
       - ./src/postcss/**/*.js
       - ./webpack/**/*.js
     parserOptions:
-      impliedStrict: true
+      ecmaFeatures:
+        impliedStrict: true
     rules:
       import/no-commonjs: 'off'
       import/no-extraneous-dependencies: 'off'
       strict: error
 parser: babel-eslint
 parserOptions:
-  ecmaFeatures:
-    jsx: true
   ecmaVersion: 2018
   sourceType: module
 plugins:
@@ -189,15 +188,17 @@ rules:
     - error
     - allowConditionalRequire: false
       allowPrimitiveModules: false
-  import/no-cycle:
-    - error
+  import/no-cycle: error
   import/no-default-export: 'off'
-  import/no-deprecated: 'off'
-  import/no-duplicates: error
-  import/no-dynamic-require: 'off'
+  import/no-deprecated: error
+  import/no-duplicates:
+    - error
+    - considerQueryString: true
+  import/no-dynamic-require: error
   import/no-extraneous-dependencies:
     - error
-    - devDependencies: false
+    - bundledDependencies: false
+      devDependencies: false
       optionalDependencies: false
       peerDependencies: false
   import/no-internal-modules:
@@ -874,16 +875,10 @@ rules:
     - after
   yoda: error
 settings:
-  import/core-modules: []
   import/ignore:
     - node_modules
     - \\.(coffee|scss|css|less|hbs|svg|json)$
   import/resolver:
-    node:
-      extensions:
-        - .js
-        - .json
-        - .mjs
     webpack:
       config: ./webpack/base.config.js
   react:
