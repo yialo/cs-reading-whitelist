@@ -9,7 +9,6 @@ overrides:
     files:
       - ./src/**/*.test.js
   - env:
-      commonjs: true
       node: true
     files:
       - ./*.js
@@ -21,7 +20,6 @@ overrides:
     rules:
       import/no-commonjs: 'off'
       import/no-extraneous-dependencies: 'off'
-      strict: error
 parser: babel-eslint
 parserOptions:
   ecmaVersion: 2018
@@ -29,7 +27,6 @@ parserOptions:
 plugins:
   - babel
   - import
-  - react
 rules:
   accessor-pairs: 'off'
   array-bracket-newline:
@@ -188,6 +185,7 @@ rules:
     - error
     - allowConditionalRequire: false
       allowPrimitiveModules: false
+      allowRequire: false
   import/no-cycle: error
   import/no-default-export: 'off'
   import/no-deprecated: error
@@ -208,19 +206,21 @@ rules:
   import/no-named-default: error
   import/no-named-export: 'off'
   import/no-namespace: 'off'
-  import/no-nodejs-modules: 'off'
+  import/no-nodejs-modules: error
   import/no-relative-parent-imports: 'off'
   import/no-restricted-paths: 'off'
   import/no-self-import: error
-  import/no-unassigned-import: 'off'
+  import/no-unassigned-import:
+    - error
+    - allow:
+        - '**/*.css'
   import/no-unresolved:
     - error
     - caseSensitive: true
       commonjs: true
   import/no-unused-modules:
-    - 'off'
-    - ignoreExports: []
-      missingExports: true
+    - error
+    - missingExports: false
       unusedExports: true
   import/no-useless-path-segments: error
   import/no-webpack-loader-syntax: error
@@ -676,7 +676,7 @@ rules:
     - error
     - classes: true
       functions: true
-      variables: true
+      variables: false
   no-useless-call: 'off'
   no-useless-catch: 'off'
   no-useless-computed-key: error
@@ -840,9 +840,7 @@ rules:
         markers:
           - =
           - '!'
-  strict:
-    - error
-    - never
+  strict: error
   switch-colon-spacing:
     - error
     - after: true
@@ -880,4 +878,4 @@ settings:
     webpack:
       config: ./webpack/base.config.js
   react:
-    version: 16
+    version: '16'
