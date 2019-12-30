@@ -17,6 +17,7 @@ overrides:
     parserOptions:
       ecmaFeatures:
         impliedStrict: true
+      sourceType: script
     rules:
       import/no-commonjs: 'off'
       import/no-extraneous-dependencies: 'off'
@@ -222,14 +223,17 @@ rules:
     - error
     - missingExports: false
       unusedExports: true
-  import/no-useless-path-segments: error
+  import/no-useless-path-segments:
+    - error
+    - commonjs: true
+      noUselessIndex: false
   import/no-webpack-loader-syntax: error
   import/order:
     - error
     - groups:
         - builtin
   import/prefer-default-export: error
-  import/unambiguous: 'off'
+  import/unambiguous: error
   indent:
     - error
     - 2
