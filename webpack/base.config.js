@@ -7,20 +7,20 @@ const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const { getAlias, getPath } = require('./_utils');
+
 const isProduction = (process.env.NODE_ENV === 'production');
+
+const pathEnum = getPath(isProduction);
+const aliasEnum = getAlias(pathEnum.SRC);
+
 const assetHash = (isProduction ? '.[contenthash]' : '');
 
-const Path = {
-  SRC: path.resolve(__dirname, '../src'),
-  DIST: path.resolve(__dirname, isProduction ? '../docs' : '../dist'),
-  ROOT: path.resolve(__dirname, '../'),
-};
-
 const config = {
-  context: Path.SRC,
+  context: pathEnum.SRC,
 
   entry: {
-    'app': Path.SRC,
+    'app': pathEnum.SRC,
   },
 
   module: {
@@ -44,7 +44,7 @@ const config = {
           {
             loader: 'babel-loader',
             options: {
-              configFile: path.join(Path.ROOT, 'babel.config.js'),
+              configFile: path.join(pathEnum.ROOT, 'babel.config.js'),
             },
           },
         ],
@@ -66,7 +66,7 @@ const config = {
             options: {
               sourceMap: true,
               config: {
-                path: Path.ROOT,
+                path: pathEnum.ROOT,
               },
             },
           },
@@ -100,7 +100,7 @@ const config = {
 
   output: {
     filename: `assets/js/[name]${assetHash}.js`,
-    path: Path.DIST,
+    path: pathEnum.DIST,
     publicPath: isProduction ? 'https://yialo.github.io/cs-reading-whitelist/' : '/',
   },
 
@@ -114,13 +114,13 @@ const config = {
     }),
     new CopyPlugin([
       {
-        from: path.join(Path.SRC, 'static/fonts/'),
-        to: path.join(Path.DIST, 'assets/fonts'),
+        from: path.join(pathEnum.SRC, 'static/fonts/'),
+        to: path.join(pathEnum.DIST, 'assets/fonts'),
       },
     ]),
     new HtmlPlugin({
       filename: 'index.html',
-      template: path.join(Path.SRC, 'pug/pages/index.pug'),
+      template: path.join(pathEnum.SRC, 'pug/pages/index.pug'),
     }),
     new ManifestPlugin({
       filter: (descriptor) => descriptor.isChunk,
@@ -128,19 +128,17 @@ const config = {
   ],
 
   resolve: {
-    alias: {
-      '@': Path.SRC,
-    },
+    alias: aliasEnum,
   },
 
   stats: {
     assets: false,
-    entrypoints: false,
-    modules: false,
+    entrypoints: true,
+    modules: true,
   },
 };
 
 module.exports = {
   core: config,
-  path: Path,
+  path: pathEnum,
 };

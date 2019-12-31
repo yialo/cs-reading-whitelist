@@ -193,7 +193,7 @@ rules:
   import/no-duplicates:
     - error
     - considerQueryString: true
-  import/no-dynamic-require: error
+  import/no-dynamic-require: 'off'
   import/no-extraneous-dependencies:
     - error
     - bundledDependencies: false
@@ -217,7 +217,8 @@ rules:
         - '**/*.css'
   import/no-unresolved:
     - error
-    - caseSensitive: true
+    - amd: false
+      caseSensitive: true
       commonjs: true
   import/no-unused-modules:
     - error
@@ -877,9 +878,9 @@ rules:
 settings:
   import/ignore:
     - node_modules
-    - \\.(coffee|scss|css|less|hbs|svg|json)$
+    - \\.(css|json)$
   import/resolver:
     webpack:
-      config: ./webpack/base.config.js
+      config: ./webpack/development.config.js
   react:
     version: '16'

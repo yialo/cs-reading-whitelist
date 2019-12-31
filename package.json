@@ -75,9 +75,9 @@
     "lint:js": "eslint ./*.js ./webpack/*.js ./src/**/*.{js,jsx}",
     "start": "npm run dev",
     "stats": "cross-env NODE_ENV=production webpack --config ./webpack/production.config.js --json --profile > tests/js/webpack_stats.json",
+    "test": "npm run test:build && npm run test:run",
     "test:build": "cross-env NODE_ENV=test webpack --config ./webpack/test.config.js",
-    "test:run": "mocha ./tests/js/test_output.js",
-    "test": "npm run test:build && npm run test:run"
+    "test:run": "mocha ./tests/js/test_output.js"
   },
   "version": "0.3.1"
 }

@@ -548,7 +548,7 @@
         "video",
         "4consider"
       ],
-      "legend": ""
+      "legend": "курс устарел, но часть концепций актуальна"
     },
     {
       "caption": "NodeJS Event Loop Part 1: Event Loop and the Big Picture",
@@ -724,7 +724,7 @@
         "webpack",
         "video"
       ],
-      "legend": ""
+      "legend": "курс устарел, но часть концепций актуальна"
     },
     {
       "caption": "Настройка Webpack 4 (Jack Coder)",
@@ -801,7 +801,7 @@
         "gulp",
         "video"
       ],
-      "legend": ""
+      "legend": "часть описанных в курсе подходов устарела"
     },
     {
       "caption": "A quick guide for switching to Gulp 4",
