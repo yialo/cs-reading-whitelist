@@ -68,8 +68,8 @@
     "url": "git+https://github.com/yialo/cs-reading-whitelist.git"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack/production.config.js",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack/development.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack/production.config.js --progress",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack/development.config.js --progress",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint ./src/**/*.css",
     "lint:js": "eslint ./*.js ./webpack/*.js ./src/**/*.{js,jsx}",

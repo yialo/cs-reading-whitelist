@@ -193,7 +193,7 @@ rules:
   import/no-duplicates:
     - error
     - considerQueryString: true
-  import/no-dynamic-require: 'off'
+  import/no-dynamic-require: error
   import/no-extraneous-dependencies:
     - error
     - bundledDependencies: false
