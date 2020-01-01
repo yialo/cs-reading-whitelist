@@ -881,7 +881,7 @@ settings:
     webpack:
       resolve:
         alias:
-          Css$: './css/'
+          Css: './css'
   react:
     version: '16'
 

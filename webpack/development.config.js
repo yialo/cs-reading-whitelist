@@ -9,14 +9,10 @@ const serverOptions = {
   writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
 };
 
-const devConfig = merge(baseConfig.core, {
+module.exports = merge(baseConfig.core, {
   mode: 'development',
 
   devServer: serverOptions,
 
   devtool: 'source-map',
-});
-
-module.exports = new Promise((resolve) => {
-  resolve(devConfig);
 });

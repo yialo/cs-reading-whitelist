@@ -9,7 +9,7 @@ module.exports = {
       '#json': path.join(absPathToSrc, 'json'),
     };
 
-    console.log(output['#css']);
+    console.log(output);
 
     return output;
   },
