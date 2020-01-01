@@ -17,6 +17,10 @@ const aliasEnum = getAlias(pathEnum.SRC);
 const assetHash = (isProduction ? '.[contenthash]' : '');
 
 const config = {
+  mode: 'none',
+
+  target: 'web',
+
   context: pathEnum.SRC,
 
   entry: {
@@ -134,10 +138,8 @@ const config = {
   stats: {
     assets: false,
     entrypoints: true,
-    modules: true,
+    modules: false,
   },
-
-  target: 'web',
 };
 
 module.exports = {

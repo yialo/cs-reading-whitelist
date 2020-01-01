@@ -3,14 +3,14 @@ const path = require('path');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const { path: basePath } = require('./base.config');
+const { path: pathEnum } = require('./base.config');
 
 module.exports = {
   mode: 'development',
 
   target: 'node',
 
-  entry: path.join(basePath.SRC, 'tests.js'),
+  entry: path.join(pathEnum.SRC, 'tests.js'),
 
   module: {
     rules: [
@@ -23,7 +23,7 @@ module.exports = {
 
   output: {
     filename: 'test_output.js',
-    path: basePath.TEST,
+    path: pathEnum.TEST,
   },
 
   plugins: [
@@ -35,7 +35,7 @@ module.exports = {
 
   resolve: {
     alias: {
-      '@': basePath.SRC,
+      '@': pathEnum.SRC,
     },
   },
 

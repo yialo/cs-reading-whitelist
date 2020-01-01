@@ -1,0 +1,4 @@
+{
+  "exec": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack/development.config.js --progress",
+  "watch": "./webpack/"
+}

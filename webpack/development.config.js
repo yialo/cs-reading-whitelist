@@ -4,8 +4,8 @@ const baseConfig = require('./base.config');
 
 const serverOptions = {
   host: '0.0.0.0',
-  overlay: true,
   port: 8081,
+  overlay: true,
   writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
 };
 

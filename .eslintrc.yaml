@@ -879,10 +879,6 @@ settings:
     - \\.(css|json)$
   import/resolver:
     webpack:
-      resolve:
-        alias:
-          Css: './css'
+      config: ./webpack/production.config.js
   react:
     version: '16'
-
-# config: ./webpack/development.config.js
