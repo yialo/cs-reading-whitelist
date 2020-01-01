@@ -136,6 +136,8 @@ const config = {
     entrypoints: true,
     modules: true,
   },
+
+  target: 'web',
 };
 
 module.exports = {

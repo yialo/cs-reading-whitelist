@@ -1,12 +1,18 @@
 const path = require('path');
 
 module.exports = {
-  getAlias: (absPathToSrc) => ({
-    '#': absPathToSrc,
-    '#components': path.join(absPathToSrc, 'js/components'),
-    '#css': path.join(absPathToSrc, 'css'),
-    '#json': path.join(absPathToSrc, 'json'),
-  }),
+  getAlias: (absPathToSrc) => {
+    const output = {
+      // '#': absPathToSrc,
+      'Components': path.join(absPathToSrc, 'js/components'),
+      'Css': path.join(absPathToSrc, 'css'),
+      '#json': path.join(absPathToSrc, 'json'),
+    };
+
+    console.log(output['#css']);
+
+    return output;
+  },
 
   getPath: (isProduction) => ({
     SRC: path.resolve(__dirname, '../src'),

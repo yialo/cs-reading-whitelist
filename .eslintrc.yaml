@@ -219,10 +219,7 @@ rules:
     - amd: false
       caseSensitive: true
       commonjs: true
-  import/no-unused-modules:
-    - error
-    - missingExports: false
-      unusedExports: true
+  import/no-unused-modules: off
   import/no-useless-path-segments:
     - error
     - commonjs: true
@@ -877,8 +874,12 @@ settings:
   import/ignore:
     - node_modules
     - \\.(css|json)$
-  # import/resolver:
-  #   webpack:
-  #     config: ./webpack/development.config.js
+  import/resolver:
+    webpack:
+      resolve:
+        alias:
+          Css$: './css/'
   react:
     version: '16'
+
+# config: ./webpack/development.config.js
