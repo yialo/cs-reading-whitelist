@@ -14,6 +14,7 @@ overrides:
       - ./*.js
       - ./src/postcss/**/*.js
       - ./webpack/**/*.js
+    parser: espree
     parserOptions:
       ecmaFeatures:
         impliedStrict: true
@@ -231,10 +232,7 @@ rules:
     - commonjs: true
       noUselessIndex: false
   import/no-webpack-loader-syntax: error
-  import/order:
-    - error
-    - groups:
-        - builtin
+  import/order: off
   import/prefer-default-export: error
   import/unambiguous: error
   indent:

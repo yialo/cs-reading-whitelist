@@ -1,7 +1,7 @@
 import '@csstools/normalize.css';
-import 'Css/index.css';
+import '#css/index.css';
 
-import showMessage from 'Components/testing.js';
+import showMessage from '#components/testing.js';
 import greet from './js/simple.js';
 
 showMessage();

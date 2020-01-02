@@ -2,8 +2,8 @@ const path = require('path');
 
 module.exports = {
   getAlias: (absPathToSrc) => ({
-    'Components': path.join(absPathToSrc, 'js/components'),
-    'Css': path.join(absPathToSrc, 'css'),
+    '#components': path.join(absPathToSrc, 'js/components'),
+    '#css': path.join(absPathToSrc, 'css'),
     '#json': path.join(absPathToSrc, 'json'),
   }),
 
