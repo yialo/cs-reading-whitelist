@@ -548,7 +548,7 @@
         "video",
         "4consider"
       ],
-      "legend": ""
+      "legend": "курс устарел, но часть концепций актуальна"
     },
     {
       "caption": "NodeJS Event Loop Part 1: Event Loop and the Big Picture",
@@ -724,7 +724,7 @@
         "webpack",
         "video"
       ],
-      "legend": ""
+      "legend": "курс устарел, но часть концепций актуальна"
     },
     {
       "caption": "Настройка Webpack 4 (Jack Coder)",
@@ -801,7 +801,7 @@
         "gulp",
         "video"
       ],
-      "legend": ""
+      "legend": "часть описанных в курсе подходов устарела"
     },
     {
       "caption": "A quick guide for switching to Gulp 4",
@@ -2912,7 +2912,7 @@
         "graphics",
         "polyfill"
       ],
-      "legend": "полифил для поддержки элемента '<picture>' в IE"
+      "legend": "полифил для поддержки элемента &lt;picture&gt; в IE"
     },
     {
       "caption": "Everything you always wanted to know about touch icons",
@@ -2976,10 +2976,10 @@
         "html",
         "4consider"
       ],
-      "legend": "углублённый разбор функционала элемента '<picture>'"
+      "legend": "углублённый разбор функционала элемента &lt;picture&gt;"
     },
     {
-      "caption": "Сколько нужно верстальщиков, чтобы вставить '<picture>'? (Вадим Макеев)",
+      "caption": "Сколько нужно верстальщиков, чтобы вставить <picture>? (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=Szo-2D7TtEU",
       "lang": "ru",
       "tags": [
@@ -3554,6 +3554,135 @@
         "javascript",
         "flux",
         "redux"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Uncommon Use Cases For Pseudo Elements",
+      "url": "https://ishadeed.com/article/unusual-use-cases-pseudo-elements/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Оформление строчных блоков кода (Роман Комаров)",
+      "url": "https://www.kizu.ru/ru/styling-inline-code/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "typography"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Articles & Experiments by Roman Komarov",
+      "url": "https://www.kizu.ru/",
+      "lang": "en",
+      "tags": [
+        "blogs"
+      ],
+      "legend": "блог Романа Комарова"
+    },
+    {
+      "caption": "The world needs full-stack craftsmen (Антон Кекс)",
+      "url": "https://www.youtube.com/watch?v=qd9N9eU1Qn0",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "self-efficiency",
+        "project-management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Зачем программисту чувство стиля? (Антон Кекс)",
+      "url": "https://www.youtube.com/watch?v=d_oOvd793Lo",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Эти страшные буквы MV* (Александра Шинкевич)",
+      "url": "https://www.youtube.com/watch?v=5WgsKtlHUls",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "design-patterns",
+        "video"
+      ],
+      "legend": "о паттернах MVC/MVP/MVVM/etc."
+    },
+    {
+      "caption": "Философия React",
+      "url": "https://ru.reactjs.org/docs/thinking-in-react.html",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "dom",
+        "react"
+      ],
+      "legend": "действенный подход к разработке web-интерфейсов в целом, не обязательно на React"
+    },
+    {
+      "caption": "Как быть начинающим разработчиком и не сойти с ума",
+      "url": "http://blog.csssr.ru/2016/09/19/how-to-be-a-beginner-developer",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The Problem with gulp-util",
+      "url": "https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5",
+      "lang": "en",
+      "tags": [
+        "gulp",
+        "node.js",
+        "npm",
+        "build"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Twig Processing Order & Scope",
+      "url": "https://nystudio107.com/blog/twig-processing-order-and-scope",
+      "lang": "en",
+      "tags": [
+        "template-engine",
+        "twig"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Эти токсичные, токсичные собеседования",
+      "url": "https://habr.com/ru/company/exante/blog/335096/",
+      "lang": "ru",
+      "tags": [
+        "soft-skills"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Краткий гайд о том, как нанимать нормальных людей",
+      "url": "https://vas3k.ru/inside/46/",
+      "lang": "ru",
+      "tags": [
+        "soft-skills"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Про интерфейсные тексты, психологию, UX-ляпы и развитие",
+      "url": "https://designpub.ru/ux-digest-2019-83cb551080ce",
+      "lang": "ru",
+      "tags": [
+        "ux/ui"
       ],
       "legend": ""
     }

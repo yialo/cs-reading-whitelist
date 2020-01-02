@@ -1,7 +1,8 @@
 env:
   browser: true
-  commonjs: true
   es6: true
+extends:
+  - 'plugin:react/recommended'
 overrides:
   - env:
       mocha: true
@@ -10,25 +11,35 @@ overrides:
   - env:
       node: true
     files:
-      - ./*.js
+      - ./config/*.js
       - ./src/postcss/**/*.js
       - ./webpack/**/*.js
+    parser: espree
     parserOptions:
-      impliedStrict: true
+      ecmaFeatures:
+        impliedStrict: true
+      sourceType: script
     rules:
-      import/no-extraneous-dependencies: 'off'
-      strict: error
+      import/no-commonjs: off
+      import/no-extraneous-dependencies: off
+      import/no-nodejs-modules: off
+    settings:
+      import/resolver: node
 parser: babel-eslint
 parserOptions:
+  allowImportExportEverywhere: false
+  babelOptions:
+    configFile: ./config/babel.config.js
   ecmaVersion: 2018
+  requireConfigFile: true
   sourceType: module
 plugins:
   - babel
   - import
 rules:
-  accessor-pairs: 'off'
+  accessor-pairs: off
   array-bracket-newline:
-    - 'off'
+    - off
     - consistent
   array-bracket-spacing:
     - error
@@ -37,7 +48,7 @@ rules:
     - error
     - allowImplicit: true
   array-element-newline:
-    - 'off'
+    - off
     - minItems: 3
       multiline: true
   arrow-body-style:
@@ -64,7 +75,7 @@ rules:
     - error
     - properties: never
   capitalized-comments:
-    - 'off'
+    - off
     - never
     - block:
         ignoreConsecutiveComments: true
@@ -74,7 +85,7 @@ rules:
         ignoreConsecutiveComments: true
         ignoreInlineComments: true
         ignorePattern: .*
-  class-methods-use-this: 'off'
+  class-methods-use-this: off
   comma-dangle:
     - error
     - arrays: always-multiline
@@ -107,8 +118,8 @@ rules:
   computed-property-spacing:
     - error
     - never
-  consistent-return: 'off'
-  consistent-this: 'off'
+  consistent-return: off
+  consistent-this: off
   constructor-super: error
   curly:
     - error
@@ -116,8 +127,7 @@ rules:
   default-case:
     - error
     - commentPattern: ^no default$
-  default-param-last:
-    - error
+  default-param-last: error
   dot-notation:
     - error
     - allowKeywords: true
@@ -132,12 +142,12 @@ rules:
   func-call-spacing:
     - error
     - never
-  func-name-matching: 'off'
+  func-name-matching: off
   func-names:
     - error
     - as-needed
   func-style:
-    - 'off'
+    - off
     - expression
   function-paren-newline:
     - error
@@ -149,93 +159,86 @@ rules:
   getter-return:
     - error
     - allowImplicit: true
-  global-require: 'off'
+  global-require: off
   grouped-accessor-pairs:
     - error
     - getBeforeSet
   guard-for-in: error
-  id-blacklist: 'off'
-  id-length: 'off'
-  id-match: 'off'
+  id-blacklist: off
+  id-length: off
+  id-match: off
   implicit-arrow-linebreak:
     - error
     - beside
-  import/default: 'off'
+  import/default: error
   import/dynamic-import-chunkname:
-    - 'off'
+    - error
     - importFunctions: []
       webpackChunknameFormat: '[0-9a-zA-Z-_/.]+'
   import/export: error
-  import/exports-last: 'off'
+  import/exports-last: off
   import/extensions:
     - error
-    - css: always
-      js: never
-      jsx: never
-      mjs: never
-      test: always
+    - ignorePackages
   import/first: error
-  import/group-exports: 'off'
-  import/imports-first: 'off'
-  import/max-dependencies:
-    - 'off'
-    - max: 10
+  import/group-exports: error
+  import/max-dependencies: off
   import/named: error
-  import/namespace: 'off'
+  import/namespace: error
   import/newline-after-import: error
   import/no-absolute-path: error
   import/no-amd: error
-  import/no-anonymous-default-export:
-    - 'off'
-    - allowAnonymousClass: false
-      allowAnonymousFunction: false
-      allowArray: false
-      allowArrowFunction: false
-      allowLiteral: false
-      allowObject: false
-  import/no-commonjs: 'off'
-  import/no-cycle:
+  import/no-anonymous-default-export: off
+  import/no-commonjs:
     - error
-  import/no-default-export: 'off'
-  import/no-deprecated: 'off'
-  import/no-duplicates: error
-  import/no-dynamic-require: 'off'
+    - allowConditionalRequire: false
+      allowPrimitiveModules: false
+      allowRequire: false
+  import/no-cycle: error
+  import/no-default-export: off
+  import/no-deprecated: error
+  import/no-duplicates:
+    - error
+    - considerQueryString: true
+  import/no-dynamic-require: error
   import/no-extraneous-dependencies:
     - error
-    - devDependencies: false
+    - bundledDependencies: false
+      devDependencies: false
       optionalDependencies: false
       peerDependencies: false
-  import/no-internal-modules:
-    - 'off'
-    - allow: []
+  import/no-internal-modules: off
   import/no-mutable-exports: error
   import/no-named-as-default: error
   import/no-named-as-default-member: error
   import/no-named-default: error
-  import/no-named-export: 'off'
-  import/no-namespace: 'off'
-  import/no-nodejs-modules: 'off'
-  import/no-relative-parent-imports: 'off'
-  import/no-restricted-paths: 'off'
+  import/no-named-export: off
+  import/no-namespace: off
+  import/no-nodejs-modules: error
+  import/no-relative-parent-imports: off
+  import/no-restricted-paths: off
   import/no-self-import: error
-  import/no-unassigned-import: 'off'
+  import/no-unassigned-import:
+    - error
+    - allow:
+        - '**/*.css'
   import/no-unresolved:
     - error
-    - caseSensitive: true
+    - amd: false
+      caseSensitive: true
       commonjs: true
   import/no-unused-modules:
-    - 'off'
-    - ignoreExports: []
-      missingExports: true
+    - warn
+    - missingExports: false
       unusedExports: true
-  import/no-useless-path-segments: error
-  import/no-webpack-loader-syntax: error
-  import/order:
+  import/no-useless-path-segments:
     - error
-    - groups:
-        - builtin
+    - commonjs: true
+      noUselessIndex: false
+  import/no-webpack-loader-syntax: error
+  import/order: off
   import/prefer-default-export: error
-  import/unambiguous: 'off'
+  import/unambiguous: error
   indent:
     - error
     - 2
@@ -269,9 +272,9 @@ rules:
         - JSXEmptyExpression
         - JSXSpreadChild
       outerIIFEBody: 1
-  init-declarations: 'off'
+  init-declarations: off
   jsx-quotes:
-    - 'off'
+    - off
     - prefer-double
   key-spacing:
     - error
@@ -289,14 +292,14 @@ rules:
         throw:
           after: true
   line-comment-position:
-    - 'off'
+    - off
     - applyDefaultPatterns: true
       ignorePattern: ''
       position: above
   linebreak-style:
     - error
     - unix
-  lines-around-comment: 'off'
+  lines-around-comment: off
   lines-around-directive:
     - error
     - after: always
@@ -309,7 +312,7 @@ rules:
     - error
     - 1
   max-depth:
-    - 'off'
+    - off
     - 4
   max-len:
     - error
@@ -320,31 +323,31 @@ rules:
       ignoreTemplateLiterals: true
       ignoreUrls: true
   max-lines:
-    - 'off'
+    - off
     - max: 300
       skipBlankLines: true
       skipComments: true
   max-lines-per-function:
-    - 'off'
+    - off
     - IIFEs: true
       max: 50
       skipBlankLines: true
       skipComments: true
-  max-nested-callbacks: 'off'
+  max-nested-callbacks: off
   max-params:
-    - 'off'
+    - off
     - 3
   max-statements:
-    - 'off'
+    - off
     - 10
   max-statements-per-line:
-    - 'off'
+    - off
     - max: 1
   multiline-comment-style:
-    - 'off'
+    - off
     - starred-block
   multiline-ternary:
-    - 'off'
+    - off
     - never
   new-cap:
     - error
@@ -356,19 +359,19 @@ rules:
       newIsCap: true
       newIsCapExceptions: []
   new-parens: error
-  newline-after-var: 'off'
-  newline-before-return: 'off'
+  newline-after-var: off
+  newline-before-return: off
   newline-per-chained-call:
     - error
     - ignoreChainWithDepth: 4
   no-alert: warn
   no-array-constructor: error
-  no-async-promise-executor: 'off'
+  no-async-promise-executor: off
   no-await-in-loop: error
   no-bitwise: error
   no-caller: error
   no-case-declarations: error
-  no-catch-shadow: 'off'
+  no-catch-shadow: off
   no-class-assign: error
   no-compare-neg-zero: error
   no-cond-assign:
@@ -377,7 +380,7 @@ rules:
   no-confusing-arrow:
     - error
     - allowParens: true
-  no-console: 'off'
+  no-console: off
   no-const-assign: error
   no-constant-condition: warn
   no-constructor-return: error
@@ -385,13 +388,13 @@ rules:
   no-control-regex: error
   no-debugger: warn
   no-delete-var: error
-  no-div-regex: 'off'
+  no-div-regex: off
   no-dupe-args: error
   no-dupe-class-members: error
   no-dupe-else-if: error
   no-dupe-keys: error
   no-duplicate-case: error
-  no-duplicate-imports: 'off'
+  no-duplicate-imports: off
   no-else-return:
     - error
     - allowElseIf: false
@@ -404,7 +407,7 @@ rules:
         - functions
         - methods
   no-empty-pattern: error
-  no-eq-null: 'off'
+  no-eq-null: off
   no-eval: error
   no-ex-assign: error
   no-extend-native: error
@@ -412,7 +415,7 @@ rules:
   no-extra-boolean-cast: error
   no-extra-label: error
   no-extra-parens:
-    - 'off'
+    - off
     - all
     - conditionalAssign: true
       enforceForArrowConditionals: false
@@ -427,17 +430,17 @@ rules:
     - error
     - exceptions: []
   no-implicit-coercion:
-    - 'off'
+    - off
     - allow: []
       boolean: false
       number: true
       string: true
-  no-implicit-globals: 'off'
+  no-implicit-globals: off
   no-implied-eval: error
-  no-inline-comments: 'off'
+  no-inline-comments: off
   no-inner-declarations: error
   no-invalid-regexp: error
-  no-invalid-this: 'off'
+  no-invalid-this: off
   no-irregular-whitespace: error
   no-iterator: error
   no-label-var: error
@@ -449,12 +452,12 @@ rules:
   no-lonely-if: error
   no-loop-func: error
   no-magic-numbers:
-    - 'off'
+    - off
     - detectObjects: false
       enforceConst: true
       ignore: []
       ignoreArrayIndexes: true
-  no-misleading-character-class: 'off'
+  no-misleading-character-class: off
   no-mixed-operators:
     - error
     - allowSamePrecedence: false
@@ -497,8 +500,7 @@ rules:
         - - in
           - instanceof
   no-mixed-spaces-and-tabs: error
-  no-multi-assign:
-    - error
+  no-multi-assign: error
   no-multi-spaces:
     - error
     - ignoreEOLComments: false
@@ -507,9 +509,9 @@ rules:
     - error
     - max: 2
       maxEOF: 0
-  no-native-reassign: 'off'
-  no-negated-condition: 'off'
-  no-negated-in-lhs: 'off'
+  no-native-reassign: off
+  no-negated-condition: off
+  no-negated-in-lhs: off
   no-nested-ternary: error
   no-new: error
   no-new-func: error
@@ -592,7 +594,7 @@ rules:
     - toolbar
     - top
   no-restricted-imports:
-    - 'off'
+    - off
     - paths: []
       patterns: []
   no-restricted-properties:
@@ -648,7 +650,7 @@ rules:
   no-sparse-arrays: error
   no-tabs: error
   no-template-curly-in-string: error
-  no-ternary: 'off'
+  no-ternary: off
   no-this-before-super: error
   no-throw-literal: error
   no-trailing-spaces:
@@ -657,10 +659,10 @@ rules:
       skipBlankLines: false
   no-undef: error
   no-undef-init: error
-  no-undefined: 'off'
-  no-underscore-dangle: 'off'
+  no-undefined: off
+  no-underscore-dangle: off
   no-unexpected-multiline: error
-  no-unmodified-loop-condition: 'off'
+  no-unmodified-loop-condition: off
   no-unneeded-ternary:
     - error
     - defaultAssignment: false
@@ -682,9 +684,9 @@ rules:
     - error
     - classes: true
       functions: true
-      variables: true
-  no-useless-call: 'off'
-  no-useless-catch: 'off'
+      variables: false
+  no-useless-call: off
+  no-useless-catch: off
   no-useless-computed-key: error
   no-useless-concat: error
   no-useless-constructor: error
@@ -696,9 +698,9 @@ rules:
       ignoreImport: false
   no-useless-return: error
   no-var: error
-  no-void: 'off'
+  no-void: off
   no-warning-comments:
-    - 'off'
+    - off
     - location: start
       terms:
         - todo
@@ -744,7 +746,7 @@ rules:
     - blocks: never
       classes: never
       switches: never
-  padding-line-between-statements: 'off'
+  padding-line-between-statements: off
   prefer-arrow-callback:
     - error
     - allowNamedFunctions: false
@@ -763,13 +765,13 @@ rules:
         object: true
     - enforceForRenamedProperties: false
   prefer-exponentiation-operator: error
-  prefer-named-capture-group: 'off'
+  prefer-named-capture-group: off
   prefer-numeric-literals: error
-  prefer-object-spread: 'off'
+  prefer-object-spread: off
   prefer-promise-reject-errors:
     - error
     - allowEmptyReject: true
-  prefer-reflect: 'off'
+  prefer-reflect: off
   prefer-rest-params: error
   prefer-spread: error
   prefer-template: error
@@ -781,15 +783,15 @@ rules:
     - single
     - allowTemplateLiterals: true
   radix: error
-  require-atomic-updates: 'off'
-  require-await: 'off'
-  require-jsdoc: 'off'
-  require-unicode-regexp: 'off'
+  require-atomic-updates: off
+  require-await: off
+  require-jsdoc: off
+  require-unicode-regexp: off
   require-yield: error
   rest-spread-spacing:
     - error
     - never
-  semi: 'off'
+  semi: off
   semi-spacing:
     - error
     - after: true
@@ -798,7 +800,7 @@ rules:
     - error
     - last
   sort-imports:
-    - 'off'
+    - off
     - ignoreCase: false
       ignoreDeclarationSort: false
       ignoreMemberSort: false
@@ -808,11 +810,11 @@ rules:
         - multiple
         - single
   sort-keys:
-    - 'off'
+    - off
     - asc
     - caseSensitive: false
       natural: true
-  sort-vars: 'off'
+  sort-vars: off
   space-before-blocks: error
   space-before-function-paren:
     - error
@@ -846,9 +848,7 @@ rules:
         markers:
           - =
           - '!'
-  strict:
-    - error
-    - never
+  strict: error
   switch-colon-spacing:
     - error
     - after: true
@@ -864,7 +864,7 @@ rules:
     - error
     - never
   use-isnan: error
-  valid-jsdoc: 'off'
+  valid-jsdoc: off
   valid-typeof:
     - error
     - requireStringLiterals: true
@@ -873,25 +873,17 @@ rules:
     - error
     - outside
     - functionPrototypeMethods: false
-  wrap-regex: 'off'
+  wrap-regex: off
   yield-star-spacing:
     - error
     - after
   yoda: error
 settings:
-  import/core-modules: []
-  import/extensions:
-    - .js
-    - .jsx
-    - .mjs
   import/ignore:
     - node_modules
-    - \\.(coffee|scss|css|less|hbs|svg|json)$
+    - \\.(css|json)$
   import/resolver:
-    node:
-      extensions:
-        - .js
-        - .json
-        - .mjs
     webpack:
-      config: webpack/base.config.js
+      config: ./webpack/base.config.js
+  react:
+    version: '16'

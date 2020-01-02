@@ -1,5 +1,5 @@
 module.exports = {
-  ignore: ['**/node_modules/**'],
+  ignore: ['../**/node_modules/**'],
   plugins: [
     [
       '@babel/plugin-transform-runtime',
@@ -16,6 +16,15 @@ module.exports = {
         useBuiltIns: 'usage',
         loose: false,
         modules: false,
+      },
+    ],
+    [
+      '@babel/preset-react',
+      {
+        development: (process.env.NODE_ENV === 'development'),
+        throwIfNamespace: true,
+        useBuiltIns: false,
+        useSpread: false,
       },
     ],
   ],

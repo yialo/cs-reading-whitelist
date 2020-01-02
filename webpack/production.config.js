@@ -5,7 +5,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 const baseConfig = require('./base.config');
 
-const productionConfig = merge(baseConfig.core, {
+module.exports = merge(baseConfig, {
   mode: 'production',
 
   optimization: {
@@ -40,8 +40,4 @@ const productionConfig = merge(baseConfig.core, {
   },
 
   devtool: false,
-});
-
-module.exports = new Promise((resolve) => {
-  resolve(productionConfig);
 });
