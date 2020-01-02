@@ -4,6 +4,7 @@ module.exports = {
   getAlias: (absPathToSrc) => ({
     '#components': path.join(absPathToSrc, 'js/components'),
     '#css': path.join(absPathToSrc, 'css'),
+    '#js': path.join(absPathToSrc, 'js'),
     '#json': path.join(absPathToSrc, 'json'),
   }),
 

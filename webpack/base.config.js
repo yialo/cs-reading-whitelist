@@ -6,6 +6,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { DefinePlugin } = require('webpack');
 
 const { getAlias, getPath } = require('./utils/paths.js');
 
@@ -15,6 +16,7 @@ const pathEnum = getPath(isProduction);
 const aliasEnum = getAlias(pathEnum.SRC);
 
 const assetHash = (isProduction ? '.[contenthash]' : '');
+const publicPath = isProduction ? 'https://yialo.github.io/cs-reading-whitelist/' : '/';
 
 module.exports = {
   mode: 'none',
@@ -105,7 +107,7 @@ module.exports = {
   output: {
     filename: `assets/js/[name]${assetHash}.js`,
     path: pathEnum.DIST,
-    publicPath: isProduction ? 'https://yialo.github.io/cs-reading-whitelist/' : '/',
+    publicPath,
   },
 
   plugins: [
@@ -128,6 +130,9 @@ module.exports = {
     }),
     new ManifestPlugin({
       filter: (descriptor) => descriptor.isChunk,
+    }),
+    new DefinePlugin({
+      publicPath: JSON.stringify(publicPath),
     }),
   ],
 
