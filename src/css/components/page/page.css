@@ -7,6 +7,6 @@
   flex-direction: column;
   align-items: center;
   min-width: var(--page-min-width);
-  overflow-x: scroll;
+  overflow-y: scroll;
   background-color: var(--color-page-background);
 }
