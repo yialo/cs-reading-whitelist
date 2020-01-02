@@ -8,8 +8,8 @@ module.exports = {
   }),
 
   getPath: (isProduction) => ({
-    SRC: path.resolve(__dirname, '../src'),
-    DIST: path.resolve(__dirname, isProduction ? '../docs' : '../dist'),
-    ROOT: path.resolve(__dirname, '../'),
+    SRC: path.resolve(__dirname, '../../src'),
+    DIST: path.resolve(__dirname, isProduction ? '../../docs' : '../../dist'),
+    ROOT: path.resolve(__dirname, '../../'),
   }),
 };

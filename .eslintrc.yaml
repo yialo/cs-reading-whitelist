@@ -21,6 +21,9 @@ overrides:
     rules:
       import/no-commonjs: off
       import/no-extraneous-dependencies: off
+      import/no-nodejs-modules: off
+    settings:
+      import/resolver: node
 parser: babel-eslint
 parserOptions:
   ecmaVersion: 2018
@@ -879,6 +882,6 @@ settings:
     - \\.(css|json)$
   import/resolver:
     webpack:
-      config: ./webpack/production.config.js
+      config: ./webpack/base.config.js
   react:
     version: '16'

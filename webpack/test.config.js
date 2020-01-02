@@ -3,7 +3,11 @@ const path = require('path');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const { path: pathEnum } = require('./base.config');
+const { getPath } = require('./utils/paths.js');
+
+const isProduction = (process.env.NODE_ENV === 'production');
+
+const pathEnum = getPath(isProduction);
 
 module.exports = {
   mode: 'development',

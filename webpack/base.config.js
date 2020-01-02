@@ -7,7 +7,7 @@ const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const { getAlias, getPath } = require('./_utils');
+const { getAlias, getPath } = require('./utils/paths.js');
 
 const isProduction = (process.env.NODE_ENV === 'production');
 
@@ -16,7 +16,7 @@ const aliasEnum = getAlias(pathEnum.SRC);
 
 const assetHash = (isProduction ? '.[contenthash]' : '');
 
-const config = {
+module.exports = {
   mode: 'none',
 
   target: 'web',
@@ -140,9 +140,4 @@ const config = {
     entrypoints: true,
     modules: false,
   },
-};
-
-module.exports = {
-  core: config,
-  path: pathEnum,
 };
