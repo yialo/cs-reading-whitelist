@@ -11,7 +11,7 @@ overrides:
   - env:
       node: true
     files:
-      - ./*.js
+      - ./config/*.js
       - ./src/postcss/**/*.js
       - ./webpack/**/*.js
     parser: espree
@@ -27,7 +27,11 @@ overrides:
       import/resolver: node
 parser: babel-eslint
 parserOptions:
+  allowImportExportEverywhere: false
+  babelOptions:
+    configFile: ./config/babel.config.js
   ecmaVersion: 2018
+  requireConfigFile: true
   sourceType: module
 plugins:
   - babel

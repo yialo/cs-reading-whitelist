@@ -73,10 +73,10 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config ./webpack/production.config.js --progress",
-    "dev": "nodemon --config ./nodemon.json",
+    "dev": "nodemon --config ./config/nodemon.json",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint ./src/**/*.css",
-    "lint:js": "eslint ./*.js ./webpack/*.js ./src/**/*.{js,jsx}",
+    "lint:js": "eslint ./config/*.js ./webpack/**/*.js ./src/**/*.{js,jsx}",
     "start": "npm run dev",
     "stats": "cross-env NODE_ENV=production webpack --config ./webpack/production.config.js --json --profile > tests/js/webpack_stats.json",
     "test": "npm run test:build && npm run test:run",

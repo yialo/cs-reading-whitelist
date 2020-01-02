@@ -48,7 +48,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              configFile: path.join(pathEnum.ROOT, 'babel.config.js'),
+              configFile: path.join(pathEnum.CONFIG, 'babel.config.js'),
             },
           },
         ],
@@ -70,7 +70,7 @@ module.exports = {
             options: {
               sourceMap: true,
               config: {
-                path: pathEnum.ROOT,
+                path: pathEnum.CONFIG,
               },
             },
           },

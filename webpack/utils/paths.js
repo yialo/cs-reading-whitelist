@@ -9,6 +9,7 @@ module.exports = {
 
   getPath: (isProduction) => ({
     SRC: path.resolve(__dirname, '../../src'),
+    CONFIG: path.resolve(__dirname, '../../config'),
     DIST: path.resolve(__dirname, isProduction ? '../../docs' : '../../dist'),
     ROOT: path.resolve(__dirname, '../../'),
   }),
