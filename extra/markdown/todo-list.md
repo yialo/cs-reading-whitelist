@@ -17,6 +17,7 @@
 9. (?) Different hashtag types (maybe via prefixing)
 10. Change README.md: add npm cli commands
 11. Add **stylelint** to project
+12. Add special markup for tag and code remarks in text.
 
 ## More far future
 
@@ -30,3 +31,4 @@
 3. Database import/export with XLSX/CSV formats
 4. Create Emmet cheatsheet tool app with search
     * parse official docs HTML with Node.js
+5. Create PostCSS plugin for rendering CSS from JSON data structure.

@@ -1,20 +1,18 @@
 const merge = require('webpack-merge');
 
-const baseConfig = require('./base.config');
+require('dotenv').config();
 
-const devConfig = merge(baseConfig.core, {
+const baseConfig = require('./base.config.js');
+
+module.exports = merge(baseConfig, {
   mode: 'development',
 
   devServer: {
-    writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
+    host: process.env.WDS_HOST,
+    port: process.env.WDS_PORT,
     overlay: true,
-    port: 8081,
-    host: '0.0.0.0',
+    writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
   },
 
   devtool: 'source-map',
-});
-
-module.exports = new Promise((resolve) => {
-  resolve(devConfig);
 });

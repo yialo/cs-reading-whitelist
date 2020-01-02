@@ -1,0 +1,23 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	autocrlf = input
+	safecrlf = false
+	excludesFile = ~/.gitexcludes
+	ignorecase = false
+	editor = code --wait
+[alias]
+	hist = log --all --decorate --oneline --graph
+	histlong = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[merge]
+	conflictstyle = diff3
+#   tool = diffmerge
+# [mergetool "diffmerge"]
+#   path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
+# [diff]
+#   tool = diffmerge
+# [difftool "diffmerge"]
+#   path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe

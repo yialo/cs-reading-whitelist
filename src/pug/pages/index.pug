@@ -7,11 +7,12 @@ block variables
 
 block body
   body.page
-    .page__wrapper(id='app')
+    div(id='react-app')
+    .page__wrapper
       h1.s_text-block.page__heading Computer Science Reading Whitelist
       main.chapter
         ul.s_list.chapter__list
-          - const { entries } = require('@/json/subjects.json');
+          - const { entries } = require('#json/subjects.json');
           - for (const { caption, url, lang, tags, legend } of entries)
             li.chapter__item #[a(href=url) #{caption}]
               != legend ? ` - ${legend}` : ''
