@@ -1,7 +1,7 @@
 const path = require('path');
 
 const CaseSensitivePathPlugin = require('case-sensitive-paths-webpack-plugin');
-const CssExtractPlugin = require('extract-css-chunks-webpack-plugin');
+const CssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
@@ -59,7 +59,12 @@ module.exports = {
         test: /\.css$/,
         exclude: '/node_modules/',
         use: [
-          CssExtractPlugin.loader,
+          {
+            loader: CssExtractPlugin.loader,
+            options: {
+              hmr: !isProduction,
+            },
+          },
           {
             loader: 'css-loader',
             options: {
@@ -141,8 +146,8 @@ module.exports = {
   },
 
   stats: {
-    assets: false,
-    entrypoints: true,
+    assets: true,
+    entrypoints: false,
     modules: false,
   },
 };
