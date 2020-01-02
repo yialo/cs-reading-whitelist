@@ -1,8 +1,6 @@
 import '@csstools/normalize.css';
 import '#css/index.css';
 
-import showMessage from '#components/testing.js';
-import greet from './js/simple.js';
+import initApp from './js/init-app.js';
 
-showMessage();
-greet();
+window.addEventListener('DOMContentLoaded', initApp);
