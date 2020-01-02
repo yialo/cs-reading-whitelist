@@ -7,16 +7,16 @@ block variables
 
 block body
   body.page
-    div(id='react-app')
-    .page__wrapper
-      h1.s_text-block.page__heading Computer Science Reading Whitelist
-      main.chapter
-        ul.s_list.chapter__list
-          - const { entries } = require('#json/subjects.json');
-          - for (const { caption, url, lang, tags, legend } of entries)
-            li.chapter__item #[a(href=url) #{caption}]
-              != legend ? ` - ${legend}` : ''
-              span.chapter__tags
-                each tag, i in tags
-                  = ' '
-                  span.chapter__tag ##{tag}
+    .page__wrapper(id='react-app')
+    //- .page__wrapper
+    //-   h1.s_text-block.page__heading Computer Science Reading Whitelist
+    //-   main.chapter
+    //-     ul.s_list.chapter__list
+    //-       - const { entries } = require('#json/subjects.json');
+    //-       - for (const { caption, url, lang, tags, legend } of entries)
+    //-         li.chapter__item #[a(href=url) #{caption}]
+    //-           != legend ? ` - ${legend}` : ''
+    //-           span.chapter__tags
+    //-             each tag, i in tags
+    //-               = ' '
+    //-               span.chapter__tag ##{tag}
