@@ -1,6 +1,7 @@
 .page__wrapper {
   --color-conic-dark: #eeeeee;
 
+  width: 100%;
   max-width: 672px;
   min-height: 100vh;
   padding: 48px 24px;
