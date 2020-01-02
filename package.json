@@ -84,5 +84,5 @@
     "test:build": "cross-env NODE_ENV=test webpack --config ./webpack/test.config.js",
     "test:run": "mocha ./tests/js/test_output.js"
   },
-  "version": "0.4.2"
+  "version": "0.4.3"
 }
