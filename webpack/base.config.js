@@ -1,5 +1,3 @@
-const path = require('path');
-
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -8,7 +6,7 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin } = require('webpack');
 
-const { getAlias, getPath } = require('./utils/paths.js');
+const { getAlias, getPath, path } = require('./utils/paths.js');
 
 const isProduction = (process.env.NODE_ENV === 'production');
 
@@ -59,12 +57,7 @@ module.exports = {
         test: /\.css$/,
         exclude: '/node_modules/',
         use: [
-          {
-            loader: CssExtractPlugin.loader,
-            options: {
-              hmr: !isProduction,
-            },
-          },
+          CssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
