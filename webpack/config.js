@@ -17,10 +17,9 @@ module.exports = (env = {}) => {
   const ROOT_PATH = path.resolve(__dirname, '../');
 
   const pathEnum = {
-    SRC: path.resolve(ROOT_PATH, 'src'),
-    CONFIG: path.resolve(ROOT_PATH, 'config'),
-    DIST: path.resolve(ROOT_PATH, isProduction ? 'docs' : 'dist'),
-    TEST: path.resolve(ROOT_PATH, 'tests'),
+    SRC: path.join(ROOT_PATH, 'src'),
+    CONFIG: path.join(ROOT_PATH, 'config'),
+    DIST: path.join(ROOT_PATH, isProduction ? 'docs' : 'dist'),
   };
 
   const aliasEnum = {
@@ -184,7 +183,7 @@ module.exports = (env = {}) => {
 
       output: {
         filename: 'test_output.js',
-        path: pathEnum.TEST,
+        path: path.join(ROOT_PATH, 'tests'),
       },
 
       plugins: commonPlugins,
