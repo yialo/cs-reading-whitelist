@@ -1873,7 +1873,8 @@
       "lang": "ru",
       "tags": [
         "css",
-        "css-grid"
+        "css-grid",
+        "!important"
       ],
       "legend": ""
     },
@@ -3683,6 +3684,16 @@
       "lang": "ru",
       "tags": [
         "ux/ui"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Красивое выравнивание блоков по резиновой сетке. По-новому",
+      "url": "https://css-live.ru/css/responsive-grid-css-grid-layout-auto-fill.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid"
       ],
       "legend": ""
     }
