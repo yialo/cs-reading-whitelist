@@ -1,6 +1,6 @@
 const path = require('path');
 
-const CaseSensitivePathPlugin = require('case-sensitive-paths-webpack-plugin');
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
@@ -15,7 +15,7 @@ const isProduction = (process.env.NODE_ENV === 'production');
 const pathEnum = getPath(isProduction);
 const aliasEnum = getAlias(pathEnum.SRC);
 
-const assetHash = (isProduction ? '.[contenthash]' : '');
+const assetHash = isProduction ? '.[contenthash]' : '';
 const publicPath = isProduction ? 'https://yialo.github.io/cs-reading-whitelist/' : '/';
 
 module.exports = {
@@ -116,7 +116,7 @@ module.exports = {
   },
 
   plugins: [
-    new CaseSensitivePathPlugin(),
+    new CaseSensitivePathsPlugin(),
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: false,
     }),
