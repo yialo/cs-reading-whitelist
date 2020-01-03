@@ -6,12 +6,11 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin } = require('webpack');
 
-const { getAlias, getPath, path } = require('./utils/paths.js');
+const { getPathEnum, aliasEnum, path } = require('./utils/paths.js');
 
 const isProduction = (process.env.NODE_ENV === 'production');
 
-const pathEnum = getPath(isProduction);
-const aliasEnum = getAlias(pathEnum.SRC);
+const pathEnum = getPathEnum(isProduction);
 
 const assetHash = isProduction ? '.[contenthash]' : '';
 const publicPath = isProduction ? 'https://yialo.github.io/cs-reading-whitelist/' : '/';
@@ -35,7 +34,7 @@ module.exports = {
           {
             loader: 'pug-loader',
             options: {
-              pretty: true,
+              pretty: !isProduction,
               self: true,
             },
           },

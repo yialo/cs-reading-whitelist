@@ -1,6 +1,6 @@
-const merge = require('webpack-merge');
 const cssnano = require('cssnano');
-const CssOptimizePlugin = require('optimize-css-assets-webpack-plugin');
+const merge = require('webpack-merge');
+const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 const baseConfig = require('./base.config');
@@ -18,7 +18,7 @@ module.exports = merge(baseConfig, {
           },
         },
       }),
-      new CssOptimizePlugin({
+      new CssOptimizationPlugin({
         assetNameRegExp: /\.css$/,
         cssProcessor: cssnano,
         cssProcessorPluginOptions: {
