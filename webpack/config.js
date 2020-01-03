@@ -1,13 +1,13 @@
 const path = require('path');
 
 const merge = require('webpack-merge');
-const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin } = require('webpack');
+
+const commonPlugins = require('./parts/common-plugins.js');
 
 module.exports = (env = {}) => {
   const isDevelopment = (env.target === 'development');
@@ -36,8 +36,6 @@ module.exports = (env = {}) => {
   const baseConfig = {
     mode: 'none',
 
-    target: 'web',
-
     context: pathEnum.SRC,
 
     entry: {
@@ -47,18 +45,6 @@ module.exports = (env = {}) => {
     module: {
       rules: [
         {
-          test: /\.pug$/,
-          use: [
-            {
-              loader: 'pug-loader',
-              options: {
-                pretty: !isProduction,
-                self: true,
-              },
-            },
-          ],
-        },
-        {
           test: /\.jsx?$/,
           exclude: '/node_modules/',
           use: [
@@ -66,6 +52,18 @@ module.exports = (env = {}) => {
               loader: 'babel-loader',
               options: {
                 configFile: path.join(pathEnum.CONFIG, 'babel.config.js'),
+              },
+            },
+          ],
+        },
+        {
+          test: /\.pug$/,
+          use: [
+            {
+              loader: 'pug-loader',
+              options: {
+                pretty: !isProduction,
+                self: true,
               },
             },
           ],
@@ -126,10 +124,7 @@ module.exports = (env = {}) => {
     },
 
     plugins: [
-      new CaseSensitivePathsPlugin(),
-      new CleanWebpackPlugin({
-        cleanStaleWebpackAssets: false,
-      }),
+      ...commonPlugins,
       new CssExtractPlugin({
         filename: `assets/css/[name]${assetHash}.css`,
       }),
@@ -163,81 +158,25 @@ module.exports = (env = {}) => {
   };
 
   if (isDevelopment) {
-    require('dotenv').config();
-
-    const developmentConfig = merge(baseConfig, {
-      mode: 'development',
-
-      devServer: {
-        host: process.env.WDS_HOST,
-        port: process.env.WDS_PORT,
-        overlay: true,
-        writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
-      },
-
-      devtool: 'source-map',
-    });
-
-    console.log(developmentConfig.resolve.alias);
-
-    return developmentConfig;
+    const developmentConfigPart = require('./parts/development.js');
+    return merge(baseConfig, developmentConfigPart);
   }
 
   if (isProduction) {
-    const cssnano = require('cssnano');
-    const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
-    const TerserPlugin = require('terser-webpack-plugin');
-
-    return merge(baseConfig, {
-      mode: 'production',
-
-      optimization: {
-        minimizer: [
-          new TerserPlugin({
-            extractComments: false,
-            terserOptions: {
-              output: {
-                comments: false,
-              },
-            },
-          }),
-          new CssOptimizationPlugin({
-            assetNameRegExp: /\.css$/,
-            cssProcessor: cssnano,
-            cssProcessorPluginOptions: {
-              preset: [
-                'default',
-                {
-                  discardComments: true,
-                },
-                {
-                  normalizeCharset: {
-                    add: true,
-                  },
-                },
-              ],
-            },
-            canPrint: true,
-          }),
-        ],
-      },
-
-      devtool: false,
-    });
+    const productionConfigPart = require('./parts/production.js');
+    return merge(baseConfig, productionConfigPart);
   }
 
   if (isTest) {
     return {
-      mode: 'development',
-
-      target: 'node',
+      mode: 'none',
 
       entry: path.join(pathEnum.SRC, 'tests.js'),
 
       module: {
         rules: [
           {
-            test: /\.js$/,
+            test: /\.jsx?$/,
             exclude: '/node_modules/',
           },
         ],
@@ -248,14 +187,7 @@ module.exports = (env = {}) => {
         path: pathEnum.TEST,
       },
 
-      plugins: [
-        new CaseSensitivePathsPlugin(),
-        new CleanWebpackPlugin({
-          cleanStaleWebpackAssets: false,
-        }),
-      ],
-
-      devtool: false,
+      plugins: commonPlugins,
 
       stats: {
         assets: false,

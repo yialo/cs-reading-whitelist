@@ -3696,6 +3696,30 @@
         "css-grid"
       ],
       "legend": ""
+    },
+    {
+      "caption": "SurviveJS",
+      "url": "https://survivejs.com/",
+      "lang": "en",
+      "tags": [
+        "blogs",
+        "javascript",
+        "npm",
+        "webpack",
+        "react"
+      ],
+      "legend": "продвинутые техники применения Webpack, создания React-приложений и разработки поддерживаемых npm-проектов"
+    },
+    {
+      "caption": "The Fine Art of the Webpack Config",
+      "url": "https://blog.flennik.com/the-fine-art-of-the-webpack-2-config-dc4d19d7f172",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack",
+        "4consider"
+      ],
+      "legend": ""
     }
   ]
 }
