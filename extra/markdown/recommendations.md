@@ -21,8 +21,6 @@
 
 ### Must-have
 
-* cross-env
-* nodemon
 * npm-check-updates
 
 ### Useful

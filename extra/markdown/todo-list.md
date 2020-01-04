@@ -28,6 +28,7 @@
     * проверка ссылок на повторы
     * maybe use schema.org
 2. Make full public bookmarks keeper as SPA
+    * add public bookmarks from browser account
 3. Database import/export with XLSX/CSV formats
 4. Create Emmet cheatsheet tool app with search
     * parse official docs HTML with Node.js

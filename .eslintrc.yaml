@@ -882,6 +882,6 @@ settings:
     - \\.(css|json)$
   import/resolver:
     webpack:
-      config: ./webpack/base.config.js
+      config: ./config/webpack.config.js
   react:
     version: '16'

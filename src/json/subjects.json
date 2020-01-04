@@ -1873,7 +1873,8 @@
       "lang": "ru",
       "tags": [
         "css",
-        "css-grid"
+        "css-grid",
+        "!important"
       ],
       "legend": ""
     },
@@ -3683,6 +3684,40 @@
       "lang": "ru",
       "tags": [
         "ux/ui"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Красивое выравнивание блоков по резиновой сетке. По-новому",
+      "url": "https://css-live.ru/css/responsive-grid-css-grid-layout-auto-fill.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css-grid"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "SurviveJS",
+      "url": "https://survivejs.com/",
+      "lang": "en",
+      "tags": [
+        "blogs",
+        "javascript",
+        "npm",
+        "build",
+        "webpack",
+        "react"
+      ],
+      "legend": "продвинутые техники применения Webpack, создания React-приложений и разработки поддерживаемых npm-проектов"
+    },
+    {
+      "caption": "The Fine Art of the Webpack Config",
+      "url": "https://blog.flennik.com/the-fine-art-of-the-webpack-2-config-dc4d19d7f172",
+      "lang": "en",
+      "tags": [
+        "build",
+        "webpack"
       ],
       "legend": ""
     }
