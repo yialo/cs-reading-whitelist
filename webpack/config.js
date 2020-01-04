@@ -1,13 +1,20 @@
 const path = require('path');
 
 const merge = require('webpack-merge');
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin } = require('webpack');
 
-const commonPlugins = require('./parts/common-plugins.js');
+const commonPlugins = [
+  new CaseSensitivePathsPlugin(),
+  new CleanWebpackPlugin({
+    cleanStaleWebpackAssets: false,
+  }),
+];
 
 module.exports = (env = {}) => {
   const isDevelopment = (env.target === 'development');
