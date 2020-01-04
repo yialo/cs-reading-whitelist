@@ -3705,6 +3705,7 @@
         "blogs",
         "javascript",
         "npm",
+        "build",
         "webpack",
         "react"
       ],
@@ -3716,8 +3717,7 @@
       "lang": "en",
       "tags": [
         "build",
-        "webpack",
-        "4consider"
+        "webpack"
       ],
       "legend": ""
     }
