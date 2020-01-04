@@ -1,3 +1,5 @@
+// TODO: refactor exported value as function with 'api' param
+
 module.exports = {
   ignore: ['../**/node_modules/**'],
   plugins: [

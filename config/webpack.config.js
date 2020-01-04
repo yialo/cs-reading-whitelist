@@ -9,6 +9,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin } = require('webpack');
 
 module.exports = (env = {}) => {
+  process.env.NODE_ENV = env.target;
+
   const isDevelopment = (env.target === 'development');
   const isProduction = (env.target === 'production');
   const isTest = (env.target === 'test');
@@ -220,7 +222,7 @@ module.exports = (env = {}) => {
           cleanStaleWebpackAssets: false,
         }),
         new DefinePlugin({
-          publicPath: JSON.stringify(publicPath),
+          'publicPath': JSON.stringify(publicPath),
         }),
       ];
 

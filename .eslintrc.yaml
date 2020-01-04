@@ -11,9 +11,8 @@ overrides:
   - env:
       node: true
     files:
-      - ./config/*.js
+      - ./config/**/*.js
       - ./src/postcss/**/*.js
-      - ./webpack/**/*.js
     parser: espree
     parserOptions:
       ecmaFeatures:
