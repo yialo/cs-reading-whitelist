@@ -43,6 +43,7 @@ module.exports = (env = {}) => {
         return {
           host: process.env.WDS_HOST,
           port: process.env.WDS_PORT,
+          hot: true,
           overlay: true,
           writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
         };
@@ -115,7 +116,12 @@ module.exports = (env = {}) => {
             test: /\.css$/,
             exclude: '/node_modules/',
             use: [
-              CssExtractPlugin.loader,
+              {
+                loader: CssExtractPlugin.loader,
+                options: {
+                  hmr: isDevelopment,
+                },
+              },
               {
                 loader: 'css-loader',
                 options: {

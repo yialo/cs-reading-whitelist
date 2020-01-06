@@ -22,6 +22,7 @@ overrides:
       import/no-commonjs: off
       import/no-extraneous-dependencies: off
       import/no-nodejs-modules: off
+      no-console: off
     settings:
       import/resolver: node
 parser: babel-eslint
@@ -376,7 +377,7 @@ rules:
   no-confusing-arrow:
     - error
     - allowParens: true
-  no-console: off
+  no-console: warn
   no-const-assign: error
   no-constant-condition: warn
   no-constructor-return: error
