@@ -28,10 +28,6 @@ overrides:
 parser: babel-eslint
 parserOptions:
   allowImportExportEverywhere: false
-  babelOptions:
-    configFile: ./config/babel.config.js
-  ecmaVersion: 2018
-  requireConfigFile: true
   sourceType: module
 plugins:
   - babel
@@ -200,7 +196,7 @@ rules:
   import/no-duplicates:
     - error
     - considerQueryString: true
-  import/no-dynamic-require: error
+  import/no-dynamic-require: off
   import/no-extraneous-dependencies:
     - error
     - bundledDependencies: false
