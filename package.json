@@ -83,5 +83,5 @@
     "webpack": "webpack --config ./config/webpack.config.js --progress",
     "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js --progress"
   },
-  "version": "0.4.5"
+  "version": "0.4.6"
 }
