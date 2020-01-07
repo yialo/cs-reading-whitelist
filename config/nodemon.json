@@ -1,5 +1,5 @@
 {
   "exec": "npm run dev",
   "verbose": true,
-  "watch": "./webpack/"
+  "watch": "./config/"
 }

@@ -9,6 +9,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin } = require('webpack');
 
 module.exports = (env = {}) => {
+  process.env.NODE_ENV = env.target;
+
   const isDevelopment = (env.target === 'development');
   const isProduction = (env.target === 'production');
   const isTest = (env.target === 'test');
@@ -41,6 +43,7 @@ module.exports = (env = {}) => {
         return {
           host: process.env.WDS_HOST,
           port: process.env.WDS_PORT,
+          hot: true,
           overlay: true,
           writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
         };
@@ -113,7 +116,12 @@ module.exports = (env = {}) => {
             test: /\.css$/,
             exclude: '/node_modules/',
             use: [
-              CssExtractPlugin.loader,
+              {
+                loader: CssExtractPlugin.loader,
+                options: {
+                  hmr: isDevelopment,
+                },
+              },
               {
                 loader: 'css-loader',
                 options: {
@@ -220,7 +228,7 @@ module.exports = (env = {}) => {
           cleanStaleWebpackAssets: false,
         }),
         new DefinePlugin({
-          publicPath: JSON.stringify(publicPath),
+          'publicPath': JSON.stringify(publicPath),
         }),
       ];
 
