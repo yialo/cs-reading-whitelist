@@ -74,22 +74,17 @@
     "dev": "npm run webpack-dev-server -- --env.target=development",
     "nodemon": "nodemon --config ./config/nodemon.json",
     "stats": "npm run build -- --json --profile > ./tests/webpack_stats.json",
-
     "debug:dev": "npm run webpack:debug -- --env.target=development",
     "debug:prod": "npm run webpack:debug -- --env.target=production",
-
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint ./src/**/*.css",
     "lint:js": "eslint ./config/**/*.js ./src/**/*.{js,jsx}",
-
     "test": "npm run test:build && npm run test:run",
     "test:build": "npm run webpack -- --env.target=test",
     "test:run": "mocha ./tests/js/test_output.js",
-
     "webpack": "webpack --config ./config/webpack.config.js --progress",
     "webpack:debug": "node --inspect-brk ./node_modules/webpack/bin/webpack.js --config ./config/webpack.config.js --progress",
     "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js --progress",
-
     "start": "npm run nodemon"
   },
   "version": "0.4.6"
