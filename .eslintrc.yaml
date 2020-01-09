@@ -15,8 +15,6 @@ overrides:
       - ./src/postcss/**/*.js
     parser: espree
     parserOptions:
-      ecmaFeatures:
-        impliedStrict: true
       sourceType: script
     rules:
       import/no-commonjs: off
@@ -231,7 +229,7 @@ rules:
   import/no-webpack-loader-syntax: error
   import/order: off
   import/prefer-default-export: error
-  import/unambiguous: error
+  import/unambiguous: off
   indent:
     - error
     - 2

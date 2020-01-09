@@ -1,45 +1,66 @@
+'use strict';
+
 const path = require('path');
 
+const cssnano = require('cssnano');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
-const CssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const CssExtractPlugin = require('mini-css-extract-plugin');
+const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { DefinePlugin } = require('webpack');
+const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
-  process.env.NODE_ENV = env.target;
+  console.log('env:', env);
 
-  const isDevelopment = (env.target === 'development');
-  const isProduction = (env.target === 'production');
-  const isTest = (env.target === 'test');
+  const { purpose } = env;
 
-  const ROOT_PATH = path.resolve(__dirname, '../');
+  process.env.BABEL_ENV = purpose;
+  process.env.NODE_ENV = purpose;
 
-  const pathEnum = {
-    SRC: path.join(ROOT_PATH, 'src'),
-    CONFIG: path.join(ROOT_PATH, 'config'),
-    DIST: path.join(ROOT_PATH, isProduction ? 'docs' : 'dist'),
-  };
-
-  const aliasEnum = {
-    '#components': path.join(pathEnum.SRC, 'js/components'),
-    '#css': path.join(pathEnum.SRC, 'css'),
-    '#js': path.join(pathEnum.SRC, 'js'),
-    '#json': path.join(pathEnum.SRC, 'json'),
-  };
+  const isDevelopment = (purpose === 'development');
+  const isProduction = (purpose === 'production');
+  const isTest = (purpose === 'test');
 
   const assetHash = isProduction ? '.[contenthash]' : '';
   const publicPath = isProduction ? 'https://yialo.github.io/cs-reading-whitelist/' : '/';
+
+  const ROOT_PATH = path.resolve(__dirname, '../');
+  const CONFIG_PATH = path.join(ROOT_PATH, 'config');
+  const DIST_PATH = path.join(ROOT_PATH, isProduction ? 'docs' : 'dist');
+  const SRC_PATH = path.join(ROOT_PATH, 'src');
+
+  const pathEnum = {
+    CONFIG: CONFIG_PATH,
+    DIST: DIST_PATH,
+    SRC: SRC_PATH,
+    ROOT: ROOT_PATH,
+    BABEL_CONFIG: path.join(CONFIG_PATH, 'babel.config.js'),
+    ENV_FILE: path.join(ROOT_PATH, '.env'),
+    FONTS_INPUT: path.join(SRC_PATH, 'static/fonts/'),
+    FONTS_OUTPUT: path.join(DIST_PATH, 'assets/fonts'),
+    TEST_INPUT: path.join(SRC_PATH, 'tests.js'),
+    TEST_OUTPUT: path.join(ROOT_PATH, 'tests'),
+    PUG_TEMPLATE_INPUT: path.join(SRC_PATH, 'pug/pages/index.pug'),
+  };
+
+  const aliasEnum = {
+    '#components': path.join(SRC_PATH, 'js/components'),
+    '#css': path.join(SRC_PATH, 'css'),
+    '#js': path.join(SRC_PATH, 'js'),
+    '#json': path.join(SRC_PATH, 'json'),
+  };
+
+  require('dotenv').config({ path: pathEnum.ENV_FILE });
 
   return {
     context: pathEnum.SRC,
 
     devServer: (() => {
       if (isDevelopment) {
-        require('dotenv').config();
-
         return {
           host: process.env.WDS_HOST,
           port: process.env.WDS_PORT,
@@ -56,7 +77,7 @@ module.exports = (env = {}) => {
 
     entry: (() => {
       if (isTest) {
-        return path.join(pathEnum.SRC, 'tests.js');
+        return pathEnum.TEST_INPUT;
       }
 
       return {
@@ -64,17 +85,7 @@ module.exports = (env = {}) => {
       };
     })(),
 
-    mode: (() => {
-      if (isDevelopment) {
-        return 'development';
-      }
-
-      if (isProduction) {
-        return 'production';
-      }
-
-      return 'none';
-    })(),
+    mode: (isDevelopment || isProduction) ? purpose : 'none',
 
     module: {
       rules: (() => {
@@ -95,7 +106,7 @@ module.exports = (env = {}) => {
               {
                 loader: 'babel-loader',
                 options: {
-                  configFile: path.join(pathEnum.CONFIG, 'babel.config.js'),
+                  configFile: pathEnum.BABEL_CONFIG,
                 },
               },
             ],
@@ -154,7 +165,11 @@ module.exports = (env = {}) => {
 
     optimization: (() => {
       const output = {
-        splitChunks: {
+        noEmitOnErrors: true,
+      };
+
+      if (!isTest) {
+        output.splitChunks = {
           cacheGroups: {
             vendor: {
               name: 'vendors',
@@ -164,15 +179,10 @@ module.exports = (env = {}) => {
             },
           },
           minChunks: 2,
-        },
-        noEmitOnErrors: true,
-      };
+        };
+      }
 
       if (isProduction) {
-        const cssnano = require('cssnano');
-        const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
-        const TerserPlugin = require('terser-webpack-plugin');
-
         output.minimizer = [
           new TerserPlugin({
             extractComments: false,
@@ -210,7 +220,7 @@ module.exports = (env = {}) => {
       if (isTest) {
         return {
           filename: 'test_output.js',
-          path: path.join(ROOT_PATH, 'tests'),
+          path: pathEnum.TEST_OUTPUT,
         };
       }
 
@@ -230,6 +240,7 @@ module.exports = (env = {}) => {
         new DefinePlugin({
           'publicPath': JSON.stringify(publicPath),
         }),
+        new ProgressPlugin(),
       ];
 
       if (!isTest) {
@@ -239,13 +250,13 @@ module.exports = (env = {}) => {
           }),
           new CopyPlugin([
             {
-              from: path.join(pathEnum.SRC, 'static/fonts/'),
-              to: path.join(pathEnum.DIST, 'assets/fonts'),
+              from: pathEnum.FONTS_INPUT,
+              to: pathEnum.FONTS_OUTPUT,
             },
           ]),
           new HtmlPlugin({
             filename: 'index.html',
-            template: path.join(pathEnum.SRC, 'pug/pages/index.pug'),
+            template: pathEnum.PUG_TEMPLATE_INPUT,
           }),
           new ManifestPlugin({
             filter: (descriptor) => descriptor.isChunk,
@@ -263,7 +274,7 @@ module.exports = (env = {}) => {
     },
 
     stats: {
-      assets: !isTest,
+      assets: false,
       entrypoints: false,
       modules: false,
     },

@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   ignore: ['../**/node_modules/**'],
   plugins: [
@@ -21,7 +23,7 @@ module.exports = {
     [
       '@babel/preset-react',
       {
-        development: (process.env.NODE_ENV === 'development'),
+        development: (process.env.BABEL_ENV === 'development'),
         throwIfNamespace: true,
         useBuiltIns: false,
         useSpread: false,

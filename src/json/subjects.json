@@ -3720,6 +3720,16 @@
         "webpack"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Flexbugs collection",
+      "url": "https://github.com/philipwalton/flexbugs",
+      "lang": "en",
+      "tags": [
+        "css",
+        "flexbox"
+      ],
+      "legend": ""
     }
   ]
 }
