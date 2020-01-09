@@ -28,30 +28,30 @@ module.exports = (env = {}) => {
   const assetHash = isProduction ? '.[contenthash]' : '';
   const publicPath = isProduction ? 'https://yialo.github.io/cs-reading-whitelist/' : '/';
 
-  const ROOT_PATH = path.resolve(__dirname, '../');
-  const CONFIG_PATH = path.join(ROOT_PATH, 'config');
-  const DIST_PATH = path.join(ROOT_PATH, isProduction ? 'docs' : 'dist');
-  const SRC_PATH = path.join(ROOT_PATH, 'src');
+  const rootPath = path.resolve(__dirname, '../');
+  const configPath = path.join(rootPath, 'config');
+  const distPath = path.join(rootPath, isProduction ? 'docs' : 'dist');
+  const srcPath = path.join(rootPath, 'src');
 
   const pathEnum = {
-    CONFIG: CONFIG_PATH,
-    DIST: DIST_PATH,
-    SRC: SRC_PATH,
-    ROOT: ROOT_PATH,
-    BABEL_CONFIG: path.join(CONFIG_PATH, 'babel.config.js'),
-    ENV_FILE: path.join(ROOT_PATH, '.env'),
-    FONTS_INPUT: path.join(SRC_PATH, 'static/fonts/'),
-    FONTS_OUTPUT: path.join(DIST_PATH, 'assets/fonts'),
-    TEST_INPUT: path.join(SRC_PATH, 'tests.js'),
-    TEST_OUTPUT: path.join(ROOT_PATH, 'tests'),
-    PUG_TEMPLATE_INPUT: path.join(SRC_PATH, 'pug/pages/index.pug'),
+    CONFIG: configPath,
+    DIST: distPath,
+    SRC: srcPath,
+    ROOT: rootPath,
+    BABEL_CONFIG: path.join(configPath, 'babel.config.js'),
+    ENV_FILE: path.join(rootPath, '.env'),
+    FONTS_INPUT: path.join(srcPath, 'static/fonts/'),
+    FONTS_OUTPUT: path.join(distPath, 'assets/fonts'),
+    PUG_TEMPLATE: path.join(srcPath, 'pug/pages/index.pug'),
+    TEST_INPUT: path.join(srcPath, 'tests.js'),
+    TEST_OUTPUT: path.join(rootPath, 'tests'),
   };
 
   const aliasEnum = {
-    '#components': path.join(SRC_PATH, 'js/components'),
-    '#css': path.join(SRC_PATH, 'css'),
-    '#js': path.join(SRC_PATH, 'js'),
-    '#json': path.join(SRC_PATH, 'json'),
+    '#components': path.join(srcPath, 'js/components'),
+    '#css': path.join(srcPath, 'css'),
+    '#js': path.join(srcPath, 'js'),
+    '#json': path.join(srcPath, 'json'),
   };
 
   require('dotenv').config({ path: pathEnum.ENV_FILE });
@@ -256,7 +256,7 @@ module.exports = (env = {}) => {
           ]),
           new HtmlPlugin({
             filename: 'index.html',
-            template: pathEnum.PUG_TEMPLATE_INPUT,
+            template: pathEnum.PUG_TEMPLATE,
           }),
           new ManifestPlugin({
             filter: (descriptor) => descriptor.isChunk,
