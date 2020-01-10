@@ -73,7 +73,7 @@ module.exports = (env = {}) => {
       return {};
     })(),
 
-    devtool: isDevelopment ? 'source-map' : false,
+    devtool: isDevelopment ? 'eval-source-map' : false,
 
     entry: (() => {
       if (isTest) {
@@ -127,12 +127,11 @@ module.exports = (env = {}) => {
             test: /\.css$/,
             exclude: '/node_modules/',
             use: [
-              {
-                loader: CssExtractPlugin.loader,
-                options: {
-                  hmr: isDevelopment,
-                },
-              },
+              (
+                isProduction
+                  ? CssExtractPlugin.loader
+                  : 'style-loader'
+              ),
               {
                 loader: 'css-loader',
                 options: {
