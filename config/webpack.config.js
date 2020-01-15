@@ -39,9 +39,9 @@ module.exports = (env = {}) => {
     SRC: srcPath,
     ROOT: rootPath,
     BABEL_CONFIG: path.join(configPath, 'babel.config.js'),
-    ENV_FILE: path.join(rootPath, '.env'),
     FONTS_INPUT: path.join(srcPath, 'static/fonts/'),
     FONTS_OUTPUT: path.join(distPath, 'assets/fonts'),
+    LOCAL_ENV_FILE: path.join(rootPath, '.env.local'),
     PUG_TEMPLATE: path.join(srcPath, 'pug/pages/index.pug'),
     TEST_INPUT: path.join(srcPath, 'tests.js'),
     TEST_OUTPUT: path.join(rootPath, 'tests'),
@@ -54,7 +54,7 @@ module.exports = (env = {}) => {
     '#json': path.join(srcPath, 'json'),
   };
 
-  require('dotenv').config({ path: pathEnum.ENV_FILE });
+  require('dotenv').config({ path: pathEnum.LOCAL_ENV_FILE });
 
   return {
     context: pathEnum.SRC,
@@ -186,6 +186,10 @@ module.exports = (env = {}) => {
           new TerserPlugin({
             extractComments: false,
             terserOptions: {
+              compress: {
+                drop_console: true,
+                drop_debugger: true,
+              },
               output: {
                 comments: false,
               },
