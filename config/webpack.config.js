@@ -169,15 +169,15 @@ module.exports = (env = {}) => {
 
       if (!isTest) {
         output.splitChunks = {
+          chunks: 'all',
+          minChunks: 2,
           cacheGroups: {
             vendor: {
               name: 'vendors',
               test: /[\\/]node_modules[\\/]/,
-              chunks: 'all',
               enforce: true,
             },
           },
-          minChunks: 2,
         };
       }
 
