@@ -3720,6 +3720,36 @@
         "webpack"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Flexbugs collection",
+      "url": "https://github.com/philipwalton/flexbugs",
+      "lang": "en",
+      "tags": [
+        "css",
+        "flexbox"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "«Правила роста: от джуниора до CTO», конспект вебинара Фёдора Борщёва",
+      "url": "https://habr.com/ru/post/482958/",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency",
+        "soft-skills"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "70 JavaScript Interview Questions",
+      "url": "https://dev.to/macmacky/70-javascript-interview-questions-5gfi",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "4consider"
+      ],
+      "legend": "подборка вопросов и ответов по JavaScript для собеседования"
     }
   ]
 }

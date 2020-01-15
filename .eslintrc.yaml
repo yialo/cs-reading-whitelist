@@ -15,8 +15,6 @@ overrides:
       - ./src/postcss/**/*.js
     parser: espree
     parserOptions:
-      ecmaFeatures:
-        impliedStrict: true
       sourceType: script
     rules:
       import/no-commonjs: off
@@ -231,7 +229,7 @@ rules:
   import/no-webpack-loader-syntax: error
   import/order: off
   import/prefer-default-export: error
-  import/unambiguous: error
+  import/unambiguous: off
   indent:
     - error
     - 2
@@ -373,13 +371,13 @@ rules:
   no-confusing-arrow:
     - error
     - allowParens: true
-  no-console: warn
+  no-console: off
   no-const-assign: error
   no-constant-condition: warn
   no-constructor-return: error
   no-continue: error
   no-control-regex: error
-  no-debugger: warn
+  no-debugger: off
   no-delete-var: error
   no-div-regex: off
   no-dupe-args: error
@@ -848,9 +846,7 @@ rules:
     - after: true
       before: false
   symbol-description: error
-  template-curly-spacing:
-    - error
-    - never
+  template-curly-spacing: off
   template-tag-spacing:
     - error
     - never
@@ -879,5 +875,7 @@ settings:
   import/resolver:
     webpack:
       config: ./config/webpack.config.js
+      env:
+        purpose: development
   react:
     version: '16'

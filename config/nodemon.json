@@ -1,5 +1,6 @@
 {
-  "exec": "npm run dev",
+  "exec": "npm run",
+  "ext": ".js",
   "verbose": true,
   "watch": "./config/"
 }

@@ -1,45 +1,66 @@
+'use strict';
+
 const path = require('path');
 
+const cssnano = require('cssnano');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
-const CssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const CssExtractPlugin = require('mini-css-extract-plugin');
+const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { DefinePlugin } = require('webpack');
+const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
-  process.env.NODE_ENV = env.target;
+  console.log('env:', env);
 
-  const isDevelopment = (env.target === 'development');
-  const isProduction = (env.target === 'production');
-  const isTest = (env.target === 'test');
+  const { purpose } = env;
 
-  const ROOT_PATH = path.resolve(__dirname, '../');
+  process.env.BABEL_ENV = purpose;
+  process.env.NODE_ENV = purpose;
 
-  const pathEnum = {
-    SRC: path.join(ROOT_PATH, 'src'),
-    CONFIG: path.join(ROOT_PATH, 'config'),
-    DIST: path.join(ROOT_PATH, isProduction ? 'docs' : 'dist'),
-  };
-
-  const aliasEnum = {
-    '#components': path.join(pathEnum.SRC, 'js/components'),
-    '#css': path.join(pathEnum.SRC, 'css'),
-    '#js': path.join(pathEnum.SRC, 'js'),
-    '#json': path.join(pathEnum.SRC, 'json'),
-  };
+  const isDevelopment = (purpose === 'development');
+  const isProduction = (purpose === 'production');
+  const isTest = (purpose === 'test');
 
   const assetHash = isProduction ? '.[contenthash]' : '';
   const publicPath = isProduction ? 'https://yialo.github.io/cs-reading-whitelist/' : '/';
+
+  const rootPath = path.resolve(__dirname, '../');
+  const configPath = path.join(rootPath, 'config');
+  const distPath = path.join(rootPath, isProduction ? 'docs' : 'dist');
+  const srcPath = path.join(rootPath, 'src');
+
+  const pathEnum = {
+    CONFIG: configPath,
+    DIST: distPath,
+    SRC: srcPath,
+    ROOT: rootPath,
+    BABEL_CONFIG: path.join(configPath, 'babel.config.js'),
+    FONTS_INPUT: path.join(srcPath, 'static/fonts/'),
+    FONTS_OUTPUT: path.join(distPath, 'assets/fonts'),
+    LOCAL_ENV_FILE: path.join(rootPath, '.env.local'),
+    PUG_TEMPLATE: path.join(srcPath, 'pug/pages/index.pug'),
+    TEST_INPUT: path.join(srcPath, 'tests.js'),
+    TEST_OUTPUT: path.join(rootPath, 'tests'),
+  };
+
+  const aliasEnum = {
+    '#components': path.join(srcPath, 'js/components'),
+    '#css': path.join(srcPath, 'css'),
+    '#js': path.join(srcPath, 'js'),
+    '#json': path.join(srcPath, 'json'),
+  };
+
+  require('dotenv').config({ path: pathEnum.LOCAL_ENV_FILE });
 
   return {
     context: pathEnum.SRC,
 
     devServer: (() => {
       if (isDevelopment) {
-        require('dotenv').config();
-
         return {
           host: process.env.WDS_HOST,
           port: process.env.WDS_PORT,
@@ -52,11 +73,11 @@ module.exports = (env = {}) => {
       return {};
     })(),
 
-    devtool: isDevelopment ? 'source-map' : false,
+    devtool: isDevelopment ? 'eval-source-map' : false,
 
     entry: (() => {
       if (isTest) {
-        return path.join(pathEnum.SRC, 'tests.js');
+        return pathEnum.TEST_INPUT;
       }
 
       return {
@@ -64,17 +85,7 @@ module.exports = (env = {}) => {
       };
     })(),
 
-    mode: (() => {
-      if (isDevelopment) {
-        return 'development';
-      }
-
-      if (isProduction) {
-        return 'production';
-      }
-
-      return 'none';
-    })(),
+    mode: (isDevelopment || isProduction) ? purpose : 'none',
 
     module: {
       rules: (() => {
@@ -95,7 +106,7 @@ module.exports = (env = {}) => {
               {
                 loader: 'babel-loader',
                 options: {
-                  configFile: path.join(pathEnum.CONFIG, 'babel.config.js'),
+                  configFile: pathEnum.BABEL_CONFIG,
                 },
               },
             ],
@@ -116,12 +127,11 @@ module.exports = (env = {}) => {
             test: /\.css$/,
             exclude: '/node_modules/',
             use: [
-              {
-                loader: CssExtractPlugin.loader,
-                options: {
-                  hmr: isDevelopment,
-                },
-              },
+              (
+                isProduction
+                  ? CssExtractPlugin.loader
+                  : 'style-loader'
+              ),
               {
                 loader: 'css-loader',
                 options: {
@@ -154,29 +164,32 @@ module.exports = (env = {}) => {
 
     optimization: (() => {
       const output = {
-        splitChunks: {
+        noEmitOnErrors: true,
+      };
+
+      if (!isTest) {
+        output.splitChunks = {
+          chunks: 'all',
+          minChunks: 2,
           cacheGroups: {
             vendor: {
               name: 'vendors',
               test: /[\\/]node_modules[\\/]/,
-              chunks: 'all',
               enforce: true,
             },
           },
-          minChunks: 2,
-        },
-        noEmitOnErrors: true,
-      };
+        };
+      }
 
       if (isProduction) {
-        const cssnano = require('cssnano');
-        const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
-        const TerserPlugin = require('terser-webpack-plugin');
-
         output.minimizer = [
           new TerserPlugin({
             extractComments: false,
             terserOptions: {
+              compress: {
+                drop_console: true,
+                drop_debugger: true,
+              },
               output: {
                 comments: false,
               },
@@ -210,7 +223,7 @@ module.exports = (env = {}) => {
       if (isTest) {
         return {
           filename: 'test_output.js',
-          path: path.join(ROOT_PATH, 'tests'),
+          path: pathEnum.TEST_OUTPUT,
         };
       }
 
@@ -230,6 +243,7 @@ module.exports = (env = {}) => {
         new DefinePlugin({
           'publicPath': JSON.stringify(publicPath),
         }),
+        new ProgressPlugin(),
       ];
 
       if (!isTest) {
@@ -239,13 +253,13 @@ module.exports = (env = {}) => {
           }),
           new CopyPlugin([
             {
-              from: path.join(pathEnum.SRC, 'static/fonts/'),
-              to: path.join(pathEnum.DIST, 'assets/fonts'),
+              from: pathEnum.FONTS_INPUT,
+              to: pathEnum.FONTS_OUTPUT,
             },
           ]),
           new HtmlPlugin({
             filename: 'index.html',
-            template: path.join(pathEnum.SRC, 'pug/pages/index.pug'),
+            template: pathEnum.PUG_TEMPLATE,
           }),
           new ManifestPlugin({
             filter: (descriptor) => descriptor.isChunk,
@@ -263,7 +277,7 @@ module.exports = (env = {}) => {
     },
 
     stats: {
-      assets: !isTest,
+      assets: false,
       entrypoints: false,
       modules: false,
     },
