@@ -3750,6 +3750,16 @@
         "4consider"
       ],
       "legend": "подборка вопросов и ответов по JavaScript для собеседования"
+    },
+    {
+      "caption": "Принцип экономии мыслетоплива (Максим Дорофеев)",
+      "url": "https://www.youtube.com/watch?v=fWR5SFhBUWc",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "self-efficiency"
+      ],
+      "legend": ""
     }
   ]
 }
