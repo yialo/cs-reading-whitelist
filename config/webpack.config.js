@@ -3,6 +3,7 @@
 const path = require('path');
 
 const cssnano = require('cssnano');
+const dotEnv = require('dotenv');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
@@ -54,7 +55,7 @@ module.exports = (env = {}) => {
     '#json': path.join(srcPath, 'json'),
   };
 
-  require('dotenv').config({ path: pathEnum.LOCAL_ENV_FILE });
+  dotEnv.config({ path: pathEnum.LOCAL_ENV_FILE });
 
   return {
     context: pathEnum.SRC,
@@ -113,6 +114,7 @@ module.exports = (env = {}) => {
           },
           {
             test: /\.pug$/,
+            exclude: '/node_modules/',
             use: [
               {
                 loader: 'pug-loader',

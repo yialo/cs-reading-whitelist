@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  ignore: ['../**/node_modules/**'],
+  ignore: ['../node_modules/**'],
   plugins: [
     [
       '@babel/plugin-transform-runtime',
@@ -13,7 +13,8 @@ module.exports = {
   ],
   presets: [
     [
-      '@babel/preset-env', {
+      '@babel/preset-env',
+      {
         corejs: 3,
         useBuiltIns: 'usage',
         loose: false,
