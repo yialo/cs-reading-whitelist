@@ -8,7 +8,13 @@ const Button = (props) => {
   }
 
   return (
-    <button className={classNames.join(' ')} type={props.type}>{props.legend}</button>
+    <button
+      className={classNames.join(' ')}
+      type={props.type}
+      onClick={props.onClick}
+    >
+      {props.legend}
+    </button>
   );
 };
 

@@ -16,7 +16,7 @@ const Filter = (props) => {
               name="filter"
               value={name}
               legend={legend}
-              isDefault={name === 'none'}
+              isDefault={i === 0}
             />
           ))}
         </div>
