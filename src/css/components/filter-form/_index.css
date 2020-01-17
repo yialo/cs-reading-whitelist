@@ -1,7 +1,6 @@
 .filter-form {
-  & input[type="radio"] {
-    margin-right: 4px;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 .filter-form__button {
@@ -9,11 +8,18 @@
 }
 
 .filter-form__filter-set {
+  align-self: center;
   margin-bottom: 16px;
+  padding: 16px 32px;
+  font-size: 20px;
 }
 
 .filter-form__item {
   line-height: 1.5;
+}
+
+.filter-form__field {
+  margin-right: 8px;
 }
 
 .filter-form__searchbar {

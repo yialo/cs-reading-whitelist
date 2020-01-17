@@ -1,17 +1,25 @@
 import React from 'react';
 
-import Button from './Button.jsx';
 import Filter from './Filter.jsx';
-import Subject from './Subject.jsx';
+import Subjects from './Subjects.jsx';
 
 const INITIAL_ITEM_AMOUNT = 10;
+
+const FILTER_LIST = [
+  ['none', '[отключена]'],
+  ['caption', 'по названию'],
+  ['url', 'по ссылке'],
+  ['lang', 'по языку'],
+  ['tag', 'по тегам'],
+  ['legend', 'по описанию'],
+];
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      filterMode: 'none',
+      filter: FILTER_LIST[0][0],
     };
 
     this._fullList = props.list;
@@ -27,22 +35,8 @@ export default class App extends React.Component {
       <React.Fragment>
         <h1 className="page__heading">Computer Science Reading Whitelist</h1>
         <main className="page-content page__content">
-          <Filter />
-          <div className="subjects page-content__subjects">
-            <ul className="s_list subjects__list">
-              {currentList.map((item, i) => (
-                <Subject
-                  key={`${item.lang}-${i + 1}`}
-                  {...item}
-                />
-              ))}
-            </ul>
-            <Button
-              classNames={['subjects__button']}
-              type="submit"
-              legend="Загрузить ещё"
-            />
-          </div>
+          <Filter list={FILTER_LIST} />
+          <Subjects list={currentList} />
         </main>
       </React.Fragment>
     );

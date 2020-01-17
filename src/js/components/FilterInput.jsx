@@ -9,6 +9,7 @@ const FilterInput = (props) => {
       htmlFor={inputId}
     >
       <input
+        className="filter-form__field"
         type="radio"
         name={props.name}
         value={props.value}
