@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Button = (props) => {
-  const classNames = ['button'];
+  const classNames = ['s_button', 'button'];
 
   if (props.classNames && props.classNames.length) {
     classNames.push(...props.classNames);

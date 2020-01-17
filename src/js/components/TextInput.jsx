@@ -12,7 +12,7 @@ const TextInput = (props) => {
       className={labelClassNames.join(' ')}
       aria-label={props.legend}
     >
-      <input className="text-input__field" type={props.type}/>
+      <input className="s_input text-input__field" type={props.type}/>
     </label>
   );
 };

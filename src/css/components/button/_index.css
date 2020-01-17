@@ -1,6 +1,5 @@
 .button {
-  padding: 8px 16px;
-  border-style: none;
-  border-radius: 2px;
-  background-color: #cdcdcd;
+  &:active {
+    background-image: linear-gradient(to bottom right, lemonchiffon 50%, lavenderblush 50%);
+  }
 }

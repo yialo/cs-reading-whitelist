@@ -1,11 +1,7 @@
 .text-input {
-  display: flex;
+  flex-grow: 1;
 }
 
 .text-input__field {
   width: 100%;
-  padding: 8px;
-  border: 1px solid #bababa;
-  border-radius: 2px;
-  background-color: white;
 }
