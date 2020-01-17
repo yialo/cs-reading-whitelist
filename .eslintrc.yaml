@@ -44,10 +44,7 @@ rules:
     - off
     - minItems: 3
       multiline: true
-  arrow-body-style:
-    - error
-    - as-needed
-    - requireReturnForObjectLiteral: false
+  arrow-body-style: off
   arrow-parens:
     - error
     - always

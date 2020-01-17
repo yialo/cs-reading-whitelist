@@ -1,0 +1,20 @@
+.subjects__button {
+  margin-top: 24px;
+}
+
+.subjects__item {
+  line-height: 1.25;
+
+  @nest .subjects__list > * + & {
+    margin-top: 16px;
+  }
+}
+
+.subjects__tags {
+  display: inline;
+  font-style: italic;
+}
+
+.subjects__tag {
+  display: inline;
+}

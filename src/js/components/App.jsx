@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from './Button.jsx';
+import Filter from './Filter.jsx';
 import Subject from './Subject.jsx';
 
 const INITIAL_ITEM_AMOUNT = 10;
@@ -7,6 +9,10 @@ const INITIAL_ITEM_AMOUNT = 10;
 export default class App extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      filterMode: 'none',
+    };
 
     this._fullList = props.list;
   }
@@ -19,16 +25,24 @@ export default class App extends React.Component {
 
     return (
       <React.Fragment>
-        <h1 className="s_text-block page__heading">Computer Science Reading Whitelist</h1>
-        <main className="chapter">
-          <ul className="s_list chapter__list">
-            {currentList.map((item, i) => (
-              <Subject
-                key={i}
-                {...item}
-              />
-            ))}
-          </ul>
+        <h1 className="page__heading">Computer Science Reading Whitelist</h1>
+        <main className="page-content page__content">
+          <Filter />
+          <div className="subjects page-content__subjects">
+            <ul className="s_list subjects__list">
+              {currentList.map((item, i) => (
+                <Subject
+                  key={`${item.lang}-${i + 1}`}
+                  {...item}
+                />
+              ))}
+            </ul>
+            <Button
+              classNames={['subjects__button']}
+              type="submit"
+              legend="Загрузить ещё"
+            />
+          </div>
         </main>
       </React.Fragment>
     );

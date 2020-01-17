@@ -1,0 +1,28 @@
+.filter-form {
+  & input[type="radio"] {
+    margin-right: 4px;
+  }
+}
+
+.filter-form__button {
+  margin-left: 8px;
+}
+
+.filter-form__filter-set {
+  margin-bottom: 16px;
+}
+
+.filter-form__item {
+  line-height: 1.5;
+}
+
+.filter-form__searchbar {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.filter-form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
