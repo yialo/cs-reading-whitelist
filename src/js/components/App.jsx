@@ -30,8 +30,6 @@ export default class App extends React.Component {
           : DEFAULT_LIST_LENGTH_INCREMENT
       ),
     };
-
-    this._currentList = this._fullList.slice(0, this.state.listLength);
   }
 
   render() {
@@ -49,7 +47,21 @@ export default class App extends React.Component {
     );
   }
 
+  get _currentList() {
+    return this._fullList.slice(0, this.state.listLength);
+  }
+
   _onLoadMore() {
-    console.log('Loadmore button: CLICK!');
+    this.setState((state) => {
+      const listRestLength = this._fullList.length - state.listLength;
+
+      const increment = listRestLength < DEFAULT_LIST_LENGTH_INCREMENT
+        ? listRestLength
+        : DEFAULT_LIST_LENGTH_INCREMENT;
+
+      return {
+        listLength: state.listLength + increment,
+      };
+    });
   }
 }
