@@ -4,7 +4,7 @@ import Button from './Button.jsx';
 import FilterInput from './FilterInput.jsx';
 import TextInput from './TextInput.jsx';
 
-const Filter = (props) => {
+export default function Filter(props) {
   return (
     <form className="filter-form page-content__filter">
       <fieldset className="filter-form__filter-set">
@@ -23,18 +23,16 @@ const Filter = (props) => {
       </fieldset>
       <p className="filter-form__searchbar">
         <TextInput
-          classNames={['filter__search-line']}
+          classNames="filter__search-line"
           type="search"
           legend="Введите текст для поиска"
         />
         <Button
-          classNames={['filter-form__button']}
+          classNames="filter-form__button"
           type="submit"
           legend="Найти"
         />
       </p>
     </form>
   );
-};
-
-export default Filter;
+}

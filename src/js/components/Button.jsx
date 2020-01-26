@@ -1,21 +1,13 @@
 import React from 'react';
 
-const Button = (props) => {
-  const classNames = ['s_button', 'button'];
-
-  if (props.classNames && props.classNames.length) {
-    classNames.push(...props.classNames);
-  }
-
+export default function Button(props) {
   return (
     <button
-      className={classNames.join(' ')}
+      className={['s_button', 'button'].concat(props.classNames || []).join(' ')}
       type={props.type}
       onClick={props.onClick}
     >
       {props.legend}
     </button>
   );
-};
-
-export default Button;
+}

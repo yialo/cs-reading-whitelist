@@ -18,8 +18,6 @@ export default class App extends React.PureComponent {
   constructor(props) {
     super(props);
 
-    this._onLoadMore = this._onLoadMore.bind(this);
-
     this._fullList = props.list;
 
     this.state = {
@@ -39,7 +37,7 @@ export default class App extends React.PureComponent {
         <main className="page-content page__content">
           <Filter list={FILTER_LIST} />
           <Subjects
-            list={this._currentList}
+            list={this._getCurrentList()}
             onButtonClick={this._onLoadMore}
           />
         </main>
@@ -47,11 +45,11 @@ export default class App extends React.PureComponent {
     );
   }
 
-  get _currentList() {
+  _getCurrentList() {
     return this._fullList.slice(0, this.state.listLength);
   }
 
-  _onLoadMore() {
+  _onLoadMore = () => {
     this.setState((state) => {
       const listRestLength = this._fullList.length - state.listLength;
 
@@ -63,5 +61,5 @@ export default class App extends React.PureComponent {
         listLength: state.listLength + increment,
       };
     });
-  }
+  };
 }

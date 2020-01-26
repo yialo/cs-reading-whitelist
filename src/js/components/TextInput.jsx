@@ -1,20 +1,12 @@
 import React from 'react';
 
-const TextInput = (props) => {
-  const labelClassNames = ['text-input'];
-
-  if (props.classNames && props.classNames.length) {
-    labelClassNames.push(...props.classNames);
-  }
-
+export default function TextInput(props) {
   return (
     <label
-      className={labelClassNames.join(' ')}
+      className={['text-input'].concat(props.classNames || []).join(' ')}
       aria-label={props.legend}
     >
       <input className="s_input text-input__field" type={props.type}/>
     </label>
   );
-};
-
-export default TextInput;
+}

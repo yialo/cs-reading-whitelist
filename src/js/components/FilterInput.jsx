@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FilterInput = (props) => {
+export default function FilterInput(props) {
   const inputId = `${props.name}-${props.value}`;
 
   return (
@@ -19,6 +19,4 @@ const FilterInput = (props) => {
       <span>{props.legend}</span>
     </label>
   );
-};
-
-export default FilterInput;
+}

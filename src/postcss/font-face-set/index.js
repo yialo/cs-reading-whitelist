@@ -2,7 +2,7 @@
 
 const postcss = require('postcss');
 
-const getFontFaces = require('./get-set');
+const getFontFaces = require('./get-font-set.js');
 const { fonts } = require('../../json/fonts.json');
 
 module.exports = postcss.plugin('postcss-font-face-set', () => (
