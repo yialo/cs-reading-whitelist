@@ -14,7 +14,7 @@ const FILTER_LIST = [
   ['legend', 'по описанию'],
 ];
 
-export default class App extends React.Component {
+export default class App extends React.PureComponent {
   constructor(props) {
     super(props);
 
