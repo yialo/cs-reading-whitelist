@@ -3760,6 +3760,48 @@
         "self-efficiency"
       ],
       "legend": ""
+    },
+    {
+      "caption": "8 conditional rendering methods in React",
+      "url": "https://blog.logrocket.com/conditional-rendering-in-react-c6b0e5af381e/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "react"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как развить привычку отжиматься, чистить зубы, бегать, учить языки, и делать что угодно",
+      "url": "https://zen.yandex.ru/media/menscience/kak-razvit-privychku-otjimatsia-chistit-zuby-begat-uchit-iazyki-i-delat-chto-ugodno-5dbd32a8a06eaf00b110d5fd",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The React Cheatsheet for 2020",
+      "url": "https://dev.to/codeartistryio/the-react-cheatsheet-for-2020-real-world-examples-4hgg",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react-hooks",
+        "javascript",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "_ ___ ______? (Вадим Макеев)",
+      "url": "https://www.youtube.com/watch?v=uI3Q5m9xkkw",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "typography",
+        "performance"
+      ],
+      "legend": "оптимизация загрузки и отображения шрифтов"
     }
   ]
 }
