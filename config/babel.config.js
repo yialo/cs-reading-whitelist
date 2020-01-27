@@ -31,5 +31,6 @@ module.exports = {
         useSpread: false,
       },
     ],
+    '@babel/preset-typescript',
   ],
 };
