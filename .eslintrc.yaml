@@ -767,7 +767,7 @@ rules:
     - single
     - allowTemplateLiterals: true
   radix: error
-  react/prop-types: warn # TODO: set to 'error' in future
+  react/prop-types: error
   require-atomic-updates: off
   require-await: off
   require-jsdoc: off

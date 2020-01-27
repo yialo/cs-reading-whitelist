@@ -28,8 +28,6 @@ module.exports = (fontList, srcMap) => {
           : '';
 
         const filePath = `${basePath}/assets/fonts/${fileNameBase}_${weight}_${style}`;
-
-        // TODO: remove 'local' entries
         const srcValue = (
           `url("${filePath}.woff2") format("woff2"),
           url("${filePath}.woff") format("woff")`

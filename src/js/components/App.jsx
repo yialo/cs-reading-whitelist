@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Filter from './Filter.jsx';
@@ -14,7 +15,7 @@ const FILTER_LIST = [
   ['legend', 'по описанию'],
 ];
 
-export default class App extends React.PureComponent {
+class App extends React.PureComponent {
   constructor(props) {
     super(props);
 
@@ -63,3 +64,9 @@ export default class App extends React.PureComponent {
     });
   };
 }
+
+App.propTypes = {
+  list: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
+export default App;

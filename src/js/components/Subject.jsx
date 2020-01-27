@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function Subject(props) {
+// TODO: add 'lang' indicator
+function Subject(props) {
   return (
     <li className="subjects__item">
       <a href={props.url}>{props.caption}</a>
@@ -13,3 +15,12 @@ export default function Subject(props) {
     </li>
   );
 }
+
+Subject.propTypes = {
+  caption: PropTypes.string.isRequired,
+  legend: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string),
+  url: PropTypes.string.isRequired,
+};
+
+export default Subject;

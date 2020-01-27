@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function Button(props) {
+function Button(props) {
   return (
     <button
       className={['s_button', 'button'].concat(props.classNames || []).join(' ')}
@@ -11,3 +12,15 @@ export default function Button(props) {
     </button>
   );
 }
+
+Button.propTypes = {
+  classNames: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]),
+  legend: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  type: PropTypes.string.isRequired,
+};
+
+export default Button;

@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function FilterInput(props) {
+function FilterInput(props) {
   const inputId = `${props.name}-${props.value}`;
 
   return (
@@ -20,3 +21,12 @@ export default function FilterInput(props) {
     </label>
   );
 }
+
+FilterInput.propTypes = {
+  isDefault: PropTypes.bool.isRequired,
+  name: PropTypes.string.isRequired,
+  legend: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+};
+
+export default FilterInput;

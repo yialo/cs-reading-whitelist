@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Button from './Button.jsx';
 import FilterInput from './FilterInput.jsx';
 import TextInput from './TextInput.jsx';
 
-export default function Filter(props) {
+function Filter(props) {
   return (
     <form className="filter-form page-content__filter">
       <fieldset className="filter-form__filter-set">
@@ -36,3 +37,9 @@ export default function Filter(props) {
     </form>
   );
 }
+
+Filter.propTypes = {
+  list: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
+export default Filter;

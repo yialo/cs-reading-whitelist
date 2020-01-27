@@ -15,8 +15,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
-  console.log('env:', env);
-
   const { purpose } = env;
 
   process.env.BABEL_ENV = purpose;

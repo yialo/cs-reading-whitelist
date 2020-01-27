@@ -1,13 +1,10 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import Button from './Button.jsx';
 import Subject from './Subject.jsx';
 
-export default function Subjects(props) {
-  const handleButtonClick = () => {
-    props.onButtonClick();
-  };
-
+function Subjects(props) {
   return (
     <div className="subjects page-content__subjects">
       <ul className="s_list subjects__list">
@@ -22,8 +19,23 @@ export default function Subjects(props) {
         classNames={['subjects__button']}
         type="submit"
         legend="Загрузить ещё"
-        onClick={handleButtonClick}
+        onClick={props.onButtonClick}
       />
     </div>
   );
 }
+
+Subjects.propTypes = {
+  list: PropTypes.arrayOf(
+      PropTypes.objectOf(
+          PropTypes.oneOfType([
+            PropTypes.arrayOf(PropTypes.string),
+            PropTypes.string,
+          ])
+      )
+  )
+    .isRequired,
+  onButtonClick: PropTypes.func.isRequired,
+};
+
+export default Subjects;

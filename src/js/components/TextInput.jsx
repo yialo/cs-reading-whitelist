@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function TextInput(props) {
+function TextInput(props) {
   return (
     <label
       className={['text-input'].concat(props.classNames || []).join(' ')}
@@ -10,3 +11,14 @@ export default function TextInput(props) {
     </label>
   );
 }
+
+TextInput.propTypes = {
+  classNames: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.string,
+  ]),
+  legend: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+};
+
+export default TextInput;
