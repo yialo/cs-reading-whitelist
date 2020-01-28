@@ -40,6 +40,7 @@
     "eslint-plugin-react": "7.18.0",
     "file-loader": "5.0.2",
     "html-webpack-plugin": "3.2.0",
+    "husky": "4.2.1",
     "mini-css-extract-plugin": "0.9.0",
     "mocha": "7.0.1",
     "nodemon": "2.0.2",
@@ -64,6 +65,11 @@
     "node": "12"
   },
   "homepage": "https://github.com/yialo/cs-reading-whitelist#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "keywords": [
     "reference"
   ],
@@ -83,7 +89,7 @@
     "inspect:prod": "npm run inspect -- --env.purpose=production",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint ./src/**/*.css",
-    "lint:js": "eslint ./config/**/*.js ./src/**/*.{js,jsx}",
+    "lint:js": "eslint ./config/**/*.js ./src/**/*.{j,t}s?(x)",
     "nodemon": "nodemon --config ./config/nodemon.json",
     "stats": "npm run prod -- --json --profile > ./tests/webpack-bundle-stats.json",
     "test": "npm run test:build && npm run test:run",
