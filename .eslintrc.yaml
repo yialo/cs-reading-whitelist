@@ -22,15 +22,15 @@ overrides:
       import/no-nodejs-modules: 'off'
     settings:
       import/resolver: node
-  # TODO: configure TypeScript validation
-  # - files:
-  #     - ./src/ts/**/*.ts
-  #   parser: '@typescript-eslint/parser'
-  #   plugins:
-  #     - '@typescript-eslint'
-  #   rules:
-  #     '@typescript-eslint/no-empty-interface': error
-  #     '@typescript-eslint/semi': error
+  - extends:
+      - 'eslint:recommended'
+      - 'plugin:@typescript-eslint/eslint-recommended'
+      - 'plugin:@typescript-eslint/recommended'
+    files:
+      - ./src/ts/**/*.ts
+    parser: '@typescript-eslint/parser'
+    plugins:
+      - '@typescript-eslint'
 parser: babel-eslint
 parserOptions:
   allowImportExportEverywhere: false
