@@ -27,7 +27,7 @@ overrides:
       - 'plugin:@typescript-eslint/eslint-recommended'
       - 'plugin:@typescript-eslint/recommended'
     files:
-      - ./src/ts/**/*.ts
+      - ./src/**/*.ts
     parser: '@typescript-eslint/parser'
     plugins:
       - '@typescript-eslint'
