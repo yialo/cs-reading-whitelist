@@ -1,6 +1,7 @@
 {
   "exec": "npm run",
-  "ext": ".js",
+  "ext": "js,json",
+  "ignore": ["nodemon.json"],
   "verbose": true,
-  "watch": "./config/"
+  "watch": ["./config/"]
 }

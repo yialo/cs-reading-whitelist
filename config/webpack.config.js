@@ -88,28 +88,25 @@ module.exports = (env = {}) => {
 
     module: {
       rules: (() => {
-        if (isTest) {
-          return [
+        const scriptHandlerConfig = {
+          test: /\.(?:j|t)s?$/,
+          exclude: '/node_modules/',
+          use: [
             {
-              test: /\.(?:j|t)s?$/,
-              exclude: '/node_modules/',
+              loader: 'babel-loader',
+              options: {
+                configFile: pathEnum.BABEL_CONFIG,
+              },
             },
-          ];
+          ],
+        };
+
+        if (isTest) {
+          return [scriptHandlerConfig];
         }
 
         return [
-          {
-            test: /\.(?:j|t)s?$/,
-            exclude: '/node_modules/',
-            use: [
-              {
-                loader: 'babel-loader',
-                options: {
-                  configFile: pathEnum.BABEL_CONFIG,
-                },
-              },
-            ],
-          },
+          scriptHandlerConfig,
           {
             test: /\.pug$/,
             exclude: '/node_modules/',
@@ -127,11 +124,7 @@ module.exports = (env = {}) => {
             test: /\.css$/,
             exclude: '/node_modules/',
             use: [
-              (
-                isProduction
-                  ? CssExtractPlugin.loader
-                  : 'style-loader'
-              ),
+              (isProduction ? CssExtractPlugin.loader : 'style-loader'),
               {
                 loader: 'css-loader',
                 options: {
