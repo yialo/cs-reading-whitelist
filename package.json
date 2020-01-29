@@ -81,6 +81,7 @@
     "url": "git+https://github.com/yialo/cs-reading-whitelist.git"
   },
   "scripts": {
+    "check-types": "tsc --project ./config/tsconfig.json",
     "dev": "npm run webpack-dev-server -- --env.purpose=development",
     "dev:debug": "npm run nodemon -- inspect:dev",
     "prod": "npm run webpack -- --env.purpose=production",
@@ -90,8 +91,10 @@
     "inspect:prod": "npm run inspect -- --env.purpose=production",
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint ./src/**/*.css",
-    "lint:js": "eslint ./config/**/*.js ./src/**/*.{j,t}s?(x)",
+    "lint:js": "eslint ./config/**/*.js ./src/**/*.{j,t}s",
     "nodemon": "nodemon --config ./config/nodemon.json",
+    "nodemon:dev": "npm run nodemon -- dev",
+    "nodemon:prod": "npm run nodemon -- prod",
     "stats": "npm run prod -- --json --profile > ./tests/webpack-bundle-stats.json",
     "test": "npm run test:build && npm run test:run",
     "test:build": "npm run webpack -- --env.purpose=test",
@@ -99,7 +102,7 @@
     "webpack": "webpack --config ./config/webpack.config.js",
     "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js",
     "build": "npm run prod",
-    "start": "npm run nodemon -- dev"
+    "start": "npm run nodemon:dev"
   },
   "version": "0.4.8"
 }

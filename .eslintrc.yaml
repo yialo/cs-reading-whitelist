@@ -41,8 +41,8 @@ plugins:
 rules:
   accessor-pairs: 'off'
   array-bracket-newline:
-    - 'off'
-    - consistent
+    - error
+    - multiline: true
   array-bracket-spacing:
     - error
     - never
@@ -50,9 +50,8 @@ rules:
     - error
     - allowImplicit: true
   array-element-newline:
-    - 'off'
-    - minItems: 3
-      multiline: true
+    - error
+    - consistent
   arrow-body-style: 'off'
   arrow-parens:
     - error
@@ -73,17 +72,7 @@ rules:
   camelcase:
     - error
     - properties: never
-  capitalized-comments:
-    - 'off'
-    - never
-    - block:
-        ignoreConsecutiveComments: true
-        ignoreInlineComments: true
-        ignorePattern: .*
-      line:
-        ignoreConsecutiveComments: true
-        ignoreInlineComments: true
-        ignorePattern: .*
+  capitalized-comments: 'off'
   class-methods-use-this: 'off'
   comma-dangle:
     - error
@@ -145,9 +134,7 @@ rules:
   func-names:
     - error
     - as-needed
-  func-style:
-    - 'off'
-    - expression
+  func-style: 'off'
   function-paren-newline:
     - error
     - consistent
@@ -250,24 +237,10 @@ rules:
       VariableDeclarator: 1
       flatTernaryExpressions: false
       ignoreComments: false
-      ignoredNodes:
-        - JSXElement
-        - JSXElement > *
-        - JSXAttribute
-        - JSXIdentifier
-        - JSXNamespacedName
-        - JSXMemberExpression
-        - JSXSpreadAttribute
-        - JSXExpressionContainer
-        - JSXOpeningElement
-        - JSXClosingElement
-        - JSXText
-        - JSXEmptyExpression
-        - JSXSpreadChild
       outerIIFEBody: 1
   init-declarations: 'off'
   jsx-quotes:
-    - 'off'
+    - error
     - prefer-double
   key-spacing:
     - error
@@ -284,11 +257,7 @@ rules:
           after: true
         throw:
           after: true
-  line-comment-position:
-    - 'off'
-    - applyDefaultPatterns: true
-      ignorePattern: ''
-      position: above
+  line-comment-position: 'off'
   linebreak-style:
     - error
     - unix
@@ -304,9 +273,7 @@ rules:
   max-classes-per-file:
     - error
     - 1
-  max-depth:
-    - 'off'
-    - 4
+  max-depth: 'off'
   max-len:
     - error
     - code: 100
@@ -315,40 +282,22 @@ rules:
       ignoreStrings: true
       ignoreTemplateLiterals: true
       ignoreUrls: true
-  max-lines:
-    - 'off'
-    - max: 300
-      skipBlankLines: true
-      skipComments: true
-  max-lines-per-function:
-    - 'off'
-    - IIFEs: true
-      max: 50
-      skipBlankLines: true
-      skipComments: true
+  max-lines: 'off'
+  max-lines-per-function: 'off'
   max-nested-callbacks: 'off'
-  max-params:
-    - 'off'
-    - 3
-  max-statements:
-    - 'off'
-    - 10
+  max-params: 'off'
+  max-statements: 'off'
   max-statements-per-line:
-    - 'off'
+    - error
     - max: 1
-  multiline-comment-style:
-    - 'off'
-    - starred-block
+  multiline-comment-style: 'off'
   multiline-ternary:
     - 'off'
     - never
   new-cap:
     - error
     - capIsNew: false
-      capIsNewExceptions:
-        - Immutable.Map
-        - Immutable.Set
-        - Immutable.List
+      capIsNewExceptions: []
       newIsCap: true
       newIsCapExceptions: []
   new-parens: error
@@ -407,14 +356,7 @@ rules:
   no-extra-bind: error
   no-extra-boolean-cast: error
   no-extra-label: error
-  no-extra-parens:
-    - 'off'
-    - all
-    - conditionalAssign: true
-      enforceForArrowConditionals: false
-      ignoreJSX: all
-      nestedBinaryExpressions: false
-      returnAssign: false
+  no-extra-parens: 'off'
   no-extra-semi: error
   no-fallthrough: error
   no-floating-decimal: error
@@ -422,12 +364,7 @@ rules:
   no-global-assign:
     - error
     - exceptions: []
-  no-implicit-coercion:
-    - 'off'
-    - allow: []
-      boolean: false
-      number: true
-      string: true
+  no-implicit-coercion: 'off'
   no-implicit-globals: 'off'
   no-implied-eval: error
   no-inline-comments: 'off'
@@ -444,12 +381,7 @@ rules:
   no-lone-blocks: error
   no-lonely-if: error
   no-loop-func: error
-  no-magic-numbers:
-    - 'off'
-    - detectObjects: false
-      enforceConst: true
-      ignore: []
-      ignoreArrayIndexes: true
+  no-magic-numbers: 'off'
   no-misleading-character-class: 'off'
   no-mixed-operators:
     - error
@@ -502,9 +434,8 @@ rules:
     - error
     - max: 2
       maxEOF: 0
-  no-native-reassign: 'off'
-  no-negated-condition: 'off'
-  no-negated-in-lhs: 'off'
+  no-native-reassign: error
+  no-negated-condition: error
   no-nested-ternary: error
   no-new: error
   no-new-func: error
@@ -586,10 +517,7 @@ rules:
     - stop
     - toolbar
     - top
-  no-restricted-imports:
-    - 'off'
-    - paths: []
-      patterns: []
+  no-restricted-imports: 'off'
   no-restricted-properties:
     - error
     - message: arguments.callee is deprecated
@@ -692,13 +620,7 @@ rules:
   no-useless-return: error
   no-var: error
   no-void: 'off'
-  no-warning-comments:
-    - 'off'
-    - location: start
-      terms:
-        - todo
-        - fixme
-        - xxx
+  no-warning-comments: 'off'
   no-whitespace-before-property: error
   no-with: error
   nonblock-statement-body-position:
@@ -764,7 +686,6 @@ rules:
   prefer-promise-reject-errors:
     - error
     - allowEmptyReject: true
-  prefer-reflect: 'off'
   prefer-rest-params: error
   prefer-spread: error
   prefer-template: error
@@ -778,7 +699,7 @@ rules:
   radix: error
   react/prop-types: error
   require-atomic-updates: 'off'
-  require-await: 'off'
+  require-await: error
   require-jsdoc: 'off'
   require-unicode-regexp: 'off'
   require-yield: error
@@ -793,21 +714,8 @@ rules:
   semi-style:
     - error
     - last
-  sort-imports:
-    - 'off'
-    - ignoreCase: false
-      ignoreDeclarationSort: false
-      ignoreMemberSort: false
-      memberSyntaxSortOrder:
-        - none
-        - all
-        - multiple
-        - single
-  sort-keys:
-    - 'off'
-    - asc
-    - caseSensitive: false
-      natural: true
+  sort-imports: 'off'
+  sort-keys: 'off'
   sort-vars: 'off'
   space-before-blocks: error
   space-before-function-paren:
@@ -873,7 +781,6 @@ rules:
 settings:
   import/extensions:
     - .js
-    - .jsx
   import/ignore:
     - node_modules
     - \\.(css|json)$

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Button from './Button.jsx';
-import Subject from './Subject.jsx';
+import Button from './Button.js';
+import Subject from './Subject.js';
 
 function Subjects(props) {
   return (

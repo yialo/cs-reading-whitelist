@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Filter from './Filter.jsx';
-import Subjects from './Subjects.jsx';
+import Filter from './Filter.js';
+import Subjects from './Subjects.js';
 
 const DEFAULT_LIST_LENGTH_INCREMENT = 10;
 

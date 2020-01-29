@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Button from './Button.jsx';
-import FilterInput from './FilterInput.jsx';
-import TextInput from './TextInput.jsx';
+import Button from './Button.js';
+import FilterInput from './FilterInput.js';
+import TextInput from './TextInput.js';
 
 function Filter(props) {
   return (

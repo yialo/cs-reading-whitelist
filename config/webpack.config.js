@@ -91,7 +91,7 @@ module.exports = (env = {}) => {
         if (isTest) {
           return [
             {
-              test: /\.(?:j|t)sx?$/,
+              test: /\.(?:j|t)s?$/,
               exclude: '/node_modules/',
             },
           ];
@@ -99,7 +99,7 @@ module.exports = (env = {}) => {
 
         return [
           {
-            test: /\.(?:j|t)sx?$/,
+            test: /\.(?:j|t)s?$/,
             exclude: '/node_modules/',
             use: [
               {
