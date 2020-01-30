@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Filter from './Filter.js';
-import Subjects from './Subjects.js';
+import FilterForm from './FilterForm.jsx';
+import Subjects from './Subjects.jsx';
+import SubjectsItem from './SubjectsItem.jsx';
 
 const DEFAULT_LIST_LENGTH_INCREMENT = 10;
 
@@ -36,11 +37,12 @@ class App extends React.PureComponent {
       <React.Fragment>
         <h1 className="page__heading">Computer Science Reading Whitelist</h1>
         <main className="page-content page__content">
-          <Filter list={FILTER_LIST} />
-          <Subjects
-            list={this._getCurrentList()}
-            onButtonClick={this._onLoadMore}
-          />
+          <FilterForm list={FILTER_LIST} />
+          <Subjects onButtonClick={this._onLoadMore}>
+            {this._getCurrentList().map((it, i) => (
+              <SubjectsItem key={`${it.lang}-${i + 1}`} {...it} />
+            ))}
+          </Subjects>
         </main>
       </React.Fragment>
     );
@@ -66,7 +68,15 @@ class App extends React.PureComponent {
 }
 
 App.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.object).isRequired,
+  list: PropTypes.arrayOf(
+      PropTypes.objectOf(
+          PropTypes.oneOfType([
+            PropTypes.arrayOf(PropTypes.string),
+            PropTypes.string,
+          ])
+      )
+  )
+    .isRequired,
 };
 
 export default App;

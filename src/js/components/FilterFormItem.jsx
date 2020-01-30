@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-function FilterInput(props) {
+function FilterFormItem(props) {
   const inputId = `${props.name}-${props.value}`;
 
   return (
@@ -22,11 +22,11 @@ function FilterInput(props) {
   );
 }
 
-FilterInput.propTypes = {
+FilterFormItem.propTypes = {
   isDefault: PropTypes.bool.isRequired,
   name: PropTypes.string.isRequired,
   legend: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
 };
 
-export default FilterInput;
+export default FilterFormItem;

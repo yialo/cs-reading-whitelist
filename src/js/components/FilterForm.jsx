@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Button from './Button.js';
-import FilterInput from './FilterInput.js';
-import TextInput from './TextInput.js';
+import Button from './Button.jsx';
+import FilterFormItem from './FilterFormItem.jsx';
+import TextInput from './TextInput.jsx';
 
-function Filter(props) {
+function FilterForm(props) {
   return (
     <form className="filter-form page-content__filter">
       <fieldset className="filter-form__filter-set">
         <legend>Фильтрация:</legend>
         <div className="filter-form__wrapper">
           {props.list.map(([name, legend], i) => (
-            <FilterInput
+            <FilterFormItem
               key={`${i + 1}-${name}`}
               name="filter"
               value={name}
@@ -32,14 +32,20 @@ function Filter(props) {
           classNames="filter-form__button"
           type="submit"
           legend="Найти"
+          onClick={(evt) => {
+            evt.preventDefault();
+            console.log('Filter button clicked');
+          }}
         />
       </p>
     </form>
   );
 }
 
-Filter.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.string).isRequired,
+FilterForm.propTypes = {
+  list: PropTypes.arrayOf(
+      PropTypes.arrayOf(PropTypes.string)
+  ).isRequired,
 };
 
-export default Filter;
+export default FilterForm;

@@ -89,7 +89,7 @@ module.exports = (env = {}) => {
     module: {
       rules: (() => {
         const scriptHandlerConfig = {
-          test: /\.(?:j|t)s?$/,
+          test: /\.(?:j|t)sx?$/,
           exclude: '/node_modules/',
           use: [
             {
