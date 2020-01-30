@@ -3813,6 +3813,36 @@
         "babel"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Using ESLint and Prettier in a TypeScript Project",
+      "url": "https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project",
+      "lang": "en",
+      "tags": [
+        "code-quality",
+        "typescript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Верстальщик. Наследие (Сергей Попов)",
+      "url": "https://www.youtube.com/watch?v=Z9of2cj28hY",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Ошибка. Осознание, примирение, извлечение пользы (Вадим Макишвили)",
+      "url": "https://www.youtube.com/watch?v=4srVRott8uU",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "soft-skills"
+      ],
+      "legend": ""
     }
   ]
 }
