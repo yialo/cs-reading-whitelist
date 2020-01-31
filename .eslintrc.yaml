@@ -39,6 +39,7 @@ plugins:
   - babel
   - import
   - react
+  - react-hooks
 rules:
   accessor-pairs: 'off'
   array-bracket-newline:
@@ -720,6 +721,8 @@ rules:
   react/prop-types: error
   react/react-in-jsx-scope: error
   react/require-render-return: error
+  react-hooks/rules-of-hooks: error
+  react-hooks/exhaustive-deps: error
   require-atomic-updates: 'off'
   require-await: error
   require-jsdoc: 'off'
