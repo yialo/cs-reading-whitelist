@@ -693,20 +693,20 @@ rules:
   prefer-rest-params: error
   prefer-spread: error
   prefer-template: error
-  # promise/always-return:
-  # promise/avoid-new:
-  # promise/catch-or-return:
-  # promise/no-callback-in-promise:
-  # promise/no-native:
-  # promise/no-nesting:
-  # promise/no-new-statics:
-  # promise/no-promise-in-callback:
-  # promise/no-return-in-finally:
-  # promise/no-return-wrap:
-  # promise/param-names:
-  # promise/prefer-await-to-callbacks:
-  # promise/prefer-await-to-then:
-  # promise/valid-params:
+  promise/always-return: error
+  promise/avoid-new: 'off'
+  promise/catch-or-return: error
+  promise/no-callback-in-promise: 'off'
+  promise/no-native: 'off'
+  promise/no-nesting: error
+  promise/no-new-statics: error
+  promise/no-promise-in-callback: 'off'
+  promise/no-return-in-finally: error
+  promise/no-return-wrap: error
+  promise/param-names: error
+  promise/prefer-await-to-callbacks: 'off'
+  promise/prefer-await-to-then: 'off'
+  promise/valid-params: error
   quote-props:
     - error
     - consistent
