@@ -1,8 +1,6 @@
 env:
   browser: true
   es6: true
-extends:
-  - 'plugin:react/recommended'
 overrides:
   - env:
       mocha: true
@@ -15,6 +13,8 @@ overrides:
       - ./src/postcss/**/*.js
     parser: espree
     parserOptions:
+      ecmaFeatures:
+        jsx: true
       sourceType: script
     rules:
       import/no-commonjs: 'off'
@@ -38,6 +38,7 @@ parserOptions:
 plugins:
   - babel
   - import
+  - react
 rules:
   accessor-pairs: 'off'
   array-bracket-newline:
@@ -291,7 +292,9 @@ rules:
     - error
     - max: 1
   multiline-comment-style: 'off'
-  multiline-ternary: 'off'
+  multiline-ternary:
+    - error
+    - always-multiline
   new-cap:
     - error
     - capIsNew: false
@@ -695,7 +698,28 @@ rules:
     - single
     - allowTemplateLiterals: true
   radix: error
+  react/display-name: error
+  react/jsx-key: error
+  react/jsx-no-comment-textnodes: error
+  react/jsx-no-duplicate-props: error
+  react/jsx-no-target-blank: error
+  react/jsx-no-undef: error
+  react/jsx-uses-react: error
+  react/jsx-uses-vars: error
+  react/no-children-prop: error
+  react/no-danger-with-children: error
+  react/no-deprecated: error
+  react/no-direct-mutation-state: error
+  react/no-find-dom-node: error
+  react/no-is-mounted: error
+  react/no-render-return-value: error
+  react/no-string-refs: error
+  react/no-unescaped-entities: error
+  react/no-unknown-property: error
+  react/no-unsafe: 'off'
   react/prop-types: error
+  react/react-in-jsx-scope: error
+  react/require-render-return: error
   require-atomic-updates: 'off'
   require-await: error
   require-jsdoc: 'off'
@@ -785,6 +809,10 @@ settings:
   import/ignore:
     - node_modules
     - \\.(css|json)$
+  import/parsers:
+    '@typescript-eslint/parser':
+      - .ts
+      - .tsx
   import/resolver:
     webpack:
       config: ./config/webpack.config.js
