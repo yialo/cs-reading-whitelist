@@ -317,7 +317,6 @@ rules:
   no-bitwise: error
   no-caller: error
   no-case-declarations: error
-  no-catch-shadow: 'off'
   no-class-assign: error
   no-compare-neg-zero: error
   no-cond-assign:
@@ -630,7 +629,6 @@ rules:
   nonblock-statement-body-position:
     - error
     - beside
-    - overrides: {}
   object-curly-newline:
     - error
     - consistent: true
@@ -741,7 +739,6 @@ rules:
   react-hooks/exhaustive-deps: error
   require-atomic-updates: 'off'
   require-await: error
-  require-jsdoc: 'off'
   require-unicode-regexp: 'off'
   require-yield: error
   rest-spread-spacing:
@@ -771,7 +768,6 @@ rules:
   space-unary-ops:
     - error
     - nonwords: false
-      overrides: {}
       words: true
   spaced-comment:
     - error
@@ -805,7 +801,6 @@ rules:
     - error
     - never
   use-isnan: error
-  valid-jsdoc: 'off'
   valid-typeof:
     - error
     - requireStringLiterals: true
