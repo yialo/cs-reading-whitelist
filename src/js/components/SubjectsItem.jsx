@@ -9,7 +9,9 @@ function SubjectsItem(props) {
       {props.legend ? ` - ${props.legend}` : ''}
       <ul className="s_list subjects__tags">
         {props.tags.map((tag, i) => (
-          <li className="subjects__tag" key={i}> #{tag}</li>
+          <li className="subjects__tag" key={i}>
+            {` #${tag}}`}
+          </li>
         ))}
       </ul>
     </li>
