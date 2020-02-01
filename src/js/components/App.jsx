@@ -16,43 +16,39 @@ const FILTER_LIST = [
   ['legend', 'по описанию'],
 ];
 
-class App extends React.PureComponent {
+export default class App extends React.PureComponent {
+  static propTypes = {
+    list: PropTypes.arrayOf(
+        PropTypes.objectOf(
+            PropTypes.oneOfType([
+              PropTypes.arrayOf(PropTypes.string),
+              PropTypes.string,
+            ])
+        )
+    )
+      .isRequired,
+  };
+
+  state = {
+    // filter: FILTER_LIST[0][0],
+    listLength: (
+      this._fullList.length < DEFAULT_LIST_LENGTH_INCREMENT
+        ? this._fullList.length
+        : DEFAULT_LIST_LENGTH_INCREMENT
+    ),
+  };
+
   constructor(props) {
     super(props);
 
     this._fullList = props.list;
-
-    this.state = {
-      filter: FILTER_LIST[0][0],
-      listLength: (
-        this._fullList.length < DEFAULT_LIST_LENGTH_INCREMENT
-          ? this._fullList.length
-          : DEFAULT_LIST_LENGTH_INCREMENT
-      ),
-    };
   }
 
-  render() {
-    return (
-      <React.Fragment>
-        <h1 className="page__heading">Computer Science Reading Whitelist</h1>
-        <main className="page-content page__content">
-          <FilterForm list={FILTER_LIST} />
-          <Subjects onButtonClick={this._onLoadMore}>
-            {this._getCurrentList().map((it, i) => (
-              <SubjectsItem key={`${it.lang}-${i + 1}`} {...it} />
-            ))}
-          </Subjects>
-        </main>
-      </React.Fragment>
-    );
-  }
-
-  _getCurrentList() {
+  getCurrentList() {
     return this._fullList.slice(0, this.state.listLength);
   }
 
-  _onLoadMore = () => {
+  onLoadMore = () => {
     this.setState((state) => {
       const listRestLength = this._fullList.length - state.listLength;
 
@@ -65,18 +61,20 @@ class App extends React.PureComponent {
       };
     });
   };
+
+  render() {
+    return (
+      <React.Fragment>
+        <h1 className="page__heading">Computer Science Reading Whitelist</h1>
+        <main className="page-content page__content">
+          <FilterForm list={FILTER_LIST} />
+          <Subjects onButtonClick={this.onLoadMore}>
+            {this.getCurrentList().map((it, i) => (
+              <SubjectsItem key={`${it.lang}-${i + 1}`} {...it} />
+            ))}
+          </Subjects>
+        </main>
+      </React.Fragment>
+    );
+  }
 }
-
-App.propTypes = {
-  list: PropTypes.arrayOf(
-      PropTypes.objectOf(
-          PropTypes.oneOfType([
-            PropTypes.arrayOf(PropTypes.string),
-            PropTypes.string,
-          ])
-      )
-  )
-    .isRequired,
-};
-
-export default App;
