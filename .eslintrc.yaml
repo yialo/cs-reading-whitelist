@@ -1,3 +1,4 @@
+---
 env:
   browser: true
   es6: true
@@ -15,6 +16,7 @@ overrides:
     parserOptions:
       ecmaFeatures:
         jsx: true
+      ecmaVersion: 2018
       sourceType: script
     rules:
       import/no-commonjs: 'off'
@@ -75,7 +77,9 @@ rules:
     - allowSingleLine: true
   camelcase:
     - error
-    - properties: never
+    - ignoreDestructuring: false
+      ignoreImports: false
+      properties: never
   capitalized-comments: 'off'
   class-methods-use-this: 'off'
   comma-dangle:
@@ -312,7 +316,7 @@ rules:
     - ignoreChainWithDepth: 4
   no-alert: warn
   no-array-constructor: error
-  no-async-promise-executor: 'off'
+  no-async-promise-executor: error
   no-await-in-loop: error
   no-bitwise: error
   no-caller: error
@@ -385,7 +389,7 @@ rules:
   no-lonely-if: error
   no-loop-func: error
   no-magic-numbers: 'off'
-  no-misleading-character-class: 'off'
+  no-misleading-character-class: error
   no-mixed-operators:
     - error
     - allowSamePrecedence: false
@@ -400,18 +404,10 @@ rules:
           - '*'
         - - '%'
           - /
-        - - '**'
-          - +
-        - - '**'
-          - '-'
-        - - '**'
+        - - /
           - '*'
-        - - '**'
-          - /
         - - '&'
           - '|'
-          - ^
-          - '~'
           - '<<'
           - '>>'
           - '>>>'
@@ -419,14 +415,8 @@ rules:
           - '!='
           - ===
           - '!=='
-          - '>'
-          - '>='
-          - <
-          - <=
         - - '&&'
           - '||'
-        - - in
-          - instanceof
   no-mixed-spaces-and-tabs: error
   no-multi-assign: error
   no-multi-spaces:
@@ -436,6 +426,7 @@ rules:
   no-multiple-empty-lines:
     - error
     - max: 2
+      maxBOF: 0
       maxEOF: 0
   no-native-reassign: error
   no-negated-condition: error
@@ -610,7 +601,7 @@ rules:
       functions: true
       variables: false
   no-useless-call: 'off'
-  no-useless-catch: 'off'
+  no-useless-catch: error
   no-useless-computed-key: error
   no-useless-concat: error
   no-useless-constructor: error
@@ -684,7 +675,7 @@ rules:
   prefer-exponentiation-operator: error
   prefer-named-capture-group: 'off'
   prefer-numeric-literals: error
-  prefer-object-spread: 'off'
+  prefer-object-spread: error
   prefer-promise-reject-errors:
     - error
     - allowEmptyReject: true
@@ -780,6 +771,8 @@ rules:
         markers:
           - =
           - '!'
+          - ':'
+          - '::'
       line:
         exceptions:
           - '-'
@@ -787,7 +780,9 @@ rules:
         markers:
           - =
           - '!'
-  strict: error
+  strict:
+    - error
+    - safe
   switch-colon-spacing:
     - error
     - after: true
