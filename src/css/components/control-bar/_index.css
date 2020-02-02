@@ -1,35 +1,35 @@
-.filter-form {
+.control-bar {
   display: flex;
   flex-direction: column;
 }
 
-.filter-form__button {
+.control-bar__button {
   margin-left: 8px;
 }
 
-.filter-form__filter-set {
+.control-bar__filter-set {
   align-self: center;
   margin-bottom: 32px;
   padding: 16px 32px;
   font-size: 20px;
 }
 
-.filter-form__item {
+.control-bar__item {
   line-height: 1.5;
 }
 
-.filter-form__field {
+.control-bar__field {
   margin-right: 8px;
 }
 
-.filter-form__searchbar {
+.control-bar__searchbar {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 20px;
 }
 
-.filter-form__wrapper {
+.control-bar__wrapper {
   display: flex;
   flex-direction: column;
 }
