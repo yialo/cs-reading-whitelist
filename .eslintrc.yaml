@@ -302,7 +302,7 @@ rules:
   jsx-a11y/interactive-supports-focus: error
   jsx-a11y/label-has-associated-control:
     - error
-    - assert: both
+    - assert: either
       depth: 25
   jsx-a11y/lang: error
   jsx-a11y/media-has-caption: error

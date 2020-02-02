@@ -19,6 +19,10 @@ function Subjects(props) {
   );
 }
 
+Subjects.defaultProps = {
+  children: '',
+};
+
 Subjects.propTypes = {
   children: PropTypes.node,
   onButtonClick: PropTypes.func.isRequired,

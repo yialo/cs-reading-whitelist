@@ -70,7 +70,13 @@ export default class App extends React.PureComponent {
           <FilterForm list={FILTER_LIST} />
           <Subjects onButtonClick={this.onLoadMore}>
             {this.getCurrentList().map((it, i) => (
-              <SubjectsItem key={`${it.lang}-${i + 1}`} {...it} />
+              <SubjectsItem
+                key={`${it.lang}-${i + 1}`}
+                caption={it.caption}
+                legend={it.legend}
+                tags={it.tags}
+                url={it.url}
+              />
             ))}
           </Subjects>
         </main>

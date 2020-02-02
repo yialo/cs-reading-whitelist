@@ -12,6 +12,10 @@ function TextInput(props) {
   );
 }
 
+TextInput.defaultProps = {
+  classNames: [],
+};
+
 TextInput.propTypes = {
   classNames: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),

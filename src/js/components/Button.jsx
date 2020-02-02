@@ -4,7 +4,7 @@ import React from 'react';
 function Button(props) {
   return (
     <button
-      className={['s_button', 'button'].concat(props.classNames || []).join(' ')}
+      className={['s_button', 'button'].concat(props.classNames).join(' ')}
       type={props.type}
       onClick={props.onClick}
     >
@@ -12,6 +12,10 @@ function Button(props) {
     </button>
   );
 }
+
+Button.defaultProps = {
+  classNames: [],
+};
 
 Button.propTypes = {
   classNames: PropTypes.oneOfType([

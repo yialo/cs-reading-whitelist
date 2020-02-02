@@ -18,6 +18,11 @@ function SubjectsItem(props) {
   );
 }
 
+SubjectsItem.defaultProps = {
+  legend: '',
+  tags: [],
+};
+
 SubjectsItem.propTypes = {
   caption: PropTypes.string.isRequired,
   legend: PropTypes.string,
