@@ -7,37 +7,37 @@ import Subjects from './Subjects.jsx';
 import SubjectsItem from './SubjectsItem.jsx';
 
 function App(props) {
-  const subjectList = deepClone(props.list);
+  // const subjectList = deepClone(props.list);
 
-  const [filteredList, setFilteredList] = useState(subjectList);
-  const [searchString, setSearchString] = useState('');
+  // const [filteredList, setFilteredList] = useState(subjectList);
+  // const [searchString, setSearchString] = useState('');
 
-  function handleSearch(evt) {
-    const line = evt.target.value;
-    setSearchString(line);
+  // function handleSearch(evt) {
+  //   const line = evt.target.value;
+  //   setSearchString(line);
 
-    if (line === '') {
-      setFilteredList(subjectList);
-    } else {
-      const filtered = subjectList.filter((item) => {
-        const matcher = new RegExp(searchString, 'gi');
-        return item.caption.match(matcher);
-      });
-      setFilteredList(filtered);
-    }
-  }
+  //   if (line === '') {
+  //     setFilteredList(subjectList);
+  //   } else {
+  //     const filtered = subjectList.filter((item) => {
+  //       const matcher = new RegExp(searchString, 'gi');
+  //       return item.caption.match(matcher);
+  //     });
+  //     setFilteredList(filtered);
+  //   }
+  // }
 
   return (
     <React.Fragment>
       <h1 className="page__heading">Computer Science Reading Whitelist</h1>
       <main className="page-content page__content">
-        <ControlBar
+        {/* <ControlBar
           list={props.list}
           onSearch={handleSearch}
           searchString={searchString}
-        />
+        /> */}
         <Subjects>
-          {filteredList.map((it, i) => (
+          {props.list.map((it, i) => (
             <SubjectsItem
               key={`${it.lang}-${i + 1}`}
               caption={it.caption}
