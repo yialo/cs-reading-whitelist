@@ -16,11 +16,15 @@ function App(props) {
     const line = evt.target.value;
     setSearchString(line);
 
-    const filtered = subjectList.filter((item) => {
-      const matcher = new RegExp(searchString, 'gi');
-      return item.caption.match(matcher);
-    });
-    setFilteredList(filtered);
+    if (line === '') {
+      setFilteredList(subjectList);
+    } else {
+      const filtered = subjectList.filter((item) => {
+        const matcher = new RegExp(searchString, 'gi');
+        return item.caption.match(matcher);
+      });
+      setFilteredList(filtered);
+    }
   }
 
   return (
