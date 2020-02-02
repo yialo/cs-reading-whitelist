@@ -12,10 +12,10 @@ module.exports = (fontList, srcMap) => {
   });
 
   fontList.forEach((font) => {
-    const { family, fileNameBase, localBase, sets } = font;
+    const { family, fileNameBase, sets } = font;
 
     sets.forEach((set) => {
-      const { weight, style, localSuffix } = set;
+      const { weight, style } = set;
 
       const createDecls = () => {
         const familyDecl = getDecl('family', `"${family}"`);
@@ -27,12 +27,10 @@ module.exports = (fontList, srcMap) => {
           ? 'https://yialo.github.io/cs-reading-whitelist'
           : '';
 
-        const filePath = `${basePath}/assets/fonts/${fileNameBase}_${weight}_${style}.woff`;
+        const filePath = `${basePath}/assets/fonts/${fileNameBase}_${weight}_${style}`;
         const srcValue = (
-          `local("${localBase.os} ${localSuffix.os}"),
-          local("${localBase.postScript}-${localSuffix.postScript}"),
-          url("${filePath}2") format("woff2"),
-          url("${filePath}") format("woff")`
+          `url("${filePath}.woff2") format("woff2"),
+          url("${filePath}.woff") format("woff")`
         );
 
         const srcDecl = postcss.decl({

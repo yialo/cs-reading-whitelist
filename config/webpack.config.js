@@ -15,8 +15,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
-  console.log('env:', env);
-
   const { purpose } = env;
 
   process.env.BABEL_ENV = purpose;
@@ -90,28 +88,25 @@ module.exports = (env = {}) => {
 
     module: {
       rules: (() => {
-        if (isTest) {
-          return [
+        const scriptHandlerConfig = {
+          test: /\.(?:j|t)sx?$/,
+          exclude: '/node_modules/',
+          use: [
             {
-              test: /\.jsx?$/,
-              exclude: '/node_modules/',
+              loader: 'babel-loader',
+              options: {
+                configFile: pathEnum.BABEL_CONFIG,
+              },
             },
-          ];
+          ],
+        };
+
+        if (isTest) {
+          return [scriptHandlerConfig];
         }
 
         return [
-          {
-            test: /\.jsx?$/,
-            exclude: '/node_modules/',
-            use: [
-              {
-                loader: 'babel-loader',
-                options: {
-                  configFile: pathEnum.BABEL_CONFIG,
-                },
-              },
-            ],
-          },
+          scriptHandlerConfig,
           {
             test: /\.pug$/,
             exclude: '/node_modules/',
@@ -129,11 +124,7 @@ module.exports = (env = {}) => {
             test: /\.css$/,
             exclude: '/node_modules/',
             use: [
-              (
-                isProduction
-                  ? CssExtractPlugin.loader
-                  : 'style-loader'
-              ),
+              (isProduction ? CssExtractPlugin.loader : 'style-loader'),
               {
                 loader: 'css-loader',
                 options: {

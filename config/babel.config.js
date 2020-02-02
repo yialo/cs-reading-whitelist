@@ -3,6 +3,7 @@
 module.exports = {
   ignore: ['../node_modules/**'],
   plugins: [
+    '@babel/plugin-proposal-class-properties',
     [
       '@babel/plugin-transform-runtime',
       {
@@ -25,9 +26,20 @@ module.exports = {
       '@babel/preset-react',
       {
         development: (process.env.BABEL_ENV === 'development'),
+        pragma: 'React.createElement',
+        pragmaFrag: 'React.Fragment',
         throwIfNamespace: true,
         useBuiltIns: false,
         useSpread: false,
+      },
+    ],
+    [
+      '@babel/preset-typescript',
+      {
+        allExtensions: true,
+        allowNamespaces: false,
+        isTSX: true,
+        jsxPragma: 'React',
       },
     ],
   ],
