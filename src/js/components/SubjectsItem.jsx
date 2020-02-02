@@ -10,7 +10,7 @@ function SubjectsItem(props) {
       <ul className="s_list subjects__tags">
         {props.tags.map((tag, i) => (
           <li className="subjects__tag" key={i}>
-            {` #${tag}}`}
+            {` #${tag}`}
           </li>
         ))}
       </ul>
