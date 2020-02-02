@@ -1,5 +1,0 @@
-* {
-  @nest .page__wrapper > * + & {
-    margin-top: 48px;
-  }
-}

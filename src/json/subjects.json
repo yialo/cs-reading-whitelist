@@ -1,5 +1,5 @@
 {
-  "entries": [
+  "data": [
     {
       "caption": "Frontend WhiteList",
       "url": "https://github.com/melnik909/frontend-whitelist",
@@ -3750,6 +3750,110 @@
         "4consider"
       ],
       "legend": "подборка вопросов и ответов по JavaScript для собеседования"
+    },
+    {
+      "caption": "Принцип экономии мыслетоплива (Максим Дорофеев)",
+      "url": "https://www.youtube.com/watch?v=fWR5SFhBUWc",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Agile Product Ownership in a Nutshell",
+      "url": "https://www.youtube.com/watch?v=502ILHjX9EE",
+      "lang": "en",
+      "tags": [
+        "project-management",
+        "agile",
+        "video"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "8 conditional rendering methods in React",
+      "url": "https://blog.logrocket.com/conditional-rendering-in-react-c6b0e5af381e/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "react"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как развить привычку отжиматься, чистить зубы, бегать, учить языки, и делать что угодно",
+      "url": "https://zen.yandex.ru/media/menscience/kak-razvit-privychku-otjimatsia-chistit-zuby-begat-uchit-iazyki-i-delat-chto-ugodno-5dbd32a8a06eaf00b110d5fd",
+      "lang": "ru",
+      "tags": [
+        "self-efficiency"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The React Cheatsheet for 2020",
+      "url": "https://dev.to/codeartistryio/the-react-cheatsheet-for-2020-real-world-examples-4hgg",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react-hooks",
+        "javascript",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "_ ___ ______? (Вадим Макеев)",
+      "url": "https://www.youtube.com/watch?v=uI3Q5m9xkkw",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "typography",
+        "performance"
+      ],
+      "legend": "оптимизация загрузки и отображения шрифтов"
+    },
+    {
+      "caption": "TypeScript With Babel: A Beautiful Marriage",
+      "url": "https://iamturns.com/typescript-babel/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "typescript",
+        "babel"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Using ESLint and Prettier in a TypeScript Project",
+      "url": "https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project",
+      "lang": "en",
+      "tags": [
+        "code-quality",
+        "typescript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Верстальщик. Наследие (Сергей Попов)",
+      "url": "https://www.youtube.com/watch?v=Z9of2cj28hY",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Ошибка. Осознание, примирение, извлечение пользы (Вадим Макишвили)",
+      "url": "https://www.youtube.com/watch?v=4srVRott8uU",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "soft-skills"
+      ],
+      "legend": ""
     }
   ]
 }

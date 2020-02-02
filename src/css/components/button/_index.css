@@ -1,0 +1,5 @@
+.button {
+  &:active {
+    background-image: linear-gradient(to bottom right, lemonchiffon 50%, lavenderblush 50%);
+  }
+}

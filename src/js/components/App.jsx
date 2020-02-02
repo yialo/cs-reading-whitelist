@@ -1,23 +1,40 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-import Subject from './Subject.jsx';
+import Subjects from './Subjects.jsx';
+import SubjectsItem from './SubjectsItem.jsx';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <h1 className="s_text-block page__heading">Computer Science Reading Whitelist</h1>
-        <main className="chapter">
-          <ul className="s_list chapter__list">
-            {this.props.list.map((item, i) => (
-              <Subject
-                key={i}
-                {...item}
-              />
-            ))}
-          </ul>
-        </main>
-      </React.Fragment>
-    );
-  }
+function App(props) {
+  return (
+    <React.Fragment>
+      <h1 className="page__heading">Computer Science Reading Whitelist</h1>
+      <main className="page-content page__content">
+        <Subjects>
+          {props.list.map((it, i) => (
+            <SubjectsItem
+              key={`${it.lang}-${i + 1}`}
+              caption={it.caption}
+              legend={it.legend}
+              tags={it.tags}
+              url={it.url}
+            />
+          ))}
+        </Subjects>
+      </main>
+    </React.Fragment>
+  );
 }
+
+App.propTypes = {
+  list: PropTypes.arrayOf(
+      PropTypes.objectOf(
+          PropTypes.oneOfType([
+            PropTypes.arrayOf(PropTypes.string),
+            PropTypes.string,
+          ])
+      )
+  )
+    .isRequired,
+};
+
+export default App;

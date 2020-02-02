@@ -3,6 +3,7 @@
 const path = require('path');
 
 const cssnano = require('cssnano');
+const dotEnv = require('dotenv');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
@@ -14,8 +15,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
-  console.log('env:', env);
-
   const { purpose } = env;
 
   process.env.BABEL_ENV = purpose;
@@ -54,7 +53,7 @@ module.exports = (env = {}) => {
     '#json': path.join(srcPath, 'json'),
   };
 
-  require('dotenv').config({ path: pathEnum.LOCAL_ENV_FILE });
+  dotEnv.config({ path: pathEnum.LOCAL_ENV_FILE });
 
   return {
     context: pathEnum.SRC,
@@ -89,30 +88,28 @@ module.exports = (env = {}) => {
 
     module: {
       rules: (() => {
-        if (isTest) {
-          return [
+        const scriptHandlerConfig = {
+          test: /\.(?:j|t)sx?$/,
+          exclude: '/node_modules/',
+          use: [
             {
-              test: /\.jsx?$/,
-              exclude: '/node_modules/',
+              loader: 'babel-loader',
+              options: {
+                configFile: pathEnum.BABEL_CONFIG,
+              },
             },
-          ];
+          ],
+        };
+
+        if (isTest) {
+          return [scriptHandlerConfig];
         }
 
         return [
-          {
-            test: /\.jsx?$/,
-            exclude: '/node_modules/',
-            use: [
-              {
-                loader: 'babel-loader',
-                options: {
-                  configFile: pathEnum.BABEL_CONFIG,
-                },
-              },
-            ],
-          },
+          scriptHandlerConfig,
           {
             test: /\.pug$/,
+            exclude: '/node_modules/',
             use: [
               {
                 loader: 'pug-loader',
@@ -127,11 +124,7 @@ module.exports = (env = {}) => {
             test: /\.css$/,
             exclude: '/node_modules/',
             use: [
-              (
-                isProduction
-                  ? CssExtractPlugin.loader
-                  : 'style-loader'
-              ),
+              (isProduction ? CssExtractPlugin.loader : 'style-loader'),
               {
                 loader: 'css-loader',
                 options: {
