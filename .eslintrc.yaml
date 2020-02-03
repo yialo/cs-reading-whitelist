@@ -16,7 +16,7 @@ overrides:
     parserOptions:
       ecmaFeatures:
         jsx: true
-      ecmaVersion: 2018
+      ecmaVersion: 2019
       sourceType: script
     rules:
       import/no-commonjs: 'off'
@@ -400,10 +400,6 @@ rules:
     - error
     - unix
   lines-around-comment: 'off'
-  lines-around-directive:
-    - error
-    - after: always
-      before: always
   lines-between-class-members:
     - error
     - always
@@ -437,8 +433,6 @@ rules:
     - capIsNew: false
       newIsCap: true
   new-parens: error
-  newline-after-var: 'off'
-  newline-before-return: 'off'
   newline-per-chained-call:
     - error
     - ignoreChainWithDepth: 4
@@ -554,7 +548,6 @@ rules:
     - max: 2
       maxBOF: 0
       maxEOF: 0
-  no-native-reassign: error
   no-negated-condition: error
   no-nested-ternary: error
   no-new: error
@@ -687,7 +680,6 @@ rules:
   no-setter-return: error
   no-shadow: error
   no-shadow-restricted-names: error
-  no-spaced-func: error
   no-sparse-arrays: error
   no-tabs: error
   no-template-curly-in-string: error
@@ -962,7 +954,7 @@ rules:
   react/no-danger-with-children: error
   react/no-deprecated: error
   react/no-did-mount-set-state: 'off'
-  react/no-did-update-set-state: error
+  react/no-did-update-set-state: 'off'
   react/no-direct-mutation-state: error
   react/no-find-dom-node: error
   react/no-is-mounted: error
