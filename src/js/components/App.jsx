@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import React, { useReducer } from 'react';
 import deepClone from 'lodash.clonedeep';
 
 import ControlBar from './ControlBar.jsx';
 import Subjects from './Subjects.jsx';
 import SubjectsItem from './SubjectsItem.jsx';
 
+import filterReducer from '../filter-reducer.js';
+
 function App(props) {
   const subjectList = deepClone(props.list);
 
-  const [filter, setFilter] = useState({
+  const [state, dispatch] = useReducer(filterReducer, {
     searchString: '',
     list: subjectList,
   });
@@ -27,9 +29,12 @@ function App(props) {
       });
     }
 
-    setFilter({
-      searchString: line,
-      list: filteredList,
+    dispatch({
+      type: 'FILTER',
+      payload: {
+        searchString: line,
+        list: filteredList,
+      },
     });
   }
 
@@ -40,10 +45,10 @@ function App(props) {
         <ControlBar
           list={props.list}
           onSearch={handleSearch}
-          searchString={filter.searchString}
+          searchString={state.searchString}
         />
         <Subjects>
-          {filter.list.map((it, i) => (
+          {state.list.map((it, i) => (
             <SubjectsItem
               key={`${it.lang}-${i + 1}`}
               caption={it.caption}
