@@ -3854,6 +3854,17 @@
         "soft-skills"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Know your ARIA: 'Hidden' vs 'None'",
+      "url": "https://www.scottohara.me/blog/2018/05/05/hidden-vs-none.html",
+      "lang": "en",
+      "tags": [
+        "a11y",
+        "aria",
+        "html"
+      ],
+      "legend": ""
     }
   ]
 }
