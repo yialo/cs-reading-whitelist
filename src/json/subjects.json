@@ -2754,17 +2754,6 @@
       "legend": ""
     },
     {
-      "caption": "На освоение React мне потребовалась всего неделя, а чем вы хуже?",
-      "url": "https://css-live.ru/articles/na-osvoenie-react-mne-potrebovalas-vsego-nedelya-a-chem-vy-xuzhe.html",
-      "lang": "ru",
-      "tags": [
-        "4consider",
-        "javascript",
-        "react"
-      ],
-      "legend": ""
-    },
-    {
       "caption": "Vue.js official",
       "url": "https://vuejs.org/",
       "lang": "en",
@@ -2833,30 +2822,6 @@
         "video",
         "javascript",
         "vue"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Vue JS 2 Tutorial (by The Net Ninja)",
-      "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "vue",
-        "4consider",
-        "video"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Фреймворк VueJS (Владилен Минин)",
-      "url": "https://www.youtube.com/playlist?list=PLD-piGJ3Dtl0C2gVy-_vZoxYRFWRwUvWL",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "vue",
-        "4consider",
-        "video"
       ],
       "legend": ""
     },
@@ -3852,6 +3817,27 @@
         "a11y",
         "aria",
         "html"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "How to Work with Forms, Inputs and Events in Reac",
+      "url": "https://medium.com/capital-one-tech/how-to-work-with-forms-inputs-and-events-in-react-c337171b923b",
+      "lang": "en",
+      "tags": [
+        "react",
+        "forms",
+        "4consider"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Controlled and uncontrolled form inputs in React don't have to be complicated",
+      "url": "https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "forms"
       ],
       "legend": ""
     }
