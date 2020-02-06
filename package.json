@@ -102,5 +102,5 @@
     "build": "npm run prod",
     "start": "npm run nodemon:dev"
   },
-  "version": "0.5.4"
+  "version": "0.5.5"
 }
