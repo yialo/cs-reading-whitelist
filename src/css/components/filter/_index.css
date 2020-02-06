@@ -1,0 +1,19 @@
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.filter__tip {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 16px;
+}
+
+.filter__control {
+  transition: color, background-color 0.25s;
+
+  &.js_active {
+    background-color: navy;
+    color: yellow;
+  }
+}

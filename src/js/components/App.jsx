@@ -12,6 +12,7 @@ function App(props) {
   const subjectList = deepClone(props.list);
 
   const [state, dispatch] = useReducer(filterReducer, {
+    target: 'caption',
     searchString: '',
     list: subjectList,
   });
@@ -44,6 +45,13 @@ function App(props) {
       <main className="page-content page__content">
         <ControlBar
           list={props.list}
+          filterTarget={state.target}
+          onFilterToggle={(filterName) => {
+            dispatch({
+              type: 'TOGGLE',
+              payload: filterName,
+            });
+          }}
           onSearch={handleSearch}
           searchString={state.searchString}
         />

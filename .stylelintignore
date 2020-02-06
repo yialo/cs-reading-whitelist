@@ -1,5 +1,8 @@
 *.html
 *.js
+*.jsx
+*.ts
+*.tsx
 dist/
 docs/
 node_modules/
