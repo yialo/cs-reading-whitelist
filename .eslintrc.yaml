@@ -845,10 +845,7 @@ rules:
         - any
         - array
         - object
-  react/function-component-definition:
-    - error
-    - namedComponents: function-declaration
-      unnamedComponents: arrow-function
+  react/function-component-definition: 'off'
   react/jsx-boolean-value:
     - error
     - never
