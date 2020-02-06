@@ -2743,17 +2743,6 @@
       "legend": ""
     },
     {
-      "caption": "ReactJS для глупых людей",
-      "url": "https://habr.com/ru/post/249107/",
-      "lang": "ru",
-      "tags": [
-        "4consider",
-        "javascript",
-        "react"
-      ],
-      "legend": ""
-    },
-    {
       "caption": "Vue.js official",
       "url": "https://vuejs.org/",
       "lang": "en",
@@ -3838,6 +3827,15 @@
       "tags": [
         "react",
         "forms"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Правдивая ложь оптимистичных интерфейсов",
+      "url": "https://habr.com/ru/company/jugru/blog/315806/",
+      "lang": "ru",
+      "tags": [
+        "ux/ui"
       ],
       "legend": ""
     }
