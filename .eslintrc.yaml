@@ -425,9 +425,7 @@ rules:
     - error
     - max: 1
   multiline-comment-style: 'off'
-  multiline-ternary:
-    - error
-    - always-multiline
+  multiline-ternary: 'off'
   new-cap:
     - error
     - capIsNew: false
@@ -864,8 +862,9 @@ rules:
       singleline: consistent
   react/jsx-curly-spacing:
     - error
-    - never
-    - allowMultiline: true
+    - when: never
+      children: true
+      allowMultiline: true
   react/jsx-equals-spacing:
     - error
     - never
