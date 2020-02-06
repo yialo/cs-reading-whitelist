@@ -5,7 +5,7 @@ import React from 'react';
 function SubjectsItem(props) {
   return (
     <li className="subjects__item">
-      <a href={props.url}>{props.caption}</a>
+      <a className="subjects__link" href={props.url}>{props.caption}</a>
       {props.legend ? ` - ${props.legend}` : ''}
       <ul className="s_list subjects__tags">
         {props.tags.map((tag, i) => (

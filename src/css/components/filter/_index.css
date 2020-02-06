@@ -1,19 +1,31 @@
 .filter {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+
+  @media (--vp-xs-from) {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 
 .filter__tip {
   margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  font-size: 18px;
+
+  @media (--vp-xs-from) {
+    margin-bottom: 0;
+    margin-right: 16px;
+    width: auto;
+  }
 }
 
 .filter__control {
   transition: color, background-color 0.25s;
 
   &.js_active {
-    background-color: navy;
-    color: yellow;
+    background-color: darkslateblue;
+    color: lightgoldenrodyellow;
   }
 }

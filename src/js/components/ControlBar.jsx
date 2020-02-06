@@ -4,15 +4,15 @@ import React from 'react';
 import TextInput from './TextInput.jsx';
 
 const filterDict = {
-  'caption': 'по заголовку',
-  'hash': 'по хэштегу',
+  'caption': 'заголовок',
+  'hashtag': 'хэштег',
 };
 
 function ControlBar(props) {
   return (
     <form className="control-bar page-content__filter">
       <div className="filter control-bar__filter">
-        <p className="filter__tip">Сортировать:</p>
+        <p className="filter__tip">Тип сортировки:</p>
         {Object.entries(filterDict).map(([name, legend], i) => {
           const isCurrent = (props.filterTarget === name);
 

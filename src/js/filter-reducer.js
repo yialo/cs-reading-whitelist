@@ -3,7 +3,7 @@ export default function (state, action) {
     case 'FILTER':
       return {
         ...state,
-        ...action.payload,
+        searchString: action.payload,
       };
     case 'TOGGLE':
       return {
