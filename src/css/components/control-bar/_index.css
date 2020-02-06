@@ -3,23 +3,8 @@
   flex-direction: column;
 }
 
-.control-bar__button {
-  margin-left: 8px;
-}
-
-.control-bar__filter-set {
-  align-self: center;
-  margin-bottom: 32px;
-  padding: 16px 32px;
-  font-size: 20px;
-}
-
-.control-bar__item {
-  line-height: 1.5;
-}
-
-.control-bar__field {
-  margin-right: 8px;
+.control-bar__filter {
+  margin-bottom: 16px;
 }
 
 .control-bar__searchbar {
