@@ -13,6 +13,10 @@
   }
 }
 
+.subjects__link {
+  color: midnightblue;
+}
+
 .subjects__tags {
   display: inline;
   font-style: italic;
