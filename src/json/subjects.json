@@ -836,25 +836,6 @@
       "legend": ""
     },
     {
-      "caption": "BemGo",
-      "url": "https://github.com/werty1001/bemgo",
-      "lang": "en",
-      "tags": [
-        "build",
-        "bem"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Организация отступов в верстке (margin/padding)",
-      "url": "https://habr.com/ru/post/340420/",
-      "lang": "ru",
-      "tags": [
-        "css"
-      ],
-      "legend": "содержит и ценные советы, и спорные моменты"
-    },
-    {
       "caption": "Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали",
       "url": "https://ru.hexlet.io/blog/posts/new-and-old-css-units",
       "lang": "ru",
@@ -1809,8 +1790,7 @@
       "tags": [
         "css",
         "css-grid",
-        "4consider",
-        "!important"
+        "4consider"
       ],
       "legend": ""
     },
@@ -2092,8 +2072,7 @@
       "tags": [
         "css",
         "sass",
-        "code-quality",
-        "4consider"
+        "code-quality"
       ],
       "legend": ""
     },
@@ -2157,8 +2136,7 @@
       "tags": [
         "html",
         "a11y",
-        "aria",
-        "4consider"
+        "aria"
       ],
       "legend": ""
     },
@@ -2228,8 +2206,7 @@
       "lang": "ru",
       "tags": [
         "javascript",
-        "!important",
-        "4consider"
+        "!important"
       ],
       "legend": ""
     },
@@ -3266,8 +3243,8 @@
       "url": "https://git-scm.com/book/en/v2",
       "lang": "en",
       "tags": [
-        "4consider",
-        "git"
+        "git",
+        "!important"
       ],
       "legend": "настольная книга"
     },

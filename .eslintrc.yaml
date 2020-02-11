@@ -800,7 +800,9 @@ rules:
   prefer-template: error
   promise/always-return: error
   promise/avoid-new: 'off'
-  promise/catch-or-return: error
+  promise/catch-or-return:
+    - error
+    - allowFinally: true
   promise/no-callback-in-promise: 'off'
   promise/no-native: 'off'
   promise/no-nesting: error
