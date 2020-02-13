@@ -1,41 +1,13 @@
 import PropTypes from 'prop-types';
-import React, { useReducer } from 'react';
+import React, { useContext } from 'react';
 
+import AppContext from '../contexts/AppContext.js';
 import ControlBar from './ControlBar.jsx';
 import Subjects from './Subjects.jsx';
 import SubjectsItem from './SubjectsItem.jsx';
 
-import filterReducer from '../filter-reducer.js';
-
-function App(props) {
-  const subjectList = props.list;
-
-  const [state, dispatch] = useReducer(filterReducer, {
-    target: 'caption',
-    searchString: '',
-  });
-
-  function getFilteredList(str) {
-    let filteredList;
-    if (str === '') {
-      filteredList = subjectList;
-    } else {
-      filteredList = subjectList.filter((item) => {
-        const matcher = new RegExp(str, 'gi');
-
-        switch (state.target) {
-          case 'caption':
-            return item.caption.match(matcher);
-          case 'hashtag':
-            return item.tags.some((tag) => tag.match(matcher));
-          default:
-            return [...subjectList];
-        }
-      });
-    }
-
-    return filteredList;
-  }
+function App({ filteredList }) {
+  const { state, dispatch } = useContext(AppContext);
 
   function handleFilterToggle(filterName) {
     dispatch({
@@ -52,8 +24,6 @@ function App(props) {
       payload: line,
     });
   }
-
-  const filteredList = getFilteredList(state.searchString);
 
   return (
     <React.Fragment>
@@ -82,15 +52,7 @@ function App(props) {
 }
 
 App.propTypes = {
-  list: PropTypes.arrayOf(
-      PropTypes.objectOf(
-          PropTypes.oneOfType([
-            PropTypes.arrayOf(PropTypes.string),
-            PropTypes.string,
-          ])
-      )
-  )
-    .isRequired,
+  filteredList: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default App;

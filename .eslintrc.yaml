@@ -139,9 +139,7 @@ rules:
     - error
     - never
   func-name-matching: 'off'
-  func-names:
-    - error
-    - as-needed
+  func-names: 'off'
   func-style: 'off'
   function-paren-newline:
     - error
@@ -920,11 +918,7 @@ rules:
     - error
     - allowAllCaps: true
   react/jsx-props-no-multi-spaces: error
-  react/jsx-props-no-spreading:
-    - error
-    - custom: enforce
-      explicitSpread: ignore
-      html: enforce
+  react/jsx-props-no-spreading: 'off'
   react/jsx-sort-default-props: 'off'
   react/jsx-sort-props: 'off'
   react/jsx-tag-spacing:
