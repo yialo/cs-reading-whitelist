@@ -47,7 +47,6 @@ module.exports = (env = {}) => {
   };
 
   const aliasEnum = {
-    '#components': path.join(srcPath, 'js/components'),
     '#css': path.join(srcPath, 'css'),
     '#js': path.join(srcPath, 'js'),
     '#json': path.join(srcPath, 'json'),
