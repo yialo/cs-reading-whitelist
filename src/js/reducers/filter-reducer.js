@@ -1,16 +1,23 @@
+import typeEnum from '../action-types.js';
+
+export const INITIAL_STATE = {
+  target: 'caption',
+  searchString: '',
+};
+
+const handlerDict = {
+  [typeEnum.FILTER]: (state, payload) => ({
+    ...state,
+    searchString: payload,
+  }),
+  [typeEnum.TOGGLE]: (state, payload) => ({
+    ...state,
+    target: payload,
+  }),
+  DEFAULT: (state) => state,
+};
+
 export default function (state, action) {
-  switch (action.type) {
-    case 'FILTER':
-      return {
-        ...state,
-        searchString: action.payload,
-      };
-    case 'TOGGLE':
-      return {
-        ...state,
-        target: action.payload,
-      };
-    default:
-      return state;
-  }
+  const handle = handlerDict[action.type] ?? handlerDict.DEFAULT;
+  return handle(state, action.payload);
 }

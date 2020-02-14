@@ -63,6 +63,7 @@ module.exports = (env = {}) => {
           host: process.env.WDS_HOST,
           port: process.env.WDS_PORT,
           hot: true,
+          inline: true,
           overlay: true,
           writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
         };

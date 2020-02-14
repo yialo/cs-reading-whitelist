@@ -3,13 +3,10 @@ import React, { useReducer } from 'react';
 
 import App from '../components/App.jsx';
 import AppContext from '../contexts/AppContext.js';
-import filterReducer from '../reducers/filter-reducer.js';
+import filterReducer, { INITIAL_STATE } from '../reducers/filter-reducer.js';
 
 function AppContextContainer({ list }) {
-  const [state, dispatch] = useReducer(filterReducer, {
-    target: 'caption',
-    searchString: '',
-  });
+  const [state, dispatch] = useReducer(filterReducer, { ...INITIAL_STATE });
 
   const subjectList = list;
 

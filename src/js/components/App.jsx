@@ -5,13 +5,14 @@ import AppContext from '../contexts/AppContext.js';
 import ControlBar from './ControlBar.jsx';
 import Subjects from './Subjects.jsx';
 import SubjectsItem from './SubjectsItem.jsx';
+import actionTypeEnum from '../action-types.js';
 
 function App({ filteredList }) {
   const { state, dispatch } = useContext(AppContext);
 
   function handleFilterToggle(filterName) {
     dispatch({
-      type: 'TOGGLE',
+      type: actionTypeEnum.TOGGLE,
       payload: filterName,
     });
   }
@@ -20,7 +21,7 @@ function App({ filteredList }) {
     const line = evt.target.value;
 
     dispatch({
-      type: 'FILTER',
+      type: actionTypeEnum.FILTER,
       payload: line,
     });
   }
