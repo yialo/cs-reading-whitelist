@@ -1,5 +1,5 @@
 {
-  "author": "Aleksei Arro",
+  "author": "Aleksei Arro <aleksey.arro@phystech.edu>",
   "browser": "./src/index.js",
   "browserslist": [
     "last 2 versions",
@@ -43,6 +43,7 @@
     "eslint-plugin-react-hooks": "2.3.0",
     "file-loader": "5.0.2",
     "html-webpack-plugin": "3.2.0",
+    "jest": "25.1.0",
     "mini-css-extract-plugin": "0.9.0",
     "nodemon": "2.0.2",
     "optimize-css-assets-webpack-plugin": "5.0.3",
@@ -92,9 +93,7 @@
     "nodemon:dev": "npm run nodemon -- dev",
     "nodemon:prod": "npm run nodemon -- prod",
     "stats": "npm run prod -- --json --profile > ./tests/webpack-bundle-stats.json",
-    "test": "npm run test:build && npm run test:run",
-    "test:build": "npm run webpack -- --env.purpose=test",
-    "test:run": "mocha ./tests/js/test_output.js",
+    "test": "jest",
     "webpack": "webpack --config ./config/webpack.config.js",
     "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js",
     "build": "npm run prod",

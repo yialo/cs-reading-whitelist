@@ -1,4 +1,4 @@
-// eslint-disable-next-line strict
+/* eslint-disable */
 'use strict';
 
 function expect(value) {
@@ -17,4 +17,4 @@ const sum = (a, b) => a + b;
 
 const nativeNull = () => null;
 
-expect(sum(41, 1)).toBe(43);
+module.exports = { sum, nativeNull };
