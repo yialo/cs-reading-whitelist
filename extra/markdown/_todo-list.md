@@ -14,6 +14,7 @@
 * Change README.md: add npm cli commands.
 * Add special markup for tag and code remarks in text.
 * Add favicon.
+* Configure Webpack to resolve image paths in HTML template.
 
 ## More far future
 
