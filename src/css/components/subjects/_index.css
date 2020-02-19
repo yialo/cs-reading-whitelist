@@ -25,3 +25,22 @@
 .subjects__tag {
   display: inline;
 }
+
+.subjects__lang-badge {
+  display: inline-block;
+  border-radius: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.subjects__lang-badge--en {
+  background-color: #90caf9;
+}
+
+.subjects__lang-badge--ru {
+  background-color: #80cbc4;
+}

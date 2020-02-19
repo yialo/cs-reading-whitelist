@@ -4,7 +4,7 @@ env:
   es6: true
 overrides:
   - env:
-      mocha: true
+      jest: true
     files:
       - ./src/**/*.test.js
   - env:
@@ -223,7 +223,7 @@ rules:
       noUselessIndex: false
   import/no-webpack-loader-syntax: error
   import/order: 'off'
-  import/prefer-default-export: error
+  import/prefer-default-export: 'off'
   import/unambiguous: 'off'
   indent:
     - error
@@ -796,7 +796,7 @@ rules:
   prefer-rest-params: error
   prefer-spread: error
   prefer-template: error
-  promise/always-return: error
+  promise/always-return: 'off'
   promise/avoid-new: 'off'
   promise/catch-or-return:
     - error
@@ -820,7 +820,7 @@ rules:
     - single
     - allowTemplateLiterals: true
   radix: error
-  react-hooks/exhaustive-deps: error
+  react-hooks/exhaustive-deps: 'off'
   react-hooks/rules-of-hooks: error
   react/boolean-prop-naming: 'off'
   react/button-has-type: 'off'
