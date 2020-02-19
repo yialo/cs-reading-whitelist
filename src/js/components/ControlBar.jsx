@@ -13,22 +13,23 @@ function ControlBar(props) {
     <form className="control-bar page-content__filter">
       <div className="filter control-bar__filter">
         <p className="filter__tip">Тип сортировки:</p>
-        {Object.entries(filterDict).map(([name, legend], i) => {
-          const isCurrent = (props.filterTarget === name);
-
-          return (
-            <button
-              className={`s_button filter__control${isCurrent ? ' js_active' : ''}`}
-              key={`${name}-${i + 1}`}
-              type="button"
-              onClick={isCurrent ? null : () => {
-                props.onFilterToggle(name);
-              }}
-            >
-              {legend}
-            </button>
-          );
-        })}
+        <div className="filter__controls">
+          {Object.entries(filterDict).map(([name, legend], i) => {
+            const isCurrent = (props.filterTarget === name);
+            return (
+              <button
+                className={`s_button filter__control${isCurrent ? ' js_active' : ''}`}
+                key={`${name}-${i + 1}`}
+                type="button"
+                onClick={isCurrent ? null : () => {
+                  props.onFilterToggle(name);
+                }}
+              >
+                {legend}
+              </button>
+            );
+          })}
+        </div>
       </div>
       <p className="control-bar__searchbar">
         <TextInput
