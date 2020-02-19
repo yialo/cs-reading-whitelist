@@ -41,6 +41,7 @@ function App({ filteredList }) {
             <SubjectsItem
               key={`${it.lang}-${i + 1}`}
               caption={it.caption}
+              lang={it.lang}
               legend={it.legend}
               tags={it.tags}
               url={it.url}

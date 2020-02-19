@@ -21,7 +21,14 @@
   }
 }
 
+.filter__controls {
+  display: flex;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
 .filter__control {
+  min-width: 120px;
   transition: color, background-color 0.25s;
 
   &.js_active {
