@@ -1096,7 +1096,9 @@ rules:
     - after: true
       before: false
   symbol-description: error
-  template-curly-spacing: 'off'
+  template-curly-spacing:
+    - error
+    - never
   template-tag-spacing:
     - error
     - never
