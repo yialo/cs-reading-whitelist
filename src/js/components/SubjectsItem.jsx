@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-// TODO: add 'lang' attribute to 'a' element
 function SubjectsItem(props) {
   return (
     <li className="subjects__item">
-      <a className="subjects__link" href={props.url}>{props.caption}</a>
+      <a className="subjects__link" href={props.url} lang={props.lang}>{props.caption}</a>
       {' '}
       <span className={`subjects__lang-badge subjects__lang-badge--${props.lang}`}>
         {props.lang}
