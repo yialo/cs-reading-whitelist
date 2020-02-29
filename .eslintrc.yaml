@@ -210,7 +210,8 @@ rules:
   import/no-unassigned-import:
     - error
     - allow:
-        - '**/*.css'
+      - '**/*.{css,ico,jp?(e)g,png,svg,woff2}'
+      - '**/*.test.js'
   import/no-unresolved:
     - error
     - amd: false
@@ -1095,7 +1096,9 @@ rules:
     - after: true
       before: false
   symbol-description: error
-  template-curly-spacing: 'off'
+  template-curly-spacing:
+    - error
+    - never
   template-tag-spacing:
     - error
     - never
