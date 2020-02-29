@@ -3815,6 +3815,25 @@
         "ux/ui"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Картинки как коробки. Что же там внутри?",
+      "url": "https://speakerdeck.com/hellsquirrel/kartinki-kak-korobki-chto-zhie-tam-vnutri",
+      "lang": "ru",
+      "tags": [
+        "graphics",
+        "performance"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Вы используете devDependencies неправильно",
+      "url": "https://incubator.flaks.dev/devdependencies-mistake",
+      "lang": "ru",
+      "tags": [
+        "npm"
+      ],
+      "legend": ""
     }
   ]
 }
