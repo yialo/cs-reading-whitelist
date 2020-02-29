@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-// TODO: add 'lang' indicator
+// TODO: add 'lang' attribute to 'a' element
 function SubjectsItem(props) {
   return (
     <li className="subjects__item">
