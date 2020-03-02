@@ -1,3 +1,5 @@
 @font-face-set {
-  is-active: true;
+  alias: "@";
+  data-relative-path: "json/fonts.json";
+  file-path-base: "~@/fonts";
 }

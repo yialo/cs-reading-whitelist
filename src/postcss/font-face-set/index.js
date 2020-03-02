@@ -1,22 +1,34 @@
 'use strict';
 
+const path = require('path');
 const postcss = require('postcss');
+const getFontFaces = require('./get-font-faces.js');
 
-const getFontFaces = require('./get-font-set.js');
-const { fonts } = require('../../json/fonts.json');
+module.exports = postcss.plugin('postcss-font-face-set', (options) => {
+  const { pathAliasEnum } = options;
 
-module.exports = postcss.plugin('postcss-font-face-set', () => (
-  (css) => {
-    if (css.source.input.file.includes('index')) {
-      css.walkAtRules('font-face-set', (atRule) => {
-        atRule.walkDecls('is-active', (decl) => {
-          if (decl.value === 'true') {
-            const fontFaces = getFontFaces(fonts, atRule.source);
-
-            atRule.replaceWith(fontFaces);
-          }
-        });
+  return (root) => {
+    root.walkAtRules('font-face-set', (atRule) => {
+      const fontPathData = {};
+      atRule.walkDecls((decl) => {
+        const value = decl.value.slice(1, -1);
+        if (decl.prop === 'alias' && value !== '') {
+          fontPathData.alias = value;
+        } else if (decl.prop === 'data-relative-path') {
+          fontPathData.dataRelativePath = value;
+        } else if (decl.prop === 'file-path-base') {
+          fontPathData.filePathBase = value;
+        }
       });
-    }
-  }
-));
+      const basePath = pathAliasEnum[fontPathData.alias];
+      const fontPath = path.join(basePath, fontPathData.dataRelativePath);
+      const fontList = require(fontPath).fonts;
+      const fontFaces = getFontFaces({
+        fontList,
+        pathBase: fontPathData.filePathBase,
+        srcMap: atRule.source,
+      });
+      atRule.replaceWith(fontFaces);
+    });
+  };
+});

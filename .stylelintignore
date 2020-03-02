@@ -1,6 +1,7 @@
 *.html
 *.js
 *.jsx
+*.md
 *.ts
 *.tsx
 dist/

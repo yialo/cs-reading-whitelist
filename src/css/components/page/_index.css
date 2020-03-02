@@ -1,4 +1,4 @@
-@import "page__heading.css";
-@import "page__overlay.css";
-@import "page__wrapper.css";
-@import "page.css";
+@import "./page__heading.css";
+@import "./page__overlay.css";
+@import "./page__wrapper.css";
+@import "./page.css";

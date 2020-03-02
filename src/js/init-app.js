@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import AppContextContainer from './containers/AppContextContainer.jsx';
-import subjects from '#json/subjects.json';
+import subjects from '@/json/subjects.json';
 
 export default () => {
   const $overlay = document.getElementById('page-overlay');
