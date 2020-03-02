@@ -5,7 +5,9 @@
 ``` css
 /* Range */
 
-input[type=range] {-webkit-appearance: none;}
+input[type="range"] {
+  -webkit-appearance: none;
+}
 
 /* Track */
 

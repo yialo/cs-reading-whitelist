@@ -1,7 +1,7 @@
-@import "control-bar/_index.css";
-@import "filter/_index.css";
-@import "page/_index.css";
-@import "page-content/_index.css";
-@import "spinner/_index.css";
-@import "subjects/_index.css";
-@import "text-input/_index.css";
+@import "./control-bar/_index.css";
+@import "./filter/_index.css";
+@import "./page/_index.css";
+@import "./page-content/_index.css";
+@import "./spinner/_index.css";
+@import "./subjects/_index.css";
+@import "./text-input/_index.css";

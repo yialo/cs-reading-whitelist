@@ -3834,6 +3834,16 @@
         "npm"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Как работать с async/await в циклах JavaScript",
+      "url": "https://habr.com/ru/post/435084/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "async"
+      ],
+      "legend": ""
     }
   ]
 }
