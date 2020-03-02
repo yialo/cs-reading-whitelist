@@ -5,7 +5,6 @@ const path = require('path');
 const cssnano = require('cssnano');
 const dotEnv = require('dotenv');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
@@ -38,8 +37,6 @@ module.exports = (env = {}) => {
     SRC: srcPath,
     ROOT: rootPath,
     BABEL_CONFIG: path.join(configPath, 'babel.config.js'),
-    FONTS_INPUT: path.join(srcPath, 'static/fonts/'),
-    FONTS_OUTPUT: path.join(distPath, 'assets/fonts'),
     LOCAL_ENV_FILE: path.join(rootPath, '.env.local'),
     PUG_TEMPLATE: path.join(srcPath, 'pug/pages/index.pug'),
     TEST_INPUT: path.join(srcPath, 'tests.js'),
@@ -152,23 +149,22 @@ module.exports = (env = {}) => {
               outputPath: 'assets/img',
             },
           },
-          // TODO: check these rules
-          // {
-          //   test: /\.ico$/,
-          //   loader: 'file-loader',
-          //   options: {
-          //     name: `[name]${assetHash}.[ext]`,
-          //     outputPath: 'assets/favicons',
-          //   },
-          // },
-          // {
-          //   test: /\.woff2?$/,
-          //   loader: 'file-loader',
-          //   options: {
-          //     name: `[name]${assetHash}.[ext]`,
-          //     outputPath: 'assets/fonts',
-          //   },
-          // },
+          {
+            test: /\.ico$/,
+            loader: 'file-loader',
+            options: {
+              name: `[name]${assetHash}.[ext]`,
+              outputPath: 'assets/favicons',
+            },
+          },
+          {
+            test: /\.woff2?$/,
+            loader: 'file-loader',
+            options: {
+              name: `[name]${assetHash}.[ext]`,
+              outputPath: 'assets/fonts',
+            },
+          },
         ];
       })(),
     },
@@ -262,13 +258,6 @@ module.exports = (env = {}) => {
           new CssExtractPlugin({
             filename: `assets/css/[name]${assetHash}.css`,
           }),
-          // TODO: think about this option after fonts move to dynamic assets
-          new CopyPlugin([
-            {
-              from: pathEnum.FONTS_INPUT,
-              to: pathEnum.FONTS_OUTPUT,
-            },
-          ]),
           new HtmlPlugin({
             filename: 'index.html',
             template: pathEnum.PUG_TEMPLATE,
