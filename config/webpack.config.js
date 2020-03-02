@@ -47,9 +47,7 @@ module.exports = (env = {}) => {
   };
 
   const aliasEnum = {
-    '#css': path.join(srcPath, 'css'),
-    '#js': path.join(srcPath, 'js'),
-    '#json': path.join(srcPath, 'json'),
+    '@': srcPath,
   };
 
   dotEnv.config({ path: pathEnum.LOCAL_ENV_FILE });
@@ -137,6 +135,9 @@ module.exports = (env = {}) => {
                 options: {
                   sourceMap: true,
                   config: {
+                    ctx: {
+                      pathAliasEnum: aliasEnum,
+                    },
                     path: pathEnum.CONFIG,
                   },
                 },
@@ -144,13 +145,30 @@ module.exports = (env = {}) => {
             ],
           },
           {
-            test: /\.png$/,
+            test: /\.(jpe?g|png|svg)$/,
             loader: 'file-loader',
             options: {
               name: `[name]${assetHash}.[ext]`,
               outputPath: 'assets/img',
             },
           },
+          // TODO: check these rules
+          // {
+          //   test: /\.ico$/,
+          //   loader: 'file-loader',
+          //   options: {
+          //     name: `[name]${assetHash}.[ext]`,
+          //     outputPath: 'assets/favicons',
+          //   },
+          // },
+          // {
+          //   test: /\.woff2?$/,
+          //   loader: 'file-loader',
+          //   options: {
+          //     name: `[name]${assetHash}.[ext]`,
+          //     outputPath: 'assets/fonts',
+          //   },
+          // },
         ];
       })(),
     },
@@ -244,6 +262,7 @@ module.exports = (env = {}) => {
           new CssExtractPlugin({
             filename: `assets/css/[name]${assetHash}.css`,
           }),
+          // TODO: think about this option after fonts move to dynamic assets
           new CopyPlugin([
             {
               from: pathEnum.FONTS_INPUT,
