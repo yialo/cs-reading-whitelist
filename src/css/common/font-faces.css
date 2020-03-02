@@ -1,9 +1,5 @@
-/* const basePath = (process.env.NODE_ENV === 'production')
-  ? 'https://yialo.github.io/cs-reading-whitelist'
-  : ''; */
-
-/* @font-face-set {
-  entry:
-  relative-path:
-  public-path-base:
-} */
+@font-face-set {
+  alias: "@";
+  data-relative-path: "json/fonts.json";
+  file-path-base: "~@/fonts";
+}

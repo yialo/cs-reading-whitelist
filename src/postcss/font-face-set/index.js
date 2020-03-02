@@ -7,31 +7,28 @@ const getFontFaces = require('./get-font-faces.js');
 module.exports = postcss.plugin('postcss-font-face-set', (options) => {
   const { pathAliasEnum } = options;
 
-  return (css) => {
-    css.walkAtRules('font-face-set', (atRule) => {
-      let basePath;
-      atRule.walkDecls(('entry'), (decl) => {
-        const pathAlias = decl.value.slice(1, -1);
-        basePath = pathAliasEnum[pathAlias];
+  return (root) => {
+    root.walkAtRules('font-face-set', (atRule) => {
+      const fontPathData = {};
+      atRule.walkDecls((decl) => {
+        const value = decl.value.slice(1, -1);
+        if (decl.prop === 'alias' && value !== '') {
+          fontPathData.alias = value;
+        } else if (decl.prop === 'data-relative-path') {
+          fontPathData.dataRelativePath = value;
+        } else if (decl.prop === 'file-path-base') {
+          fontPathData.filePathBase = value;
+        }
       });
-
-      let relativePath;
-      atRule.walkDecls(('relative-path'), (decl) => {
-        relativePath = decl.value.slice(1, -1);
+      const basePath = pathAliasEnum[fontPathData.alias];
+      const fontPath = path.join(basePath, fontPathData.dataRelativePath);
+      const fontList = require(fontPath).fonts;
+      const fontFaces = getFontFaces({
+        fontList,
+        pathBase: fontPathData.filePathBase,
+        srcMap: atRule.source,
       });
-
-      const fontDataPath = path.join(basePath, relativePath);
-      const fontData = require(fontDataPath);
-
-      atRule.walkDecls('public-path-base', (decl) => {
-        const pathBase = decl.value.slice(1, -1);
-        const fontFaces = getFontFaces({
-          fontData,
-          pathBase,
-          srcMap: atRule.source,
-        });
-        atRule.replaceWith(fontFaces);
-      });
+      atRule.replaceWith(fontFaces);
     });
   };
 });

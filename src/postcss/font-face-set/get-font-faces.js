@@ -2,11 +2,9 @@
 
 const postcss = require('postcss');
 
-const getFontFaces = ({ fontData, pathBase, srcMap }) => {
-  const { fonts } = fontData;
-
+const getFontFaces = ({ fontList, pathBase, srcMap }) => {
   const fontFaces = [];
-  fonts.forEach((font) => {
+  fontList.forEach((font) => {
     const { family, fileNameBase, sets } = font;
 
     sets.forEach((set) => {
@@ -23,7 +21,7 @@ const getFontFaces = ({ fontData, pathBase, srcMap }) => {
         const fontStyleDecl = getDecl('style', style);
         const fontDisplayDecl = getDecl('display', 'swap');
 
-        const filePathBase = `${pathBase}${fileNameBase}_${weight}_${style}`;
+        const filePathBase = `${pathBase}/${fileNameBase}_${weight}_${style}`;
         const srcValue = (
           `url("${filePathBase}.woff2") format("woff2"),
           url("${filePathBase}.woff") format("woff")`
