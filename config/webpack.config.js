@@ -86,34 +86,35 @@ module.exports = (env = {}) => {
         const scriptHandlerConfig = {
           test: /\.(?:j|t)sx?$/,
           exclude: '/node_modules/',
-          use: [
-            {
-              loader: 'babel-loader',
-              options: {
-                configFile: pathEnum.BABEL_CONFIG,
-              },
-            },
-          ],
+          loader: 'babel-loader',
+          options: {
+            configFile: pathEnum.BABEL_CONFIG,
+          },
         };
 
         if (isTest) {
           return [scriptHandlerConfig];
         }
 
+        const getFileLoaderRule = ({ testRegexp, outputSubdir }) => ({
+          test: testRegexp,
+          loader: 'file-loader',
+          options: {
+            name: `[name]${assetHash}.[ext]`,
+            outputPath: `assets/${outputSubdir}`,
+          },
+        });
+
         return [
           scriptHandlerConfig,
           {
             test: /\.pug$/,
             exclude: '/node_modules/',
-            use: [
-              {
-                loader: 'pug-loader',
-                options: {
-                  pretty: !isProduction,
-                  self: true,
-                },
-              },
-            ],
+            loader: 'pug-loader',
+            options: {
+              pretty: !isProduction,
+              self: true,
+            },
           },
           {
             test: /\.css$/,
@@ -141,30 +142,18 @@ module.exports = (env = {}) => {
               },
             ],
           },
-          {
-            test: /\.(jpe?g|png|svg)$/,
-            loader: 'file-loader',
-            options: {
-              name: `[name]${assetHash}.[ext]`,
-              outputPath: 'assets/img',
-            },
-          },
-          {
-            test: /\.ico$/,
-            loader: 'file-loader',
-            options: {
-              name: `[name]${assetHash}.[ext]`,
-              outputPath: 'assets/favicons',
-            },
-          },
-          {
-            test: /\.woff2?$/,
-            loader: 'file-loader',
-            options: {
-              name: `[name]${assetHash}.[ext]`,
-              outputPath: 'assets/fonts',
-            },
-          },
+          getFileLoaderRule({
+            testRegexp: /\.(jpe?g|png|svg)$/,
+            outputSubdir: 'img',
+          }),
+          getFileLoaderRule({
+            testRegexp: /\.ico$/,
+            outputSubdir: 'favicons',
+          }),
+          getFileLoaderRule({
+            testRegexp: /\.woff2?$/,
+            outputSubdir: 'fonts',
+          }),
         ];
       })(),
     },
@@ -179,6 +168,7 @@ module.exports = (env = {}) => {
           chunks: 'all',
           minChunks: 2,
           cacheGroups: {
+            default: false,
             vendor: {
               name: 'vendors',
               test: /[\\/]node_modules[\\/]/,
