@@ -266,7 +266,7 @@ module.exports = (env = {}) => {
 
       if (needAnalyze) {
         output.push(new BundleAnalyzerPlugin({
-          analyzerPort: 8888,
+          analyzerPort: 8889,
         }));
       }
 
@@ -275,12 +275,6 @@ module.exports = (env = {}) => {
 
     resolve: {
       alias: aliasEnum,
-    },
-
-    stats: {
-      assets: false,
-      entrypoints: false,
-      modules: false,
     },
 
     target: 'web',
