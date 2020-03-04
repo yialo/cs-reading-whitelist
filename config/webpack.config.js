@@ -15,7 +15,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
-  const { analyze: needAnalyze, purpose } = env;
+  const {
+    analyze: needAnalyze,
+    deploy: needDeploy,
+    purpose,
+  } = env;
 
   process.env.BABEL_ENV = purpose;
   process.env.NODE_ENV = purpose;
@@ -29,7 +33,7 @@ module.exports = (env = {}) => {
 
   const rootPath = path.resolve(__dirname, '../');
   const configPath = path.join(rootPath, 'config');
-  const distPath = path.join(rootPath, isProduction && !needAnalyze ? 'docs' : 'dist');
+  const distPath = path.join(rootPath, needDeploy ? 'docs' : 'dist');
   const srcPath = path.join(rootPath, 'src');
 
   const pathEnum = {

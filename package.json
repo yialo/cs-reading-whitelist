@@ -79,7 +79,7 @@
     "url": "git+https://github.com/yialo/cs-reading-whitelist.git"
   },
   "scripts": {
-    "build": "npm run prod",
+    "build": "npm run prod -- --env.deploy",
     "check-types": "tsc --project ./config/tsconfig.json",
     "dev": "npm run webpack-dev-server -- --env.purpose=development",
     "dev:debug": "npm run nodemon -- inspect:dev",
@@ -95,8 +95,8 @@
     "prod": "npm run webpack -- --env.purpose=production",
     "prod:analyze": "npm run prod -- --env.analyze",
     "prod:debug": "npm run nodemon -- inspect:prod",
+    "prod:stats": "npm run prod -- --profile --json > ./tests/webpack-bundle-stats.json",
     "start": "npm run nodemon:dev",
-    "stats": "npm run prod -- --json --profile > ./tests/webpack-bundle-stats.json",
     "test": "jest",
     "webpack": "webpack --config ./config/webpack.config.js",
     "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js"
