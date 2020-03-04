@@ -10,11 +10,12 @@ const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
-  const { purpose } = env;
+  const { analyze: needAnalyze, purpose } = env;
 
   process.env.BABEL_ENV = purpose;
   process.env.NODE_ENV = purpose;
@@ -28,7 +29,7 @@ module.exports = (env = {}) => {
 
   const rootPath = path.resolve(__dirname, '../');
   const configPath = path.join(rootPath, 'config');
-  const distPath = path.join(rootPath, isProduction ? 'docs' : 'dist');
+  const distPath = path.join(rootPath, isProduction && !needAnalyze ? 'docs' : 'dist');
   const srcPath = path.join(rootPath, 'src');
 
   const pathEnum = {
@@ -256,8 +257,13 @@ module.exports = (env = {}) => {
             filter: (descriptor) => descriptor.isChunk,
           }),
         ];
-
         output.push(...mainPlugins);
+      }
+
+      if (needAnalyze) {
+        output.push(new BundleAnalyzerPlugin({
+          analyzerPort: 8888,
+        }));
       }
 
       return output;
