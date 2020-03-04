@@ -83,7 +83,7 @@ module.exports = (env = {}) => {
 
     module: {
       rules: (() => {
-        const scriptHandlerConfig = {
+        const scriptLoaderRule = {
           test: /\.(?:j|t)sx?$/,
           exclude: '/node_modules/',
           loader: 'babel-loader',
@@ -93,7 +93,7 @@ module.exports = (env = {}) => {
         };
 
         if (isTest) {
-          return [scriptHandlerConfig];
+          return [scriptLoaderRule];
         }
 
         const getFileLoaderRule = ({ testRegexp, outputSubdir }) => ({
@@ -106,7 +106,7 @@ module.exports = (env = {}) => {
         });
 
         return [
-          scriptHandlerConfig,
+          scriptLoaderRule,
           {
             test: /\.pug$/,
             exclude: '/node_modules/',
