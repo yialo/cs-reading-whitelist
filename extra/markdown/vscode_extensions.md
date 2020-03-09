@@ -33,7 +33,6 @@
 * vscode-language-pack-ru
 * vscode-markdownlint
 * vscode-puglint
-* vscode-scss
 * vscode-sort-json
 * vscode-stylelint
 * vscode-surround
