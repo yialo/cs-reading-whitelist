@@ -48,8 +48,8 @@
   },
   "description": "Links to useful development tools and good articles about computer science",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.22.0",
-    "@typescript-eslint/parser": "2.22.0",
+    "@typescript-eslint/eslint-plugin": "2.23.0",
+    "@typescript-eslint/parser": "2.23.0",
     "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
     "eslint-import-resolver-webpack": "0.12.1",
@@ -62,7 +62,7 @@
     "jest": "25.1.0",
     "nodemon": "2.0.2",
     "pug-lint": "2.6.0",
-    "stylelint": "13.2.0",
+    "stylelint": "13.2.1",
     "webpack-dev-server": "3.10.3"
   },
   "engines": {
