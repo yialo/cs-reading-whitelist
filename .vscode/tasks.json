@@ -2,14 +2,19 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "kill_nodejs",
+      "label": "kill nodejs",
       "type": "shell",
       "command": "taskkill -f -im node.exe"
     },
     {
-      "label": "run_bind.js",
+      "label": "run bind.js",
       "type": "shell",
       "command": "node extra/playground/bind.js"
-    }
+    },
+    {
+      "label": "run jest on sync.spec.js",
+      "type": "shell",
+      "command": "npx jest extra/playground/learn-jest/sync.spec.js"
+    },
   ]
 }

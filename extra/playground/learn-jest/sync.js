@@ -3,7 +3,9 @@
 'use strict';
 
 module.exports = class Lodash {
-  compact(array) {}
+  compact(array) {
+    return array.filter((val) => Boolean(val));
+  }
 
   groupBy(array, prop) {
 

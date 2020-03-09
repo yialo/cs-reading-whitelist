@@ -6,7 +6,8 @@ overrides:
   - env:
       jest: true
     files:
-      - ./src/**/*.test.js
+      - ./**/*.spec.js
+      - ./**/*.test.js
   - env:
       node: true
     files:
