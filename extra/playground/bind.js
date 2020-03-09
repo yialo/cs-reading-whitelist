@@ -1,5 +1,5 @@
 /* eslint-env node */
-/* eslint-disable strict */
+/* eslint-disable prefer-rest-params, strict */
 'use strict';
 
 const person = {
@@ -28,8 +28,23 @@ function bind(fn, ctx, ...boundArgs) {
   };
 }
 
-bind(simple, null)('123456', 'bob@gmail.com');
+function _legacyBind_(fn, ctx) {
+  const boundArgs = Array.prototype.slice.call(arguments, 2);
+  return function () {
+    const args = Array.prototype.slice.call(arguments);
+    const allArgs = boundArgs.concat(args);
+    return fn.apply(ctx, allArgs);
+  };
+}
+
+bind(simple, null)('321475', 'basil@gmail.com');
 bind(info, person)('123456', 'bob@gmail.com');
 bind(info, person, '123456')('bob@gmail.com');
 bind(info, person, '123456', 'bob@gmail.com')();
+
 console.log(person);
+
+_legacyBind_(simple, null)('321475', 'basil@gmail.com');
+_legacyBind_(info, person)('123456', 'bob@gmail.com');
+_legacyBind_(info, person, '123456')('bob@gmail.com');
+_legacyBind_(info, person, '123456', 'bob@gmail.com')();
