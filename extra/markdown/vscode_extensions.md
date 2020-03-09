@@ -13,6 +13,7 @@
 * language-postcss
 * language-stylus
 * LogFileHighlighter
+* markdown-all-in-one
 * material-icon-theme
 * npm-intellisense
 * output-colorizer
@@ -40,5 +41,4 @@
 * vscode-template-literal-editor
 * vscode-versionlens
 * vscode-yaml-sort
-* vscodeintellicode
 * xml
