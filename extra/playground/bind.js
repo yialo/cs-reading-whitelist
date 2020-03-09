@@ -6,13 +6,47 @@ const person = {
   name: 'Bob',
 };
 
-function simple(tel, email) {
+function simpleInfo(tel, email) {
   console.log(`Name: Basil, tel: ${tel}, email: ${email}`);
 }
 
-function info(tel, email) {
+function complexInfo(tel, email) {
   console.log(`Name: ${this.name}, tel: ${tel}, email: ${email}`);
 }
+
+function call(fn, ctx, ...args) {
+  if (ctx === null || typeof ctx !== 'object') {
+    return fn(...args);
+  }
+  const fieldId = Symbol('fieldId');
+  ctx[fieldId] = fn;
+  const result = ctx[fieldId](...args);
+  delete ctx[fieldId];
+  return result;
+}
+
+console.group('call:');
+call(simpleInfo, null, '321475', 'basil@gmail.com');
+call(complexInfo, person, '123456', 'bob@gmail.com');
+console.log(person);
+console.groupEnd();
+
+function apply(fn, ctx, argArr) {
+  if (ctx === null || typeof ctx !== 'object') {
+    return fn(...argArr);
+  }
+  const fieldId = Symbol('fieldId');
+  ctx[fieldId] = fn;
+  const result = ctx[fieldId](...argArr);
+  delete ctx[fieldId];
+  return result;
+}
+
+console.group('apply:');
+apply(simpleInfo, null, ['321475', 'basil@gmail.com']);
+apply(complexInfo, person, ['123456', 'bob@gmail.com']);
+console.log(person);
+console.groupEnd();
 
 function bind(fn, ctx, ...boundArgs) {
   return function (...args) {
@@ -29,10 +63,10 @@ function bind(fn, ctx, ...boundArgs) {
 }
 
 console.group('ES6 bind:');
-bind(simple, null)('321475', 'basil@gmail.com');
-bind(info, person)('123456', 'bob@gmail.com');
-bind(info, person, '123456')('bob@gmail.com');
-bind(info, person, '123456', 'bob@gmail.com')();
+bind(simpleInfo, null)('321475', 'basil@gmail.com');
+bind(complexInfo, person)('123456', 'bob@gmail.com');
+bind(complexInfo, person, '123456')('bob@gmail.com');
+bind(complexInfo, person, '123456', 'bob@gmail.com')();
 console.log(person);
 console.groupEnd();
 
@@ -46,8 +80,8 @@ function _legacyBind_(fn, ctx) {
 }
 
 console.group('Legacy bind:');
-_legacyBind_(simple, null)('321475', 'basil@gmail.com');
-_legacyBind_(info, person)('123456', 'bob@gmail.com');
-_legacyBind_(info, person, '123456')('bob@gmail.com');
-_legacyBind_(info, person, '123456', 'bob@gmail.com')();
+_legacyBind_(simpleInfo, null)('321475', 'basil@gmail.com');
+_legacyBind_(complexInfo, person)('123456', 'bob@gmail.com');
+_legacyBind_(complexInfo, person, '123456')('bob@gmail.com');
+_legacyBind_(complexInfo, person, '123456', 'bob@gmail.com')();
 console.groupEnd();
