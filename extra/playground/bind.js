@@ -28,6 +28,14 @@ function bind(fn, ctx, ...boundArgs) {
   };
 }
 
+console.group('ES6 bind:');
+bind(simple, null)('321475', 'basil@gmail.com');
+bind(info, person)('123456', 'bob@gmail.com');
+bind(info, person, '123456')('bob@gmail.com');
+bind(info, person, '123456', 'bob@gmail.com')();
+console.log(person);
+console.groupEnd();
+
 function _legacyBind_(fn, ctx) {
   const boundArgs = Array.prototype.slice.call(arguments, 2);
   return function () {
@@ -37,14 +45,9 @@ function _legacyBind_(fn, ctx) {
   };
 }
 
-bind(simple, null)('321475', 'basil@gmail.com');
-bind(info, person)('123456', 'bob@gmail.com');
-bind(info, person, '123456')('bob@gmail.com');
-bind(info, person, '123456', 'bob@gmail.com')();
-
-console.log(person);
-
+console.group('Legacy bind:');
 _legacyBind_(simple, null)('321475', 'basil@gmail.com');
 _legacyBind_(info, person)('123456', 'bob@gmail.com');
 _legacyBind_(info, person, '123456')('bob@gmail.com');
 _legacyBind_(info, person, '123456', 'bob@gmail.com')();
+console.groupEnd();
