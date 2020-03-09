@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 'use strict';
 
 const person = {
@@ -9,7 +10,9 @@ function info(tel, email) {
 }
 
 function bind(fn, ctx, ...args) {
-  return fn.bind(ctx, ...args);
+  return function (...args) {
+
+  };
 }
 
 bind(info, person)('123456', 'bob@gmail.com');

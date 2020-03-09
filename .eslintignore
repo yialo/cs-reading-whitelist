@@ -1,6 +1,5 @@
 *.html
 dist/
 docs/
-extra/
 node_modules/
 tests/
