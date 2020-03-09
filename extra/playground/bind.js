@@ -16,12 +16,15 @@ function info(tel, email) {
 
 function bind(fn, ctx, ...boundArgs) {
   return function (...args) {
+    const allArgs = [...boundArgs, ...args];
     if (ctx === null || typeof ctx !== 'object') {
-      return fn(...boundArgs, ...args);
+      return fn(...allArgs);
     }
-    const field = Symbol('field');
-    ctx[field] = fn;
-    return ctx[field](...boundArgs, ...args);
+    const fieldId = Symbol('fieldId');
+    ctx[fieldId] = fn;
+    const result = ctx[fieldId](...allArgs);
+    delete ctx[fieldId];
+    return result;
   };
 }
 
@@ -29,3 +32,4 @@ bind(simple, null)('123456', 'bob@gmail.com');
 bind(info, person)('123456', 'bob@gmail.com');
 bind(info, person, '123456')('bob@gmail.com');
 bind(info, person, '123456', 'bob@gmail.com')();
+console.log(person);
