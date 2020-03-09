@@ -4,13 +4,15 @@
 
 const person = {
   name: 'Bob',
+  age: 25,
+  isHired: true,
 };
 
-function simpleInfo(tel, email) {
+function showSimpleInfo(tel, email) {
   console.log(`Name: Basil, tel: ${tel}, email: ${email}`);
 }
 
-function complexInfo(tel, email) {
+function showComplexInfo(tel, email) {
   console.log(`Name: ${this.name}, tel: ${tel}, email: ${email}`);
 }
 
@@ -26,62 +28,71 @@ function call(fn, ctx, ...args) {
 }
 
 console.group('call:');
-call(simpleInfo, null, '321475', 'basil@gmail.com');
-call(complexInfo, person, '123456', 'bob@gmail.com');
+call(showSimpleInfo, null, '321475', 'basil@gmail.com');
+call(showComplexInfo, person, '123456', 'bob@gmail.com');
 console.log(person);
 console.groupEnd();
 
-function apply(fn, ctx, argArr) {
+function apply(fn, ctx, argList) {
   if (ctx === null || typeof ctx !== 'object') {
-    return fn(...argArr);
+    return fn(...argList);
   }
   const fieldId = Symbol('fieldId');
   ctx[fieldId] = fn;
-  const result = ctx[fieldId](...argArr);
+  const result = ctx[fieldId](...argList);
   delete ctx[fieldId];
   return result;
 }
 
 console.group('apply:');
-apply(simpleInfo, null, ['321475', 'basil@gmail.com']);
-apply(complexInfo, person, ['123456', 'bob@gmail.com']);
+apply(showSimpleInfo, null, ['321475', 'basil@gmail.com']);
+apply(showComplexInfo, person, ['123456', 'bob@gmail.com']);
 console.log(person);
 console.groupEnd();
 
-function bind(fn, ctx, ...boundArgs) {
+function bindWithCall(fn, ctx, ...boundArgs) {
   return function (...args) {
-    const allArgs = [...boundArgs, ...args];
-    if (ctx === null || typeof ctx !== 'object') {
-      return fn(...allArgs);
-    }
-    const fieldId = Symbol('fieldId');
-    ctx[fieldId] = fn;
-    const result = ctx[fieldId](...allArgs);
-    delete ctx[fieldId];
-    return result;
+    return call(fn, ctx, ...boundArgs, ...args);
   };
 }
 
-console.group('ES6 bind:');
-bind(simpleInfo, null)('321475', 'basil@gmail.com');
-bind(complexInfo, person)('123456', 'bob@gmail.com');
-bind(complexInfo, person, '123456')('bob@gmail.com');
-bind(complexInfo, person, '123456', 'bob@gmail.com')();
+console.group('bind with call:');
+bindWithCall(showSimpleInfo, null)('321475', 'basil@gmail.com');
+bindWithCall(showComplexInfo, person)('123456', 'bob@gmail.com');
+bindWithCall(showComplexInfo, person, '123456')('bob@gmail.com');
+bindWithCall(showComplexInfo, person, '123456', 'bob@gmail.com')();
+console.log(person);
+console.groupEnd();
+
+function bindWithApply(fn, ctx, ...boundArgs) {
+  return function (...args) {
+    return apply(fn, ctx, [...boundArgs, ...args]);
+  };
+}
+
+console.group('bind with apply:');
+bindWithApply(showSimpleInfo, null)('321475', 'basil@gmail.com');
+bindWithApply(showComplexInfo, person)('123456', 'bob@gmail.com');
+bindWithApply(showComplexInfo, person, '123456')('bob@gmail.com');
+bindWithApply(showComplexInfo, person, '123456', 'bob@gmail.com')();
 console.log(person);
 console.groupEnd();
 
 function _legacyBind_(fn, ctx) {
-  const boundArgs = Array.prototype.slice.call(arguments, 2);
+  const getArgs = function (args, leftShift) {
+    return Array.prototype.slice.call(args, leftShift);
+  };
+  const boundArgs = getArgs(arguments, 2);
   return function () {
-    const args = Array.prototype.slice.call(arguments);
+    const args = getArgs(arguments);
     const allArgs = boundArgs.concat(args);
     return fn.apply(ctx, allArgs);
   };
 }
 
 console.group('Legacy bind:');
-_legacyBind_(simpleInfo, null)('321475', 'basil@gmail.com');
-_legacyBind_(complexInfo, person)('123456', 'bob@gmail.com');
-_legacyBind_(complexInfo, person, '123456')('bob@gmail.com');
-_legacyBind_(complexInfo, person, '123456', 'bob@gmail.com')();
+_legacyBind_(showSimpleInfo, null)('321475', 'basil@gmail.com');
+_legacyBind_(showComplexInfo, person)('123456', 'bob@gmail.com');
+_legacyBind_(showComplexInfo, person, '123456')('bob@gmail.com');
+_legacyBind_(showComplexInfo, person, '123456', 'bob@gmail.com')();
 console.groupEnd();
