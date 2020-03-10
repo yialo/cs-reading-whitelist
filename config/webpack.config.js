@@ -277,6 +277,8 @@ module.exports = (env = {}) => {
       alias: aliasEnum,
     },
 
+    stats: isDevelopment ? 'minimal' : 'normal',
+
     target: 'web',
   };
 };

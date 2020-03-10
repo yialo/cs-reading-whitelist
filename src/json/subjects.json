@@ -3844,6 +3844,16 @@
         "async"
       ],
       "legend": ""
+    },
+    {
+      "caption": "The 25 best programming books of all-time. A data-backed answer",
+      "url": "https://www.daolf.com/posts/best-programming-books/",
+      "lang": "en",
+      "tags": [
+        "code-quality",
+        "design-patterns"
+      ],
+      "legend": ""
     }
   ]
 }

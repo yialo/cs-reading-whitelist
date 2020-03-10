@@ -5,25 +5,18 @@ import AppContext from '../contexts/AppContext.js';
 import ControlBar from './ControlBar.jsx';
 import Subjects from './Subjects.jsx';
 import SubjectsItem from './SubjectsItem.jsx';
-import actionTypeEnum from '../action-types.js';
+import ActionCreator from '../reducers/filter-action-creator.js';
 
 function App({ filteredList }) {
   const { state, dispatch } = useContext(AppContext);
 
   function handleFilterToggle(filterName) {
-    dispatch({
-      type: actionTypeEnum.TOGGLE,
-      payload: filterName,
-    });
+    dispatch(ActionCreator.toggleFilter(filterName));
   }
 
   function handleSearch(evt) {
-    const line = evt.target.value;
-
-    dispatch({
-      type: actionTypeEnum.FILTER,
-      payload: line,
-    });
+    const textline = evt.target.value.trim();
+    dispatch(ActionCreator.filterList(textline));
   }
 
   return (
