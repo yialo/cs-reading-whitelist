@@ -171,7 +171,7 @@ rules:
     - error
     - ignorePackages
   import/first: error
-  import/group-exports: error
+  import/group-exports: 'off'
   import/max-dependencies: 'off'
   import/named: error
   import/namespace: error
@@ -1139,4 +1139,4 @@ settings:
       env:
         purpose: development
   react:
-    version: '16.12'
+    version: 'detect'
