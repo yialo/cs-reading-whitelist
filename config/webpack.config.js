@@ -277,7 +277,19 @@ module.exports = (env = {}) => {
       alias: aliasEnum,
     },
 
-    stats: isDevelopment ? 'minimal' : 'normal',
+    stats: (() => {
+      const statsConfig = {
+        colors: true,
+      };
+      if (isDevelopment) {
+        Object.assign(statsConfig, {
+          assets: false,
+          entrypoints: false,
+          modules: false,
+        });
+      }
+      return statsConfig;
+    })(),
 
     target: 'web',
   };
