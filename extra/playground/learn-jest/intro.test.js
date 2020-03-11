@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable strict, import/no-commonjs */
 'use strict';
 
 const { sum, nativeNull } = require('./intro.js');

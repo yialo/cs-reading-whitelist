@@ -1,4 +1,7 @@
-import typeEnum from '../action-types.js';
+import {
+  FILTER,
+  TOGGLE,
+} from './filter-action-creator.js';
 
 export const INITIAL_STATE = {
   target: 'caption',
@@ -6,11 +9,11 @@ export const INITIAL_STATE = {
 };
 
 const handlerDict = {
-  [typeEnum.FILTER]: (state, payload) => ({
+  [FILTER]: (state, payload) => ({
     ...state,
     searchString: payload,
   }),
-  [typeEnum.TOGGLE]: (state, payload) => ({
+  [TOGGLE]: (state, payload) => ({
     ...state,
     target: payload,
   }),

@@ -7,13 +7,13 @@
     "not dead"
   ],
   "dependencies": {
-    "@babel/core": "7.8.6",
+    "@babel/core": "7.8.7",
     "@babel/plugin-proposal-class-properties": "7.8.3",
     "@babel/plugin-transform-runtime": "7.8.3",
-    "@babel/preset-env": "7.8.6",
+    "@babel/preset-env": "7.8.7",
     "@babel/preset-react": "7.8.3",
     "@babel/preset-typescript": "7.8.3",
-    "@babel/runtime-corejs3": "7.8.4",
+    "@babel/runtime-corejs3": "7.8.7",
     "@csstools/normalize.css": "10.1.0",
     "babel-loader": "8.0.6",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
@@ -42,13 +42,14 @@
     "terser-webpack-plugin": "2.3.5",
     "typescript": "3.8.3",
     "webpack": "4.42.0",
+    "webpack-bundle-analyzer": "3.6.1",
     "webpack-cli": "3.3.11",
     "webpack-manifest-plugin": "2.2.0"
   },
   "description": "Links to useful development tools and good articles about computer science",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.21.0",
-    "@typescript-eslint/parser": "2.21.0",
+    "@typescript-eslint/eslint-plugin": "2.23.0",
+    "@typescript-eslint/parser": "2.23.0",
     "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
     "eslint-import-resolver-webpack": "0.12.1",
@@ -56,12 +57,12 @@
     "eslint-plugin-import": "2.20.1",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "7.18.3",
+    "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "2.5.0",
     "jest": "25.1.0",
     "nodemon": "2.0.2",
     "pug-lint": "2.6.0",
-    "stylelint": "13.2.0",
+    "stylelint": "13.2.1",
     "webpack-dev-server": "3.10.3"
   },
   "engines": {
@@ -78,7 +79,7 @@
     "url": "git+https://github.com/yialo/cs-reading-whitelist.git"
   },
   "scripts": {
-    "build": "npm run prod",
+    "build": "npm run prod -- --env.deploy",
     "check-types": "tsc --project ./config/tsconfig.json",
     "dev": "npm run webpack-dev-server -- --env.purpose=development",
     "dev:debug": "npm run nodemon -- inspect:dev",
@@ -92,12 +93,13 @@
     "nodemon:dev": "npm run nodemon -- dev",
     "nodemon:prod": "npm run nodemon -- prod",
     "prod": "npm run webpack -- --env.purpose=production",
+    "prod:analyze": "npm run prod -- --env.analyze",
     "prod:debug": "npm run nodemon -- inspect:prod",
+    "prod:stats": "webpack --config ./config/webpack.config.js --env.purpose=production --profile --json > ./tests/webpack-bundle-stats.json",
     "start": "npm run nodemon:dev",
-    "stats": "npm run prod -- --json --profile > ./tests/webpack-bundle-stats.json",
     "test": "jest",
     "webpack": "webpack --config ./config/webpack.config.js",
     "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js"
   },
-  "version": "0.6.6"
+  "version": "0.6.7"
 }

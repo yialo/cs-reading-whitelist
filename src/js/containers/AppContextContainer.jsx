@@ -17,7 +17,6 @@ function AppContextContainer({ list }) {
     } else {
       filteredList = subjectList.filter((item) => {
         const matcher = new RegExp(str, 'gi');
-
         switch (state.target) {
           case 'caption':
             return item.caption.match(matcher);
