@@ -3844,6 +3844,36 @@
         "async"
       ],
       "legend": ""
+    },
+    {
+      "caption": "The 25 best programming books of all-time. A data-backed answer",
+      "url": "https://www.daolf.com/posts/best-programming-books/",
+      "lang": "en",
+      "tags": [
+        "code-quality",
+        "design-patterns"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Beware: React setState is asynchronous!",
+      "url": "https://medium.com/@wereHamster/beware-react-setstate-is-asynchronous-ce87ef1a9cf3",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Rebuilding Redux with Hooks and Context",
+      "url": "https://medium.com/maxime-heckel/rebuilding-redux-with-hooks-and-context-e16b59faf51c",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react-hooks",
+        "redux"
+      ],
+      "legend": ""
     }
   ]
 }

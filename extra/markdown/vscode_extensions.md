@@ -1,7 +1,6 @@
-# Extensions Added
+# VS Code extensions
 
 * Bookmarks
-* bracket-pair-colorizer-2
 * code-settings-sync
 * debugger-for-chrome
 * dotenv
@@ -10,8 +9,11 @@
 * highlight-matching-tag
 * HTMLHint
 * indent-rainbow
+* jest-snippets
 * language-postcss
+* language-stylus
 * LogFileHighlighter
+* markdown-all-in-one
 * material-icon-theme
 * npm-intellisense
 * output-colorizer
@@ -19,8 +21,8 @@
 * prettier-vscode
 * project-manager
 * quick-run-panel
+* rainbow-brackets
 * sort-lines
-* stylelint
 * todo-tree
 * twig-language-2
 * vetur
@@ -32,12 +34,11 @@
 * vscode-language-pack-ru
 * vscode-markdownlint
 * vscode-puglint
-* vscode-scss
 * vscode-sort-json
+* vscode-stylelint
 * vscode-surround
 * vscode-svgviewer
 * vscode-template-literal-editor
 * vscode-versionlens
 * vscode-yaml-sort
-* vscodeintellicode
 * xml

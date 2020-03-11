@@ -10,11 +10,16 @@ const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
-  const { purpose } = env;
+  const {
+    analyze: needAnalyze,
+    deploy: needDeploy,
+    purpose,
+  } = env;
 
   process.env.BABEL_ENV = purpose;
   process.env.NODE_ENV = purpose;
@@ -28,7 +33,7 @@ module.exports = (env = {}) => {
 
   const rootPath = path.resolve(__dirname, '../');
   const configPath = path.join(rootPath, 'config');
-  const distPath = path.join(rootPath, isProduction ? 'docs' : 'dist');
+  const distPath = path.join(rootPath, needDeploy ? 'docs' : 'dist');
   const srcPath = path.join(rootPath, 'src');
 
   const pathEnum = {
@@ -83,37 +88,38 @@ module.exports = (env = {}) => {
 
     module: {
       rules: (() => {
-        const scriptHandlerConfig = {
+        const scriptLoaderRule = {
           test: /\.(?:j|t)sx?$/,
           exclude: '/node_modules/',
-          use: [
-            {
-              loader: 'babel-loader',
-              options: {
-                configFile: pathEnum.BABEL_CONFIG,
-              },
-            },
-          ],
+          loader: 'babel-loader',
+          options: {
+            configFile: pathEnum.BABEL_CONFIG,
+          },
         };
 
         if (isTest) {
-          return [scriptHandlerConfig];
+          return [scriptLoaderRule];
         }
 
+        const getFileLoaderRule = ({ testRegexp, outputSubdir }) => ({
+          test: testRegexp,
+          loader: 'file-loader',
+          options: {
+            name: `[name]${assetHash}.[ext]`,
+            outputPath: `assets/${outputSubdir}`,
+          },
+        });
+
         return [
-          scriptHandlerConfig,
+          scriptLoaderRule,
           {
             test: /\.pug$/,
             exclude: '/node_modules/',
-            use: [
-              {
-                loader: 'pug-loader',
-                options: {
-                  pretty: !isProduction,
-                  self: true,
-                },
-              },
-            ],
+            loader: 'pug-loader',
+            options: {
+              pretty: !isProduction,
+              self: true,
+            },
           },
           {
             test: /\.css$/,
@@ -141,30 +147,18 @@ module.exports = (env = {}) => {
               },
             ],
           },
-          {
-            test: /\.(jpe?g|png|svg)$/,
-            loader: 'file-loader',
-            options: {
-              name: `[name]${assetHash}.[ext]`,
-              outputPath: 'assets/img',
-            },
-          },
-          {
-            test: /\.ico$/,
-            loader: 'file-loader',
-            options: {
-              name: `[name]${assetHash}.[ext]`,
-              outputPath: 'assets/favicons',
-            },
-          },
-          {
-            test: /\.woff2?$/,
-            loader: 'file-loader',
-            options: {
-              name: `[name]${assetHash}.[ext]`,
-              outputPath: 'assets/fonts',
-            },
-          },
+          getFileLoaderRule({
+            testRegexp: /\.(jpe?g|png|svg)$/,
+            outputSubdir: 'img',
+          }),
+          getFileLoaderRule({
+            testRegexp: /\.ico$/,
+            outputSubdir: 'favicons',
+          }),
+          getFileLoaderRule({
+            testRegexp: /\.woff2?$/,
+            outputSubdir: 'fonts',
+          }),
         ];
       })(),
     },
@@ -179,6 +173,7 @@ module.exports = (env = {}) => {
           chunks: 'all',
           minChunks: 2,
           cacheGroups: {
+            default: false,
             vendor: {
               name: 'vendors',
               test: /[\\/]node_modules[\\/]/,
@@ -266,8 +261,13 @@ module.exports = (env = {}) => {
             filter: (descriptor) => descriptor.isChunk,
           }),
         ];
-
         output.push(...mainPlugins);
+      }
+
+      if (needAnalyze) {
+        output.push(new BundleAnalyzerPlugin({
+          analyzerPort: 8889,
+        }));
       }
 
       return output;
@@ -277,11 +277,19 @@ module.exports = (env = {}) => {
       alias: aliasEnum,
     },
 
-    stats: {
-      assets: false,
-      entrypoints: false,
-      modules: false,
-    },
+    stats: (() => {
+      const statsConfig = {
+        colors: true,
+      };
+      if (isDevelopment) {
+        Object.assign(statsConfig, {
+          assets: false,
+          entrypoints: false,
+          modules: false,
+        });
+      }
+      return statsConfig;
+    })(),
 
     target: 'web',
   };
