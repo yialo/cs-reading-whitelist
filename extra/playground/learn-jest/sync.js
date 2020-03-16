@@ -11,7 +11,18 @@ module.exports = class Lodash {
     const result = {};
 
     array.forEach((it) => {
-      const key = (prop === undefined) ? it : prop(it);
+      let key;
+
+      if (prop === undefined) {
+        key = it;
+      } else if (typeof prop === 'function') {
+        key = prop(it);
+      } else if (typeof prop === 'string' && it[prop] !== undefined) {
+        key = it[prop];
+      } else {
+        throw new Error('Unexpected iteratee');
+      }
+
       if (!result[key]) {
         result[key] = [];
       }

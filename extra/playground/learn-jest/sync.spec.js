@@ -60,6 +60,15 @@ describe('Lodash', () => {
           'false': [-1.52, 0.55, 0.55],
         },
       ],
+      [
+        ['one', 'two', 'three', 'four'],
+        'length',
+        {
+          3: ['one', 'two'],
+          4: ['four'],
+          5: ['three'],
+        },
+      ],
     ])('should group items of array %O passed through %O', (array, iteratee, result) => {
       expect(_.groupBy(array, iteratee)).toEqual(result);
     });
@@ -73,6 +82,14 @@ describe('Lodash', () => {
         5: [5],
       };
       expect(_.groupBy(array)).toEqual(result);
+    });
+
+    test('should throw an error if type of iteratee distinct from Function or String', () => {
+      const array = [1, 2, 3, 4, 5];
+      const getBadResult = () => {
+        _.groupBy(array, 'length');
+      };
+      expect(getBadResult).toThrow();
     });
   });
 });
