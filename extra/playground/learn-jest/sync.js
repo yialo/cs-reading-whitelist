@@ -11,7 +11,7 @@ module.exports = class Lodash {
     const result = {};
 
     array.forEach((it) => {
-      const key = prop ? prop(it) : it;
+      const key = (prop === undefined) ? it : prop(it);
       if (!result[key]) {
         result[key] = [];
       }
