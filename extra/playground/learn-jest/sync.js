@@ -8,11 +8,8 @@ module.exports = class Lodash {
   }
 
   groupBy(array, prop) {
-    const result = {};
-
-    array.forEach((it) => {
+    return array.reduce((acc, it) => {
       let key;
-
       if (prop === undefined) {
         key = it;
       } else if (typeof prop === 'function') {
@@ -23,12 +20,11 @@ module.exports = class Lodash {
         throw new Error('Unexpected iteratee');
       }
 
-      if (!result[key]) {
-        result[key] = [];
+      if (!acc[key]) {
+        acc[key] = [];
       }
-      result[key].push(it);
-    });
-
-    return result;
+      acc[key].push(it);
+      return acc;
+    }, {});
   }
 };
