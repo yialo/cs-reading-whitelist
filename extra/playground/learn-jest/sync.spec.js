@@ -31,12 +31,9 @@ describe('Lodash', () => {
     });
 
     test('should not contain falsy values', () => {
-      expect(_.compact(array)).not.toContain(false);
-      expect(_.compact(array)).not.toContain(0);
-      expect(_.compact(array)).not.toContain('');
-      expect(_.compact(array)).not.toContain(null);
-      expect(_.compact(array)).not.toContain(undefined);
-      expect(_.compact(array)).not.toContain(Number.NaN);
+      [false, 0, '', null, undefined, Number.NaN].forEach((falsyValue) => {
+        expect(_.compact(array)).not.toContain(falsyValue);
+      });
     });
   });
 
@@ -56,15 +53,14 @@ describe('Lodash', () => {
         },
       ],
       [
-        ['-1.52', '0.55', '-3', '0.55'],
-        Number.parseFloat,
+        [16, -1.52, 0.55, 0, -3, 0.55],
+        Number.isInteger,
         {
-          '-1.52': ['-1.52'],
-          '0.55': ['0.55', '0.55'],
-          '-3': ['-3'],
+          'true': [16, 0, -3],
+          'false': [-1.52, 0.55, 0.55],
         },
       ],
-    ])('should group items of array %O by %O', (array, iteratee, result) => {
+    ])('should group items of array %O passed through %O', (array, iteratee, result) => {
       expect(_.groupBy(array, iteratee)).toEqual(result);
     });
 
