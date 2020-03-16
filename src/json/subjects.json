@@ -3874,6 +3874,15 @@
         "redux"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Каково оно учить JavaScript в 2016",
+      "url": "https://habr.com/ru/post/312022/",
+      "lang": "ru",
+      "tags": [
+        "fun"
+      ],
+      "legend": ""
     }
   ]
 }
