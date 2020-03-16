@@ -30,7 +30,7 @@ describe('Lodash', () => {
       expect(_.compact(array)).toEqual(result);
     });
 
-    test('should not contain falsy values', () => {
+    test('should NOT contain falsy values', () => {
       [false, 0, '', null, undefined, Number.NaN].forEach((falsyValue) => {
         expect(_.compact(array)).not.toContain(falsyValue);
       });
@@ -91,12 +91,17 @@ describe('Lodash', () => {
       };
       expect(getBadResult).toThrow();
     });
+
     test('should throw an error if iteratee is of String type but array items have no properties with such key', () => {
       const array = [1, 2, 3, 4, 5];
       const getBadResult = () => {
         _.groupBy(array, 'length');
       };
       expect(getBadResult).toThrow();
+    });
+
+    test('should NOT return an array', () => {
+      expect(_.groupBy([], Math.trunc)).not.toBeInstanceOf(Array);
     });
   });
 });
