@@ -87,6 +87,13 @@ describe('Lodash', () => {
     test('should throw an error if type of iteratee distinct from Function or String', () => {
       const array = [1, 2, 3, 4, 5];
       const getBadResult = () => {
+        _.groupBy(array, 54);
+      };
+      expect(getBadResult).toThrow();
+    });
+    test('should throw an error if iteratee is of String type but array items have no properties with such key', () => {
+      const array = [1, 2, 3, 4, 5];
+      const getBadResult = () => {
         _.groupBy(array, 'length');
       };
       expect(getBadResult).toThrow();
