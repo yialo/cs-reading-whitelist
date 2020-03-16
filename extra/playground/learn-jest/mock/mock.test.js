@@ -34,12 +34,12 @@ describe('Map function', () => {
   test('should fn to work', () => {
     fn
       .mockReturnValueOnce(100)
-      .mockReturnValueOnce(200)
-      .mockReturnValue('Bob');
+      .mockReturnValue('Bob')
+      .mockReturnValueOnce(324);
 
-    expect(fn()).toBe(100);
-    expect(fn()).toBe(200);
+    expect(fn()).toEqual(100);
+    expect(fn()).toBe(324);
     expect(fn()).toBe('Bob');
-    expect(fn()).toBe('Bob');
+    expect(fn()).toEqual('Bob');
   });
 });
