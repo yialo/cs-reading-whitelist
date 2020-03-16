@@ -45,14 +45,25 @@ describe('Lodash', () => {
       expect(_.groupBy).toBeDefined();
     });
 
-    // test('should group array items by Math.floor', () => {
-    //   const array = [2.2, 3.5, 4.7, 3.1];
-    //   const result = {
-    //     2: [2.2],
-    //     3: [3.5, 3.1],
-    //     4: [4.7],
-    //   };
-    //   expect(_.groupBy(array, Math.floor)).toEqual(result);
-    // });
+    test('should group array items by Math.floor', () => {
+      const array = [2.2, 3.5, 4.7, 3.1];
+      const result = {
+        2: [2.2],
+        3: [3.5, 3.1],
+        4: [4.7],
+      };
+      expect(_.groupBy(array, Math.floor)).toEqual(result);
+    });
+
+    test('should group array by repeating items', () => {
+      const array = [3, 5, 2, 4, 2, 3];
+      const result = {
+        2: [2, 2],
+        3: [3, 3],
+        4: [4],
+        5: [5],
+      };
+      expect(_.groupBy(array)).toEqual(result);
+    });
   });
 });
