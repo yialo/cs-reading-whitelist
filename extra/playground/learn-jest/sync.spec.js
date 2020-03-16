@@ -3,13 +3,21 @@
 
 const Lodash = require('./sync.js');
 
+let _;
+
 describe('Lodash', () => {
-  let _;
+  beforeEach(() => {
+    _ = new Lodash();
+  });
+
+  afterEach(() => {
+    _ = undefined;
+  });
+
   describe('Lodash: compact', () => {
     let array;
 
     beforeEach(() => {
-      _ = new Lodash();
       array = [false, 32, 0, true, '', null, undefined, Number.NaN, 'hello'];
     });
 
