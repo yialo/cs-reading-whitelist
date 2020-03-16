@@ -13,14 +13,11 @@ describe('Ajax: echo', () => {
   });
 
   test('should await value in async function', async () => {
-    const result = await Ajax.echo(testString);
-    expect(result).toBe(testString);
+    await expect(Ajax.echo(testString)).resolves.toBe(testString);
   });
 
   test('should return rejected promise', () => {
-    return Ajax.echo().catch((err) => {
-      expect(err).toBeInstanceOf(Error);
-    });
+    return expect(Ajax.echo()).rejects.toThrow('Promise rejected');
   });
 
   test('should throw an error in async function', async () => {
