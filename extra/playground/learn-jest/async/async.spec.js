@@ -24,8 +24,9 @@ describe('Ajax: echo', () => {
   });
 
   test('should throw an error in async function', async () => {
+    expect.assertions(1);
     try {
-      await Ajax.echo(testString);
+      await Ajax.echo();
     } catch (err) {
       expect(err.message).toBe('Promise rejected');
     }
