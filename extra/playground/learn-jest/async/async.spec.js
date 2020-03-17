@@ -1,10 +1,10 @@
 /* eslint-disable strict, import/no-commonjs, promise/catch-or-return */
 'use strict';
 
+jest.mock('axios');
+
 const axios = require('axios');
 const Ajax = require('./async.js');
-
-jest.mock('axios');
 
 describe('Ajax: echo', () => {
   const testString = 'some data';
@@ -37,19 +37,20 @@ describe('Ajax: get', () => {
   let todoList;
 
   beforeEach(() => {
-    todoList = [{ id: 1, title: 'Todo #1', isComplete: false }];
-    response = {
-      data: {
-        todoList,
+    todoList = [
+      {
+        id: 1,
+        title: 'Todo #1',
+        isComplete: false,
       },
+    ];
+    response = {
+      data: todoList,
     };
   });
 
-  // TODO: figure out why it works
   test('should return data from backend', () => {
     axios.get.mockReturnValue(response);
-    return Ajax.get().then((data) => {
-      expect(data.todoList).toEqual(todoList);
-    });
+    return expect(Ajax.get()).resolves.toEqual(todoList);
   });
 });
