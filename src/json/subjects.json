@@ -3883,6 +3883,17 @@
         "fun"
       ],
       "legend": ""
+    },
+    {
+      "caption": "React Redux: performance considerations when dispatching multiple actions",
+      "url": "https://medium.com/unsplash/react-redux-performance-considerations-when-dispatching-multiple-actions-5162047bf8a6",
+      "lang": "en",
+      "tags": [
+        "react",
+        "redux",
+        "performance"
+      ],
+      "legend": ""
     }
   ]
 }
