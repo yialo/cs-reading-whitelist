@@ -77,6 +77,7 @@
   ],
   "license": "MIT",
   "name": "cs-reading-whitelist",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yialo/cs-reading-whitelist.git"
