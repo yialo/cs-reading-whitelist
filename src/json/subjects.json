@@ -3894,6 +3894,17 @@
         "performance"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Повышение производительности React и Redux с Reselect",
+      "url": "https://medium.com/devschacht/neil-fenton-improving-react-and-redux-performance-with-reselect-40f1d3efba89",
+      "lang": "ru",
+      "tags": [
+        "react",
+        "redux",
+        "performance"
+      ],
+      "legend": ""
     }
   ]
 }
