@@ -101,7 +101,7 @@
     "prod:debug": "npm run nodemon -- inspect:prod",
     "prod:stats": "webpack --config ./config/webpack.config.js --env.purpose=production --profile --json > ./tests/webpack-bundle-stats.json",
     "start": "npm run nodemon:dev",
-    "test": "jest",
+    "test": "jest --config=./config/jest.config.js",
     "webpack": "webpack --config ./config/webpack.config.js",
     "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js"
   },
