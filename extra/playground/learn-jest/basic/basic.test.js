@@ -1,7 +1,7 @@
 /* eslint-disable strict, import/no-commonjs */
 'use strict';
 
-const { sum, nativeNull } = require('./intro.js');
+const { sum, nativeNull } = require('./basic.js');
 
 describe('Sums two numeric values', () => {
   test('should return sum of two values', () => {

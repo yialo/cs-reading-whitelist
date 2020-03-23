@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useReducer } from 'react';
+// import { createStore } from 'redux';
+// import { Provider } from 'react-redux';
 
 import App from '../components/App.jsx';
 import AppContext from '../contexts/AppContext.js';

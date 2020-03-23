@@ -49,7 +49,7 @@ rules:
   accessor-pairs: 'off'
   array-bracket-newline:
     - error
-    - multiline: true
+    - consistent
   array-bracket-spacing:
     - error
     - never
