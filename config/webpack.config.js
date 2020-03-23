@@ -12,7 +12,7 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { DefinePlugin, ProgressPlugin } = require('webpack');
+const { ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
   const {
@@ -29,7 +29,6 @@ module.exports = (env = {}) => {
   const isTest = (purpose === 'test');
 
   const assetHash = isProduction ? '.[contenthash]' : '';
-  const publicPath = isProduction ? 'https://yialo.github.io/cs-reading-whitelist/' : '/';
 
   const rootPath = path.resolve(__dirname, '../');
   const configPath = path.join(rootPath, 'config');
@@ -53,6 +52,8 @@ module.exports = (env = {}) => {
   };
 
   dotEnv.config({ path: pathEnum.LOCAL_ENV_FILE });
+
+  const publicPath = isProduction ? process.env.DEPLOY_PUBLIC_PATH : '/';
 
   return {
     context: pathEnum.SRC,
@@ -241,9 +242,6 @@ module.exports = (env = {}) => {
         new CaseSensitivePathsPlugin(),
         new CleanWebpackPlugin({
           cleanStaleWebpackAssets: false,
-        }),
-        new DefinePlugin({
-          'publicPath': JSON.stringify(publicPath),
         }),
         new ProgressPlugin(),
       ];
