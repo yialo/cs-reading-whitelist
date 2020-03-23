@@ -15,7 +15,7 @@ function App({ filteredList }) {
   }
 
   function handleSearch(evt) {
-    const textline = evt.target.value.trim();
+    const textline = evt.target.value;
     dispatch(ActionCreator.filterList(textline));
   }
 
