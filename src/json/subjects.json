@@ -3915,6 +3915,15 @@
         "redux"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Исследование бездны null и undefined в JavaScript",
+      "url": "https://frontender.info/exploring-the-abyss-of-null-and-undefined-in-javascript/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
     }
   ]
 }
