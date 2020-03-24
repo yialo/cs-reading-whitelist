@@ -21,9 +21,11 @@
 }
 
 .s_visually-hidden {
-  &:not(:active, :focus),
-  &:matches(input[type="checkbox"]),
-  &:matches(input[type="radio"]) {
+  &:matches(
+    input[type="checkbox"],
+    input[type="radio"],
+    :not(:active, :focus)
+  ) {
     @include visually-hiding();
   }
 }
