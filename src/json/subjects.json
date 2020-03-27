@@ -3924,6 +3924,16 @@
         "javascript"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Arrow Functions in Class Properties Might Not Be As Great As We Think",
+      "url": "https://medium.com/@charpeni/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think-3b3551c440b1",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "performance"
+      ],
+      "legend": ""
     }
   ]
 }
