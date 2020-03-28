@@ -4,7 +4,7 @@ import React, { useContext } from 'react';
 import AppContext from '../../contexts/AppContext.js';
 import ControlBar from '../ControlBar/index.jsx';
 import Subjects from '../Subjects/index.jsx';
-import SubjectsItem from '../SubjectsItem/index.jsx';
+import Subject from '../Subject/index.jsx';
 import ActionCreator from '../../reducers/filter-action-creator.js';
 
 function App({ filteredList }) {
@@ -30,16 +30,24 @@ function App({ filteredList }) {
           searchString={state.searchString}
         />
         <Subjects>
-          {filteredList.map((it, i) => (
-            <SubjectsItem
-              key={`${it.lang}-${i + 1}`}
-              caption={it.caption}
-              lang={it.lang}
-              legend={it.legend}
-              tags={it.tags}
-              url={it.url}
-            />
-          ))}
+          {
+            filteredList.length > 0 ? (
+              <ul className="s_list subjects__list">
+                {
+                  filteredList.map((it, i) => (
+                    <Subject
+                      key={`${it.lang}-${i + 1}`}
+                      caption={it.caption}
+                      lang={it.lang}
+                      legend={it.legend}
+                      tags={it.tags}
+                      url={it.url}
+                    />
+                  ))
+                }
+              </ul>
+            ) : <p className="subjects__fallback-message">Ничего не найдено</p>
+          }
         </Subjects>
       </main>
     </React.Fragment>

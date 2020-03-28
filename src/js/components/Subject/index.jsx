@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-function SubjectsItem(props) {
+function Subject(props) {
   return (
     <li className="subjects__item">
       <a className="subjects__link" href={props.url} lang={props.lang}>{props.caption}</a>
@@ -21,12 +21,12 @@ function SubjectsItem(props) {
   );
 }
 
-SubjectsItem.defaultProps = {
+Subject.defaultProps = {
   legend: '',
   tags: [],
 };
 
-SubjectsItem.propTypes = {
+Subject.propTypes = {
   caption: PropTypes.string.isRequired,
   lang: PropTypes.string.isRequired,
   legend: PropTypes.string,
@@ -34,4 +34,4 @@ SubjectsItem.propTypes = {
   url: PropTypes.string.isRequired,
 };
 
-export default SubjectsItem;
+export default Subject;

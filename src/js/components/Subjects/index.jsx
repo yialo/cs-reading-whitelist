@@ -4,9 +4,7 @@ import React from 'react';
 function Subjects(props) {
   return (
     <div className="subjects page-content__subjects">
-      <ul className="s_list subjects__list">
-        {props.children}
-      </ul>
+      {props.children}
     </div>
   );
 }
