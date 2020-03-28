@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import React, { useContext } from 'react';
 
-import AppContext from '../contexts/AppContext.js';
-import ControlBar from './ControlBar.jsx';
-import Subjects from './Subjects.jsx';
-import SubjectsItem from './SubjectsItem.jsx';
-import ActionCreator from '../reducers/filter-action-creator.js';
+import AppContext from '../../contexts/AppContext.js';
+import ControlBar from '../ControlBar/index.jsx';
+import Subjects from '../Subjects/index.jsx';
+import SubjectsItem from '../SubjectsItem/index.jsx';
+import ActionCreator from '../../reducers/filter-action-creator.js';
 
 function App({ filteredList }) {
   const { state, dispatch } = useContext(AppContext);

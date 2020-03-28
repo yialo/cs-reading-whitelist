@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import TextInput from './TextInput.jsx';
+import TextInput from '../TextInput/index.jsx';
 
 const filterDict = {
   'caption': 'заголовок',
