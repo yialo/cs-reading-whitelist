@@ -63,7 +63,7 @@ module.exports = (env = {}) => {
         return {
           host: process.env.WDS_HOST,
           port: process.env.WDS_PORT,
-          hot: true,
+          hot: false,
           inline: true,
           overlay: true,
           writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
@@ -119,7 +119,6 @@ module.exports = (env = {}) => {
             loader: 'pug-loader',
             options: {
               pretty: !isProduction,
-              self: true,
             },
           },
           {
