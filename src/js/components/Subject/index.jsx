@@ -2,16 +2,23 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 function Subject(props) {
+  const {
+    caption,
+    lang,
+    legend,
+    tags,
+    url,
+  } = props;
   return (
     <li className="subjects__item">
-      <a className="subjects__link" href={props.url} lang={props.lang}>{props.caption}</a>
+      <a className="subjects__link" href={url} lang={lang}>{caption}</a>
       {' '}
-      <span className={`subjects__lang-badge subjects__lang-badge--${props.lang}`}>
-        {props.lang}
+      <span className={`subjects__lang-badge subjects__lang-badge--${lang}`}>
+        {lang}
       </span>
-      {props.legend ? ` - ${props.legend}` : ''}
+      {legend ? ` - ${legend}` : ''}
       <ul className="s_list subjects__tags">
-        {props.tags.map((tag, i) => (
+        {tags.map((tag, i) => (
           <li className="subjects__tag" key={i}>
             {` #${tag}`}
           </li>

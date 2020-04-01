@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-function Subjects(props) {
+function Subjects({ children }) {
   return (
     <div className="subjects page-content__subjects">
-      {props.children}
+      {children}
     </div>
   );
 }
