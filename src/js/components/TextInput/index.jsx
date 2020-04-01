@@ -2,16 +2,24 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 function TextInput(props) {
+  const {
+    classNames,
+    inputMode,
+    legend,
+    onChange,
+    value,
+  } = props;
   return (
     <label
-      className={['text-input'].concat(props.classNames).join(' ')}
-      aria-label={props.legend}
+      className={['text-input'].concat(classNames).join(' ')}
+      aria-label={legend}
     >
       <input
         className="s_input text-input__field"
-        onChange={props.onChange}
-        type={props.type}
-        value={props.value}
+        onChange={onChange}
+        type="text"
+        inputMode={inputMode}
+        value={value}
       />
     </label>
   );
@@ -26,9 +34,9 @@ TextInput.propTypes = {
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.string,
   ]),
-  onChange: PropTypes.func.isRequired,
+  inputMode: PropTypes.string.isRequired,
   legend: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
 };
 

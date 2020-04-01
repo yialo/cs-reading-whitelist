@@ -5,25 +5,17 @@
   font-size: 20px;
 }
 
+.subjects__fallback-message {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .subjects__item {
   line-height: 1.25;
 
   @nest .subjects__list > * + & {
     margin-top: 16px;
   }
-}
-
-.subjects__link {
-  color: midnightblue;
-}
-
-.subjects__tags {
-  display: inline;
-  font-style: italic;
-}
-
-.subjects__tag {
-  display: inline;
 }
 
 .subjects__lang-badge {
@@ -43,4 +35,17 @@
 
 .subjects__lang-badge--ru {
   background-color: #80cbc4;
+}
+
+.subjects__link {
+  color: midnightblue;
+}
+
+.subjects__tag {
+  display: inline;
+}
+
+.subjects__tags {
+  display: inline;
+  font-style: italic;
 }

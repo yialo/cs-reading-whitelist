@@ -26,7 +26,6 @@ module.exports = (env = {}) => {
 
   const isDevelopment = (purpose === 'development');
   const isProduction = (purpose === 'production');
-  const isTest = (purpose === 'test');
 
   const assetHash = isProduction ? '.[contenthash]' : '';
 
@@ -43,8 +42,6 @@ module.exports = (env = {}) => {
     BABEL_CONFIG: path.join(configPath, 'babel.config.js'),
     LOCAL_ENV_FILE: path.join(rootPath, '.env.local'),
     PUG_TEMPLATE: path.join(srcPath, 'pug/pages/index.pug'),
-    TEST_INPUT: path.join(srcPath, 'tests.js'),
-    TEST_OUTPUT: path.join(rootPath, 'tests'),
   };
 
   const aliasEnum = {
@@ -63,7 +60,7 @@ module.exports = (env = {}) => {
         return {
           host: process.env.WDS_HOST,
           port: process.env.WDS_PORT,
-          hot: true,
+          hot: false,
           inline: true,
           overlay: true,
           writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
@@ -75,15 +72,9 @@ module.exports = (env = {}) => {
 
     devtool: isDevelopment ? 'eval-source-map' : false,
 
-    entry: (() => {
-      if (isTest) {
-        return pathEnum.TEST_INPUT;
-      }
-
-      return {
-        'app': pathEnum.SRC,
-      };
-    })(),
+    entry: {
+      'app': pathEnum.SRC,
+    },
 
     mode: (isDevelopment || isProduction) ? purpose : 'none',
 
@@ -98,9 +89,41 @@ module.exports = (env = {}) => {
           },
         };
 
-        if (isTest) {
-          return [scriptLoaderRule];
-        }
+        const templateLoaderRule = {
+          test: /\.pug$/,
+          exclude: '/node_modules/',
+          loader: 'pug-loader',
+          options: {
+            pretty: !isProduction,
+          },
+        };
+
+        const styleLoaderRule = {
+          test: /\.css$/,
+          exclude: '/node_modules/',
+          use: [
+            (isProduction ? CssExtractPlugin.loader : 'style-loader'),
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true,
+                importLoaders: 1,
+              },
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true,
+                config: {
+                  ctx: {
+                    pathAliasEnum: aliasEnum,
+                  },
+                  path: pathEnum.CONFIG,
+                },
+              },
+            },
+          ],
+        };
 
         const getFileLoaderRule = ({ testRegexp, outputSubdir }) => ({
           test: testRegexp,
@@ -113,41 +136,8 @@ module.exports = (env = {}) => {
 
         return [
           scriptLoaderRule,
-          {
-            test: /\.pug$/,
-            exclude: '/node_modules/',
-            loader: 'pug-loader',
-            options: {
-              pretty: !isProduction,
-              self: true,
-            },
-          },
-          {
-            test: /\.css$/,
-            exclude: '/node_modules/',
-            use: [
-              (isProduction ? CssExtractPlugin.loader : 'style-loader'),
-              {
-                loader: 'css-loader',
-                options: {
-                  sourceMap: true,
-                  importLoaders: 1,
-                },
-              },
-              {
-                loader: 'postcss-loader',
-                options: {
-                  sourceMap: true,
-                  config: {
-                    ctx: {
-                      pathAliasEnum: aliasEnum,
-                    },
-                    path: pathEnum.CONFIG,
-                  },
-                },
-              },
-            ],
-          },
+          templateLoaderRule,
+          styleLoaderRule,
           getFileLoaderRule({
             testRegexp: /\.(jpe?g|png|svg)$/,
             outputSubdir: 'img',
@@ -165,12 +155,9 @@ module.exports = (env = {}) => {
     },
 
     optimization: (() => {
-      const output = {
+      const optimizationConfig = {
         noEmitOnErrors: true,
-      };
-
-      if (!isTest) {
-        output.splitChunks = {
+        splitChunks: {
           chunks: 'all',
           minChunks: 2,
           cacheGroups: {
@@ -181,11 +168,10 @@ module.exports = (env = {}) => {
               enforce: true,
             },
           },
-        };
-      }
-
+        },
+      };
       if (isProduction) {
-        output.minimizer = [
+        optimizationConfig.minimizer = [
           new TerserPlugin({
             extractComments: false,
             terserOptions: {
@@ -218,57 +204,39 @@ module.exports = (env = {}) => {
           }),
         ];
       }
-
-      return output;
+      return optimizationConfig;
     })(),
 
-    output: (() => {
-      if (isTest) {
-        return {
-          filename: 'test_output.js',
-          path: pathEnum.TEST_OUTPUT,
-        };
-      }
-
-      return {
-        filename: `assets/js/[name]${assetHash}.js`,
-        path: pathEnum.DIST,
-        publicPath,
-      };
-    })(),
+    output: {
+      filename: `assets/js/[name]${assetHash}.js`,
+      path: pathEnum.DIST,
+      publicPath,
+    },
 
     plugins: (() => {
-      const output = [
+      const pluginList = [
         new CaseSensitivePathsPlugin(),
         new CleanWebpackPlugin({
           cleanStaleWebpackAssets: false,
         }),
         new ProgressPlugin(),
+        new CssExtractPlugin({
+          filename: `assets/css/[name]${assetHash}.css`,
+        }),
+        new HtmlPlugin({
+          filename: 'index.html',
+          template: pathEnum.PUG_TEMPLATE,
+        }),
+        new ManifestPlugin({
+          filter: (descriptor) => descriptor.isChunk,
+        }),
       ];
-
-      if (!isTest) {
-        const mainPlugins = [
-          new CssExtractPlugin({
-            filename: `assets/css/[name]${assetHash}.css`,
-          }),
-          new HtmlPlugin({
-            filename: 'index.html',
-            template: pathEnum.PUG_TEMPLATE,
-          }),
-          new ManifestPlugin({
-            filter: (descriptor) => descriptor.isChunk,
-          }),
-        ];
-        output.push(...mainPlugins);
-      }
-
       if (needAnalyze) {
-        output.push(new BundleAnalyzerPlugin({
+        pluginList.push(new BundleAnalyzerPlugin({
           analyzerPort: 8889,
         }));
       }
-
-      return output;
+      return pluginList;
     })(),
 
     resolve: {

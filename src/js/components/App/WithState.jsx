@@ -3,11 +3,11 @@ import React, { useReducer } from 'react';
 // import { createStore } from 'redux';
 // import { Provider } from 'react-redux';
 
-import App from '../components/App.jsx';
-import AppContext from '../contexts/AppContext.js';
-import filterReducer, { INITIAL_STATE } from '../reducers/filter-reducer.js';
+import App from './index.jsx';
+import AppContext from '../../contexts/AppContext.js';
+import filterReducer, { INITIAL_STATE } from '../../reducers/filter-reducer.js';
 
-function AppContextContainer({ list }) {
+function WithState({ list }) {
   const [state, dispatch] = useReducer(filterReducer, { ...INITIAL_STATE });
 
   const subjectList = list;
@@ -40,7 +40,7 @@ function AppContextContainer({ list }) {
   );
 }
 
-AppContextContainer.propTypes = {
+WithState.propTypes = {
   list: PropTypes.arrayOf(
       PropTypes.objectOf(
           PropTypes.oneOfType([
@@ -52,4 +52,6 @@ AppContextContainer.propTypes = {
     .isRequired,
 };
 
-export default AppContextContainer;
+WithState.displayName = `withState(App)`;
+
+export default WithState;
