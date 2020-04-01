@@ -4,9 +4,9 @@ import React from 'react';
 function TextInput(props) {
   const {
     classNames,
+    inputMode,
     legend,
     onChange,
-    type,
     value,
   } = props;
   return (
@@ -17,7 +17,8 @@ function TextInput(props) {
       <input
         className="s_input text-input__field"
         onChange={onChange}
-        type={type}
+        type="text"
+        inputMode={inputMode}
         value={value}
       />
     </label>
@@ -33,9 +34,9 @@ TextInput.propTypes = {
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.string,
   ]),
+  inputMode: PropTypes.string.isRequired,
   legend: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  type: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
 };
 

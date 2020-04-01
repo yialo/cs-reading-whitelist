@@ -15,8 +15,14 @@ function ControlBar(props) {
     onSearch,
     searchString,
   } = props;
+
   return (
-    <form className="control-bar page-content__filter">
+    <form
+      className="control-bar page-content__filter"
+      onSubmit={(evt) => {
+        evt.preventDefault();
+      }}
+    >
       <div className="filter control-bar__filter">
         <p className="filter__tip">Тип сортировки:</p>
         <div className="filter__controls">
@@ -24,10 +30,11 @@ function ControlBar(props) {
             const isCurrent = (filterTarget === name);
             return (
               <button
-                className={`s_button filter__control${isCurrent ? ' js_active' : ''}`}
                 key={`${name}-${i + 1}`}
+                className="s_button filter__control"
                 type="button"
-                onClick={isCurrent ? null : () => {
+                disabled={isCurrent}
+                onClick={() => {
                   onFilterToggle(name);
                 }}
               >
@@ -40,7 +47,7 @@ function ControlBar(props) {
       <p className="control-bar__searchbar">
         <TextInput
           onChange={onSearch}
-          type="search"
+          inputMode="search"
           legend="Введите текст для поиска"
           value={searchString}
         />

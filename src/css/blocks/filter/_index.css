@@ -31,8 +31,9 @@
   min-width: 120px;
   transition: color, background-color 0.25s;
 
-  &.js_active {
+  &:disabled {
     background-color: darkslateblue;
     color: lightgoldenrodyellow;
+    cursor: default;
   }
 }
