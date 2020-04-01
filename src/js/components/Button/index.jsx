@@ -2,13 +2,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 function Button(props) {
+  const { classNames, legend, onClick, type } = props;
   return (
     <button
-      className={['s_button', 'button'].concat(props.classNames).join(' ')}
-      type={props.type}
-      onClick={props.onClick}
+      className={['s_button', 'button'].concat(classNames).join(' ')}
+      type={type}
+      onClick={onClick}
     >
-      {props.legend}
+      {legend}
     </button>
   );
 }
