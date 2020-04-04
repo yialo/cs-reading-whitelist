@@ -11,7 +11,7 @@ const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const { CleanPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const { ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
