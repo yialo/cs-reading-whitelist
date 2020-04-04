@@ -11,7 +11,7 @@ const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanPlugin } = require('clean-webpack-plugin');
 const { ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
@@ -216,7 +216,7 @@ module.exports = (env = {}) => {
     plugins: (() => {
       const pluginList = [
         new CaseSensitivePathsPlugin(),
-        new CleanWebpackPlugin({
+        new CleanPlugin({
           cleanStaleWebpackAssets: false,
         }),
         new ProgressPlugin(),
