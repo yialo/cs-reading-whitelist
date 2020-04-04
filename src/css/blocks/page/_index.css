@@ -1,4 +1,46 @@
-@import "./page__heading.css";
-@import "./page__overlay.css";
-@import "./page__wrapper.css";
-@import "./page.css";
+.page {
+  display: flex;
+  justify-content: center;
+  min-width: var(--size_page-min-width);
+  overflow-y: scroll;
+  background-color: var(--color_page-background);
+}
+
+.page__content {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__filter {
+  margin-bottom: 32px;
+}
+
+.page__heading {
+  margin-top: 0;
+  margin-bottom: 48px;
+  line-height: 1.25;
+}
+
+.page__subjects {
+  flex-grow: 1;
+}
+
+.page__wrapper {
+  --color_conic-dark: #eeeeee;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--size_page-content-max-width);
+  min-height: 100vh;
+  padding: 48px 24px;
+  background-color: white;
+  background-image: conic-gradient(
+    at center 50vh,
+    var(--color_conic-dark) 120deg,
+    white 180deg,
+    var(--color_conic-dark) 360deg
+  );
+  background-attachment: fixed;
+}

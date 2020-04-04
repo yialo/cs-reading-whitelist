@@ -18,7 +18,7 @@ function ControlBar(props) {
 
   return (
     <form
-      className="control-bar page-content__filter"
+      className="control-bar page__filter"
       onSubmit={(evt) => {
         evt.preventDefault();
       }}
