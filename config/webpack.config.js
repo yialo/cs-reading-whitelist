@@ -82,7 +82,6 @@ module.exports = (env = {}) => {
       rules: (() => {
         const scriptLoaderRule = {
           test: /\.(?:j|t)sx?$/,
-          exclude: '/node_modules/',
           loader: 'babel-loader',
           options: {
             configFile: pathEnum.BABEL_CONFIG,
@@ -91,7 +90,6 @@ module.exports = (env = {}) => {
 
         const templateLoaderRule = {
           test: /\.pug$/,
-          exclude: '/node_modules/',
           loader: 'pug-loader',
           options: {
             pretty: !isProduction,
@@ -100,7 +98,6 @@ module.exports = (env = {}) => {
 
         const styleLoaderRule = {
           test: /\.css$/,
-          exclude: '/node_modules/',
           use: [
             (isProduction ? CssExtractPlugin.loader : 'style-loader'),
             {
