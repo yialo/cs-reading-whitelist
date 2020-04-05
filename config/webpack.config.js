@@ -9,11 +9,10 @@ const CssExtractPlugin = require('mini-css-extract-plugin');
 const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
-const { ProgressPlugin } = require('webpack');
+const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
   const {
@@ -234,8 +233,8 @@ module.exports = (env = {}) => {
             test: /\.json$/,
           },
         ]),
-        new ManifestPlugin({
-          filter: (descriptor) => descriptor.isChunk,
+        new DefinePlugin({
+          'process.env.PUBLIC_PATH': JSON.stringify(publicPath),
         }),
       ];
       if (needAnalyze) {
