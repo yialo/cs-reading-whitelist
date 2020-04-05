@@ -21,7 +21,7 @@ function App(props) {
   } = props;
 
   useEffect(() => {
-    const apiUrl = `/response/subjects.json?${Date.now()}`;
+    const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
     window.fetch(apiUrl)
       .then((response) => response.json())
       .then((responseData) => {

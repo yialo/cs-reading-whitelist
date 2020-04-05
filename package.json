@@ -46,8 +46,7 @@
     "typescript": "3.8.3",
     "webpack": "4.42.1",
     "webpack-bundle-analyzer": "3.6.1",
-    "webpack-cli": "3.3.11",
-    "webpack-manifest-plugin": "2.2.0"
+    "webpack-cli": "3.3.11"
   },
   "description": "Links to useful development tools and good articles about computer science",
   "devDependencies": {
@@ -105,5 +104,5 @@
     "webpack": "webpack --config ./config/webpack.config.js",
     "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js"
   },
-  "version": "0.7.0"
+  "version": "0.7.1"
 }
