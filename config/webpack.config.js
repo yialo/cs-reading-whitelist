@@ -7,11 +7,12 @@ const dotEnv = require('dotenv');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const { ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
@@ -33,27 +34,30 @@ module.exports = (env = {}) => {
   const configPath = path.join(rootPath, 'config');
   const distPath = path.join(rootPath, needDeploy ? 'docs' : 'dist');
   const srcPath = path.join(rootPath, 'src');
+  const staticPath = path.join(srcPath, 'static');
 
-  const pathEnum = {
+  const Path = {
     CONFIG: configPath,
     DIST: distPath,
     SRC: srcPath,
     ROOT: rootPath,
+    STATIC: staticPath,
     BABEL_CONFIG: path.join(configPath, 'babel.config.js'),
     LOCAL_ENV_FILE: path.join(rootPath, '.env.local'),
     PUG_TEMPLATE: path.join(srcPath, 'pug/pages/index.pug'),
+    RESPONSE_OUTPUT: path.join(distPath, 'response'),
   };
 
-  const aliasEnum = {
+  const Alias = {
     '@': srcPath,
   };
 
-  dotEnv.config({ path: pathEnum.LOCAL_ENV_FILE });
+  dotEnv.config({ path: Path.LOCAL_ENV_FILE });
 
   const publicPath = isProduction ? process.env.DEPLOY_PUBLIC_PATH : '/';
 
   return {
-    context: pathEnum.SRC,
+    context: Path.SRC,
 
     devServer: (() => {
       if (isDevelopment) {
@@ -66,14 +70,13 @@ module.exports = (env = {}) => {
           writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
         };
       }
-
       return {};
     })(),
 
     devtool: isDevelopment ? 'eval-source-map' : false,
 
     entry: {
-      'app': pathEnum.SRC,
+      'app': Path.SRC,
     },
 
     mode: (isDevelopment || isProduction) ? purpose : 'none',
@@ -82,16 +85,14 @@ module.exports = (env = {}) => {
       rules: (() => {
         const scriptLoaderRule = {
           test: /\.(?:j|t)sx?$/,
-          exclude: '/node_modules/',
           loader: 'babel-loader',
           options: {
-            configFile: pathEnum.BABEL_CONFIG,
+            configFile: Path.BABEL_CONFIG,
           },
         };
 
         const templateLoaderRule = {
           test: /\.pug$/,
-          exclude: '/node_modules/',
           loader: 'pug-loader',
           options: {
             pretty: !isProduction,
@@ -100,7 +101,6 @@ module.exports = (env = {}) => {
 
         const styleLoaderRule = {
           test: /\.css$/,
-          exclude: '/node_modules/',
           use: [
             (isProduction ? CssExtractPlugin.loader : 'style-loader'),
             {
@@ -116,9 +116,9 @@ module.exports = (env = {}) => {
                 sourceMap: true,
                 config: {
                   ctx: {
-                    pathAliasEnum: aliasEnum,
+                    pathAliasEnum: Alias,
                   },
-                  path: pathEnum.CONFIG,
+                  path: Path.CONFIG,
                 },
               },
             },
@@ -209,14 +209,14 @@ module.exports = (env = {}) => {
 
     output: {
       filename: `assets/js/[name]${assetHash}.js`,
-      path: pathEnum.DIST,
+      path: Path.DIST,
       publicPath,
     },
 
     plugins: (() => {
       const pluginList = [
         new CaseSensitivePathsPlugin(),
-        new CleanWebpackPlugin({
+        new CleanPlugin({
           cleanStaleWebpackAssets: false,
         }),
         new ProgressPlugin(),
@@ -225,8 +225,15 @@ module.exports = (env = {}) => {
         }),
         new HtmlPlugin({
           filename: 'index.html',
-          template: pathEnum.PUG_TEMPLATE,
+          template: Path.PUG_TEMPLATE,
         }),
+        new CopyPlugin([
+          {
+            from: Path.STATIC,
+            to: Path.RESPONSE_OUTPUT,
+            test: /\.json$/,
+          },
+        ]),
         new ManifestPlugin({
           filter: (descriptor) => descriptor.isChunk,
         }),
@@ -240,7 +247,7 @@ module.exports = (env = {}) => {
     })(),
 
     resolve: {
-      alias: aliasEnum,
+      alias: Alias,
     },
 
     stats: (() => {

@@ -1,61 +1,108 @@
 import PropTypes from 'prop-types';
-import React, { useContext } from 'react';
+import React, { useEffect } from 'react';
 
-import AppContext from '../../contexts/AppContext.js';
 import ControlBar from '../ControlBar/index.jsx';
-import Subjects from '../Subjects/index.jsx';
+import FallbackMessage from '../FallbackMessage/index.jsx';
+import Preloader from '../Preloader/index.jsx';
 import Subject from '../Subject/index.jsx';
-import ActionCreator from '../../reducers/filter-action-creator.js';
 
-function App({ filteredList }) {
-  const { state, dispatch } = useContext(AppContext);
+function App(props) {
+  const {
+    fetchError,
+    filterName,
+    filteredList,
+    isFetchComplete,
+    searchString,
+    subjectList,
+    onFetchComplete,
+    onFetchError,
+    onFilterToggle,
+    onSearch,
+  } = props;
 
-  function handleFilterToggle(filterName) {
-    dispatch(ActionCreator.toggleFilter(filterName));
-  }
+  useEffect(() => {
+    const apiUrl = `/response/subjects.json?${Date.now()}`;
+    window.fetch(apiUrl)
+      .then((response) => response.json())
+      .then((responseData) => {
+        onFetchComplete(responseData.data);
+      })
+      .catch((err) => {
+        console.warn(`Can't fetch data! ${err.message}`);
+        onFetchError(err);
+      });
+  }, []);
 
   function handleSearch(evt) {
     const textline = evt.target.value;
-    dispatch(ActionCreator.filterList(textline));
+    onSearch(textline, subjectList, filterName);
   }
 
   return (
-    <React.Fragment>
-      <h1 className="page__heading">Computer Science Reading Whitelist</h1>
-      <main className="page-content page__content">
-        <ControlBar
-          filterTarget={state.target}
-          onFilterToggle={handleFilterToggle}
-          onSearch={handleSearch}
-          searchString={state.searchString}
-        />
-        <Subjects>
-          {
-            filteredList.length > 0 ? (
-              <ul className="s_list subjects__list">
-                {
-                  filteredList.map((it, i) => (
-                    <Subject
-                      key={`${it.lang}-${i + 1}`}
-                      caption={it.caption}
-                      lang={it.lang}
-                      legend={it.legend}
-                      tags={it.tags}
-                      url={it.url}
-                    />
-                  ))
+    <main className="page__content">
+      <h1 className="page__heading" lang="en">Computer Science Reading Whitelist</h1>
+      {(() => {
+        if (!isFetchComplete) {
+          return <Preloader />;
+        }
+        return (
+          <React.Fragment>
+            <ControlBar
+              filterTarget={filterName}
+              onFilterToggle={(newFilterName) => {
+                onFilterToggle(searchString, subjectList, newFilterName);
+              }}
+              onSearch={handleSearch}
+              searchString={searchString}
+            />
+            <div className="subjects page__subjects">
+              {(() => {
+                if (fetchError) {
+                  return <FallbackMessage message="Ошибка загрузки" />;
                 }
-              </ul>
-            ) : <p className="subjects__fallback-message">Ничего не найдено</p>
-          }
-        </Subjects>
-      </main>
-    </React.Fragment>
+                if (filteredList.length > 0) {
+                  return (
+                    <ul className="s_list subjects__list">
+                      {filteredList.map((subject) => (
+                        <Subject
+                          key={subject.url}
+                          caption={subject.caption}
+                          lang={subject.lang}
+                          legend={subject.legend}
+                          tags={subject.tags}
+                          url={subject.url}
+                        />
+                      ))}
+                    </ul>
+                  );
+                }
+                return <FallbackMessage message="Ничего не найдено" />;
+              })()}
+            </div>
+          </React.Fragment>
+        );
+      })()}
+    </main>
   );
 }
 
+App.defaultProps = {
+  fetchError: null,
+  filteredList: [],
+  subjectList: [],
+};
+
 App.propTypes = {
-  filteredList: PropTypes.arrayOf(PropTypes.object).isRequired,
+  fetchError: PropTypes.instanceOf(Error),
+  filterName: PropTypes.oneOf(['caption', 'hashtag']).isRequired,
+  filteredList: PropTypes.arrayOf(PropTypes.object),
+  isFetchComplete: PropTypes.bool.isRequired,
+  searchString: PropTypes.string.isRequired,
+  subjectList: PropTypes.arrayOf(PropTypes.object),
+  onFetchComplete: PropTypes.func.isRequired,
+  onFetchError: PropTypes.func.isRequired,
+  onFilterToggle: PropTypes.func.isRequired,
+  onSearch: PropTypes.func.isRequired,
 };
 
 export default App;

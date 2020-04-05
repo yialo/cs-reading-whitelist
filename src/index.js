@@ -6,6 +6,6 @@ import './fonts/source-sans-pro_400_normal.woff2';
 import './fonts/source-sans-pro_700_italic.woff2';
 import './fonts/source-sans-pro_700_normal.woff2';
 
-import initApp from './js/init-app.js';
+import initApp from './js/init-app.jsx';
 
 document.addEventListener('DOMContentLoaded', initApp);

@@ -1,5 +1,7 @@
 'use strict';
 
+// TODO: add Webpack path resolver for source JSON path
+
 const path = require('path');
 const postcss = require('postcss');
 const getFontFaces = require('./get-font-faces.js');
