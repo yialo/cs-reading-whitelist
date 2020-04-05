@@ -1,3 +1,7 @@
+.subjects {
+  display: flex;
+}
+
 .subjects__button {
   margin-top: 40px;
   margin-left: auto;
@@ -30,15 +34,22 @@
 }
 
 .subjects__lang-badge--en {
-  background-color: #90caf9;
+  background-color: var(--color_lang-badge_en);
 }
 
 .subjects__lang-badge--ru {
-  background-color: #80cbc4;
+  background-color: var(--color_lang-badge_ru);
 }
 
 .subjects__link {
   color: midnightblue;
+}
+
+.subjects__preloader {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subjects__tag {

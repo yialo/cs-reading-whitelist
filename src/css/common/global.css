@@ -4,9 +4,6 @@
 }
 
 html {
-  --color-page-background: $color-page-background;
-  --page-min-width: $page-min-width;
-
   box-sizing: border-box;
 }
 
