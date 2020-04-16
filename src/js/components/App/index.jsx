@@ -6,6 +6,11 @@ import FallbackMessage from '../FallbackMessage/index.jsx';
 import Preloader from '../Preloader/index.jsx';
 import Subject from '../Subject/index.jsx';
 
+const disableOverlay = () => {
+  const $overlay = document.getElementById('overlay');
+  $overlay.classList.add('js_hidden');
+};
+
 function App(props) {
   const {
     fetchError,
@@ -21,6 +26,8 @@ function App(props) {
   } = props;
 
   useEffect(() => {
+    disableOverlay();
+
     const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
     window.fetch(apiUrl)
       .then((response) => response.json())
