@@ -6,3 +6,5 @@ append variables
 block body
   body.page
     .page__wrapper(id='app-root')
+    .page__overlay(id='overlay', role='status')
+      span.spinner(aria-label='Загружаем контент...')

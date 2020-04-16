@@ -530,16 +530,6 @@
       "legend": ""
     },
     {
-      "caption": "Node.js official",
-      "url": "https://nodejs.org/en/",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "docs"
-      ],
-      "legend": ""
-    },
-    {
       "caption": "Скринкаст по Node.JS (Learn.javascript.ru)",
       "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZFWfEQpNixIHVvp191Hb3Gg",
       "lang": "ru",
@@ -701,17 +691,6 @@
         "nodejs",
         "video",
         "4consider"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Webpack official",
-      "url": "https://webpack.js.org/configuration/",
-      "lang": "en",
-      "tags": [
-        "build",
-        "webpack",
-        "docs"
       ],
       "legend": ""
     },
@@ -1943,17 +1922,6 @@
       "legend": ""
     },
     {
-      "caption": "Sass official",
-      "url": "https://sass-lang.com/documentation",
-      "lang": "en",
-      "tags": [
-        "css",
-        "sass",
-        "docs"
-      ],
-      "legend": ""
-    },
-    {
       "caption": "Sass Guidelines",
       "url": "https://sass-guidelin.es/",
       "lang": "en",
@@ -2026,18 +1994,6 @@
         "html",
         "html_templates",
         "pug"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Markdown official",
-      "url": "https://daringfireball.net/projects/markdown/",
-      "lang": "en",
-      "tags": [
-        "html",
-        "html_templates",
-        "markdown",
-        "docs"
       ],
       "legend": ""
     },
@@ -2650,42 +2606,6 @@
       "legend": ""
     },
     {
-      "caption": "React official",
-      "url": "https://reactjs.org/",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "react",
-        "library",
-        "docs"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Redux official",
-      "url": "https://redux.js.org/",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "library",
-        "redux",
-        "docs"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "GatsbyJS official",
-      "url": "https://www.gatsbyjs.org/",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "library",
-        "docs",
-        "statics_generator"
-      ],
-      "legend": ""
-    },
-    {
       "caption": "React Things",
       "url": "https://github.com/rtivital/react-things",
       "lang": "ru",
@@ -2716,78 +2636,6 @@
         "javascript",
         "library",
         "react"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Vue.js official",
-      "url": "https://vuejs.org/",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "docs",
-        "vue"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Vue Test Utils",
-      "url": "https://vue-test-utils.vuejs.org/",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "vue",
-        "docs",
-        "code_quality"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Vuetify official",
-      "url": "https://vuetifyjs.com/en/",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "vue",
-        "library",
-        "docs"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "eslint-plugin-vue",
-      "url": "https://eslint.vuejs.org/",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "vue",
-        "docs",
-        "code_quality"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Nuxt.js",
-      "url": "https://nuxtjs.org/",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "vue",
-        "library",
-        "docs",
-        "statics_generator"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Vue Mastery",
-      "url": "https://www.vuemastery.com/courses",
-      "lang": "en",
-      "tags": [
-        "4consider",
-        "video",
-        "javascript",
-        "vue"
       ],
       "legend": ""
     },
@@ -3646,7 +3494,7 @@
       "lang": "en",
       "tags": [
         "css",
-        "flexbox"
+        "css_flexbox"
       ],
       "legend": ""
     },
@@ -3696,7 +3544,6 @@
       "url": "https://blog.logrocket.com/conditional-rendering-in-react-c6b0e5af381e/",
       "lang": "en",
       "tags": [
-        "javascript",
         "react"
       ],
       "legend": ""
@@ -3786,7 +3633,7 @@
       "legend": ""
     },
     {
-      "caption": "How to Work with Forms, Inputs and Events in Reac",
+      "caption": "How to Work with Forms, Inputs and Events in React",
       "url": "https://medium.com/capital-one-tech/how-to-work-with-forms-inputs-and-events-in-react-c337171b923b",
       "lang": "en",
       "tags": [
@@ -3932,6 +3779,63 @@
       "tags": [
         "javascript",
         "performance"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Разница между width и flex-basis",
+      "url": "https://medium.com/@stasonmars/%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-width-%D0%B8-flex-basis-f34e658ce6a2",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css_flexbox"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The Twelve-Factor App manifest",
+      "url": "https://12factor.net/",
+      "lang": "en",
+      "tags": [
+        "deployment"
+      ],
+      "legend": "A methodology for building modern, scalable, maintainable software-as-a-service apps."
+    },
+    {
+      "caption": "Algorithms and Data Structures",
+      "url": "https://code.tutsplus.com/tutorials/algorithms-and-data-structures--cms-20437",
+      "lang": "en",
+      "tags": [
+        "algorithms"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Integer и Float в Javascript",
+      "url": "https://medium.com/@frontman/integer-%D0%B8-float-%D0%B2-javascript-9ca16ba1484f",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "React Conditional Rendering",
+      "url": "https://www.robinwieruch.de/conditional-rendering-react",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "How to fetch data in React",
+      "url": "https://www.robinwieruch.de/react-fetching-data",
+      "lang": "en",
+      "tags": [
+        "react",
+        "async",
+        "testing"
       ],
       "legend": ""
     }

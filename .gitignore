@@ -12,4 +12,4 @@ bash.exe.stackdump
 
 # msc
 /dist/
-/tests/
+/stats/
