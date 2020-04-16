@@ -3544,7 +3544,6 @@
       "url": "https://blog.logrocket.com/conditional-rendering-in-react-c6b0e5af381e/",
       "lang": "en",
       "tags": [
-        "javascript",
         "react"
       ],
       "legend": ""
@@ -3817,6 +3816,15 @@
       "lang": "ru",
       "tags": [
         "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "React Conditional Rendering",
+      "url": "https://www.robinwieruch.de/conditional-rendering-react",
+      "lang": "en",
+      "tags": [
+        "react"
       ],
       "legend": ""
     }
