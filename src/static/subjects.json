@@ -3827,6 +3827,17 @@
         "react"
       ],
       "legend": ""
+    },
+    {
+      "caption": "How to fetch data in React",
+      "url": "https://www.robinwieruch.de/react-fetching-data",
+      "lang": "en",
+      "tags": [
+        "react",
+        "async",
+        "testing"
+      ],
+      "legend": ""
     }
   ]
 }
