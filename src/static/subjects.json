@@ -3792,6 +3792,33 @@
         "css_flexbox"
       ],
       "legend": ""
+    },
+    {
+      "caption": "The Twelve-Factor App manifest",
+      "url": "https://12factor.net/",
+      "lang": "en",
+      "tags": [
+        "deployment"
+      ],
+      "legend": "A methodology for building modern, scalable, maintainable software-as-a-service apps."
+    },
+    {
+      "caption": "Algorithms and Data Structures",
+      "url": "https://code.tutsplus.com/tutorials/algorithms-and-data-structures--cms-20437",
+      "lang": "en",
+      "tags": [
+        "algorithms"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Integer и Float в Javascript",
+      "url": "https://medium.com/@frontman/integer-%D0%B8-float-%D0%B2-javascript-9ca16ba1484f",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
     }
   ]
 }
