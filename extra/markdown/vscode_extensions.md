@@ -9,6 +9,7 @@
 * highlight-matching-tag
 * HTMLHint
 * indent-rainbow
+* javascript-ejs-support
 * jest-snippets
 * language-postcss
 * language-stylus
@@ -35,6 +36,7 @@
 * vscode-markdownlint
 * vscode-puglint
 * vscode-sort-json
+* vscode-styled-components
 * vscode-stylelint
 * vscode-surround
 * vscode-svgviewer
