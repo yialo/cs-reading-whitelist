@@ -1,4 +1,4 @@
-import Type from './action-types.js';
+import Type from './types.js';
 
 export const initialState = {
   fetchError: null,

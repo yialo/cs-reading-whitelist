@@ -1,19 +1,21 @@
 import React from 'react';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import { applyMiddleware, createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import thunk from 'redux-thunk';
 
 import App from './Connected.jsx';
 import reducer, { initialState } from '../../store/reducer.js';
 
 function WithStore() {
-  const storeCreatorArgs = [reducer, initialState];
-  if (process.env.NODE_ENV === 'development') {
-    storeCreatorArgs.push(
-        window.__REDUX_DEVTOOLS_EXTENSION__
-        && window.__REDUX_DEVTOOLS_EXTENSION__()
-    );
-  }
-  const store = createStore(...storeCreatorArgs);
+  const appliedMiddleware = applyMiddleware(thunk);
+  const enhancer = (
+    (process.env.NODE_ENV === 'development')
+      ? composeWithDevTools(appliedMiddleware)
+      : appliedMiddleware
+  );
+  const store = createStore(reducer, initialState, enhancer);
+
   return (
     <Provider store={store}>
       <App />
@@ -22,5 +24,4 @@ function WithStore() {
 }
 
 WithStore.displayName = `withStore(${App.displayName})`;
-
 export default WithStore;
