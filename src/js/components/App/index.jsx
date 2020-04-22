@@ -35,7 +35,6 @@ function App(props) {
         onFetchComplete(responseData.data);
       })
       .catch((err) => {
-        console.warn(`Can't fetch data! ${err.message}`);
         onFetchError(err);
       });
   }, []);
