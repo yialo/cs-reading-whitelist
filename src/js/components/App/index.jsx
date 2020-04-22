@@ -25,9 +25,8 @@ function App(props) {
     onSearch,
   } = props;
 
-  useEffect(() => {
-    disableOverlay();
-
+  // TODO: move this logics to async action creator with Redux Thunk
+  const fetchSubjectList = useCallback(() => {
     const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
     window.fetch(apiUrl)
       .then((response) => response.json())
@@ -43,6 +42,11 @@ function App(props) {
     const textline = evt.target.value;
     onSearch(textline, subjectList, filterName);
   }, [subjectList, filterName]);
+
+  useEffect(() => {
+    disableOverlay();
+    fetchSubjectList();
+  }, []);
 
   return (
     <main className="page__content">

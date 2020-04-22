@@ -3848,6 +3848,15 @@
         "animations"
       ],
       "legend": "Some best practices for CSS animation usage"
+    },
+    {
+      "caption": "Key words for use in RFCs to Indicate Requirement Levels",
+      "url": "https://www.ietf.org/rfc/rfc2119.txt",
+      "lang": "en",
+      "tags": [
+        "code_quality"
+      ],
+      "legend": "RFC 2119: MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, OPTIONAL"
     }
   ]
 }
