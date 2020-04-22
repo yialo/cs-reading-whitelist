@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 
 import ControlBar from '../ControlBar/index.jsx';
 import FallbackMessage from '../FallbackMessage/index.jsx';
@@ -16,9 +16,9 @@ function App(props) {
     fetchError,
     filterName,
     filteredList,
-    isFetchComplete,
     searchString,
     subjectList,
+    isFetchComplete,
     onFetchComplete,
     onFetchError,
     onFilterToggle,
@@ -40,10 +40,10 @@ function App(props) {
       });
   }, []);
 
-  function handleSearch(evt) {
+  const handleSearch = useCallback((evt) => {
     const textline = evt.target.value;
     onSearch(textline, subjectList, filterName);
-  }
+  }, [subjectList, filterName]);
 
   return (
     <main className="page__content">
