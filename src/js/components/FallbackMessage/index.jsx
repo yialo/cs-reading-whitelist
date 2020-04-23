@@ -2,8 +2,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 function FallbackMessage(props) {
+  const { message } = props;
   return (
-    <p className="subjects__fallback-message">{props.message}</p>
+    <p className="subjects__fallback-message">{message}</p>
   );
 }
 

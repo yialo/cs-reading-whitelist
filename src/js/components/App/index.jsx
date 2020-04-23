@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 
 import ControlBar from '../ControlBar/index.jsx';
 import FallbackMessage from '../FallbackMessage/index.jsx';
 import Preloader from '../Preloader/index.jsx';
-import Subject from '../Subject/index.jsx';
+import SubjectList from '../SubjectList/index.jsx';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
@@ -16,34 +16,21 @@ function App(props) {
     fetchError,
     filterName,
     filteredList,
-    isFetchComplete,
     searchString,
-    subjectList,
-    onFetchComplete,
-    onFetchError,
+    isFetchComplete,
+    onFetchStart,
     onFilterToggle,
     onSearch,
   } = props;
 
-  useEffect(() => {
-    disableOverlay();
-
-    const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
-    window.fetch(apiUrl)
-      .then((response) => response.json())
-      .then((responseData) => {
-        onFetchComplete(responseData.data);
-      })
-      .catch((err) => {
-        console.warn(`Can't fetch data! ${err.message}`);
-        onFetchError(err);
-      });
+  const handleSearch = useCallback((evt) => {
+    onSearch(evt.target.value);
   }, []);
 
-  function handleSearch(evt) {
-    const textline = evt.target.value;
-    onSearch(textline, subjectList, filterName);
-  }
+  useEffect(() => {
+    disableOverlay();
+    onFetchStart();
+  }, []);
 
   return (
     <main className="page__content">
@@ -56,35 +43,16 @@ function App(props) {
           <React.Fragment>
             <ControlBar
               filterTarget={filterName}
-              onFilterToggle={(newFilterName) => {
-                onFilterToggle(searchString, subjectList, newFilterName);
-              }}
-              onSearch={handleSearch}
               searchString={searchString}
+              onFilterToggle={onFilterToggle}
+              onSearch={handleSearch}
             />
             <div className="subjects page__subjects">
-              {(() => {
-                if (fetchError) {
-                  return <FallbackMessage message="Ошибка загрузки" />;
-                }
-                if (filteredList.length > 0) {
-                  return (
-                    <ul className="s_list subjects__list">
-                      {filteredList.map((subject) => (
-                        <Subject
-                          key={subject.url}
-                          caption={subject.caption}
-                          lang={subject.lang}
-                          legend={subject.legend}
-                          tags={subject.tags}
-                          url={subject.url}
-                        />
-                      ))}
-                    </ul>
-                  );
-                }
-                return <FallbackMessage message="Ничего не найдено" />;
-              })()}
+              {
+                fetchError
+                  ? <FallbackMessage message="Ошибка загрузки" />
+                  : <SubjectList list={filteredList} />
+              }
             </div>
           </React.Fragment>
         );
@@ -96,7 +64,6 @@ function App(props) {
 App.defaultProps = {
   fetchError: null,
   filteredList: [],
-  subjectList: [],
 };
 
 App.propTypes = {
@@ -105,9 +72,7 @@ App.propTypes = {
   filteredList: PropTypes.arrayOf(PropTypes.object),
   isFetchComplete: PropTypes.bool.isRequired,
   searchString: PropTypes.string.isRequired,
-  subjectList: PropTypes.arrayOf(PropTypes.object),
-  onFetchComplete: PropTypes.func.isRequired,
-  onFetchError: PropTypes.func.isRequired,
+  onFetchStart: PropTypes.func.isRequired,
   onFilterToggle: PropTypes.func.isRequired,
   onSearch: PropTypes.func.isRequired,
 };
