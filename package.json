@@ -103,5 +103,5 @@
     "webpack": "webpack --config ./config/webpack.config.js",
     "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js"
   },
-  "version": "0.7.2"
+  "version": "0.8.0"
 }

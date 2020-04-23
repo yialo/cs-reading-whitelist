@@ -1932,17 +1932,6 @@
       "legend": ""
     },
     {
-      "caption": "sass-mq",
-      "url": "https://github.com/sass-mq/sass-mq",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "sass",
-        "library"
-      ],
-      "legend": "Media Queries with superpowers"
-    },
-    {
       "caption": "How To Write Your Own Custom Sass Functions",
       "url": "https://vanseodesign.com/css/custom-sass-functions/",
       "lang": "en",
@@ -2600,8 +2589,8 @@
       "tags": [
         "javascript",
         "algorithms",
-        "functional_programming",
-        "library"
+        "immutable",
+        "functional_programming"
       ],
       "legend": ""
     },
@@ -2625,17 +2614,6 @@
         "react",
         "video",
         "4consider"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Material-UI React components",
-      "url": "https://material-ui.com/",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "library",
-        "react"
       ],
       "legend": ""
     },
@@ -2789,18 +2767,6 @@
         "video"
       ],
       "legend": ""
-    },
-    {
-      "caption": "anime.js",
-      "url": "https://animejs.com/",
-      "lang": "en",
-      "tags": [
-        "graphics",
-        "javascript",
-        "animations",
-        "library"
-      ],
-      "legend": "JavaScript animation engine"
     },
     {
       "caption": "SVG маски и вау-эффекты: о магии простыми словами",
@@ -2977,8 +2943,7 @@
       "url": "https://rsms.me/inter/",
       "lang": "en",
       "tags": [
-        "typography",
-        "library"
+        "typography"
       ],
       "legend": "крутой шрифт, разработанный специально для комфортного чтения с экрана"
     },
