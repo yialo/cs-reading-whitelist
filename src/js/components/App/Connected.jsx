@@ -15,7 +15,4 @@ const mapDispatchToProps = {
   onSearch: filterList,
 };
 
-const withBoundProps = connect(mapStateToProps, mapDispatchToProps);
-const Connected = withBoundProps(App);
-Connected.displayName = 'connected(App)';
-export default Connected;
+export default connect(mapStateToProps, mapDispatchToProps)(App);

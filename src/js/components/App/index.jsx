@@ -4,7 +4,7 @@ import React, { useCallback, useEffect } from 'react';
 import ControlBar from '../ControlBar/index.jsx';
 import FallbackMessage from '../FallbackMessage/index.jsx';
 import Preloader from '../Preloader/index.jsx';
-import Subject from '../Subject/index.jsx';
+import SubjectList from '../SubjectList/index.jsx';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
@@ -51,28 +51,11 @@ function App(props) {
               onSearch={handleSearch}
             />
             <div className="subjects page__subjects">
-              {(() => {
-                if (fetchError) {
-                  return <FallbackMessage message="Ошибка загрузки" />;
-                }
-                if (filteredList.length > 0) {
-                  return (
-                    <ul className="s_list subjects__list">
-                      {filteredList.map((subject) => (
-                        <Subject
-                          key={subject.url}
-                          caption={subject.caption}
-                          lang={subject.lang}
-                          legend={subject.legend}
-                          tags={subject.tags}
-                          url={subject.url}
-                        />
-                      ))}
-                    </ul>
-                  );
-                }
-                return <FallbackMessage message="Ничего не найдено" />;
-              })()}
+              {
+                fetchError
+                  ? <FallbackMessage message="Ошибка загрузки" />
+                  : <SubjectList list={filteredList} />
+              }
             </div>
           </React.Fragment>
         );

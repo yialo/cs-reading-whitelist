@@ -34,17 +34,6 @@ const filterList = (textToSearch) => {
   };
 };
 
-// const filterList = (textToSearch, fullList, filterName) => {
-//   const filteredList = filterSubjects(textToSearch, fullList, filterName);
-//   return {
-//     type: Type.FILTER_LIST,
-//     payload: {
-//       filteredList,
-//       textToSearch,
-//     },
-//   };
-// };
-
 const toggleFilter = (textToSearch, fullList, filterName) => {
   const filteredList = filterSubjects(textToSearch, fullList, filterName);
   return {
@@ -58,23 +47,21 @@ const toggleFilter = (textToSearch, fullList, filterName) => {
 };
 
 const fetchSubjects = () => {
-  return (dispatch) => {
+  return async (dispatch) => {
     const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
-    window.fetch(apiUrl)
-      .then((response) => response.json())
-      .then((responseData) => {
-        const list = responseData.data;
-        dispatch({
-          type: Type.SUBJECTS_FETCH_COMPLETE,
-          payload: list,
-        });
-      })
-      .catch((err) => {
-        dispatch({
-          type: Type.SUBJECTS_FETCH_ERROR,
-          payload: err,
-        });
+    try {
+      const response = await window.fetch(apiUrl);
+      const { data: list } = await response.json();
+      dispatch({
+        type: Type.SUBJECTS_FETCH_COMPLETE,
+        payload: list,
       });
+    } catch (err) {
+      dispatch({
+        type: Type.SUBJECTS_FETCH_ERROR,
+        payload: err,
+      });
+    }
   };
 };
 
