@@ -1,25 +1,24 @@
-import Type from './action-types.js';
+import Type from './types.js';
 
-export const initialState = {
+const INITIAL_STATE = {
   fetchError: null,
-  filterName: 'caption',
   filteredList: [],
-  isFetchComplete: false,
+  filterName: 'caption',
   searchString: '',
   subjectList: [],
+  isFetchComplete: false,
 };
 
 const handlerDict = {
-  [Type.FILTER_LIST]: (state, payload) => ({
+  [Type.FILTER_SEARCH]: (state, payload) => ({
     ...state,
     filteredList: payload.filteredList,
-    searchString: payload.textToSearch,
+    searchString: payload.searchString,
   }),
-  [Type.TOGGLE_FILTER]: (state, payload) => ({
+  [Type.FILTER_TOGGLE]: (state, payload) => ({
     ...state,
     filterName: payload.filterName,
     filteredList: payload.filteredList,
-    textToSearch: payload.textToSearch,
   }),
   [Type.SUBJECTS_FETCH_COMPLETE]: (state, payload) => ({
     ...state,
@@ -35,7 +34,8 @@ const handlerDict = {
   DEFAULT: (state) => state,
 };
 
-export default function (state, action) {
+export default (prevState, action) => {
+  const state = prevState ?? INITIAL_STATE;
   const handle = handlerDict[action.type] ?? handlerDict.DEFAULT;
   return handle(state, action.payload);
-}
+};

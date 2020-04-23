@@ -32,8 +32,8 @@ function ControlBar(props) {
               <button
                 key={`${name}-${i + 1}`}
                 className="s_button filter__control"
-                type="button"
                 disabled={isCurrent}
+                type="button"
                 onClick={() => {
                   onFilterToggle(name);
                 }}
@@ -46,10 +46,10 @@ function ControlBar(props) {
       </div>
       <p className="control-bar__searchbar">
         <TextInput
-          onChange={onSearch}
           inputMode="search"
           legend="Введите текст для поиска"
           value={searchString}
+          onChange={onSearch}
         />
       </p>
     </form>
