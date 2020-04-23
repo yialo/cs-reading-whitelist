@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 
 import App from './components/App/Connected.jsx';
 import ErrorBoundary from './components/ErrorBoundary/index.jsx';
-import reducer, { initialState } from './store/reducer.js';
+import reducer from './store/reducer.js';
 
 export default () => {
   const appliedMiddleware = applyMiddleware(thunk);
@@ -16,7 +16,7 @@ export default () => {
       ? composeWithDevTools(appliedMiddleware)
       : appliedMiddleware
   );
-  const store = createStore(reducer, initialState, enhancer);
+  const store = createStore(reducer, enhancer);
 
   const app = (
     <React.StrictMode>

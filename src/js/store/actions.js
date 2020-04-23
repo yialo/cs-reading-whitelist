@@ -6,7 +6,7 @@ const filterList = (nextSearchString) => {
     const { filterName, subjectList } = getState();
     const filteredList = filterSubjects(nextSearchString, subjectList, filterName);
     dispatch({
-      type: Type.FILTER_LIST,
+      type: Type.FILTER_SEARCH,
       payload: {
         filteredList,
         searchString: nextSearchString,
@@ -20,7 +20,7 @@ const toggleFilter = (nextFilterName) => {
     const { searchString, subjectList } = getState();
     const filteredList = filterSubjects(searchString, subjectList, nextFilterName);
     dispatch({
-      type: Type.TOGGLE_FILTER,
+      type: Type.FILTER_TOGGLE,
       payload: {
         filterName: nextFilterName,
         filteredList,

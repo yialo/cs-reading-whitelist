@@ -3797,6 +3797,7 @@
       "url": "https://12factor.net/",
       "lang": "en",
       "tags": [
+        "code_quality",
         "deployment"
       ],
       "legend": "A methodology for building modern, scalable, maintainable software-as-a-service apps."
@@ -3857,6 +3858,18 @@
         "code_quality"
       ],
       "legend": "RFC 2119: MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, OPTIONAL"
+    },
+    {
+      "caption": "Asynchronous Redux Actions Using Redux Thunk",
+      "url": "https://alligator.io/redux/redux-thunk/",
+      "lang": "en",
+      "tags": [
+        "async",
+        "redux",
+        "redux_middleware",
+        "redux_thunk"
+      ],
+      "legend": ""
     }
   ]
 }

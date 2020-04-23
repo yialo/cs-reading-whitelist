@@ -1,6 +1,6 @@
 import Type from './types.js';
 
-export const initialState = {
+const INITIAL_STATE = {
   fetchError: null,
   filteredList: [],
   filterName: 'caption',
@@ -10,10 +10,15 @@ export const initialState = {
 };
 
 const handlerDict = {
-  [Type.FILTER_LIST]: (state, payload) => ({
+  [Type.FILTER_SEARCH]: (state, payload) => ({
     ...state,
     filteredList: payload.filteredList,
     searchString: payload.searchString,
+  }),
+  [Type.FILTER_TOGGLE]: (state, payload) => ({
+    ...state,
+    filterName: payload.filterName,
+    filteredList: payload.filteredList,
   }),
   [Type.SUBJECTS_FETCH_COMPLETE]: (state, payload) => ({
     ...state,
@@ -26,15 +31,11 @@ const handlerDict = {
     fetchError: payload,
     isFetchComplete: true,
   }),
-  [Type.TOGGLE_FILTER]: (state, payload) => ({
-    ...state,
-    filterName: payload.filterName,
-    filteredList: payload.filteredList,
-  }),
   DEFAULT: (state) => state,
 };
 
-export default function (state, action) {
+export default (prevState, action) => {
+  const state = prevState ?? INITIAL_STATE;
   const handle = handlerDict[action.type] ?? handlerDict.DEFAULT;
   return handle(state, action.payload);
-}
+};
