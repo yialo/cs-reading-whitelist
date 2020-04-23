@@ -15,11 +15,6 @@ const handlerDict = {
     filteredList: payload.filteredList,
     searchString: payload.searchString,
   }),
-  [Type.TOGGLE_FILTER]: (state, payload) => ({
-    ...state,
-    filterName: payload.filterName,
-    filteredList: payload.filteredList,
-  }),
   [Type.SUBJECTS_FETCH_COMPLETE]: (state, payload) => ({
     ...state,
     filteredList: payload,
@@ -30,6 +25,11 @@ const handlerDict = {
     ...state,
     fetchError: payload,
     isFetchComplete: true,
+  }),
+  [Type.TOGGLE_FILTER]: (state, payload) => ({
+    ...state,
+    filterName: payload.filterName,
+    filteredList: payload.filteredList,
   }),
   DEFAULT: (state) => state,
 };
