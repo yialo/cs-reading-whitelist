@@ -4,16 +4,14 @@ import App from './index.jsx';
 import {
   filterList,
   toggleFilter,
-  showSubjectsList,
-  showFetchError,
+  fetchSubjects,
 } from '../../store/actions.js';
 
 const mapStateToProps = (state, ownProps) => ({ ...ownProps, ...state });
 
 const mapDispatchToProps = {
   onFilterToggle: toggleFilter,
-  onFetchComplete: showSubjectsList,
-  onFetchError: showFetchError,
+  onFetchStart: fetchSubjects,
   onSearch: filterList,
 };
 

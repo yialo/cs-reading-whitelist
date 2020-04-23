@@ -43,19 +43,29 @@ const toggleFilter = (textToSearch, fullList, filterName) => {
   };
 };
 
-const showSubjectsList = (list) => ({
-  type: Type.SUBJECTS_FETCH_COMPLETE,
-  payload: list,
-});
-
-const showFetchError = (err) => ({
-  type: Type.SUBJECTS_FETCH_ERROR,
-  payload: err,
-});
+const fetchSubjects = () => {
+  return (dispatch) => {
+    const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
+    window.fetch(apiUrl)
+      .then((response) => response.json())
+      .then((responseData) => {
+        const list = responseData.data;
+        dispatch({
+          type: Type.SUBJECTS_FETCH_COMPLETE,
+          payload: list,
+        });
+      })
+      .catch((err) => {
+        dispatch({
+          type: Type.SUBJECTS_FETCH_ERROR,
+          payload: err,
+        });
+      });
+  };
+};
 
 export {
+  fetchSubjects,
   filterList,
   toggleFilter,
-  showSubjectsList,
-  showFetchError,
 };

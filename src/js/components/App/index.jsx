@@ -19,24 +19,10 @@ function App(props) {
     searchString,
     subjectList,
     isFetchComplete,
-    onFetchComplete,
-    onFetchError,
+    onFetchStart,
     onFilterToggle,
     onSearch,
   } = props;
-
-  // TODO: move this logics to async action creator with Redux Thunk
-  const fetchSubjectList = useCallback(() => {
-    const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
-    window.fetch(apiUrl)
-      .then((response) => response.json())
-      .then((responseData) => {
-        onFetchComplete(responseData.data);
-      })
-      .catch((err) => {
-        onFetchError(err);
-      });
-  }, []);
 
   const handleSearch = useCallback((evt) => {
     const textline = evt.target.value;
@@ -45,7 +31,7 @@ function App(props) {
 
   useEffect(() => {
     disableOverlay();
-    fetchSubjectList();
+    onFetchStart();
   }, []);
 
   return (
@@ -109,8 +95,7 @@ App.propTypes = {
   isFetchComplete: PropTypes.bool.isRequired,
   searchString: PropTypes.string.isRequired,
   subjectList: PropTypes.arrayOf(PropTypes.object),
-  onFetchComplete: PropTypes.func.isRequired,
-  onFetchError: PropTypes.func.isRequired,
+  onFetchStart: PropTypes.func.isRequired,
   onFilterToggle: PropTypes.func.isRequired,
   onSearch: PropTypes.func.isRequired,
 };
