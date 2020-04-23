@@ -25,9 +25,8 @@ function App(props) {
   } = props;
 
   const handleSearch = useCallback((evt) => {
-    const textline = evt.target.value;
-    onSearch(textline, subjectList, filterName);
-  }, [subjectList, filterName]);
+    onSearch(evt.target.value);
+  }, []);
 
   useEffect(() => {
     disableOverlay();
@@ -45,11 +44,11 @@ function App(props) {
           <React.Fragment>
             <ControlBar
               filterTarget={filterName}
+              searchString={searchString}
               onFilterToggle={(newFilterName) => {
                 onFilterToggle(searchString, subjectList, newFilterName);
               }}
               onSearch={handleSearch}
-              searchString={searchString}
             />
             <div className="subjects page__subjects">
               {(() => {

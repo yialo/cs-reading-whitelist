@@ -20,16 +20,30 @@ const filterSubjects = (textToSearch, fullList, filterName) => {
   return filteredList;
 };
 
-const filterList = (textToSearch, fullList, filterName) => {
-  const filteredList = filterSubjects(textToSearch, fullList, filterName);
-  return {
-    type: Type.FILTER_LIST,
-    payload: {
-      filteredList,
-      textToSearch,
-    },
+const filterList = (textToSearch) => {
+  return (dispatch, getState) => {
+    const { filterName, subjectList } = getState();
+    const filteredList = filterSubjects(textToSearch, subjectList, filterName);
+    dispatch({
+      type: Type.FILTER_LIST,
+      payload: {
+        filteredList,
+        textToSearch,
+      },
+    });
   };
 };
+
+// const filterList = (textToSearch, fullList, filterName) => {
+//   const filteredList = filterSubjects(textToSearch, fullList, filterName);
+//   return {
+//     type: Type.FILTER_LIST,
+//     payload: {
+//       filteredList,
+//       textToSearch,
+//     },
+//   };
+// };
 
 const toggleFilter = (textToSearch, fullList, filterName) => {
   const filteredList = filterSubjects(textToSearch, fullList, filterName);
