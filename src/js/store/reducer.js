@@ -2,24 +2,23 @@ import Type from './types.js';
 
 export const initialState = {
   fetchError: null,
-  filterName: 'caption',
   filteredList: [],
-  isFetchComplete: false,
+  filterName: 'caption',
   searchString: '',
   subjectList: [],
+  isFetchComplete: false,
 };
 
 const handlerDict = {
   [Type.FILTER_LIST]: (state, payload) => ({
     ...state,
     filteredList: payload.filteredList,
-    searchString: payload.textToSearch,
+    searchString: payload.searchString,
   }),
   [Type.TOGGLE_FILTER]: (state, payload) => ({
     ...state,
     filterName: payload.filterName,
     filteredList: payload.filteredList,
-    textToSearch: payload.textToSearch,
   }),
   [Type.SUBJECTS_FETCH_COMPLETE]: (state, payload) => ({
     ...state,

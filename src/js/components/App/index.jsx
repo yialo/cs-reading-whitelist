@@ -17,7 +17,6 @@ function App(props) {
     filterName,
     filteredList,
     searchString,
-    subjectList,
     isFetchComplete,
     onFetchStart,
     onFilterToggle,
@@ -45,9 +44,7 @@ function App(props) {
             <ControlBar
               filterTarget={filterName}
               searchString={searchString}
-              onFilterToggle={(newFilterName) => {
-                onFilterToggle(searchString, subjectList, newFilterName);
-              }}
+              onFilterToggle={onFilterToggle}
               onSearch={handleSearch}
             />
             <div className="subjects page__subjects">
@@ -67,7 +64,6 @@ function App(props) {
 App.defaultProps = {
   fetchError: null,
   filteredList: [],
-  subjectList: [],
 };
 
 App.propTypes = {
@@ -76,7 +72,6 @@ App.propTypes = {
   filteredList: PropTypes.arrayOf(PropTypes.object),
   isFetchComplete: PropTypes.bool.isRequired,
   searchString: PropTypes.string.isRequired,
-  subjectList: PropTypes.arrayOf(PropTypes.object),
   onFetchStart: PropTypes.func.isRequired,
   onFilterToggle: PropTypes.func.isRequired,
   onSearch: PropTypes.func.isRequired,
