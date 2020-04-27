@@ -3834,6 +3834,18 @@
         "redux_thunk"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Minimal API Surface Area (Sebastian Markbage)",
+      "url": "https://youtu.be/4anAwXYqLG8",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "react",
+        "design_patterns",
+        "code_quality"
+      ],
+      "legend": ""
     }
   ]
 }
