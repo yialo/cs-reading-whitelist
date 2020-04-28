@@ -3864,6 +3864,47 @@
         "productivity"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Пятиминутка React #3. Hot Module Replacement или React Hot Loader?",
+      "url": "https://youtu.be/pHLzvtoOI3A",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "webpack",
+        "react"
+      ],
+      "legend": "В чём разница между Hot Module Replacement или React Hot Loader и как это всё работает?"
+    },
+    {
+      "caption": "Пятиминутка React #4. Redux, Actions подряд",
+      "url": "https://youtu.be/xcZNBeMddq0",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "redux"
+      ],
+      "legend": "Redux: что не так с отправкой нескольких Actions подряд (синхронно)?"
+    },
+    {
+      "caption": "Пятиминутка React #5. Redux, Derived Data",
+      "url": "https://youtu.be/9FQs9VRxJcI",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "redux"
+      ],
+      "legend": "Redux и вычисляемые поля. Сталкивались ли вы с проблемой распухающих объектов Action, поскольку одни редьюсеры требуют данные от других редьюсеров? Где и как правильно работать с вычисляемыми полями?"
+    },
+    {
+      "caption": "Пятиминутка React #9. Lifting State Up Example Explained",
+      "url": "https://youtu.be/8u0ym886JuQ",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "react"
+      ],
+      "legend": "Разберём на пальцах пример из документации к React из главы \"Lifting State Up\" про два поля ввода температуры по Цельсию и по Фаренгейту и как правильно их синхронизировать."
     }
   ]
 }
