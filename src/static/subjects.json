@@ -3846,6 +3846,15 @@
         "code_quality"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Инклюзивные компоненты: переключатели",
+      "url": "https://medium.com/web-standards/toggle-buttons-a41388e80974",
+      "lang": "ru",
+      "tags": [
+        "a11y"
+      ],
+      "legend": ""
     }
   ]
 }
