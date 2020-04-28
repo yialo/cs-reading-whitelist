@@ -1,6 +1,12 @@
 import Type from './types.js';
 import filterSubjects from '../utils/filter-subjects.js';
 
+/**
+ * TODO:
+ * 1). make state consistent: 'filteredList' field is redundant!
+ * 2). move filtering to mapStateToProps
+ */
+
 const filterList = (nextSearchString) => {
   return (dispatch, getState) => {
     const { filterName, subjectList } = getState();
