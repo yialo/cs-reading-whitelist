@@ -3916,6 +3916,28 @@
         "redux"
       ],
       "legend": "Вопрос: можно ли и нужно ли использовать локальный state в компонентах при использовании Redux? Краткий ответ: локальный state это нормально, используем!"
+    },
+    {
+      "caption": "Пятиминутка React #11. this.state или this.effectiveValue?",
+      "url": "https://youtu.be/Ap_XJp4bnsQ",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "react",
+        "redux"
+      ],
+      "legend": "Если мы решили хранить локальное состояние компонента где-то внутри компонента (а не в Redux), стоит ли это делать в this.state или завести отдельную переменную this.effectiveValue?"
+    },
+    {
+      "caption": "Пятиминутка React #13. Redux Business Logic",
+      "url": "https://youtu.be/s-CzuVMEj4M",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "react",
+        "redux"
+      ],
+      "legend": "Где в React-Redux приложениии должен быть расположен код отвечающий за бизнес логику? Рассмотрим частный пример с бизнес логикой исключительно на клиенте."
     }
   ]
 }
