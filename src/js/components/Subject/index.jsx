@@ -16,7 +16,7 @@ function Subject(props) {
       <span className={`subjects__lang-badge subjects__lang-badge--${lang}`}>
         {lang}
       </span>
-      {legend ? ` - ${legend}` : ''}
+      <span className="subjects__legend">{legend ? ` - ${legend}` : ''}</span>
       <ul className="s_list subjects__tags">
         {tags.map((tag, i) => (
           <li className="subjects__tag" key={i}>

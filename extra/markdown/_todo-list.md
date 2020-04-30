@@ -17,6 +17,7 @@
 ## More far future
 
 1. Make as SPA
+    * theme toggle with CSS custom properties: [article](https://www.sitepoint.com/css-theming-custom-properties-javascript/)
     * tag cloud
     * search by url substring
     * check url duplications

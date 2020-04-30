@@ -5,14 +5,41 @@ import {
   fetchSubjects,
   filterList,
   toggleFilter,
-} from '../../store/actions.js';
+  toggleTheme,
+} from '../../actions/actions.js';
+import getFilteredSubjects from '../../selectors/get-filtered-subjects.js';
 
-const mapStateToProps = (state, ownProps) => ({ ...ownProps, ...state });
+const mapStateToProps = (state, ownProps) => {
+  const {
+    fetch: {
+      error: fetchError,
+      isComplete: isFetchComplete,
+    },
+    list: {
+      filterName,
+      searchString,
+    },
+    theme: {
+      isDark: hasDarkTheme,
+    },
+  } = state;
+
+  return {
+    ...ownProps,
+    fetchError,
+    filterName,
+    searchString,
+    hasDarkTheme,
+    isFetchComplete,
+    filteredList: getFilteredSubjects(state),
+  };
+};
 
 const mapDispatchToProps = {
   onFetchStart: fetchSubjects,
   onFilterToggle: toggleFilter,
   onSearch: filterList,
+  onThemeToggle: toggleTheme,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -1,5 +1,9 @@
 .subjects {
   display: flex;
+
+  @media (--vp-xs-from) {
+    font-size: 18px;
+  }
 }
 
 .subjects__button {
@@ -12,6 +16,7 @@
 .subjects__fallback-message {
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--color_text);
 }
 
 .subjects__item {
@@ -23,6 +28,9 @@
 }
 
 .subjects__lang-badge {
+  --color_lang-badge_en: #90caf9;
+  --color_lang-badge_ru: #80cbc4;
+
   display: inline-block;
   border-radius: 2px;
   padding-left: 2px;
@@ -41,8 +49,17 @@
   background-color: var(--color_lang-badge_ru);
 }
 
+.subjects__legend {
+  color: var(--color_text);
+}
+
 .subjects__link {
   color: midnightblue;
+
+  @nest
+  .theme_dark & {
+    color: #dddddd;
+  }
 }
 
 .subjects__preloader {
@@ -54,6 +71,7 @@
 
 .subjects__tag {
   display: inline;
+  color: var(--color_text);
 }
 
 .subjects__tags {

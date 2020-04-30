@@ -60,7 +60,7 @@
       "lang": "en",
       "tags": [
         "video",
-        "self_efficiency"
+        "productivity"
       ],
       "legend": ""
     },
@@ -147,7 +147,7 @@
       "url": "https://lifehacker.ru/pobedila-7-letnij-nedosyp/",
       "lang": "ru",
       "tags": [
-        "self_efficiency"
+        "productivity"
       ],
       "legend": ""
     },
@@ -216,7 +216,7 @@
       "lang": "ru",
       "tags": [
         "video",
-        "self_efficiency"
+        "productivity"
       ],
       "legend": ""
     },
@@ -234,7 +234,7 @@
       "url": "https://vc.ru/design/84443-kak-ux-ui-dizayneru-dostich-balansa-mezhdu-rabotoy-i-obucheniem",
       "lang": "ru",
       "tags": [
-        "self_efficiency",
+        "productivity",
         "ux_ui"
       ],
       "legend": "рекомендации актуальны для всех работников IT-сферы"
@@ -244,7 +244,7 @@
       "url": "https://habr.com/ru/post/468277/",
       "lang": "ru",
       "tags": [
-        "self_efficiency"
+        "productivity"
       ],
       "legend": ""
     },
@@ -263,7 +263,7 @@
       "url": "https://www.engr.ncsu.edu/wp-content/uploads/drive/1Ib-0f_OMXAtmzDxncBziM4G0YWqRtret/1999-r_memo.pdf?fbclid=IwAR02E5DPt8muE6Na6MTF67BbALMoWpkpH0n0IaXwOlg3xH6MOsb-CTxrYaw",
       "lang": "en",
       "tags": [
-        "self_efficiency"
+        "productivity"
       ],
       "legend": ""
     },
@@ -3324,7 +3324,7 @@
       "lang": "ru",
       "tags": [
         "video",
-        "self_efficiency",
+        "productivity",
         "project_management"
       ],
       "legend": ""
@@ -3335,7 +3335,7 @@
       "lang": "ru",
       "tags": [
         "video",
-        "self_efficiency"
+        "productivity"
       ],
       "legend": ""
     },
@@ -3366,7 +3366,7 @@
       "url": "http://blog.csssr.ru/2016/09/19/how-to-be-a-beginner-developer",
       "lang": "ru",
       "tags": [
-        "self_efficiency"
+        "productivity"
       ],
       "legend": ""
     },
@@ -3468,7 +3468,7 @@
       "url": "https://habr.com/ru/post/482958/",
       "lang": "ru",
       "tags": [
-        "self_efficiency",
+        "productivity",
         "soft_skills"
       ],
       "legend": ""
@@ -3489,7 +3489,7 @@
       "lang": "ru",
       "tags": [
         "video",
-        "self_efficiency"
+        "productivity"
       ],
       "legend": ""
     },
@@ -3518,7 +3518,7 @@
       "url": "https://zen.yandex.ru/media/menscience/kak-razvit-privychku-otjimatsia-chistit-zuby-begat-uchit-iazyki-i-delat-chto-ugodno-5dbd32a8a06eaf00b110d5fd",
       "lang": "ru",
       "tags": [
-        "self_efficiency"
+        "productivity"
       ],
       "legend": ""
     },
@@ -3603,8 +3603,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "forms",
-        "4consider"
+        "forms"
       ],
       "legend": ""
     },
@@ -3835,6 +3834,123 @@
         "redux_thunk"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Minimal API Surface Area (Sebastian Markbage)",
+      "url": "https://youtu.be/4anAwXYqLG8",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "react",
+        "design_patterns",
+        "code_quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Инклюзивные компоненты: переключатели",
+      "url": "https://medium.com/web-standards/toggle-buttons-a41388e80974",
+      "lang": "ru",
+      "tags": [
+        "a11y"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как учиться продуктивно",
+      "url": "https://htmlacademy.ru/blog/education/all/productive-study",
+      "lang": "ru",
+      "tags": [
+        "productivity"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Пятиминутка React #3. Hot Module Replacement или React Hot Loader?",
+      "url": "https://youtu.be/pHLzvtoOI3A",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "webpack",
+        "react"
+      ],
+      "legend": "В чём разница между Hot Module Replacement или React Hot Loader и как это всё работает?"
+    },
+    {
+      "caption": "Пятиминутка React #4. Redux, Actions подряд",
+      "url": "https://youtu.be/xcZNBeMddq0",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "redux"
+      ],
+      "legend": "Redux: что не так с отправкой нескольких Actions подряд (синхронно)?"
+    },
+    {
+      "caption": "Пятиминутка React #5. Redux, Derived Data",
+      "url": "https://youtu.be/9FQs9VRxJcI",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "redux"
+      ],
+      "legend": "Redux и вычисляемые поля. Сталкивались ли вы с проблемой распухающих объектов Action, поскольку одни редьюсеры требуют данные от других редьюсеров? Где и как правильно работать с вычисляемыми полями?"
+    },
+    {
+      "caption": "Пятиминутка React #9. Lifting State Up Example Explained",
+      "url": "https://youtu.be/8u0ym886JuQ",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "react"
+      ],
+      "legend": "Разберём на пальцах пример из документации к React из главы \"Lifting State Up\" про два поля ввода температуры по Цельсию и по Фаренгейту и как правильно их синхронизировать."
+    },
+    {
+      "caption": "Пятиминутка React #10. Redux and Local State",
+      "url": "https://youtu.be/sXfij1rj6zI",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "react",
+        "redux"
+      ],
+      "legend": "Вопрос: можно ли и нужно ли использовать локальный state в компонентах при использовании Redux? Краткий ответ: локальный state это нормально, используем!"
+    },
+    {
+      "caption": "Пятиминутка React #11. this.state или this.effectiveValue?",
+      "url": "https://youtu.be/Ap_XJp4bnsQ",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "react",
+        "redux"
+      ],
+      "legend": "Если мы решили хранить локальное состояние компонента где-то внутри компонента (а не в Redux), стоит ли это делать в this.state или завести отдельную переменную this.effectiveValue?"
+    },
+    {
+      "caption": "Пятиминутка React #13. Redux Business Logic (part 1)",
+      "url": "https://youtu.be/s-CzuVMEj4M",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "react",
+        "redux",
+        "performance"
+      ],
+      "legend": "Где в React-Redux приложениии должен быть расположен код отвечающий за бизнес логику? Рассмотрим частный пример с бизнес логикой исключительно на клиенте."
+    },
+    {
+      "caption": "Пятиминутка React #14. Redux Business Logic (part 2)",
+      "url": "https://youtu.be/ST_0yLXXQeo",
+      "lang": "",
+      "tags": [
+        "video",
+        "react",
+        "redux",
+        "performance"
+      ],
+      "legend": "В предыдущем выпуске подкаста мы разбирались с вопросом где разместить бизнес логику при использовании Redux. Но остались острые вопросы, которые я не успел осветить. Углубимся в тему ещё немного!"
     }
   ]
 }
