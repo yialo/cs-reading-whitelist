@@ -9,12 +9,12 @@ const INITIAL_STATE = {
 const handleByDefault = (state) => state;
 
 const handlerDict = {
-  [Type.SUBJECTS_FETCH_COMPLETE]: (state, payload) => ({
+  [Type.FETCH_COMPLETE]: (state, payload) => ({
     ...state,
     list: payload,
     isComplete: true,
   }),
-  [Type.SUBJECTS_FETCH_ERROR]: (state, payload) => ({
+  [Type.FETCH_ERROR]: (state, payload) => ({
     ...state,
     error: payload,
     isComplete: true,

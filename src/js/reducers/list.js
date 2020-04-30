@@ -8,11 +8,11 @@ const INITIAL_STATE = {
 const handleByDefault = (state) => state;
 
 const handlerDict = {
-  [Type.FILTER_SEARCH]: (state, payload) => ({
+  [Type.LIST_SEARCH]: (state, payload) => ({
     ...state,
     searchString: payload,
   }),
-  [Type.FILTER_TOGGLE]: (state, payload) => ({
+  [Type.LIST_FILTER_TOGGLE]: (state, payload) => ({
     ...state,
     filterName: payload,
   }),

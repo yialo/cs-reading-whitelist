@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 
 import App from './components/App/Connected.jsx';
 import ErrorBoundary from './components/ErrorBoundary/index.jsx';
-import rootReducer from './reducers/root.js';
+import rootReducer from './reducers/_root.js';
 
 export default () => {
   const appliedMiddleware = applyMiddleware(thunk);

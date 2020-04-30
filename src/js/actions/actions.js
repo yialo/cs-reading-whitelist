@@ -1,13 +1,17 @@
 import Type from './types.js';
 
 const filterList = (nextSearchString) => ({
-  type: Type.FILTER_SEARCH,
+  type: Type.LIST_SEARCH,
   payload: nextSearchString,
 });
 
 const toggleFilter = (nextFilterName) => ({
-  type: Type.FILTER_TOGGLE,
+  type: Type.LIST_FILTER_TOGGLE,
   payload: nextFilterName,
+});
+
+const toggleTheme = () => ({
+  type: Type.THEME_TOGGLE,
 });
 
 const fetchSubjects = () => {
@@ -17,12 +21,12 @@ const fetchSubjects = () => {
       const response = await window.fetch(apiUrl);
       const { data: list } = await response.json();
       dispatch({
-        type: Type.SUBJECTS_FETCH_COMPLETE,
+        type: Type.FETCH_COMPLETE,
         payload: list,
       });
     } catch (err) {
       dispatch({
-        type: Type.SUBJECTS_FETCH_ERROR,
+        type: Type.FETCH_ERROR,
         payload: err,
       });
     }
@@ -33,4 +37,5 @@ export {
   fetchSubjects,
   filterList,
   toggleFilter,
+  toggleTheme,
 };

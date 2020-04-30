@@ -1,4 +1,4 @@
-export default (textToSearch, fullList, filterName) => {
+export default (fullList, textToSearch, filterName) => {
   if (textToSearch === '') {
     return fullList;
   }

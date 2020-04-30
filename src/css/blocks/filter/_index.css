@@ -13,6 +13,7 @@
   margin-bottom: 16px;
   width: 100%;
   font-size: 18px;
+  color: var(--color_text);
 
   @media (--vp-xs-from) {
     margin-bottom: 0;
@@ -29,6 +30,7 @@
 
 .filter__control {
   min-width: 120px;
+  color: #444444;
   transition: color, background-color 0.25s;
 
   &:disabled {
