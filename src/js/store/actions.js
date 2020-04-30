@@ -1,39 +1,14 @@
 import Type from './types.js';
-import filterSubjects from '../utils/filter-subjects.js';
 
-/**
- * TODO:
- * 1). make state consistent: 'filteredList' field is redundant!
- * 2). move filtering to mapStateToProps
- */
+const filterList = (nextSearchString) => ({
+  type: Type.FILTER_SEARCH,
+  payload: nextSearchString,
+});
 
-const filterList = (nextSearchString) => {
-  return (dispatch, getState) => {
-    const { filterName, subjectList } = getState();
-    const filteredList = filterSubjects(nextSearchString, subjectList, filterName);
-    dispatch({
-      type: Type.FILTER_SEARCH,
-      payload: {
-        filteredList,
-        searchString: nextSearchString,
-      },
-    });
-  };
-};
-
-const toggleFilter = (nextFilterName) => {
-  return (dispatch, getState) => {
-    const { searchString, subjectList } = getState();
-    const filteredList = filterSubjects(searchString, subjectList, nextFilterName);
-    dispatch({
-      type: Type.FILTER_TOGGLE,
-      payload: {
-        filterName: nextFilterName,
-        filteredList,
-      },
-    });
-  };
-};
+const toggleFilter = (nextFilterName) => ({
+  type: Type.FILTER_TOGGLE,
+  payload: nextFilterName,
+});
 
 const fetchSubjects = () => {
   return async (dispatch) => {

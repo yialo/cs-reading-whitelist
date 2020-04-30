@@ -1,8 +1,9 @@
 import Type from './types.js';
 
+// TODO: create two reducers
+
 const INITIAL_STATE = {
   fetchError: null,
-  filteredList: [],
   filterName: 'caption',
   searchString: '',
   subjectList: [],
@@ -12,17 +13,14 @@ const INITIAL_STATE = {
 const handlerDict = {
   [Type.FILTER_SEARCH]: (state, payload) => ({
     ...state,
-    filteredList: payload.filteredList,
-    searchString: payload.searchString,
+    searchString: payload,
   }),
   [Type.FILTER_TOGGLE]: (state, payload) => ({
     ...state,
-    filterName: payload.filterName,
-    filteredList: payload.filteredList,
+    filterName: payload,
   }),
   [Type.SUBJECTS_FETCH_COMPLETE]: (state, payload) => ({
     ...state,
-    filteredList: payload,
     subjectList: payload,
     isFetchComplete: true,
   }),

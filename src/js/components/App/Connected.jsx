@@ -6,8 +6,26 @@ import {
   filterList,
   toggleFilter,
 } from '../../store/actions.js';
+import filterSubjects from '../../utils/filter-subjects.js';
 
-const mapStateToProps = (state, ownProps) => ({ ...ownProps, ...state });
+const mapStateToProps = (state, ownProps) => {
+  const {
+    fetchError,
+    filterName,
+    searchString,
+    subjectList,
+    isFetchComplete,
+  } = state;
+
+  return {
+    ...ownProps,
+    fetchError,
+    filterName,
+    searchString,
+    isFetchComplete,
+    filteredList: filterSubjects(searchString, subjectList, filterName),
+  };
+};
 
 const mapDispatchToProps = {
   onFetchStart: fetchSubjects,
