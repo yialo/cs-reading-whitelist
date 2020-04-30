@@ -5,7 +5,7 @@ import {
   fetchSubjects,
   filterList,
   toggleFilter,
-} from '../../utils/actions.js';
+} from '../../actions/actions.js';
 import filterSubjects from '../../utils/filter-subjects.js';
 
 const mapStateToProps = (state, ownProps) => {

@@ -1,4 +1,4 @@
-import Type from '../utils/types.js';
+import Type from '../actions/types.js';
 
 const INITIAL_STATE = {
   error: null,
@@ -8,25 +8,17 @@ const INITIAL_STATE = {
 
 const handleByDefault = (state) => state;
 
-// TODO: add atomic reducers
-// const defineCompletion = (state) => ({ ...state, isComplete: true });
-// const defineDataList = (state, payload) => ({});
+const defineCompletion = (state) => ({ ...state, isComplete: true });
+const defineDataList = (state, payload) => ({ ...state, list: payload });
+const defineError = (state, payload) => ({ ...state, error: payload });
 
 const handlerDict = {
-  [Type.SUBJECTS_FETCH_COMPLETE]: (state, payload) => {
-    return {
-      ...state,
-      list: payload,
-      isComplete: true,
-    };
-  },
-  [Type.SUBJECTS_FETCH_ERROR]: (state, payload) => {
-    return {
-      ...state,
-      error: payload,
-      isComplete: true,
-    };
-  },
+  [Type.SUBJECTS_FETCH_COMPLETE]: (state, payload) => (
+    defineCompletion(defineDataList(state, payload))
+  ),
+  [Type.SUBJECTS_FETCH_ERROR]: (state, payload) => (
+    defineCompletion(defineError(state, payload))
+  ),
 };
 
 export default (prevState, action) => {

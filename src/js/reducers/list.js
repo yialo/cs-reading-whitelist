@@ -1,4 +1,4 @@
-import Type from '../utils/types.js';
+import Type from '../actions/types.js';
 
 const INITIAL_STATE = {
   filterName: 'caption',
