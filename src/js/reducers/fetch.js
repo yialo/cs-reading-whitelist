@@ -8,17 +8,17 @@ const INITIAL_STATE = {
 
 const handleByDefault = (state) => state;
 
-const defineCompletion = (state) => ({ ...state, isComplete: true });
-const defineDataList = (state, payload) => ({ ...state, list: payload });
-const defineError = (state, payload) => ({ ...state, error: payload });
-
 const handlerDict = {
-  [Type.SUBJECTS_FETCH_COMPLETE]: (state, payload) => (
-    defineCompletion(defineDataList(state, payload))
-  ),
-  [Type.SUBJECTS_FETCH_ERROR]: (state, payload) => (
-    defineCompletion(defineError(state, payload))
-  ),
+  [Type.SUBJECTS_FETCH_COMPLETE]: (state, payload) => ({
+    ...state,
+    list: payload,
+    isComplete: true,
+  }),
+  [Type.SUBJECTS_FETCH_ERROR]: (state, payload) => ({
+    ...state,
+    error: payload,
+    isComplete: true,
+  }),
 };
 
 export default (prevState, action) => {
