@@ -1,8 +1,25 @@
 import { createSelector } from 'reselect';
 
-export const getFullList = (state) => state.fetch.list;
+const getFullList = (state) => state.fetch.list;
+const getFilterName = (state) => state.list.filterName;
+const getSearchString = (state) => state.list.searchString;
 
-export const getFilteredList = createSelector(
-    [getFullList],
-    () => {}
+export default createSelector(
+    [getFullList, getSearchString, getFilterName],
+    (fullList, searchString, filterName) => {
+      if (searchString === '') {
+        return fullList;
+      }
+      return fullList.filter((item) => {
+        const matcher = new RegExp(searchString, 'gi');
+        switch (filterName) {
+          case 'caption':
+            return item.caption.match(matcher);
+          case 'hashtag':
+            return item.tags.some((tag) => tag.match(matcher));
+          default:
+            return true;
+        }
+      });
+    }
 );

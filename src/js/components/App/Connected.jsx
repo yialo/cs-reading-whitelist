@@ -7,13 +7,12 @@ import {
   toggleFilter,
   toggleTheme,
 } from '../../actions/actions.js';
-import filterSubjects from '../../utils/filter-subjects.js';
+import getFilteredSubjects from '../../selectors/get-filtered-subjects.js';
 
 const mapStateToProps = (state, ownProps) => {
   const {
     fetch: {
       error: fetchError,
-      list: subjectList,
       isComplete: isFetchComplete,
     },
     list: {
@@ -32,7 +31,7 @@ const mapStateToProps = (state, ownProps) => {
     searchString,
     hasDarkTheme,
     isFetchComplete,
-    filteredList: filterSubjects(subjectList, searchString, filterName),
+    filteredList: getFilteredSubjects(state),
   };
 };
 
