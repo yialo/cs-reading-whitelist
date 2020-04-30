@@ -24,8 +24,11 @@ function ControlBar(props) {
       }}
     >
       <div className="filter control-bar__filter">
-        <p className="filter__tip">Тип сортировки:</p>
-        <div className="filter__controls">
+        <p className="filter__tip">
+          <span id="filter-group-label">Тип сортировки</span>
+          :
+        </p>
+        <div className="filter__controls" role="radiogroup" aria-labelledby="filter-group-label">
           {Object.entries(filterDict).map(([name, legend], i) => {
             const isCurrent = (filterTarget === name);
             return (
@@ -33,6 +36,8 @@ function ControlBar(props) {
                 key={`${name}-${i + 1}`}
                 className="s_button filter__control"
                 disabled={isCurrent}
+                role="radio"
+                aria-checked={isCurrent}
                 type="button"
                 onClick={() => {
                   onFilterToggle(name);
