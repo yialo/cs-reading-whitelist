@@ -9,6 +9,8 @@ import {
 } from '../../actions/actions.js';
 import getFilteredSubjects from '../../selectors/get-filtered-subjects.js';
 
+// TODO: replace with useDispatch and useSelector hooks
+
 const mapStateToProps = (state, ownProps) => {
   const {
     fetch: {
