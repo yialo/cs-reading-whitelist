@@ -1,12 +1,18 @@
-import PropTypes from 'prop-types';
 import React, { useCallback, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import ControlBar from '../ControlBar/index.jsx';
 import FallbackMessage from '../FallbackMessage/index.jsx';
 import Preloader from '../Preloader/index.jsx';
 import SubjectList from '../SubjectList/index.jsx';
 import ThemeToggle from '../ThemeToggle/index.jsx';
+
+import * as Action from '../../actions/actions.js';
+import useActions from '../../hooks/use-actions.js';
+
+import { Selector as FetchSelector } from '../../reducers/fetch.js';
+import { Selector as ListSelector } from '../../reducers/list.js';
+import { Selector as ThemeSelector } from '../../reducers/theme.js';
 import selectFilteredSubjects from '../../selectors/filtered-subjects.js';
 
 const disableOverlay = () => {
@@ -14,27 +20,28 @@ const disableOverlay = () => {
   $overlay.classList.add('js_hidden');
 };
 
-function App(props) {
+export default function App() {
+  const fetchError = useSelector(FetchSelector.error);
+  const filterName = useSelector(ListSelector.filterName);
+  const filteredList = useSelector(selectFilteredSubjects);
+  const searchString = useSelector(ListSelector.searchString);
+  const hasDarkTheme = useSelector(ThemeSelector.isDark);
+  const isFetchComplete = useSelector(FetchSelector.isComplete);
+
   const {
-    fetchError,
-    filterName,
-    filteredList,
-    searchString,
-    hasDarkTheme,
-    isFetchComplete,
-    onFetchStart,
-    onFilterToggle,
-    onSearch,
-    onThemeToggle,
-  } = props;
+    fetchSubjects,
+    searchInList,
+    toggleFilter,
+    toggleTheme,
+  } = useActions(Action);
 
   const handleSearch = useCallback((evt) => {
-    onSearch(evt.target.value);
+    searchInList(evt.target.value);
   }, []);
 
   useEffect(() => {
     disableOverlay();
-    onFetchStart();
+    fetchSubjects();
   }, []);
 
   return (
@@ -50,7 +57,7 @@ function App(props) {
           </h1>
           <ThemeToggle
             isDark={hasDarkTheme}
-            onToggle={onThemeToggle}
+            onToggle={toggleTheme}
           />
         </div>
         {(() => {
@@ -62,7 +69,7 @@ function App(props) {
               <ControlBar
                 filterTarget={filterName}
                 searchString={searchString}
-                onFilterToggle={onFilterToggle}
+                onFilterToggle={toggleFilter}
                 onSearch={handleSearch}
               />
               <div className="subjects page__subjects">
@@ -79,23 +86,3 @@ function App(props) {
     </div>
   );
 }
-
-App.defaultProps = {
-  fetchError: null,
-  filteredList: [],
-};
-
-App.propTypes = {
-  fetchError: PropTypes.instanceOf(Error),
-  filterName: PropTypes.oneOf(['caption', 'hashtag']).isRequired,
-  filteredList: PropTypes.arrayOf(PropTypes.object),
-  hasDarkTheme: PropTypes.bool.isRequired,
-  isFetchComplete: PropTypes.bool.isRequired,
-  searchString: PropTypes.string.isRequired,
-  onFetchStart: PropTypes.func.isRequired,
-  onFilterToggle: PropTypes.func.isRequired,
-  onSearch: PropTypes.func.isRequired,
-  onThemeToggle: PropTypes.func.isRequired,
-};
-
-export default App;
