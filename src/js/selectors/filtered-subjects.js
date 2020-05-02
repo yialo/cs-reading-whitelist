@@ -3,8 +3,6 @@ import { createSelector } from 'reselect';
 import { Selector as FetchSelector } from '../reducers/fetch.js';
 import { Selector as ListSelector } from '../reducers/list.js';
 
-// TODO: add shallowEqual
-
 export default createSelector(
     [
       FetchSelector.fullList,
