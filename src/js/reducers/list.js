@@ -5,8 +5,6 @@ const INITIAL_STATE = {
   searchString: '',
 };
 
-const handleByDefault = (state) => state;
-
 const handlerDict = {
   [Type.LIST_SEARCH]: (state, payload) => ({
     ...state,
@@ -16,11 +14,17 @@ const handlerDict = {
     ...state,
     filterName: payload,
   }),
+  DEFAULT: (state) => state,
 };
 
 export default (prevState, action) => {
   const { type, payload } = action;
   const state = prevState ?? INITIAL_STATE;
-  const handle = handlerDict[type] ?? handleByDefault;
+  const handle = handlerDict[type] ?? handlerDict.DEFAULT;
   return handle(state, payload);
+};
+
+export const Selector = {
+  filterName: (state) => state.list.filterName,
+  searchString: (state) => state.list.searchString,
 };

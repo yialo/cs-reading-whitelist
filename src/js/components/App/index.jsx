@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
 import React, { useCallback, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import ControlBar from '../ControlBar/index.jsx';
 import FallbackMessage from '../FallbackMessage/index.jsx';
 import Preloader from '../Preloader/index.jsx';
 import SubjectList from '../SubjectList/index.jsx';
 import ThemeToggle from '../ThemeToggle/index.jsx';
+import selectFilteredSubjects from '../../selectors/filtered-subjects.js';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');

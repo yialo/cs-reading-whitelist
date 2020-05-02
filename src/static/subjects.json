@@ -3972,6 +3972,15 @@
         "performance"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Where to Hold React Component Data: state, store, static, and this",
+      "url": "https://www.freecodecamp.org/news/where-do-i-belong-a-guide-to-saving-react-component-data-in-state-store-static-and-this-c49b335e2a00/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": ""
     }
   ]
 }

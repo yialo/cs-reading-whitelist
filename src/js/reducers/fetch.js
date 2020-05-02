@@ -6,8 +6,6 @@ const INITIAL_STATE = {
   isComplete: false,
 };
 
-const handleByDefault = (state) => state;
-
 const handlerDict = {
   [Type.FETCH_COMPLETE]: (state, payload) => ({
     ...state,
@@ -19,11 +17,18 @@ const handlerDict = {
     error: payload,
     isComplete: true,
   }),
+  DEFAULT: (state) => state,
 };
 
 export default (prevState, action) => {
   const { type, payload } = action;
   const state = prevState ?? INITIAL_STATE;
-  const handle = handlerDict[type] ?? handleByDefault;
+  const handle = handlerDict[type] ?? handlerDict.DEFAULT;
   return handle(state, payload);
+};
+
+export const Selector = {
+  error: (state) => state.fetch.error,
+  fullList: (state) => state.fetch.list,
+  isComplete: (state) => state.fetch.isComplete,
 };
