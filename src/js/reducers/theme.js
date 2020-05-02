@@ -14,3 +14,7 @@ export default (prevState, action) => {
   }
   return state;
 };
+
+export const Selector = {
+  isDark: (state) => state.theme.isDark,
+};

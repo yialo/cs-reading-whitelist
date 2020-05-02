@@ -1,6 +1,6 @@
 import Type from './types.js';
 
-const filterList = (nextSearchString) => ({
+const searchInList = (nextSearchString) => ({
   type: Type.LIST_SEARCH,
   payload: nextSearchString,
 });
@@ -35,7 +35,7 @@ const fetchSubjects = () => {
 
 export {
   fetchSubjects,
-  filterList,
+  searchInList,
   toggleFilter,
   toggleTheme,
 };

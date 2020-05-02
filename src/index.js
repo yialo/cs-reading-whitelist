@@ -8,4 +8,4 @@ import './fonts/source-sans-pro_700_normal.woff2';
 
 import initApp from './js/init-app.jsx';
 
-document.addEventListener('DOMContentLoaded', initApp);
+initApp();
