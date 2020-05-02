@@ -4004,6 +4004,15 @@
         "too_complicated"
       ],
       "legend": ""
+    },
+    {
+      "caption": "How to handle state in React. The missing FAQ",
+      "url": "https://medium.com/react-ecosystem/how-to-handle-state-in-react-6f2d3cd73a0c",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": ""
     }
   ]
 }
