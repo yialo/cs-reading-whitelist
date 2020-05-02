@@ -3958,6 +3958,7 @@
       "lang": "ru",
       "tags": [
         "react",
+        "functional_programming",
         "too_complicated"
       ],
       "legend": ""
@@ -3988,6 +3989,19 @@
       "lang": "en",
       "tags": [
         "react"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Complexity: Divide and Conquer! (by Michel Weststrate)",
+      "url": "https://youtu.be/3J9EJrvqOiM",
+      "lang": "en",
+      "tags": [
+        "video",
+        "react",
+        "react_router",
+        "mobx",
+        "too_complicated"
       ],
       "legend": ""
     }
