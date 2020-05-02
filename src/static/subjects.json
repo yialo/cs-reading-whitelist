@@ -3951,6 +3951,36 @@
         "performance"
       ],
       "legend": "В предыдущем выпуске подкаста мы разбирались с вопросом где разместить бизнес логику при использовании Redux. Но остались острые вопросы, которые я не успел осветить. Углубимся в тему ещё немного!"
+    },
+    {
+      "caption": "getDerivedStateFromState – или как сделать из простой проблемы сложную",
+      "url": "https://habr.com/ru/post/353564/",
+      "lang": "ru",
+      "tags": [
+        "react",
+        "too_complicated"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Increase your React + Redux Application Performance With the Reselect Library",
+      "url": "https://medium.com/better-programming/increase-your-react-redux-application-performance-with-reselect-library-3f4d632a08c5",
+      "lang": "en",
+      "tags": [
+        "react",
+        "redux",
+        "performance"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Where to Hold React Component Data: state, store, static, and this",
+      "url": "https://www.freecodecamp.org/news/where-do-i-belong-a-guide-to-saving-react-component-data-in-state-store-static-and-this-c49b335e2a00/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": ""
     }
   ]
 }

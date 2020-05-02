@@ -1,11 +1,14 @@
 import { createSelector } from 'reselect';
 
-const getFullList = (state) => state.fetch.list;
-const getFilterName = (state) => state.list.filterName;
-const getSearchString = (state) => state.list.searchString;
+import { Selector as FetchSelector } from '../reducers/fetch.js';
+import { Selector as ListSelector } from '../reducers/list.js';
 
 export default createSelector(
-    [getFullList, getSearchString, getFilterName],
+    [
+      FetchSelector.fullList,
+      ListSelector.searchString,
+      ListSelector.filterName,
+    ],
     (fullList, searchString, filterName) => {
       if (searchString === '') {
         return fullList;

@@ -5,7 +5,7 @@ import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
-import App from './components/App/Connected.jsx';
+import App from './components/App/index.jsx';
 import ErrorBoundary from './components/ErrorBoundary/index.jsx';
 import rootReducer from './reducers/_root.js';
 
