@@ -4013,6 +4013,15 @@
         "react"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Никто не знает CSS: специфичность — не каскад",
+      "url": "https://css-live.ru/css/nikto-ne-znaet-css-specifichnost-ne-kaskad.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
     }
   ]
 }
