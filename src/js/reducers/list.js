@@ -1,4 +1,4 @@
-import Type from '../actions/types.js';
+import { ActionTypeEnum as Type } from '../constants.js';
 
 const INITIAL_STATE = {
   filterName: 'caption',
@@ -24,7 +24,7 @@ export default (prevState, action) => {
   return handle(state, payload);
 };
 
-export const Selector = {
+export const selector = {
   filterName: (state) => state.list.filterName,
   searchString: (state) => state.list.searchString,
 };

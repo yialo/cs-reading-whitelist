@@ -1,4 +1,4 @@
-import Type from '../actions/types.js';
+import { ActionTypeEnum as Type } from '../constants.js';
 
 const INITIAL_STATE = {
   isDark: false,
@@ -15,6 +15,6 @@ export default (prevState, action) => {
   return state;
 };
 
-export const Selector = {
+export const selector = {
   isDark: (state) => state.theme.isDark,
 };

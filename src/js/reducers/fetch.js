@@ -1,4 +1,4 @@
-import Type from '../actions/types.js';
+import { ActionTypeEnum as Type } from '../constants.js';
 
 const INITIAL_STATE = {
   error: null,
@@ -27,7 +27,7 @@ export default (prevState, action) => {
   return handle(state, payload);
 };
 
-export const Selector = {
+export const selector = {
   error: (state) => state.fetch.error,
   fullList: (state) => state.fetch.list,
   isComplete: (state) => state.fetch.isComplete,

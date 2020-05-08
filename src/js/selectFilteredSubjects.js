@@ -1,13 +1,12 @@
 import { createSelector } from 'reselect';
 
-import { Selector as FetchSelector } from '../reducers/fetch.js';
-import { Selector as ListSelector } from '../reducers/list.js';
+import { fetchSelector, listSelector } from './reducers/index.js';
 
 export default createSelector(
     [
-      FetchSelector.fullList,
-      ListSelector.searchString,
-      ListSelector.filterName,
+      fetchSelector.fullList,
+      listSelector.searchString,
+      listSelector.filterName,
     ],
     (fullList, searchString, filterName) => {
       if (searchString === '') {

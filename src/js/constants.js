@@ -1,4 +1,4 @@
-export default {
+export const ActionTypeEnum = {
   LIST_SEARCH: 'LIST_SEARCH',
   LIST_FILTER_TOGGLE: 'LIST_FILTER_TOGGLE',
   FETCH_COMPLETE: 'FETCH_COMPLETE',

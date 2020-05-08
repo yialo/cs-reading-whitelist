@@ -7,13 +7,11 @@ import Preloader from '../Preloader/index.jsx';
 import SubjectList from '../SubjectList/index.jsx';
 import ThemeToggle from '../ThemeToggle/index.jsx';
 
-import * as Action from '../../actions/actions.js';
-import useActions from '../../hooks/use-actions.js';
+import * as Action from '../../actions.js';
+import useActions from '../../useActions.js';
 
-import { Selector as FetchSelector } from '../../reducers/fetch.js';
-import { Selector as ListSelector } from '../../reducers/list.js';
-import { Selector as ThemeSelector } from '../../reducers/theme.js';
-import selectFilteredSubjects from '../../selectors/filtered-subjects.js';
+import { fetchSelector, listSelector, themeSelector } from '../../reducers/index.js';
+import selectFilteredSubjects from '../../selectFilteredSubjects.js';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
@@ -21,12 +19,12 @@ const disableOverlay = () => {
 };
 
 export default function App() {
-  const fetchError = useSelector(FetchSelector.error);
-  const filterName = useSelector(ListSelector.filterName);
+  const fetchError = useSelector(fetchSelector.error);
+  const filterName = useSelector(listSelector.filterName);
   const filteredList = useSelector(selectFilteredSubjects);
-  const searchString = useSelector(ListSelector.searchString);
-  const hasDarkTheme = useSelector(ThemeSelector.isDark);
-  const isFetchComplete = useSelector(FetchSelector.isComplete);
+  const searchString = useSelector(listSelector.searchString);
+  const hasDarkTheme = useSelector(themeSelector.isDark);
+  const isFetchComplete = useSelector(fetchSelector.isComplete);
 
   const {
     fetchSubjects,

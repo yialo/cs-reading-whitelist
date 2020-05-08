@@ -1,4 +1,4 @@
-import Type from './types.js';
+import { ActionTypeEnum as Type } from './constants.js';
 
 const searchInList = (nextSearchString) => ({
   type: Type.LIST_SEARCH,
