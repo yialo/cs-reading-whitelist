@@ -1,9 +1,10 @@
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 function TextInput(props) {
   const {
-    classNames,
+    className,
     inputMode,
     legend,
     onChange,
@@ -11,7 +12,7 @@ function TextInput(props) {
   } = props;
   return (
     <label
-      className={['text-input'].concat(classNames).join(' ')}
+      className={classNames('text-input', !!className && className)}
       aria-label={legend}
     >
       <input
@@ -26,14 +27,11 @@ function TextInput(props) {
 }
 
 TextInput.defaultProps = {
-  classNames: [],
+  className: '',
 };
 
 TextInput.propTypes = {
-  classNames: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.string),
-    PropTypes.string,
-  ]),
+  className: PropTypes.string,
   inputMode: PropTypes.string.isRequired,
   legend: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,

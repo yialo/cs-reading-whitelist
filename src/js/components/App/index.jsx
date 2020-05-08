@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React, { useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
@@ -43,7 +44,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className={hasDarkTheme ? 'page__wrapper theme_dark' : 'page__wrapper'}>
+    <div className={classNames('page__wrapper', { 'theme_dark': hasDarkTheme })}>
       <main className="page__content" aria-labelledby="page-title">
         <div className="page__header">
           <h1
