@@ -3234,8 +3234,7 @@
       "url": "https://habr.com/ru/company/voximplant/blog/276695/",
       "lang": "ru",
       "tags": [
-        "git",
-        "4consider"
+        "git"
       ],
       "legend": ""
     },
@@ -3852,7 +3851,8 @@
       "url": "https://medium.com/web-standards/toggle-buttons-a41388e80974",
       "lang": "ru",
       "tags": [
-        "a11y"
+        "a11y",
+        "aria"
       ],
       "legend": ""
     },
