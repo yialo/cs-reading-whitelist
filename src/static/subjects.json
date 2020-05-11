@@ -4022,6 +4022,25 @@
         "css"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Собеседование по TypeScript: 20 вопросов и ответов",
+      "url": "https://habr.com/ru/company/ruvds/blog/419993/",
+      "lang": "ru",
+      "tags": [
+        "typescript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Пятиминутка React #29. Мониторинг ошибок",
+      "url": "https://youtu.be/7JeMpnvzs8M",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "javascript"
+      ],
+      "legend": "Как обрабатывать ошибки в JavaScript и как их эффективно мониторить на production? По итогам RamblerFront& meetup #2."
     }
   ]
 }

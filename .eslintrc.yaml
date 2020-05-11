@@ -44,6 +44,7 @@ plugins:
   - babel
   - import
   - jsx-a11y
+  - node
   - promise
   - react
   - react-hooks
@@ -733,6 +734,47 @@ rules:
   no-warning-comments: 'off'
   no-whitespace-before-property: error
   no-with: error
+
+  # node/handle-callback-err require error handling in callbacks
+  # node/no-callback-literal ensure Node.js-style error-first callback pattern is followed
+  # node/no-exports-assign disallow the assignment to exports ⭐
+  # node/no-extraneous-import disallow import declarations which import extraneous modules ⭐
+  # node/no-extraneous-require disallow require() expressions which import extraneous modules ⭐
+  # node/no-missing-import disallow import declarations which import non-existence modules ⭐
+  # node/no-missing-require disallow require() expressions which import non-existence modules ⭐
+  # node/no-new-require disallow new operators with calls to require
+  # node/no-path-concat disallow string concatenation with __dirname and __filename
+  # node/no-process-exit disallow the use of process.exit()
+  # node/no-unpublished-bin disallow bin files that npm ignores ⭐
+  # node/no-unpublished-import disallow import declarations which import private modules ⭐
+  # node/no-unpublished-require disallow require() expressions which import private modules ⭐
+  # node/no-unsupported-features/es-builtins disallow unsupported ECMAScript built-ins on the specified version ⭐️
+  # node/no-unsupported-features/es-syntax disallow unsupported ECMAScript syntax on the specified version ⭐️
+  # node/no-unsupported-features/node-builtins disallow unsupported Node.js built-in APIs on the specified version ⭐️
+  # node/process-exit-as-throw make process.exit() expressions the same code path as throw ⭐️
+  # node/shebang
+
+  # node/no-deprecated-api
+
+  # node/callback-return require return statements after callbacks
+  # node/exports-style enforce either module.exports or exports
+  # node/file-extension-in-import enforce the style of file extensions in import declarations ✒️
+  # node/global-require require require() calls to be placed at top-level module scope
+  # node/no-mixed-requires disallow require calls to be mixed with regular variable declarations
+  # node/no-process-env disallow the use of process.env
+  # node/no-restricted-import disallow specified modules when loaded by import declarations
+  # node/no-restricted-require disallow specified modules when loaded by require
+  # node/no-sync disallow synchronous methods
+  # node/prefer-global/buffer enforce either Buffer or require("buffer").Buffer
+  # node/prefer-global/console enforce either console or require("console")
+  # node/prefer-global/process enforce either process or require("process")
+  # node/prefer-global/text-decoder enforce either TextDecoder or require("util").TextDecoder
+  # node/prefer-global/text-encoder enforce either TextEncoder or require("util").TextEncoder
+  # node/prefer-global/url-search-params enforce either URLSearchParams or require("url").URLSearchParams
+  # node/prefer-global/url enforce either URL or require("url").URL
+  # node/prefer-promises/dns enforce require("dns").promises
+  # node/prefer-promises/fs
+
   nonblock-statement-body-position:
     - error
     - beside
