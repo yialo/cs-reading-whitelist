@@ -165,7 +165,7 @@
       "url": "https://www.youtube.com/watch?v=f4uXBpP_xxY",
       "lang": "ru",
       "tags": [
-        "unsorted",
+        "methodology",
         "video"
       ],
       "legend": ""
@@ -175,7 +175,7 @@
       "url": "https://www.youtube.com/watch?v=jPbqeSSDuug",
       "lang": "ru",
       "tags": [
-        "unsorted",
+        "methodology",
         "video"
       ],
       "legend": ""
@@ -185,7 +185,7 @@
       "url": "https://www.youtube.com/watch?v=xPFRUM_oDKA",
       "lang": "ru",
       "tags": [
-        "unsorted",
+        "methodology",
         "video"
       ],
       "legend": ""
@@ -195,7 +195,7 @@
       "url": "https://www.youtube.com/watch?v=MzTng78DCm4",
       "lang": "ru",
       "tags": [
-        "unsorted",
+        "methodology",
         "video"
       ],
       "legend": ""
@@ -4051,6 +4051,33 @@
         "react"
       ],
       "legend": "Небольшая заметка, размышление на тему можно ли жить без внешнего контейнера состояния и какие при этом возникают проблемы и неудобства? Как организовывать код?"
+    },
+    {
+      "caption": "Как писать сообщения коммитов в Git",
+      "url": "https://medium.com/grisme/%D0%BA%D0%B0%D0%BA-%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2-%D0%B2-git-9ed19ebc5ebf",
+      "lang": "ru",
+      "tags": [
+        "git"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Developer tip: Keep your commits \"atomic\"",
+      "url": "https://www.freshconsulting.com/atomic-commits/",
+      "lang": "en",
+      "tags": [
+        "git"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Hype Driven Development",
+      "url": "https://habr.com/ru/company/edison/blog/316668/",
+      "lang": "ru",
+      "tags": [
+        "methodology"
+      ],
+      "legend": ""
     }
   ]
 }
