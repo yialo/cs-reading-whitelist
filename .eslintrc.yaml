@@ -17,14 +17,58 @@ overrides:
       - ./src/postcss/**/*.js
     parser: espree
     parserOptions:
-      ecmaFeatures:
-        jsx: true
       ecmaVersion: 2019
       sourceType: script
+    plugins:
+      - babel
+      - import
+      - node
+      - promise
     rules:
       import/no-commonjs: 'off'
       import/no-extraneous-dependencies: 'off'
       import/no-nodejs-modules: 'off'
+      node/handle-callback-err: 'off'
+      node/no-callback-literal: 'off'
+      node/no-exports-assign: error
+      node/no-extraneous-import: error
+      node/no-extraneous-require: error
+      node/no-missing-import: error
+      node/no-missing-require: error
+      node/no-new-require: error
+      node/no-path-concat: error
+      node/no-process-exit: error
+      node/no-unpublished-bin: error
+      node/no-unpublished-import: error
+      node/no-unpublished-require: error
+      node/no-unsupported-features/es-builtins: error
+      node/no-unsupported-features/es-syntax: error
+      node/no-unsupported-features/node-builtins: error
+      node/process-exit-as-throw: 'off'
+      node/shebang: error
+      node/no-deprecated-api: error
+      node/callback-return: 'off'
+      node/exports-style:
+        - error
+        - module.exports
+      node/file-extension-in-import:
+        - error
+        - always
+      node/global-require: 'off'
+      node/no-mixed-requires: 'off'
+      node/no-process-env: 'off'
+      node/no-restricted-import: 'off'
+      node/no-restricted-require: 'off'
+      node/no-sync: 'off'
+      node/prefer-global/buffer: 'off'
+      node/prefer-global/console: 'off'
+      node/prefer-global/process: 'off'
+      node/prefer-global/text-decoder: 'off'
+      node/prefer-global/text-encoder: 'off'
+      node/prefer-global/url-search-params: 'off'
+      node/prefer-global/url: 'off'
+      node/prefer-promises/dns: 'off'
+      node/prefer-promises/fs: 'off'
     settings:
       import/resolver: node
   - extends:
@@ -44,7 +88,6 @@ plugins:
   - babel
   - import
   - jsx-a11y
-  - node
   - promise
   - react
   - react-hooks
@@ -153,7 +196,6 @@ rules:
   getter-return:
     - error
     - allowImplicit: true
-  global-require: 'off'
   grouped-accessor-pairs:
     - error
     - getBeforeSet
@@ -212,8 +254,8 @@ rules:
   import/no-unassigned-import:
     - error
     - allow:
-      - '**/*.{css,ico,jp?(e)g,png,svg,woff2}'
-      - '**/*.test.js'
+        - '**/*.{css,ico,jp?(e)g,png,svg,woff2}'
+        - '**/*.test.js'
   import/no-unresolved:
     - error
     - amd: false
@@ -493,6 +535,7 @@ rules:
   no-implicit-coercion: 'off'
   no-implicit-globals: 'off'
   no-implied-eval: error
+  no-import-assign: error
   no-inline-comments: 'off'
   no-inner-declarations: error
   no-invalid-regexp: error
@@ -734,47 +777,6 @@ rules:
   no-warning-comments: 'off'
   no-whitespace-before-property: error
   no-with: error
-
-  # node/handle-callback-err require error handling in callbacks
-  # node/no-callback-literal ensure Node.js-style error-first callback pattern is followed
-  # node/no-exports-assign disallow the assignment to exports ⭐
-  # node/no-extraneous-import disallow import declarations which import extraneous modules ⭐
-  # node/no-extraneous-require disallow require() expressions which import extraneous modules ⭐
-  # node/no-missing-import disallow import declarations which import non-existence modules ⭐
-  # node/no-missing-require disallow require() expressions which import non-existence modules ⭐
-  # node/no-new-require disallow new operators with calls to require
-  # node/no-path-concat disallow string concatenation with __dirname and __filename
-  # node/no-process-exit disallow the use of process.exit()
-  # node/no-unpublished-bin disallow bin files that npm ignores ⭐
-  # node/no-unpublished-import disallow import declarations which import private modules ⭐
-  # node/no-unpublished-require disallow require() expressions which import private modules ⭐
-  # node/no-unsupported-features/es-builtins disallow unsupported ECMAScript built-ins on the specified version ⭐️
-  # node/no-unsupported-features/es-syntax disallow unsupported ECMAScript syntax on the specified version ⭐️
-  # node/no-unsupported-features/node-builtins disallow unsupported Node.js built-in APIs on the specified version ⭐️
-  # node/process-exit-as-throw make process.exit() expressions the same code path as throw ⭐️
-  # node/shebang
-
-  # node/no-deprecated-api
-
-  # node/callback-return require return statements after callbacks
-  # node/exports-style enforce either module.exports or exports
-  # node/file-extension-in-import enforce the style of file extensions in import declarations ✒️
-  # node/global-require require require() calls to be placed at top-level module scope
-  # node/no-mixed-requires disallow require calls to be mixed with regular variable declarations
-  # node/no-process-env disallow the use of process.env
-  # node/no-restricted-import disallow specified modules when loaded by import declarations
-  # node/no-restricted-require disallow specified modules when loaded by require
-  # node/no-sync disallow synchronous methods
-  # node/prefer-global/buffer enforce either Buffer or require("buffer").Buffer
-  # node/prefer-global/console enforce either console or require("console")
-  # node/prefer-global/process enforce either process or require("process")
-  # node/prefer-global/text-decoder enforce either TextDecoder or require("util").TextDecoder
-  # node/prefer-global/text-encoder enforce either TextEncoder or require("util").TextEncoder
-  # node/prefer-global/url-search-params enforce either URLSearchParams or require("url").URLSearchParams
-  # node/prefer-global/url enforce either URL or require("url").URL
-  # node/prefer-promises/dns enforce require("dns").promises
-  # node/prefer-promises/fs
-
   nonblock-statement-body-position:
     - error
     - beside
@@ -1181,4 +1183,4 @@ settings:
       env:
         purpose: development
   react:
-    version: 'detect'
+    version: detect
