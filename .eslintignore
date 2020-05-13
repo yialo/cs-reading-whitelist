@@ -1,5 +1,5 @@
 *.html
-dist/
-docs/
-node_modules/
-tests/
+/dist/
+/docs/
+/node_modules/
+/tests/
