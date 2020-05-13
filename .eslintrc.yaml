@@ -4,6 +4,12 @@ env:
   es6: true
 globals:
   process: readonly
+ignorePatterns:
+  - '*.html'
+  - /dist/
+  - /docs/
+  - /node_modules/
+  - /tests/
 overrides:
   - env:
       jest: true
