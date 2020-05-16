@@ -40,10 +40,10 @@ module.exports = (env = {}) => {
     DIST: distPath,
     SRC: srcPath,
     ROOT: rootPath,
-    STATIC: staticPath,
     BABEL_CONFIG: path.join(configPath, 'babel.config.js'),
     LOCAL_ENV_FILE: path.join(rootPath, '.env.local'),
     PUG_TEMPLATE: path.join(srcPath, 'pug/pages/index.pug'),
+    RESPONSE_INPUT: staticPath,
     RESPONSE_OUTPUT: path.join(distPath, 'response'),
   };
 
@@ -226,13 +226,19 @@ module.exports = (env = {}) => {
           filename: 'index.html',
           template: Path.PUG_TEMPLATE,
         }),
-        new CopyPlugin([
-          {
-            from: Path.STATIC,
-            to: Path.RESPONSE_OUTPUT,
-            test: /\.json$/,
-          },
-        ]),
+        new CopyPlugin({
+          patterns: [
+            {
+              from: Path.RESPONSE_INPUT,
+              to: Path.RESPONSE_OUTPUT,
+              transformPath: (targetPath) => {
+                if (path.extname(targetPath) === '.json') {
+                  return targetPath;
+                }
+              },
+            },
+          ],
+        }),
         new DefinePlugin({
           'process.env.PUBLIC_PATH': JSON.stringify(publicPath),
         }),
