@@ -3766,9 +3766,9 @@
       "legend": "A methodology for building modern, scalable, maintainable software-as-a-service apps."
     },
     {
-      "caption": "Algorithms and Data Structures",
-      "url": "https://code.tutsplus.com/tutorials/algorithms-and-data-structures--cms-20437",
-      "lang": "en",
+      "caption": "Алгоритмы и структуры данных для начинающих: сложность алгоритмов",
+      "url": "https://tproger.ru/translations/algorithms-and-data-structures/",
+      "lang": "ru",
       "tags": [
         "algorithms"
       ],
