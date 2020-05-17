@@ -41,6 +41,7 @@ module.exports = (env = {}) => {
     SRC: srcPath,
     ROOT: rootPath,
     BABEL_CONFIG: path.join(configPath, 'babel.config.js'),
+    ENTRY: path.join(srcPath, 'index.js'),
     LOCAL_ENV_FILE: path.join(rootPath, '.env.local'),
     PUG_TEMPLATE: path.join(srcPath, 'pug/pages/index.pug'),
     RESPONSE_INPUT: staticPath,
@@ -58,24 +59,19 @@ module.exports = (env = {}) => {
   return {
     context: Path.SRC,
 
-    devServer: (() => {
-      if (isDevelopment) {
-        return {
-          host: process.env.WDS_HOST,
-          port: process.env.WDS_PORT,
-          hot: false,
-          inline: true,
-          overlay: true,
-          writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
-        };
-      }
-      return {};
-    })(),
+    devServer: isDevelopment ? {
+      host: process.env.WDS_HOST,
+      port: process.env.WDS_PORT,
+      hot: false,
+      inline: true,
+      overlay: true,
+      writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
+    } : {},
 
     devtool: isDevelopment ? 'eval-source-map' : false,
 
     entry: {
-      'app': Path.SRC,
+      app: Path.ENTRY,
     },
 
     mode: (isDevelopment || isProduction) ? purpose : 'none',
