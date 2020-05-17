@@ -1,4 +1,13 @@
 ---
+ignoreFiles:
+  - '*.html'
+  - '*.js'
+  - '*.jsx'
+  - '*.md'
+  - '*.ts'
+  - '*.tsx'
+  - '.dist/**'
+  - '.docs/**'
 rules:
   at-rule-empty-line-before: null
   at-rule-name-case: lower
