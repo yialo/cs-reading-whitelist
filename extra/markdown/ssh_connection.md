@@ -10,9 +10,10 @@ cd .ssh
 ## 2. Генерируем ключ
 
 ``` bash
-ssh-keygen -t rsa -b 4096 -C "%my-email-address%"
+ssh-keygen -t rsa -b 4096 -C "%address%@%domain%"
 ```
 
+Здесь _%my.address%_ - адрес, _%domain%_ - домен (например, gmail.com).  
 Далее файлу ключу необходимо назначить имя и (при желании) пароль.
 
 ## 3. Подключаем публичный ключ
@@ -22,10 +23,10 @@ ssh-keygen -t rsa -b 4096 -C "%my-email-address%"
 ## 4. Проверяем соединение с сервером
 
 ``` bash
-ssh -T -i %path-to-ssh-folder%/.ssh/%private-key-filename% git@%hostname%
+ssh -T -i ~/.ssh/%private-key-filename% git@%hostname%
 ```
 
-В качестве _%hostname%_ может быть указан github.com, bitbucket.org и т.п.
+Здесь _%private-key-filename%_ - имя файла приватного ключа, а в качестве _%hostname%_ может быть указан github.com, bitbucket.org и т.п.
 
 ## 5. В директории .ssh создадим файл **config** и укажем в нём
 
