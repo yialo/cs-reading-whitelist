@@ -9,6 +9,7 @@ ignoreFiles:
   - './dist/**'
   - './docs/**'
 rules:
+  alpha-value-notation: null
   at-rule-empty-line-before: null
   at-rule-name-case: lower
   at-rule-name-space-after: always-single-line
@@ -27,6 +28,7 @@ rules:
   block-opening-brace-newline-after: always
   block-opening-brace-space-after: always-single-line
   block-opening-brace-space-before: always
+  color-function-notation: null
   color-hex-case: lower
   color-hex-length: long
   color-no-invalid-hex: true
@@ -59,6 +61,7 @@ rules:
   function-parentheses-space-inside: never-single-line
   function-url-quotes: always
   function-whitespace-after: always
+  hue-degree-notation: angle
   indentation:
     - 2
     - ignore:
