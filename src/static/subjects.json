@@ -4078,6 +4078,18 @@
         "methodology"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Очень простое объяснение принципов SOLID",
+      "url": "https://habr.com/ru/post/413707/",
+      "lang": "ru",
+      "tags": [
+        "design_patterns",
+        "code_quality",
+        "oop",
+        "solid"
+      ],
+      "legend": ""
     }
   ]
 }
