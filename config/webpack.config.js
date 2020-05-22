@@ -60,8 +60,8 @@ module.exports = (env = {}) => {
     context: Path.SRC,
 
     devServer: isDevelopment ? {
-      host: process.env.WDS_HOST,
-      port: process.env.WDS_PORT,
+      host: process.env.WDS_HOST || '127.0.0.1',
+      port: process.env.WDS_PORT || 8081,
       hot: false,
       inline: true,
       overlay: true,
@@ -83,6 +83,7 @@ module.exports = (env = {}) => {
           loader: 'babel-loader',
           options: {
             configFile: Path.BABEL_CONFIG,
+            cacheDirectory: true,
           },
         };
 
