@@ -79,7 +79,6 @@ overrides:
       import/resolver: node
   - extends:
       - 'eslint:recommended'
-      - 'plugin:@typescript-eslint/eslint-recommended'
       - 'plugin:@typescript-eslint/recommended'
     files:
       - ./src/**/*.ts?(x)
@@ -556,6 +555,7 @@ rules:
   no-lone-blocks: error
   no-lonely-if: error
   no-loop-func: error
+  no-loss-of-precision: error
   no-magic-numbers: 'off'
   no-misleading-character-class: error
   no-mixed-operators:
