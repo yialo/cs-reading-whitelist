@@ -4090,6 +4090,27 @@
         "solid"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Promises: States and Fates",
+      "url": "https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "async"
+      ],
+      "legend": "This document helps clarify the different adjectives surrounding promises, by dividing them up into two categories: states and fates."
+    },
+    {
+      "caption": "Внутреннее устройство бандла webpack (Алексей Иванов)",
+      "url": "https://youtu.be/jE1ibm037Fo",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "build",
+        "webpack"
+      ],
+      "legend": ""
     }
   ]
 }
