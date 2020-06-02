@@ -40,7 +40,7 @@ module.exports = (env = {}) => {
     DIST: distPath,
     SRC: srcPath,
     BABEL_CONFIG: path.join(configPath, 'babel.config.js'),
-    ENTRY: path.join(srcPath, 'index.ts'),
+    ENTRY: path.join(srcPath, 'index.js'),
     LOCAL_ENV_FILE: path.join(rootPath, '.env.local'),
     PUG_TEMPLATE: path.join(srcPath, 'pug/pages/index.pug'),
     RESPONSE_INPUT: staticPath,
