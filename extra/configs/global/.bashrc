@@ -1,6 +1,5 @@
-alias b='npm run build'
 alias d='npm run dev'
-alias ga='git add .'
+alias ga='git add -A'
 alias gc='git commit'
 alias gs='git status'
 alias i='npm install'
