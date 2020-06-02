@@ -19,7 +19,7 @@ const disableOverlay = () => {
   $overlay.classList.add('js_hidden');
 };
 
-export default function App() {
+export default function App(): React.FC {
   const fetchError = useSelector(fetchSelector.error);
   const filterName = useSelector(listSelector.filterName);
   const filteredList = useSelector(selectFilteredSubjects);

@@ -33,14 +33,6 @@ module.exports = {
         useSpread: false,
       },
     ],
-    [
-      '@babel/preset-typescript',
-      {
-        allExtensions: true,
-        allowNamespaces: false,
-        isTSX: true,
-        jsxPragma: 'React',
-      },
-    ],
+    '@babel/preset-typescript',
   ],
 };

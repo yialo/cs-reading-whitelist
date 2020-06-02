@@ -922,6 +922,7 @@ rules:
     - error
     - extensions:
         - .jsx
+        - .tsx
   react/jsx-first-prop-new-line:
     - error
     - multiline-multiprop

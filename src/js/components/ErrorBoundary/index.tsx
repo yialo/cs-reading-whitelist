@@ -6,7 +6,7 @@ export default class ErrorBoundary extends React.Component {
     children: PropTypes.node.isRequired,
   };
 
-  static getDerivedStateFromError(err) {
+  static getDerivedStateFromError(err: Error): React.GetDerivedStateFromError {
     return { error: err };
   }
 
@@ -14,7 +14,7 @@ export default class ErrorBoundary extends React.Component {
     error: null,
   };
 
-  render() {
+  render(): React.ReactNode {
     if (this.state.error) {
       return <p>Something went wrong in React app:(</p>;
     }
