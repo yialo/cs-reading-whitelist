@@ -9,7 +9,7 @@ import App from './components/App/index.tsx';
 import ErrorBoundary from './components/ErrorBoundary/index.tsx';
 import { rootReducer } from './reducers/index.js';
 
-export default (): React.FC => {
+export default (): void => {
   const appliedMiddleware = applyMiddleware(thunk);
   const enhancer = (
     (process.env.NODE_ENV === 'development')

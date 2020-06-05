@@ -15,11 +15,7 @@ const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
-  const {
-    analyze: needAnalyze,
-    deploy: needDeploy,
-    purpose,
-  } = env;
+  const { analyze: needAnalyze, purpose } = env;
 
   process.env.BABEL_ENV = purpose;
   process.env.NODE_ENV = purpose;
@@ -30,33 +26,28 @@ module.exports = (env = {}) => {
   const assetHash = isProduction ? '.[contenthash]' : '';
 
   const rootPath = path.resolve(__dirname, '../');
-  const configPath = path.join(rootPath, 'config');
-  const distPath = path.join(rootPath, needDeploy ? 'docs' : 'dist');
-  const srcPath = path.join(rootPath, 'src');
-  const staticPath = path.join(srcPath, 'static');
 
-  const Path = {
-    CONFIG: configPath,
-    DIST: distPath,
-    SRC: srcPath,
-    BABEL_CONFIG: path.join(configPath, 'babel.config.js'),
-    ENTRY: path.join(srcPath, 'index.js'),
+  const PATH = {
+    BABEL_CONFIG: path.join(rootPath, 'config/babel.config.js'),
+    CONFIG: path.join(rootPath, 'config'),
+    DIST: path.join(rootPath, 'dist'),
+    ENTRY: path.join(rootPath, 'src/index.js'),
     LOCAL_ENV_FILE: path.join(rootPath, '.env.local'),
-    PUG_TEMPLATE: path.join(srcPath, 'pug/pages/index.pug'),
-    RESPONSE_INPUT: staticPath,
-    RESPONSE_OUTPUT: path.join(distPath, 'response'),
+    PUG_TEMPLATE: path.join(rootPath, 'src/pug/pages/index.pug'),
+    RESPONSE_INPUT: path.join(rootPath, 'src/static'),
+    RESPONSE_OUTPUT: path.join(rootPath, 'dist/response'),
+    SRC: path.join(rootPath, 'src'),
   };
 
   const Alias = {
-    '@': srcPath,
+    '@': PATH.SRC,
   };
 
-  dotEnv.config({ path: Path.LOCAL_ENV_FILE });
-
-  const publicPath = isProduction ? process.env.DEPLOY_PUBLIC_PATH : '/';
+  dotEnv.config({ path: PATH.LOCAL_ENV_FILE });
+  dotEnv.config({ path: path.join(rootPath, `.env.${purpose}`) });
 
   return {
-    context: Path.SRC,
+    context: PATH.SRC,
 
     devServer: isDevelopment ? {
       host: process.env.WDS_HOST || '127.0.0.1',
@@ -70,7 +61,7 @@ module.exports = (env = {}) => {
     devtool: isDevelopment ? 'eval-source-map' : false,
 
     entry: {
-      app: Path.ENTRY,
+      app: PATH.ENTRY,
     },
 
     mode: (isDevelopment || isProduction) ? purpose : 'none',
@@ -81,7 +72,7 @@ module.exports = (env = {}) => {
           test: /\.(?:j|t)sx?$/,
           loader: 'babel-loader',
           options: {
-            configFile: Path.BABEL_CONFIG,
+            configFile: PATH.BABEL_CONFIG,
             cacheDirectory: true,
           },
         };
@@ -113,7 +104,7 @@ module.exports = (env = {}) => {
                   ctx: {
                     pathAliasEnum: Alias,
                   },
-                  path: Path.CONFIG,
+                  path: PATH.CONFIG,
                 },
               },
             },
@@ -204,8 +195,8 @@ module.exports = (env = {}) => {
 
     output: {
       filename: `assets/js/[name]${assetHash}.js`,
-      path: Path.DIST,
-      publicPath,
+      path: PATH.DIST,
+      publicPath: process.env.PUBLIC_PATH,
     },
 
     plugins: (() => {
@@ -220,13 +211,13 @@ module.exports = (env = {}) => {
         }),
         new HtmlPlugin({
           filename: 'index.html',
-          template: Path.PUG_TEMPLATE,
+          template: PATH.PUG_TEMPLATE,
         }),
         new CopyPlugin({
           patterns: [
             {
-              from: Path.RESPONSE_INPUT,
-              to: Path.RESPONSE_OUTPUT,
+              from: PATH.RESPONSE_INPUT,
+              to: PATH.RESPONSE_OUTPUT,
               transformPath: (targetPath) => {
                 if (path.extname(targetPath) === '.json') {
                   return targetPath;
@@ -236,7 +227,7 @@ module.exports = (env = {}) => {
           ],
         }),
         new DefinePlugin({
-          'process.env.PUBLIC_PATH': JSON.stringify(publicPath),
+          'process.env.PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH),
         }),
       ];
       if (needAnalyze) {

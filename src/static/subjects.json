@@ -4111,6 +4111,17 @@
         "webpack"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Глубокое погружение в webpack (Стас Курилов)",
+      "url": "https://youtu.be/aiYkJOPD9v8",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "build",
+        "webpack"
+      ],
+      "legend": ""
     }
   ]
 }
