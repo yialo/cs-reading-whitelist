@@ -14,8 +14,7 @@ overrides:
   - env:
       jest: true
     files:
-      - ./**/*.spec.js
-      - ./**/*.test.js
+      - ./**/*.{spec,test}.js?(x)
   - env:
       node: true
     files:
@@ -23,7 +22,7 @@ overrides:
       - ./src/postcss/**/*.js
     parser: espree
     parserOptions:
-      ecmaVersion: 2019
+      ecmaVersion: 2020
       sourceType: script
     plugins:
       - babel
