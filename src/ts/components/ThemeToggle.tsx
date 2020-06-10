@@ -1,12 +1,11 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
-function ThemeToggle(props) {
-  const {
-    isDark,
-    onToggle,
-  } = props;
+interface IProps {
+  isDark: boolean;
+  onToggle: () => void;
+}
 
+export default function ThemeToggle({ isDark, onToggle }: IProps): React.ReactNode {
   return (
     <button
       aria-label={`Перейти к ${isDark ? 'светлой' : 'тёмной'} теме`}
@@ -18,10 +17,3 @@ function ThemeToggle(props) {
     </button>
   );
 }
-
-ThemeToggle.propTypes = {
-  isDark: PropTypes.bool.isRequired,
-  onToggle: PropTypes.func.isRequired,
-};
-
-export default ThemeToggle;

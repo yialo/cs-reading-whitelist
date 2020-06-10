@@ -1,14 +1,20 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
-import TextInput from '../TextInput/index.jsx';
+import TextInput from './TextInput.tsx';
+
+interface IProps {
+  filterTarget: string;
+  onFilterToggle: (name: string) => void;
+  onSearch: (evt: React.SyntheticEvent) => void;
+  searchString: string;
+}
 
 const filterDict = {
   'caption': 'заголовок',
   'hashtag': 'хэштег',
 };
 
-function ControlBar(props) {
+export default function ControlBar(props: IProps): React.ReactNode {
   const {
     filterTarget,
     onFilterToggle,
@@ -60,12 +66,3 @@ function ControlBar(props) {
     </form>
   );
 }
-
-ControlBar.propTypes = {
-  filterTarget: PropTypes.string.isRequired,
-  onFilterToggle: PropTypes.func.isRequired,
-  onSearch: PropTypes.func.isRequired,
-  searchString: PropTypes.string.isRequired,
-};
-
-export default ControlBar;

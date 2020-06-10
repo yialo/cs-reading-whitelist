@@ -1,12 +1,13 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
-export default class ErrorBoundary extends React.Component {
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-  };
+interface IProps {
+  children: React.ReactNode;
+}
 
-  static getDerivedStateFromError(err: Error): React.GetDerivedStateFromError {
+export default class ErrorBoundary extends React.Component {
+  props: IProps;
+
+  static getDerivedStateFromError(err: Error) {
     return { error: err };
   }
 

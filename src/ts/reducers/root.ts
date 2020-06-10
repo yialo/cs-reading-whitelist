@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 
-import fetchReducer from './fetch.js';
-import listReducer from './list.js';
-import themeReducer from './theme.js';
+import fetchReducer from './fetch.ts';
+import listReducer from './list.ts';
+import themeReducer from './theme.ts';
 
 export default combineReducers({
   fetch: fetchReducer,

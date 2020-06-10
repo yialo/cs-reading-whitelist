@@ -1,4 +1,4 @@
-import { ActionTypeEnum as Type } from '../constants.js';
+import { ActionTypeEnum as Type } from '../constants.ts';
 
 const INITIAL_STATE = {
   error: null,

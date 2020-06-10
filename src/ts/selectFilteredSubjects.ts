@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-import { fetchSelector, listSelector } from './reducers/index.js';
+import { fetchSelector, listSelector } from './reducers/index.ts';
 
 export default createSelector(
     [

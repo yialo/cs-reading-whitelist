@@ -19,7 +19,7 @@ overrides:
       node: true
     files:
       - ./config/**/*.js
-      - ./src/postcss/**/*.js
+      - ./postcss/**/*.js
     parser: espree
     parserOptions:
       ecmaVersion: 2020

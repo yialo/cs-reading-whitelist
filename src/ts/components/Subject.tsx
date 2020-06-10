@@ -1,7 +1,14 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
-function Subject(props) {
+interface IProps {
+  caption: string;
+  lang: string;
+  legend?: string;
+  tags: string[];
+  url: string;
+}
+
+function Subject(props: IProps): React.ReactNode {
   const {
     caption,
     lang,
@@ -9,6 +16,7 @@ function Subject(props) {
     tags,
     url,
   } = props;
+
   return (
     <li className="subjects__item">
       <a className="subjects__link" href={url} lang={lang}>{caption}</a>
@@ -31,14 +39,6 @@ function Subject(props) {
 Subject.defaultProps = {
   legend: '',
   tags: [],
-};
-
-Subject.propTypes = {
-  caption: PropTypes.string.isRequired,
-  lang: PropTypes.string.isRequired,
-  legend: PropTypes.string,
-  tags: PropTypes.arrayOf(PropTypes.string),
-  url: PropTypes.string.isRequired,
 };
 
 export default Subject;

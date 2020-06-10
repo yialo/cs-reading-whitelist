@@ -2,24 +2,24 @@ import classNames from 'classnames';
 import React, { useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-import ControlBar from '../ControlBar/index.jsx';
-import FallbackMessage from '../FallbackMessage/index.jsx';
-import Preloader from '../Preloader/index.jsx';
-import SubjectList from '../SubjectList/index.jsx';
-import ThemeToggle from '../ThemeToggle/index.jsx';
+import ControlBar from './ControlBar.tsx';
+import FallbackMessage from './FallbackMessage.tsx';
+import Preloader from './Preloader.tsx';
+import SubjectList from './SubjectList.tsx';
+import ThemeToggle from './ThemeToggle.tsx';
 
-import * as Action from '../../actions.js';
-import useActions from '../../useActions.js';
+import * as Action from '../actions.ts';
+import useActions from '../useActions.ts';
 
-import { fetchSelector, listSelector, themeSelector } from '../../reducers/index.js';
-import selectFilteredSubjects from '../../selectFilteredSubjects.js';
+import { fetchSelector, listSelector, themeSelector } from '../reducers/index.ts';
+import selectFilteredSubjects from '../selectFilteredSubjects.ts';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
   $overlay.classList.add('js_hidden');
 };
 
-export default function App(): React.FC {
+export default function App(): React.ReactNode {
   const fetchError = useSelector(fetchSelector.error);
   const filterName = useSelector(listSelector.filterName);
   const filteredList = useSelector(selectFilteredSubjects);

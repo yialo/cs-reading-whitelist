@@ -11,7 +11,7 @@ module.exports = (ctx) => {
           alias: pathAliasEnum,
         }),
       },
-      './src/postcss/font-face-set': {
+      './postcss/font-face-set': {
         pathAliasEnum,
       },
       'postcss-advanced-variables': {
