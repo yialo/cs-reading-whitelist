@@ -98,7 +98,6 @@
   },
   "scripts": {
     "build": "npm run webpack -- --env.purpose=production",
-    "check-types": "tsc --project ./config/tsconfig.json",
     "deploy": "gh-pages -d ./dist/",
     "dev": "npm run webpack-dev-server -- --env.purpose=development",
     "lint": "npm run lint:scripts && npm run lint:styles",
@@ -110,6 +109,7 @@
     "build:analyze": "npm run build -- --env.analyze",
     "build:stats": "webpack --config ./config/webpack.config.js --env.purpose=production --profile --json > ./stats/webpack-bundle-stats.json",
     "test": "jest --config=./config/jest.config.js",
+    "tscheck": "tsc",
     "webpack": "webpack --config ./config/webpack.config.js",
     "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js"
   },

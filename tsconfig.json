@@ -19,15 +19,18 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "styles": [
+        "./css/index.css"
       ]
     },
     "strict": true,
     "strictFunctionTypes": true,
     "strictNullChecks": true,
-    "strictPropertyInitialization": true
+    "strictPropertyInitialization": true,
   },
   "include": [
-    "../src/**/*",
-    "../custom.d.ts"
+    "./src/**/*",
+    "./custom.d.ts"
   ],
 }

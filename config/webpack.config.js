@@ -41,6 +41,7 @@ module.exports = (env = {}) => {
 
   const Alias = {
     '@': PATH.SRC,
+    'styles$': path.join(PATH.SRC, 'css/index.css'),
   };
 
   dotEnv.config({ path: PATH.LOCAL_ENV_FILE });

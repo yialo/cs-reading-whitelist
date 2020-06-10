@@ -1,10 +1,11 @@
 import React from 'react';
 
+import { ISubject } from '../types.ts';
 import FallbackMessage from './FallbackMessage.tsx';
 import Subject from './Subject.tsx';
 
 interface IProps {
-  list: unknown[];
+  list: ISubject[];
 }
 
 export default function SubjectList({ list }: IProps): React.ReactNode {

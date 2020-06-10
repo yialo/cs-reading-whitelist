@@ -1,14 +1,8 @@
 import React from 'react';
 
-interface IProps {
-  caption: string;
-  lang: string;
-  legend?: string;
-  tags: string[];
-  url: string;
-}
+import { ISubject } from '@/ts/types.ts';
 
-function Subject(props: IProps): React.ReactNode {
+function Subject(props: ISubject): React.ReactNode {
   const {
     caption,
     lang,

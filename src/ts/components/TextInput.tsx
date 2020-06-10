@@ -1,10 +1,12 @@
 import classNames from 'classnames';
 import React from 'react';
 
+import { InputModeType } from '@/ts/types.ts';
+
 interface IProps {
   className?: string,
-  // FIXME: add correct type from @types/react
-  inputMode: string,
+  // TODO: add correct type from @types/react instead of inline
+  inputMode: InputModeType,
   legend: string,
   onChange: (evt: React.SyntheticEvent) => void,
   value: string,
