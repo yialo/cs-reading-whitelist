@@ -20,8 +20,11 @@
       "@/*": [
         "./*"
       ],
-      "styles": [
-        "./css/index.css"
+      "css": [
+        "./css/*"
+      ],
+      "ts": [
+        "./ts/*"
       ]
     },
     "strict": true,

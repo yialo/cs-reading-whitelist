@@ -1,8 +1,6 @@
 import '@csstools/normalize.css';
 
-// TODO: figure out cause of strange TS compiler behavior
-import '@/css/index.css';
-// import 'styles';
+import 'css/index.css';
 
 import './fonts/source-sans-pro_400_italic.woff2';
 import './fonts/source-sans-pro_400_normal.woff2';

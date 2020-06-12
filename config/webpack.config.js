@@ -28,23 +28,18 @@ module.exports = (env = {}) => {
   const rootPath = path.resolve(__dirname, '../');
 
   const PATH = {
-    BABEL_CONFIG: path.join(rootPath, 'config/babel.config.js'),
-    CONFIG: path.join(rootPath, 'config'),
-    DIST: path.join(rootPath, 'dist'),
-    ENTRY: path.join(rootPath, 'src/index.ts'),
-    LOCAL_ENV_FILE: path.join(rootPath, '.env.local'),
-    PUG_TEMPLATE: path.join(rootPath, 'src/pug/pages/index.pug'),
-    RESPONSE_INPUT: path.join(rootPath, 'src/static'),
-    RESPONSE_OUTPUT: path.join(rootPath, 'dist/response'),
     SRC: path.join(rootPath, 'src'),
+    DIST: path.join(rootPath, 'dist'),
+    CONFIG: path.join(rootPath, 'config'),
   };
 
   const Alias = {
     '@': PATH.SRC,
-    'styles$': path.join(PATH.SRC, 'css/index.css'),
+    'css': path.join(PATH.SRC, 'css'),
+    'ts': path.join(PATH.SRC, 'ts'),
   };
 
-  dotEnv.config({ path: PATH.LOCAL_ENV_FILE });
+  dotEnv.config({ path: path.join(rootPath, '.env.local') });
   dotEnv.config({ path: path.join(rootPath, `.env.${purpose}`) });
 
   return {
@@ -62,7 +57,7 @@ module.exports = (env = {}) => {
     devtool: isDevelopment ? 'eval-source-map' : false,
 
     entry: {
-      app: PATH.ENTRY,
+      app: path.join(PATH.SRC, 'index.ts'),
     },
 
     mode: (isDevelopment || isProduction) ? purpose : 'none',
@@ -73,7 +68,7 @@ module.exports = (env = {}) => {
           test: /\.(?:j|t)sx?$/,
           loader: 'babel-loader',
           options: {
-            configFile: PATH.BABEL_CONFIG,
+            configFile: path.join(PATH.CONFIG, 'babel.config.js'),
             cacheDirectory: true,
           },
         };
@@ -212,13 +207,13 @@ module.exports = (env = {}) => {
         }),
         new HtmlPlugin({
           filename: 'index.html',
-          template: PATH.PUG_TEMPLATE,
+          template: path.join(PATH.SRC, 'pug/pages/index.pug'),
         }),
         new CopyPlugin({
           patterns: [
             {
-              from: PATH.RESPONSE_INPUT,
-              to: PATH.RESPONSE_OUTPUT,
+              from: path.join(PATH.SRC, 'static'),
+              to: path.join(PATH.DIST, 'response'),
               transformPath: (targetPath) => {
                 if (path.extname(targetPath) === '.json') {
                   return targetPath;
