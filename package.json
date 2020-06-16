@@ -80,6 +80,7 @@
     "nodemon": "2.0.4",
     "pug-lint": "2.6.0",
     "stylelint": "13.5.0",
+    "stylelint-config-yialo": "0.1.0",
     "webpack-dev-server": "3.11.0"
   },
   "engines": {
