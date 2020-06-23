@@ -15,13 +15,13 @@ const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 
 module.exports = (env = {}) => {
-  const { analyze: needAnalyze, purpose } = env;
+  const { analyze: needAnalyze, target } = env;
 
-  process.env.BABEL_ENV = purpose;
-  process.env.NODE_ENV = purpose;
+  process.env.BABEL_ENV = target;
+  process.env.NODE_ENV = target;
 
-  const isDevelopment = (purpose === 'development');
-  const isProduction = (purpose === 'production');
+  const isDevelopment = (target === 'development');
+  const isProduction = (target === 'production');
 
   const assetHash = isProduction ? '.[contenthash]' : '';
 
@@ -40,7 +40,7 @@ module.exports = (env = {}) => {
   };
 
   dotEnv.config({ path: path.join(rootPath, '.env.local') });
-  dotEnv.config({ path: path.join(rootPath, `.env.${purpose}`) });
+  dotEnv.config({ path: path.join(rootPath, `.env.${target}`) });
 
   return {
     context: PATH.SRC,
@@ -60,7 +60,7 @@ module.exports = (env = {}) => {
       app: path.join(PATH.SRC, 'index.ts'),
     },
 
-    mode: (isDevelopment || isProduction) ? purpose : 'none',
+    mode: (isDevelopment || isProduction) ? target : 'none',
 
     module: {
       rules: (() => {

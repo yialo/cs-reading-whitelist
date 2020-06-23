@@ -1,6 +1,6 @@
 ---
 extends:
-  - yialo/web
+  - yialo/preset-webpack.js
 globals:
   process: readonly
 ignorePatterns:
@@ -9,19 +9,25 @@ ignorePatterns:
   - /extra/
 overrides:
   - extends:
-      - yialo/web-jest
+      - yialo/mixin-jest.js
     files:
       - ./**/*.{spec,test}.js?(x)
   - extends:
-      - yialo/web-build
+      - yialo/preset-node.js
     files:
       - ./config/**/*.js
       - ./postcss/**/*.js
   - extends:
-      - yialo/web-typescript
+      - yialo/mixin-typescript.js
     files:
       - ./src/**/*.ts?(x)
+rules:
+  import/no-unassigned-import:
+    - error
+    - allow:
+      - '**/*.{?(s)css,jp?(e)g,png,svg}'
 settings:
+  import/ignore: []
   import/resolver:
     webpack:
       config: ./config/webpack.config.js
