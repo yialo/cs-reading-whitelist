@@ -66,7 +66,6 @@
     "babel-eslint": "10.1.0",
     "babel-jest": "26.1.0",
     "eslint": "7.3.1",
-    "eslint-config-yialo": "git://github.com/yialo/eslint-config-yialo.git#bf751ac1dd813e82b8146eba7c531017194d76e7",
     "eslint-import-resolver-webpack": "0.12.2",
     "eslint-plugin-babel": "5.3.0",
     "eslint-plugin-import": "2.21.2",

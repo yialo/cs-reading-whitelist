@@ -16,7 +16,9 @@ import selectFilteredSubjects from '../selectFilteredSubjects.ts';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
-  $overlay.classList.add('js_hidden');
+  if ($overlay) {
+    $overlay.classList.add('js_hidden');
+  }
 };
 
 export default function App(): React.ReactNode {
