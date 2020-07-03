@@ -8,7 +8,7 @@ interface IProps {
   list: ISubject[];
 }
 
-export default function SubjectList({ list }: IProps): React.ReactNode {
+const SubjectList: React.FC<IProps> = ({ list }) => {
   if (!list.length) {
     return <FallbackMessage message="Ничего не найдено" />;
   }
@@ -27,4 +27,6 @@ export default function SubjectList({ list }: IProps): React.ReactNode {
       ))}
     </ul>
   );
-}
+};
+
+export default SubjectList;

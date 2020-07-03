@@ -5,7 +5,7 @@ interface IProps {
   onToggle: () => void;
 }
 
-export default function ThemeToggle({ isDark, onToggle }: IProps): React.ReactNode {
+const ThemeToggle: React.FC<IProps> = ({ isDark, onToggle }) => {
   return (
     <button
       aria-label={`Перейти к ${isDark ? 'светлой' : 'тёмной'} теме`}
@@ -16,4 +16,6 @@ export default function ThemeToggle({ isDark, onToggle }: IProps): React.ReactNo
       {`Go ${isDark ? 'light' : 'dark'}`}
     </button>
   );
-}
+};
+
+export default ThemeToggle;

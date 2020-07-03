@@ -4,8 +4,10 @@ interface IProps {
   message: string;
 }
 
-export default function FallbackMessage({ message }: IProps): React.ReactNode {
+const FallbackMessage: React.FC<IProps> = ({ message }) => {
   return (
     <p className="subjects__fallback-message">{message}</p>
   );
-}
+};
+
+export default FallbackMessage;

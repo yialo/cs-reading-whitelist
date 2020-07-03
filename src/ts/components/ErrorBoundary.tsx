@@ -4,10 +4,12 @@ interface IProps {
   children: React.ReactNode;
 }
 
-export default class ErrorBoundary extends React.Component {
-  props: IProps;
+interface IState {
+  error: Error | null;
+}
 
-  static getDerivedStateFromError(err: Error) {
+export default class ErrorBoundary extends React.Component<IProps, IState> {
+  static getDerivedStateFromError(err: Error): IState {
     return { error: err };
   }
 

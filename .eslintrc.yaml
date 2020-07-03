@@ -21,11 +21,13 @@ overrides:
       - yialo/mixin-typescript
     files:
       - ./src/**/*.ts?(x)
+    rules:
+      react/prop-types: 'off'
 rules:
   import/no-unassigned-import:
     - error
     - allow:
-      - '**/*.{?(s)css,jp?(e)g,png,svg}'
+        - '**/*.{?(s)css,jp?(e)g,png,svg}'
 settings:
   import/resolver:
     webpack:

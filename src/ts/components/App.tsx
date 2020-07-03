@@ -21,7 +21,7 @@ const disableOverlay = () => {
   }
 };
 
-export default function App(): React.ReactNode {
+const App: React.FC = () => {
   const fetchError = useSelector(fetchSelector.error);
   const filterName = useSelector(listSelector.filterName);
   const filteredList = useSelector(selectFilteredSubjects);
@@ -86,4 +86,6 @@ export default function App(): React.ReactNode {
       </main>
     </div>
   );
-}
+};
+
+export default App;

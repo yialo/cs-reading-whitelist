@@ -14,7 +14,7 @@ const filterDict = {
   'hashtag': 'хэштег',
 };
 
-export default function ControlBar(props: IProps): React.ReactNode {
+const ControlBar: React.FC<IProps> = (props) => {
   const {
     filterTarget,
     onFilterToggle,
@@ -65,4 +65,6 @@ export default function ControlBar(props: IProps): React.ReactNode {
       </p>
     </form>
   );
-}
+};
+
+export default ControlBar;

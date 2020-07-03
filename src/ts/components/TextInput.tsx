@@ -8,17 +8,17 @@ interface IProps {
   // TODO: add correct type from @types/react instead of inline
   inputMode: InputModeType,
   legend: string,
-  onChange: (evt: React.SyntheticEvent) => void,
   value: string,
+  onChange: (evt: React.SyntheticEvent) => void,
 }
 
-function TextInput(props: IProps): React.ReactNode {
+const TextInput: React.FC<IProps> = (props: IProps) => {
   const {
     className,
     inputMode,
     legend,
-    onChange,
     value,
+    onChange,
   } = props;
 
   return (
@@ -35,7 +35,7 @@ function TextInput(props: IProps): React.ReactNode {
       />
     </label>
   );
-}
+};
 
 TextInput.defaultProps = {
   className: '',

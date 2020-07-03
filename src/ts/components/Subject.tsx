@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ISubject } from '@/ts/types.ts';
 
-function Subject(props: ISubject): React.ReactNode {
+const Subject: React.FC<ISubject> = (props) => {
   const {
     caption,
     lang,
@@ -28,7 +28,7 @@ function Subject(props: ISubject): React.ReactNode {
       </ul>
     </li>
   );
-}
+};
 
 Subject.defaultProps = {
   legend: '',
