@@ -1,7 +1,6 @@
-import { ActionTypeEnum as Type } from './constants.ts';
+import { ActionTypeEnum as Type } from './constants';
 
-// TODO: figure out cause of strange TS compiler behavior
-import { IAction } from './types.ts';
+import { IAction } from './types';
 
 const searchInList = (nextSearchString: string): IAction => ({
   type: Type.LIST_SEARCH,
@@ -17,7 +16,7 @@ const toggleTheme = (): IAction => ({
   type: Type.THEME_TOGGLE,
 });
 
-const fetchSubjects = (): Promise<IAction> => {
+const fetchSubjects = () => {
   return async (dispatch) => {
     const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
     try {

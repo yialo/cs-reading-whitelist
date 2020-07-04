@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { InputModeType } from '@/ts/types.ts';
+import { InputModeType } from 'ts/types';
 
 interface IProps {
   className?: string,

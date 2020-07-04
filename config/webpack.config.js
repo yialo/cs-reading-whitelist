@@ -236,6 +236,12 @@ module.exports = (env = {}) => {
 
     resolve: {
       alias: Alias,
+      extensions: [
+        '.js',
+        '.jsx',
+        '.ts',
+        '.tsx',
+      ],
     },
 
     stats: (() => {

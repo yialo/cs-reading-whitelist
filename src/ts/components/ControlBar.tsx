@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TextInput from './TextInput.tsx';
+import TextInput from './TextInput';
 
 interface IProps {
   filterTarget: string;

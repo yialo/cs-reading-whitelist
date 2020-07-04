@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { ISubject } from '../types.ts';
-import FallbackMessage from './FallbackMessage.tsx';
-import Subject from './Subject.tsx';
+import { ISubject } from '../types';
+import FallbackMessage from './FallbackMessage';
+import Subject from './Subject';
 
 interface IProps {
   list: ISubject[];

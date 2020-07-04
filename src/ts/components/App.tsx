@@ -2,17 +2,17 @@ import classNames from 'classnames';
 import React, { useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-import ControlBar from './ControlBar.tsx';
-import FallbackMessage from './FallbackMessage.tsx';
-import Preloader from './Preloader.tsx';
-import SubjectList from './SubjectList.tsx';
-import ThemeToggle from './ThemeToggle.tsx';
+import ControlBar from './ControlBar';
+import FallbackMessage from './FallbackMessage';
+import Preloader from './Preloader';
+import SubjectList from './SubjectList';
+import ThemeToggle from './ThemeToggle';
 
-import * as Action from '../actions.ts';
-import useActions from '../useActions.ts';
+import * as Action from '../actions';
+import useActions from '../useActions';
 
-import { fetchSelector, listSelector, themeSelector } from '../reducers/index.ts';
-import selectFilteredSubjects from '../selectFilteredSubjects.ts';
+import { fetchSelector, listSelector, themeSelector } from '../reducers/index';
+import selectFilteredSubjects from '../selectFilteredSubjects';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');

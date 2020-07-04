@@ -5,12 +5,12 @@ import { bindActionCreators } from 'redux';
 export default (actions, deps) => {
   const dispatch = useDispatch();
   return useMemo(
-      () => {
-        if (Array.isArray(actions)) {
-          return actions.map((action) => bindActionCreators(action, dispatch));
-        }
-        return bindActionCreators(actions, dispatch);
-      },
-      deps ? [dispatch, ...deps] : [dispatch]
+    () => {
+      if (Array.isArray(actions)) {
+        return actions.map((action) => bindActionCreators(action, dispatch));
+      }
+      return bindActionCreators(actions, dispatch);
+    },
+    deps ? [dispatch, ...deps] : [dispatch],
   );
 };

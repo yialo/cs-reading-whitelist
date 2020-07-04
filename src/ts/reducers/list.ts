@@ -1,4 +1,4 @@
-import { ActionTypeEnum as Type } from '../constants.ts';
+import { ActionTypeEnum as Type } from '../constants';
 
 const INITIAL_STATE = {
   filterName: 'caption',

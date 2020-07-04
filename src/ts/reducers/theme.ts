@@ -1,10 +1,18 @@
-import { ActionTypeEnum as Type } from '../constants.ts';
+import { ActionTypeEnum as Type } from '../constants';
 
-const INITIAL_STATE = {
+interface IAction {
+  type: string;
+}
+
+interface IState {
+  isDark: boolean;
+}
+
+const INITIAL_STATE: IState = {
   isDark: false,
 };
 
-export default (prevState, action) => {
+export default (prevState: IState, action: IAction): IState => {
   const state = prevState ?? INITIAL_STATE;
   if (action.type === Type.THEME_TOGGLE) {
     return {
@@ -16,5 +24,5 @@ export default (prevState, action) => {
 };
 
 export const selector = {
-  isDark: (state) => state.theme.isDark,
+  isDark: <S extends { theme: { isDark: boolean } }>(state: S): boolean => state.theme.isDark,
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ISubject } from '@/ts/types.ts';
+import { ISubject } from 'ts/types';
 
 const Subject: React.FC<ISubject> = (props) => {
   const {
