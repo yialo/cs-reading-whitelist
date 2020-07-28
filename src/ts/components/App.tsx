@@ -8,7 +8,7 @@ import Preloader from './Preloader';
 import SubjectList from './SubjectList';
 import ThemeToggle from './ThemeToggle';
 
-import * as Action from '../actions';
+import * as actionCreators from '../actionCreators';
 import useActions from '../useActions';
 
 import { fetchSelector, listSelector, themeSelector } from '../reducers/index';
@@ -34,7 +34,7 @@ const App: React.FC = () => {
     searchInList,
     toggleFilter,
     toggleTheme,
-  } = useActions(Action);
+  } = useActions(actionCreators);
 
   const handleSearch = useCallback((evt) => {
     searchInList(evt.target.value);

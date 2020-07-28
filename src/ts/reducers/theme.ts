@@ -24,5 +24,5 @@ export default (prevState: IState, action: IAction): IState => {
 };
 
 export const selector = {
-  isDark: <S extends { theme: { isDark: boolean } }>(state: S): boolean => state.theme.isDark,
+  isDark: (state): boolean => state.theme.isDark,
 };

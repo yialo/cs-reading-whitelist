@@ -1,23 +1,23 @@
 import { ActionTypeEnum as Type } from './constants';
 
-import { IAction } from './types';
+import { IAction, ActionCreatorType } from './types';
 
-const searchInList = (nextSearchString: string): IAction => ({
+const searchInList: ActionCreatorType = (nextSearchString: string) => ({
   type: Type.LIST_SEARCH,
   payload: nextSearchString,
 });
 
-const toggleFilter = (nextFilterName: string): IAction => ({
+const toggleFilter: ActionCreatorType = (nextFilterName: string) => ({
   type: Type.LIST_FILTER_TOGGLE,
   payload: nextFilterName,
 });
 
-const toggleTheme = (): IAction => ({
+const toggleTheme: ActionCreatorType = () => ({
   type: Type.THEME_TOGGLE,
 });
 
 const fetchSubjects = () => {
-  return async (dispatch) => {
+  return async (dispatch: (action: IAction) => void): Promise<void> => {
     const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
     try {
       const response = await window.fetch(apiUrl);

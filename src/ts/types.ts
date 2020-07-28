@@ -3,6 +3,11 @@ export interface IAction {
   payload?: unknown;
 }
 
+type SyncActionCreator = (...args: any[]) => IAction;
+type AsyncActionCreator = (...args: any[]) => Promise<any>;
+
+export type ActionCreatorType = SyncActionCreator | AsyncActionCreator;
+
 export interface ISubject {
   caption: string;
   lang: string;
