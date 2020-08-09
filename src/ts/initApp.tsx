@@ -5,9 +5,9 @@ import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
-import App from './components/App/index.tsx';
-import ErrorBoundary from './components/ErrorBoundary/index.tsx';
-import { rootReducer } from './reducers/index.js';
+import App from './components/App';
+import ErrorBoundary from './components/ErrorBoundary';
+import { rootReducer } from './reducers/index';
 
 export default (): void => {
   const appliedMiddleware = applyMiddleware(thunk);

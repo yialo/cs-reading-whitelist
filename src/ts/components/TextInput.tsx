@@ -1,15 +1,26 @@
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import React from 'react';
 
-function TextInput(props) {
+import { InputModeType } from 'ts/types';
+
+interface IProps {
+  className?: string,
+  // TODO: add correct type from @types/react instead of inline
+  inputMode: InputModeType,
+  legend: string,
+  value: string,
+  onChange: (evt: React.SyntheticEvent) => void,
+}
+
+const TextInput: React.FC<IProps> = (props: IProps) => {
   const {
     className,
     inputMode,
     legend,
-    onChange,
     value,
+    onChange,
   } = props;
+
   return (
     <label
       className={classNames('text-input', !!className && className)}
@@ -24,18 +35,10 @@ function TextInput(props) {
       />
     </label>
   );
-}
+};
 
 TextInput.defaultProps = {
   className: '',
-};
-
-TextInput.propTypes = {
-  className: PropTypes.string,
-  inputMode: PropTypes.string.isRequired,
-  legend: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired,
 };
 
 export default TextInput;

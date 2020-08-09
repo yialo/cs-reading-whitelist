@@ -3,12 +3,11 @@
 ## Closer future
 
 * Change project structure
-  * Move parts to separate MD files: *considered/seen* etc. (_think about name_)
   * Merge with *css-common-classnames*
   * Make different pages and header navigation
 * Move browser bookmarks related to computer science and userful services here
 * Organize article chains to collections
-* Add **author** field
+* Add optional **author** field
 * Add Chrome bookmarks
 * Add volume with interesting fonts
 * Change README.md: add npm cli commands
@@ -22,7 +21,8 @@
     * check url duplications
 2. Make full public bookmarks keeper as SPA
     * add public bookmarks from browser account
-3. Database import/export with XLSX/CSV formats
+3. Add database integration
+    * connect of Firebase
+    * import/export XLSX/CSV formats
 4. Create Emmet cheatsheet tool app with search
-    * parse official docs HTML with Node.js
-5. Make deploy with gh-pages
+    * parse official docs HTML with Puppeteer

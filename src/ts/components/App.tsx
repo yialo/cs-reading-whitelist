@@ -2,24 +2,26 @@ import classNames from 'classnames';
 import React, { useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-import ControlBar from '../ControlBar/index.jsx';
-import FallbackMessage from '../FallbackMessage/index.jsx';
-import Preloader from '../Preloader/index.jsx';
-import SubjectList from '../SubjectList/index.jsx';
-import ThemeToggle from '../ThemeToggle/index.jsx';
+import ControlBar from './ControlBar';
+import FallbackMessage from './FallbackMessage';
+import Preloader from './Preloader';
+import SubjectList from './SubjectList';
+import ThemeToggle from './ThemeToggle';
 
-import * as Action from '../../actions.js';
-import useActions from '../../useActions.js';
+import * as actionCreators from '../actionCreators';
+import useActions from '../useActions';
 
-import { fetchSelector, listSelector, themeSelector } from '../../reducers/index.js';
-import selectFilteredSubjects from '../../selectFilteredSubjects.js';
+import { fetchSelector, listSelector, themeSelector } from '../reducers/index';
+import selectFilteredSubjects from '../selectFilteredSubjects';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
-  $overlay.classList.add('js_hidden');
+  if ($overlay) {
+    $overlay.classList.add('js_hidden');
+  }
 };
 
-export default function App(): React.FC {
+const App: React.FC = () => {
   const fetchError = useSelector(fetchSelector.error);
   const filterName = useSelector(listSelector.filterName);
   const filteredList = useSelector(selectFilteredSubjects);
@@ -32,7 +34,7 @@ export default function App(): React.FC {
     searchInList,
     toggleFilter,
     toggleTheme,
-  } = useActions(Action);
+  } = useActions(actionCreators);
 
   const handleSearch = useCallback((evt) => {
     searchInList(evt.target.value);
@@ -84,4 +86,6 @@ export default function App(): React.FC {
       </main>
     </div>
   );
-}
+};
+
+export default App;

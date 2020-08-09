@@ -1,5 +1,11 @@
 # CSS snippets
 
+## System-UI font stack
+
+```css
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+```
+
 ## Vendor selectors for input[type="range"] custom decorating
 
 ``` css

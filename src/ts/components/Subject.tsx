@@ -1,7 +1,8 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
-function Subject(props) {
+import { ISubject } from 'ts/types';
+
+const Subject: React.FC<ISubject> = (props) => {
   const {
     caption,
     lang,
@@ -9,6 +10,7 @@ function Subject(props) {
     tags,
     url,
   } = props;
+
   return (
     <li className="subjects__item">
       <a className="subjects__link" href={url} lang={lang}>{caption}</a>
@@ -26,19 +28,11 @@ function Subject(props) {
       </ul>
     </li>
   );
-}
+};
 
 Subject.defaultProps = {
   legend: '',
   tags: [],
-};
-
-Subject.propTypes = {
-  caption: PropTypes.string.isRequired,
-  lang: PropTypes.string.isRequired,
-  legend: PropTypes.string,
-  tags: PropTypes.arrayOf(PropTypes.string),
-  url: PropTypes.string.isRequired,
 };
 
 export default Subject;

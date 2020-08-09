@@ -2,7 +2,7 @@
 
 * Bookmarks
 * code-settings-sync
-* debugger-for-chrome
+* current-file-path
 * dotenv
 * EditorConfig
 * git-graph
@@ -16,9 +16,10 @@
 * LogFileHighlighter
 * markdown-all-in-one
 * material-icon-theme
-* npm-intellisense
+* metago
+* MetaJump
+* MetaWord
 * output-colorizer
-* path-intellisense
 * prettier-vscode
 * project-manager
 * quick-run-panel
@@ -28,11 +29,10 @@
 * twig-language-2
 * vetur
 * vscode-colorize
+* vscode-css-modules
 * vscode-docker
 * vscode-eslint
-* vscode-html-css
 * vscode-language-babel
-* vscode-language-pack-ru
 * vscode-markdownlint
 * vscode-puglint
 * vscode-scss
@@ -41,7 +41,6 @@
 * vscode-stylelint
 * vscode-surround
 * vscode-svgviewer
-* vscode-template-literal-editor
 * vscode-versionlens
 * vscode-yaml-sort
 * xml
