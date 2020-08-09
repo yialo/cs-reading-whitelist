@@ -4148,6 +4148,25 @@
         "npm"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Почему функциональное программирование такое сложное",
+      "url": "https://habr.com/ru/post/505928/",
+      "lang": "ru",
+      "tags": [
+        "fp"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Death by a thousand useCallbacks (Royi Hagigi)",
+      "url": "https://royi-codes.now.sh/thousand-usecallbacks/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks"
+      ],
+      "legend": ""
     }
   ]
 }
