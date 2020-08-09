@@ -201,16 +201,6 @@
       "legend": ""
     },
     {
-      "caption": "36 (Вадим Макишвили)",
-      "url": "https://www.youtube.com/watch?v=xPPCzryZK44",
-      "lang": "ru",
-      "tags": [
-        "video",
-        "soft_skills"
-      ],
-      "legend": ""
-    },
-    {
       "caption": "5 минут (Вадим Макишвили)",
       "url": "https://www.youtube.com/watch?v=iBHr8gKc5L8",
       "lang": "ru",
@@ -3626,8 +3616,8 @@
       "legend": ""
     },
     {
-      "caption": "Картинки как коробки. Что же там внутри?",
-      "url": "https://speakerdeck.com/hellsquirrel/kartinki-kak-korobki-chto-zhie-tam-vnutri",
+      "caption": "Картинки как коробки. Что же там внутри? (Полина Гуртовая)",
+      "url": "https://habr.com/ru/company/yandex/blog/493616/",
       "lang": "ru",
       "tags": [
         "graphics",
@@ -4120,6 +4110,61 @@
         "javascript",
         "build",
         "webpack"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "TypeScript Deep Dive (by Basarat Ali Syed)",
+      "url": "https://basarat.gitbook.io/typescript/",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Краткий гид по open‑source лицензиям",
+      "url": "https://codex.so/licenses",
+      "lang": "ru",
+      "tags": [
+        "opensource"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Peer dependencies — NPM",
+      "url": "https://medium.com/@ngubanethabo.ambrose/peer-dependencies-npm-a0970f60481f",
+      "lang": "en",
+      "tags": [
+        "npm"
+      ],
+      "legend": "about notable npm package.json feature"
+    },
+    {
+      "caption": "Как собрать пакет npm",
+      "url": "https://www.unix-lab.org/posts/npm-build/",
+      "lang": "ru",
+      "tags": [
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Почему функциональное программирование такое сложное",
+      "url": "https://habr.com/ru/post/505928/",
+      "lang": "ru",
+      "tags": [
+        "fp"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Death by a thousand useCallbacks (Royi Hagigi)",
+      "url": "https://royi-codes.now.sh/thousand-usecallbacks/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks"
       ],
       "legend": ""
     }
