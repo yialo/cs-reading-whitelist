@@ -9,16 +9,18 @@ ignorePatterns:
   - /extra/
 overrides:
   - extends:
-      - yialo/mixin-jest
+      - yialo/preset-webpack-typescript-jest
     files:
-      - ./**/*.{spec,test}.js?(x)
+      - ./**/*.{spec,test}.ts?(x)
   - extends:
       - yialo/preset-node
     files:
       - ./config/**/*.js
       - ./postcss/**/*.js
+    settings:
+      import/resolver: node
   - extends:
-      - yialo/mixin-typescript
+      - yialo/preset-webpack-typescript
     files:
       - ./src/**/*.ts?(x)
 rules:

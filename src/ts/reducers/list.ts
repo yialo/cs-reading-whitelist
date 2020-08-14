@@ -1,4 +1,4 @@
-import { ActionTypeEnum as Type } from '../constants';
+import { ACTION_TYPE } from '../constants';
 
 const INITIAL_STATE = {
   filterName: 'caption',
@@ -6,11 +6,11 @@ const INITIAL_STATE = {
 };
 
 const handlerDict = {
-  [Type.LIST_SEARCH]: (state, payload) => ({
+  [ACTION_TYPE.LIST_SEARCH]: (state, payload) => ({
     ...state,
     searchString: payload,
   }),
-  [Type.LIST_FILTER_TOGGLE]: (state, payload) => ({
+  [ACTION_TYPE.LIST_FILTER_TOGGLE]: (state, payload) => ({
     ...state,
     filterName: payload,
   }),

@@ -1,4 +1,4 @@
-import { ActionTypeEnum as Type } from '../constants';
+import { ACTION_TYPE } from '../constants';
 
 const INITIAL_STATE = {
   error: null,
@@ -7,12 +7,12 @@ const INITIAL_STATE = {
 };
 
 const handlerDict = {
-  [Type.FETCH_COMPLETE]: (state, payload) => ({
+  [ACTION_TYPE.FETCH_COMPLETE]: (state, payload) => ({
     ...state,
     list: payload,
     isComplete: true,
   }),
-  [Type.FETCH_ERROR]: (state, payload) => ({
+  [ACTION_TYPE.FETCH_ERROR]: (state, payload) => ({
     ...state,
     error: payload,
     isComplete: true,

@@ -1,4 +1,4 @@
-import { ActionTypeEnum as Type } from '../constants';
+import { ACTION_TYPE } from '../constants';
 
 interface IAction {
   type: string;
@@ -14,7 +14,7 @@ const INITIAL_STATE: IState = {
 
 export default (prevState: IState, action: IAction): IState => {
   const state = prevState ?? INITIAL_STATE;
-  if (action.type === Type.THEME_TOGGLE) {
+  if (action.type === ACTION_TYPE.THEME_TOGGLE) {
     return {
       ...state,
       isDark: !state.isDark,
