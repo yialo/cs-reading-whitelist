@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: ['yialo/preset-webpack'],
+  extends: ['yialo/preset-web-babel'],
   globals: {
     process: 'readonly',
   },
@@ -10,21 +10,29 @@ module.exports = {
     '/dist/',
     '/extra/',
   ],
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
+  },
   overrides: [
     {
-      extends: ['yialo/preset-webpack-typescript-jest'],
       files: ['./**/*.{spec,test}.ts?(x)'],
+      extends: ['yialo/preset-web-ts-check-jest'],
     },
     {
+      files: [
+        './*.js',
+        './config/**/*.js',
+        './postcss/**/*.js',
+      ],
       extends: ['yialo/preset-node'],
-      files: ['./*.js', './config/**/*.js', './postcss/**/*.js'],
       settings: {
         'import/resolver': 'node',
       },
     },
     {
-      extends: ['yialo/preset-webpack-typescript'],
       files: ['./src/**/*.ts?(x)'],
+      extends: ['yialo/preset-web-ts-check'],
     },
   ],
   rules: {

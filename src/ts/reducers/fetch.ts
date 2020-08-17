@@ -1,23 +1,29 @@
 import { ACTION_TYPE } from '../constants';
 
-const INITIAL_STATE = {
+interface IState {
+  error: Error | null;
+  list: Array<any>;
+  isComplete: boolean;
+}
+
+const INITIAL_STATE: IState = {
   error: null,
   list: [],
   isComplete: false,
 };
 
 const handlerDict = {
-  [ACTION_TYPE.FETCH_COMPLETE]: (state, payload) => ({
+  [ACTION_TYPE.FETCH_COMPLETE]: (state: IState, payload) => ({
     ...state,
     list: payload,
     isComplete: true,
   }),
-  [ACTION_TYPE.FETCH_ERROR]: (state, payload) => ({
+  [ACTION_TYPE.FETCH_ERROR]: (state: IState, payload) => ({
     ...state,
     error: payload,
     isComplete: true,
   }),
-  DEFAULT: (state) => state,
+  DEFAULT: (state: IState) => state,
 };
 
 export default (prevState, action) => {
