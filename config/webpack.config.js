@@ -88,8 +88,15 @@ module.exports = (env = {}) => {
             {
               loader: 'css-loader',
               options: {
+                modules: {
+                  exportGlobals: true,
+                  exportLocalsConvention: 'asIs',
+                  exportOnlyLocals: false,
+                  localIdentName: isProduction ? '[hash:base64]' : '[path][name]__[local]',
+                },
+                esModule: true,
+                importLoaders: 2,
                 sourceMap: true,
-                importLoaders: 1,
               },
             },
             {
