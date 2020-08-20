@@ -1,10 +1,10 @@
-.page {
+.Page {
   position: relative;
   min-width: var(--size_page-min-width);
   overflow-y: scroll;
 }
 
-.page__content {
+.Page-content {
   --color_conic-middle: white;
   --color_conic-outermost: #eeeeee;
 
@@ -29,18 +29,18 @@
   }
 }
 
-.page__filter {
+.Page-filter {
   margin-bottom: 32px;
 }
 
-.page__header {
+.Page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
 }
 
-.page__headline {
+.Page-headline {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 22px;
@@ -52,7 +52,7 @@
   }
 }
 
-.page__overlay {
+.Page-overlay {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -69,16 +69,16 @@
   }
 }
 
-.page__root {
+.Page-root {
   position: relative;
   z-index: 0;
 }
 
-.page__subjects {
+.Page-subjects {
   flex-grow: 1;
 }
 
-.page__theme-toggle {
+.Page-themeToggle {
   --color_text: white;
   --color_background: black;
 
@@ -96,7 +96,7 @@
   }
 }
 
-.page__wrapper {
+.Page-wrapper {
   --color_text: black;
   --color_background: #dbdbdb;
 

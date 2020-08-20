@@ -2,17 +2,17 @@ import classNames from 'classnames';
 import React, { useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-import ControlBar from './ControlBar';
-import FallbackMessage from './FallbackMessage';
-import Preloader from './Preloader';
-import SubjectList from './SubjectList';
-import ThemeToggle from './ThemeToggle';
+import ControlBar from 'ts/components/ControlBar';
+import FallbackMessage from 'ts/components/FallbackMessage';
+import Preloader from 'ts/components/Preloader';
+import SubjectList from 'ts/components/SubjectList';
+import ThemeToggle from 'ts/components/ThemeToggle';
 
-import * as actionCreators from '../actionCreators';
-import useActions from '../useActions';
+import * as actionCreators from 'ts/actionCreators';
+import { useActions } from 'ts/hooks';
 
-import { fetchSelector, listSelector, themeSelector } from '../reducers/index';
-import selectFilteredSubjects from '../selectFilteredSubjects';
+import { fetchSelector, listSelector, themeSelector } from 'ts/reducers/index';
+import selectFilteredSubjects from 'ts/selectFilteredSubjects';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
@@ -21,7 +21,7 @@ const disableOverlay = () => {
   }
 };
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
   const fetchError = useSelector(fetchSelector.error);
   const filterName = useSelector(listSelector.filterName);
   const filteredList = useSelector(selectFilteredSubjects);
@@ -36,19 +36,19 @@ const App: React.FC = () => {
     toggleTheme,
   } = useActions(actionCreators);
 
-  const handleSearch = useCallback((evt) => {
+  const handleSearch = (evt) => {
     searchInList(evt.target.value);
-  }, []);
+  };
 
   useEffect(() => {
     disableOverlay();
     fetchSubjects();
-  }, []);
+  }, [fetchSubjects]);
 
   return (
-    <div className={classNames('page__wrapper', { 'theme_dark': hasDarkTheme })}>
-      <main className="page__content" aria-labelledby="page-title">
-        <div className="page__header">
+    <div className={classNames('Page-wrapper', { 'theme_dark': hasDarkTheme })}>
+      <main className="Page-content" aria-labelledby="page-title">
+        <div className="Page-header">
           <h1
             className="page__headline"
             id="page-title"
@@ -87,5 +87,3 @@ const App: React.FC = () => {
     </div>
   );
 };
-
-export default App;

@@ -6,7 +6,7 @@ import { ActionCreatorType } from 'ts/types';
 
 type ActionCreatorCollection = ActionCreatorType[] | { [creatorName: string]: ActionCreatorType };
 
-export default (
+export const useActions = (
   actionCreators: ActionCreatorCollection,
   deps?: any[],
 ): ReturnType<typeof useMemo> => {
