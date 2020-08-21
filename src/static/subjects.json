@@ -4189,7 +4189,7 @@
     },
     {
       "caption": "useEffect(fn, []) это не новый componentDidMount()",
-      "url": "",
+      "url": "https://medium.com/@stasonmars/useeffect-fn-%D1%8D%D1%82%D0%BE-%D0%BD%D0%B5-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B8%CC%86-componentdidmount-e19a3831ec2e",
       "lang": "",
       "tags": [
         "react",
