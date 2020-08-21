@@ -66,7 +66,7 @@ export const App: React.FC = () => {
             return <Preloader />;
           }
           return (
-            <React.Fragment>
+            <>
               <ControlBar
                 filterTarget={filterName}
                 searchString={searchString}
@@ -80,7 +80,7 @@ export const App: React.FC = () => {
                     : <SubjectList list={filteredList} />
                 }
               </div>
-            </React.Fragment>
+            </>
           );
         })()}
       </main>
