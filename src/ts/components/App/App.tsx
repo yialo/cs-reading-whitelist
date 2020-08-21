@@ -14,6 +14,8 @@ import { useActions } from 'ts/hooks';
 import { fetchSelector, listSelector, themeSelector } from 'ts/reducers/index';
 import selectFilteredSubjects from 'ts/selectFilteredSubjects';
 
+import style from './App.scss';
+
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
   if ($overlay) {
