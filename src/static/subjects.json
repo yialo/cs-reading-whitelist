@@ -3949,7 +3949,7 @@
       "tags": [
         "react",
         "functional_programming",
-        "too_complicated"
+        "rocket_science"
       ],
       "legend": ""
     },
@@ -3991,7 +3991,7 @@
         "react",
         "react_router",
         "mobx",
-        "too_complicated"
+        "rocket_science"
       ],
       "legend": ""
     },
@@ -4162,6 +4162,35 @@
       "caption": "Death by a thousand useCallbacks (Royi Hagigi)",
       "url": "https://royi-codes.now.sh/thousand-usecallbacks/",
       "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Merging refs",
+      "url": "https://dev.to/thekashey/merging-refs-41l8",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Принципы работы современных веб-браузеров",
+      "url": "https://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/",
+      "lang": "ru",
+      "tags": [
+        "rocket_science"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "useEffect(fn, []) это не новый componentDidMount()",
+      "url": "",
+      "lang": "",
       "tags": [
         "react",
         "react_hooks"
