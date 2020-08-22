@@ -5,11 +5,11 @@ import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
-import App from './components/App';
-import ErrorBoundary from './components/ErrorBoundary';
+import { App } from './components/App';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { rootReducer } from './reducers/index';
 
-export default (): void => {
+export const initApp = (): void => {
   const appliedMiddleware = applyMiddleware(thunk);
   const enhancer = (
     (process.env.NODE_ENV === 'development')

@@ -8,7 +8,7 @@ interface IState {
   error: Error | null;
 }
 
-export default class ErrorBoundary extends React.Component<IProps, IState> {
+export class ErrorBoundary extends React.Component<IProps, IState> {
   static getDerivedStateFromError(err: Error): IState {
     return { error: err };
   }

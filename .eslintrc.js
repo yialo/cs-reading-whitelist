@@ -23,7 +23,6 @@ module.exports = {
       files: [
         './*.js',
         './config/**/*.js',
-        './postcss/**/*.js',
       ],
       extends: ['yialo/preset-node'],
       settings: {

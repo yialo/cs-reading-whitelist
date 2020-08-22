@@ -1,0 +1,36 @@
+@use "~scss/utils";
+
+.root {
+  display: flex;
+
+  @media (min-width: utils.$viewport-sm-min) {
+    font-size: 18px;
+  }
+}
+
+// TODO: add loadmore button
+.button {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.fallbackMessage {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--color_text);
+}
+
+.item {
+  margin-bottom: 16px;
+
+  &_last {
+    composes: item;
+    margin-bottom: 0;
+  }
+}
+
+.list {
+  composes: list from "~scss/scaffold.scss";
+}
