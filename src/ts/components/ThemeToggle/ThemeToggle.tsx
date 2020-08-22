@@ -1,15 +1,16 @@
 import React from 'react';
 
 interface IProps {
+  className?: string;
   isDark: boolean;
   onToggle: () => void;
 }
 
-const ThemeToggle: React.FC<IProps> = ({ isDark, onToggle }) => {
+export const ThemeToggle: React.FC<IProps> = ({ className, isDark, onToggle }) => {
   return (
     <button
       aria-label={`Перейти к ${isDark ? 'светлой' : 'тёмной'} теме`}
-      className="s_button page__theme-toggle"
+      className={className}
       type="button"
       onClick={onToggle}
     >
@@ -18,4 +19,6 @@ const ThemeToggle: React.FC<IProps> = ({ isDark, onToggle }) => {
   );
 };
 
-export default ThemeToggle;
+ThemeToggle.defaultProps = {
+  className: '',
+};

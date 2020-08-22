@@ -1,0 +1,26 @@
+.root {
+  line-height: 1.25;
+}
+
+.legend {
+  color: var(--color_text);
+}
+
+.link {
+  color: midnightblue;
+
+  .theme_dark & {
+    color: #dddddd;
+  }
+}
+
+.tag {
+  display: inline;
+  color: var(--color_text);
+}
+
+.tags {
+  composes: list from "~scss/common/_scaffold.scss";
+  display: inline;
+  font-style: italic;
+}

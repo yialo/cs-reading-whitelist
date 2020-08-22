@@ -1,12 +1,16 @@
 import React from 'react';
+import classNames from 'classnames';
 
-import TextInput from './TextInput';
+import { TextInput } from 'ts/components/TextInput';
+
+import style from './style.scss';
 
 interface IProps {
+  className?: string;
   filterTarget: string;
+  searchString: string;
   onFilterToggle: (name: string) => void;
   onSearch: (evt: React.SyntheticEvent) => void;
-  searchString: string;
 }
 
 const filterDict = {
@@ -14,33 +18,35 @@ const filterDict = {
   'hashtag': 'хэштег',
 };
 
-const ControlBar: React.FC<IProps> = (props) => {
+const filterGroupLabelId = 'filter-group-label';
+
+export const ControlBar: React.FC<IProps> = (props) => {
   const {
+    className,
     filterTarget,
+    searchString,
     onFilterToggle,
     onSearch,
-    searchString,
   } = props;
 
   return (
     <form
-      className="control-bar page__filter"
+      className={classNames(style.root, className)}
       onSubmit={(evt) => {
         evt.preventDefault();
       }}
     >
-      <div className="filter control-bar__filter">
-        <p className="filter__tip">
-          <span id="filter-group-label">Тип сортировки</span>
-          :
+      <div className={style.filter}>
+        <p className={style.tip}>
+          <span id={filterGroupLabelId}>Тип сортировки:</span>
         </p>
-        <div className="filter__controls" role="radiogroup" aria-labelledby="filter-group-label">
+        <div className={style.controls} role="radiogroup" aria-labelledby={filterGroupLabelId}>
           {Object.entries(filterDict).map(([name, legend], i) => {
             const isCurrent = (filterTarget === name);
             return (
               <button
                 key={`${name}-${i + 1}`}
-                className="s_button filter__control"
+                className={style.control}
                 disabled={isCurrent}
                 role="radio"
                 aria-checked={isCurrent}
@@ -55,7 +61,7 @@ const ControlBar: React.FC<IProps> = (props) => {
           })}
         </div>
       </div>
-      <p className="control-bar__searchbar">
+      <p className={style.searchbar}>
         <TextInput
           inputMode="search"
           legend="Введите текст для поиска"
@@ -67,4 +73,6 @@ const ControlBar: React.FC<IProps> = (props) => {
   );
 };
 
-export default ControlBar;
+ControlBar.defaultProps = {
+  className: '',
+};

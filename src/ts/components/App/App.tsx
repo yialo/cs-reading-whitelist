@@ -1,20 +1,17 @@
-import classNames from 'classnames';
 import React, { useEffect } from 'react';
+import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
-import ControlBar from 'ts/components/ControlBar';
-import FallbackMessage from 'ts/components/FallbackMessage';
-import Preloader from 'ts/components/Preloader';
-import SubjectList from 'ts/components/SubjectList';
-import ThemeToggle from 'ts/components/ThemeToggle';
-
 import * as actionCreators from 'ts/actionCreators';
+import { ControlBar } from 'ts/components/ControlBar';
+import { Preloader } from 'ts/components/Preloader';
+import { Subjects } from 'ts/components/Subjects';
+import { ThemeToggle } from 'ts/components/ThemeToggle';
 import { useActions } from 'ts/hooks';
-
-import { fetchSelector, listSelector, themeSelector } from 'ts/reducers/index';
+import { fetchSelector, listSelector, themeSelector } from 'ts/reducers';
 import selectFilteredSubjects from 'ts/selectFilteredSubjects';
 
-import style from './App.scss';
+import style from './style.scss';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
@@ -48,17 +45,18 @@ export const App: React.FC = () => {
   }, [fetchSubjects]);
 
   return (
-    <div className={classNames('Page-wrapper', { 'theme_dark': hasDarkTheme })}>
-      <main className="Page-content" aria-labelledby="page-title">
-        <div className="Page-header">
+    <div className={classNames(style.root, { 'theme_dark': hasDarkTheme })}>
+      <main className={style.content} aria-labelledby="page-title">
+        <div className={style.header}>
           <h1
-            className="page__headline"
+            className={style.headline}
             id="page-title"
             lang="en"
           >
             Computer Science Reading Whitelist
           </h1>
           <ThemeToggle
+            className={style.themeToggle}
             isDark={hasDarkTheme}
             onToggle={toggleTheme}
           />
@@ -70,18 +68,17 @@ export const App: React.FC = () => {
           return (
             <>
               <ControlBar
+                className={style.filter}
                 filterTarget={filterName}
                 searchString={searchString}
                 onFilterToggle={toggleFilter}
                 onSearch={handleSearch}
               />
-              <div className="subjects page__subjects">
-                {
-                  fetchError
-                    ? <FallbackMessage message="Ошибка загрузки" />
-                    : <SubjectList list={filteredList} />
-                }
-              </div>
+              <Subjects
+                className={style.subjects}
+                list={filteredList}
+                hasFetchError={fetchError}
+              />
             </>
           );
         })()}

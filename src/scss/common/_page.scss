@@ -1,0 +1,29 @@
+:global {
+  .Page-body {
+    position: relative;
+    min-width: var(--size_page-min-width);
+    overflow-y: scroll;
+  }
+
+  .Page-overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color_overlay);
+
+    &.js_hidden {
+      display: none;
+    }
+  }
+
+  .Page-root {
+    position: relative;
+    z-index: 0;
+  }
+}

@@ -1,10 +1,19 @@
-.Page {
-  position: relative;
-  min-width: var(--size_page-min-width);
-  overflow-y: scroll;
+.root {
+  --color_text: black;
+  --color_background: #dbdbdb;
+
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color_background);
+
+  &.theme_dark {
+    --color_text: white;
+    --color_background: #242424;
+  }
 }
 
-.Page-content {
+.content {
   --color_conic-middle: white;
   --color_conic-outermost: #eeeeee;
 
@@ -28,18 +37,18 @@
   }
 }
 
-.Page-filter {
+.filter {
   margin-bottom: 32px;
 }
 
-.Page-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
 }
 
-.Page-headline {
+.headline {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 22px;
@@ -51,33 +60,13 @@
   }
 }
 
-.Page-overlay {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: var(--color_overlay);
-
-  &.js_hidden {
-    display: none;
-  }
-}
-
-.Page-root {
-  position: relative;
-  z-index: 0;
-}
-
-.Page-subjects {
+.subjects {
   flex-grow: 1;
 }
 
-.Page-themeToggle {
+.themeToggle {
+  composes: button from "~scss/common/_scaffold.scss";
+
   --color_text: white;
   --color_background: black;
 
@@ -91,20 +80,5 @@
   .theme_dark & {
     --color_text: black;
     --color_background: white;
-  }
-}
-
-.Page-wrapper {
-  --color_text: black;
-  --color_background: #dbdbdb;
-
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: var(--color_background);
-
-  &.theme_dark {
-    --color_text: white;
-    --color_background: #242424;
   }
 }

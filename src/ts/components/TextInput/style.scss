@@ -1,0 +1,9 @@
+.root {
+  flex-grow: 1;
+}
+
+.field {
+  composes: input from "~scss/common/_scaffold.scss";
+
+  width: 100%;
+}
