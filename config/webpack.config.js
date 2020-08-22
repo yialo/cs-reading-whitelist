@@ -2,17 +2,18 @@
 
 const path = require('path');
 
+const autoprefixer = require('autoprefixer');
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const cssnano = require('cssnano');
 const dotEnv = require('dotenv');
-const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const HtmlPlugin = require('html-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const HtmlPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = (env = {}) => {
   const { analyze: needAnalyze, target } = env;
@@ -35,7 +36,7 @@ module.exports = (env = {}) => {
 
   const Alias = {
     '@': PATH.SRC,
-    'css': path.join(PATH.SRC, 'css'),
+    'scss': path.join(PATH.SRC, 'scss'),
     'ts': path.join(PATH.SRC, 'ts'),
   };
 
@@ -82,26 +83,39 @@ module.exports = (env = {}) => {
         };
 
         const styleLoaderRule = {
-          test: /\.css$/,
+          test: /\.s?css$/,
           use: [
             (isProduction ? CssExtractPlugin.loader : 'style-loader'),
             {
               loader: 'css-loader',
               options: {
+                modules: {
+                  exportGlobals: true,
+                  exportLocalsConvention: 'asIs',
+                  exportOnlyLocals: false,
+                  localIdentName: isProduction ? '[hash:base64]' : '[path][name]__[local]',
+                },
+                esModule: true,
+                importLoaders: 2,
                 sourceMap: true,
-                importLoaders: 1,
               },
             },
             {
               loader: 'postcss-loader',
               options: {
+                plugins: () => [
+                  autoprefixer(),
+                ],
                 sourceMap: true,
-                config: {
-                  ctx: {
-                    pathAliasEnum: Alias,
-                  },
-                  path: PATH.CONFIG,
+              },
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sassOptions: {
+                  fiber: false,
                 },
+                sourceMap: true,
               },
             },
           ],

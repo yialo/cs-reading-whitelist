@@ -1,0 +1,1 @@
+export { SubjectsItem } from './Item';

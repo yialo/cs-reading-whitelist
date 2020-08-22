@@ -3,42 +3,22 @@
     {
       "family": "Source Sans Pro",
       "fileNameBase": "source-sans-pro",
-      "localBase": {
-        "os": "Source Sans Pro",
-        "postScript": "SourceSansPro"
-      },
       "sets": [
         {
           "weight": 400,
-          "style": "normal",
-          "localSuffix": {
-            "os": "Regular",
-            "postScript": "Regular"
-          }
+          "style": "normal"
         },
         {
           "weight": 400,
-          "style": "italic",
-          "localSuffix": {
-            "os": "Italic",
-            "postScript": "Italic"
-          }
+          "style": "italic"
         },
         {
           "weight": 700,
-          "style": "normal",
-          "localSuffix": {
-            "os": "Bold",
-            "postScript": "Bold"
-          }
+          "style": "normal"
         },
         {
           "weight": 700,
-          "style": "italic",
-          "localSuffix": {
-            "os": "Bold Italic",
-            "postScript": "BoldItalic"
-          }
+          "style": "italic"
         }
       ]
     }

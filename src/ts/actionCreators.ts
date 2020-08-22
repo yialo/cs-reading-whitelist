@@ -1,19 +1,19 @@
-import { ActionTypeEnum as Type } from './constants';
+import { ACTION_TYPE } from './constants';
 
 import { IAction, ActionCreatorType } from './types';
 
 const searchInList: ActionCreatorType = (nextSearchString: string) => ({
-  type: Type.LIST_SEARCH,
+  type: ACTION_TYPE.LIST_SEARCH,
   payload: nextSearchString,
 });
 
 const toggleFilter: ActionCreatorType = (nextFilterName: string) => ({
-  type: Type.LIST_FILTER_TOGGLE,
+  type: ACTION_TYPE.LIST_FILTER_TOGGLE,
   payload: nextFilterName,
 });
 
 const toggleTheme: ActionCreatorType = () => ({
-  type: Type.THEME_TOGGLE,
+  type: ACTION_TYPE.THEME_TOGGLE,
 });
 
 const fetchSubjects = () => {
@@ -23,12 +23,12 @@ const fetchSubjects = () => {
       const response = await window.fetch(apiUrl);
       const { data: list } = await response.json();
       dispatch({
-        type: Type.FETCH_COMPLETE,
+        type: ACTION_TYPE.FETCH_COMPLETE,
         payload: list,
       });
     } catch (err) {
       dispatch({
-        type: Type.FETCH_ERROR,
+        type: ACTION_TYPE.FETCH_ERROR,
         payload: err,
       });
     }
