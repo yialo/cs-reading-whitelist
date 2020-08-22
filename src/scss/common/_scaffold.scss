@@ -1,0 +1,36 @@
+@use "~scss/utils/mixins" as mixin;
+
+:global {
+  .s_button {
+    padding: 8px 16px;
+    border-style: none;
+    font-size: inherit;
+    line-height: 1.25;
+    background-color: #cdcdcd;
+  }
+
+  .s_input {
+    padding: 8px;
+    border: 1px solid #bababa;
+    border-radius: 2px;
+    font-size: inherit;
+    background-color: white;
+  }
+
+  .s_list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+}
+
+:global(.s_visually-hidden) {
+  @at-root {
+    &:not(:active, :focus),
+    input#{&}[type="checkbox"],
+    input#{&}[type="radio"] {
+      @include mixin.visually-hiding();
+    }
+  }
+}

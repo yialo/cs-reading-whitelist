@@ -1,0 +1,28 @@
+@use "sass:list";
+
+$fonts: (
+  (400, normal),
+  (400, italic),
+  (700, normal),
+  (700, italic),
+);
+
+@function get-url($weight, $style, $format) {
+  @return
+    url("~@/fonts/source-sans-pro_#{$weight}_#{$style}.#{$format}")
+    format("#{$format}");
+}
+
+@each $font in $fonts {
+  $weight: list.nth($font, 1);
+  $style: list.nth($font, 2);
+
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-weight: $weight;
+    font-style: $style;
+    src:
+      get-url($weight, $style, "woff2"),
+      get-url($weight, $style, "woff");
+  }
+}

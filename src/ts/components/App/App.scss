@@ -22,7 +22,6 @@
   );
   background-attachment: fixed;
 
-  @nest
   .theme_dark & {
     --color_conic-middle: black;
     --color_conic-outermost: #111111;
@@ -89,7 +88,6 @@
   color: var(--color_text);
   background-color: var(--color_background);
 
-  @nest
   .theme_dark & {
     --color_text: black;
     --color_background: white;

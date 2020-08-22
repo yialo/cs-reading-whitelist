@@ -83,7 +83,7 @@ module.exports = (env = {}) => {
         };
 
         const styleLoaderRule = {
-          test: /\.css$/,
+          test: /\.s?css$/,
           use: [
             (isProduction ? CssExtractPlugin.loader : 'style-loader'),
             {
