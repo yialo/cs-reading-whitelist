@@ -1,7 +1,9 @@
+@use "~scss/utils";
+
 .root {
   display: flex;
 
-  @media (--vp-xs-from) {
+  @media (min-width: utils.$viewport-sm-min) {
     font-size: 18px;
   }
 }
@@ -22,35 +24,13 @@
 
 .item {
   margin-bottom: 16px;
-}
 
-.lastItem {
-  composes: item;
-  margin-bottom: 0;
+  &_last {
+    composes: item;
+    margin-bottom: 0;
+  }
 }
 
 .list {
-  composes: list from "~scss/common/_scaffold.scss";
-}
-
-.subjects__lang-badge {
-  --color_lang-badge_en: #90caf9;
-  --color_lang-badge_ru: #80cbc4;
-
-  display: inline-block;
-  border-radius: 2px;
-  padding-left: 2px;
-  padding-right: 2px;
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: white;
-}
-
-.subjects__lang-badge--en {
-  background-color: var(--color_lang-badge_en);
-}
-
-.subjects__lang-badge--ru {
-  background-color: var(--color_lang-badge_ru);
+  composes: list from "~scss/scaffold.scss";
 }

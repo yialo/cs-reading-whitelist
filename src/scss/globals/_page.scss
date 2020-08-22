@@ -17,7 +17,7 @@
     height: 100vh;
     background-color: var(--color_overlay);
 
-    &.js_hidden {
+    &.isHidden {
       display: none;
     }
   }

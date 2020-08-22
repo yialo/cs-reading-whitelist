@@ -3,7 +3,7 @@
 }
 
 .field {
-  composes: input from "~scss/common/_scaffold.scss";
+  composes: input from "~scss/scaffold.scss";
 
   width: 100%;
 }

@@ -1,10 +1,12 @@
+@use "~scss/utils";
+
 .root {
   display: flex;
   flex-direction: column;
 }
 
 .control {
-  composes: button from "~scss/common/_scaffold.scss";
+  composes: button from "~scss/scaffold.scss";
 
   min-width: 120px;
   color: #444444;
@@ -28,7 +30,7 @@
   flex-wrap: wrap;
   margin-bottom: 16px;
 
-  @media (--vp-xs-from) {
+  @media (min-width: utils.$viewport-sm-min) {
     flex-wrap: nowrap;
     align-items: center;
   }
@@ -48,7 +50,7 @@
   font-size: 18px;
   color: var(--color_text);
 
-  @media (--vp-xs-from) {
+  @media (min-width: utils.$viewport-sm-min) {
     margin-bottom: 0;
     margin-right: 16px;
     width: auto;

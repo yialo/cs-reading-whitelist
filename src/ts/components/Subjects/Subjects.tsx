@@ -34,7 +34,7 @@ export const Subjects: React.FC<IProps> = ({
           <SubjectsItem
             key={subject.url}
             caption={subject.caption}
-            className={i === arr.length - 1 ? style.lastItem : style.item}
+            className={style[i === arr.length - 1 ? 'item_last' : 'item']}
             lang={subject.lang}
             legend={subject.legend}
             tags={subject.tags}

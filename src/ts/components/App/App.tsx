@@ -16,7 +16,7 @@ import style from './style.scss';
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
   if ($overlay) {
-    $overlay.classList.add('js_hidden');
+    $overlay.classList.add('isHidden');
   }
 };
 
@@ -45,7 +45,7 @@ export const App: React.FC = () => {
   }, [fetchSubjects]);
 
   return (
-    <div className={classNames(style.root, { 'theme_dark': hasDarkTheme })}>
+    <div className={classNames(style.root, { 'darkTheme': hasDarkTheme })}>
       <main className={style.content} aria-labelledby="page-title">
         <div className={style.header}>
           <h1
@@ -61,27 +61,25 @@ export const App: React.FC = () => {
             onToggle={toggleTheme}
           />
         </div>
-        {(() => {
-          if (!isFetchComplete) {
-            return <Preloader />;
-          }
-          return (
-            <>
-              <ControlBar
-                className={style.filter}
-                filterTarget={filterName}
-                searchString={searchString}
-                onFilterToggle={toggleFilter}
-                onSearch={handleSearch}
-              />
-              <Subjects
-                className={style.subjects}
-                list={filteredList}
-                hasFetchError={fetchError}
-              />
-            </>
-          );
-        })()}
+        {!isFetchComplete && (
+          <Preloader />
+        )}
+        {isFetchComplete && (
+          <>
+            <ControlBar
+              className={style.filter}
+              filterTarget={filterName}
+              searchString={searchString}
+              onFilterToggle={toggleFilter}
+              onSearch={handleSearch}
+            />
+            <Subjects
+              className={style.subjects}
+              list={filteredList}
+              hasFetchError={fetchError}
+            />
+          </>
+        )}
       </main>
     </div>
   );

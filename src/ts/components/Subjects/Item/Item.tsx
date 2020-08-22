@@ -23,7 +23,7 @@ export const SubjectsItem: React.FC<IProps> = (props) => {
     <li className={classNames(style.root, className)}>
       <a className={style.link} href={url} lang={lang}>{caption}</a>
       {' '}
-      <span className={`subjects__lang-badge subjects__lang-badge--${lang}`}>
+      <span className={classNames(style[`langBadge_${lang}`])}>
         {lang}
       </span>
       <span className={style.legend}>{legend ? ` - ${legend}` : ''}</span>

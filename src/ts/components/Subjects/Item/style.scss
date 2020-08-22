@@ -2,6 +2,30 @@
   line-height: 1.25;
 }
 
+.langBadge {
+  --color_lang-badge_en: #90caf9;
+  --color_lang-badge_ru: #80cbc4;
+
+  display: inline-block;
+  border-radius: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+
+  &_en {
+    composes: langBadge;
+    background-color: var(--color_lang-badge_en);
+  }
+
+  &_ru {
+    composes: langBadge;
+    background-color: var(--color_lang-badge_ru);
+  }
+}
+
 .legend {
   color: var(--color_text);
 }
@@ -9,7 +33,7 @@
 .link {
   color: midnightblue;
 
-  .theme_dark & {
+  :global(.darkTheme) & {
     color: #dddddd;
   }
 }
@@ -20,7 +44,7 @@
 }
 
 .tags {
-  composes: list from "~scss/common/_scaffold.scss";
+  composes: list from "~scss/scaffold.scss";
   display: inline;
   font-style: italic;
 }
