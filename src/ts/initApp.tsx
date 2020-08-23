@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
@@ -22,7 +23,9 @@ export const initApp = (): void => {
     <React.StrictMode>
       <ErrorBoundary>
         <Provider store={store}>
-          <App />
+          <Router>
+            <App />
+          </Router>
         </Provider>
       </ErrorBoundary>
     </React.StrictMode>

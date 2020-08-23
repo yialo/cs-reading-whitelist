@@ -10,7 +10,7 @@ interface IProps {
   filterTarget: string;
   searchString: string;
   onFilterToggle: (name: string) => void;
-  onSearch: (evt: React.SyntheticEvent) => void;
+  onSearch: React.ChangeEventHandler;
 }
 
 const filterDict = {

@@ -1,0 +1,71 @@
+@use "~scss/utils";
+
+.root {
+  --color-conicMiddle: white;
+  --color-conicOutermost: #eeeeee;
+
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: var(--size-pageContentMaxWidth);
+  padding: 48px 24px;
+  background-color: var(--color-conicMiddle);
+  background-image: conic-gradient(
+    at center 50vh,
+    var(--color-conicOutermost) 120deg,
+    var(--color-conicMiddle) 180deg,
+    var(--color-conicOutermost) 360deg
+  );
+  background-attachment: fixed;
+
+  :global(.darkTheme) & {
+    --color-conicMiddle: black;
+    --color-conicOutermost: #111111;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.filter {
+  margin-bottom: 32px;
+}
+
+.headline {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 1.25;
+  color: var(--color-text);
+
+  @media (min-width: utils.$viewport-sm-min) {
+    font-size: 32px;
+  }
+}
+
+.subjects {
+  flex-grow: 1;
+}
+
+.themeToggle {
+  composes: button from "~scss/scaffold.scss";
+
+  --color-text: white;
+  --color-background: black;
+
+  flex-shrink: 0;
+  margin-left: 24px;
+  width: 80px;
+  font-style: italic;
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  :global(.darkTheme) & {
+    --color-text: black;
+    --color-background: white;
+  }
+}
