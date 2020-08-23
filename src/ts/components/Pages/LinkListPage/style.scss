@@ -1,6 +1,6 @@
 @use "~scss/utils";
 
-$pageContentMaxWidth: 672px;
+$pageContentMaxWidth: utils.$viewport-md-min - 24px * 2;
 
 .root {
   composes: main from "~ts/components/App/style.scss";
@@ -26,11 +26,11 @@ $pageContentMaxWidth: 672px;
     --color-conicOutermost: #111111;
   }
 
-  @media (max-width: $pageContentMaxWidth - 1) {
+  @media (max-width: utils.$viewport-sm-max) {
     width: 100%;
   }
 
-  @media (min-width: $pageContentMaxWidth) {
+  @media (min-width: utils.$viewport-md-min) {
     width: $pageContentMaxWidth;
   }
 }
