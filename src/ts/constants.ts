@@ -5,3 +5,8 @@ export const ACTION_TYPE = {
   FETCH_ERROR: 'FETCH_ERROR',
   THEME_TOGGLE: 'THEME_TOGGLE',
 } as const;
+
+export const ROUTES = {
+  HOME: '/',
+  CLASSNAMES: '/classnames',
+} as const;

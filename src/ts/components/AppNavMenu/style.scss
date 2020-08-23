@@ -1,0 +1,17 @@
+.list {
+  composes: list from "~scss/scaffold.scss";
+
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 16px;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-text);
+
+  &_active {
+    font-weight: 700;
+  }
+}

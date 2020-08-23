@@ -1,9 +1,9 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 import * as actionCreators from 'ts/actionCreators';
+import { AppNavMenu } from 'ts/components/AppNavMenu';
 import { ThemeToggle } from 'ts/components/ThemeToggle';
 import { useActions } from 'ts/hooks';
 import { themeSelector } from 'ts/selectors';
@@ -14,11 +14,6 @@ interface IProps {
   className?: string;
 }
 
-const ROUTES = [
-  ['/', 'Home'],
-  ['/classnames', 'Classnames'],
-];
-
 export const AppHeader: React.FC<IProps> = ({ className }) => {
   const hasDarkTheme = useSelector(themeSelector.isDark);
 
@@ -26,15 +21,7 @@ export const AppHeader: React.FC<IProps> = ({ className }) => {
 
   return (
     <header className={classNames(style.root, className)}>
-      <nav>
-        <ul className={style.navList}>
-          {ROUTES.map(([route, label]) => (
-            <li key={label}>
-              <Link className={style.navLink} to={route}>{label}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <AppNavMenu />
       <ThemeToggle
         className={style.themeToggle}
         isDark={hasDarkTheme}

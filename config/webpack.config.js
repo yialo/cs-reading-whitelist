@@ -47,6 +47,7 @@ module.exports = (env = {}) => {
     context: PATH.SRC,
 
     devServer: isDevelopment ? {
+      historyApiFallback: true,
       host: process.env.WDS_HOST || '127.0.0.1',
       port: process.env.WDS_PORT || 8081,
       hot: false,
