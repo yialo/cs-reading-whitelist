@@ -1,3 +1,20 @@
+@use "~scss/utils";
+
+.root {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 1fr;
+  column-gap: 16px;
+}
+
+.button {
+  composes: button from "~scss/scaffold.scss";
+
+  @media (min-width: utils.$viewport-md-min) {
+    display: none;
+  }
+}
+
 .list {
   composes: list from "~scss/scaffold.scss";
 

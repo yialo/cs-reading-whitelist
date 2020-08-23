@@ -17,8 +17,14 @@ const routeList = [
 
 export const AppNavMenu: React.FC<IProps> = ({ className }) => {
   return (
-    <nav>
-      <ul className={classNames(style.list, className)}>
+    <nav className={classNames(style.root, className)}>
+      <button
+        // TODO: improve a11y
+        aria-label="Меню"
+        className={style.button}
+        type="button"
+      />
+      <ul className={style.list}>
         {routeList.map(([route, label]) => (
           <li key={label}>
             <NavLink
