@@ -27,8 +27,11 @@
 
 .filter {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 16px;
+
+  @media (max-width: utils.$viewport-xs-max) {
+    flex-wrap: wrap;
+  }
 
   @media (min-width: utils.$viewport-sm-min) {
     flex-wrap: nowrap;
@@ -45,10 +48,13 @@
 
 .tip {
   margin-top: 0;
-  margin-bottom: 16px;
-  width: 100%;
   font-size: 18px;
   color: var(--color-text);
+
+  @media (max-width: utils.$viewport-xs-max) {
+    margin-bottom: 16px;
+    width: 100%;
+  }
 
   @media (min-width: utils.$viewport-sm-min) {
     margin-bottom: 0;

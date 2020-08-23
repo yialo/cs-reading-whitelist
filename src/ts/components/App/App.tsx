@@ -23,7 +23,7 @@ export const App: React.FC = () => {
   }, []);
 
   return (
-    <div className={classNames(style.root, { 'darkTheme': hasDarkTheme })}>
+    <div className={classNames(style.root, { 'hasDarkTheme': hasDarkTheme })}>
       <AppHeader className={style.header} />
       <PageSwitcher />
     </div>

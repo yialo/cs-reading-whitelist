@@ -33,7 +33,7 @@
 .link {
   color: midnightblue;
 
-  :global(.darkTheme) & {
+  :global(.hasDarkTheme) & {
     color: #dddddd;
   }
 }

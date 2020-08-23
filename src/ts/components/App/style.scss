@@ -2,14 +2,24 @@
   --color-text: black;
   --color-background: #dbdbdb;
 
+  position: relative;
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr;
   min-height: 100vh;
   background-color: var(--color-background);
 
-  &:global(.darkTheme) {
+  &:global(.hasDarkTheme) {
     --color-text: white;
     --color-background: #242424;
   }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.main {
+  justify-self: center;
 }

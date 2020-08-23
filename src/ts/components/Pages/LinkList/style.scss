@@ -1,6 +1,8 @@
 @use "~scss/utils";
 
 .root {
+  composes: main from "~ts/components/App/style.scss";
+
   --color-conicMiddle: white;
   --color-conicOutermost: #eeeeee;
 
@@ -18,7 +20,7 @@
   );
   background-attachment: fixed;
 
-  :global(.darkTheme) & {
+  :global(.hasDarkTheme) & {
     --color-conicMiddle: black;
     --color-conicOutermost: #111111;
   }
@@ -38,9 +40,12 @@
 .headline {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 22px;
   line-height: 1.25;
   color: var(--color-text);
+
+  @media (max-width: utils.$viewport-xs-max) {
+    font-size: 22px;
+  }
 
   @media (min-width: utils.$viewport-sm-min) {
     font-size: 32px;
@@ -49,23 +54,4 @@
 
 .subjects {
   flex-grow: 1;
-}
-
-.themeToggle {
-  composes: button from "~scss/scaffold.scss";
-
-  --color-text: white;
-  --color-background: black;
-
-  flex-shrink: 0;
-  margin-left: 24px;
-  width: 80px;
-  font-style: italic;
-  color: var(--color-text);
-  background-color: var(--color-background);
-
-  :global(.darkTheme) & {
-    --color-text: black;
-    --color-background: white;
-  }
 }

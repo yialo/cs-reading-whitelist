@@ -1,3 +1,41 @@
 .root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #bdbdbd;
+}
 
+.navLink {
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.navList {
+  composes: list from "~scss/scaffold.scss";
+
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 1rem;
+}
+
+.themeToggle {
+  composes: button from "~scss/scaffold.scss";
+
+  --color-text: white;
+  --color-background: black;
+
+  flex-shrink: 0;
+  margin-left: 24px;
+  width: 120px;
+  font-style: italic;
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  :global(.hasDarkTheme) & {
+    --color-text: black;
+    --color-background: white;
+  }
 }
