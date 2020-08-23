@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom';
 
 import { AppHeader } from 'ts/components/AppHeader';
 import { PageSwitcher } from 'ts/components/Pages';
@@ -17,10 +18,12 @@ const disableOverlay = () => {
 
 export const App: React.FC = () => {
   const hasDarkTheme = useSelector(themeSelector.isDark);
+  const location = useLocation();
 
   useEffect(() => {
     disableOverlay();
-  }, []);
+    console.log(location);
+  }, [location]);
 
   return (
     <div className={classNames(style.root, { 'hasDarkTheme': hasDarkTheme })}>

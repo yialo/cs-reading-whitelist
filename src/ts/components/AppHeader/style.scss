@@ -4,6 +4,10 @@
   align-items: center;
   padding: 0.5rem 1rem;
   background-color: #bdbdbd;
+
+  :global(.hasDarkTheme) & {
+    background-color: #656565;
+  }
 }
 
 .navLink {
