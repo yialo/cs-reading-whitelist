@@ -26,15 +26,9 @@ const handlerDict = {
   DEFAULT: (state: IState) => state,
 };
 
-export default (prevState, action) => {
+export const fetchReducer = (prevState, action) => {
   const { type, payload } = action;
   const state = prevState ?? INITIAL_STATE;
   const handle = handlerDict[type] ?? handlerDict.DEFAULT;
   return handle(state, payload);
-};
-
-export const selector = {
-  error: (state) => state.fetch.error,
-  fullList: (state) => state.fetch.list,
-  isComplete: (state) => state.fetch.isComplete,
 };

@@ -17,14 +17,9 @@ const handlerDict = {
   DEFAULT: (state) => state,
 };
 
-export default (prevState, action) => {
+export const listReducer = (prevState, action) => {
   const { type, payload } = action;
   const state = prevState ?? INITIAL_STATE;
   const handle = handlerDict[type] ?? handlerDict.DEFAULT;
   return handle(state, payload);
-};
-
-export const selector = {
-  filterName: (state) => state.list.filterName,
-  searchString: (state) => state.list.searchString,
 };

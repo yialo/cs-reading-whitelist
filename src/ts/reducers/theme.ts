@@ -12,7 +12,7 @@ const INITIAL_STATE: IState = {
   isDark: false,
 };
 
-export default (prevState: IState, action: IAction): IState => {
+export const themeReducer = (prevState: IState, action: IAction): IState => {
   const state = prevState ?? INITIAL_STATE;
   if (action.type === ACTION_TYPE.THEME_TOGGLE) {
     return {
@@ -21,8 +21,4 @@ export default (prevState: IState, action: IAction): IState => {
     };
   }
   return state;
-};
-
-export const selector = {
-  isDark: (state): boolean => state.theme.isDark,
 };
