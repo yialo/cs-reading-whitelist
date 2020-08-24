@@ -1,6 +1,6 @@
 @use "~scss/utils";
 
-$pageContentMaxWidth: utils.$viewport-md-min - 24px * 2;
+$pageContentMaxWidth: 672px;
 
 .root {
   composes: main from "~ts/components/App/style.scss";
@@ -11,6 +11,8 @@ $pageContentMaxWidth: utils.$viewport-md-min - 24px * 2;
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: $pageContentMaxWidth;
   padding: 48px 24px;
   background-color: var(--color-conicMiddle);
   background-image: conic-gradient(
@@ -24,14 +26,6 @@ $pageContentMaxWidth: utils.$viewport-md-min - 24px * 2;
   :global(.hasDarkTheme) & {
     --color-conicMiddle: black;
     --color-conicOutermost: #111111;
-  }
-
-  @media (max-width: utils.$viewport-sm-max) {
-    width: 100%;
-  }
-
-  @media (min-width: utils.$viewport-md-min) {
-    width: $pageContentMaxWidth;
   }
 }
 
