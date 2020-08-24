@@ -33,6 +33,10 @@
 .link {
   color: midnightblue;
 
+  &:hover {
+    text-decoration: none;
+  }
+
   :global(.hasDarkTheme) & {
     color: #dddddd;
   }
