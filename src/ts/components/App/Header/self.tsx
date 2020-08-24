@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
 import * as actionCreators from 'ts/actionCreators';
-import { AppNavMenu } from 'ts/components/AppNavMenu';
+import { AppNavMenu as NavMenu } from '../NavMenu';
 import { ThemeToggle } from 'ts/components/ThemeToggle';
 import { useActions } from 'ts/hooks';
 import { themeSelector } from 'ts/selectors';
@@ -21,7 +21,7 @@ export const AppHeader: React.FC<IProps> = ({ className }) => {
 
   return (
     <header className={classNames(style.root, className)}>
-      <AppNavMenu />
+      <NavMenu />
       <ThemeToggle
         className={style.themeToggle}
         isDark={hasDarkTheme}

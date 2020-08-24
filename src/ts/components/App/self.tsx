@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
-import { AppHeader } from 'ts/components/AppHeader';
+import { AppHeader as Header } from './Header';
 import { PageSwitcher } from 'ts/components/pages';
 import { themeSelector } from 'ts/selectors';
 
@@ -22,7 +22,7 @@ export const App: React.FC = () => {
 
   return (
     <div className={classNames(style.root, { 'hasDarkTheme': hasDarkTheme })}>
-      <AppHeader className={style.header} />
+      <Header className={style.header} />
       <PageSwitcher />
     </div>
   );

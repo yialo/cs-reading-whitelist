@@ -1,1 +1,1 @@
-export { Subjects } from './Subjects';
+export { Subjects } from './self';
