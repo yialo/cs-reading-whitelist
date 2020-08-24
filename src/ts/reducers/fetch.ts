@@ -1,4 +1,4 @@
-import { ACTION_TYPE } from 'ts/constants';
+import { ACTION_TYPES } from 'ts/constants';
 import { IAction } from 'ts/types';
 
 type FetchList = any[];
@@ -10,12 +10,12 @@ interface IState {
 }
 
 interface IFetchCompleteAction extends IAction {
-  type: typeof ACTION_TYPE.FETCH_COMPLETE;
+  type: typeof ACTION_TYPES.FETCH_COMPLETE;
   payload: FetchList;
 }
 
 interface IFetchErrorAction extends IAction {
-  type: typeof ACTION_TYPE.FETCH_ERROR;
+  type: typeof ACTION_TYPES.FETCH_ERROR;
   payload: Error;
 }
 
@@ -28,12 +28,12 @@ const INITIAL_STATE: IState = {
 };
 
 const handlerDict = {
-  [ACTION_TYPE.FETCH_COMPLETE]: (state: IState, payload: FetchList) => ({
+  [ACTION_TYPES.FETCH_COMPLETE]: (state: IState, payload: FetchList) => ({
     ...state,
     list: payload,
     isComplete: true,
   }),
-  [ACTION_TYPE.FETCH_ERROR]: (state: IState, payload: Error) => ({
+  [ACTION_TYPES.FETCH_ERROR]: (state: IState, payload: Error) => ({
     ...state,
     error: payload,
     isComplete: true,

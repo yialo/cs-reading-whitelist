@@ -9,3 +9,5 @@ export const rootReducer = combineReducers({
   list: listReducer,
   theme: themeReducer,
 });
+
+export type RootState = ReturnType<typeof rootReducer>;

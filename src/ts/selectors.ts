@@ -1,9 +1,11 @@
 import { createSelector } from 'reselect';
 
+import { RootState } from './reducers';
+
 export const fetchSelector = {
-  error: (state) => state.fetch.error,
-  fullList: (state) => state.fetch.list,
-  isComplete: (state) => state.fetch.isComplete,
+  error: (state: RootState) => state.fetch.error,
+  fullList: (state: RootState) => state.fetch.list,
+  isComplete: (state: RootState) => state.fetch.isComplete,
 };
 
 export const listSelector = {

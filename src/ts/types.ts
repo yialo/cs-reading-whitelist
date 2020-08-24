@@ -1,5 +1,7 @@
+import { ACTION_TYPES } from './constants';
+
 export interface IAction {
-  type: string;
+  type: keyof typeof ACTION_TYPES;
   payload?: any;
 }
 
