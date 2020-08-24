@@ -24,12 +24,20 @@
 }
 
 .link {
+  --color-text-active: #343434;
+
   font-weight: 700;
   text-decoration: underline;
   text-transform: uppercase;
   color: var(--color-text);
 
+  :global(.hasDarkTheme) & {
+    --color-text-active: #cdcdcd;
+  }
+
   &_active {
     text-decoration: none;
+    color: var(--color-text-active);
+    cursor: default;
   }
 }
