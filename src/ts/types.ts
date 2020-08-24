@@ -1,6 +1,6 @@
 export interface IAction {
   type: string;
-  payload?: unknown;
+  payload?: any;
 }
 
 type SyncActionCreator = (...args: any[]) => IAction;
