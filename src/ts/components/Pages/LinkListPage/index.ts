@@ -1,1 +1,1 @@
-export { LinkListPage } from './LinkListPage';
+export { LinkListPage } from './self';
