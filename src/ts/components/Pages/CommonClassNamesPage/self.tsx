@@ -1,6 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import style from './style.scss';
+
 interface IProps {
   className?: string;
 }
@@ -22,12 +24,12 @@ const REFERENCE_LINKS = [
 
 export const CommonClassNamesPage: React.FC<IProps> = (props) => {
   return (
-    <main>
+    <main className={style.root}>
       <h1>Типовые названия CSS-классов</h1>
       <hr />
       <section>
         <p>Создано на основе личного опыта и следующих подборок:</p>
-        <ul>
+        <ul className={style.list}>
           {REFERENCE_LINKS.map(([label, url], i) => (
             <li key={i}>
               <a href={url}>{label}</a>
