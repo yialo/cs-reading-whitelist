@@ -8,6 +8,7 @@ const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const cssnano = require('cssnano');
 const dotEnv = require('dotenv');
+const TsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
@@ -15,8 +16,32 @@ const TerserPlugin = require('terser-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
+const ROOT_PATH = path.resolve(__dirname, '../');
+
+const PATH = {
+  SRC: path.join(ROOT_PATH, 'src'),
+  DIST: path.join(ROOT_PATH, 'dist'),
+  CONFIG: path.join(ROOT_PATH, 'config'),
+};
+
+const ALIAS = {
+  '@': PATH.SRC,
+  'react-dom': '@hot-loader/react-dom',
+  'scss': path.join(PATH.SRC, 'scss'),
+  'ts': path.join(PATH.SRC, 'ts'),
+};
+
+const SERVER_DEFAULTS = {
+  HOST: '127.0.0.1',
+  PORT: 8081,
+};
+
 module.exports = (env = {}) => {
-  const { analyze: needAnalyze, target } = env;
+  const {
+    analyze: needAnalyze,
+    target,
+    tscheck: needTypeCheck,
+  } = env;
 
   process.env.BABEL_ENV = target;
   process.env.NODE_ENV = target;
@@ -26,31 +51,17 @@ module.exports = (env = {}) => {
 
   const assetHash = isProduction ? '.[contenthash]' : '';
 
-  const rootPath = path.resolve(__dirname, '../');
-
-  const PATH = {
-    SRC: path.join(rootPath, 'src'),
-    DIST: path.join(rootPath, 'dist'),
-    CONFIG: path.join(rootPath, 'config'),
-  };
-
-  const Alias = {
-    '@': PATH.SRC,
-    'scss': path.join(PATH.SRC, 'scss'),
-    'ts': path.join(PATH.SRC, 'ts'),
-  };
-
-  dotEnv.config({ path: path.join(rootPath, '.env.local') });
-  dotEnv.config({ path: path.join(rootPath, `.env.${target}`) });
+  dotEnv.config({ path: path.join(ROOT_PATH, '.env.local') });
+  dotEnv.config({ path: path.join(ROOT_PATH, `.env.${target}`) });
 
   return {
     context: PATH.SRC,
 
     devServer: isDevelopment ? {
       historyApiFallback: true,
-      host: process.env.WDS_HOST || '127.0.0.1',
-      port: process.env.WDS_PORT || 8081,
-      hot: false,
+      host: process.env.WDS_HOST || SERVER_DEFAULTS.HOST,
+      port: process.env.WDS_PORT || SERVER_DEFAULTS.PORT,
+      hot: true,
       inline: true,
       overlay: true,
       writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
@@ -59,7 +70,7 @@ module.exports = (env = {}) => {
     devtool: isDevelopment ? 'eval-source-map' : false,
 
     entry: {
-      app: path.join(PATH.SRC, 'index.ts'),
+      app: ['react-hot-loader/patch', path.join(PATH.SRC, 'index.ts')],
     },
 
     mode: (isDevelopment || isProduction) ? target : 'none',
@@ -159,9 +170,16 @@ module.exports = (env = {}) => {
           minChunks: 2,
           cacheGroups: {
             default: false,
+            reactDom: {
+              name: 'react-dom',
+              test: /[\\/]node_modules[\\/]@hot-loader[\\/]react-dom[\\/]/,
+              priority: 1,
+              enforce: true,
+            },
             vendor: {
               name: 'vendors',
               test: /[\\/]node_modules[\\/]/,
+              priority: 0,
               enforce: true,
             },
           },
@@ -241,16 +259,28 @@ module.exports = (env = {}) => {
           'process.env.PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH),
         }),
       ];
+
       if (needAnalyze) {
         pluginList.push(new BundleAnalyzerPlugin({
           analyzerPort: 8889,
+        }));
+      }
+      if (needTypeCheck) {
+        pluginList.push(new TsCheckerWebpackPlugin({
+          typescript: {
+            configFile: path.join(ROOT_PATH, 'tsconfig.json'),
+            diagnosticOptions: {
+              semantic: true,
+              syntactic: true,
+            },
+          },
         }));
       }
       return pluginList;
     })(),
 
     resolve: {
-      alias: Alias,
+      alias: ALIAS,
       extensions: [
         '.js',
         '.jsx',
