@@ -1,8 +1,23 @@
 import { createSelector } from 'reselect';
 
-import { fetchSelector, listSelector } from './reducers/index';
+import { RootState } from './reducers';
 
-export default createSelector(
+export const fetchSelector = {
+  error: (state: RootState) => state.fetch.error,
+  fullList: (state: RootState) => state.fetch.list,
+  isComplete: (state: RootState) => state.fetch.isComplete,
+};
+
+export const listSelector = {
+  filterName: (state) => state.list.filterName,
+  searchString: (state) => state.list.searchString,
+};
+
+export const themeSelector = {
+  isDark: (state): boolean => state.theme.isDark,
+};
+
+export const selectFilteredSubjects = createSelector(
   [
     fetchSelector.fullList,
     listSelector.searchString,
@@ -12,6 +27,7 @@ export default createSelector(
     if (searchString === '') {
       return fullList;
     }
+
     return fullList.filter((item) => {
       const matcher = new RegExp(searchString, 'gi');
       switch (filterName) {

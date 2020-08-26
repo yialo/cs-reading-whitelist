@@ -4,7 +4,6 @@
 
 * Change project structure
   * Merge with *css-common-classnames*
-  * Make different pages and header navigation
 * Move browser bookmarks related to computer science and userful services here
 * Organize article chains to collections
 * Add optional **author** field

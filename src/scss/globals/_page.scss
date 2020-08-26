@@ -1,7 +1,7 @@
 :global {
   .Page-body {
     position: relative;
-    min-width: var(--size_page-min-width);
+    min-width: var(--size-pageMinWidth);
     overflow-y: scroll;
   }
 
@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--color_overlay);
+    background-color: var(--color-overlay);
 
     &.isHidden {
       display: none;

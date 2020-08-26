@@ -6,7 +6,7 @@ mixin head()
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     title #{pageTitle}
 
-    - const { fonts } = require('@/json/fonts.json');
+    - const { fonts } = require('@/fonts/fonts.json');
     - for (const { fileNameBase, sets } of fonts)
       - for (const { weight, style } of sets)
         link(

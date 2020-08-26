@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { ISubject } from 'ts/types';
 
 import { SubjectsItem } from './Item';
-import { SubjectsFallbackMessage } from './SubjectsFallbackMessage';
+import { SubjectsFallbackMessage as FallbackMessage } from './FallbackMessage';
 
 import style from './style.scss';
 
@@ -20,11 +20,11 @@ export const Subjects: React.FC<IProps> = ({
   hasFetchError,
 }) => {
   if (hasFetchError) {
-    return <SubjectsFallbackMessage message="Ошибка загрузки" />;
+    return <FallbackMessage message="Ошибка загрузки" />;
   }
 
   if (!list.length) {
-    return <SubjectsFallbackMessage message="Ничего не найдено" />;
+    return <FallbackMessage message="Ничего не найдено" />;
   }
 
   return (

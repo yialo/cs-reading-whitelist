@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import { FILTERS } from 'ts/constants';
 import { TextInput } from 'ts/components/TextInput';
 
 import style from './style.scss';
@@ -10,12 +11,12 @@ interface IProps {
   filterTarget: string;
   searchString: string;
   onFilterToggle: (name: string) => void;
-  onSearch: (evt: React.SyntheticEvent) => void;
+  onSearch: React.ChangeEventHandler;
 }
 
 const filterDict = {
-  'caption': 'заголовок',
-  'hashtag': 'хэштег',
+  [FILTERS.CAPTION]: 'заголовок',
+  [FILTERS.HASHTAG]: 'хэштег',
 };
 
 const filterGroupLabelId = 'filter-group-label';

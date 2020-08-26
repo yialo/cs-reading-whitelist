@@ -1,6 +1,8 @@
+import { ACTION_TYPES } from './constants';
+
 export interface IAction {
-  type: string;
-  payload?: unknown;
+  type: keyof typeof ACTION_TYPES;
+  payload?: any;
 }
 
 type SyncActionCreator = (...args: any[]) => IAction;

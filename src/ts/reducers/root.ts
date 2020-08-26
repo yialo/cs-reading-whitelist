@@ -1,11 +1,13 @@
 import { combineReducers } from 'redux';
 
-import fetchReducer from './fetch';
-import listReducer from './list';
-import themeReducer from './theme';
+import { fetchReducer } from './fetch';
+import { listReducer } from './list';
+import { themeReducer } from './theme';
 
-export default combineReducers({
+export const rootReducer = combineReducers({
   fetch: fetchReducer,
   list: listReducer,
   theme: themeReducer,
 });
+
+export type RootState = ReturnType<typeof rootReducer>;
