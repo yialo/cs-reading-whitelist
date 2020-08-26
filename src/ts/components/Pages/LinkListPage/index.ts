@@ -1,0 +1,1 @@
+export { LinkListPage } from './self';

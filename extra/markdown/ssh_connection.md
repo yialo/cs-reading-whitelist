@@ -40,3 +40,5 @@
     ``` bash
     ssh -T git@%hostname%
     ```
+
+<!-- TODO: add link to HTML Academy article -->

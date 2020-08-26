@@ -1,0 +1,60 @@
+@use "~scss/utils";
+
+$pageContentMaxWidth: 672px;
+
+.root {
+  composes: main from "~ts/components/App/style.scss";
+
+  --color-conicMiddle: white;
+  --color-conicOutermost: #eeeeee;
+
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: $pageContentMaxWidth;
+  padding: 48px 24px;
+  background-color: var(--color-conicMiddle);
+  background-image: conic-gradient(
+    at center 50vh,
+    var(--color-conicOutermost) 120deg,
+    var(--color-conicMiddle) 180deg,
+    var(--color-conicOutermost) 360deg
+  );
+  background-attachment: fixed;
+
+  :global(.hasDarkTheme) & {
+    --color-conicMiddle: black;
+    --color-conicOutermost: #111111;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.filter {
+  margin-bottom: 32px;
+}
+
+.headline {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.25;
+  color: var(--color-text);
+
+  @media (max-width: utils.$viewport-xs-max) {
+    font-size: 22px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    font-size: 32px;
+  }
+}
+
+.subjects {
+  flex-grow: 1;
+}

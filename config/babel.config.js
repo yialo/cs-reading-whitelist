@@ -11,6 +11,7 @@ module.exports = {
         helpers: true,
       },
     ],
+    'react-hot-loader/babel',
   ],
   presets: [
     [
@@ -33,6 +34,11 @@ module.exports = {
         useSpread: false,
       },
     ],
-    '@babel/preset-typescript',
+    [
+      '@babel/preset-typescript',
+      {
+        onlyRemoveTypeImports: true,
+      },
+    ],
   ],
 };

@@ -1,0 +1,43 @@
+@use "~scss/utils";
+
+.root {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 1fr;
+  column-gap: 16px;
+}
+
+.button {
+  composes: button from "~scss/scaffold.scss";
+
+  @media (min-width: utils.$viewport-md-min) {
+    display: none;
+  }
+}
+
+.list {
+  composes: list from "~scss/scaffold.scss";
+
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 16px;
+}
+
+.link {
+  --color-text-active: #343434;
+
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: var(--color-text);
+
+  :global(.hasDarkTheme) & {
+    --color-text-active: #cdcdcd;
+  }
+
+  &_active {
+    text-decoration: none;
+    color: var(--color-text-active);
+    cursor: default;
+  }
+}

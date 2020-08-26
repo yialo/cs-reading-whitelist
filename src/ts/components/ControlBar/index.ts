@@ -1,1 +1,1 @@
-export { ControlBar } from './ControlBar';
+export { ControlBar } from './self';
