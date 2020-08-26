@@ -10,9 +10,6 @@ import { App } from './components/App';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { rootReducer } from './reducers/index';
 
-import '@csstools/normalize.css';
-import 'scss/index.scss';
-
 const appliedMiddleware = applyMiddleware(thunk);
 const enhancer = (
   (process.env.NODE_ENV === 'development')
