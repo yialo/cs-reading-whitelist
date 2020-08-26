@@ -11,9 +11,7 @@ export const FILTERS = {
   HASHTAG: 'hashtag',
 } as const;
 
-const publicPath = process.env.PUBLIC_PATH as string;
-
 export const ROUTES = {
-  HOME: publicPath,
-  CLASSNAMES: `${publicPath}classnames`,
+  HOME: '/',
+  CLASSNAMES: '/classnames',
 } as const;
