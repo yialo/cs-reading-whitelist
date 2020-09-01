@@ -1,14 +1,16 @@
 @use "~scss/utils";
 
 .root {
+  --color_headerBackground: #bdbdbd;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
-  background-color: #bdbdbd;
+  background-color: var(--color_headerBackground);
 
   @include utils.darkTheme() {
-    background-color: #656565;
+    --color_headerBackground: #656565;
   }
 }
 

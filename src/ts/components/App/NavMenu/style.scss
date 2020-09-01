@@ -1,6 +1,7 @@
 @use "~scss/utils";
 
 .root {
+  position: relative;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: auto 1fr;
@@ -37,9 +38,25 @@
 .list {
   composes: list from "~scss/scaffold.scss";
 
-  display: grid;
-  grid-auto-flow: column;
-  column-gap: 16px;
+  @media (max-width: utils.$viewport-sm-max) {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: -16px;
+    display: grid;
+    row-gap: 16px;
+    padding: 16px 16px;
+    background-color: var(--color_headerBackground);
+
+    :global(.isCollapsedScreenSm) & {
+      display: none;
+    }
+  }
+
+  @media (min-width: utils.$viewport-md-min) {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 16px;
+  }
 }
 
 .link {
