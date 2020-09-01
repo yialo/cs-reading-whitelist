@@ -4196,6 +4196,25 @@
         "react_hooks"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Публикация пакета в npm",
+      "url": "https://codex.so/npm",
+      "lang": "ru",
+      "tags": [
+        "npm"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Объяснены: значения nofollow / dofollow, noopener, noreferrer и noindex",
+      "url": "https://saitsamy.blogspot.com/2019/12/what-noopener-noreferrer-dofollow-nofollow-explained.html#nofollow-explained5",
+      "lang": "ru",
+      "tags": [
+        "seo",
+        "security"
+      ],
+      "legend": ""
     }
   ]
 }
