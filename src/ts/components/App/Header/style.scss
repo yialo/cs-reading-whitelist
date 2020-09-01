@@ -1,12 +1,16 @@
+@use "~scss/utils";
+
 .root {
+  --color_headerBackground: #bdbdbd;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
-  background-color: #bdbdbd;
+  background-color: var(--color_headerBackground);
 
-  :global(.hasDarkTheme) & {
-    background-color: #656565;
+  @include utils.darkTheme() {
+    --color_headerBackground: #656565;
   }
 }
 
@@ -22,7 +26,7 @@
   color: var(--color-text);
   background-color: var(--color-background);
 
-  :global(.hasDarkTheme) & {
+  @include utils.darkTheme() {
     --color-text: black;
     --color-background: white;
   }

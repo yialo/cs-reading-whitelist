@@ -23,12 +23,12 @@
   list-style-type: none;
 }
 
-.visually-hidden {
+.visuallyHidden {
   @at-root {
     &:not(:active, :focus),
     input#{&}[type="checkbox"],
     input#{&}[type="radio"] {
-      @include utils.visually-hiding();
+      @include utils.visuallyHiding();
     }
   }
 }

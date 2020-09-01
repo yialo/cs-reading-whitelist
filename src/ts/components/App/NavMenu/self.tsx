@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 
 import { ROUTES } from 'ts/constants';
 
+import { AppNavMenuIcon } from './Icon';
+
 import style from './style.scss';
 
 interface IProps {
@@ -25,16 +27,21 @@ export const AppNavMenu: React.FC<IProps> = ({ className }) => {
   };
 
   return (
-    <nav className={classNames(style.root, className)}>
+    <nav
+      className={classNames(style.root, className, {
+        'isCollapsedScreenSm': !isExpanded,
+      })}
+    >
       <button
         aria-controls={buttonId}
         aria-expanded={isExpanded}
-        // TODO: make label inclusive
         aria-label="Меню"
         className={style.button}
         type="button"
         onClick={handleMenuExpansion}
-      />
+      >
+        <AppNavMenuIcon isExpanded={isExpanded} />
+      </button>
       <ul className={style.list} id={buttonId}>
         {routeList.map(([route, label]) => (
           <li key={label}>

@@ -13,7 +13,7 @@ $pageContentMaxWidth: 672px;
   flex-direction: column;
   width: 100%;
   max-width: $pageContentMaxWidth;
-  padding: 48px 24px;
+  padding: 32px 24px 48px;
   background-color: var(--color-conicMiddle);
   background-image: conic-gradient(
     at center 50vh,
@@ -23,7 +23,7 @@ $pageContentMaxWidth: 672px;
   );
   background-attachment: fixed;
 
-  :global(.hasDarkTheme) & {
+  @include utils.darkTheme() {
     --color-conicMiddle: black;
     --color-conicOutermost: #111111;
   }
@@ -33,7 +33,7 @@ $pageContentMaxWidth: 672px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .filter {

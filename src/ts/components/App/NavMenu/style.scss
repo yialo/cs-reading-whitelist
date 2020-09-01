@@ -1,43 +1,79 @@
 @use "~scss/utils";
 
 .root {
+  position: relative;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: auto 1fr;
+  align-items: center;
   column-gap: 16px;
 }
 
 .button {
-  composes: button from "~scss/scaffold.scss";
+  $size: 32px;
+
+  width: $size;
+  height: $size;
+  border-style: none;
+  padding: 0;
+  background-color: transparent;
+
+  @media (max-width: utils.$viewport-sm-max) {
+    display: block;
+  }
 
   @media (min-width: utils.$viewport-md-min) {
     display: none;
   }
 }
 
+.icon {
+  fill: black;
+
+  @include utils.darkTheme() {
+    fill: white;
+  }
+}
+
 .list {
   composes: list from "~scss/scaffold.scss";
 
-  display: grid;
-  grid-auto-flow: column;
-  column-gap: 16px;
+  @media (max-width: utils.$viewport-sm-max) {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: -16px;
+    display: grid;
+    row-gap: 16px;
+    padding: 16px 16px;
+    background-color: var(--color_headerBackground);
+
+    :global(.isCollapsedScreenSm) & {
+      display: none;
+    }
+  }
+
+  @media (min-width: utils.$viewport-md-min) {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 16px;
+  }
 }
 
 .link {
-  --color-text-active: #343434;
+  --color-text_active: #343434;
 
   font-weight: 700;
   text-decoration: underline;
   text-transform: uppercase;
   color: var(--color-text);
 
-  :global(.hasDarkTheme) & {
-    --color-text-active: #cdcdcd;
+  @include utils.darkTheme() {
+    --color-text_active: #cdcdcd;
   }
 
   &_active {
     text-decoration: none;
-    color: var(--color-text-active);
+    color: var(--color-text_active);
     cursor: default;
   }
 }
