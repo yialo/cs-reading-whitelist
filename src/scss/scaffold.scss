@@ -28,7 +28,7 @@
     &:not(:active, :focus),
     input#{&}[type="checkbox"],
     input#{&}[type="radio"] {
-      @include utils.visually-hiding();
+      @include utils.visuallyHiding();
     }
   }
 }

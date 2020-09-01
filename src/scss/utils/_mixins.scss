@@ -1,4 +1,10 @@
-@mixin visually-hiding() {
+@mixin darkTheme() {
+  :global(.hasDarkTheme) & {
+    @content;
+  }
+}
+
+@mixin visuallyHiding() {
   appearance: none;
   margin: -1px;
   width: 1px;

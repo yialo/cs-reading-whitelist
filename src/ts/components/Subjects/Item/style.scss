@@ -1,3 +1,5 @@
+@use "~scss/utils";
+
 .root {
   line-height: 1.25;
 }
@@ -37,7 +39,7 @@
     text-decoration: none;
   }
 
-  :global(.hasDarkTheme) & {
+  @include utils.darkTheme() {
     color: #dddddd;
   }
 }

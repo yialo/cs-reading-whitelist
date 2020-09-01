@@ -23,7 +23,7 @@ $pageContentMaxWidth: 672px;
   );
   background-attachment: fixed;
 
-  :global(.hasDarkTheme) & {
+  @include utils.darkTheme() {
     --color-conicMiddle: black;
     --color-conicOutermost: #111111;
   }
