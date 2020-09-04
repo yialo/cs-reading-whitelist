@@ -25,7 +25,8 @@
 
 .visuallyHidden {
   @at-root {
-    &:not(:active, :focus),
+    &:not(:active),
+    &:not(:focus),
     input#{&}[type="checkbox"],
     input#{&}[type="radio"] {
       @include utils.visuallyHiding();
