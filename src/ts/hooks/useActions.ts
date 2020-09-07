@@ -8,11 +8,9 @@ type ActionCreatorCollection = ActionCreatorType[] | { [creatorName: string]: Ac
 
 export const useActions = (
   actionCreators: ActionCreatorCollection,
-  deps?: any[],
+  deps: any[],
 ): ReturnType<typeof useMemo> => {
   const dispatch = useDispatch();
-
-  const iternalDeps = [actionCreators, dispatch];
 
   return useMemo(
     () => {
@@ -21,6 +19,6 @@ export const useActions = (
       }
       return bindActionCreators(actionCreators, dispatch);
     },
-    deps ? [...iternalDeps, ...deps] : iternalDeps,
+    [actionCreators, dispatch].concat(deps),
   );
 };

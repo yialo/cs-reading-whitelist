@@ -1,9 +1,10 @@
 export const ACTION_TYPES = {
-  LIST_SEARCH: 'LIST_SEARCH',
-  LIST_FILTER_TOGGLE: 'LIST_FILTER_TOGGLE',
-  FETCH_COMPLETE: 'FETCH_COMPLETE',
-  FETCH_ERROR: 'FETCH_ERROR',
-  THEME_TOGGLE: 'THEME_TOGGLE',
+  LIST_SEARCH: 'list:search',
+  LIST_FILTER_TOGGLE: 'list:filter-toggle',
+  LIST_SORTING_TOGGLE: 'list:sorting-toggle',
+  FETCH_COMPLETE: 'fetch:complete',
+  FETCH_ERROR: 'fetch:error',
+  THEME_TOGGLE: 'theme:toggle',
 } as const;
 
 export const FILTERS = {
@@ -11,7 +12,10 @@ export const FILTERS = {
   HASHTAG: 'hashtag',
 } as const;
 
-export type FilterName = typeof FILTERS[keyof typeof FILTERS];
+export const SORTING = {
+  NEW: 'new',
+  OLD: 'old',
+};
 
 const INITIAL_ROUTES = {
   HOME: '',

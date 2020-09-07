@@ -1,9 +1,14 @@
-import { ACTION_TYPES } from './constants';
+import { ACTION_TYPES, FILTERS, SORTING } from './constants';
+
+type $Values<O> = O[keyof O];
 
 export interface IAction {
-  type: keyof typeof ACTION_TYPES;
+  type: $Values<typeof ACTION_TYPES>;
   payload?: any;
 }
+
+export type FilterName = $Values<typeof FILTERS>;
+export type SortingName = $Values<typeof SORTING>;
 
 type SyncActionCreator = (...args: any[]) => IAction;
 type AsyncActionCreator = (...args: any[]) => Promise<any>;

@@ -1,22 +1,32 @@
 import { ACTION_TYPES } from './constants';
 
-import { IAction, ActionCreatorType } from './types';
+import {
+  IAction,
+  ActionCreatorType,
+  FilterName,
+  SortingName,
+} from './types';
 
-const searchInList: ActionCreatorType = (nextSearchString: string) => ({
+export const searchInList: ActionCreatorType = (nextSearchString: string) => ({
   type: ACTION_TYPES.LIST_SEARCH,
   payload: nextSearchString,
 });
 
-const toggleFilter: ActionCreatorType = (nextFilterName: string) => ({
+export const toggleFilter: ActionCreatorType = (nextFilterName: FilterName) => ({
   type: ACTION_TYPES.LIST_FILTER_TOGGLE,
   payload: nextFilterName,
 });
 
-const toggleTheme: ActionCreatorType = () => ({
+export const toggleSorting: ActionCreatorType = (nextSortingName: SortingName) => ({
+  type: ACTION_TYPES.LIST_SORTING_TOGGLE,
+  payload: nextSortingName,
+});
+
+export const toggleTheme: ActionCreatorType = () => ({
   type: ACTION_TYPES.THEME_TOGGLE,
 });
 
-const fetchSubjects = () => {
+export const fetchSubjects = () => {
   return async (dispatch: (action: IAction) => void): Promise<void> => {
     const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
     try {
@@ -33,11 +43,4 @@ const fetchSubjects = () => {
       });
     }
   };
-};
-
-export {
-  fetchSubjects,
-  searchInList,
-  toggleFilter,
-  toggleTheme,
 };

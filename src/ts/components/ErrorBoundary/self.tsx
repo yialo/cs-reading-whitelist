@@ -1,5 +1,7 @@
 import React from 'react';
 
+import style from './style.scss';
+
 interface IProps {
   children: React.ReactNode;
 }
@@ -19,7 +21,7 @@ export class ErrorBoundary extends React.Component<IProps, IState> {
 
   render(): React.ReactNode {
     if (this.state.error) {
-      return <p>Something went wrong in React app:(</p>;
+      return <p className={style.root}>Something went wrong in React app:(</p>;
     }
     return this.props.children;
   }

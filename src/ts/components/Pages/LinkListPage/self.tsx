@@ -10,7 +10,7 @@ import { useActions } from 'ts/hooks';
 import {
   fetchSelector,
   listSelector,
-  selectFilteredSubjects,
+  selectSortedList,
 } from 'ts/selectors';
 
 import style from './style.scss';
@@ -22,15 +22,17 @@ interface IProps {
 export const LinkListPage: React.FC<IProps> = ({ className }) => {
   const fetchError = useSelector(fetchSelector.error);
   const filterName = useSelector(listSelector.filterName);
-  const filteredList = useSelector(selectFilteredSubjects);
+  const subjectList = useSelector(selectSortedList);
   const searchString = useSelector(listSelector.searchString);
+  const sortingName = useSelector(listSelector.sortingName);
   const isFetchComplete = useSelector(fetchSelector.isComplete);
 
   const {
     fetchSubjects,
     searchInList,
     toggleFilter,
-  } = useActions(actionCreators);
+    toggleSorting,
+  } = useActions(actionCreators, []);
 
   const handleSearch: React.ChangeEventHandler = (evt) => {
     searchInList(evt.target.value);
@@ -56,12 +58,14 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
             className={style.filter}
             filterTarget={filterName}
             searchString={searchString}
+            sortingTarget={sortingName}
             onFilterToggle={toggleFilter}
             onSearch={handleSearch}
+            onSortingToggle={toggleSorting}
           />
           <Subjects
             className={style.subjects}
-            list={filteredList}
+            list={subjectList}
             hasFetchError={!!fetchError}
           />
         </>

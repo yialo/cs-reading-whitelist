@@ -1,6 +1,5 @@
-import { ACTION_TYPES } from '../constants';
-import type { FilterName } from '../constants';
-import { IAction } from 'ts/types';
+import { ACTION_TYPES, FILTERS, SORTING } from '../constants';
+import type { IAction, FilterName, SortingName } from 'ts/types';
 
 type ListActions = keyof Pick<typeof ACTION_TYPES, 'LIST_SEARCH' | 'LIST_FILTER_TOGGLE'>;
 
@@ -12,20 +11,23 @@ interface IListAction extends IAction {
 }
 
 interface IListState {
-  filterName: FilterName;
   searchString: string;
+  filterName: FilterName;
+  sortingName: SortingName;
 }
 
 type ActionHandler<P> = (state: IListState, payload: P) => IListState;
 
 const INITIAL_STATE = {
-  filterName: 'caption',
   searchString: '',
+  filterName: FILTERS.CAPTION,
+  sortingName: SORTING.NEW,
 };
 
 interface HandlerDict {
   [ACTION_TYPES.LIST_SEARCH]: ActionHandler<SearchString>;
   [ACTION_TYPES.LIST_FILTER_TOGGLE]: ActionHandler<FilterName>;
+  [ACTION_TYPES.LIST_SORTING_TOGGLE]: ActionHandler<SortingName>;
   DEFAULT: (state: IListState) => IListState;
 }
 
@@ -37,6 +39,10 @@ const handlerDict: HandlerDict = {
   [ACTION_TYPES.LIST_FILTER_TOGGLE]: (state, payload) => ({
     ...state,
     filterName: payload,
+  }),
+  [ACTION_TYPES.LIST_SORTING_TOGGLE]: (state, payload) => ({
+    ...state,
+    sortingName: payload,
   }),
   DEFAULT: (state) => state,
 };
