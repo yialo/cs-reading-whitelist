@@ -42,8 +42,7 @@ export const fetchSubjects: ActionCreatorType = () => async (dispatch): Promise<
     const { data: list } = await response.json() as SubjectsApiResponse;
     dispatch({
       type: ACTION_TYPES.FETCH_COMPLETE,
-      payload: list.slice(0, 22),
-      // payload: list,
+      payload: list,
     });
   } catch (err) {
     dispatch({
