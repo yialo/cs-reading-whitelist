@@ -57,6 +57,11 @@ export const selectSortedList = createSelector(
   },
 );
 
+export const getSortedAmount = createSelector(
+  [selectSortedList],
+  (sortedList) => sortedList.length,
+);
+
 export const getVisibleList = createSelector(
   [
     selectSortedList,
@@ -70,12 +75,11 @@ export const getVisibleList = createSelector(
 
 export const getIsLastPage = createSelector(
   [
-    getVisibleList,
+    getSortedAmount,
     listSelector.page,
   ],
-  (visibleList, page) => {
-    const visibleLength = visibleList.length;
-    const totalPages = Math.ceil(visibleLength / LIST_PAGE_SIZE);
+  (sortedAmount, page) => {
+    const totalPages = Math.ceil(sortedAmount / LIST_PAGE_SIZE);
     return page === totalPages;
   },
 );

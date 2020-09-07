@@ -12,19 +12,11 @@ export const searchInList: ActionCreatorType = (nextSearchString: string) => ({
   payload: nextSearchString,
 });
 
-export const toggleFilter: ActionCreatorType = (nextFilterName: FilterName) => (
-  (dispatch, getState) => {
-    const { searchString } = getState().list;
+export const toggleFilter: ActionCreatorType = (nextFilterName: FilterName) => ({
+  type: ACTION_TYPES.LIST_FILTER_TOGGLE,
+  payload: nextFilterName,
+});
 
-    dispatch({
-      type: ACTION_TYPES.LIST_FILTER_TOGGLE,
-      payload: {
-        filterName: nextFilterName,
-        needPageReset: searchString !== '',
-      },
-    });
-  }
-);
 
 export const toggleSorting: ActionCreatorType = (nextSortingName: SortingName) => ({
   type: ACTION_TYPES.LIST_SORTING_TOGGLE,
@@ -51,6 +43,7 @@ export const fetchSubjects: ActionCreatorType = () => async (dispatch): Promise<
     dispatch({
       type: ACTION_TYPES.FETCH_COMPLETE,
       payload: list.slice(0, 22),
+      // payload: list,
     });
   } catch (err) {
     dispatch({

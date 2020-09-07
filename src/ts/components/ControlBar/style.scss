@@ -25,6 +25,11 @@
   }
 }
 
+.amount {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
 .filter {
   composes: adaptiveRow;
   margin-bottom: 16px;

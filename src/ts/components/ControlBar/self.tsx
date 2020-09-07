@@ -11,8 +11,10 @@ import style from './style.scss';
 interface IProps {
   className?: string;
   filterTarget: FilterName;
+  fullAmount: number;
   searchString: string;
   sortingTarget: SortingName;
+  visibleAmount: number;
   onFilterToggle: (name: FilterName) => void;
   onSearch: React.ChangeEventHandler;
   onSortingToggle: (name: SortingName) => void;
@@ -21,27 +23,27 @@ interface IProps {
 const FILTER_ENUM = {
   [FILTERS.CAPTION]: 'заголовок',
   [FILTERS.HASHTAG]: 'хэштег',
-};
+} as const;
 
 const SORTING_ENUM = {
   [SORTING.NEW]: 'новые',
   [SORTING.OLD]: 'старые',
-};
+} as const;
 
 const filterGroupLabelId = 'filter-group-label';
 const sortingGroupLabelId = 'sorting-group-label';
 
-export const ControlBar: React.FC<IProps> = (props) => {
-  const {
-    className,
-    filterTarget,
-    searchString,
-    sortingTarget,
-    onFilterToggle,
-    onSearch,
-    onSortingToggle,
-  } = props;
-
+export const ControlBar: React.FC<IProps> = ({
+  className,
+  filterTarget,
+  fullAmount,
+  searchString,
+  sortingTarget,
+  visibleAmount,
+  onFilterToggle,
+  onSearch,
+  onSortingToggle,
+}) => {
   return (
     <div
       className={classNames(style.root, className)}
@@ -95,6 +97,13 @@ export const ControlBar: React.FC<IProps> = (props) => {
         value={searchString}
         onChange={onSearch}
       />
+      <p className={style.amount}>
+        {
+          searchString === ''
+            ? `Показаны первые ${visibleAmount} из ${fullAmount}`
+            : `Показано ${visibleAmount} из ${fullAmount} совпадений`
+        }
+      </p>
       <div className={style.sorting}>
         <span className={style.tip} id={sortingGroupLabelId}>Сортировка:</span>
         <div

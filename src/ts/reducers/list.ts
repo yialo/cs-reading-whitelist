@@ -15,14 +15,9 @@ interface IListSearchAction extends IAction {
   payload: SearchString;
 }
 
-interface FilterTogglePayload {
-  filterName: FilterName;
-  needPageReset: boolean;
-}
-
 interface IListFilterAction extends IAction {
   type: typeof ACTION_TYPES.LIST_FILTER_TOGGLE;
-  payload: FilterTogglePayload;
+  payload: FilterName;
 }
 
 interface IListSortingAction extends IAction {
@@ -42,9 +37,11 @@ type ListAction = (
   | IListPageAction
 );
 
+const INITIAL_PAGE = 1;
+
 const INITIAL_STATE = {
   searchString: '',
-  page: 1,
+  page: INITIAL_PAGE,
   filterName: FILTERS.CAPTION,
   sortingName: SORTING.NEW,
 };
@@ -65,11 +62,10 @@ export const listReducer = (
     }
 
     case ACTION_TYPES.LIST_FILTER_TOGGLE: {
-      const { filterName, needPageReset } = payload as FilterTogglePayload;
       return {
         ...state,
-        filterName,
-        page: needPageReset ? 1 : state.page,
+        filterName: payload as FilterName,
+        page: INITIAL_PAGE,
       };
     }
 
