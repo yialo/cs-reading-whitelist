@@ -31,12 +31,12 @@ $pageContentMaxWidth: 672px;
 
   @media (max-width: utils.$viewport-xs-max) {
     padding-top: 24px;
-    padding-bottom: 32px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: utils.$viewport-sm-min) {
     padding-top: 32px;
-    padding-bottom: 48px;
+    padding-bottom: 32px;
   }
 }
 
@@ -55,13 +55,7 @@ $pageContentMaxWidth: 672px;
 }
 
 .controlBar {
-  @media (max-width: utils.$viewport-xs-max) {
-    margin-bottom: 15px;
-  }
-
-  @media (min-width: utils.$viewport-sm-min) {
-    margin-bottom: 32px;
-  }
+  margin-bottom: 15px;
 }
 
 .headline {

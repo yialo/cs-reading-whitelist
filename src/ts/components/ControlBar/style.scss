@@ -5,13 +5,17 @@
   flex-direction: column;
   margin-left: calc(var(--size-paddingX) * -1);
   margin-right: calc(var(--size-paddingX) * -1);
+  border-bottom: 1px solid #bdbdbd;
+  padding-bottom: 24px;
   padding-left: var(--size-paddingX);
   padding-right: var(--size-paddingX);
+  // @media (max-width: utils.$viewport-xs-max) {
 
-  @media (max-width: utils.$viewport-xs-max) {
-    border-bottom: 1px solid #bdbdbd;
-    padding-bottom: 24px;
-  }
+  // }
+
+  // @media (min-width: utils.$viewport-sm-min) {
+
+  // }
 }
 
 .adaptiveRow {
