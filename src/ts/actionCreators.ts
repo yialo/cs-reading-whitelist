@@ -1,4 +1,4 @@
-import { ACTION_TYPES } from './constants';
+import { ACTION_TYPES, LIST_PAGE_SIZE } from './constants';
 
 import {
   IAction,
@@ -21,6 +21,21 @@ export const toggleSorting: ActionCreatorType = (nextSortingName: SortingName) =
   type: ACTION_TYPES.LIST_SORTING_TOGGLE,
   payload: nextSortingName,
 });
+
+export const showNextListPage: ActionCreatorType = () => {
+  return (dispatch: (action: IAction) => void, getState): void => {
+    const state = getState();
+    const totalLength = state.fetch.list.length;
+    const totalPages = Math.ceil(totalLength / LIST_PAGE_SIZE);
+    const currentPage = state.list.page;
+
+    if (currentPage < totalPages) {
+      dispatch({
+        type: ACTION_TYPES.LIST_NEXT_PAGE,
+      });
+    }
+  };
+};
 
 export const toggleTheme: ActionCreatorType = () => ({
   type: ACTION_TYPES.THEME_TOGGLE,

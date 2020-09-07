@@ -1,6 +1,6 @@
 import { ACTION_TYPES, FILTERS, SORTING } from './constants';
 
-type $Values<O> = O[keyof O];
+export type $Values<O> = O[keyof O];
 
 export interface IAction {
   type: $Values<typeof ACTION_TYPES>;

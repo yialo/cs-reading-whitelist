@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-import { FILTERS, SORTING } from './constants';
+import { FILTERS, SORTING, LIST_PAGE_SIZE } from './constants';
 import { RootState } from './reducers';
 import type { ISubject, FilterName, SortingName } from './types';
 
@@ -12,6 +12,7 @@ export const fetchSelector = {
 
 export const listSelector = {
   filterName: (state: RootState): FilterName => state.list.filterName,
+  page: (state: RootState): number => state.list.page,
   searchString: (state: RootState): string => state.list.searchString,
   sortingName: (state: RootState): SortingName => state.list.sortingName,
 };
@@ -43,14 +44,16 @@ export const selectSortedList = createSelector(
   [
     selectFilteredList,
     listSelector.sortingName,
+    listSelector.page,
   ],
-  (filteredList, sortingName) => {
+  (filteredList, sortingName, page) => {
     let sortedList = [...filteredList];
 
     if (sortingName === SORTING.NEW) {
       sortedList = sortedList.reverse();
     }
 
-    return sortedList;
+    const itemsToShowAmount = page * LIST_PAGE_SIZE;
+    return sortedList.slice(0, itemsToShowAmount);
   },
 );

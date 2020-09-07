@@ -30,6 +30,18 @@
     color: lightgoldenrodyellow;
     cursor: default;
   }
+
+  &_first {
+    composes: filterControl;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &_last {
+    composes: filterControl;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 
 .filterControlGroup {

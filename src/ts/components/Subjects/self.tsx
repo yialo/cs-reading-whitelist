@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import { Button } from 'ts/components/Button';
 import { ISubject } from 'ts/types';
 
 import { SubjectsItem } from './Item';
@@ -12,12 +13,14 @@ interface IProps {
   className?: string;
   list: ISubject[];
   hasFetchError: boolean;
+  onShowMoreClick: () => void;
 }
 
 export const Subjects: React.FC<IProps> = ({
   className,
   list,
   hasFetchError,
+  onShowMoreClick,
 }) => {
   if (hasFetchError) {
     return <FallbackMessage message="Ошибка загрузки" />;
@@ -30,11 +33,10 @@ export const Subjects: React.FC<IProps> = ({
   return (
     <div className={classNames(style.root, className)}>
       <ul className={style.list}>
-        {list.map((subject, i, arr) => (
+        {list.map((subject) => (
           <SubjectsItem
             key={subject.url}
             caption={subject.caption}
-            className={style[i === arr.length - 1 ? 'item_last' : 'item']}
             lang={subject.lang}
             legend={subject.legend}
             tags={subject.tags}
@@ -42,6 +44,9 @@ export const Subjects: React.FC<IProps> = ({
           />
         ))}
       </ul>
+      <Button className={style.button} onClick={onShowMoreClick}>
+        Показать ещё
+      </Button>
     </div>
   );
 };

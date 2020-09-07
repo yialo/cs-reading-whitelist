@@ -58,12 +58,22 @@ export const ControlBar: React.FC<IProps> = (props) => {
           aria-labelledby={filterGroupLabelId}
           role="radiogroup"
         >
-          {Object.entries(FILTER_ENUM).map(([name, legend]) => {
+          {Object.entries(FILTER_ENUM).map(([name, legend], i, arr) => {
             const isCurrent = (filterTarget === name);
+
+            let buttonClassName;
+            if (i === 0) {
+              buttonClassName = style.filterControl_first;
+            } else if (i === arr.length - 1) {
+              buttonClassName = style.filterControl_last;
+            } else {
+              buttonClassName = style.filterControl;
+            }
+
             return (
               <Button
                 key={name}
-                className={style.filterControl}
+                className={buttonClassName}
                 disabled={isCurrent}
                 aria-checked={isCurrent}
                 role="radio"

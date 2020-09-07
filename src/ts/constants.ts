@@ -2,6 +2,7 @@ export const ACTION_TYPES = {
   LIST_SEARCH: 'list:search',
   LIST_FILTER_TOGGLE: 'list:filter-toggle',
   LIST_SORTING_TOGGLE: 'list:sorting-toggle',
+  LIST_NEXT_PAGE: 'list:next-page',
   FETCH_COMPLETE: 'fetch:complete',
   FETCH_ERROR: 'fetch:error',
   THEME_TOGGLE: 'theme:toggle',
@@ -33,3 +34,5 @@ const createActualRoutes = (routeEnum: RouteEnum) => Object.entries(routeEnum)
   }, {});
 
 export const ROUTES = createActualRoutes(INITIAL_ROUTES);
+
+export const LIST_PAGE_SIZE = 10;

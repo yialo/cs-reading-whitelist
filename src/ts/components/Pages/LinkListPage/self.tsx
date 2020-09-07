@@ -30,6 +30,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
   const {
     fetchSubjects,
     searchInList,
+    showNextListPage,
     toggleFilter,
     toggleSorting,
   } = useActions(actionCreators, []);
@@ -67,6 +68,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
             className={style.subjects}
             list={subjectList}
             hasFetchError={!!fetchError}
+            onShowMoreClick={showNextListPage}
           />
         </>
       )}
