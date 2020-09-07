@@ -1,21 +1,5 @@
 @use "~scss/utils";
 
-.button {
-  padding: 8px 16px;
-  border-style: none;
-  font-size: inherit;
-  line-height: 1.25;
-  background-color: #cdcdcd;
-}
-
-.input {
-  padding: 8px;
-  border: 1px solid #bababa;
-  border-radius: 2px;
-  font-size: inherit;
-  background-color: white;
-}
-
 .list {
   margin-top: 0;
   margin-bottom: 0;
@@ -25,7 +9,8 @@
 
 .visuallyHidden {
   @at-root {
-    &:not(:active, :focus),
+    &:not(:active),
+    &:not(:focus),
     input#{&}[type="checkbox"],
     input#{&}[type="radio"] {
       @include utils.visuallyHiding();

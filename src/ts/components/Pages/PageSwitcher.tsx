@@ -3,7 +3,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 
 import { ROUTES } from 'ts/constants';
 
-// import { CommonClassNamesPage } from './CommonClassNamesPage';
+// import { ClassNamesPage } from './ClassNamesPage';
 import { LinkListPage } from './LinkListPage';
 
 const Stub: React.FC = () => {
@@ -13,6 +13,7 @@ const Stub: React.FC = () => {
     padding: '1rem 2rem',
     fontSize: '2rem',
     fontStyle: 'italic',
+    color: '#777777',
   };
 
   return (

@@ -1,10 +1,9 @@
-import { createElement } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { HotRoot } from './Root';
 
 export const init = (): void => {
-  const reactRoot = createElement(HotRoot);
   const $rootNode = document.getElementById('app-root');
-  ReactDOM.render(reactRoot, $rootNode);
+  ReactDOM.render(<HotRoot />, $rootNode);
 };

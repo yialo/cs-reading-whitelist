@@ -2,15 +2,20 @@ import React, { useEffect } from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
+// TODO: move specific components to page dir
+
 import * as actionCreators from 'ts/actionCreators';
 import { ControlBar } from 'ts/components/ControlBar';
 import { Preloader } from 'ts/components/Preloader';
 import { Subjects } from 'ts/components/Subjects';
+import { LIST_PAGE_SIZE } from 'ts/constants';
 import { useActions } from 'ts/hooks';
 import {
   fetchSelector,
+  getIsLastPage,
+  getSortedAmount,
+  getVisibleList,
   listSelector,
-  selectFilteredSubjects,
 } from 'ts/selectors';
 
 import style from './style.scss';
@@ -22,15 +27,23 @@ interface IProps {
 export const LinkListPage: React.FC<IProps> = ({ className }) => {
   const fetchError = useSelector(fetchSelector.error);
   const filterName = useSelector(listSelector.filterName);
-  const filteredList = useSelector(selectFilteredSubjects);
+  const page = useSelector(listSelector.page);
   const searchString = useSelector(listSelector.searchString);
+  const sortedAmount = useSelector(getSortedAmount);
+  const sortingName = useSelector(listSelector.sortingName);
+  const subjectList = useSelector(getVisibleList);
   const isFetchComplete = useSelector(fetchSelector.isComplete);
+  const isLastPage = useSelector(getIsLastPage);
 
   const {
     fetchSubjects,
     searchInList,
+    showNextListPage,
     toggleFilter,
-  } = useActions(actionCreators);
+    toggleSorting,
+  } = useActions(actionCreators, []);
+
+  const visibleAmount = isLastPage ? sortedAmount : (LIST_PAGE_SIZE * page);
 
   const handleSearch: React.ChangeEventHandler = (evt) => {
     searchInList(evt.target.value);
@@ -53,16 +66,22 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
       {isFetchComplete && (
         <>
           <ControlBar
-            className={style.filter}
+            className={style.controlBar}
             filterTarget={filterName}
+            fullAmount={sortedAmount}
             searchString={searchString}
+            sortingTarget={sortingName}
+            visibleAmount={visibleAmount}
             onFilterToggle={toggleFilter}
             onSearch={handleSearch}
+            onSortingToggle={toggleSorting}
           />
           <Subjects
             className={style.subjects}
-            list={filteredList}
-            hasFetchError={fetchError}
+            list={subjectList}
+            hasFetchError={!!fetchError}
+            isLastPage={isLastPage}
+            onShowMoreClick={showNextListPage}
           />
         </>
       )}

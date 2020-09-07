@@ -1,15 +1,22 @@
 export const ACTION_TYPES = {
-  LIST_SEARCH: 'LIST_SEARCH',
-  LIST_FILTER_TOGGLE: 'LIST_FILTER_TOGGLE',
-  FETCH_COMPLETE: 'FETCH_COMPLETE',
-  FETCH_ERROR: 'FETCH_ERROR',
-  THEME_TOGGLE: 'THEME_TOGGLE',
+  LIST_SEARCH: 'list:search',
+  LIST_FILTER_TOGGLE: 'list:filter-toggle',
+  LIST_SORTING_TOGGLE: 'list:sorting-toggle',
+  LIST_NEXT_PAGE: 'list:next-page',
+  FETCH_COMPLETE: 'fetch:complete',
+  FETCH_ERROR: 'fetch:error',
+  THEME_TOGGLE: 'theme:toggle',
 } as const;
 
 export const FILTERS = {
   CAPTION: 'caption',
   HASHTAG: 'hashtag',
 } as const;
+
+export const SORTING = {
+  NEW: 'new',
+  OLD: 'old',
+};
 
 const INITIAL_ROUTES = {
   HOME: '',
@@ -27,3 +34,5 @@ const createActualRoutes = (routeEnum: RouteEnum) => Object.entries(routeEnum)
   }, {});
 
 export const ROUTES = createActualRoutes(INITIAL_ROUTES);
+
+export const LIST_PAGE_SIZE = 10;

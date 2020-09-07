@@ -1,48 +1,90 @@
-import { ACTION_TYPES, FILTERS } from '../constants';
-import { IAction } from 'ts/types';
+import { ACTION_TYPES, FILTERS, SORTING } from 'ts/constants';
+import type { IAction, FilterName, SortingName } from 'ts/types';
 
-type ListActions = keyof Pick<typeof ACTION_TYPES, 'LIST_SEARCH' | 'LIST_FILTER_TOGGLE'>;
-type FilterName = keyof typeof FILTERS;
 type SearchString = string;
 
-interface IListAction extends IAction {
-  type: ListActions;
-  payload: FilterName | SearchString;
-}
-
 interface IListState {
+  searchString: SearchString;
+  page: number;
   filterName: FilterName;
-  searchString: string;
+  sortingName: SortingName;
 }
 
-type ActionHandler<P> = (state: IListState, payload: P) => IListState;
+interface IListSearchAction extends IAction {
+  type: typeof ACTION_TYPES.LIST_SEARCH;
+  payload: SearchString;
+}
+
+interface IListFilterAction extends IAction {
+  type: typeof ACTION_TYPES.LIST_FILTER_TOGGLE;
+  payload: FilterName;
+}
+
+interface IListSortingAction extends IAction {
+  type: typeof ACTION_TYPES.LIST_SORTING_TOGGLE;
+  payload: SortingName;
+}
+
+interface IListPageAction extends IAction {
+  type: typeof ACTION_TYPES.LIST_NEXT_PAGE;
+  payload?: undefined;
+}
+
+type ListAction = (
+  | IListFilterAction
+  | IListSearchAction
+  | IListSortingAction
+  | IListPageAction
+);
+
+const INITIAL_PAGE = 1;
 
 const INITIAL_STATE = {
-  filterName: 'caption',
   searchString: '',
+  page: INITIAL_PAGE,
+  filterName: FILTERS.CAPTION,
+  sortingName: SORTING.NEW,
 };
 
-interface HandlerDict {
-  [ACTION_TYPES.LIST_SEARCH]: ActionHandler<SearchString>;
-  [ACTION_TYPES.LIST_FILTER_TOGGLE]: ActionHandler<FilterName>;
-  DEFAULT: (state: IListState) => IListState;
-}
-
-const handlerDict: HandlerDict = {
-  [ACTION_TYPES.LIST_SEARCH]: (state, payload) => ({
-    ...state,
-    searchString: payload,
-  }),
-  [ACTION_TYPES.LIST_FILTER_TOGGLE]: (state, payload) => ({
-    ...state,
-    filterName: payload,
-  }),
-  DEFAULT: (state) => state,
-};
-
-export const listReducer = (prevState: IListState, action: IListAction): IListState => {
-  const { type, payload } = action;
+export const listReducer = (
+  prevState: IListState | undefined,
+  action: ListAction,
+): IListState => {
   const state = prevState ?? INITIAL_STATE;
-  const handle = handlerDict[type] ?? handlerDict.DEFAULT;
-  return handle(state, payload);
+  const { type, payload } = action;
+
+  switch (type) {
+    case ACTION_TYPES.LIST_SEARCH: {
+      return {
+        ...state,
+        searchString: payload as SearchString,
+      };
+    }
+
+    case ACTION_TYPES.LIST_FILTER_TOGGLE: {
+      return {
+        ...state,
+        filterName: payload as FilterName,
+        page: INITIAL_PAGE,
+      };
+    }
+
+    case ACTION_TYPES.LIST_SORTING_TOGGLE: {
+      return {
+        ...state,
+        sortingName: payload as SortingName,
+      };
+    }
+
+    case ACTION_TYPES.LIST_NEXT_PAGE: {
+      return {
+        ...state,
+        page: state.page + 1,
+      };
+    }
+
+    default: {
+      return state;
+    }
+  }
 };

@@ -1,10 +1,11 @@
 import { ACTION_TYPES } from 'ts/constants';
-import { IAction } from 'ts/types';
+import { IAction, ISubject } from 'ts/types';
 
-type FetchList = any[];
+type FetchList = ISubject[];
+type FetchError = Error | null;
 
-interface IState {
-  error: Error | null;
+interface IFetchState {
+  error: FetchError;
   list: FetchList;
   isComplete: boolean;
 }
@@ -21,29 +22,38 @@ interface IFetchErrorAction extends IAction {
 
 type FetchAction = IFetchCompleteAction | IFetchErrorAction;
 
-const INITIAL_STATE: IState = {
+const INITIAL_STATE: IFetchState = {
   error: null,
   list: [],
   isComplete: false,
 };
 
-const handlerDict = {
-  [ACTION_TYPES.FETCH_COMPLETE]: (state: IState, payload: FetchList) => ({
-    ...state,
-    list: payload,
-    isComplete: true,
-  }),
-  [ACTION_TYPES.FETCH_ERROR]: (state: IState, payload: Error) => ({
-    ...state,
-    error: payload,
-    isComplete: true,
-  }),
-  DEFAULT: (state: IState) => state,
-};
-
-export const fetchReducer = (prevState: IState, action: FetchAction): IState => {
+export const fetchReducer = (
+  prevState: IFetchState | undefined,
+  action: FetchAction,
+): IFetchState => {
   const { type, payload } = action;
   const state = prevState ?? INITIAL_STATE;
-  const handle = handlerDict[type] ?? handlerDict.DEFAULT;
-  return handle(state, payload);
+
+  switch (type) {
+    case ACTION_TYPES.FETCH_COMPLETE: {
+      return {
+        ...state,
+        list: payload as FetchList,
+        isComplete: true,
+      };
+    }
+
+    case ACTION_TYPES.FETCH_ERROR: {
+      return {
+        ...state,
+        error: payload as Error,
+        isComplete: true,
+      };
+    }
+
+    default: {
+      return state;
+    }
+  }
 };

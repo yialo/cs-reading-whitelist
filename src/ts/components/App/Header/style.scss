@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px;
+  padding: 8px var(--size-paddingX);
   background-color: var(--color_headerBackground);
 
   @include utils.darkTheme() {
@@ -15,19 +15,6 @@
 }
 
 .themeToggle {
-  composes: button from "~scss/scaffold.scss";
-
-  --color-text: white;
-  --color-background: black;
-
   flex-shrink: 0;
-  width: 120px;
-  font-style: italic;
-  color: var(--color-text);
-  background-color: var(--color-background);
-
-  @include utils.darkTheme() {
-    --color-text: black;
-    --color-background: white;
-  }
+  flex-basis: 120px;
 }

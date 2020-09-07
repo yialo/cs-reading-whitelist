@@ -1,43 +1,85 @@
 import { createSelector } from 'reselect';
 
-import { RootState } from './reducers';
+import { FILTERS, SORTING, LIST_PAGE_SIZE } from './constants';
+import type { RootState } from './reducers';
+import type { ISubject, FilterName, SortingName } from './types';
 
 export const fetchSelector = {
-  error: (state: RootState) => state.fetch.error,
-  fullList: (state: RootState) => state.fetch.list,
-  isComplete: (state: RootState) => state.fetch.isComplete,
+  error: (state: RootState): Error | null => state.fetch.error,
+  fullList: (state: RootState): ISubject[] => state.fetch.list,
+  isComplete: (state: RootState): boolean => state.fetch.isComplete,
 };
 
 export const listSelector = {
-  filterName: (state) => state.list.filterName,
-  searchString: (state) => state.list.searchString,
+  filterName: (state: RootState): FilterName => state.list.filterName,
+  page: (state: RootState): number => state.list.page,
+  searchString: (state: RootState): string => state.list.searchString,
+  sortingName: (state: RootState): SortingName => state.list.sortingName,
 };
 
 export const themeSelector = {
-  isDark: (state): boolean => state.theme.isDark,
+  isDark: (state: RootState): boolean => state.theme.isDark,
 };
 
-export const selectFilteredSubjects = createSelector(
+const selectFilteredList = createSelector(
   [
     fetchSelector.fullList,
     listSelector.searchString,
     listSelector.filterName,
   ],
-  (fullList, searchString, filterName) => {
-    if (searchString === '') {
-      return fullList;
+  (fullList, searchString, filterName) => fullList.filter((item) => {
+    const matcher = new RegExp(searchString, 'gi');
+    switch (filterName) {
+      case FILTERS.CAPTION:
+        return item.caption.match(matcher);
+      case FILTERS.HASHTAG:
+        return item.tags.some((tag) => tag.match(matcher));
+      default:
+        return true;
+    }
+  }),
+);
+
+export const selectSortedList = createSelector(
+  [
+    selectFilteredList,
+    listSelector.sortingName,
+    listSelector.page,
+  ],
+  (filteredList, sortingName) => {
+    let sortedList = [...filteredList];
+
+    if (sortingName === SORTING.NEW) {
+      sortedList = sortedList.reverse();
     }
 
-    return fullList.filter((item) => {
-      const matcher = new RegExp(searchString, 'gi');
-      switch (filterName) {
-        case 'caption':
-          return item.caption.match(matcher);
-        case 'hashtag':
-          return item.tags.some((tag) => tag.match(matcher));
-        default:
-          return true;
-      }
-    });
+    return sortedList;
+  },
+);
+
+export const getSortedAmount = createSelector(
+  [selectSortedList],
+  (sortedList) => sortedList.length,
+);
+
+export const getVisibleList = createSelector(
+  [
+    selectSortedList,
+    listSelector.page,
+  ],
+  (sortedList, page) => {
+    const itemsToShowAmount = page * LIST_PAGE_SIZE;
+    return sortedList.slice(0, itemsToShowAmount);
+  },
+);
+
+export const getIsLastPage = createSelector(
+  [
+    getSortedAmount,
+    listSelector.page,
+  ],
+  (sortedAmount, page) => {
+    const totalPages = Math.ceil(sortedAmount / LIST_PAGE_SIZE);
+    return page === totalPages;
   },
 );

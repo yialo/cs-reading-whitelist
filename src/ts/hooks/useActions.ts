@@ -2,15 +2,16 @@ import { useMemo } from 'react';
 import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { ActionCreatorType } from 'ts/types';
+import type { ActionCreatorType } from 'ts/reducers';
 
 type ActionCreatorCollection = ActionCreatorType[] | { [creatorName: string]: ActionCreatorType };
 
 export const useActions = (
   actionCreators: ActionCreatorCollection,
-  deps?: any[],
+  deps: React.DependencyList | undefined = [],
 ): ReturnType<typeof useMemo> => {
   const dispatch = useDispatch();
+
   return useMemo(
     () => {
       if (Array.isArray(actionCreators)) {
@@ -18,6 +19,6 @@ export const useActions = (
       }
       return bindActionCreators(actionCreators, dispatch);
     },
-    deps ? [dispatch, ...deps] : [dispatch],
+    [actionCreators, dispatch, ...(deps as unknown[])],
   );
 };

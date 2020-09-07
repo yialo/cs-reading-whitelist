@@ -11,7 +11,10 @@ const INITIAL_STATE = {
   isDark: false,
 };
 
-export const themeReducer = (prevState: IThemeState, action: IThemeAction): IThemeState => {
+export const themeReducer = (
+  prevState: IThemeState | undefined,
+  action: IThemeAction,
+): IThemeState => {
   const state = prevState ?? INITIAL_STATE;
   if (action.type === ACTION_TYPES.THEME_TOGGLE) {
     return {
