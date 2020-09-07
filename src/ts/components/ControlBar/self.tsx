@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { FILTERS, SORTING } from 'ts/constants';
+import { Button } from 'ts/components/Button';
 import { TextInput } from 'ts/components/TextInput';
 import type { FilterName, SortingName } from 'ts/types';
 
@@ -53,18 +54,17 @@ export const ControlBar: React.FC<IProps> = (props) => {
           <span id={filterGroupLabelId}>Цель поиска:</span>
         </span>
         <div
-          className={style.filterControls}
+          className={style.filterControlGroup}
           aria-labelledby={filterGroupLabelId}
           role="radiogroup"
         >
           {Object.entries(FILTER_ENUM).map(([name, legend]) => {
             const isCurrent = (filterTarget === name);
             return (
-              <button
+              <Button
                 key={name}
-                className={style.control}
+                className={style.filterControl}
                 disabled={isCurrent}
-                type="button"
                 aria-checked={isCurrent}
                 role="radio"
                 onClick={() => {
@@ -72,19 +72,19 @@ export const ControlBar: React.FC<IProps> = (props) => {
                 }}
               >
                 {legend}
-              </button>
+              </Button>
             );
           })}
         </div>
       </div>
-      <p className={style.searchbar}>
-        <TextInput
-          inputMode="search"
-          legend="Введите текст для поиска"
-          value={searchString}
-          onChange={onSearch}
-        />
-      </p>
+      <TextInput
+        className={style.searchbar}
+        inputMode="search"
+        legend="Введите текст для поиска"
+        tipChar={filterTarget === FILTERS.HASHTAG ? '#' : undefined}
+        value={searchString}
+        onChange={onSearch}
+      />
       <div className={style.sorting}>
         <span className={style.tip} id={sortingGroupLabelId}>Сортировка:</span>
         <div
