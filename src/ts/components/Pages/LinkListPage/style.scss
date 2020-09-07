@@ -5,8 +5,7 @@ $pageContentMaxWidth: 672px;
 .root {
   composes: main from "~ts/components/App/style.scss";
 
-  --color-conicMiddle: white;
-  --color-conicOutermost: #eeeeee;
+  --color-background: #efefef;
 
   flex-basis: 100%;
   display: flex;
@@ -15,18 +14,11 @@ $pageContentMaxWidth: 672px;
   max-width: $pageContentMaxWidth;
   padding-left: var(--size-paddingX);
   padding-right: var(--size-paddingX);
-  background-color: var(--color-conicMiddle);
-  background-image: conic-gradient(
-    at center 50vh,
-    var(--color-conicOutermost) 120deg,
-    var(--color-conicMiddle) 180deg,
-    var(--color-conicOutermost) 360deg
-  );
+  background-color: var(--color-background);
   background-attachment: fixed;
 
   @include utils.darkTheme() {
-    --color-conicMiddle: black;
-    --color-conicOutermost: #111111;
+    --color-background: #101010;
   }
 
   @media (max-width: utils.$viewport-xs-max) {
