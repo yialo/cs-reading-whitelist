@@ -1,9 +1,9 @@
 import { ACTION_TYPES } from 'ts/constants';
-import { IAction } from 'ts/types';
+import { IAction, ISubject } from 'ts/types';
 
-type FetchList = any[];
+type FetchList = ISubject[];
 
-interface IState {
+interface IFetchState {
   error: Error | null;
   list: FetchList;
   isComplete: boolean;
@@ -21,27 +21,30 @@ interface IFetchErrorAction extends IAction {
 
 type FetchAction = IFetchCompleteAction | IFetchErrorAction;
 
-const INITIAL_STATE: IState = {
+const INITIAL_STATE: IFetchState = {
   error: null,
   list: [],
   isComplete: false,
 };
 
 const handlerDict = {
-  [ACTION_TYPES.FETCH_COMPLETE]: (state: IState, payload: FetchList) => ({
+  [ACTION_TYPES.FETCH_COMPLETE]: (state: IFetchState, payload: FetchList) => ({
     ...state,
     list: payload,
     isComplete: true,
   }),
-  [ACTION_TYPES.FETCH_ERROR]: (state: IState, payload: Error) => ({
+  [ACTION_TYPES.FETCH_ERROR]: (state: IFetchState, payload: Error) => ({
     ...state,
     error: payload,
     isComplete: true,
   }),
-  DEFAULT: (state: IState) => state,
+  DEFAULT: (state: IFetchState) => state,
 };
 
-export const fetchReducer = (prevState: IState, action: FetchAction): IState => {
+export const fetchReducer = (
+  prevState: IFetchState | undefined,
+  action: FetchAction,
+): IFetchState => {
   const { type, payload } = action;
   const state = prevState ?? INITIAL_STATE;
   const handle = handlerDict[type] ?? handlerDict.DEFAULT;

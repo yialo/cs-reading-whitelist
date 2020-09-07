@@ -11,6 +11,8 @@ export const FILTERS = {
   HASHTAG: 'hashtag',
 } as const;
 
+export type FilterName = typeof FILTERS[keyof typeof FILTERS];
+
 const INITIAL_ROUTES = {
   HOME: '',
   CLASSNAMES: 'classnames',

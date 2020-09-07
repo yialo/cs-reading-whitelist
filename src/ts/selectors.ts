@@ -1,20 +1,23 @@
 import { createSelector } from 'reselect';
 
+import { FILTERS } from './constants';
+import type { FilterName } from './constants';
 import { RootState } from './reducers';
+import type { ISubject } from './types';
 
 export const fetchSelector = {
-  error: (state: RootState) => state.fetch.error,
-  fullList: (state: RootState) => state.fetch.list,
-  isComplete: (state: RootState) => state.fetch.isComplete,
+  error: (state: RootState): Error | null => state.fetch.error,
+  fullList: (state: RootState): ISubject[] => state.fetch.list,
+  isComplete: (state: RootState): boolean => state.fetch.isComplete,
 };
 
 export const listSelector = {
-  filterName: (state) => state.list.filterName,
-  searchString: (state) => state.list.searchString,
+  filterName: (state: RootState): FilterName => state.list.filterName,
+  searchString: (state: RootState): string => state.list.searchString,
 };
 
 export const themeSelector = {
-  isDark: (state): boolean => state.theme.isDark,
+  isDark: (state: RootState): boolean => state.theme.isDark,
 };
 
 export const selectFilteredSubjects = createSelector(
@@ -31,9 +34,9 @@ export const selectFilteredSubjects = createSelector(
     return fullList.filter((item) => {
       const matcher = new RegExp(searchString, 'gi');
       switch (filterName) {
-        case 'caption':
+        case FILTERS.CAPTION:
           return item.caption.match(matcher);
-        case 'hashtag':
+        case FILTERS.HASHTAG:
           return item.tags.some((tag) => tag.match(matcher));
         default:
           return true;

@@ -1,8 +1,9 @@
-import { ACTION_TYPES, FILTERS } from '../constants';
+import { ACTION_TYPES } from '../constants';
+import type { FilterName } from '../constants';
 import { IAction } from 'ts/types';
 
 type ListActions = keyof Pick<typeof ACTION_TYPES, 'LIST_SEARCH' | 'LIST_FILTER_TOGGLE'>;
-type FilterName = keyof typeof FILTERS;
+
 type SearchString = string;
 
 interface IListAction extends IAction {
@@ -40,7 +41,10 @@ const handlerDict: HandlerDict = {
   DEFAULT: (state) => state,
 };
 
-export const listReducer = (prevState: IListState, action: IListAction): IListState => {
+export const listReducer = (
+  prevState: IListState | undefined,
+  action: IListAction,
+): IListState => {
   const { type, payload } = action;
   const state = prevState ?? INITIAL_STATE;
   const handle = handlerDict[type] ?? handlerDict.DEFAULT;
