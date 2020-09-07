@@ -10,10 +10,16 @@ export interface IAction {
 export type FilterName = $Values<typeof FILTERS>;
 export type SortingName = $Values<typeof SORTING>;
 
-type SyncActionCreator = (...args: any[]) => IAction;
+type Dispatch = (action: IAction) => void;
+type StateGetter<RS> = () => RS;
+
+type SyncActionCreator<RS> = (...args: any[]) => (
+  | IAction
+  | ((dispatch: Dispatch, getState: StateGetter<RS>) => void)
+);
 type AsyncActionCreator = (...args: any[]) => Promise<any>;
 
-export type ActionCreatorType = SyncActionCreator | AsyncActionCreator;
+export type ActionCreatorType<RS> = SyncActionCreator<RS> | AsyncActionCreator;
 
 export interface ISubject {
   caption: string;
