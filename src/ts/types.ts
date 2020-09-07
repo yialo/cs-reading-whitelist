@@ -19,7 +19,7 @@ type SyncActionCreator<RS> = (...args: any[]) => (
 );
 type AsyncActionCreator = (...args: any[]) => Promise<any>;
 
-export type ActionCreatorType<RS> = SyncActionCreator<RS> | AsyncActionCreator;
+export type ActionCreatorGenericType<RS> = SyncActionCreator<RS> | AsyncActionCreator;
 
 export interface ISubject {
   caption: string;

@@ -1,7 +1,7 @@
 import { createSelector } from 'reselect';
 
 import { FILTERS, SORTING, LIST_PAGE_SIZE } from './constants';
-import { RootState } from './reducers';
+import type { RootState } from './reducers';
 import type { ISubject, FilterName, SortingName } from './types';
 
 export const fetchSelector = {

@@ -6,6 +6,7 @@ import * as actionCreators from 'ts/actionCreators';
 import { AppNavMenu as NavMenu } from '../NavMenu';
 import { ThemeToggle } from 'ts/components/ThemeToggle';
 import { useActions } from 'ts/hooks';
+import type { ActionCreatorType } from 'ts/reducers';
 import { themeSelector } from 'ts/selectors';
 
 import style from './style.scss';
@@ -17,7 +18,9 @@ interface IProps {
 export const AppHeader: React.FC<IProps> = ({ className }) => {
   const hasDarkTheme = useSelector(themeSelector.isDark);
 
-  const { toggleTheme } = useActions(actionCreators);
+  const { toggleTheme } = useActions(actionCreators, []) as {
+    [key: string]: ActionCreatorType;
+  };
 
   return (
     <header className={classNames(style.root, className)}>

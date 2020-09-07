@@ -35,6 +35,7 @@ module.exports = {
       extends: ['yialo/preset-web-ts-check'],
       rules: {
         '@typescript-eslint/prefer-regexp-exec': 'off',
+        'react-hooks/exhaustive-deps': 'off',
       },
     },
   ],
