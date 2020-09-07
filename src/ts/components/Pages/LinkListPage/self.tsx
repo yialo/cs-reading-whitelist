@@ -62,7 +62,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
           <Subjects
             className={style.subjects}
             list={filteredList}
-            hasFetchError={fetchError}
+            hasFetchError={!!fetchError}
           />
         </>
       )}

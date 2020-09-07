@@ -22,7 +22,7 @@ const REFERENCE_LINKS = [
   ],
 ];
 
-export const CommonClassNamesPage: React.FC<IProps> = (props) => {
+export const ClassNamesPage: React.FC<IProps> = (props) => {
   return (
     <main className={style.root}>
       <h1>Типовые названия CSS-классов</h1>
@@ -42,6 +42,6 @@ export const CommonClassNamesPage: React.FC<IProps> = (props) => {
   );
 };
 
-CommonClassNamesPage.defaultProps = {
+ClassNamesPage.defaultProps = {
   className: '',
 };

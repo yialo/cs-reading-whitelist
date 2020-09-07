@@ -11,7 +11,7 @@ interface IProps {
   inputMode: InputModeType;
   legend: string;
   value: string;
-  onChange: (evt: React.SyntheticEvent) => void;
+  onChange: (evt: React.ChangeEvent) => void;
 }
 
 export const TextInput: React.FC<IProps> = (props: IProps) => {

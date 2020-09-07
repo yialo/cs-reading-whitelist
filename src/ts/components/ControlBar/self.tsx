@@ -38,9 +38,9 @@ export const ControlBar: React.FC<IProps> = (props) => {
       }}
     >
       <div className={style.filter}>
-        <p className={style.tip}>
-          <span id={filterGroupLabelId}>Тип сортировки:</span>
-        </p>
+        <span className={style.tip}>
+          <span id={filterGroupLabelId}>Цель поиска:</span>
+        </span>
         <div className={style.controls} role="radiogroup" aria-labelledby={filterGroupLabelId}>
           {Object.entries(filterDict).map(([name, legend], i) => {
             const isCurrent = (filterTarget === name);

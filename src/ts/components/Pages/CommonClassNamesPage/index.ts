@@ -1,1 +1,0 @@
-export { CommonClassNamesPage } from './self';

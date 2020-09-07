@@ -1,0 +1,1 @@
+export { ClassNamesPage } from './self';

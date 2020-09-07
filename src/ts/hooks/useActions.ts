@@ -11,6 +11,9 @@ export const useActions = (
   deps?: any[],
 ): ReturnType<typeof useMemo> => {
   const dispatch = useDispatch();
+
+  const iternalDeps = [actionCreators, dispatch];
+
   return useMemo(
     () => {
       if (Array.isArray(actionCreators)) {
@@ -18,6 +21,6 @@ export const useActions = (
       }
       return bindActionCreators(actionCreators, dispatch);
     },
-    deps ? [dispatch, ...deps] : [dispatch],
+    deps ? [...iternalDeps, ...deps] : iternalDeps,
   );
 };

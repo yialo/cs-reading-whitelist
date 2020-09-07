@@ -47,7 +47,6 @@
 }
 
 .tip {
-  margin-top: 0;
   font-size: 18px;
   color: var(--color-text);
 
@@ -57,7 +56,6 @@
   }
 
   @media (min-width: utils.$viewport-sm-min) {
-    margin-bottom: 0;
     margin-right: 16px;
     width: auto;
   }
