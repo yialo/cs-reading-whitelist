@@ -4,4 +4,8 @@
   border-radius: 2px;
   font-size: inherit;
   line-height: 1.25;
+
+  &:disabled {
+    cursor: default;
+  }
 }

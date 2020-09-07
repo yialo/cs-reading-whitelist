@@ -3,11 +3,19 @@
 .root {
   display: flex;
   flex-direction: column;
+  margin-left: calc(var(--size-paddingX) * -1);
+  margin-right: calc(var(--size-paddingX) * -1);
+  padding-left: var(--size-paddingX);
+  padding-right: var(--size-paddingX);
+
+  @media (max-width: utils.$viewport-xs-max) {
+    border-bottom: 1px solid #bdbdbd;
+    padding-bottom: 24px;
+  }
 }
 
-.filter {
+.adaptiveRow {
   display: flex;
-  margin-bottom: 16px;
 
   @media (max-width: utils.$viewport-xs-max) {
     flex-wrap: wrap;
@@ -19,6 +27,11 @@
   }
 }
 
+.filter {
+  composes: adaptiveRow;
+  margin-bottom: 16px;
+}
+
 .filterControl {
   min-width: 120px;
   color: #444444;
@@ -28,7 +41,6 @@
   &:disabled {
     background-color: darkslateblue;
     color: lightgoldenrodyellow;
-    cursor: default;
   }
 
   &_first {
@@ -55,7 +67,7 @@
 }
 
 .sorting {
-  display: flex;
+  composes: adaptiveRow;
 }
 
 .sortingControls {

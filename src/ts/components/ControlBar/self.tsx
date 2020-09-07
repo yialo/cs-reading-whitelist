@@ -108,6 +108,7 @@ export const ControlBar: React.FC<IProps> = (props) => {
               <button
                 key={name}
                 className={style[isCurrent ? 'sortingButton_active' : 'sortingButton_inactive']}
+                disabled={isCurrent}
                 type="button"
                 aria-checked={isCurrent}
                 role="radio"

@@ -56,7 +56,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
       {isFetchComplete && (
         <>
           <ControlBar
-            className={style.filter}
+            className={style.controlBar}
             filterTarget={filterName}
             searchString={searchString}
             sortingTarget={sortingName}
