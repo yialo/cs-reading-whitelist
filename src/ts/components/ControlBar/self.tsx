@@ -43,7 +43,7 @@ export const ControlBar: React.FC<IProps> = (props) => {
   } = props;
 
   return (
-    <form
+    <div
       className={classNames(style.root, className)}
       onSubmit={(evt) => {
         evt.preventDefault();
@@ -107,7 +107,7 @@ export const ControlBar: React.FC<IProps> = (props) => {
             return (
               <button
                 key={name}
-                className={style[isCurrent ? 'sortingButton_active' : 'sortingButton_inactive']}
+                className={style.sortingButton}
                 disabled={isCurrent}
                 type="button"
                 aria-checked={isCurrent}
@@ -122,7 +122,7 @@ export const ControlBar: React.FC<IProps> = (props) => {
           })}
         </div>
       </div>
-    </form>
+    </div>
   );
 };
 

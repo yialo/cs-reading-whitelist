@@ -46,14 +46,36 @@ export const selectSortedList = createSelector(
     listSelector.sortingName,
     listSelector.page,
   ],
-  (filteredList, sortingName, page) => {
+  (filteredList, sortingName) => {
     let sortedList = [...filteredList];
 
     if (sortingName === SORTING.NEW) {
       sortedList = sortedList.reverse();
     }
 
+    return sortedList;
+  },
+);
+
+export const getVisibleList = createSelector(
+  [
+    selectSortedList,
+    listSelector.page,
+  ],
+  (sortedList, page) => {
     const itemsToShowAmount = page * LIST_PAGE_SIZE;
     return sortedList.slice(0, itemsToShowAmount);
+  },
+);
+
+export const getIsLastPage = createSelector(
+  [
+    getVisibleList,
+    listSelector.page,
+  ],
+  (visibleList, page) => {
+    const visibleLength = visibleList.length;
+    const totalPages = Math.ceil(visibleLength / LIST_PAGE_SIZE);
+    return page === totalPages;
   },
 );

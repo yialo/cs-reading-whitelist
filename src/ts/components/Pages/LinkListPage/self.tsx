@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
+// TODO: move specific components to page dir
+
 import * as actionCreators from 'ts/actionCreators';
 import { ControlBar } from 'ts/components/ControlBar';
 import { Preloader } from 'ts/components/Preloader';
@@ -9,8 +11,9 @@ import { Subjects } from 'ts/components/Subjects';
 import { useActions } from 'ts/hooks';
 import {
   fetchSelector,
+  getIsLastPage,
+  getVisibleList,
   listSelector,
-  selectSortedList,
 } from 'ts/selectors';
 
 import style from './style.scss';
@@ -22,10 +25,11 @@ interface IProps {
 export const LinkListPage: React.FC<IProps> = ({ className }) => {
   const fetchError = useSelector(fetchSelector.error);
   const filterName = useSelector(listSelector.filterName);
-  const subjectList = useSelector(selectSortedList);
   const searchString = useSelector(listSelector.searchString);
   const sortingName = useSelector(listSelector.sortingName);
+  const subjectList = useSelector(getVisibleList);
   const isFetchComplete = useSelector(fetchSelector.isComplete);
+  const isLastPage = useSelector(getIsLastPage);
 
   const {
     fetchSubjects,
@@ -68,6 +72,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
             className={style.subjects}
             list={subjectList}
             hasFetchError={!!fetchError}
+            isLastPage={isLastPage}
             onShowMoreClick={showNextListPage}
           />
         </>

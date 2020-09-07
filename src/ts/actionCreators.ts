@@ -1,4 +1,5 @@
-import { ACTION_TYPES, LIST_PAGE_SIZE } from './constants';
+import { ACTION_TYPES } from './constants';
+import type { ISubject } from './types';
 
 import {
   IAction,
@@ -22,39 +23,32 @@ export const toggleSorting: ActionCreatorType = (nextSortingName: SortingName) =
   payload: nextSortingName,
 });
 
-export const showNextListPage: ActionCreatorType = () => {
-  return (dispatch: (action: IAction) => void, getState): void => {
-    const state = getState();
-    const totalLength = state.fetch.list.length;
-    const totalPages = Math.ceil(totalLength / LIST_PAGE_SIZE);
-    const currentPage = state.list.page;
-
-    if (currentPage < totalPages) {
-      dispatch({
-        type: ACTION_TYPES.LIST_NEXT_PAGE,
-      });
-    }
-  };
-};
+export const showNextListPage: ActionCreatorType = () => ({
+  type: ACTION_TYPES.LIST_NEXT_PAGE,
+});
 
 export const toggleTheme: ActionCreatorType = () => ({
   type: ACTION_TYPES.THEME_TOGGLE,
 });
 
+interface SubjectsApiResponse {
+  data: ISubject[];
+}
+
 export const fetchSubjects = () => {
   return async (dispatch: (action: IAction) => void): Promise<void> => {
-    const apiUrl = `${process.env.PUBLIC_PATH}response/subjects.json?${Date.now()}`;
+    const apiUrl = `${process.env.PUBLIC_PATH as string}response/subjects.json?${Date.now()}`;
     try {
       const response = await window.fetch(apiUrl);
-      const { data: list } = await response.json();
+      const { data: list } = await response.json() as SubjectsApiResponse;
       dispatch({
         type: ACTION_TYPES.FETCH_COMPLETE,
-        payload: list,
+        payload: list.slice(0, 22),
       });
     } catch (err) {
       dispatch({
         type: ACTION_TYPES.FETCH_ERROR,
-        payload: err,
+        payload: err as Error,
       });
     }
   };

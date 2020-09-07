@@ -13,6 +13,7 @@ interface IProps {
   className?: string;
   list: ISubject[];
   hasFetchError: boolean;
+  isLastPage: boolean;
   onShowMoreClick: () => void;
 }
 
@@ -20,6 +21,7 @@ export const Subjects: React.FC<IProps> = ({
   className,
   list,
   hasFetchError,
+  isLastPage,
   onShowMoreClick,
 }) => {
   if (hasFetchError) {
@@ -44,9 +46,11 @@ export const Subjects: React.FC<IProps> = ({
           />
         ))}
       </ul>
-      <Button className={style.button} onClick={onShowMoreClick}>
-        Показать ещё
-      </Button>
+      {!isLastPage && (
+        <Button className={style.button} onClick={onShowMoreClick}>
+          Показать ещё
+        </Button>
+      )}
     </div>
   );
 };
