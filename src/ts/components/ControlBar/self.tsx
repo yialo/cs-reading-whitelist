@@ -6,14 +6,16 @@ import { Button } from 'ts/components/Button';
 import { TextInput } from 'ts/components/TextInput';
 import type { FilterName, SortingName } from 'ts/types';
 
+import { ControlBarAmountMeter as AmountMeter } from './AmountMeter';
+
 import style from './style.scss';
 
 interface IProps {
   className?: string;
   filterTarget: FilterName;
-  fullAmount: number;
   searchString: string;
   sortingTarget: SortingName;
+  totalAmount: number;
   visibleAmount: number;
   onFilterToggle: (name: FilterName) => void;
   onSearch: React.ChangeEventHandler;
@@ -36,9 +38,9 @@ const sortingGroupLabelId = 'sorting-group-label';
 export const ControlBar: React.FC<IProps> = ({
   className,
   filterTarget,
-  fullAmount,
   searchString,
   sortingTarget,
+  totalAmount,
   visibleAmount,
   onFilterToggle,
   onSearch,
@@ -52,8 +54,8 @@ export const ControlBar: React.FC<IProps> = ({
       }}
     >
       <div className={style.filter}>
-        <span className={style.tip}>
-          <span id={filterGroupLabelId}>Цель поиска:</span>
+        <span className={style.tip} id={filterGroupLabelId}>
+          Цель поиска:
         </span>
         <div
           className={style.filterControlGroup}
@@ -80,7 +82,7 @@ export const ControlBar: React.FC<IProps> = ({
                 aria-checked={isCurrent}
                 role="radio"
                 onClick={() => {
-                  onFilterToggle(name);
+                  onFilterToggle(name as FilterName);
                 }}
               >
                 {legend}
@@ -97,13 +99,6 @@ export const ControlBar: React.FC<IProps> = ({
         value={searchString}
         onChange={onSearch}
       />
-      <p className={style.amount}>
-        {
-          searchString === ''
-            ? `Показаны первые ${visibleAmount} из ${fullAmount}`
-            : `Показано ${visibleAmount} из ${fullAmount} совпадений`
-        }
-      </p>
       <div className={style.sorting}>
         <span className={style.tip} id={sortingGroupLabelId}>Сортировка:</span>
         <div
@@ -131,6 +126,13 @@ export const ControlBar: React.FC<IProps> = ({
           })}
         </div>
       </div>
+      <AmountMeter
+        isFiltered={searchString !== ''}
+        {...{
+          totalAmount,
+          visibleAmount,
+        }}
+      />
     </div>
   );
 };

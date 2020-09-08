@@ -68,9 +68,9 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
           <ControlBar
             className={style.controlBar}
             filterTarget={filterName}
-            fullAmount={sortedAmount}
             searchString={searchString}
             sortingTarget={sortingName}
+            totalAmount={sortedAmount}
             visibleAmount={visibleAmount}
             onFilterToggle={toggleFilter}
             onSearch={handleSearch}
