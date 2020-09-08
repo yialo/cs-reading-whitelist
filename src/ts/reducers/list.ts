@@ -57,6 +57,7 @@ export const listReducer = (
     case ACTION_TYPES.LIST_SEARCH: {
       return {
         ...state,
+        page: INITIAL_PAGE,
         searchString: payload as SearchString,
       };
     }
