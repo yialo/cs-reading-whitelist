@@ -41,6 +41,7 @@ module.exports = (env = {}) => {
     analyze: needAnalyze,
     target,
     tscheck: needTypeCheck,
+    write,
   } = env;
 
   process.env.BABEL_ENV = target;
@@ -64,7 +65,9 @@ module.exports = (env = {}) => {
       hot: true,
       inline: true,
       overlay: true,
-      writeToDisk: (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/),
+      writeToDisk: write
+        ? (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/)
+        : false,
     } : {},
 
     devtool: isDevelopment ? 'eval-source-map' : false,
