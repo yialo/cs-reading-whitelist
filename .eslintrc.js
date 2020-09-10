@@ -33,20 +33,8 @@ module.exports = {
     {
       files: ['./src/**/*.ts?(x)'],
       extends: ['yialo/preset-web-ts-check'],
-      rules: {
-        '@typescript-eslint/prefer-regexp-exec': 'off',
-        'react-hooks/exhaustive-deps': 'off',
-      },
     },
   ],
-  rules: {
-    'import/no-unassigned-import': [
-      'error',
-      {
-        allow: ['**/*.{?(s)css,jp?(e)g,png,svg}'],
-      },
-    ],
-  },
   settings: {
     'import/resolver': {
       webpack: {

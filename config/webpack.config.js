@@ -2,7 +2,6 @@
 
 const path = require('path');
 
-const autoprefixer = require('autoprefixer');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -64,6 +63,7 @@ module.exports = (env = {}) => {
       port: process.env.WDS_PORT || SERVER_DEFAULTS.PORT,
       hot: true,
       inline: true,
+      open: true,
       overlay: true,
       writeToDisk: write
         ? (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/)
@@ -118,9 +118,9 @@ module.exports = (env = {}) => {
             {
               loader: 'postcss-loader',
               options: {
-                plugins: () => [
-                  autoprefixer(),
-                ],
+                postcssOptions: {
+                  plugins: ['autoprefixer'],
+                },
                 sourceMap: true,
               },
             },
