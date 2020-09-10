@@ -4215,6 +4215,71 @@
         "security"
       ],
       "legend": ""
+    },
+    {
+      "caption": "PX, EM or REM Media Queries?",
+      "url": "https://zellwk.com/blog/media-query-units/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The Wrong Abstraction (by Sandi Metz)",
+      "url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
+      "lang": "en",
+      "tags": [
+        "code_quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "AHA Programming (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/aha-programming",
+      "lang": "en",
+      "tags": [
+        "code_quality"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "When to useMemo and useCallback (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/usememo-and-usecallback",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The trick to viewport units on mobile (by Louis Hoebregts)",
+      "url": "https://css-tricks.com/the-trick-to-viewport-units-on-mobile/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "React, Inline Functions, and Performance (by Ryan Florence)",
+      "url": "https://reacttraining.com/blog/react-inline-functions-and-performance/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Wins for Hooks (by Brad Westfall)",
+      "url": "https://reacttraining.com/blog/wins-for-hooks/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks"
+      ],
+      "legend": ""
     }
   ]
 }
