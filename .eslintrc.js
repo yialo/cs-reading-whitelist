@@ -11,6 +11,9 @@ module.exports = {
     '/extra/',
   ],
   parserOptions: {
+    babelOptions: {
+      configFile: './config/babel.config.js',
+    },
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
   },
