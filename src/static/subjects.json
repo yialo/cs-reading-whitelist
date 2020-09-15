@@ -4280,6 +4280,25 @@
         "react_hooks"
       ],
       "legend": ""
+    },
+    {
+      "caption": "How Are Function Components Different from Classes? (by Dan Abramov)",
+      "url": "https://overreacted.io/how-are-function-components-different-from-classes/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Как организовать процесс сдачи задачи и код‑ревью в рамках спринта? (Фёдор Борщёв)",
+      "url": "https://bureau.ru/soviet/20200910/",
+      "lang": "ru",
+      "tags": [
+        "project_management"
+      ],
+      "legend": ""
     }
   ]
 }
