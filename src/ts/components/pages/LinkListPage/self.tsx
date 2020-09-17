@@ -10,6 +10,7 @@ import { Preloader } from 'ts/components/Preloader';
 import { Subjects } from 'ts/components/Subjects';
 import { LIST_PAGE_SIZE } from 'ts/constants';
 import { useActions } from 'ts/hooks';
+import type { ActionCreatorType } from 'ts/reducers';
 import {
   fetchSelector,
   getIsLastPage,
@@ -41,12 +42,14 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
     showNextListPage,
     toggleFilter,
     toggleSorting,
-  } = useActions(actionCreators, []);
+  } = useActions(actionCreators) as {
+    [key: string]: ActionCreatorType;
+  };
 
   const visibleAmount = isLastPage ? sortedAmount : (LIST_PAGE_SIZE * page);
 
   const handleSearch: React.ChangeEventHandler = (evt) => {
-    searchInList(evt.target.value);
+    searchInList((evt.target as HTMLInputElement).value);
   };
 
   useEffect(() => {

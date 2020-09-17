@@ -18,7 +18,7 @@ interface IProps {
 export const AppHeader: React.FC<IProps> = ({ className }) => {
   const hasDarkTheme = useSelector(themeSelector.isDark);
 
-  const { toggleTheme } = useActions(actionCreators, []) as {
+  const { toggleTheme } = useActions(actionCreators) as {
     [key: string]: ActionCreatorType;
   };
 
