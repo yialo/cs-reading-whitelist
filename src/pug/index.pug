@@ -1,10 +1,11 @@
-mixin head()
+doctype html
+html.Page(lang='ru')
   head
     meta(charset='utf-8')
     meta(name='author', content='Aleksei and Maria Arro')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    title #{pageTitle}
+    title Yialo's Reading Whitelist
 
     - const { fonts } = require('@/fonts/fonts.json');
     - for (const { fileNameBase, sets } of fonts)
@@ -15,3 +16,7 @@ mixin head()
           as='font',
           crossorigin='anonymous',
         )
+  body.Page-body
+    .Page-root(id='app-root')
+    .Page-overlay(id='overlay', role='status')
+      span.Spinner(aria-label='Загружаем контент...')
