@@ -3774,7 +3774,7 @@
       "legend": ""
     },
     {
-      "caption": "React Conditional Rendering",
+      "caption": "React Conditional Rendering (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/conditional-rendering-react",
       "lang": "en",
       "tags": [
@@ -3783,7 +3783,7 @@
       "legend": ""
     },
     {
-      "caption": "How to fetch data in React",
+      "caption": "How to fetch data in React (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/react-fetching-data",
       "lang": "en",
       "tags": [
@@ -4297,6 +4297,15 @@
       "lang": "ru",
       "tags": [
         "project_management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "How to learn React.js in 2020 (by Robin Wieruch)",
+      "url": "https://www.robinwieruch.de/learn-react-js",
+      "lang": "en",
+      "tags": [
+        "react"
       ],
       "legend": ""
     }
