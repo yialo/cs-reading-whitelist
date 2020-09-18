@@ -1,7 +1,12 @@
 :global {
+  .Page {
+    height: 100%;
+  }
+
   .Page-body {
     position: relative;
     min-width: var(--size-pageMinWidth);
+    height: inherit;
     overflow-y: scroll;
   }
 
@@ -14,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: inherit;
     background-color: var(--color-overlay);
 
     &.isHidden {

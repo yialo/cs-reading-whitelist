@@ -243,7 +243,7 @@ module.exports = (env = {}) => {
         }),
         new HtmlPlugin({
           filename: 'index.html',
-          template: path.join(PATH.SRC, 'pug/pages/index.pug'),
+          template: path.join(PATH.SRC, 'pug/index.pug'),
         }),
         new CopyPlugin({
           patterns: [

@@ -6,10 +6,7 @@ import type { ActionCreatorType } from 'ts/reducers';
 
 type ActionCreatorCollection = ActionCreatorType[] | { [creatorName: string]: ActionCreatorType };
 
-export const useActions = (
-  actionCreators: ActionCreatorCollection,
-  deps: React.DependencyList | undefined = [],
-): ReturnType<typeof useMemo> => {
+export const useActions = (actionCreators: ActionCreatorCollection): ReturnType<typeof useMemo> => {
   const dispatch = useDispatch();
 
   return useMemo(
@@ -19,6 +16,6 @@ export const useActions = (
       }
       return bindActionCreators(actionCreators, dispatch);
     },
-    [actionCreators, dispatch, ...(deps as unknown[])],
+    [actionCreators, dispatch],
   );
 };

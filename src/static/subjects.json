@@ -3512,18 +3512,6 @@
       "legend": ""
     },
     {
-      "caption": "The React Cheatsheet for 2020",
-      "url": "https://dev.to/codeartistryio/the-react-cheatsheet-for-2020-real-world-examples-4hgg",
-      "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks",
-        "javascript",
-        "4consider"
-      ],
-      "legend": ""
-    },
-    {
       "caption": "_ ___ ______? (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=uI3Q5m9xkkw",
       "lang": "ru",
@@ -3774,7 +3762,7 @@
       "legend": ""
     },
     {
-      "caption": "React Conditional Rendering",
+      "caption": "React Conditional Rendering (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/conditional-rendering-react",
       "lang": "en",
       "tags": [
@@ -3783,7 +3771,7 @@
       "legend": ""
     },
     {
-      "caption": "How to fetch data in React",
+      "caption": "How to fetch data in React (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/react-fetching-data",
       "lang": "en",
       "tags": [
@@ -4297,6 +4285,15 @@
       "lang": "ru",
       "tags": [
         "project_management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "How to learn React.js in 2020 (by Robin Wieruch)",
+      "url": "https://www.robinwieruch.de/learn-react-js",
+      "lang": "en",
+      "tags": [
+        "react"
       ],
       "legend": ""
     }
