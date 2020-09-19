@@ -4296,6 +4296,16 @@
         "react"
       ],
       "legend": ""
+    },
+    {
+      "caption": "How to fetch data with React Hooks? (by Robin Wieruch)",
+      "url": "https://www.robinwieruch.de/react-hooks-fetch-data",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks"
+      ],
+      "legend": ""
     }
   ]
 }
