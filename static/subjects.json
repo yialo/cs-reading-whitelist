@@ -514,8 +514,7 @@
       "tags": [
         "nodejs",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "node-glob NPM package",
@@ -1703,8 +1702,7 @@
       "tags": [
         "css",
         "css_grid"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Химия CSS-гридов",
@@ -2249,8 +2247,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Разъяснения насчёт JavaScript, ECMA–262, TC39 и транскомпиляторов ECMAScript",
@@ -2528,35 +2525,31 @@
       ]
     },
     {
-      "caption": "Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, viewBox, and preserveAspectRatio",
-      "url": "https://www.sarasoueidan.com/blog/svg-coordinate-systems/",
+      "caption": "Understanding SVG Coordinate Systems and Transformations",
+      "series": [
+        {
+          "caption": "Part 1 — The viewport, viewBox, and preserveAspectRatio",
+          "url": "https://www.sarasoueidan.com/blog/svg-coordinate-systems/"
+        },
+        {
+          "caption": "Part 2 — The transform Attribute",
+          "url": "https://www.sarasoueidan.com/blog/svg-transformations/",
+          "tags": [
+            "4consider"
+          ]
+        },
+        {
+          "caption": "Part 3 — Establishing New Viewports",
+          "url": "https://www.sarasoueidan.com/blog/nesting-svgs/",
+          "tags": [
+            "4consider"
+          ]
+        }
+      ],
       "lang": "en",
       "tags": [
         "graphics",
-        "svg",
-        "series"
-      ]
-    },
-    {
-      "caption": "Understanding SVG Coordinate Systems and Transformations (Part 2) — The transform Attribute",
-      "url": "https://www.sarasoueidan.com/blog/svg-transformations/",
-      "lang": "en",
-      "tags": [
-        "graphics",
-        "svg",
-        "series",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "Understanding SVG Coordinate Systems and Transformations (Part 3) — Establishing New Viewports",
-      "url": "https://www.sarasoueidan.com/blog/nesting-svgs/",
-      "lang": "en",
-      "tags": [
-        "graphics",
-        "svg",
-        "series",
-        "4consider"
+        "svg"
       ]
     },
     {
@@ -2599,23 +2592,21 @@
       ]
     },
     {
-      "caption": "Подключение нестандартных шрифтов. Часть первая",
-      "url": "https://fontstorage.com/blog/about-font-face-part-one/",
+      "caption": "Подключение нестандартных шрифтов",
+      "series": [
+        {
+          "caption": "Часть первая",
+          "url": "https://fontstorage.com/blog/about-font-face-part-one/"
+        },
+        {
+          "caption": "Часть вторая",
+          "url": "https://fontstorage.com/blog/about-font-face-part-two/"
+        }
+      ],
       "lang": "ru",
       "tags": [
         "typography",
-        "css",
-        "series"
-      ]
-    },
-    {
-      "caption": "Подключение нестандартных шрифтов. Часть вторая",
-      "url": "https://fontstorage.com/blog/about-font-face-part-two/",
-      "lang": "ru",
-      "tags": [
-        "typography",
-        "css",
-        "series"
+        "css"
       ]
     },
     {
