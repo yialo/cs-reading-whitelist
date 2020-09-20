@@ -15,8 +15,7 @@
       "lang": "ru",
       "tags": [
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Рекомендуемые книги по frontend-разработке",
@@ -24,8 +23,7 @@
       "lang": "ru",
       "tags": [
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Floating Point Math",
@@ -33,8 +31,7 @@
       "lang": "en",
       "tags": [
         "algorithms"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "(Законы Акина) законы космической инженерии",
@@ -42,8 +39,7 @@
       "lang": "ru",
       "tags": [
         "project_management"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Tips on Code Refactoring, From a Former Addict",
@@ -51,8 +47,7 @@
       "lang": "en",
       "tags": [
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "How To Learn Anything Faster - 5 Tips to Increase your Learning Speed (feat. _Project Better Self_)",
@@ -61,8 +56,7 @@
       "tags": [
         "video",
         "productivity"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "10 Tips for Writing Cleaner & Better Code",
@@ -70,8 +64,7 @@
       "lang": "en",
       "tags": [
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Без вопросов, без плана, зато с рюшечками: что общего между узбекскими строителями и плохими разработчиками?",
@@ -79,28 +72,24 @@
       "lang": "ru",
       "tags": [
         "project_management"
-      ],
-      "legend": ""
+      ]
     },
     {
-      "caption": "Хороший разработчик и его образ мышления, часть 1",
-      "url": "https://techrocks.ru/2019/04/14/good-developer-mindset-1/",
-      "lang": "ru",
-      "tags": [
-        "code_quality",
-        "series"
+      "caption": "Хороший разработчик и его образ мышления",
+      "series": [
+        {
+          "caption": "Часть 1",
+          "url": "https://techrocks.ru/2019/04/14/good-developer-mindset-1/"
+        },
+        {
+          "caption": "Часть 2",
+          "url": "https://techrocks.ru/2019/04/15/good-developer-mindset-2/"
+        }
       ],
-      "legend": ""
-    },
-    {
-      "caption": "Хороший разработчик и его образ мышления, часть 2",
-      "url": "https://techrocks.ru/2019/04/15/good-developer-mindset-2/",
-      "lang": "ru",
+      "lang": "en",
       "tags": [
-        "code_quality",
-        "series"
-      ],
-      "legend": ""
+        "code_quality"
+      ]
     },
     {
       "caption": "Бизнес, у которого никогда не будет клиентов из интернета",
@@ -108,8 +97,7 @@
       "lang": "ru",
       "tags": [
         "project_management"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "An A-Z Index of the Linux command line: bash + utilities",
@@ -118,8 +106,7 @@
       "tags": [
         "cli",
         "bash"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Оценка задач фронтендера",
@@ -127,8 +114,7 @@
       "lang": "ru",
       "tags": [
         "project_management"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "О jQuery и Bootstrap: расставляем точки над «i»",
@@ -139,8 +125,7 @@
         "js",
         "bootstrap",
         "jquery"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как я победила 7-летний недосып и стала жаворонком",
@@ -148,8 +133,7 @@
       "lang": "ru",
       "tags": [
         "productivity"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Чем хорош язык Go и зачем его изучать? Все плюшки Golang",
@@ -157,8 +141,7 @@
       "lang": "ru",
       "tags": [
         "golang"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как я перестал верить технологиям (Алексей Симоненко)",
@@ -167,8 +150,7 @@
       "tags": [
         "methodology",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Лебедь рак и щука: как технологии тянут фронтенд на дно (Евгений Гусев)",
@@ -177,8 +159,7 @@
       "tags": [
         "methodology",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Anti hype как не гнаться за технологиями и начать жить (Andrey Listochkin)",
@@ -187,8 +168,7 @@
       "tags": [
         "methodology",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Мерцание технологий, или Инжиниринг 21-го века (Максим Юзва)",
@@ -197,8 +177,7 @@
       "tags": [
         "methodology",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "5 минут (Вадим Макишвили)",
@@ -207,8 +186,7 @@
       "tags": [
         "video",
         "productivity"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Введение в понятие алгоритма",
@@ -216,8 +194,7 @@
       "lang": "ru",
       "tags": [
         "algorithms"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как UX/UI дизайнеру достичь баланса между работой и обучением?",
@@ -235,8 +212,7 @@
       "lang": "ru",
       "tags": [
         "productivity"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Multiple Commands On A Single Windows Command Line",
@@ -254,8 +230,7 @@
       "lang": "en",
       "tags": [
         "productivity"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Веб-стандарты",
@@ -263,8 +238,7 @@
       "lang": "ru",
       "tags": [
         "blogs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS-live",
@@ -272,8 +246,7 @@
       "lang": "ru",
       "tags": [
         "blogs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "noteskeeper.ru",
@@ -299,8 +272,7 @@
       "lang": "ru",
       "tags": [
         "blogs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Прогрессор",
@@ -308,8 +280,7 @@
       "lang": "ru",
       "tags": [
         "blogs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Сайт Юлии Бухваловой (Yoksel)",
@@ -335,8 +306,7 @@
       "lang": "en",
       "tags": [
         "blogs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Flavio Copes",
@@ -344,8 +314,7 @@
       "lang": "en",
       "tags": [
         "blogs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "METANIT",
@@ -353,8 +322,7 @@
       "lang": "ru",
       "tags": [
         "blogs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "VS Code can do that?!",
@@ -363,8 +331,7 @@
       "tags": [
         "blogs",
         "editors"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Просто о Vim",
@@ -373,8 +340,7 @@
       "tags": [
         "editors",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "10 essential Vim plugins for 2018",
@@ -382,8 +348,7 @@
       "lang": "en",
       "tags": [
         "editors"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как настроить VS Code для разработки на JavaScript",
@@ -391,8 +356,7 @@
       "lang": "ru",
       "tags": [
         "editors"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The Three Types of Performance Testing",
@@ -401,8 +365,7 @@
       "tags": [
         "testing",
         "performance"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Три истории о тестировании (Марина Миронович)",
@@ -411,8 +374,7 @@
       "tags": [
         "testing",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как не надо тестировать (Иван Стрелков)",
@@ -421,8 +383,7 @@
       "tags": [
         "testing",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "NPM Documentation",
@@ -432,8 +393,7 @@
         "nodejs",
         "npm",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Полезные команды для работы с Node.js",
@@ -443,8 +403,7 @@
         "nodejs",
         "npm",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "10 привычек довольного node.js разработчика",
@@ -454,8 +413,7 @@
         "nodejs",
         "npm",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Вы не знаете npm",
@@ -465,8 +423,7 @@
         "nodejs",
         "npm",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The package.json guide",
@@ -475,8 +432,7 @@
       "tags": [
         "nodejs",
         "npm"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Разбираемся с версиями пакетов в node",
@@ -485,8 +441,7 @@
       "tags": [
         "nodejs",
         "npm"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "8 npm Tricks You Can Use to Impress Your Colleagues",
@@ -496,8 +451,7 @@
         "nodejs",
         "npm",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как запустить JavaScript с помощью Node.js",
@@ -505,8 +459,7 @@
       "lang": "ru",
       "tags": [
         "nodejs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "11 простых npm трюков, которые вас удивят",
@@ -516,8 +469,7 @@
         "nodejs",
         "npm",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Скринкаст по Node.JS (Learn.javascript.ru)",
@@ -531,70 +483,38 @@
       "legend": "курс устарел, но часть концепций актуальна"
     },
     {
-      "caption": "NodeJS Event Loop Part 1: Event Loop and the Big Picture",
-      "url": "https://blog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810",
+      "caption": "NodeJS Event Loop",
+      "series": [
+        {
+          "caption": "Part 1: Event Loop and the Big Picture",
+          "url": "https://blog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810"
+        },
+        {
+          "caption": "Part 2: Timers, Immediates and Process.nextTick",
+          "url": "https://blog.insiderattack.net/timers-immediates-and-process-nexttick-nodejs-event-loop-part-2-2c53fd511bb3"
+        },
+        {
+          "caption": "Part 3: Promises, Next-Ticks, and Immediates",
+          "url": "https://blog.insiderattack.net/promises-next-ticks-and-immediates-nodejs-event-loop-part-3-9226cbe7a6aa"
+        },
+        {
+          "caption": "Part 4: Handling IO",
+          "url": "https://blog.insiderattack.net/handling-io-nodejs-event-loop-part-4-418062f917d1"
+        },
+        {
+          "caption": "Part 5: Event Loop Best Practices",
+          "url": "https://blog.insiderattack.net/event-loop-best-practices-nodejs-event-loop-part-5-e29b2b50bfe2"
+        },
+        {
+          "caption": "Part 6: New Changes to the Timers and Microtasks in Node v11.0.0 (and above)",
+          "url": "https://blog.insiderattack.net/new-changes-to-timers-and-microtasks-from-node-v11-0-0-and-above-68d112743eb3"
+        }
+      ],
       "lang": "en",
       "tags": [
         "nodejs",
-        "4consider",
-        "series"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "NodeJS Event Loop Part 2: Timers, Immediates and Process.nextTick",
-      "url": "https://blog.insiderattack.net/timers-immediates-and-process-nexttick-nodejs-event-loop-part-2-2c53fd511bb3",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider",
-        "series"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "NodeJS Event Loop Part 3: Promises, Next-Ticks, and Immediates",
-      "url": "https://blog.insiderattack.net/promises-next-ticks-and-immediates-nodejs-event-loop-part-3-9226cbe7a6aa",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider",
-        "series"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "NodeJS Event Loop Part 4: Handling IO",
-      "url": "https://blog.insiderattack.net/handling-io-nodejs-event-loop-part-4-418062f917d1",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider",
-        "series"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "NodeJS Event Loop Part 5: Event Loop Best Practices",
-      "url": "https://blog.insiderattack.net/event-loop-best-practices-nodejs-event-loop-part-5-e29b2b50bfe2",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider",
-        "series"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "NodeJS Event Loop Part 6: New Changes to the Timers and Microtasks in Node v11.0.0 (and above)",
-      "url": "https://blog.insiderattack.net/new-changes-to-timers-and-microtasks-from-node-v11-0-0-and-above-68d112743eb3",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider",
-        "series"
-      ],
-      "legend": ""
+        "4consider"
+      ]
     },
     {
       "caption": "node-glob NPM package",
@@ -604,8 +524,7 @@
         "nodejs",
         "npm_package",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "node-semver NPM package",
@@ -615,8 +534,7 @@
         "nodejs",
         "npm_package",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "chokidar NPM package",
@@ -626,8 +544,7 @@
         "nodejs",
         "npm_package",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "del NPM package",
@@ -637,8 +554,7 @@
         "nodejs",
         "npm_package",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "minimatch NPM package",
@@ -648,8 +564,7 @@
         "nodejs",
         "npm_package",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "through2 NPM package",
@@ -659,8 +574,7 @@
         "nodejs",
         "npm_package",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Уроки Node JS и Express (Гоша Дударь)",
@@ -670,8 +584,7 @@
         "nodejs",
         "video",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Node JS Tutorial for Beginners (The Net Ninja)",
@@ -681,8 +594,7 @@
         "nodejs",
         "video",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Скринкаст по Webpack (Learn.javascript.ru)",
@@ -703,8 +615,7 @@
         "build",
         "webpack",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "html-webpack-plugin",
@@ -715,8 +626,7 @@
         "webpack",
         "webpack_plugin",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "html-webpack-template EJS syntax",
@@ -726,8 +636,7 @@
         "build",
         "webpack",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Webpack Chart",
@@ -737,8 +646,7 @@
         "build",
         "webpack",
         "tool"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "webpack-analyse",
@@ -748,8 +656,7 @@
         "build",
         "webpack",
         "tool"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Готовим идеальный CSS",
@@ -801,8 +708,7 @@
         "build",
         "gulp",
         "rollup"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали",
@@ -810,8 +716,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "HTML & CSS: как не надо",
@@ -831,8 +736,7 @@
       "tags": [
         "css",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "A Sliding Nightmare: Understanding the Range Input",
@@ -840,8 +744,7 @@
       "lang": "en",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Styling Cross-Browser Compatible Range Inputs with CSS",
@@ -849,8 +752,7 @@
       "lang": "en",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Упорядочивание багов кроссбраузерности Flexbox",
@@ -859,8 +761,7 @@
       "tags": [
         "css",
         "css_flexbox"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Парадоксы 'display: contents' и будущее текста в CSS",
@@ -868,8 +769,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Где всё сложно с переносами строк. Вот все CSS- и HTML-хитрости для этого",
@@ -877,8 +777,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS Flexbox cheatsheet (by Malven Co.)",
@@ -889,8 +788,7 @@
         "css_flexbox",
         "tool",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Разбираемся с clip-path",
@@ -898,8 +796,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Advanced CSS Theming with Custom Properties and JavaScript",
@@ -908,8 +805,7 @@
       "tags": [
         "css",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Пользовательские CSS-атрибуты как механизм передачи данных из JavaScript в CSS",
@@ -917,8 +813,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Архитектура CSS",
@@ -926,8 +821,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "My approach to using 'z-index'",
@@ -936,8 +830,7 @@
       "tags": [
         "css",
         "stacking_context"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Псевдоэлементы, которых не может быть",
@@ -945,8 +838,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "«Запашки» CSS-кода",
@@ -955,8 +847,7 @@
       "tags": [
         "css",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "A Tale of 'width' and 'max-width'",
@@ -964,8 +855,7 @@
       "lang": "en",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Building a Circular Navigation with CSS Transforms",
@@ -973,8 +863,7 @@
       "lang": "en",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Длинная телега про Bootstrap",
@@ -983,8 +872,7 @@
       "tags": [
         "css",
         "bootstrap"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как на самом деле работают 'z-index'",
@@ -993,8 +881,7 @@
       "tags": [
         "css",
         "stacking_context"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как вставить двадцать видео с Ютуба и не скачать слона (Вадим Макеев)",
@@ -1004,8 +891,7 @@
         "css",
         "video",
         "performance"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Прототип изоляции стилей для Shower на веб-компонентах (Вадим Макеев)",
@@ -1015,8 +901,7 @@
         "css",
         "video",
         "web_components"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "DocumentFragment: что это такое и как с ним (не) бороться",
@@ -1025,8 +910,7 @@
       "tags": [
         "web_components",
         "js"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Understanding the Critical Rendering Path",
@@ -1035,8 +919,7 @@
       "tags": [
         "performance",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Styling a Select Like It’s 2019",
@@ -1044,8 +927,7 @@
       "lang": "en",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Houdini: Maybe The Most Exciting Development In CSS You’ve Never Heard Of",
@@ -1053,8 +935,7 @@
       "lang": "en",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Варианты «clearfix-хака» и его замен: сводная таблица",
@@ -1062,8 +943,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Почему мы не добавим в HTML элемент <чудесный>?",
@@ -1071,8 +951,7 @@
       "lang": "ru",
       "tags": [
         "html"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Устойчивый, декларативный, контекстный (новый взгляд на сильные стороны CSS)",
@@ -1080,8 +959,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Фокусы со стилями для фокуса",
@@ -1089,8 +967,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как работает 'z-index'",
@@ -1099,8 +976,7 @@
       "tags": [
         "css",
         "stacking_context"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Свойства 'object-fit' и 'object-position'. Масштабируем пропорционально",
@@ -1108,8 +984,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Сторонний CSS небезопасен",
@@ -1118,8 +993,7 @@
       "tags": [
         "css",
         "security"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Новый 'display: flow-root' — не clearfix, но что это и зачем?",
@@ -1127,8 +1001,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "О «призраках» в CSS и борьбе с ними: анонимные боксы",
@@ -1136,8 +1009,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "То, что вам никто не говорил о 'z-index' в статье «То, что вам никто не говорил о z-index»",
@@ -1146,8 +1018,7 @@
       "tags": [
         "css",
         "stacking_context"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "'display: contents' и его новые друзья спешат на помощь",
@@ -1155,8 +1026,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS-свойство 'display' и контексты форматирования",
@@ -1164,8 +1034,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Каждый раз, когда вы называете проприетарную фичу словом «CSS3», в мире умирает котенок",
@@ -1174,8 +1043,7 @@
       "tags": [
         "css",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Стандарт для нестандартного",
@@ -1183,8 +1051,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Постепенная деградация",
@@ -1193,8 +1060,7 @@
       "tags": [
         "css",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Правильная шпаргалка по CSS-каскаду",
@@ -1203,8 +1069,7 @@
       "tags": [
         "css",
         "important"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS Triggers",
@@ -1213,8 +1078,7 @@
       "tags": [
         "css",
         "tool"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS и производительность сети",
@@ -1224,8 +1088,7 @@
         "important",
         "css",
         "performance"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Равномерное выравнивание блоков по ширине",
@@ -1233,8 +1096,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Ссылки против кнопок в современных веб-приложениях",
@@ -1243,8 +1105,7 @@
       "tags": [
         "css",
         "a11y"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Aspect Ratio Boxes",
@@ -1252,8 +1113,7 @@
       "lang": "en",
       "tags": [
         ""
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Изучаем матрицы трансформаций в CSS",
@@ -1262,8 +1122,7 @@
       "tags": [
         "css",
         "css_transform"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS3 3D-трансформации",
@@ -1272,8 +1131,7 @@
       "tags": [
         "css",
         "css_transform"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS border-image clarifying",
@@ -1292,8 +1150,7 @@
       "tags": [
         "css",
         "typography"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS Diner",
@@ -1311,8 +1168,7 @@
       "lang": "ru",
       "tags": [
         "design_patterns"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Отладка CSS",
@@ -1321,8 +1177,7 @@
       "tags": [
         "css",
         "debugging"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "MaintainableCSS",
@@ -1339,8 +1194,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Оформление модальных окон",
@@ -1348,8 +1202,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "WebAssembly’s post-MVP future: A cartoon skill tree",
@@ -1357,8 +1210,7 @@
       "lang": "en",
       "tags": [
         "wasm"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "'flex-grow' странный. Так ли это?",
@@ -1367,8 +1219,7 @@
       "tags": [
         "css",
         "css_flexbox"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "What’s next for CSS?",
@@ -1386,8 +1237,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Аксиоматический CSS и лоботомированные совы",
@@ -1395,8 +1245,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "12 базовых рефлексов верстальщика",
@@ -1404,8 +1253,7 @@
       "lang": "ru",
       "tags": [
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Разбираемся с border-image из CSS3",
@@ -1413,8 +1261,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "'border-image' generator",
@@ -1423,8 +1270,7 @@
       "tags": [
         "css",
         "tool"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как работают в флексбоксе 'z-index' и автоотступы",
@@ -1434,8 +1280,7 @@
         "css",
         "stacking_context",
         "css_flexbox"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS-features | Glo Academy",
@@ -1455,8 +1300,7 @@
       "tags": [
         "oop",
         "design_patterns"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "ООП в картинках",
@@ -1466,8 +1310,7 @@
         "oop",
         "design_patterns",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "SolidBook",
@@ -1477,8 +1320,7 @@
         "oop",
         "design_patterns",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Код с запашком",
@@ -1487,8 +1329,7 @@
       "tags": [
         "4consider",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Рефакторинг",
@@ -1496,8 +1337,7 @@
       "lang": "ru",
       "tags": [
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Refactoring Guru",
@@ -1507,8 +1347,7 @@
         "4consider",
         "oop",
         "design_patterns"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS common classnames",
@@ -1531,8 +1370,7 @@
         "css_naming",
         "bem",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как называть CSS-классы",
@@ -1541,8 +1379,7 @@
       "tags": [
         "css",
         "css_naming"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "BEM modifiers: multiple classes vs @extend",
@@ -1552,8 +1389,7 @@
         "css",
         "sass",
         "bem"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Режимы и квази-режимы",
@@ -1563,8 +1399,7 @@
         "css",
         "css_naming",
         "design_patterns"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS Guidelines (by Harry Roberts)",
@@ -1585,8 +1420,7 @@
         "css",
         "css_naming",
         "bem"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "БЭМ: псевдоклассы vs. модификаторы",
@@ -1630,8 +1464,7 @@
         "css",
         "css_naming",
         "bem"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Десять заповедей логичных файлов стилей",
@@ -1641,8 +1474,7 @@
         "css",
         "css_naming",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Nesting Components",
@@ -1651,8 +1483,7 @@
       "tags": [
         "css",
         "css_naming"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "idiomatic-css: Принципы написания однородного CSS-кода",
@@ -1661,8 +1492,7 @@
       "tags": [
         "css",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Airbnb CSS / Sass Styleguide",
@@ -1672,8 +1502,7 @@
         "css",
         "sass",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Что такое CSS-модули и зачем они нам?",
@@ -1682,8 +1511,7 @@
       "tags": [
         "css",
         "css_naming"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Семантический CSS",
@@ -1693,8 +1521,7 @@
         "css",
         "css_naming",
         "important"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "БЭМантика: пишите осмысленные стили без повторов",
@@ -1704,8 +1531,7 @@
         "css",
         "css_naming",
         "bem"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Пишем БЭМ правильно (Игорь Зенич)",
@@ -1716,8 +1542,7 @@
         "css_naming",
         "bem",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS Grid cheatsheet (by Malven Co.)",
@@ -1728,8 +1553,7 @@
         "css_grid",
         "tool",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Что может поломать макет на гридах (CSS Grid Layout)",
@@ -1749,8 +1573,7 @@
       "tags": [
         "css",
         "css_grid"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Большая статья про гриды (CSS Grid Layout)",
@@ -1760,8 +1583,7 @@
         "css",
         "css_grid",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Подробно о размещении элементов в грид-раскладке (CSS Grid Layout)",
@@ -1771,8 +1593,7 @@
         "css",
         "css_grid",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "7 способов размещения элементов с помощью макета CSS Grid",
@@ -1782,8 +1603,7 @@
         "css",
         "css_grid",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "A Complete Guide to Grid",
@@ -1793,8 +1613,7 @@
         "css",
         "css_grid",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Подсетки в Grid Layout жизненно важны",
@@ -1803,8 +1622,7 @@
       "tags": [
         "css",
         "css_grid"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Мысли вслух о подсетках в CSS Grid Layout",
@@ -1813,8 +1631,7 @@
       "tags": [
         "css",
         "css_grid"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Простая сетка на гридах с фолбэками с помощью @supports",
@@ -1824,8 +1641,7 @@
         "css",
         "css_grid",
         "important"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Grid Garden",
@@ -1855,8 +1671,7 @@
       "tags": [
         "css",
         "css_grid"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CSS-гриды + CSS-колонки",
@@ -1865,41 +1680,29 @@
       "tags": [
         "css",
         "css_grid"
-      ],
-      "legend": ""
+      ]
     },
     {
-      "caption": "Золотая рыбка CSS3 Grid Layout (часть 1)",
-      "url": "https://css-live.ru/css/zolotaya-rybka-css3-grid-layout.html",
+      "caption": "Золотая рыбка CSS3 Grid Layout (Максим Усачёв)",
+      "series": [
+        {
+          "caption": "Часть 1",
+          "url": "https://css-live.ru/css/zolotaya-rybka-css3-grid-layout.html"
+        },
+        {
+          "caption": "Часть 2",
+          "url": "https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-2.html"
+        },
+        {
+          "caption": "Часть 3",
+          "url": "https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-3.html"
+        }
+      ],
       "lang": "ru",
       "tags": [
         "css",
-        "css_grid",
-        "series"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Золотая рыбка CSS3 Grid Layout (часть 2)",
-      "url": "https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-2.html",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid",
-        "series"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Золотая рыбка CSS3 Grid Layout (часть 3)",
-      "url": "https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-3.html",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid",
-        "series"
-      ],
-      "legend": ""
+        "css_grid"
+      ]
     },
     {
       "caption": "Химия CSS-гридов",
@@ -1908,8 +1711,7 @@
       "tags": [
         "css",
         "css_grid"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Sass Guidelines",
@@ -1918,8 +1720,7 @@
       "tags": [
         "css",
         "sass"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "How To Write Your Own Custom Sass Functions",
@@ -1928,8 +1729,7 @@
       "tags": [
         "css",
         "sass"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Pug '&attributes' and 'attributes' escaping behaviour",
@@ -1951,8 +1751,7 @@
         "css",
         "sass",
         "less"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Организация кода для CSS-препроцессора",
@@ -1962,8 +1761,7 @@
         "css",
         "sass",
         "less"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Организация кода для HTML-препроцессоров",
@@ -1973,8 +1771,7 @@
         "html",
         "html_templates",
         "pug"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Markdown Guide",
@@ -1984,8 +1781,7 @@
         "html",
         "html_templates",
         "markdown"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "CommonMark Markdown",
@@ -1997,8 +1793,7 @@
         "markdown",
         "commonmark",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "7 техник Sass для написания хорошего кода",
@@ -2008,8 +1803,7 @@
         "css",
         "sass",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Справочник по синтаксису Razor для ASP.NET Core",
@@ -2020,8 +1814,7 @@
         "html_templates",
         "c-sharp",
         "dotnet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "PostCSS Preset Env: Babel for CSS",
@@ -2030,8 +1823,7 @@
       "tags": [
         "css",
         "postcss"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Расставание с Sass: дело не в тебе, дело во мне",
@@ -2041,8 +1833,7 @@
         "css",
         "sass",
         "postcss"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "AST explorer",
@@ -2061,8 +1852,7 @@
       "tags": [
         "html",
         "a11y"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Правила использования ARIA в HTML",
@@ -2072,8 +1862,7 @@
         "html",
         "a11y",
         "aria"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "HTML For Screen Readers - Labelling Elements",
@@ -2083,8 +1872,7 @@
         "html",
         "a11y",
         "aria"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Семантика для циников (Вадим Макеев)",
@@ -2093,8 +1881,7 @@
       "tags": [
         "a11y",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Элемент HTML '<time>'",
@@ -2103,8 +1890,7 @@
       "tags": [
         "html",
         "a11y"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The Difference Between 'role=\"presentation\"' and 'aria-hidden=\"true\"'",
@@ -2113,8 +1899,7 @@
       "tags": [
         "a11y",
         "aria"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Понимание семантики",
@@ -2122,8 +1907,7 @@
       "lang": "ru",
       "tags": [
         "a11y"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Почему семантический HTML важен, и как TypeScript помогает это понять",
@@ -2132,8 +1916,7 @@
       "tags": [
         "html",
         "a11y"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Современный учебник JavaScript",
@@ -2142,8 +1925,7 @@
       "tags": [
         "javascript",
         "important"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The Complete JavaScript Handbook (by Flavio Copes)",
@@ -2151,8 +1933,7 @@
       "lang": "en",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Осваиваем замыкания в Javascript",
@@ -2160,8 +1941,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Подключение JavaScript кода",
@@ -2169,8 +1949,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Красивый и чистый: инструменты, которые помогают добиться почти идеального кода",
@@ -2179,8 +1958,7 @@
       "tags": [
         "javascript",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Airbnb JavaScript Style Guide",
@@ -2189,8 +1967,7 @@
       "tags": [
         "javascript",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Integrating Prettier + ESLint + Airbnb Style Guide in VSCode",
@@ -2199,8 +1976,7 @@
       "tags": [
         "javascript",
         "editors"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как кодить на JavaScript в 2019? Тренды, тенденции, предсказания",
@@ -2218,8 +1994,7 @@
       "tags": [
         "javascript",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Асинхронный JavaScript против отложенного",
@@ -2227,8 +2002,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Веб-фреймворки: введение для новичков",
@@ -2236,8 +2010,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Babel / JS: Настройка окружения",
@@ -2246,8 +2019,7 @@
       "tags": [
         "javascript",
         "babel"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Учите ванильный JavaScript, прежде чем браться за фреймворки",
@@ -2255,8 +2027,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "JS для начинающих. Урок 1.11: Циклы",
@@ -2265,8 +2036,7 @@
       "tags": [
         "javascript",
         "algorithms"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Вы освоили азы JavaScript. Но что дальше?",
@@ -2274,8 +2044,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Опережающие и ретроспективные проверки в регулярных выражениях",
@@ -2285,8 +2054,7 @@
         "javascript",
         "regexp",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "JSON Schema Reference",
@@ -2296,8 +2064,7 @@
         "javascript",
         "json",
         "docs"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как работает рекурсия – объяснение в блок-схемах и видео",
@@ -2306,8 +2073,7 @@
       "tags": [
         "javascript",
         "algorithms"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Формы в HTML5: JavaScript и API для принудительной валидации форм",
@@ -2315,8 +2081,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Немедленно вызываемые функции - IIFE (Immediately-Invoked Function Expression)",
@@ -2324,8 +2089,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Нужно ли чистить строки в JavaScript?",
@@ -2334,8 +2098,7 @@
       "tags": [
         "javascript",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Ад обратных вызовов",
@@ -2343,8 +2106,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "12 хитростей JavaScript, которых вы не найдете в большинстве уроков",
@@ -2352,8 +2114,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Hacks for Creating JavaScript Arrays",
@@ -2361,8 +2122,7 @@
       "lang": "en",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Ключевое слово this в javascript — учимся определять контекст на практике",
@@ -2370,8 +2130,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The art of naming variables",
@@ -2380,8 +2139,7 @@
       "tags": [
         "javascript",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Что такое Throttling и Debouncing?",
@@ -2389,8 +2147,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Что за черт, Javascript",
@@ -2399,8 +2156,7 @@
       "tags": [
         "javascript",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Prototype, proto и оператор 'new'",
@@ -2417,8 +2173,7 @@
       "lang": "en",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "ES6: Реструктуризующее присваивание",
@@ -2427,8 +2182,7 @@
       "tags": [
         "javascript",
         "es2015+"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Паттерны для масштабируемых JavaScript-приложений (Эдди Османи)",
@@ -2438,8 +2192,7 @@
         "javascript",
         "design_patterns",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Глубокое погружение в ES-модули в картинках",
@@ -2448,8 +2201,7 @@
       "tags": [
         "javascript",
         "es2015+"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Logical XOR in JavaScript",
@@ -2457,8 +2209,7 @@
       "lang": "en",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "HTMLCollection, NodeList и массив объектов",
@@ -2467,8 +2218,7 @@
       "tags": [
         "javascript",
         "dom"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "ES6: Расширение литерала объектов",
@@ -2477,29 +2227,27 @@
       "tags": [
         "javascript",
         "es2015+"
-      ],
-      "legend": ""
+      ]
     },
     {
-      "caption": "Справочник современных концепций JavaScript: часть 1",
-      "url": "https://medium.com/devschacht/glossary-of-modern-javascript-concepts-1198b24e8f56",
+      "caption": "Справочник современных концепций JavaScript",
+      "series": [
+        {
+          "caption": "Часть 1. Основы функционального программирования, реактивного программирования и функционального реактивного программирования на JavaScript",
+          "url": "https://medium.com/devschacht/glossary-of-modern-javascript-concepts-1198b24e8f56"
+        },
+        {
+          "caption": "Часть 2. Изучите область видимости, замыкания, потоки данных и концепции, широко используемые в современных JavaScript фреймворках и приложениях",
+          "url": "https://medium.com/devschacht/%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B9-javascript-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-8ecf07f3f36a",
+          "tags": [
+            "4consider"
+          ]
+        }
+      ],
       "lang": "ru",
       "tags": [
-        "javascript",
-        "series"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Справочник современных концепций JavaScript: часть 2",
-      "url": "https://medium.com/devschacht/%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B9-javascript-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-8ecf07f3f36a",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "series",
-        "4consider"
-      ],
-      "legend": ""
+        "javascript"
+      ]
     },
     {
       "caption": "Разъяснения насчёт JavaScript, ECMA–262, TC39 и транскомпиляторов ECMAScript",
@@ -2509,8 +2257,7 @@
         "javascript",
         "es2015+",
         "babel"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Asyncstepping",
@@ -2529,8 +2276,7 @@
       "tags": [
         "javascript",
         "es2015+"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "JavaScript Hacks and Creative Coding (by Martin Kleppe)",
@@ -2539,8 +2285,7 @@
       "tags": [
         "javascript",
         "fun"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "await vs return vs return await",
@@ -2549,8 +2294,7 @@
       "tags": [
         "javascript",
         "es2015+"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Почему использовать 'return await' плохая идея?",
@@ -2559,8 +2303,7 @@
       "tags": [
         "javascript",
         "es2015+"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Полное понимание синхронного и асинхронного JavaScript с 'async/await'",
@@ -2569,8 +2312,7 @@
       "tags": [
         "javascript",
         "es2015+"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Введение в Immutable.js и основные концепции функционального программирования",
@@ -2581,8 +2323,7 @@
         "algorithms",
         "immutable",
         "functional_programming"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "React Things",
@@ -2604,8 +2345,7 @@
         "react",
         "video",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "10 советов и приемов, которые помогут вам стать лучшим разработчиком на VueJS",
@@ -2615,8 +2355,7 @@
         "javascript",
         "vue",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Подборка инструментов для быстрой разработки приложений на Vue.js",
@@ -2626,8 +2365,7 @@
         "javascript",
         "vue",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как создавать Vue-компоненты, словно профи",
@@ -2637,8 +2375,7 @@
         "javascript",
         "vue",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Picturefill",
@@ -2681,8 +2418,7 @@
         "graphics",
         "favicons",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Favicon сегодня: форматы, поддержка, автоматизация",
@@ -2691,8 +2427,7 @@
       "tags": [
         "graphics",
         "favicons"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Теория цвета в цифрах",
@@ -2701,8 +2436,7 @@
       "tags": [
         "graphics",
         "colors"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "'srcset' and 'sizes'",
@@ -2723,8 +2457,7 @@
         "graphics",
         "html",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Почему гибкие изображения?",
@@ -2733,8 +2466,7 @@
       "tags": [
         "graphics",
         "html"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Иллюстратор для верстальщиков",
@@ -2744,8 +2476,7 @@
         "graphics",
         "editors",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Погружение в 'object-fit: cover' с полифилом и без (Вадим Макеев)",
@@ -2755,8 +2486,7 @@
         "graphics",
         "css",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "SVG маски и вау-эффекты: о магии простыми словами",
@@ -2765,8 +2495,7 @@
       "tags": [
         "graphics",
         "svg"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Styling SVG '<use>' content with CSS",
@@ -2775,8 +2504,7 @@
       "tags": [
         "graphics",
         "svg"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "SVG: группировка и переиспользование элементов",
@@ -2785,8 +2513,7 @@
       "tags": [
         "graphics",
         "svg"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Размеры в SVG",
@@ -2795,43 +2522,35 @@
       "tags": [
         "graphics",
         "svg"
-      ],
-      "legend": ""
+      ]
     },
     {
-      "caption": "Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, viewBox, and preserveAspectRatio",
-      "url": "https://www.sarasoueidan.com/blog/svg-coordinate-systems/",
+      "caption": "Understanding SVG Coordinate Systems and Transformations",
+      "series": [
+        {
+          "caption": "Part 1 — The viewport, viewBox, and preserveAspectRatio",
+          "url": "https://www.sarasoueidan.com/blog/svg-coordinate-systems/"
+        },
+        {
+          "caption": "Part 2 — The transform Attribute",
+          "url": "https://www.sarasoueidan.com/blog/svg-transformations/",
+          "tags": [
+            "4consider"
+          ]
+        },
+        {
+          "caption": "Part 3 — Establishing New Viewports",
+          "url": "https://www.sarasoueidan.com/blog/nesting-svgs/",
+          "tags": [
+            "4consider"
+          ]
+        }
+      ],
       "lang": "en",
       "tags": [
         "graphics",
-        "svg",
-        "series"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Understanding SVG Coordinate Systems and Transformations (Part 2) — The transform Attribute",
-      "url": "https://www.sarasoueidan.com/blog/svg-transformations/",
-      "lang": "en",
-      "tags": [
-        "graphics",
-        "svg",
-        "series",
-        "4consider"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Understanding SVG Coordinate Systems and Transformations (Part 3) — Establishing New Viewports",
-      "url": "https://www.sarasoueidan.com/blog/nesting-svgs/",
-      "lang": "en",
-      "tags": [
-        "graphics",
-        "svg",
-        "series",
-        "4consider"
-      ],
-      "legend": ""
+        "svg"
+      ]
     },
     {
       "caption": "Карманное руководство по написанию SVG",
@@ -2842,8 +2561,7 @@
         "svg",
         "series",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Структурирование, группировка и привязка в SVG — элементы '<g>', '<use>', '<defs>' и '<symbol>'",
@@ -2852,8 +2570,7 @@
       "tags": [
         "graphics",
         "svg"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Инлайновый контекст форматирования (ИКФ)",
@@ -2863,8 +2580,7 @@
         "css",
         "series",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Подключение шрифта к странице: как нужно делать сейчас",
@@ -2873,30 +2589,25 @@
       "tags": [
         "typography",
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
-      "caption": "Подключение нестандартных шрифтов. Часть первая",
-      "url": "https://fontstorage.com/blog/about-font-face-part-one/",
+      "caption": "Подключение нестандартных шрифтов",
+      "series": [
+        {
+          "caption": "Часть первая",
+          "url": "https://fontstorage.com/blog/about-font-face-part-one/"
+        },
+        {
+          "caption": "Часть вторая",
+          "url": "https://fontstorage.com/blog/about-font-face-part-two/"
+        }
+      ],
       "lang": "ru",
       "tags": [
         "typography",
-        "css",
-        "series"
-      ],
-      "legend": ""
-    },
-    {
-      "caption": "Подключение нестандартных шрифтов. Часть вторая",
-      "url": "https://fontstorage.com/blog/about-font-face-part-two/",
-      "lang": "ru",
-      "tags": [
-        "typography",
-        "css",
-        "series"
-      ],
-      "legend": ""
+        "css"
+      ]
     },
     {
       "caption": "Иконочные шрифты и почему они не нужны",
@@ -2905,8 +2616,7 @@
       "tags": [
         "typography",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Управляем поведением font-face в CSS",
@@ -2915,8 +2625,7 @@
       "tags": [
         "typography",
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Prevention of double font preloading in Blink-based browsers",
@@ -2925,8 +2634,7 @@
       "tags": [
         "typography",
         "performance"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The Inter typeface family",
@@ -2956,8 +2664,7 @@
         "typography",
         "performance",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Введение в систему 8pt сеток",
@@ -2966,8 +2673,7 @@
       "tags": [
         "4consider",
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как озаглавить форму записи в парикмахерскую",
@@ -2975,8 +2681,7 @@
       "lang": "ru",
       "tags": [
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Развиваем дизайнерское чутье",
@@ -2984,8 +2689,7 @@
       "lang": "ru",
       "tags": [
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Слышал мнение, что частица «не» не воспринимается читателем. Это правда?",
@@ -2993,8 +2697,7 @@
       "lang": "ru",
       "tags": [
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Табличка на экране оплаты Эпл‑пея",
@@ -3002,8 +2705,7 @@
       "lang": "ru",
       "tags": [
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "О метафорах в иконках",
@@ -3011,8 +2713,7 @@
       "lang": "ru",
       "tags": [
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Различие между иконкой и логотипом",
@@ -3020,8 +2721,7 @@
       "lang": "ru",
       "tags": [
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Дорожный указатель «Фрамир двери»",
@@ -3038,8 +2738,7 @@
       "lang": "ru",
       "tags": [
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Pro Git",
@@ -3059,8 +2758,7 @@
         "git",
         "4consider",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Learn Git Branching",
@@ -3089,8 +2787,7 @@
       "tags": [
         "git",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Шпаргалка по консольным командам Git",
@@ -3099,8 +2796,7 @@
       "tags": [
         "git",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Шпаргалка по git-flow",
@@ -3110,8 +2806,7 @@
         "git",
         "git_flow",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Git and Git Flow Cheat Sheet",
@@ -3121,8 +2816,7 @@
         "git",
         "git_flow",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Git How To",
@@ -3140,8 +2834,7 @@
       "lang": "ru",
       "tags": [
         "git"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Самые типичные ошибки и вопросы, связанные с Git, и удобные способы их решения",
@@ -3149,8 +2842,7 @@
       "lang": "ru",
       "tags": [
         "git"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Правильные способы исключения файлов в Git",
@@ -3158,8 +2850,7 @@
       "lang": "ru",
       "tags": [
         "git"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как склеить коммиты и зачем это нужно",
@@ -3177,8 +2868,7 @@
       "tags": [
         "git",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Про Git, Github и Gitflow простыми словами",
@@ -3187,8 +2877,7 @@
       "tags": [
         "git",
         "git_flow"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Удачная модель ветвления для Git",
@@ -3197,8 +2886,7 @@
       "tags": [
         "git",
         "git_flow"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Полезные команды для работы с Git",
@@ -3207,8 +2895,7 @@
       "tags": [
         "git",
         "cheatsheet"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Работа с Git через консоль",
@@ -3216,8 +2903,7 @@
       "lang": "ru",
       "tags": [
         "git"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как оформлять коммиты, чтобы потом не было больно",
@@ -3225,8 +2911,7 @@
       "lang": "ru",
       "tags": [
         "git"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "11 концепций и команд git, которые заставят вас плакать",
@@ -3235,8 +2920,7 @@
       "tags": [
         "git",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Understanding Git Conceptually",
@@ -3256,8 +2940,7 @@
         "git",
         "video",
         "4consider"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Джуность",
@@ -3276,8 +2959,7 @@
         "javascript",
         "flux",
         "redux"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Uncommon Use Cases For Pseudo Elements",
@@ -3285,8 +2967,7 @@
       "lang": "en",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Оформление строчных блоков кода (Роман Комаров)",
@@ -3295,8 +2976,7 @@
       "tags": [
         "css",
         "typography"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Articles & Experiments by Roman Komarov",
@@ -3315,8 +2995,7 @@
         "video",
         "productivity",
         "project_management"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Зачем программисту чувство стиля? (Антон Кекс)",
@@ -3325,8 +3004,7 @@
       "tags": [
         "video",
         "productivity"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Эти страшные буквы MV* (Александра Шинкевич)",
@@ -3356,8 +3034,7 @@
       "lang": "ru",
       "tags": [
         "productivity"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The Problem with gulp-util",
@@ -3368,8 +3045,7 @@
         "nodejs",
         "npm",
         "build"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Twig Processing Order & Scope",
@@ -3378,8 +3054,7 @@
       "tags": [
         "html_templates",
         "twig"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Эти токсичные, токсичные собеседования",
@@ -3387,8 +3062,7 @@
       "lang": "ru",
       "tags": [
         "soft_skills"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Краткий гайд о том, как нанимать нормальных людей",
@@ -3396,8 +3070,7 @@
       "lang": "ru",
       "tags": [
         "soft_skills"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Про интерфейсные тексты, психологию, UX-ляпы и развитие",
@@ -3405,8 +3078,7 @@
       "lang": "ru",
       "tags": [
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Красивое выравнивание блоков по резиновой сетке. По-новому",
@@ -3415,8 +3087,7 @@
       "tags": [
         "css",
         "css_grid"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "SurviveJS",
@@ -3439,8 +3110,7 @@
       "tags": [
         "build",
         "webpack"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Flexbugs collection",
@@ -3449,8 +3119,7 @@
       "tags": [
         "css",
         "css_flexbox"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "«Правила роста: от джуниора до CTO», конспект вебинара Фёдора Борщёва",
@@ -3459,8 +3128,7 @@
       "tags": [
         "productivity",
         "soft_skills"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "70 JavaScript Interview Questions",
@@ -3479,8 +3147,7 @@
       "tags": [
         "video",
         "productivity"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Agile Product Ownership in a Nutshell",
@@ -3490,8 +3157,7 @@
         "project_management",
         "agile",
         "video"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "8 conditional rendering methods in React (by Esteban Herrera)",
@@ -3499,8 +3165,7 @@
       "lang": "en",
       "tags": [
         "react"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как развить привычку отжиматься, чистить зубы, бегать, учить языки, и делать что угодно",
@@ -3508,8 +3173,7 @@
       "lang": "ru",
       "tags": [
         "productivity"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "_ ___ ______? (Вадим Макеев)",
@@ -3530,8 +3194,7 @@
         "javascript",
         "typescript",
         "babel"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Using ESLint and Prettier in a TypeScript Project",
@@ -3540,8 +3203,7 @@
       "tags": [
         "code_quality",
         "typescript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Верстальщик. Наследие (Сергей Попов)",
@@ -3550,8 +3212,7 @@
       "tags": [
         "video",
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Ошибка. Осознание, примирение, извлечение пользы (Вадим Макишвили)",
@@ -3560,8 +3221,7 @@
       "tags": [
         "video",
         "soft_skills"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Know your ARIA: 'Hidden' vs 'None'",
@@ -3571,8 +3231,7 @@
         "a11y",
         "aria",
         "html"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "How to Work with Forms, Inputs and Events in React",
@@ -3581,8 +3240,7 @@
       "tags": [
         "react",
         "forms"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Controlled and uncontrolled form inputs in React don't have to be complicated (by Gosha Arinich)",
@@ -3591,8 +3249,7 @@
       "tags": [
         "react",
         "forms"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Правдивая ложь оптимистичных интерфейсов",
@@ -3600,8 +3257,7 @@
       "lang": "ru",
       "tags": [
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Картинки как коробки. Что же там внутри? (Полина Гуртовая)",
@@ -3610,8 +3266,7 @@
       "tags": [
         "graphics",
         "performance"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Вы используете devDependencies неправильно",
@@ -3619,8 +3274,7 @@
       "lang": "ru",
       "tags": [
         "npm"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как работать с async/await в циклах JavaScript",
@@ -3629,8 +3283,7 @@
       "tags": [
         "javascript",
         "async"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The 25 best programming books of all-time. A data-backed answer",
@@ -3639,8 +3292,7 @@
       "tags": [
         "code_quality",
         "design_patterns"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Beware: React setState is asynchronous!",
@@ -3649,8 +3301,7 @@
       "tags": [
         "react",
         "react_state_management"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Rebuilding Redux with Hooks and Context",
@@ -3661,8 +3312,7 @@
         "react_hooks",
         "react_state_management",
         "redux"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Каково оно учить JavaScript в 2016",
@@ -3670,8 +3320,7 @@
       "lang": "ru",
       "tags": [
         "fun"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "React Redux: performance considerations when dispatching multiple actions",
@@ -3681,8 +3330,7 @@
         "react",
         "redux",
         "performance"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Повышение производительности React и Redux с Reselect",
@@ -3692,8 +3340,7 @@
         "react",
         "redux",
         "performance"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Redux — Не нужен! Заменяем с помощью useContext и useReducer в React?",
@@ -3704,8 +3351,7 @@
         "react_hooks",
         "react_state_management",
         "redux"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Исследование бездны null и undefined в JavaScript",
@@ -3713,8 +3359,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Arrow Functions in Class Properties Might Not Be As Great As We Think",
@@ -3723,8 +3368,7 @@
       "tags": [
         "javascript",
         "performance"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Разница между width и flex-basis",
@@ -3733,8 +3377,7 @@
       "tags": [
         "css",
         "css_flexbox"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The Twelve-Factor App manifest",
@@ -3752,8 +3395,7 @@
       "lang": "ru",
       "tags": [
         "algorithms"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Integer и Float в Javascript",
@@ -3761,8 +3403,7 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "React Conditional Rendering (by Robin Wieruch)",
@@ -3770,8 +3411,7 @@
       "lang": "en",
       "tags": [
         "react"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "How to fetch data in React (by Robin Wieruch)",
@@ -3781,8 +3421,7 @@
         "react",
         "async",
         "testing"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The Basics of Easing",
@@ -3812,8 +3451,7 @@
         "redux",
         "redux_middleware",
         "redux_thunk"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Minimal API Surface Area (Sebastian Markbage)",
@@ -3824,8 +3462,7 @@
         "react",
         "design_patterns",
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Инклюзивные компоненты: переключатели",
@@ -3834,8 +3471,7 @@
       "tags": [
         "a11y",
         "aria"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как учиться продуктивно",
@@ -3843,8 +3479,7 @@
       "lang": "ru",
       "tags": [
         "productivity"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Пятиминутка React #3. Hot Module Replacement или React Hot Loader?",
@@ -3951,8 +3586,7 @@
         "react_state_management",
         "functional_programming",
         "rocket_science"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Increase your React + Redux Application Performance With the Reselect Library",
@@ -3963,8 +3597,7 @@
         "react_state_management",
         "redux",
         "performance"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Where to Hold React Component Data: state, store, static, and this",
@@ -3973,8 +3606,7 @@
       "tags": [
         "react",
         "react_state_management"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "React Components, Elements, and Instances (by Dan Abramov)",
@@ -3982,8 +3614,7 @@
       "lang": "en",
       "tags": [
         "react"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Complexity: Divide and Conquer! (by Michel Weststrate)",
@@ -3996,8 +3627,7 @@
         "react_router",
         "mobx",
         "rocket_science"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "How to handle state in React. The missing FAQ (by Osmel Mora)",
@@ -4006,8 +3636,7 @@
       "tags": [
         "react",
         "react_state_management"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Никто не знает CSS: специфичность — не каскад (Илья Стрельцын)",
@@ -4015,8 +3644,7 @@
       "lang": "ru",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Собеседование по TypeScript: 20 вопросов и ответов",
@@ -4024,8 +3652,7 @@
       "lang": "ru",
       "tags": [
         "typescript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Пятиминутка React #29. Мониторинг ошибок",
@@ -4054,8 +3681,7 @@
       "lang": "ru",
       "tags": [
         "git"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Developer tip: Keep your commits \"atomic\"",
@@ -4063,8 +3689,7 @@
       "lang": "en",
       "tags": [
         "git"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Hype Driven Development",
@@ -4072,8 +3697,7 @@
       "lang": "ru",
       "tags": [
         "methodology"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Очень простое объяснение принципов SOLID",
@@ -4084,8 +3708,7 @@
         "code_quality",
         "oop",
         "solid"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Promises: States and Fates",
@@ -4105,8 +3728,7 @@
         "javascript",
         "build",
         "webpack"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Глубокое погружение в webpack (Стас Курилов)",
@@ -4116,8 +3738,7 @@
         "javascript",
         "build",
         "webpack"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "TypeScript Deep Dive (by Basarat Ali Syed)",
@@ -4125,8 +3746,7 @@
       "lang": "en",
       "tags": [
         "typescript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Краткий гид по open‑source лицензиям",
@@ -4134,8 +3754,7 @@
       "lang": "ru",
       "tags": [
         "opensource"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Peer dependencies — NPM",
@@ -4152,8 +3771,7 @@
       "lang": "ru",
       "tags": [
         "npm"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Почему функциональное программирование такое сложное",
@@ -4161,8 +3779,7 @@
       "lang": "ru",
       "tags": [
         "fp"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Death by a thousand useCallbacks (Royi Hagigi)",
@@ -4171,8 +3788,7 @@
       "tags": [
         "react",
         "react_hooks"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Merging refs",
@@ -4181,8 +3797,7 @@
       "tags": [
         "react",
         "react_hooks"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Принципы работы современных веб-браузеров",
@@ -4190,8 +3805,7 @@
       "lang": "ru",
       "tags": [
         "rocket_science"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "useEffect(fn, []) это не новый componentDidMount() (by Brad Westfall)",
@@ -4200,8 +3814,7 @@
       "tags": [
         "react",
         "react_hooks"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Публикация пакета в npm",
@@ -4209,8 +3822,7 @@
       "lang": "ru",
       "tags": [
         "npm"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Объяснены: значения nofollow / dofollow, noopener, noreferrer и noindex",
@@ -4219,8 +3831,7 @@
       "tags": [
         "seo",
         "security"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "PX, EM or REM Media Queries?",
@@ -4228,8 +3839,7 @@
       "lang": "en",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The Wrong Abstraction (by Sandi Metz)",
@@ -4237,8 +3847,7 @@
       "lang": "en",
       "tags": [
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "AHA Programming (by Kent C. Dodds)",
@@ -4246,8 +3855,7 @@
       "lang": "en",
       "tags": [
         "code_quality"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "When to useMemo and useCallback (by Kent C. Dodds)",
@@ -4256,8 +3864,7 @@
       "tags": [
         "react",
         "react_hooks"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The trick to viewport units on mobile (by Louis Hoebregts)",
@@ -4265,8 +3872,7 @@
       "lang": "en",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "React, Inline Functions, and Performance (by Ryan Florence)",
@@ -4275,8 +3881,7 @@
       "tags": [
         "react",
         "performance"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Wins for Hooks (by Brad Westfall)",
@@ -4285,8 +3890,7 @@
       "tags": [
         "react",
         "react_hooks"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "How Are Function Components Different from Classes? (by Dan Abramov)",
@@ -4295,8 +3899,7 @@
       "tags": [
         "react",
         "react_hooks"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Как организовать процесс сдачи задачи и код‑ревью в рамках спринта? (Фёдор Борщёв)",
@@ -4304,8 +3907,7 @@
       "lang": "ru",
       "tags": [
         "project_management"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "How to learn React.js in 2020 (by Robin Wieruch)",
@@ -4313,8 +3915,7 @@
       "lang": "en",
       "tags": [
         "react"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "How to fetch data with React Hooks? (by Robin Wieruch)",
@@ -4323,8 +3924,7 @@
       "tags": [
         "react",
         "react_hooks"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Further understanding reconciliation (by Dan Abramov)",
@@ -4333,7 +3933,7 @@
       "tags": [
         "react"
       ],
-      "legend": "Дэн Абрамов объясняет тонкости согласования React Virtual DOM"
+      "legend": "тонкости согласования React Virtual DOM"
     },
     {
       "caption": "Does React keep the order for state updates? (by Dan Abramov)",
@@ -4342,8 +3942,7 @@
       "tags": [
         "react",
         "react_state_management"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "RFClarification: why is setState asynchronous? (by Dan Abramov)",
@@ -4352,8 +3951,7 @@
       "tags": [
         "react",
         "react_state_management"
-      ],
-      "legend": ""
+      ]
     }
   ]
 }

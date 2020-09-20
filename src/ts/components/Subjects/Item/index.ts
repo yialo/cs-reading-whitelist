@@ -1,1 +1,1 @@
-export { SubjectsItem } from './self';
+export { renderSubjectsItem } from './render';

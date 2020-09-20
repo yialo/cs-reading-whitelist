@@ -30,10 +30,17 @@ const selectFilteredList = createSelector(
   (fullList, searchString, filterName) => fullList.filter((item) => {
     const matcher = new RegExp(searchString, 'gi');
     switch (filterName) {
-      case FILTERS.CAPTION:
-        return item.caption.match(matcher);
-      case FILTERS.HASHTAG:
-        return item.tags.some((tag) => tag.match(matcher));
+      case FILTERS.CAPTION: {
+        const hasMatchInMainCaption = item.caption.match(matcher);
+        return hasMatchInMainCaption || item.series?.some((it) => it.caption.match(matcher));
+      }
+
+      case FILTERS.HASHTAG: {
+        const hasMatchInMainTags = item.tags.some((tag) => tag.match(matcher));
+        return hasMatchInMainTags
+          || item.series?.some((it) => it.tags?.some((tag) => tag.match(matcher)));
+      }
+
       default:
         return true;
     }
