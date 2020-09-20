@@ -1,7 +1,13 @@
 @use "~scss/utils";
 
 .root {
+  --color-caption: midnightblue;
+
   line-height: 1.25;
+
+  @include utils.darkTheme() {
+    --color-caption: #dddddd;
+  }
 }
 
 .langBadge {
@@ -33,14 +39,27 @@
 }
 
 .link {
-  color: midnightblue;
+  color: var(--color-caption);
 
   &:hover {
     text-decoration: none;
   }
+}
 
-  @include utils.darkTheme() {
-    color: #dddddd;
+.series {
+  composes: button from "~scss/scaffold.scss";
+  display: inline-flex;
+  color: var(--color-caption);
+
+  &::before {
+    $size: 18px;
+
+    content: "";
+    margin-right: 8px;
+    width: $size;
+    height: $size;
+    // border-top:
+    background-color: black;
   }
 }
 

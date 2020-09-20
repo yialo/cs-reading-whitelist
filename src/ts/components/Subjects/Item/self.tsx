@@ -1,8 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { ISubject } from 'ts/types';
+import type { ISubject } from 'ts/types';
 
+import { SubjectsItemSeries } from './Series';
 import { SubjectsSingleItem } from './Single';
 
 import style from './style.scss';
@@ -25,7 +26,7 @@ export const SubjectsItem: React.FC<ISubjectsItemProps> = ({ subject }) => {
     <li className={style.root}>
       {
         series
-          ? <span>Серия ссылок</span>
+          ? <SubjectsItemSeries caption={caption} />
           : <SubjectsSingleItem {...{ caption, lang }} url={url as string} />
       }
       {' '}

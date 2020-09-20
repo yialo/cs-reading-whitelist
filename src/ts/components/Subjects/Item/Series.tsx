@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
+
+import type { SubjectCaption } from 'ts/types';
 
 import style from './style.scss';
 
 interface ISubjectsItemSeriesProps {
-  className?: string;
+  caption: SubjectCaption;
 }
 
-export const SubjectsItemSeries: React.FC<ISubjectsItemSeriesProps> = ({ className }) => {
-  return (
+export const SubjectsItemSeries: React.FC<ISubjectsItemSeriesProps> = ({
+  caption,
+}) => {
+  const [isExpanded, setIsExpanded] = useState(false);
 
+  return (
+    <button
+      className={style.series}
+      type="button"
+      aria-expanded={isExpanded}
+    >
+      {caption}
+    </button>
   );
 };
