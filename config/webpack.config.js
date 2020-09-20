@@ -250,11 +250,6 @@ module.exports = (env = {}) => {
             {
               from: path.join(PATH.SRC, 'static'),
               to: path.join(PATH.DIST, 'response'),
-              transformPath: (targetPath) => {
-                if (path.extname(targetPath) === '.json') {
-                  return targetPath;
-                }
-              },
             },
           ],
         }),
