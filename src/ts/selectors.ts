@@ -36,7 +36,9 @@ const selectFilteredList = createSelector(
       }
 
       case FILTERS.HASHTAG: {
-        return item.tags.some((tag) => tag.match(matcher));
+        const hasMatchInMainTags = item.tags.some((tag) => tag.match(matcher));
+        return hasMatchInMainTags
+          || item.series?.some((it) => it.tags?.some((tag) => tag.match(matcher)));
       }
 
       default:
