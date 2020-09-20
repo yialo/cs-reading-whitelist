@@ -3,29 +3,53 @@ import classNames from 'classnames';
 
 import type { SubjectLang, SubjectLegend, SubjectTag } from 'ts/types';
 
-import { SubjectsItemTagList as TagList } from './TagList';
-
 import style from './style.scss';
 
-interface IProps {
-  lang: SubjectLang;
+interface ISubjectsItemAppendixProps {
+  lang?: SubjectLang;
   legend?: SubjectLegend;
-  tags: SubjectTag[];
+  tags?: SubjectTag[];
 }
 
-export const SubjectsItemAppendix: React.FC<IProps> = ({
+export const SubjectsItemAppendix: React.FC<ISubjectsItemAppendixProps> = ({
   lang,
   legend,
   tags,
 }) => {
   return (
     <>
-      {' '}
-      <span className={classNames(style[`langBadge_${lang}`])}>
-        {lang}
-      </span>
-      <span className={style.legend}>{legend ? ` - ${legend}` : ''}</span>
-      <TagList tags={tags} />
+      {Boolean(lang) && (
+        <>
+          {' '}
+          <span className={classNames(style[`langBadge_${lang as string}`])}>
+            {lang}
+          </span>
+        </>
+      )}
+      {(tags as SubjectTag[]).length > 0 && (
+        <ul className={style.tags}>
+          {(tags as SubjectTag[]).map((tag, i) => {
+            if (!tag) {
+              return null;
+            }
+
+            return (
+              <li className={style.tag} key={i}>
+                {` #${tag}`}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+      {Boolean(legend) && (
+        <span className={style.legend}>{` ‒ ${legend as string}`}</span>
+      )}
     </>
   );
+};
+
+SubjectsItemAppendix.defaultProps = {
+  lang: '',
+  legend: '',
+  tags: [],
 };

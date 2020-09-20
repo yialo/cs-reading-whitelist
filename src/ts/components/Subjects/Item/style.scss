@@ -1,19 +1,8 @@
 @use "~scss/utils";
 
-.root {
-  --color-caption: midnightblue;
-
-  line-height: 1.25;
-
-  @include utils.darkTheme() {
-    --color-caption: #dddddd;
-  }
-
-  &_series {
-    composes: root;
-    --size_triangle: 16px;
-    --size_paddingLeft: calc(var(--size_triangle) * 1.5);
-  }
+.root_series {
+  --size_triangle: 16px;
+  --size_paddingLeft: calc(var(--size_triangle) * 1.5);
 }
 
 .langBadge {

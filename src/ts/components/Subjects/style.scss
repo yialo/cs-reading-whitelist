@@ -2,6 +2,14 @@
 @use "~scss/utils";
 
 .root {
+  --color-caption: midnightblue;
+
+  line-height: 1.25;
+
+  @include utils.darkTheme() {
+    --color-caption: #dddddd;
+  }
+
   @media (min-width: utils.$viewport-sm-min) {
     font-size: 18px;
   }

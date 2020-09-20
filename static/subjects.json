@@ -3933,7 +3933,7 @@
       "tags": [
         "react"
       ],
-      "legend": "Дэн Абрамов объясняет тонкости согласования React Virtual DOM"
+      "legend": "тонкости согласования React Virtual DOM"
     },
     {
       "caption": "Does React keep the order for state updates? (by Dan Abramov)",

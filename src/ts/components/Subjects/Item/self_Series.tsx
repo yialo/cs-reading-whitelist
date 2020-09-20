@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 
-import type { ISeriesSubject, SubjectTag } from 'ts/types';
+import type { ISeriesSubject } from 'ts/types';
 
 import { SubjectsItemAppendix as Appendix } from './Appendix';
 import { SubjectsItemLink as Link } from './Link';
-import { SubjectsItemTagList as TagList } from './TagList';
 
 import style from './style.scss';
 
@@ -49,14 +48,19 @@ export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ sub
       </div>
       {isExpanded && (
         <ul className={style.seriesList}>
-          {series.map(({ caption: seriesItemCaption, tags: seriesItemTags, url }) => (
-            <li key={url}>
-              <Link {...{ caption: seriesItemCaption, lang, url }} />
-              {Boolean(seriesItemTags) && (
-                <TagList tags={seriesItemTags as SubjectTag[]} />
-              )}
-            </li>
-          ))}
+          {
+            series.map(({
+              caption: itemCaption,
+              tags: itemTags,
+              legend: itemLegend,
+              url,
+            }) => (
+              <li key={url}>
+                <Link {...{ caption: itemCaption, lang, url }} />
+                <Appendix {...{ legend: itemLegend, tags: itemTags }} />
+              </li>
+            ))
+          }
         </ul>
       )}
     </li>
