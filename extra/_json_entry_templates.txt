@@ -7,3 +7,22 @@
   ],
   "legend": ""
 }
+
+{
+  "caption": "",
+  "series": [
+    {
+      "caption": "",
+      "url": "",
+      "tags": [
+        ""
+      ],
+      "legend": ""
+    }
+  ],
+  "lang": "",
+  "tags": [
+    ""
+  ],
+  "legend": ""
+}
