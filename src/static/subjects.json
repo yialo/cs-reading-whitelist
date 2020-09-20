@@ -4346,7 +4346,7 @@
       "legend": ""
     },
     {
-      "caption": "RFClarification: why is `setState` asynchronous? (by Dan Abramov)",
+      "caption": "RFClarification: why is setState asynchronous? (by Dan Abramov)",
       "url": "https://github.com/facebook/react/issues/11527#issuecomment-360199710",
       "lang": "en",
       "tags": [
