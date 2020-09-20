@@ -20,7 +20,7 @@ export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ sub
     tags,
   } = subject;
 
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const revertState = () => {
     setIsExpanded((prev) => !prev);
