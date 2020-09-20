@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
+import { useSelector } from 'react-redux';
 
+import { listSelector } from 'ts/selectors';
 import type { ISeriesSubject } from 'ts/types';
 
 import { SubjectsItemAppendix as Appendix } from './Appendix';
@@ -20,7 +22,10 @@ export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ sub
     tags,
   } = subject;
 
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const searchString = useSelector(listSelector.searchString);
+  const isFiltered = (searchString !== '');
 
   const revertState = () => {
     setIsExpanded((prev) => !prev);
@@ -45,7 +50,7 @@ export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ sub
         </span>
         <Appendix {...{ lang, legend, tags }} />
       </div>
-      {isExpanded && (
+      {(isExpanded || isFiltered) && (
         <ul className={style.seriesList}>
           {series.map(({ caption: seriesItemCaption, url }) => (
             <li key={url}>
