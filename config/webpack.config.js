@@ -21,6 +21,7 @@ const PATH = {
   SRC: path.join(ROOT_PATH, 'src'),
   DIST: path.join(ROOT_PATH, 'dist'),
   CONFIG: path.join(ROOT_PATH, 'config'),
+  STATIC: path.join(ROOT_PATH, 'static'),
 };
 
 const ALIAS = {
@@ -58,6 +59,7 @@ module.exports = (env = {}) => {
     context: PATH.SRC,
 
     devServer: isDevelopment ? {
+      contentBase: PATH.STATIC,
       historyApiFallback: true,
       host: process.env.WDS_HOST || SERVER_DEFAULTS.HOST,
       port: process.env.WDS_PORT || SERVER_DEFAULTS.PORT,
@@ -248,7 +250,7 @@ module.exports = (env = {}) => {
         new CopyPlugin({
           patterns: [
             {
-              from: path.join(PATH.SRC, 'static'),
+              from: PATH.STATIC,
               to: path.join(PATH.DIST, 'response'),
             },
           ],

@@ -78,18 +78,17 @@
       "caption": "Хороший разработчик и его образ мышления",
       "series": [
         {
-          "caption": "Часть 1",
+          "caption": "часть 1",
           "url": "https://techrocks.ru/2019/04/14/good-developer-mindset-1/"
         },
         {
-          "caption": "Часть 2",
+          "caption": "часть 2",
           "url": "https://techrocks.ru/2019/04/15/good-developer-mindset-2/"
         }
       ],
       "lang": "en",
       "tags": [
-        "code_quality",
-        "series"
+        "code_quality"
       ]
     },
     {
@@ -484,64 +483,39 @@
       "legend": "курс устарел, но часть концепций актуальна"
     },
     {
-      "caption": "NodeJS Event Loop Part 1: Event Loop and the Big Picture",
-      "url": "https://blog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810",
+      "caption": "NodeJS Event Loop",
+      "series": [
+        {
+          "caption": "Part 1: Event Loop and the Big Picture",
+          "url": "https://blog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810"
+        },
+        {
+          "caption": "Part 2: Timers, Immediates and Process.nextTick",
+          "url": "https://blog.insiderattack.net/timers-immediates-and-process-nexttick-nodejs-event-loop-part-2-2c53fd511bb3"
+        },
+        {
+          "caption": "Part 3: Promises, Next-Ticks, and Immediates",
+          "url": "https://blog.insiderattack.net/promises-next-ticks-and-immediates-nodejs-event-loop-part-3-9226cbe7a6aa"
+        },
+        {
+          "caption": "Part 4: Handling IO",
+          "url": "https://blog.insiderattack.net/handling-io-nodejs-event-loop-part-4-418062f917d1"
+        },
+        {
+          "caption": "Part 5: Event Loop Best Practices",
+          "url": "https://blog.insiderattack.net/event-loop-best-practices-nodejs-event-loop-part-5-e29b2b50bfe2"
+        },
+        {
+          "caption": "Part 6: New Changes to the Timers and Microtasks in Node v11.0.0 (and above)",
+          "url": "https://blog.insiderattack.net/new-changes-to-timers-and-microtasks-from-node-v11-0-0-and-above-68d112743eb3"
+        }
+      ],
       "lang": "en",
       "tags": [
         "nodejs",
-        "4consider",
-        "series"
-      ]
-    },
-    {
-      "caption": "NodeJS Event Loop Part 2: Timers, Immediates and Process.nextTick",
-      "url": "https://blog.insiderattack.net/timers-immediates-and-process-nexttick-nodejs-event-loop-part-2-2c53fd511bb3",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider",
-        "series"
-      ]
-    },
-    {
-      "caption": "NodeJS Event Loop Part 3: Promises, Next-Ticks, and Immediates",
-      "url": "https://blog.insiderattack.net/promises-next-ticks-and-immediates-nodejs-event-loop-part-3-9226cbe7a6aa",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider",
-        "series"
-      ]
-    },
-    {
-      "caption": "NodeJS Event Loop Part 4: Handling IO",
-      "url": "https://blog.insiderattack.net/handling-io-nodejs-event-loop-part-4-418062f917d1",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider",
-        "series"
-      ]
-    },
-    {
-      "caption": "NodeJS Event Loop Part 5: Event Loop Best Practices",
-      "url": "https://blog.insiderattack.net/event-loop-best-practices-nodejs-event-loop-part-5-e29b2b50bfe2",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider",
-        "series"
-      ]
-    },
-    {
-      "caption": "NodeJS Event Loop Part 6: New Changes to the Timers and Microtasks in Node v11.0.0 (and above)",
-      "url": "https://blog.insiderattack.net/new-changes-to-timers-and-microtasks-from-node-v11-0-0-and-above-68d112743eb3",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider",
-        "series"
-      ]
+        "4consider"
+      ],
+      "legend": ""
     },
     {
       "caption": "node-glob NPM package",
@@ -1710,34 +1684,28 @@
       ]
     },
     {
-      "caption": "Золотая рыбка CSS3 Grid Layout (часть 1)",
-      "url": "https://css-live.ru/css/zolotaya-rybka-css3-grid-layout.html",
+      "caption": "Золотая рыбка CSS3 Grid Layout (Максим Усачёв)",
+      "series": [
+        {
+          "caption": "часть 1",
+          "url": "https://css-live.ru/css/zolotaya-rybka-css3-grid-layout.html"
+        },
+        {
+          "caption": "часть 2",
+          "url": "https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-2.html"
+        },
+        {
+          "caption": "часть 3",
+          "url": "https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-3.html"
+        }
+      ],
       "lang": "ru",
       "tags": [
         "css",
         "css_grid",
         "series"
-      ]
-    },
-    {
-      "caption": "Золотая рыбка CSS3 Grid Layout (часть 2)",
-      "url": "https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-2.html",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid",
-        "series"
-      ]
-    },
-    {
-      "caption": "Золотая рыбка CSS3 Grid Layout (часть 3)",
-      "url": "https://css-live.ru/articles/zolotaya-rybka-css3-grid-layout-chast-3.html",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid",
-        "series"
-      ]
+      ],
+      "legend": ""
     },
     {
       "caption": "Химия CSS-гридов",

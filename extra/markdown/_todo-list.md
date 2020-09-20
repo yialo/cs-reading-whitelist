@@ -3,6 +3,7 @@
 ## Closer future
 
 * Merge *css-common-classnames* project into this
+* Add tags for series subjects
 * Move browser bookmarks related to computer science and userful services here
 * Add volume with interesting fonts
 * Add favicon
