@@ -40,7 +40,7 @@ interface IBaseSubject {
   tags: SubjectTag[];
 }
 
-interface ISingleSublect extends IBaseSubject {
+export interface ISingleSublect extends IBaseSubject {
   series?: undefined;
   url: SubjectUrl;
 }

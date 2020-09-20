@@ -10,6 +10,7 @@ import style from './style.scss';
 interface ISubjectsItemOfSeriesProps {
   subject: ISeriesSubject;
 }
+
 export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ subject }) => {
   const {
     caption,
@@ -56,3 +57,5 @@ export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ sub
     </li>
   );
 };
+
+SubjectsItemOfSeries.displayName = 'SubjectsItem_series';

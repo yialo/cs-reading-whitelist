@@ -1,29 +1,23 @@
 import React from 'react';
 
-import type { ISubject, ISeriesSubject } from 'ts/types';
+import type { ISingleSublect } from 'ts/types';
 
 import { SubjectsItemAppendix as Appendix } from './Appendix';
-import { SubjectsItemOfSeries as Series } from './self_Series';
 
 import style from './style.scss';
 
-interface ISubjectsItemProps {
-  subject: ISubject;
+interface ISubjectsItemOfSingleProps {
+  subject: ISingleSublect;
 }
 
-export const SubjectsItem: React.FC<ISubjectsItemProps> = ({ subject }) => {
+export const SubjectsItemOfSingle: React.FC<ISubjectsItemOfSingleProps> = ({ subject }) => {
   const {
     caption,
     lang,
     legend,
-    series,
     tags,
     url,
   } = subject;
-
-  if (series) {
-    return <Series subject={subject as ISeriesSubject} />;
-  }
 
   return (
     <li className={style.root}>
@@ -32,3 +26,5 @@ export const SubjectsItem: React.FC<ISubjectsItemProps> = ({ subject }) => {
     </li>
   );
 };
+
+SubjectsItemOfSingle.displayName = 'SubjectsItem_single';

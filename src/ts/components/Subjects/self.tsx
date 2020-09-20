@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { Button } from 'ts/components/Button';
 import { ISubject } from 'ts/types';
 
-import { SubjectsItem } from './Item';
+import { renderSubjectsItem } from './Item';
 import { SubjectsFallbackMessage as FallbackMessage } from './FallbackMessage';
 
 import style from './style.scss';
@@ -35,9 +35,7 @@ export const Subjects: React.FC<IProps> = ({
   return (
     <div className={classNames(style.root, className)}>
       <ul className={style.list}>
-        {list.map((subject) => (
-          <SubjectsItem key={subject.caption} subject={subject} />
-        ))}
+        {list.map((subject) => renderSubjectsItem(subject))}
       </ul>
       {!isLastPage && (
         <Button className={style.button} onClick={onShowMoreClick}>
