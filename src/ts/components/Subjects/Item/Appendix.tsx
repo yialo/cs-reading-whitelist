@@ -3,6 +3,8 @@ import classNames from 'classnames';
 
 import type { SubjectLang, SubjectLegend, SubjectTag } from 'ts/types';
 
+import { SubjectsItemTagList as TagList } from './TagList';
+
 import style from './style.scss';
 
 interface IProps {
@@ -23,13 +25,7 @@ export const SubjectsItemAppendix: React.FC<IProps> = ({
         {lang}
       </span>
       <span className={style.legend}>{legend ? ` - ${legend}` : ''}</span>
-      <ul className={style.tags}>
-        {tags.map((tag, i) => (
-          <li className={style.tag} key={i}>
-            {` #${tag}`}
-          </li>
-        ))}
-      </ul>
+      <TagList tags={tags} />
     </>
   );
 };

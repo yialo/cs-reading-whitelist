@@ -3,6 +3,7 @@ import React from 'react';
 import type { ISingleSublect } from 'ts/types';
 
 import { SubjectsItemAppendix as Appendix } from './Appendix';
+import { SubjectsItemLink as Link } from './Link';
 
 import style from './style.scss';
 
@@ -21,7 +22,7 @@ export const SubjectsItemOfSingle: React.FC<ISubjectsItemOfSingleProps> = ({ sub
 
   return (
     <li className={style.root}>
-      <a className={style.link} href={url} lang={lang}>{caption}</a>
+      <Link {...{ caption, lang, url }} />
       <Appendix {...{ lang, legend, tags }} />
     </li>
   );

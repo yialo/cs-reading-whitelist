@@ -13,7 +13,10 @@
   "series": [
     {
       "caption": "",
-      "url": ""
+      "url": "",
+      "tags": [
+        ""
+      ]
     }
   ],
   "lang": "",

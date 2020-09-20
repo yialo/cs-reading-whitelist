@@ -30,6 +30,7 @@ export type SubjectTag = string;
 export interface ISubjectSeriesItem {
   caption: SubjectCaption;
   legend?: SubjectLegend;
+  tags?: SubjectTag[];
   url: SubjectUrl;
 }
 
