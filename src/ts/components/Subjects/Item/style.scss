@@ -8,6 +8,12 @@
   @include utils.darkTheme() {
     --color-caption: #dddddd;
   }
+
+  &_series {
+    composes: root;
+    --size_triangle: 16px;
+    --size_paddingLeft: calc(var(--size_triangle) * 1.5);
+  }
 }
 
 .langBadge {
@@ -46,21 +52,38 @@
   }
 }
 
-.series {
-  composes: button from "~scss/scaffold.scss";
-  display: inline-flex;
+.seriesButton {
+  --size_halfTriangle: calc(var(--size_triangle) / 2);
+
+  position: relative;
+  display: inline;
+  padding-left: var(--size_paddingLeft);
   color: var(--color-caption);
+  cursor: pointer;
 
   &::before {
-    $size: 18px;
-
     content: "";
-    margin-right: 8px;
-    width: $size;
-    height: $size;
-    // border-top:
-    background-color: black;
+    position: absolute;
+    top: calc(50% - var(--size_halfTriangle));
+    left: var(--size_halfTriangle);
+    border: var(--size_halfTriangle) solid var(--color-caption);
+    border-right-width: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    transition: transform 0.2s;
+
+    .root:global(.isExpanded) & {
+      transform: rotate(90deg);
+    }
   }
+}
+
+.seriesList {
+  composes: list from "~scss/scaffold.scss";
+  display: grid;
+  row-gap: 4px;
+  margin-top: 4px;
+  padding-left: var(--size_paddingLeft);
 }
 
 .tag {

@@ -23,9 +23,9 @@ export type ActionCreatorGenericType<RS> = SyncActionCreator<RS> | AsyncActionCr
 
 export type SubjectCaption = string;
 export type SubjectLang = string;
-type SubjectLegend = string;
+export type SubjectLegend = string;
 export type SubjectUrl = string;
-type SubjectTag = string;
+export type SubjectTag = string;
 
 export interface ISubjectSeriesItem {
   caption: SubjectCaption;
@@ -45,7 +45,7 @@ interface ISingleSublect extends IBaseSubject {
   url: SubjectUrl;
 }
 
-interface ISeriesSubject extends IBaseSubject {
+export interface ISeriesSubject extends IBaseSubject {
   series: ISubjectSeriesItem[];
   url?: undefined;
 }

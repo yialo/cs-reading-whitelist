@@ -1,10 +1,9 @@
 import React from 'react';
-import classNames from 'classnames';
 
-import type { ISubject } from 'ts/types';
+import type { ISubject, ISeriesSubject } from 'ts/types';
 
-import { SubjectsItemSeries } from './Series';
-import { SubjectsSingleItem } from './Single';
+import { SubjectsItemAppendix as Appendix } from './Appendix';
+import { SubjectsItemOfSeries as Series } from './self_Series';
 
 import style from './style.scss';
 
@@ -22,25 +21,14 @@ export const SubjectsItem: React.FC<ISubjectsItemProps> = ({ subject }) => {
     url,
   } = subject;
 
+  if (series) {
+    return <Series subject={subject as ISeriesSubject} />;
+  }
+
   return (
     <li className={style.root}>
-      {
-        series
-          ? <SubjectsItemSeries caption={caption} />
-          : <SubjectsSingleItem {...{ caption, lang }} url={url as string} />
-      }
-      {' '}
-      <span className={classNames(style[`langBadge_${lang}`])}>
-        {lang}
-      </span>
-      <span className={style.legend}>{legend ? ` - ${legend}` : ''}</span>
-      <ul className={style.tags}>
-        {tags.map((tag, i) => (
-          <li className={style.tag} key={i}>
-            {` #${tag}`}
-          </li>
-        ))}
-      </ul>
+      <a className={style.link} href={url} lang={lang}>{caption}</a>
+      <Appendix {...{ lang, legend, tags }} />
     </li>
   );
 };
