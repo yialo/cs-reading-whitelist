@@ -3494,7 +3494,7 @@
       "legend": ""
     },
     {
-      "caption": "8 conditional rendering methods in React",
+      "caption": "8 conditional rendering methods in React (by Esteban Herrera)",
       "url": "https://blog.logrocket.com/conditional-rendering-in-react-c6b0e5af381e/",
       "lang": "en",
       "tags": [
@@ -3585,7 +3585,7 @@
       "legend": ""
     },
     {
-      "caption": "Controlled and uncontrolled form inputs in React don't have to be complicated",
+      "caption": "Controlled and uncontrolled form inputs in React don't have to be complicated (by Gosha Arinich)",
       "url": "https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/",
       "lang": "en",
       "tags": [
@@ -3647,7 +3647,8 @@
       "url": "https://medium.com/@wereHamster/beware-react-setstate-is-asynchronous-ce87ef1a9cf3",
       "lang": "en",
       "tags": [
-        "react"
+        "react",
+        "react_state_management"
       ],
       "legend": ""
     },
@@ -3658,6 +3659,7 @@
       "tags": [
         "react",
         "react_hooks",
+        "react_state_management",
         "redux"
       ],
       "legend": ""
@@ -3700,6 +3702,7 @@
       "tags": [
         "react",
         "react_hooks",
+        "react_state_management",
         "redux"
       ],
       "legend": ""
@@ -3860,6 +3863,8 @@
       "lang": "ru",
       "tags": [
         "video",
+        "react",
+        "react_state_management",
         "redux"
       ],
       "legend": "Redux: что не так с отправкой нескольких Actions подряд (синхронно)?"
@@ -3870,6 +3875,8 @@
       "lang": "ru",
       "tags": [
         "video",
+        "react",
+        "react_state_management",
         "redux"
       ],
       "legend": "Redux и вычисляемые поля. Сталкивались ли вы с проблемой распухающих объектов Action, поскольку одни редьюсеры требуют данные от других редьюсеров? Где и как правильно работать с вычисляемыми полями?"
@@ -3880,7 +3887,8 @@
       "lang": "ru",
       "tags": [
         "video",
-        "react"
+        "react",
+        "react_state_management"
       ],
       "legend": "Разберём на пальцах пример из документации к React из главы \"Lifting State Up\" про два поля ввода температуры по Цельсию и по Фаренгейту и как правильно их синхронизировать."
     },
@@ -3891,6 +3899,7 @@
       "tags": [
         "video",
         "react",
+        "react_state_management",
         "redux"
       ],
       "legend": "Вопрос: можно ли и нужно ли использовать локальный state в компонентах при использовании Redux? Краткий ответ: локальный state это нормально, используем!"
@@ -3902,6 +3911,7 @@
       "tags": [
         "video",
         "react",
+        "react_state_management",
         "redux"
       ],
       "legend": "Если мы решили хранить локальное состояние компонента где-то внутри компонента (а не в Redux), стоит ли это делать в this.state или завести отдельную переменную this.effectiveValue?"
@@ -3913,6 +3923,7 @@
       "tags": [
         "video",
         "react",
+        "react_state_management",
         "redux",
         "performance"
       ],
@@ -3925,17 +3936,19 @@
       "tags": [
         "video",
         "react",
+        "react_state_management",
         "redux",
         "performance"
       ],
       "legend": "В предыдущем выпуске подкаста мы разбирались с вопросом где разместить бизнес логику при использовании Redux. Но остались острые вопросы, которые я не успел осветить. Углубимся в тему ещё немного!"
     },
     {
-      "caption": "getDerivedStateFromState – или как сделать из простой проблемы сложную",
+      "caption": "getDerivedStateFromState – или как сделать из простой проблемы сложную (by Anton Korzunov aka Kashey)",
       "url": "https://habr.com/ru/post/353564/",
       "lang": "ru",
       "tags": [
         "react",
+        "react_state_management",
         "functional_programming",
         "rocket_science"
       ],
@@ -3947,6 +3960,7 @@
       "lang": "en",
       "tags": [
         "react",
+        "react_state_management",
         "redux",
         "performance"
       ],
@@ -3957,7 +3971,8 @@
       "url": "https://www.freecodecamp.org/news/where-do-i-belong-a-guide-to-saving-react-component-data-in-state-store-static-and-this-c49b335e2a00/",
       "lang": "en",
       "tags": [
-        "react"
+        "react",
+        "react_state_management"
       ],
       "legend": ""
     },
@@ -3977,6 +3992,7 @@
       "tags": [
         "video",
         "react",
+        "react_state_management",
         "react_router",
         "mobx",
         "rocket_science"
@@ -3984,16 +4000,17 @@
       "legend": ""
     },
     {
-      "caption": "How to handle state in React. The missing FAQ",
+      "caption": "How to handle state in React. The missing FAQ (by Osmel Mora)",
       "url": "https://medium.com/react-ecosystem/how-to-handle-state-in-react-6f2d3cd73a0c",
       "lang": "en",
       "tags": [
-        "react"
+        "react",
+        "react_state_management"
       ],
       "legend": ""
     },
     {
-      "caption": "Никто не знает CSS: специфичность — не каскад",
+      "caption": "Никто не знает CSS: специфичность — не каскад (Илья Стрельцын)",
       "url": "https://css-live.ru/css/nikto-ne-znaet-css-specifichnost-ne-kaskad.html",
       "lang": "ru",
       "tags": [
@@ -4026,7 +4043,8 @@
       "lang": "ru",
       "tags": [
         "audio",
-        "react"
+        "react",
+        "react_state_management"
       ],
       "legend": "Небольшая заметка, размышление на тему можно ли жить без внешнего контейнера состояния и какие при этом возникают проблемы и неудобства? Как организовывать код?"
     },
@@ -4255,7 +4273,8 @@
       "url": "https://reacttraining.com/blog/react-inline-functions-and-performance/",
       "lang": "en",
       "tags": [
-        "react"
+        "react",
+        "performance"
       ],
       "legend": ""
     },
@@ -4304,6 +4323,35 @@
       "tags": [
         "react",
         "react_hooks"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Further understanding reconciliation (by Dan Abramov)",
+      "url": "https://github.com/facebook/react/issues/11793#issuecomment-349955504",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": "Дэн Абрамов объясняет тонкости согласования React Virtual DOM"
+    },
+    {
+      "caption": "Does React keep the order for state updates? (by Dan Abramov)",
+      "url": "https://stackoverflow.com/questions/48563650/does-react-keep-the-order-for-state-updates/48610973#48610973",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_state_management"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "RFClarification: why is `setState` asynchronous? (by Dan Abramov)",
+      "url": "https://github.com/facebook/react/issues/11527#issuecomment-360199710",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_state_management"
       ],
       "legend": ""
     }
