@@ -21,10 +21,10 @@ type AsyncActionCreator = (...args: any[]) => Promise<any>;
 
 export type ActionCreatorGenericType<RS> = SyncActionCreator<RS> | AsyncActionCreator;
 
-type SubjectCaption = string;
-type SubjectLang = string;
+export type SubjectCaption = string;
+export type SubjectLang = string;
 type SubjectLegend = string;
-type SubjectUrl = string;
+export type SubjectUrl = string;
 type SubjectTag = string;
 
 export interface ISubjectSeriesItem {
@@ -40,15 +40,17 @@ interface IBaseSubject {
   tags: SubjectTag[];
 }
 
-interface ISimpleSublect extends IBaseSubject {
+interface ISingleSublect extends IBaseSubject {
+  series?: undefined;
   url: SubjectUrl;
 }
 
 interface ISeriesSubject extends IBaseSubject {
   series: ISubjectSeriesItem[];
+  url?: undefined;
 }
 
-export type ISubject = ISimpleSublect | ISeriesSubject;
+export type ISubject = ISingleSublect | ISeriesSubject;
 
 // TODO: remove in favor of native/React input element attributes type usage
 export type InputModeType = (

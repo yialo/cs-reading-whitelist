@@ -3,25 +3,31 @@ import classNames from 'classnames';
 
 import { ISubject } from 'ts/types';
 
+import { SubjectsSingleItem } from './Single';
+
 import style from './style.scss';
 
-interface IProps extends ISubject {
-  className?: string;
+interface ISubjectsItemProps {
+  subject: ISubject;
 }
 
-export const SubjectsItem: React.FC<IProps> = (props) => {
+export const SubjectsItem: React.FC<ISubjectsItemProps> = ({ subject }) => {
   const {
     caption,
-    className,
     lang,
     legend,
+    series,
     tags,
     url,
-  } = props;
+  } = subject;
 
   return (
-    <li className={classNames(style.root, className)}>
-      <a className={style.link} href={url} lang={lang}>{caption}</a>
+    <li className={style.root}>
+      {
+        series
+          ? <span>Серия ссылок</span>
+          : <SubjectsSingleItem {...{ caption, lang }} url={url as string} />
+      }
       {' '}
       <span className={classNames(style[`langBadge_${lang}`])}>
         {lang}
@@ -36,10 +42,4 @@ export const SubjectsItem: React.FC<IProps> = (props) => {
       </ul>
     </li>
   );
-};
-
-SubjectsItem.defaultProps = {
-  className: '',
-  legend: '',
-  tags: [],
 };

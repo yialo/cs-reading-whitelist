@@ -36,14 +36,7 @@ export const Subjects: React.FC<IProps> = ({
     <div className={classNames(style.root, className)}>
       <ul className={style.list}>
         {list.map((subject) => (
-          <SubjectsItem
-            key={subject.url}
-            caption={subject.caption}
-            lang={subject.lang}
-            legend={subject.legend}
-            tags={subject.tags}
-            url={subject.url}
-          />
+          <SubjectsItem key={subject.caption} subject={subject} />
         ))}
       </ul>
       {!isLastPage && (
