@@ -12,6 +12,8 @@ interface ISubjectsItemOfSeriesProps {
   subject: ISeriesSubject;
 }
 
+const BUTTON_KEYS = ['Enter', ' '];
+
 export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ subject }) => {
   const {
     caption,
@@ -36,7 +38,7 @@ export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ sub
           aria-expanded={isExpanded}
           onClick={revertState}
           onKeyDown={(event) => {
-            if (['Enter', ' '].includes(event.key)) {
+            if (BUTTON_KEYS.includes(event.key)) {
               revertState();
             }
           }}
