@@ -26,4 +26,4 @@ export const SingleSubjectsItem: React.FC<ISingleSubjectsItemProps> = ({ subject
   );
 };
 
-SingleSubjectsItem.displayName = 'single(SubjectsItem)';
+SingleSubjectsItem.displayName = 'SubjectsSingleItem';

@@ -69,4 +69,4 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject
   );
 };
 
-SeriesSubjectsItem.displayName = 'series(SubjectsItem)';
+SeriesSubjectsItem.displayName = 'SubjectsSeriesItem';
