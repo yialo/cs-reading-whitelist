@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { FILTERS, SORTING } from 'ts/constants';
-import { Button } from 'ts/components/Button';
+import { Button, MainButton } from 'ts/components/Button';
 import { TextInput } from 'ts/components/TextInput';
 import type { FilterName, SortingName } from 'ts/types';
 
@@ -75,7 +75,7 @@ export const ControlBar: React.FC<IProps> = ({
             }
 
             return (
-              <Button
+              <MainButton
                 key={name}
                 className={buttonClassName}
                 disabled={isCurrent}
@@ -86,7 +86,7 @@ export const ControlBar: React.FC<IProps> = ({
                 }}
               >
                 {legend}
-              </Button>
+              </MainButton>
             );
           })}
         </div>
@@ -109,11 +109,10 @@ export const ControlBar: React.FC<IProps> = ({
           {Object.entries(SORTING_ENUM).map(([name, legend]) => {
             const isCurrent = (name === sortingTarget);
             return (
-              <button
+              <Button
                 key={name}
                 className={style.sortingButton}
                 disabled={isCurrent}
-                type="button"
                 aria-checked={isCurrent}
                 role="radio"
                 onClick={() => {
@@ -121,7 +120,7 @@ export const ControlBar: React.FC<IProps> = ({
                 }}
               >
                 {`Сначала ${legend}`}
-              </button>
+              </Button>
             );
           })}
         </div>

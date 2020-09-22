@@ -3,34 +3,19 @@ import classNames from 'classnames';
 
 import style from './style.scss';
 
-interface IProps {
-  children?: React.ReactChild;
-  className?: string;
-  disabled?: boolean;
-  'aria-checked'?: boolean;
-  'aria-label'?: string;
-  role?: string;
-  onClick: () => void;
-}
+export type ButtonPropsType = React.ComponentPropsWithoutRef<'button'>;
 
-export const Button: React.FC<IProps> = ({
+export const Button: React.FC<ButtonPropsType> = ({
   children,
   className,
-  disabled,
-  'aria-checked': ariaChecked,
-  'aria-label': ariaLabel,
-  role,
-  onClick,
+  type,
+  ...propsRest
 }) => {
   return (
     <button
       className={classNames(style.root, className)}
-      disabled={disabled}
-      type="button"
-      aria-checked={ariaChecked}
-      aria-label={ariaLabel}
-      role={role}
-      onClick={onClick}
+      type={type}
+      {...propsRest}
     >
       {children}
     </button>
@@ -39,9 +24,5 @@ export const Button: React.FC<IProps> = ({
 
 Button.defaultProps = {
   className: '',
-  children: undefined,
-  disabled: false,
-  'aria-checked': undefined,
-  'aria-label': undefined,
-  role: undefined,
+  type: 'button',
 };

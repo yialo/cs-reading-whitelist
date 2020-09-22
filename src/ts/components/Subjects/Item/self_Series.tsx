@@ -8,13 +8,13 @@ import { SubjectsItemLink as Link } from './Link';
 
 import style from './style.scss';
 
-interface ISubjectsItemOfSeriesProps {
+interface ISeriesSubjectsItemProps {
   subject: ISeriesSubject;
 }
 
 const BUTTON_KEYS = ['Enter', ' '];
 
-export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ subject }) => {
+export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject }) => {
   const {
     caption,
     lang,
@@ -69,4 +69,4 @@ export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ sub
   );
 };
 
-SubjectsItemOfSeries.displayName = 'SubjectsItem_series';
+SeriesSubjectsItem.displayName = 'series(SubjectsItem)';
