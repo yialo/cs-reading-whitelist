@@ -11,7 +11,7 @@
 * Add tag cloud
 * Add search by url substring
 * Add check url duplications
-* (Maybe) Add `react-markdown` intergation
+* Add search with select element
 
 ## More far future
 
