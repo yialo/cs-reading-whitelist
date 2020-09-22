@@ -47,12 +47,7 @@ export const ControlBar: React.FC<IProps> = ({
   onSortingToggle,
 }) => {
   return (
-    <div
-      className={classNames(style.root, className)}
-      onSubmit={(evt) => {
-        evt.preventDefault();
-      }}
-    >
+    <div className={classNames(style.root, className)}>
       <div className={style.filter}>
         <span className={style.tip} id={filterGroupLabelId}>
           Цель поиска:
