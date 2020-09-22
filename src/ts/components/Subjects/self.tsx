@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Button } from 'ts/components/Button';
+import { MainButton } from 'ts/components/Button';
 import { ISubject } from 'ts/types';
 
 import { renderSubjectsItem } from './Item';
@@ -38,9 +38,9 @@ export const Subjects: React.FC<IProps> = ({
         {list.map((subject) => renderSubjectsItem(subject))}
       </ul>
       {!isLastPage && (
-        <Button className={style.button} onClick={onShowMoreClick}>
+        <MainButton className={style.button} onClick={onShowMoreClick}>
           Показать ещё
-        </Button>
+        </MainButton>
       )}
     </div>
   );

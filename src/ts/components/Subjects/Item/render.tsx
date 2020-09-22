@@ -2,8 +2,8 @@ import React from 'react';
 
 import type { ISubject } from 'ts/types';
 
-import { SubjectsItemOfSeries as Series } from './self_Series';
-import { SubjectsItemOfSingle as Single } from './self_Single';
+import { SeriesSubjectsItem as Series } from './self_Series';
+import { SingleSubjectsItem as Single } from './self_Single';
 
 export const renderSubjectsItem = (subject: ISubject): React.ReactNode => {
   if (subject.series) {

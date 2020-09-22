@@ -61,7 +61,7 @@
     border-bottom-color: transparent;
     transition: transform 0.2s;
 
-    .root:global(.isExpanded) & {
+    .isExpanded & {
       transform: rotate(90deg);
     }
   }

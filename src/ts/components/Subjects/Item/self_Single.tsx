@@ -5,11 +5,11 @@ import type { ISingleSublect } from 'ts/types';
 import { SubjectsItemAppendix as Appendix } from './Appendix';
 import { SubjectsItemLink as Link } from './Link';
 
-interface ISubjectsItemOfSingleProps {
+interface ISingleSubjectsItemProps {
   subject: ISingleSublect;
 }
 
-export const SubjectsItemOfSingle: React.FC<ISubjectsItemOfSingleProps> = ({ subject }) => {
+export const SingleSubjectsItem: React.FC<ISingleSubjectsItemProps> = ({ subject }) => {
   const {
     caption,
     lang,
@@ -26,4 +26,4 @@ export const SubjectsItemOfSingle: React.FC<ISubjectsItemOfSingleProps> = ({ sub
   );
 };
 
-SubjectsItemOfSingle.displayName = 'SubjectsItem_single';
+SingleSubjectsItem.displayName = 'single(SubjectsItem)';
