@@ -28,17 +28,19 @@ const selectFilteredList = createSelector(
     listSelector.filterName,
   ],
   (fullList, searchString, filterName) => fullList.filter((item) => {
-    const matcher = new RegExp(searchString, 'gi');
+    const matcher = searchString.toLowerCase();
+
     switch (filterName) {
       case FILTERS.CAPTION: {
-        const hasMatchInMainCaption = item.caption.match(matcher);
-        return hasMatchInMainCaption || item.series?.some((it) => it.caption.match(matcher));
+        const hasMatchInMainCaption = item.caption.toLowerCase().includes(matcher);
+        return hasMatchInMainCaption
+          || item.series?.some((it) => it.caption.toLowerCase().includes(matcher));
       }
 
       case FILTERS.HASHTAG: {
-        const hasMatchInMainTags = item.tags.some((tag) => tag.match(matcher));
+        const hasMatchInMainTags = item.tags.some((tag) => tag.toLowerCase().includes(matcher));
         return hasMatchInMainTags
-          || item.series?.some((it) => it.tags?.some((tag) => tag.match(matcher)));
+          || item.series?.some((it) => it.tags?.some((tag) => tag.toLowerCase().includes(matcher)));
       }
 
       default:

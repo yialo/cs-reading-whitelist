@@ -46,6 +46,12 @@ const INITIAL_STATE = {
   sortingName: SORTING.NEW,
 };
 
+/** TODO:
+ * 1). Add action to prevent filtering when empty string passed
+ * 2). Add series subject handlin logics based on whether search started or not
+ */
+
+
 export const listReducer = (
   prevState: IListState | undefined,
   action: ListAction,
