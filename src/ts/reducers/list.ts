@@ -46,6 +46,8 @@ const INITIAL_STATE = {
   sortingName: SORTING.NEW,
 };
 
+// TODO: add action to prevent filtering when empty string passed
+
 export const listReducer = (
   prevState: IListState | undefined,
   action: ListAction,
