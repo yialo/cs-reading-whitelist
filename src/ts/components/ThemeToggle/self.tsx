@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Button } from 'ts/components/Button';
+import { MainButton } from 'ts/components/Button';
 
 import style from './style.scss';
 
@@ -13,13 +13,13 @@ interface IProps {
 
 export const ThemeToggle: React.FC<IProps> = ({ className, isDark, onToggle }) => {
   return (
-    <Button
+    <MainButton
       className={classNames(style.root, className)}
       aria-label={`Перейти к ${isDark ? 'светлой' : 'тёмной'} теме`}
       onClick={onToggle}
     >
       {`Go ${isDark ? 'light' : 'dark'}`}
-    </Button>
+    </MainButton>
   );
 };
 
