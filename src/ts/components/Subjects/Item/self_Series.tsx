@@ -30,7 +30,7 @@ export const SubjectsItemOfSeries: React.FC<ISubjectsItemOfSeriesProps> = ({ sub
   };
 
   return (
-    <li className={classNames(style.root_series, { 'isExpanded': isExpanded })}>
+    <li className={classNames(style.root_series, { [style.isExpanded]: isExpanded })}>
       <div className={style.series}>
         <span
           className={style.seriesButton}
