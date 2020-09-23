@@ -17,6 +17,9 @@
       "@/*": [
         "./*"
       ],
+      "common/*": [
+        "./ts/components/common/*"
+      ],
       "scss/*": [
         "./scss/*"
       ],

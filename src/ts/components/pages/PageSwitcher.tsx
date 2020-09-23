@@ -4,7 +4,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import { ROUTES } from 'ts/constants';
 
 // import { ClassNamesPage } from './ClassNamesPage';
-import { LinkListPage } from './LinkListPage';
+import { LinkListPage } from './link-list';
 
 const Stub: React.FC = () => {
   const style = {

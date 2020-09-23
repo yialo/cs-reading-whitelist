@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import { Button, MainButton } from 'common/Button';
+import { TextInput } from 'common/TextInput';
 import { FILTERS, SORTING } from 'ts/constants';
-import { Button, MainButton } from 'ts/components/Button';
-import { TextInput } from 'ts/components/TextInput';
 import type { FilterName, SortingName } from 'ts/types';
 
 import { ControlBarAmountMeter as AmountMeter } from './AmountMeter';
