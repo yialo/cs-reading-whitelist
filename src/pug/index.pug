@@ -6,16 +6,8 @@ html.Page(lang='ru')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     title Yialo's Reading Whitelist
-
-    - const { fonts } = require('@/fonts/fonts.json');
-    - for (const { fileNameBase, sets } of fonts)
-      - for (const { weight, style } of sets)
-        link(
-          rel='preload',
-          href=require(`@/fonts/${fileNameBase}_${weight}_${style}.woff2`).default,
-          as='font',
-          crossorigin='anonymous',
-        )
+    include ./fonts.pug
+    include ./favicons.pug
   body.Page-body
     .Page-root(id='app-root')
     .Page-overlay(id='overlay', role='status')
