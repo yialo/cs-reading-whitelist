@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { MainButton } from 'ts/components/Button';
+import { MainButton } from 'common/Button';
 import { ISubject } from 'ts/types';
 
 import { renderSubjectsItem } from './Item';

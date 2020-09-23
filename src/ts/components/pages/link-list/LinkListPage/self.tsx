@@ -5,9 +5,6 @@ import { useSelector } from 'react-redux';
 // TODO: move specific components to page dir
 
 import * as actionCreators from 'ts/actionCreators';
-import { ControlBar } from 'ts/components/ControlBar';
-import { Preloader } from 'ts/components/Preloader';
-import { Subjects } from 'ts/components/Subjects';
 import { LIST_PAGE_SIZE } from 'ts/constants';
 import { useActions } from 'ts/hooks';
 import type { ActionCreatorType } from 'ts/reducers';
@@ -18,6 +15,10 @@ import {
   getVisibleList,
   listSelector,
 } from 'ts/selectors';
+
+import { ControlBar } from '../ControlBar';
+import { Preloader } from '../Preloader';
+import { Subjects } from '../Subjects';
 
 import style from './style.scss';
 

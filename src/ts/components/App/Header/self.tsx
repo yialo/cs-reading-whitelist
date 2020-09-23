@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 import * as actionCreators from 'ts/actionCreators';
 import { AppNavMenu as NavMenu } from '../NavMenu';
-import { ThemeToggle } from 'ts/components/ThemeToggle';
+import { ThemeToggle } from '../ThemeToggle';
 import { useActions } from 'ts/hooks';
 import type { ActionCreatorType } from 'ts/reducers';
 import { themeSelector } from 'ts/selectors';

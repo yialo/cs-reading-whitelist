@@ -26,6 +26,7 @@ const PATH = {
 
 const ALIAS = {
   '@': PATH.SRC,
+  'common': path.join(PATH.SRC, 'ts/components/common'),
   'react-dom': '@hot-loader/react-dom',
   'scss': path.join(PATH.SRC, 'scss'),
   'ts': path.join(PATH.SRC, 'ts'),
