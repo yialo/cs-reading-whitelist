@@ -3952,6 +3952,16 @@
         "react",
         "react_state_management"
       ]
+    },
+    {
+      "caption": "A Complete Guide to useEffect (by Dan Abramov)",
+      "url": "https://overreacted.io/a-complete-guide-to-useeffect/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks"
+      ],
+      "legend": ""
     }
   ]
 }
