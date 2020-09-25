@@ -3962,6 +3962,45 @@
         "react_hooks"
       ],
       "legend": ""
+    },
+    {
+      "caption": "Developing UI (by Adam Morse)",
+      "url": "http://mrmrs.cc/writing/developing-ui/",
+      "lang": "en",
+      "tags": [
+        "testing",
+        "code_quality",
+        "ux_ui"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The Elements of UI Engineering (by Dan Abramov)",
+      "url": "https://overreacted.io/the-elements-of-ui-engineering/",
+      "lang": "en",
+      "tags": [
+        "ux_ui"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "React as a UI Runtime (by Dan Abramov)",
+      "url": "https://overreacted.io/react-as-a-ui-runtime/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Why Do React Elements Have a $$typeof Property? (by Dan Abramov)",
+      "url": "https://overreacted.io/why-do-react-elements-have-typeof-property/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "security"
+      ],
+      "legend": ""
     }
   ]
 }
