@@ -4,11 +4,10 @@
 * Move browser bookmarks related to computer science and userful services here
 * Add volume with interesting fonts
 * Add optional **author** field and sorting by author
-* Organize article chains to dropdownable collections
 * Add tag cloud
+* Add search with select element
 * Add search by url substring
 * Add check url duplications
-* Add search with select element
 * Add extended favicon set
 * Add database integration
   * connect of Firebase
