@@ -1,5 +1,6 @@
 # Todo list
 
+* Add `hreflang` to subject anchors
 * Merge *css-common-classnames* project into this
 * Move browser bookmarks related to computer science and userful services here
 * Add volume with interesting fonts
