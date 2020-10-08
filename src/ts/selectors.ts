@@ -63,15 +63,9 @@ export const selectSortedList = createSelector(
     listSelector.sortingName,
     listSelector.page,
   ],
-  (filteredList, sortingName) => {
-    let sortedList = [...filteredList];
-
-    if (sortingName === SORTING.NEW) {
-      sortedList = sortedList.reverse();
-    }
-
-    return sortedList;
-  },
+  (filteredList, sortingName) => (
+    sortingName === SORTING.NEW ? [...filteredList].reverse() : filteredList
+  ),
 );
 
 export const getSortedAmount = createSelector(
