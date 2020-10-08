@@ -11,7 +11,7 @@ $pageContentMaxWidth: 672px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: $pageContentMaxWidth;
+  max-width: utils.$viewport-sm-max;
   padding-left: var(--size-paddingX);
   padding-right: var(--size-paddingX);
   background-color: var(--color-background);

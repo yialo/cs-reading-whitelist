@@ -10,9 +10,14 @@ interface IListState {
   sortingName: SortingName;
 }
 
-interface IListSearchAction extends IAction {
-  type: typeof ACTION_TYPES.LIST_SEARCH;
+interface IListSearchNextAction extends IAction {
+  type: typeof ACTION_TYPES.LIST_SEARCH_NEXT;
   payload: SearchString;
+}
+
+interface IListSearchResetAction extends IAction {
+  type: typeof ACTION_TYPES.LIST_SEARCH_RESET;
+  payload?: undefined;
 }
 
 interface IListFilterAction extends IAction {
@@ -32,7 +37,8 @@ interface IListPageAction extends IAction {
 
 type ListAction = (
   | IListFilterAction
-  | IListSearchAction
+  | IListSearchNextAction
+  | IListSearchResetAction
   | IListSortingAction
   | IListPageAction
 );
@@ -51,7 +57,6 @@ const INITIAL_STATE = {
  * 2). Add series subject handlin logics based on whether search started or not
  */
 
-
 export const listReducer = (
   prevState: IListState | undefined,
   action: ListAction,
@@ -60,11 +65,19 @@ export const listReducer = (
   const { type, payload } = action;
 
   switch (type) {
-    case ACTION_TYPES.LIST_SEARCH: {
+    case ACTION_TYPES.LIST_SEARCH_NEXT: {
       return {
         ...state,
         page: INITIAL_PAGE,
         searchString: payload as SearchString,
+      };
+    }
+
+    case ACTION_TYPES.LIST_SEARCH_RESET: {
+      return {
+        ...state,
+        page: INITIAL_PAGE,
+        searchString: '',
       };
     }
 

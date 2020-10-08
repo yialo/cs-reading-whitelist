@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import classNames from 'classnames';
+import { useSelector } from 'react-redux';
 
+import { listSelector } from 'ts/selectors';
 import type { ISeriesSubject } from 'ts/types';
 
 import { SubjectsItemAppendix as Appendix } from './Appendix';
@@ -23,10 +25,25 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject
     tags,
   } = subject;
 
-  const [isExpanded, setIsExpanded] = useState(true);
+  const isSearchBegins = !!useSelector(listSelector.searchString);
+  const [state, setState] = useState(false);
 
-  const revertState = () => {
-    setIsExpanded((prev) => !prev);
+  const hasNoStateChangesYetRef = useRef(true);
+
+  const isExpanded = hasNoStateChangesYetRef.current
+    ? isSearchBegins
+    : state;
+
+  const handleExpansion = () => {
+    if (hasNoStateChangesYetRef.current && isExpanded) {
+      setState(false);
+    } else {
+      setState((prev) => !prev);
+    }
+
+    if (hasNoStateChangesYetRef.current) {
+      hasNoStateChangesYetRef.current = false;
+    }
   };
 
   return (
@@ -36,10 +53,10 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject
           className={style.seriesButton}
           role="button"
           aria-expanded={isExpanded}
-          onClick={revertState}
+          onClick={handleExpansion}
           onKeyDown={(event) => {
             if (BUTTON_KEYS.includes(event.key)) {
-              revertState();
+              handleExpansion();
             }
           }}
           tabIndex={0}

@@ -35,6 +35,8 @@ const SORTING_ENUM = {
 const filterGroupLabelId = 'filter-group-label';
 const sortingGroupLabelId = 'sorting-group-label';
 
+// TODO: set focus on input when component mounts
+
 export const ControlBar: React.FC<IProps> = ({
   className,
   filterTarget,
