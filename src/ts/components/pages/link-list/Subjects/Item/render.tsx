@@ -1,14 +1,24 @@
 import React from 'react';
 
-import type { ISubject } from 'ts/types';
+import type { ISubject, ISingleSublect, ISeriesSubject } from 'ts/types';
 
 import { SeriesSubjectsItem as Series } from './self_Series';
 import { SingleSubjectsItem as Single } from './self_Single';
 
+interface ISingleSublectAttrs<S> {
+  key: string;
+  subject: S;
+}
+
 export const renderSubjectsItem = (subject: ISubject): React.ReactNode => {
+  const attrs = {
+    key: subject.caption,
+    subject,
+  };
+
   if (subject.series) {
-    return <Series key={subject.caption} subject={subject} />;
+    return <Series {...attrs as ISingleSublectAttrs<ISeriesSubject>} />;
   }
 
-  return <Single key={subject.caption} subject={subject} />;
+  return <Single {...attrs as ISingleSublectAttrs<ISingleSublect>} />;
 };

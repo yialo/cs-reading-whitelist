@@ -52,16 +52,3 @@ export interface ISeriesSubject extends IBaseSubject {
 }
 
 export type ISubject = ISingleSublect | ISeriesSubject;
-
-// TODO: remove in favor of native/React input element attributes type usage
-export type InputModeType = (
-  | 'decimal'
-  | 'email'
-  | 'none'
-  | 'numeric'
-  | 'search'
-  | 'tel'
-  | 'text'
-  | 'url'
-  | undefined
-);

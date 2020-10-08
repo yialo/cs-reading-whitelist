@@ -1,14 +1,11 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { InputModeType } from 'ts/types';
-
 import style from './style.scss';
 
 interface IProps {
   className?: string;
-  // TODO: add correct type from @types/react or DOM instead of inline
-  inputMode: InputModeType;
+  inputMode: React.HTMLAttributes<HTMLInputElement>['inputMode'];
   legend: string;
   tipChar?: string;
   value: string;
