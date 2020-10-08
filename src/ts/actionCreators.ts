@@ -9,12 +9,8 @@ import type {
 } from './types';
 
 export const searchInList: SyncActionCreatorType = (nextSearchString: string) => {
-  if (nextSearchString === '') {
-    return { type: ACTION_TYPES.LIST_SEARCH_RESET };
-  }
-
   return {
-    type: ACTION_TYPES.LIST_SEARCH_NEXT,
+    type: ACTION_TYPES.LIST_SEARCH,
     payload: nextSearchString,
   };
 };

@@ -1,6 +1,5 @@
 export const ACTION_TYPES = {
-  LIST_SEARCH_NEXT: 'list:search-next',
-  LIST_SEARCH_RESET: 'list:search-reset',
+  LIST_SEARCH: 'list:search',
   LIST_FILTER_TOGGLE: 'list:filter-toggle',
   LIST_SORTING_TOGGLE: 'list:sorting-toggle',
   LIST_NEXT_PAGE: 'list:next-page',

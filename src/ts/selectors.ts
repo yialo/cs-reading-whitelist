@@ -27,26 +27,34 @@ const selectFilteredList = createSelector(
     listSelector.searchString,
     listSelector.filterName,
   ],
-  (fullList, searchString, filterName) => fullList.filter((item) => {
+  (fullList, searchString, filterName) => {
     const matcher = searchString.toLowerCase();
 
-    switch (filterName) {
-      case FILTERS.CAPTION: {
-        const hasMatchInMainCaption = item.caption.toLowerCase().includes(matcher);
-        return hasMatchInMainCaption
-          || item.series?.some((it) => it.caption.toLowerCase().includes(matcher));
-      }
-
-      case FILTERS.HASHTAG: {
-        const hasMatchInMainTags = item.tags.some((tag) => tag.toLowerCase().includes(matcher));
-        return hasMatchInMainTags
-          || item.series?.some((it) => it.tags?.some((tag) => tag.toLowerCase().includes(matcher)));
-      }
-
-      default:
-        return true;
+    if (matcher === '') {
+      return fullList;
     }
-  }),
+
+    return fullList.filter((item) => {
+      switch (filterName) {
+        case FILTERS.CAPTION: {
+          const hasMatchInMainCaption = item.caption.toLowerCase().includes(matcher);
+          return hasMatchInMainCaption
+            || item.series?.some((it) => it.caption.toLowerCase().includes(matcher));
+        }
+
+        case FILTERS.HASHTAG: {
+          const hasMatchInMainTags = item.tags.some((tag) => tag.toLowerCase().includes(matcher));
+          return hasMatchInMainTags
+            || item.series?.some((it) => (
+              it.tags?.some((tag) => tag.toLowerCase().includes(matcher))
+            ));
+        }
+
+        default:
+          return true;
+      }
+    });
+  },
 );
 
 export const selectSortedList = createSelector(
