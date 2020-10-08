@@ -1,33 +1,34 @@
 import { ACTION_TYPES } from './constants';
-import type { ActionCreatorType } from './reducers';
+import type { SyncActionCreatorType } from './reducers';
 
 import type {
-  ISubject,
+  AsyncActionCreatorType,
   FilterName,
   SortingName,
+  ISubject,
 } from './types';
 
-export const searchInList: ActionCreatorType = (nextSearchString: string) => ({
+export const searchInList: SyncActionCreatorType = (nextSearchString: string) => ({
   type: ACTION_TYPES.LIST_SEARCH,
   payload: nextSearchString,
 });
 
-export const toggleFilter: ActionCreatorType = (nextFilterName: FilterName) => ({
+export const toggleFilter: SyncActionCreatorType = (nextFilterName: FilterName) => ({
   type: ACTION_TYPES.LIST_FILTER_TOGGLE,
   payload: nextFilterName,
 });
 
 
-export const toggleSorting: ActionCreatorType = (nextSortingName: SortingName) => ({
+export const toggleSorting: SyncActionCreatorType = (nextSortingName: SortingName) => ({
   type: ACTION_TYPES.LIST_SORTING_TOGGLE,
   payload: nextSortingName,
 });
 
-export const showNextListPage: ActionCreatorType = () => ({
+export const showNextListPage: SyncActionCreatorType = () => ({
   type: ACTION_TYPES.LIST_NEXT_PAGE,
 });
 
-export const toggleTheme: ActionCreatorType = () => ({
+export const toggleTheme: SyncActionCreatorType = () => ({
   type: ACTION_TYPES.THEME_TOGGLE,
 });
 
@@ -35,7 +36,7 @@ interface SubjectsApiResponse {
   data: ISubject[];
 }
 
-export const fetchSubjects: ActionCreatorType = () => async (dispatch): Promise<void> => {
+export const fetchSubjects: AsyncActionCreatorType = () => async (dispatch) => {
   const apiUrl = `${process.env.PUBLIC_PATH as string}response/subjects.json?${Date.now()}`;
   try {
     const response = await window.fetch(apiUrl);

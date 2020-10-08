@@ -1,15 +1,14 @@
 import { useMemo } from 'react';
 import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import type { ActionCreatorsMapObject } from 'redux';
 
-import type { ActionCreatorType } from 'ts/reducers';
-
-type ActionCreatorCollection = ActionCreatorType[] | { [creatorName: string]: ActionCreatorType };
-
-export const useActions = (actionCreators: ActionCreatorCollection): ReturnType<typeof useMemo> => {
+export const useActions = <T>(
+  actionCreators: T,
+): ActionCreatorsMapObject => {
   const dispatch = useDispatch();
 
-  return useMemo(
+  return useMemo<ActionCreatorsMapObject<T>>(
     () => {
       if (Array.isArray(actionCreators)) {
         return actionCreators.map((creator) => bindActionCreators(creator, dispatch));

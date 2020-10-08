@@ -1,2 +1,2 @@
 export { rootReducer } from './root';
-export type { ActionCreatorType, RootState } from './root';
+export type { ActionCreatorType, SyncActionCreatorType, RootState } from './root';

@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import * as actionCreators from 'ts/actionCreators';
 import { LIST_PAGE_SIZE } from 'ts/constants';
 import { useActions } from 'ts/hooks';
-import type { ActionCreatorType } from 'ts/reducers';
+import type { SyncActionCreatorType } from 'ts/reducers';
 import {
   fetchSelector,
   getIsLastPage,
@@ -15,6 +15,7 @@ import {
   getVisibleList,
   listSelector,
 } from 'ts/selectors';
+import type { AsyncActionCreatorType } from 'ts/types';
 
 import { ControlBar } from '../ControlBar';
 import { Preloader } from '../Preloader';
@@ -24,6 +25,14 @@ import style from './style.scss';
 
 interface IProps {
   className?: string;
+}
+
+interface IActionCreatorsInputMap {
+  fetchSubjects: AsyncActionCreatorType;
+  searchInList: SyncActionCreatorType;
+  showNextListPage: SyncActionCreatorType;
+  toggleFilter: SyncActionCreatorType;
+  toggleSorting: SyncActionCreatorType;
 }
 
 export const LinkListPage: React.FC<IProps> = ({ className }) => {
@@ -43,9 +52,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
     showNextListPage,
     toggleFilter,
     toggleSorting,
-  } = useActions(actionCreators) as {
-    [key: string]: ActionCreatorType;
-  };
+  } = useActions<IActionCreatorsInputMap>(actionCreators);
 
   const visibleAmount = isLastPage ? sortedAmount : (LIST_PAGE_SIZE * page);
 
@@ -54,7 +61,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
   };
 
   useEffect(() => {
-    fetchSubjects();
+    void (fetchSubjects as SyncActionCreatorType)();
   }, [fetchSubjects]);
 
   return (
