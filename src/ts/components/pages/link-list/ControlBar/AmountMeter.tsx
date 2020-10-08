@@ -17,14 +17,11 @@ export const ControlBarAmountMeter: React.FC<IProps> = ({
 
   return (
     <p className={style.amountMeter}>
-      {isAllVisible && (
-        `Всего ${totalAmount}, показаны все${isFiltered ? ' совпадения' : ''}`
-      )}
-      {!isAllVisible && (
-        isFiltered
-          ? `Показано ${visibleAmount} из ${totalAmount} совпадений`
-          : `Показаны первые ${visibleAmount} из ${totalAmount}`
-      )}
+      {
+        isAllVisible
+          ? `Всего ${totalAmount}, показаны все${isFiltered ? ' совпадения' : ''}`
+          : `Показано: ${visibleAmount} из ${totalAmount}${isFiltered ? ' совпадений' : ''}`
+      }
     </p>
   );
 };

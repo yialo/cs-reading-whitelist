@@ -1,8 +1,10 @@
+import type { AnyAction } from 'redux';
+
 import { ACTION_TYPES, FILTERS, SORTING } from './constants';
 
 export type $Values<O> = O[keyof O];
 
-export interface IAction {
+export interface IAction extends AnyAction {
   type: $Values<typeof ACTION_TYPES>;
   payload?: any;
 }
@@ -13,13 +15,13 @@ export type SortingName = $Values<typeof SORTING>;
 type Dispatch = (action: IAction) => void;
 type StateGetter<RS> = () => RS;
 
-type SyncActionCreator<RS> = (...args: any[]) => (
+export type SyncActionCreatorGenericType<RS> = (...args: any[]) => (
   | IAction
   | ((dispatch: Dispatch, getState: StateGetter<RS>) => void)
 );
-type AsyncActionCreator = (...args: any[]) => Promise<any>;
 
-export type ActionCreatorGenericType<RS> = SyncActionCreator<RS> | AsyncActionCreator;
+type AsyncAction = (dispatch: Dispatch) => Promise<void>;
+export type AsyncActionCreatorType = (...args: any[]) => AsyncAction;
 
 export type SubjectCaption = string;
 export type SubjectLang = string;
@@ -52,16 +54,3 @@ export interface ISeriesSubject extends IBaseSubject {
 }
 
 export type ISubject = ISingleSublect | ISeriesSubject;
-
-// TODO: remove in favor of native/React input element attributes type usage
-export type InputModeType = (
-  | 'decimal'
-  | 'email'
-  | 'none'
-  | 'numeric'
-  | 'search'
-  | 'tel'
-  | 'text'
-  | 'url'
-  | undefined
-);
