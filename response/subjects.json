@@ -2553,16 +2553,6 @@
       ]
     },
     {
-      "caption": "Карманное руководство по написанию SVG",
-      "url": "https://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-vvedenie.html",
-      "lang": "ru",
-      "tags": [
-        "graphics",
-        "svg",
-        "4consider"
-      ]
-    },
-    {
       "caption": "Структурирование, группировка и привязка в SVG — элементы '<g>', '<use>', '<defs>' и '<symbol>'",
       "url": "https://habr.com/ru/post/230443/",
       "lang": "ru",
