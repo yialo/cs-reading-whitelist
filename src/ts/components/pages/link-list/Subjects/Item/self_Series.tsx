@@ -26,19 +26,19 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject
   } = subject;
 
   const isSearchBegins = !!useSelector(listSelector.searchString);
-  const [state, setState] = useState(false);
+  const [state, setState] = useState({ isExpanded: false });
 
   const hasNoStateChangesYetRef = useRef(true);
 
   const isExpanded = hasNoStateChangesYetRef.current
     ? isSearchBegins
-    : state;
+    : state.isExpanded;
 
   const handleExpansion = () => {
-    if (hasNoStateChangesYetRef.current && isExpanded) {
-      setState(false);
+    if (hasNoStateChangesYetRef.current) {
+      setState({ isExpanded: false });
     } else {
-      setState((prev) => !prev);
+      setState((prev) => ({ isExpanded: !prev.isExpanded }));
     }
 
     if (hasNoStateChangesYetRef.current) {
