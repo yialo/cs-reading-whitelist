@@ -60,9 +60,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
   return (
     <main className={classNames(style.root, className)}>
       <div className={style.header}>
-        <h1 className={style.headline} lang="en">
-          Computer Science Reading Whitelist
-        </h1>
+        <h1 className={style.headline}>Полезные материалы по Computer Science</h1>
       </div>
       {!isFetchComplete && (
         <Preloader />
