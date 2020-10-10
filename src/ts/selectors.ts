@@ -1,8 +1,9 @@
 import { createSelector } from 'reselect';
 
-import { FILTERS, SORTING, LIST_PAGE_SIZE } from './constants';
-import type { RootState } from './reducers';
-import type { ISubject, FilterName, SortingName } from './types';
+import { FILTERS, SORTING, LIST_PAGE_SIZE } from 'ts/constants';
+import type { ISubject, FilterName, SortingName } from 'ts/types';
+
+import type { RootState } from './store/reducers';
 
 export const fetchSelector = {
   error: (state: RootState): Error | null => state.fetch.error,

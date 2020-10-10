@@ -4,10 +4,10 @@ import { useSelector } from 'react-redux';
 
 // TODO: move specific components to page dir
 
-import * as actionCreators from 'ts/actionCreators';
+import * as actionCreators from 'ts/store/actionCreators';
 import { LIST_PAGE_SIZE } from 'ts/constants';
 import { useActions } from 'ts/hooks';
-import type { SyncActionCreatorType } from 'ts/reducers';
+import type { SyncActionCreatorType } from 'ts/store/reducers';
 import {
   fetchSelector,
   getIsLastPage,
@@ -15,7 +15,7 @@ import {
   getVisibleList,
   listSelector,
 } from 'ts/selectors';
-import type { AsyncActionCreatorType } from 'ts/types';
+import type { AsyncActionCreatorType } from 'ts/store/types';
 
 import { ControlBar } from '../ControlBar';
 import { Preloader } from '../Preloader';

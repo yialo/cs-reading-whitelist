@@ -1,7 +1,5 @@
-import { ACTION_TYPES } from 'ts/constants';
-import { IAction } from 'ts/types';
-
-type IThemeAction = Omit<IAction, 'payload'>;
+import { ACTION_TYPES } from '../actionTypes';
+import type { IAction } from '../types';
 
 interface IThemeState {
   isDark: boolean;
@@ -13,10 +11,10 @@ const INITIAL_STATE = {
 
 export const themeReducer = (
   prevState: IThemeState | undefined,
-  action: IThemeAction,
+  action: IAction,
 ): IThemeState => {
   const state = prevState ?? INITIAL_STATE;
-  if (action.type === ACTION_TYPES.THEME_TOGGLE) {
+  if (action.type === ACTION_TYPES.THEME.TOGGLE) {
     return {
       ...state,
       isDark: !state.isDark,

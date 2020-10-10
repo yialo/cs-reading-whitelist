@@ -2,11 +2,11 @@ import React from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
-import * as actionCreators from 'ts/actionCreators';
+import * as actionCreators from 'ts/store/actionCreators';
 import { AppNavMenu as NavMenu } from '../NavMenu';
 import { ThemeToggle } from '../ThemeToggle';
 import { useActions } from 'ts/hooks';
-import type { ActionCreatorType } from 'ts/reducers';
+import type { ActionCreatorType } from 'ts/store/reducers';
 import { themeSelector } from 'ts/selectors';
 
 import style from './style.scss';

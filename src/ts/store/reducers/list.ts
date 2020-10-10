@@ -1,5 +1,7 @@
-import { ACTION_TYPES, FILTERS, SORTING } from 'ts/constants';
+import { FILTERS, SORTING } from 'ts/constants';
 import type { IAction, FilterName, SortingName } from 'ts/types';
+
+import { ACTION_TYPES } from '../actionTypes';
 
 type SearchString = string;
 
@@ -11,22 +13,22 @@ interface IListState {
 }
 
 interface IListSearchAction extends IAction {
-  type: typeof ACTION_TYPES.LIST_SEARCH;
+  type: typeof ACTION_TYPES.LIST.SEARCH;
   payload: SearchString;
 }
 
 interface IListFilterAction extends IAction {
-  type: typeof ACTION_TYPES.LIST_FILTER_TOGGLE;
+  type: typeof ACTION_TYPES.LIST.FILTER_TOGGLE;
   payload: FilterName;
 }
 
 interface IListSortingAction extends IAction {
-  type: typeof ACTION_TYPES.LIST_SORTING_TOGGLE;
+  type: typeof ACTION_TYPES.LIST.SORTING_TOGGLE;
   payload: SortingName;
 }
 
 interface IListPageAction extends IAction {
-  type: typeof ACTION_TYPES.LIST_NEXT_PAGE;
+  type: typeof ACTION_TYPES.LIST.NEXT_PAGE;
   payload?: undefined;
 }
 
@@ -51,33 +53,32 @@ export const listReducer = (
   action: ListAction,
 ): IListState => {
   const state = prevState ?? INITIAL_STATE;
-  const { type, payload } = action;
 
-  switch (type) {
-    case ACTION_TYPES.LIST_SEARCH: {
+  switch (action.type) {
+    case ACTION_TYPES.LIST.SEARCH: {
       return {
         ...state,
         page: INITIAL_PAGE,
-        searchString: payload as SearchString,
+        searchString: action.payload,
       };
     }
 
-    case ACTION_TYPES.LIST_FILTER_TOGGLE: {
+    case ACTION_TYPES.LIST.FILTER_TOGGLE: {
       return {
         ...state,
-        filterName: payload as FilterName,
+        filterName: action.payload,
         page: INITIAL_PAGE,
       };
     }
 
-    case ACTION_TYPES.LIST_SORTING_TOGGLE: {
+    case ACTION_TYPES.LIST.SORTING_TOGGLE: {
       return {
         ...state,
-        sortingName: payload as SortingName,
+        sortingName: action.payload,
       };
     }
 
-    case ACTION_TYPES.LIST_NEXT_PAGE: {
+    case ACTION_TYPES.LIST.NEXT_PAGE: {
       return {
         ...state,
         page: state.page + 1,
