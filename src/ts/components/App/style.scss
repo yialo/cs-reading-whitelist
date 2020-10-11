@@ -1,7 +1,7 @@
 @use "~scss/utils";
 
 .root {
-  --color_caption: #{utils.$color-light-textCaption};
+  --color_text-caption: #{utils.$color-light-textCaption};
   --color_background-global: #{utils.$color-light-backgroundGlobal};
   --color_background-secondary: #{utils.$color-light-backgroundSecondary};
   --color_text: #{utils.$color-light-text};
@@ -15,7 +15,7 @@
   background-color: var(--color_background-global);
 
   &:global(.hasDarkTheme) {
-    --color_caption: #{utils.$color-dark-textCaption};
+    --color_text-caption: #{utils.$color-dark-textCaption};
     --color_background-global: #{utils.$color-dark-backgroundGlobal};
     --color_background-secondary: #{utils.$color-dark-backgroundSecondary};
     --color_text: #{utils.$color-dark-text};

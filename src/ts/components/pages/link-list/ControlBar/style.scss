@@ -83,7 +83,7 @@
 .sortingButton {
   position: relative;
   text-align: left;
-  color: var(--color_caption);
+  color: var(--color_text-caption);
   background-color: transparent;
 
   &::before {
@@ -96,17 +96,17 @@
   }
 
   &:disabled {
-    --color_caption: #{utils.$color-light-textCaptionAlpha};
+    --color_text-caption: #{utils.$color-light-textCaptionAlpha};
 
     @include utils.darkTheme() {
-      --color_caption: #{utils.$color-dark-textCaptionAlpha};
+      --color_text-caption: #{utils.$color-dark-textCaptionAlpha};
     }
 
     &::before {
       background-color: transparent;
       background-image: repeating-linear-gradient(
         to right,
-        var(--color_caption) 0 3px,
+        var(--color_text-caption) 0 3px,
         transparent 3px 5px,
       );
     }

@@ -43,7 +43,7 @@
   position: relative;
   display: inline;
   padding-left: var(--size_paddingLeft);
-  color: var(--color_caption);
+  color: var(--color_text-caption);
   cursor: pointer;
 
   &::before {
@@ -51,7 +51,7 @@
     position: absolute;
     top: calc(50% - var(--size_halfTriangle));
     left: var(--size_halfTriangle);
-    border: var(--size_halfTriangle) solid var(--color_caption);
+    border: var(--size_halfTriangle) solid var(--color_text-caption);
     border-right-width: 0;
     border-top-color: transparent;
     border-bottom-color: transparent;
