@@ -728,11 +728,11 @@ export const CONTENTS: INamingPageContensItem[] = [
     items: [
       {
         title: 'Таблица',
-        names: [`table`],
+        names: ['table'],
       },
       {
         title: 'Ячейка таблицы',
-        names: [`cell`],
+        names: ['cell'],
       },
     ],
   },
@@ -741,48 +741,28 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'media',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Видео',
+        names: ['video'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Аудио',
+        names: ['audio'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Обобщённый медиаконтент',
+        names: ['media'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Воспроизвести',
+        names: ['play'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Остановить',
+        names: ['stop'],
       },
       {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
+        title: 'Пауза',
+        names: ['pause'],
       },
     ],
   },
@@ -791,48 +771,36 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'e-commerce',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Каталог',
+        names: ['catalog'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Категория',
+        names: ['category'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Подкатегория',
+        names: ['subcategory'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Товар',
+        names: ['product'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Корзина',
+        names: ['cart', 'basket'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Избранное',
+        names: ['favorites'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Список желаний',
+        names: ['wishlist'],
       },
       {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
+        title: 'Блок сравнения',
+        names: ['compare'],
       },
     ],
   },
