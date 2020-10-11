@@ -577,24 +577,40 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'graphics',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Обобщённое изображение',
+        names: [`image`, `picture`],
       },
       {
-        title: '',
-        names: [],
+        title: 'Баннер (блок с большим фоновым изображением, обычно в верхней части страницы)',
+        names: [`banner`, `hero`],
       },
       {
-        title: '',
-        names: [],
+        title: 'Аватар, маленькая картинка пользователя',
+        names: [`userpic`, `avatar`],
       },
       {
-        title: '',
-        names: [],
+        title: 'Логотип',
+        names: [`logo`],
       },
       {
-        title: '',
-        names: [],
+        title: 'Иконка',
+        names: [`icon`],
+      },
+      {
+        title: 'Фотография',
+        names: [`photo`],
+      },
+      {
+        title: 'Фоновое изображение',
+        names: [`background`],
+      },
+      {
+        title: 'Миниатюра, уменьшенное изображение',
+        names: [`thumbnail`, `thumb`],
+      },
+      {
+        title: 'Галерея изображений',
+        names: [`gallery`],
       },
     ],
   },
@@ -602,6 +618,46 @@ export const CONTENTS: INamingPageContensItem[] = [
     title: 'Формы',
     id: 'forms',
     items: [
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
       {
         title: '',
         names: [],
@@ -616,12 +672,92 @@ export const CONTENTS: INamingPageContensItem[] = [
         title: '',
         names: [],
       },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
     ],
   },
   {
     title: 'Таблицы',
     id: 'tables',
     items: [
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
       {
         title: '',
         names: [],
@@ -636,6 +772,46 @@ export const CONTENTS: INamingPageContensItem[] = [
         title: '',
         names: [],
       },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
     ],
   },
   {
@@ -646,12 +822,92 @@ export const CONTENTS: INamingPageContensItem[] = [
         title: '',
         names: [],
       },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
     ],
   },
   {
     title: 'Разное',
     id: 'miscellaneous',
     items: [
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
       {
         title: '',
         names: [],
