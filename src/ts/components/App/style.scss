@@ -1,22 +1,24 @@
 @use "~scss/utils";
 
 .root {
-  --color-text: black;
-  --color-background: #dbdbdb;
-  --color_headerBackground: #bdbdbd;
+  --color_caption: #{utils.$color-light-textCaption};
+  --color_background-global: #{utils.$color-light-backgroundGlobal};
+  --color_background-secondary: #{utils.$color-light-backgroundSecondary};
+  --color_text: #{utils.$color-light-text};
 
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   min-height: 100vh;
-  color: var(--color-text);
-  background-color: var(--color-background);
+  color: var(--color_text);
+  background-color: var(--color_background-global);
 
   &:global(.hasDarkTheme) {
-    --color_headerBackground: #656565;
-    --color-text: white;
-    --color-background: #242424;
+    --color_caption: #{utils.$color-dark-textCaption};
+    --color_background-global: #{utils.$color-dark-backgroundGlobal};
+    --color_background-secondary: #{utils.$color-dark-backgroundSecondary};
+    --color_text: #{utils.$color-dark-text};
   }
 }
 
@@ -27,17 +29,17 @@
 }
 
 .main {
-  --color-background: #efefef;
+  --color_background-main: #{utils.$color-light-backgroundMain};
 
   justify-self: center;
   width: 100%;
   max-width: utils.$viewport-sm-max;
-  padding-left: var(--size-paddingX);
-  padding-right: var(--size-paddingX);
-  background-color: var(--color-background);
+  padding-left: var(--size_paddingX);
+  padding-right: var(--size_paddingX);
+  background-color: var(--color_background-main);
 
   @include utils.darkTheme() {
-    --color-background: #101010;
+    --color_background-main: #{utils.$color-dark-backgroundMain};
   }
 
   @media (max-width: utils.$viewport-xs-max) {

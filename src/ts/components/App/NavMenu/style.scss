@@ -45,7 +45,7 @@
     display: grid;
     row-gap: 16px;
     padding: 16px 16px;
-    background-color: var(--color_headerBackground);
+    background-color: var(--color_background-secondary);
 
     :global(.isCollapsedScreenSm) & {
       display: none;
@@ -60,20 +60,20 @@
 }
 
 .link {
-  --color-text_active: #343434;
+  --color_text_active: #343434;
 
   font-weight: 700;
   text-decoration: underline;
   text-transform: uppercase;
-  color: var(--color-text);
+  color: var(--color_text);
 
   @include utils.darkTheme() {
-    --color-text_active: #cdcdcd;
+    --color_text_active: #cdcdcd;
   }
 
   &_active {
     text-decoration: none;
-    color: var(--color-text_active);
+    color: var(--color_text_active);
     cursor: default;
   }
 }

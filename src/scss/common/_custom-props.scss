@@ -1,16 +1,16 @@
 @use "~scss/utils";
 
 :root {
-  --color-spinner: #7a7a7a;
-  --color-overlay: #444444;
+  --color_spinner: #7a7a7a;
+  --color_overlay: #444444;
 
-  --size-pageMinWidth: 320px;
+  --size_pageMinWidth: 320px;
 
   @media (max-width: utils.$viewport-xs-max) {
-    --size-paddingX: 20px;
+    --size_paddingX: 20px;
   }
 
   @media (min-width: utils.$viewport-sm-min) {
-    --size-paddingX: 24px;
+    --size_paddingX: 24px;
   }
 }

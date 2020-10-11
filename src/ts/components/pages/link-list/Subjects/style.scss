@@ -2,13 +2,7 @@
 @use "~scss/utils";
 
 .root {
-  --color-caption: midnightblue;
-
   line-height: 1.25;
-
-  @include utils.darkTheme() {
-    --color-caption: #dddddd;
-  }
 
   @media (min-width: utils.$viewport-sm-min) {
     font-size: 18px;
@@ -35,7 +29,7 @@
 .fallbackMessage {
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--color-text);
+  color: var(--color_text);
 }
 
 .list {

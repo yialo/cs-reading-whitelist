@@ -7,15 +7,15 @@
 }
 
 .link {
-  --color-caption: midnightblue;
+  --color_caption: midnightblue;
 
-  color: var(--color-caption);
+  color: var(--color_caption);
 
   &:hover {
     text-decoration: none;
   }
 
   @include utils.darkTheme() {
-    --color-caption: #dddddd;
+    --color_caption: #dddddd;
   }
 }

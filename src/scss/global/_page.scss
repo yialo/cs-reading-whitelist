@@ -5,7 +5,7 @@
 
   .Page-body {
     position: relative;
-    min-width: var(--size-pageMinWidth);
+    min-width: var(--size_pageMinWidth);
     height: inherit;
     overflow-y: scroll;
   }
@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     height: inherit;
-    background-color: var(--color-overlay);
+    background-color: var(--color_overlay);
 
     &.isHidden {
       display: none;
