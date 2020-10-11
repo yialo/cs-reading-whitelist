@@ -10,7 +10,7 @@ export const SORTING = {
 
 const INITIAL_ROUTES = {
   HOME: '',
-  CLASSNAMES: 'classnames',
+  NAMING: 'naming',
 } as const;
 
 type RouteEnum = {

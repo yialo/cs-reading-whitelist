@@ -1,0 +1,1 @@
+export { NamingPage } from './self';

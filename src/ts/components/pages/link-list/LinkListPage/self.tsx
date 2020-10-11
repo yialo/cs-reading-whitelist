@@ -27,7 +27,7 @@ interface IProps {
   className?: string;
 }
 
-interface IActionCreatorsInputMap {
+interface ILinkListPageActionCreatorsInputMap {
   fetchSubjects: AsyncActionCreatorType;
   searchInList: SyncActionCreatorType;
   showNextListPage: SyncActionCreatorType;
@@ -52,7 +52,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
     showNextListPage,
     toggleFilter,
     toggleSorting,
-  } = useActions<IActionCreatorsInputMap>(actionCreators);
+  } = useActions<ILinkListPageActionCreatorsInputMap>(actionCreators);
 
   const visibleAmount = isLastPage ? sortedAmount : (LIST_PAGE_SIZE * page);
 
@@ -61,7 +61,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
   };
 
   useEffect(() => {
-    void (fetchSubjects as SyncActionCreatorType)();
+    void fetchSubjects();
   }, [fetchSubjects]);
 
   return (
