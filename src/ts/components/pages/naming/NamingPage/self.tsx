@@ -22,10 +22,13 @@ const REFERENCE_LINKS = [
   ],
 ];
 
-export const ClassNamesPage: React.FC<IProps> = (props) => {
+export const NamingPage: React.FC<IProps> = (props) => {
   return (
     <main className={style.root}>
-      <h1>Типовые названия CSS-классов</h1>
+      <div>
+        <h1>Типовые названия CSS-классов</h1>
+        <p>Также подходит для имён компонентов</p>
+      </div>
       <hr />
       <section>
         <p>Создано на основе личного опыта и следующих подборок:</p>
@@ -42,6 +45,6 @@ export const ClassNamesPage: React.FC<IProps> = (props) => {
   );
 };
 
-ClassNamesPage.defaultProps = {
+NamingPage.defaultProps = {
   className: '',
 };

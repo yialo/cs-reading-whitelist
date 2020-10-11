@@ -3,7 +3,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 
 import { ROUTES } from 'ts/constants';
 
-// import { ClassNamesPage } from './ClassNamesPage';
+// import { NamingPage } from './NamingPage';
 import { LinkListPage } from './link-list';
 
 const Stub: React.FC = () => {
@@ -27,7 +27,7 @@ export const PageSwitcher: React.FC = () => {
   return (
     <Switch>
       <Route exact path={ROUTES.HOME} component={LinkListPage} />
-      <Route path={ROUTES.CLASSNAMES} component={Stub} />
+      <Route path={ROUTES.NAMING} component={Stub} />
       <Route>
         <Redirect to={ROUTES.HOME} />
       </Route>

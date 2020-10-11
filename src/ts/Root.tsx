@@ -8,7 +8,7 @@ import thunk from 'redux-thunk';
 
 import { App } from './components/App';
 import { ErrorBoundary } from 'common/ErrorBoundary';
-import { rootReducer } from './reducers/index';
+import { rootReducer } from './store/reducers';
 
 const appliedMiddleware = applyMiddleware(thunk);
 const enhancer = (

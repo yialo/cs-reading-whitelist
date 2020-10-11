@@ -2,11 +2,11 @@ import React from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
-import * as actionCreators from 'ts/actionCreators';
+import * as actionCreators from 'ts/store/actionCreators';
 import { AppNavMenu as NavMenu } from '../NavMenu';
 import { ThemeToggle } from '../ThemeToggle';
 import { useActions } from 'ts/hooks';
-import type { ActionCreatorType } from 'ts/reducers';
+import type { SyncActionCreatorType } from 'ts/store/reducers';
 import { themeSelector } from 'ts/selectors';
 
 import style from './style.scss';
@@ -15,12 +15,14 @@ interface IProps {
   className?: string;
 }
 
+interface IHeaderActionCreatorsInputMap {
+  toggleTheme: SyncActionCreatorType;
+}
+
 export const AppHeader: React.FC<IProps> = ({ className }) => {
   const hasDarkTheme = useSelector(themeSelector.isDark);
 
-  const { toggleTheme } = useActions(actionCreators) as {
-    [key: string]: ActionCreatorType;
-  };
+  const { toggleTheme } = useActions<IHeaderActionCreatorsInputMap>(actionCreators);
 
   return (
     <header className={classNames(style.root, className)}>

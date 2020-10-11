@@ -13,8 +13,8 @@ interface IProps {
 }
 
 const routeList = [
-  [ROUTES.HOME, 'My reading'],
-  [ROUTES.CLASSNAMES, 'Classnames'],
+  [ROUTES.HOME, 'Reading'],
+  [ROUTES.NAMING, 'Naming'],
 ];
 
 const buttonId = 'AppNavMenu-list';
