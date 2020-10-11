@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
-// TODO: move specific components to page dir
-
 import * as actionCreators from 'ts/store/actionCreators';
 import { LIST_PAGE_SIZE } from 'ts/constants';
 import { useActions } from 'ts/hooks';
