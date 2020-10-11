@@ -1,3 +1,5 @@
+@use "~scss/utils";
+
 .root {
   --color-text: black;
   --color-background: #dbdbdb;
@@ -24,4 +26,6 @@
 
 .main {
   justify-self: center;
+  width: 100%;
+  max-width: utils.$viewport-sm-max;
 }
