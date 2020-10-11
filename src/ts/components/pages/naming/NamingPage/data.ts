@@ -257,8 +257,76 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'state',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Активный элемент',
+        names: ['active'],
+      },
+      {
+        title: 'Выбранный элемент',
+        names: ['selected', 'focused'],
+      },
+      {
+        title: 'Текущее состояние (например, пункт навигационного меню, соотвествующий текущей странице сайта)',
+        names: ['current'],
+      },
+      {
+        title: 'Основной',
+        names: ['primary'],
+      },
+      {
+        title: 'По умолчанию',
+        names: ['default'],
+      },
+      {
+        title: 'Успешное действие',
+        names: ['success'],
+      },
+      {
+        title: 'Информация общего/вспомогательного характера',
+        names: ['info'],
+      },
+      {
+        title: 'Совет, пояснение к действию',
+        names: ['help'],
+      },
+      {
+        title: 'Предупреждение',
+        names: ['warning', 'warn'],
+      },
+      {
+        title: 'Ошибка',
+        names: ['error'],
+      },
+      {
+        title: 'Потенциально опасное действие, требующее особого внимания',
+        names: ['danger', 'alert'],
+      },
+      {
+        title: 'Состояние ожидания',
+        names: ['pending'],
+      },
+      {
+        title: 'Состояние загрузки',
+        names: ['loading'],
+      },
+      {
+        title: 'Видимый элемент',
+        names: ['visible', 'shown'],
+      },
+      {
+        title: 'Скрытый элемент',
+        names: ['hidden'],
+      },
+      {
+        title: 'Неактивный',
+        names: ['disabled', 'inactive'],
+      },
+      {
+        title: 'Корретный',
+        names: ['valid'],
+      },
+      {
+        title: 'Некорректный, содержащий ошибку',
+        names: ['invalid'],
       },
     ],
   },
