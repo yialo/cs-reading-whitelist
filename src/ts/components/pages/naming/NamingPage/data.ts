@@ -48,7 +48,7 @@ export const CONTENTS: INamingPageContensItem[] = [
       },
       {
         title: 'Один из разделов контента',
-        names: ['section'],
+        names: ['section', 'area'],
       },
       {
         title: 'Один из подразделов контента',
@@ -169,8 +169,44 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'navigation',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Хлебные крошки (навигационная цепочка)',
+        names: ['breadcrumbs', 'crumbs'],
+      },
+      {
+        title: 'Пагинация (постраничная навигация)',
+        names: ['pagination'],
+      },
+      {
+        title: 'Предыдущий',
+        names: ['previous', 'prev'],
+      },
+      {
+        title: 'Следующий',
+        names: ['next'],
+      },
+      {
+        title: 'Первый',
+        names: ['first'],
+      },
+      {
+        title: 'Последний',
+        names: ['last'],
+      },
+      {
+        title: 'Назад',
+        names: ['back', 'behind'],
+      },
+      {
+        title: 'Вперёд',
+        names: ['forward', 'ahead'],
+      },
+      {
+        title: 'Вверх',
+        names: ['up'],
+      },
+      {
+        title: 'Вниз',
+        names: ['down'],
       },
     ],
   },
