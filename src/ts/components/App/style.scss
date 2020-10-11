@@ -3,16 +3,18 @@
 .root {
   --color-text: black;
   --color-background: #dbdbdb;
+  --color_headerBackground: #bdbdbd;
 
   position: relative;
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   min-height: 100vh;
   color: var(--color-text);
   background-color: var(--color-background);
 
   &:global(.hasDarkTheme) {
+    --color_headerBackground: #656565;
     --color-text: white;
     --color-background: #242424;
   }

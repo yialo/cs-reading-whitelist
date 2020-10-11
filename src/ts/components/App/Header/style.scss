@@ -1,17 +1,11 @@
 @use "~scss/utils";
 
 .root {
-  --color_headerBackground: #bdbdbd;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px var(--size-paddingX);
   background-color: var(--color_headerBackground);
-
-  @include utils.darkTheme() {
-    --color_headerBackground: #656565;
-  }
 }
 
 .themeToggle {

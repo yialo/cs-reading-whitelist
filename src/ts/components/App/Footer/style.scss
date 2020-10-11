@@ -1,0 +1,11 @@
+.root {
+  padding: 16px var(--size-paddingX);
+  background-color: var(--color_headerBackground);
+}
+
+.list {
+  composes: list from "~scss/scaffold.scss";
+
+  display: flex;
+  column-gap: 16px;
+}
