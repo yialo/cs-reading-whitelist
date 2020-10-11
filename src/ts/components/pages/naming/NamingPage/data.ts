@@ -508,67 +508,67 @@ export const CONTENTS: INamingPageContensItem[] = [
     items: [
       {
         title: 'Статья',
-        names: [`article`],
+        names: ['article'],
       },
       {
         title: 'Пост, публикация в блоге',
-        names: [`entry`],
+        names: ['entry'],
       },
       {
         title: 'Комментарий',
-        names: [`comment`],
+        names: ['comment'],
       },
       {
         title: 'Блок с дополнительной информацией (теги, даты в постах)',
-        names: [`meta`],
+        names: ['meta'],
       },
       {
         title: 'Блок тегов',
-        names: [`tags`],
+        names: ['tags'],
       },
       {
         title: 'Тег, метка',
-        names: [`tag`],
+        names: ['tag'],
       },
       {
         title: 'Дата и время публикации',
-        names: [`datetime`],
+        names: ['datetime'],
       },
       {
         title: 'Блок управления публикацией (отправка, редактирование т.п.)',
-        names: [`actions`],
+        names: ['actions'],
       },
       {
         title: 'Отправить (сообщение)',
-        names: [`send`],
+        names: ['send'],
       },
       {
         title: 'Опубликовать',
-        names: [`post`],
+        names: ['post'],
       },
       {
         title: 'Ответить, отреагировать',
-        names: [`reply`],
+        names: ['reply'],
       },
       {
         title: 'Копировать',
-        names: [`copy`],
+        names: ['copy'],
       },
       {
         title: 'Вырезать',
-        names: [`cut`],
+        names: ['cut'],
       },
       {
         title: 'Вставить',
-        names: [`insert`],
+        names: ['insert'],
       },
       {
         title: 'Отрывок текста, используемый перед ссылкой «Читать дальше...»',
-        names: [`excerpt`],
+        names: ['excerpt'],
       },
       {
         title: 'Анонс новости или поста (может содержать заголовок, описание, изображение, предполагает ссылку на полную версию)',
-        names: [`preview`],
+        names: ['preview'],
       },
     ],
   },
@@ -578,39 +578,39 @@ export const CONTENTS: INamingPageContensItem[] = [
     items: [
       {
         title: 'Обобщённое изображение',
-        names: [`image`, `picture`],
+        names: ['image', 'picture'],
       },
       {
         title: 'Баннер (блок с большим фоновым изображением, обычно в верхней части страницы)',
-        names: [`banner`, `hero`],
+        names: ['banner', 'hero'],
       },
       {
         title: 'Аватар, маленькая картинка пользователя',
-        names: [`userpic`, `avatar`],
+        names: ['userpic', 'avatar'],
       },
       {
         title: 'Логотип',
-        names: [`logo`],
+        names: ['logo'],
       },
       {
         title: 'Иконка',
-        names: [`icon`],
+        names: ['icon'],
       },
       {
         title: 'Фотография',
-        names: [`photo`],
+        names: ['photo'],
       },
       {
         title: 'Фоновое изображение',
-        names: [`background`],
+        names: ['background'],
       },
       {
         title: 'Миниатюра, уменьшенное изображение',
-        names: [`thumbnail`, `thumb`],
+        names: ['thumbnail', 'thumb'],
       },
       {
         title: 'Галерея изображений',
-        names: [`gallery`],
+        names: ['gallery'],
       },
     ],
   },
@@ -620,47 +620,47 @@ export const CONTENTS: INamingPageContensItem[] = [
     items: [
       {
         title: 'Форма',
-        names: [`form`],
+        names: ['form'],
       },
       {
         title: 'Форма поиска',
-        names: [`search`, `search-form`],
+        names: ['search', 'search-form'],
       },
       {
         title: 'Форма обратной связи',
-        names: [`feedback`],
+        names: ['feedback'],
       },
       {
         title: 'Поле ввода',
-        names: [`input`, `field`],
+        names: ['input', 'field'],
       },
       {
         title: 'Группа элементов формы',
-        names: [`field-group`],
+        names: ['field-group'],
       },
       {
         title: 'Подпись элемента формы',
-        names: [`label`, `name`],
+        names: ['label', 'name'],
       },
       {
         title: 'Отправить (форму)',
-        names: [`submit`],
+        names: ['submit'],
       },
       {
         title: 'Очистить поля ввода',
-        names: [`reset`],
+        names: ['reset'],
       },
       {
         title: 'Поле ввода Email',
-        names: [`email`],
+        names: ['email'],
       },
       {
         title: 'Поле ввода номера телефона',
-        names: [`tel`, `phone`],
+        names: ['tel', 'phone'],
       },
       {
         title: 'Поле ввода текста сообщения (наример, в форме обратной связи)',
-        names: [`message`],
+        names: ['message'],
       },
     ],
   },
@@ -669,48 +669,56 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'person',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Профиль',
+        names: ['profile'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Человек',
+        names: ['person'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Пользователь',
+        names: ['user'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Автор',
+        names: ['author'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Полное имя, ФИО',
+        names: ['fullname'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Имя',
+        names: ['firstname'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Фамилия',
+        names: ['lastname'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Отчество',
+        names: ['patronymic', 'middlename'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Адрес',
+        names: ['address'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Ник',
+        names: ['nickname'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Дата рождения',
+        names: ['birthdate'],
+      },
+      {
+        title: 'Пол',
+        names: ['sex'],
+      },
+      {
+        title: 'Возраст',
+        names: ['age'],
       },
     ],
   },
