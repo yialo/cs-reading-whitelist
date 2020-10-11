@@ -1,15 +1,15 @@
 @use "~scss/utils";
 
 .root {
-  --color-buttonText: white;
-  --color-buttonBackground: black;
+  --color_buttonText: white;
+  --color_buttonBackground: black;
 
   font-style: italic;
-  color: var(--color-buttonText);
-  background-color: var(--color-buttonBackground);
+  color: var(--color_buttonText);
+  background-color: var(--color_buttonBackground);
 
   @include utils.darkTheme() {
-    --color-buttonText: black;
-    --color-buttonBackground: white;
+    --color_buttonText: black;
+    --color_buttonBackground: white;
   }
 }

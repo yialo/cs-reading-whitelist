@@ -1,10 +1,17 @@
+@use "~scss/utils";
+
 .root {
   composes: main from "~ts/components/App/style.scss";
 
-  width: 100%;
-  max-width: 800px;
+  line-height: 1.5;
 }
 
-.list {
-  composes: list from "~scss/scaffold.scss";
+.headline {
+  composes: headline from "~scss/scaffold.scss";
+
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  composes: link from "~scss/scaffold.scss";
 }

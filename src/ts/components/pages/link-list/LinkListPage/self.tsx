@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
-import classNames from 'classnames';
 import { useSelector } from 'react-redux';
-
-// TODO: move specific components to page dir
 
 import * as actionCreators from 'ts/store/actionCreators';
 import { LIST_PAGE_SIZE } from 'ts/constants';
@@ -23,10 +20,6 @@ import { Subjects } from '../Subjects';
 
 import style from './style.scss';
 
-interface IProps {
-  className?: string;
-}
-
 interface ILinkListPageActionCreatorsInputMap {
   fetchSubjects: AsyncActionCreatorType;
   searchInList: SyncActionCreatorType;
@@ -35,7 +28,7 @@ interface ILinkListPageActionCreatorsInputMap {
   toggleSorting: SyncActionCreatorType;
 }
 
-export const LinkListPage: React.FC<IProps> = ({ className }) => {
+export const LinkListPage: React.FC<IProps> = () => {
   const fetchError = useSelector(fetchSelector.error);
   const filterName = useSelector(listSelector.filterName);
   const page = useSelector(listSelector.page);
@@ -65,7 +58,7 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
   }, [fetchSubjects]);
 
   return (
-    <main className={classNames(style.root, className)}>
+    <main className={style.root}>
       <div className={style.header}>
         <h1 className={style.headline}>Полезные материалы по Computer Science</h1>
       </div>
@@ -96,8 +89,4 @@ export const LinkListPage: React.FC<IProps> = ({ className }) => {
       )}
     </main>
   );
-};
-
-LinkListPage.defaultProps = {
-  className: '',
 };

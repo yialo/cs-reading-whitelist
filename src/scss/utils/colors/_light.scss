@@ -1,0 +1,9 @@
+@use "utils";
+
+$text: black;
+$textCaption: midnightblue;
+$textCaptionAlpha: utils.captionAlpha($textCaption);
+
+$backgroundGlobal: #dbdbdb;
+$backgroundMain:  #efefef;
+$backgroundSecondary: #bdbdbd;

@@ -17,7 +17,9 @@ const routeList = [
   [ROUTES.NAMING, 'Naming'],
 ];
 
-const buttonId = 'AppNavMenu-list';
+const BUTTON_ID = 'AppNavMenu-list';
+
+// TODO: add close of mobile menu on escape keydown
 
 export const AppNavMenu: React.FC<IProps> = ({ className }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -33,7 +35,7 @@ export const AppNavMenu: React.FC<IProps> = ({ className }) => {
       })}
     >
       <button
-        aria-controls={buttonId}
+        aria-controls={BUTTON_ID}
         aria-expanded={isExpanded}
         aria-label="Меню"
         className={style.button}
@@ -42,7 +44,7 @@ export const AppNavMenu: React.FC<IProps> = ({ className }) => {
       >
         <AppNavMenuIcon isExpanded={isExpanded} />
       </button>
-      <ul className={style.list} id={buttonId}>
+      <ul className={style.list} id={BUTTON_ID}>
         {routeList.map(([route, label]) => (
           <li key={label}>
             <NavLink
