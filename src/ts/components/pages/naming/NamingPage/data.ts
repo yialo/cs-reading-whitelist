@@ -298,7 +298,7 @@ export const CONTENTS: INamingPageContensItem[] = [
       },
       {
         title: 'Потенциально опасное действие, требующее особого внимания',
-        names: ['danger', 'alert'],
+        names: ['danger'],
       },
       {
         title: 'Состояние ожидания',
@@ -809,48 +809,72 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'miscellaneous',
     items: [
       {
-        title: '',
-        names: [],
+        title: `Рекламный блок (часто вырезается AdBlock'ом, использовать с осторожностью)`,
+        names: ['promo', 'commercial', 'advertisement', 'adv'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Блок новостей',
+        names: ['news'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Обобщённый дополнительный, необязательнй блок',
+        names: ['additional', 'optional', 'extra'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Подсказка (обычно всплывающая при наведении)',
+        names: ['tooltip', 'tip', 'hint'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Блок иконок социальных сетей',
+        names: ['socials'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Вкладка',
+        names: ['tab'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Панель вкладок',
+        names: ['tab-panel'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Узкая и длинная область на странице',
+        names: ['bar'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Интерактивная карта',
+        names: ['map', 'map-canvas'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Виджет',
+        names: ['widget'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Копирайт',
+        names: ['copyright'],
+      },
+      {
+        title: 'Контакты',
+        names: ['contacts'],
+      },
+      {
+        title: 'Блок преимуществ, особенностей товара или услуги',
+        names: ['features', 'benefits'],
+      },
+      {
+        title: 'Слайдер, карусель',
+        names: ['slider', 'carousel'],
+      },
+      {
+        title: 'Обобщённое всплывающее окно',
+        names: ['popup'],
+      },
+      {
+        title: 'Всплывающее диалоговое окно (блокирует интерфейс в ожидании действия со стороны пользователя)',
+        names: ['modal', 'dialog'],
+      },
+      {
+        title: 'Короткое всплывающее сообщение',
+        names: ['alert', 'toaster'],
       },
     ],
   },
