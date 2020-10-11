@@ -1,3 +1,7 @@
 .root {
   composes: main from "~ts/components/App/style.scss";
 }
+
+.list {
+  line-height: 1.5;
+}

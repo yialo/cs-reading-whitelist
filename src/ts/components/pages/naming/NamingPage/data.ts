@@ -113,8 +113,20 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'layout',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Служебный блок-контейнер для раскладки',
+        names: ['layout'],
+      },
+      {
+        title: 'Раскладка блока в виде сетки (обычно содержит в себе строки и столбцы)',
+        names: ['grid'],
+      },
+      {
+        title: 'Контейнер в виде строки',
+        names: ['row'],
+      },
+      {
+        title: 'Контейнер в виде столбца',
+        names: ['column', 'col'],
       },
     ],
   },
@@ -123,8 +135,32 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'position',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Контент сверху',
+        names: ['top'],
+      },
+      {
+        title: 'Контент слева',
+        names: ['left'],
+      },
+      {
+        title: 'Контент справа',
+        names: ['right'],
+      },
+      {
+        title: 'Контент снизу',
+        names: ['bottom'],
+      },
+      {
+        title: 'Контент по центру',
+        names: ['center', 'middle'],
+      },
+      {
+        title: 'Фиксированный контент',
+        names: ['fixed'],
+      },
+      {
+        title: '«Липкий» контент',
+        names: ['sticky'],
       },
     ],
   },
