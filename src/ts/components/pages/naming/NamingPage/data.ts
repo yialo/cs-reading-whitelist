@@ -727,54 +727,18 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'tables',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Таблица',
+        names: [`table`],
       },
       {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
-      },
-      {
-        title: '',
-        names: [],
+        title: 'Ячейка таблицы',
+        names: [`cell`],
       },
     ],
   },
   {
-    title: 'Видео',
-    id: 'video',
+    title: 'Медиаконтент',
+    id: 'media',
     items: [
       {
         title: '',
