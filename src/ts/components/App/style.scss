@@ -25,7 +25,26 @@
 }
 
 .main {
+  --color-background: #efefef;
+
   justify-self: center;
   width: 100%;
   max-width: utils.$viewport-sm-max;
+  padding-left: var(--size-paddingX);
+  padding-right: var(--size-paddingX);
+  background-color: var(--color-background);
+
+  @include utils.darkTheme() {
+    --color-background: #101010;
+  }
+
+  @media (max-width: utils.$viewport-xs-max) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }

@@ -8,10 +8,10 @@ export const ReferenceLinks: React.FC = () => {
   return (
     <div>
       <p>Создано на основе личного опыта и следующих подборок:</p>
-      <ul className={style.list}>
+      <ul>
         {REFERENCE_LINKS.map(([label, url], i) => (
           <li key={i}>
-            <a href={url}>{label}</a>
+            <a className={style.link} href={url}>{label}</a>
           </li>
         ))}
       </ul>

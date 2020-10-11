@@ -215,8 +215,40 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'sizes',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Очень маленький',
+        names: ['extra-small', 'xs'],
+      },
+      {
+        title: 'Маленький',
+        names: ['small', 's'],
+      },
+      {
+        title: 'Средний',
+        names: ['medium', 'md'],
+      },
+      {
+        title: 'Большой',
+        names: ['large', 'lg'],
+      },
+      {
+        title: 'Очень большой',
+        names: ['extra-large', 'xl'],
+      },
+      {
+        title: 'Крошечный',
+        names: ['tiny'],
+      },
+      {
+        title: 'Огромный',
+        names: ['huge'],
+      },
+      {
+        title: 'Узкий',
+        names: ['narrow', 'tight'],
+      },
+      {
+        title: 'Широкий',
+        names: ['wide'],
       },
     ],
   },

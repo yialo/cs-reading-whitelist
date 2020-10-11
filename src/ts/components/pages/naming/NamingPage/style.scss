@@ -1,7 +1,21 @@
+@use "~scss/utils";
+
 .root {
   composes: main from "~ts/components/App/style.scss";
+
+  line-height: 1.5;
 }
 
-.list {
-  line-height: 1.5;
+.link {
+  --color-caption: midnightblue;
+
+  color: var(--color-caption);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @include utils.darkTheme() {
+    --color-caption: #dddddd;
+  }
 }

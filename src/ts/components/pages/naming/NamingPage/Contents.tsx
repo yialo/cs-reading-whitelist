@@ -10,10 +10,10 @@ export const Contents: React.FC = () => {
   return (
     <section>
       <h2>Содержание</h2>
-      <ul className={style.list}>
+      <ul>
         {CONTENT_HEADERS.map((header, i) => (
           <li key={i}>
-            <a href={`#${header.id}`}>{header.title}</a>
+            <a className={style.link} href={`#${header.id}`}>{header.title}</a>
           </li>
         ))}
       </ul>
