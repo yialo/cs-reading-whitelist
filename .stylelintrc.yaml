@@ -11,3 +11,5 @@ ignoreFiles:
   - '*.tsx'
   - './dist/**'
   - './docs/**'
+rules:
+  'function-name-case': null

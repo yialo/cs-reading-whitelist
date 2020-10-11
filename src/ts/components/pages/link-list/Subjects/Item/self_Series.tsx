@@ -33,7 +33,7 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject
 
   const handleExpansion = () => {
     if (hasNoStateChangesYetRef.current) {
-      setState({ isExpanded: false });
+      setState({ isExpanded: !isSearchBegins });
     } else {
       setState((prev) => ({ isExpanded: !prev.isExpanded }));
     }

@@ -5,31 +5,8 @@ $pageContentMaxWidth: 672px;
 .root {
   composes: main from "~ts/components/App/style.scss";
 
-  --color-background: #efefef;
-
-  flex-basis: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: utils.$viewport-sm-max;
-  padding-left: var(--size-paddingX);
-  padding-right: var(--size-paddingX);
-  background-color: var(--color-background);
-  background-attachment: fixed;
-
-  @include utils.darkTheme() {
-    --color-background: #101010;
-  }
-
-  @media (max-width: utils.$viewport-xs-max) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  @media (min-width: utils.$viewport-sm-min) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 }
 
 .header {
@@ -51,18 +28,7 @@ $pageContentMaxWidth: 672px;
 }
 
 .headline {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1.25;
-  color: var(--color-text);
-
-  @media (max-width: utils.$viewport-xs-max) {
-    font-size: 22px;
-  }
-
-  @media (min-width: utils.$viewport-sm-min) {
-    font-size: 32px;
-  }
+  composes: headline from "~scss/scaffold.scss";
 }
 
 .subjects {
