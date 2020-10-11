@@ -336,123 +336,123 @@ export const CONTENTS: INamingPageContensItem[] = [
     items: [
       {
         title: 'Обобщённая кнопка',
-        names: [`button`],
+        names: ['button'],
       },
       {
         title: 'Обобщённый элемент управления (обычно в галерее, слайдере)',
-        names: [`control`],
+        names: ['control'],
       },
       {
         title: 'Стрелка',
-        names: [`arrow`],
+        names: ['arrow'],
       },
       {
         title: 'Указатель на активный элемент',
-        names: [`caret`, `mark`, `marker`],
+        names: ['caret', 'mark', 'marker'],
       },
       {
         title: 'Кнопка выбора слайда',
-        names: [`dot`, `bullet`],
+        names: ['dot', 'bullet'],
       },
       {
         title: 'Тумблер (переключатель с двумя состояниями)',
-        names: [`toggle`],
+        names: ['toggle'],
       },
       {
         title: 'Выпадающий список',
-        names: [`dropdown`, `drop`],
+        names: ['dropdown', 'drop'],
       },
       {
         title: 'Показать',
-        names: [`show`],
+        names: ['show'],
       },
       {
         title: 'Скрыть',
-        names: [`hide`],
+        names: ['hide'],
       },
       {
         title: 'Больше, подробнее (развернуть)',
-        names: [`more`, `details`],
+        names: ['more', 'details'],
       },
       {
         title: 'Меньше (свернуть)',
-        names: [`less`],
+        names: ['less'],
       },
       {
         title: 'Показать всё',
-        names: [`all`],
+        names: ['all'],
       },
       {
         title: 'Нажать',
-        names: [`press`, `push`],
+        names: ['press', 'push'],
       },
       {
         title: 'Сделать клик',
-        names: [`click`],
+        names: ['click'],
       },
       {
         title: 'Коснуться',
-        names: [`touch`],
+        names: ['touch'],
       },
       {
         title: 'Открыть',
-        names: [`open`],
+        names: ['open'],
       },
       {
         title: 'Закрыть',
-        names: [`close`],
+        names: ['close'],
       },
       {
         title: 'Добавить',
-        names: [`add`],
+        names: ['add'],
       },
       {
         title: 'Создать',
-        names: [`create`, `new`],
+        names: ['create', 'new'],
       },
       {
         title: 'Редактировать',
-        names: [`edit`],
+        names: ['edit'],
       },
       {
         title: 'Изменить',
-        names: [`change`, 'update'],
+        names: ['change', 'update'],
       },
       {
         title: 'Выбрать',
-        names: [`select`],
+        names: ['select'],
       },
       {
         title: 'Удалить',
-        names: [`remove`, `delete`],
+        names: ['remove', 'delete'],
       },
       {
         title: 'Скачать',
-        names: [`download`],
+        names: ['download'],
       },
       {
         title: 'Закачать',
-        names: [`upload`],
+        names: ['upload'],
       },
       {
         title: 'Отменить',
-        names: [`cancel`],
+        names: ['cancel'],
       },
       {
         title: 'Очистить',
-        names: [`clear`],
+        names: ['clear'],
       },
       {
         title: 'Войти',
-        names: [`login`, `signin`],
+        names: ['login', 'signin'],
       },
       {
         title: 'Выйти',
-        names: [`logout`, `signout`],
+        names: ['logout', 'signout'],
       },
       {
         title: 'Зарегистрироваться',
-        names: [`signup`],
+        names: ['signup'],
       },
     ],
   },
@@ -461,36 +461,44 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'text',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Обобщённый текстовый блок',
+        names: ['text'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Заголовок',
+        names: ['title', 'heading', 'headline', 'caption', 'subject'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Подзаголовок',
+        names: ['subtitle'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Параграф',
+        names: ['paragraph'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Описание',
+        names: ['description', 'details'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Введение',
+        names: ['intro'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Слоган',
+        names: ['tagline', 'slogan'],
       },
       {
-        title: '',
-        names: [],
+        title: 'Лид-абзац (вводный абзац информационного материала)',
+        names: ['lead', 'lede'],
+      },
+      {
+        title: 'Подпись',
+        names: ['legend'],
+      },
+      {
+        title: 'Заметка',
+        names: ['note'],
       },
     ],
   },
