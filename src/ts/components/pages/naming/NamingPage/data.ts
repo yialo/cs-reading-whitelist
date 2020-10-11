@@ -335,8 +335,124 @@ export const CONTENTS: INamingPageContensItem[] = [
     id: 'controls',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Обобщённая кнопка',
+        names: [`button`],
+      },
+      {
+        title: 'Обобщённый элемент управления (обычно в галерее, слайдере)',
+        names: [`control`],
+      },
+      {
+        title: 'Стрелка',
+        names: [`arrow`],
+      },
+      {
+        title: 'Указатель на активный элемент',
+        names: [`caret`, `mark`, `marker`],
+      },
+      {
+        title: 'Кнопка выбора слайда',
+        names: [`dot`, `bullet`],
+      },
+      {
+        title: 'Тумблер (переключатель с двумя состояниями)',
+        names: [`toggle`],
+      },
+      {
+        title: 'Выпадающий список',
+        names: [`dropdown`, `drop`],
+      },
+      {
+        title: 'Показать',
+        names: [`show`],
+      },
+      {
+        title: 'Скрыть',
+        names: [`hide`],
+      },
+      {
+        title: 'Больше, подробнее (развернуть)',
+        names: [`more`, `details`],
+      },
+      {
+        title: 'Меньше (свернуть)',
+        names: [`less`],
+      },
+      {
+        title: 'Показать всё',
+        names: [`all`],
+      },
+      {
+        title: 'Нажать',
+        names: [`press`, `push`],
+      },
+      {
+        title: 'Сделать клик',
+        names: [`click`],
+      },
+      {
+        title: 'Коснуться',
+        names: [`touch`],
+      },
+      {
+        title: 'Открыть',
+        names: [`open`],
+      },
+      {
+        title: 'Закрыть',
+        names: [`close`],
+      },
+      {
+        title: 'Добавить',
+        names: [`add`],
+      },
+      {
+        title: 'Создать',
+        names: [`create`, `new`],
+      },
+      {
+        title: 'Редактировать',
+        names: [`edit`],
+      },
+      {
+        title: 'Изменить',
+        names: [`change`, 'update'],
+      },
+      {
+        title: 'Выбрать',
+        names: [`select`],
+      },
+      {
+        title: 'Удалить',
+        names: [`remove`, `delete`],
+      },
+      {
+        title: 'Скачать',
+        names: [`download`],
+      },
+      {
+        title: 'Закачать',
+        names: [`upload`],
+      },
+      {
+        title: 'Отменить',
+        names: [`cancel`],
+      },
+      {
+        title: 'Очистить',
+        names: [`clear`],
+      },
+      {
+        title: 'Войти',
+        names: [`login`, `signin`],
+      },
+      {
+        title: 'Выйти',
+        names: [`logout`, `signout`],
+      },
+      {
+        title: 'Зарегистрироваться',
+        names: [`signup`],
       },
     ],
   },
@@ -344,6 +460,34 @@ export const CONTENTS: INamingPageContensItem[] = [
     title: 'Текст',
     id: 'text',
     items: [
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
       {
         title: '',
         names: [],
