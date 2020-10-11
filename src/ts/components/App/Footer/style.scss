@@ -3,6 +3,10 @@
   background-color: var(--color_background-secondary);
 }
 
+.link {
+  composes: link from "~scss/scaffold.scss";
+}
+
 .list {
   composes: list from "~scss/scaffold.scss";
 

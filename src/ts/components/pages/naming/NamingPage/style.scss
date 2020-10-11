@@ -7,15 +7,5 @@
 }
 
 .link {
-  --color_caption: midnightblue;
-
-  color: var(--color_caption);
-
-  &:hover {
-    text-decoration: none;
-  }
-
-  @include utils.darkTheme() {
-    --color_caption: #dddddd;
-  }
+  composes: link from "~scss/scaffold.scss";
 }

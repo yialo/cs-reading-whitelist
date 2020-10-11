@@ -24,7 +24,7 @@ export const AppFooter: React.FC = () => {
       <ul className={style.list}>
         {FOOTER_LINKS.map(({ legend, url }, i) => (
           <li key={i}>
-            <a href={url}>{legend}</a>
+            <a className={style.link} href={url}>{legend}</a>
           </li>
         ))}
       </ul>
