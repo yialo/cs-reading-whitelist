@@ -1,5 +1,20 @@
 @use "~scss/utils";
 
+.headline {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.25;
+  color: var(--color_text);
+
+  @media (max-width: utils.$viewport-xs-max) {
+    font-size: 22px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    font-size: 32px;
+  }
+}
+
 .link {
   color: var(--color_caption);
 
