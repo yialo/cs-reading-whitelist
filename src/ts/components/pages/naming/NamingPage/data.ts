@@ -504,11 +504,71 @@ export const CONTENTS: INamingPageContensItem[] = [
   },
   {
     title: 'Публикации',
-    id: 'blog',
+    id: 'publication',
     items: [
       {
-        title: '',
-        names: [],
+        title: 'Статья',
+        names: [`article`],
+      },
+      {
+        title: 'Пост, публикация в блоге',
+        names: [`entry`],
+      },
+      {
+        title: 'Комментарий',
+        names: [`comment`],
+      },
+      {
+        title: 'Блок с дополнительной информацией (теги, даты в постах)',
+        names: [`meta`],
+      },
+      {
+        title: 'Блок тегов',
+        names: [`tags`],
+      },
+      {
+        title: 'Тег, метка',
+        names: [`tag`],
+      },
+      {
+        title: 'Дата и время публикации',
+        names: [`datetime`],
+      },
+      {
+        title: 'Блок управления публикацией (отправка, редактирование т.п.)',
+        names: [`actions`],
+      },
+      {
+        title: 'Отправить (сообщение)',
+        names: [`send`],
+      },
+      {
+        title: 'Опубликовать',
+        names: [`post`],
+      },
+      {
+        title: 'Ответить, отреагировать',
+        names: [`reply`],
+      },
+      {
+        title: 'Копировать',
+        names: [`copy`],
+      },
+      {
+        title: 'Вырезать',
+        names: [`cut`],
+      },
+      {
+        title: 'Вставить',
+        names: [`insert`],
+      },
+      {
+        title: 'Отрывок текста, используемый перед ссылкой «Читать дальше...»',
+        names: [`excerpt`],
+      },
+      {
+        title: 'Анонс новости или поста (может содержать заголовок, описание, изображение, предполагает ссылку на полную версию)',
+        names: [`preview`],
       },
     ],
   },
@@ -516,6 +576,22 @@ export const CONTENTS: INamingPageContensItem[] = [
     title: 'Изображения',
     id: 'graphics',
     items: [
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
+      {
+        title: '',
+        names: [],
+      },
       {
         title: '',
         names: [],
