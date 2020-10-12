@@ -1,6 +1,13 @@
+@use "~scss/utils";
+
 .root {
   padding: 16px var(--size_paddingX);
   background-color: var(--color_background-secondary);
+
+  @media (min-width: utils.$viewport-sm-min) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .link {
@@ -10,6 +17,16 @@
 .list {
   composes: list from "~scss/scaffold.scss";
 
-  display: flex;
-  column-gap: 16px;
+  @media (max-width: utils.$viewport-xs-max) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    display: flex;
+    column-gap: 16px;
+  }
 }
