@@ -1,5 +1,7 @@
 # Как создать и использовать SSH-ключи для работы с Git
 
+Инструкция создана на основе статьи [Работа с Git через консоль](https://htmlacademy.ru/blog/boost/tools/git-console#install-ssh-keys).
+
 1. Создаём директорию .ssh
 
     ``` bash
@@ -40,5 +42,3 @@
     ``` bash
     ssh -T git@%hostname%
     ```
-
-<!-- TODO: add link to HTML Academy article -->
