@@ -28,7 +28,7 @@ interface ILinkListPageActionCreatorsInputMap {
   toggleSorting: SyncActionCreatorType;
 }
 
-export const LinkListPage: React.FC<IProps> = () => {
+export const LinkListPage: React.FC = () => {
   const fetchError = useSelector(fetchSelector.error);
   const filterName = useSelector(listSelector.filterName);
   const page = useSelector(listSelector.page);
@@ -62,31 +62,31 @@ export const LinkListPage: React.FC<IProps> = () => {
       <div className={style.header}>
         <h1 className={style.headline}>Полезные материалы по Computer Science</h1>
       </div>
-      {!isFetchComplete && (
-        <Preloader />
-      )}
-      {isFetchComplete && (
-        <>
-          <ControlBar
-            className={style.controlBar}
-            filterTarget={filterName}
-            searchString={searchString}
-            sortingTarget={sortingName}
-            totalAmount={sortedAmount}
-            visibleAmount={visibleAmount}
-            onFilterToggle={toggleFilter}
-            onSearch={handleSearch}
-            onSortingToggle={toggleSorting}
-          />
-          <Subjects
-            className={style.subjects}
-            list={subjectList}
-            hasFetchError={!!fetchError}
-            isLastPage={isLastPage}
-            onShowMoreClick={showNextListPage}
-          />
-        </>
-      )}
+
+      {
+        isFetchComplete ? (
+          <>
+            <ControlBar
+              className={style.controlBar}
+              filterTarget={filterName}
+              searchString={searchString}
+              sortingTarget={sortingName}
+              totalAmount={sortedAmount}
+              visibleAmount={visibleAmount}
+              onFilterToggle={toggleFilter}
+              onSearch={handleSearch}
+              onSortingToggle={toggleSorting}
+            />
+            <Subjects
+              className={style.subjects}
+              list={subjectList}
+              hasFetchError={!!fetchError}
+              isLastPage={isLastPage}
+              onShowMoreClick={showNextListPage}
+            />
+          </>
+        ) : <Preloader />
+      }
     </main>
   );
 };

@@ -16,6 +16,14 @@ const FOOTER_LINKS: AppFooterLink[] = [
     legend: 'Twitter',
     url: 'https://twitter.com/xarroalex',
   },
+  {
+    legend: 'CodeSandbox',
+    url: 'https://codesandbox.io/u/yialo/sandboxes',
+  },
+  {
+    legend: 'CodePen',
+    url: 'https://codepen.io/yialo/pens/public?grid_type=list',
+  },
 ];
 
 export const AppFooter: React.FC = () => {

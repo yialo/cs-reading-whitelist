@@ -1,3 +1,9 @@
+export const KEYBOARD_KEYS = {
+  ENTER: 'Enter',
+  ESCAPE: 'Escape',
+  SPACE: ' ',
+};
+
 export const FILTERS = {
   CAPTION: 'caption',
   HASHTAG: 'hashtag',
