@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
-import { ROUTES } from 'ts/constants';
+import { KEYBOARD_KEYS, ROUTES } from 'ts/constants';
 
 import { AppNavMenuIcon } from './Icon';
 
@@ -19,14 +19,26 @@ const routeList = [
 
 const BUTTON_ID = 'AppNavMenu-list';
 
-// TODO: add close of mobile menu on escape keydown
-
 export const AppNavMenu: React.FC<IProps> = ({ className }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleMenuExpansion = () => {
     setIsExpanded((prevState) => !prevState);
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === KEYBOARD_KEYS.ESCAPE) {
+        setIsExpanded((prev) => prev && !prev);
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   return (
     <nav

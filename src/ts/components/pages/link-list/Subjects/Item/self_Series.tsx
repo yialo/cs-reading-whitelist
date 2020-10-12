@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
+import { KEYBOARD_KEYS } from 'ts/constants';
 import { listSelector } from 'ts/selectors';
 import type { ISeriesSubject } from 'ts/types';
 
@@ -14,7 +15,7 @@ interface ISeriesSubjectsItemProps {
   subject: ISeriesSubject;
 }
 
-const BUTTON_KEYS = ['Enter', ' '];
+const buttonKeys = [KEYBOARD_KEYS.ENTER, KEYBOARD_KEYS.SPACE];
 
 export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject }) => {
   const {
@@ -52,7 +53,7 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject
           aria-expanded={isExpanded}
           onClick={handleExpansion}
           onKeyDown={(event) => {
-            if (BUTTON_KEYS.includes(event.key)) {
+            if (buttonKeys.includes(event.key)) {
               handleExpansion();
             }
           }}
