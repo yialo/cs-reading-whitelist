@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 
 import { Button, MainButton } from 'common/Button';
@@ -35,8 +35,6 @@ const SORTING_ENUM = {
 const filterGroupLabelId = 'filter-group-label';
 const sortingGroupLabelId = 'sorting-group-label';
 
-// TODO: set focus on input when component mounts
-
 export const ControlBar: React.FC<IProps> = ({
   className,
   filterTarget,
@@ -48,6 +46,12 @@ export const ControlBar: React.FC<IProps> = ({
   onSearch,
   onSortingToggle,
 }) => {
+  const inputRef = useRef<HTMLInputElement>();
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
   return (
     <div className={classNames(style.root, className)}>
       <div className={style.filter}>
@@ -89,6 +93,7 @@ export const ControlBar: React.FC<IProps> = ({
         </div>
       </div>
       <TextInput
+        ref={inputRef}
         className={style.searchbar}
         inputMode="search"
         legend="Введите текст для поиска"

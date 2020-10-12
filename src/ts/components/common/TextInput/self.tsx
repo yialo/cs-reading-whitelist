@@ -1,9 +1,12 @@
+import React, { forwardRef } from 'react';
 import classNames from 'classnames';
-import React from 'react';
 
 import style from './style.scss';
 
-interface IProps {
+type InputRef = React.RefObject<HTMLInputElement>;
+
+interface ITextInputProps {
+  forwardedRef: InputRef;
   className?: string;
   inputMode: React.HTMLAttributes<HTMLInputElement>['inputMode'];
   legend: string;
@@ -12,8 +15,9 @@ interface IProps {
   onChange: (evt: React.ChangeEvent) => void;
 }
 
-export const TextInput: React.FC<IProps> = (props: IProps) => {
+const TextInput: React.FC<ITextInputProps> = (props) => {
   const {
+    forwardedRef,
     className,
     inputMode,
     legend,
@@ -34,6 +38,7 @@ export const TextInput: React.FC<IProps> = (props: IProps) => {
         aria-label={legend}
       >
         <input
+          ref={forwardedRef}
           className={style[hasTipChar ? 'field_adjacent' : 'field']}
           inputMode={inputMode}
           type="text"
@@ -49,3 +54,9 @@ TextInput.defaultProps = {
   className: '',
   tipChar: undefined,
 };
+
+export const TextInputWithRef = forwardRef<ITextInputProps, InputRef>(
+  (propsRest, ref) => <TextInput {...propsRest} forwardedRef={ref} />,
+);
+
+TextInputWithRef.displayName = 'TextInput';
