@@ -257,6 +257,7 @@ module.exports = (env = {}) => {
           ],
         }),
         new DefinePlugin({
+          'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
           'process.env.PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH),
         }),
       ];

@@ -17,16 +17,15 @@
 .list {
   composes: list from "~scss/scaffold.scss";
 
+  display: grid;
+  grid-gap: 16px;
+
   @media (max-width: utils.$viewport-xs-max) {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: column;
+    grid-template-columns: auto auto;
     justify-content: center;
-    gap: 16px;
   }
 
   @media (min-width: utils.$viewport-sm-min) {
-    display: flex;
-    column-gap: 16px;
+    grid-auto-flow: column;
   }
 }
