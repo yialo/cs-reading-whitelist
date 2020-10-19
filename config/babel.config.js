@@ -26,6 +26,7 @@ module.exports = {
     [
       '@babel/preset-react',
       {
+        runtime: 'classic',
         development: (process.env.BABEL_ENV === 'development'),
         pragma: 'React.createElement',
         pragmaFrag: 'React.Fragment',
