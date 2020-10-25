@@ -1861,7 +1861,7 @@
       "tags": [
         "html",
         "a11y",
-        "aria"
+        "wai_aria"
       ]
     },
     {
@@ -1871,7 +1871,7 @@
       "tags": [
         "html",
         "a11y",
-        "aria"
+        "wai_aria"
       ]
     },
     {
@@ -1898,7 +1898,7 @@
       "lang": "en",
       "tags": [
         "a11y",
-        "aria"
+        "wai_aria"
       ]
     },
     {
@@ -3265,7 +3265,7 @@
       "lang": "en",
       "tags": [
         "a11y",
-        "aria",
+        "wai_aria",
         "html"
       ]
     },
@@ -3501,12 +3501,12 @@
       ]
     },
     {
-      "caption": "Инклюзивные компоненты: переключатели",
-      "url": "https://medium.com/web-standards/toggle-buttons-a41388e80974",
-      "lang": "ru",
+      "caption": "Inclusive Components: Toggle Buttons (Heydon Pickering)",
+      "url": "https://inclusive-components.design/toggle-button/",
+      "lang": "en",
       "tags": [
         "a11y",
-        "aria"
+        "wai_aria"
       ]
     },
     {
