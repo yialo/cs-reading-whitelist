@@ -5,14 +5,15 @@
 * current-file-path
 * dotenv
 * EditorConfig
+* flow-for-vscode
 * git-graph
+* gitlens
 * highlight-matching-tag
 * HTMLHint
 * indent-rainbow
 * javascript-ejs-support
 * jest-snippets
 * language-postcss
-* language-stylus
 * LogFileHighlighter
 * markdown-all-in-one
 * material-icon-theme
@@ -25,9 +26,8 @@
 * quick-run-panel
 * rainbow-brackets
 * sort-lines
+* svgo
 * todo-tree
-* twig-language-2
-* vetur
 * vscode-colorize
 * vscode-css-modules
 * vscode-docker
