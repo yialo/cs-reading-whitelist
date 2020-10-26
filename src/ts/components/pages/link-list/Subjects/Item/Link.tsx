@@ -16,6 +16,13 @@ export const SubjectsItemLink: React.FC<ISubjectsItemLinkProps> = ({
   url,
 }) => {
   return (
-    <a className={style.link} href={url} lang={lang}>{caption}</a>
+    <a
+      className={style.link}
+      href={url}
+      hrefLang={lang}
+      lang={lang}
+    >
+      {caption}
+    </a>
   );
 };

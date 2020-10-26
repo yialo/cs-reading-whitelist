@@ -8,16 +8,20 @@ import type { ISeriesSubject } from 'ts/types';
 
 import { SubjectsItemAppendix as Appendix } from './Appendix';
 import { SubjectsItemLink as Link } from './Link';
+import type { IClassNameable } from './types';
 
 import style from './style.scss';
 
-interface ISeriesSubjectsItemProps {
+interface ISeriesSubjectsItemProps extends IClassNameable {
   subject: ISeriesSubject;
 }
 
 const buttonKeys = [KEYBOARD_KEYS.ENTER, KEYBOARD_KEYS.SPACE];
 
-export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject }) => {
+export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({
+  className,
+  subject,
+}) => {
   const {
     caption,
     lang,
@@ -45,7 +49,11 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject
   };
 
   return (
-    <li className={classNames(style.root_series, { [style.isExpanded]: isExpanded })}>
+    <li
+      className={classNames(style.root_series, className, {
+        [style.isExpanded]: isExpanded,
+      })}
+    >
       <div className={style.series}>
         <span
           className={style.seriesButton}
@@ -82,6 +90,10 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({ subject
       )}
     </li>
   );
+};
+
+SeriesSubjectsItem.defaultProps = {
+  className: '',
 };
 
 SeriesSubjectsItem.displayName = 'SubjectsSeriesItem';

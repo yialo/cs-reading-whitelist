@@ -34,6 +34,16 @@
 
 .list {
   composes: list from "~scss/scaffold.scss";
-  display: grid;
-  row-gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  margin-bottom: 1rem;
+
+  &_last {
+    composes: item;
+
+    margin-bottom: 0;
+  }
 }
