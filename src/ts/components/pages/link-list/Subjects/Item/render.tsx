@@ -4,15 +4,23 @@ import type { ISubject, ISeriesSubject } from 'ts/types';
 
 import { SeriesSubjectsItem as Series } from './self_Series';
 import { SingleSubjectsItem as Single } from './self_Single';
+import type { IClassNameable } from './types';
 
 const isSeries = (subject: ISubject): subject is ISeriesSubject => Boolean(subject.series);
 
-export const renderSubjectsItem = (subject: ISubject): React.ReactNode => {
-  const key = subject.caption;
+interface ISubjectRendererOptions extends IClassNameable {
+  subject: ISubject;
+}
 
-  if (isSeries(subject)) {
-    return <Series key={key} subject={subject} />;
+export const renderSubjectsItem = (options: ISubjectRendererOptions): React.ReactNode => {
+  const optionsRest = {
+    key: options.subject.caption,
+    className: options.className,
+  };
+
+  if (isSeries(options.subject)) {
+    return <Series subject={options.subject} {...optionsRest} />;
   }
 
-  return <Single key={key} subject={subject} />;
+  return <Single subject={options.subject} {...optionsRest} />;
 };
