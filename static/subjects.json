@@ -1072,15 +1072,6 @@
       ]
     },
     {
-      "caption": "CSS Triggers",
-      "url": "https://csstriggers.com/",
-      "lang": "en",
-      "tags": [
-        "css",
-        "tool"
-      ]
-    },
-    {
       "caption": "CSS и производительность сети",
       "url": "https://css-live.ru/articles/css-i-proizvoditelnost-seti.html",
       "lang": "ru",
@@ -1141,7 +1132,7 @@
         "css",
         "mine"
       ],
-      "legend": "мои примеры различных значений CSS-свойства border-image. В частности, можно увидеть, что количество фрагментов при border-image-repeat: round вычисляется по правилам округления до целого ('Math.round()' в JS, например): [0, 0.5) ‒ в меньшую сторону, [0.5, 1) ‒ в б<em>о</em>льшую. Округляется частное от деления размера области бокса, предназначенной для размещения боковой части рамки, на размер соответствующей области выбранного в border-image-source изображения, оставшейся доступным после применения к нему border-image-slice."
+      "legend": "мои примеры различных значений CSS-свойства border-image. В частности, можно увидеть, что количество фрагментов при border-image-repeat: round вычисляется по правилам округления до целого ('Math.round()' в JS, например): [0, 0.5) ‒ в меньшую сторону, [0.5, 1) ‒ в большую. Округляется частное от деления размера области бокса, предназначенной для размещения боковой части рамки, на размер соответствующей области выбранного в border-image-source изображения, оставшейся доступным после применения к нему border-image-slice."
     },
     {
       "caption": "'font-feature-settings'",
@@ -1180,7 +1171,7 @@
       ]
     },
     {
-      "caption": "MaintainableCSS",
+      "caption": "MaintainableCSS (Adam Silver)",
       "url": "https://maintainablecss.com/",
       "lang": "en",
       "tags": [
@@ -1348,18 +1339,6 @@
         "oop",
         "design_patterns"
       ]
-    },
-    {
-      "caption": "CSS common classnames",
-      "url": "https://github.com/yialo/css-common-classnames/blob/master/README.md",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "css_naming",
-        "cheatsheet",
-        "mine"
-      ],
-      "legend": "типовые названия CSS-классов"
     },
     {
       "caption": "БЭМ — норм (Вадим Макеев)",
