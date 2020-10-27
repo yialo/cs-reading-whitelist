@@ -4037,6 +4037,34 @@
         "security"
       ],
       "legend": ""
+    },
+    {
+      "caption": "DOMException: The play() request was interrupted (by François Beaufort)",
+      "url": "https://developers.google.com/web/updates/2017/06/play-request-was-interrupted",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "dom"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Delay unmounting of the component in React (by Tomasz Ferens)",
+      "url": "https://medium.com/@tomaszferens/delay-unmounting-of-the-component-in-react-8d6f6e73cdc",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Метрики шрифтов",
+      "url": "http://indians.ru/a-font-sizes.htm",
+      "lang": "ru",
+      "tags": [
+        "typography"
+      ],
+      "legend": "Хотя приведённая информация касается металлического набора, она может быть полезна для frontend-разработчиков и UX/UI-дизайнеров , т.к. многие термины используется и в цифровой типографике."
     }
   ]
 }
