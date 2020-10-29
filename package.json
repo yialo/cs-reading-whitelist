@@ -3,7 +3,7 @@
   "scripts": {
     "build": "npm run webpack -- --env.target=production",
     "build:analyze": "npm run build -- --env.analyze",
-    "build:stats": "webpack --config ./config/webpack.config.js --env.target=production --profile --json > ./stats/webpack-bundle-stats.json",
+    "build:stats": "npm run build --profile --json > ./stats/webpack-bundle-stats.json",
     "deploy": "gh-pages -d ./dist/",
     "dev": "npm run webpack-dev-server -- --env.target=development",
     "dev:tscheck": "npm run dev -- --env.tscheck",
