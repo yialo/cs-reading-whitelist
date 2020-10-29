@@ -1,4 +1,6 @@
-export const svgoOptions = [
+'use strict';
+
+module.exports = [
   { addAttributesToSVGElement: false },
   { addClassesToSVGElement: false },
   { cleanupAttrs: false },
