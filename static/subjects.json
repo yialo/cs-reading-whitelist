@@ -1419,8 +1419,25 @@
       ]
     },
     {
-      "caption": "БЭМ: псевдоклассы vs. модификаторы",
-      "url": "https://ru.bem.info/forum/1495/",
+      "caption": "БЭМ и псевдоклассы",
+      "series": [
+        {
+          "caption": "Псевдоклассы vs. модификаторы",
+          "url": "https://ru.bem.info/forum/1495/"
+        },
+        {
+          "caption": "Использование псевдоклассов в БЭМ",
+          "url": "https://ru.bem.info/forum/1565/"
+        },
+        {
+          "caption": "Псевдоклассы в bem-components",
+          "url": "https://ru.bem.info/forum/645/"
+        },
+        {
+          "caption": "БЭМ не запрещает использовать псевдоклассы (Виталий Харисов)",
+          "url": "https://habr.com/ru/company/htmlacademy/blog/337286/#comment_10477928"
+        }
+      ],
       "lang": "ru",
       "tags": [
         "css",
