@@ -49,11 +49,11 @@
     "css-loader": "5.0.0",
     "cssnano": "4.1.10",
     "dotenv": "8.2.0",
-    "file-loader": "6.1.1",
-    "fork-ts-checker-webpack-plugin": "5.2.0",
+    "file-loader": "6.2.0",
+    "fork-ts-checker-webpack-plugin": "5.2.1",
     "html-webpack-plugin": "4.5.0",
     "lodash.clonedeep": "4.5.0",
-    "mini-css-extract-plugin": "1.2.0",
+    "mini-css-extract-plugin": "1.2.1",
     "optimize-css-assets-webpack-plugin": "5.0.4",
     "postcss": "8.1.4",
     "postcss-loader": "4.0.4",
@@ -68,7 +68,7 @@
     "redux-devtools-extension": "2.13.8",
     "redux-thunk": "2.3.0",
     "reselect": "4.0.0",
-    "sass": "1.27.0",
+    "sass": "1.27.1",
     "sass-loader": "10.0.4",
     "style-loader": "2.0.0",
     "terser-webpack-plugin": "4.2.3",
@@ -77,10 +77,10 @@
     "webpack-cli": "3.3.12"
   },
   "devDependencies": {
-    "@types/classnames": "2.2.10",
+    "@types/classnames": "2.2.11",
     "@types/jest": "26.0.15",
-    "@types/react": "16.9.53",
-    "@types/react-dom": "16.9.8",
+    "@types/react": "16.9.55",
+    "@types/react-dom": "16.9.9",
     "@types/react-redux": "7.1.9",
     "@types/react-router-dom": "5.1.6",
     "acorn": "8.0.4",
@@ -103,7 +103,7 @@
     "webpack-dev-server": "3.11.0"
   },
   "engines": {
-    "node": "12"
+    "node": "14"
   },
   "private": true,
   "repository": {
