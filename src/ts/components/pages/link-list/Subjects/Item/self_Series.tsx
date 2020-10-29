@@ -76,13 +76,18 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({
           {
             series.map(({
               caption: itemCaption,
+              lang: itemLang,
               tags: itemTags,
               legend: itemLegend,
               url,
             }) => (
               <li key={url}>
                 <Link {...{ caption: itemCaption, lang, url }} />
-                <Appendix {...{ legend: itemLegend, tags: itemTags }} />
+                <Appendix
+                  lang={itemLang}
+                  legend={itemLegend}
+                  tags={itemTags}
+                />
               </li>
             ))
           }
