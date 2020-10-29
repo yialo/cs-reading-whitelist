@@ -11,8 +11,10 @@ export type SubjectLegend = string;
 export type SubjectUrl = string;
 export type SubjectTag = string;
 
+// TODO: add generic type for cases of lang in all series or in each item
 export interface ISubjectSeriesItem {
   caption: SubjectCaption;
+  lang?: SubjectLang;
   legend?: SubjectLegend;
   tags?: SubjectTag[];
   url: SubjectUrl;

@@ -86,7 +86,7 @@
           "url": "https://techrocks.ru/2019/04/15/good-developer-mindset-2/"
         }
       ],
-      "lang": "en",
+      "lang": "ru",
       "tags": [
         "code_quality"
       ]
@@ -1392,9 +1392,26 @@
       "legend": "огромный набор рекомендаций по БЭМ"
     },
     {
-      "caption": "БЭМ: про обёртки",
-      "url": "https://ru.bem.info/forum/656/",
-      "lang": "ru",
+      "caption": "Неизвестный БЭМ",
+      "series": [
+        {
+          "caption": "БЭМ: про обёртки (Владимир Гриненко)",
+          "url": "https://ru.bem.info/forum/656/",
+          "lang": "ru"
+        },
+        {
+          "caption": "Mixes (by Vladimir Grinenko)",
+          "url": "https://en.bem.info/forum/4/",
+          "lang": "en",
+          "legend": "A single DOM node can represent... a block and an element of the same block!"
+        },
+        {
+          "caption": "Is it OK to apply multiple BEM elements to an html element's class? (answer by Vladimir Grinenko)",
+          "url": "https://stackoverflow.com/questions/47073839/is-it-ok-to-apply-multiple-bem-elements-to-an-html-elements-class",
+          "lang": "en",
+          "legend": "That's absolutely valid to make a mix of elements of the same BEM block!"
+        }
+      ],
       "tags": [
         "css",
         "css_naming",
