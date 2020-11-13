@@ -22,6 +22,7 @@ const PATH = {
   DIST: path.join(ROOT_PATH, 'dist'),
   CONFIG: path.join(ROOT_PATH, 'config'),
   STATIC: path.join(ROOT_PATH, 'static'),
+  CSS_MODULES_IDENT_CONTEXT: path.join(ROOT_PATH, 'src/ts/components'),
 };
 
 const ALIAS = {
@@ -111,7 +112,8 @@ module.exports = (env = {}) => {
                   exportGlobals: true,
                   exportLocalsConvention: 'asIs',
                   exportOnlyLocals: false,
-                  localIdentName: isProduction ? '[hash:base64]' : '[path][name]__[local]',
+                  localIdentContext: PATH.CSS_MODULES_IDENT_CONTEXT,
+                  localIdentName: isProduction ? '[hash:base64]' : '[path][local]',
                 },
                 esModule: true,
                 importLoaders: 2,
