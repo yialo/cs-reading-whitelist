@@ -744,6 +744,7 @@
       "lang": "en",
       "tags": [
         "css",
+        "css_custom_properties",
         "4consider"
       ]
     },
@@ -4045,6 +4046,34 @@
       "tags": [
         "css",
         "sass"
+      ]
+    },
+    {
+      "caption": "Why not export default?",
+      "url": "https://t.me/s/why_not_export_default",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ],
+      "legend": "Почему не стоит использовать export default в своей кодовой базе?"
+    },
+    {
+      "caption": "Sass vars, CSS vars, and semantic theme vars",
+      "url": "https://daverupert.com/2020/10/variable-layers/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css_custom_properties",
+        "sass"
+      ]
+    },
+    {
+      "caption": "11 вещей которые я узнал, читая спецификацию flexbox (by David Gilbertson)",
+      "url": "https://habr.com/ru/post/329820/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css_flexbox"
       ]
     }
   ]
