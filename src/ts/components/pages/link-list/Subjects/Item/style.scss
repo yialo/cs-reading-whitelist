@@ -68,7 +68,25 @@
   display: grid;
   row-gap: 8px;
   margin-top: 8px;
+}
+
+.seriesItem {
+  position: relative;
   padding-left: var(--size_paddingLeft);
+
+  &::before {
+    // TODO: add abstraction for more precise size and position calculation
+    $size: 6px;
+
+    content: "";
+    position: absolute;
+    width: $size;
+    height: $size;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: var(--color_text-caption);
+  }
 }
 
 .tag {

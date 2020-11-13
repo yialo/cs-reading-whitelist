@@ -81,7 +81,7 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({
               legend: itemLegend,
               url,
             }) => (
-              <li key={url}>
+              <li key={url} className={style.seriesItem}>
                 <Link {...{ caption: itemCaption, lang, url }} />
                 <Appendix
                   lang={itemLang}
