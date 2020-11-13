@@ -1301,16 +1301,6 @@
       ]
     },
     {
-      "caption": "BEM modifiers: multiple classes vs @extend",
-      "url": "https://www.bensmithett.com/bem-modifiers-multiple-classes-vs-extend/",
-      "lang": "en",
-      "tags": [
-        "css",
-        "sass",
-        "bem"
-      ]
-    },
-    {
       "caption": "Режимы и квази-режимы",
       "url": "https://noteskeeper.ru/62/",
       "lang": "ru",
@@ -4018,6 +4008,44 @@
         "typography"
       ],
       "legend": "Хотя приведённая информация касается металлического набора, она может быть полезна для frontend-разработчиков и UX/UI-дизайнеров , т.к. многие термины используется и в цифровой типографике."
+    },
+    {
+      "caption": "Неизведанные глубины CSS: метрики шрифта, line-height и vertical-align (by Vincent De Oliveira)",
+      "url": "https://css-live.ru/css/metriki-shrifta-line-height-vertical-align.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "typography"
+      ]
+    },
+    {
+      "caption": "Sass @extend caveats and gotchas",
+      "series": [
+        {
+          "caption": "BEM modifiers: multiple classes vs @extend (by Ben Smithett)",
+          "url": "https://www.bensmithett.com/bem-modifiers-multiple-classes-vs-extend/",
+          "tags": [
+            "bem"
+          ]
+        },
+        {
+          "caption": "Why You Should Avoid Sass @extend (by Hugo Giraudel)",
+          "url": "https://www.sitepoint.com/avoid-sass-extend/"
+        },
+        {
+          "caption": "When to use @extend; when to use a mixin (by Harry Roberts)",
+          "url": "https://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/"
+        },
+        {
+          "caption": "CSS organization, naming conventions and safe extend without preprocessors (by Sergey Zarovskiy)",
+          "url": "https://sergeyski.com/css-organization-naming-conventions-and-safe-extend-without-preprocessors/"
+        }
+      ],
+      "lang": "en",
+      "tags": [
+        "css",
+        "sass"
+      ]
     }
   ]
 }
