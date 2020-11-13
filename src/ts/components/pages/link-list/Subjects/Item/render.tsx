@@ -13,14 +13,11 @@ interface ISubjectRendererOptions extends IClassNameable {
 }
 
 export const renderSubjectsItem = (options: ISubjectRendererOptions): React.ReactNode => {
-  const optionsRest = {
-    key: options.subject.caption,
-    className: options.className,
-  };
+  const key = options.subject.caption;
 
   if (isSeries(options.subject)) {
-    return <Series subject={options.subject} {...optionsRest} />;
+    return <Series key={key} className={options.className} subject={options.subject} />;
   }
 
-  return <Single subject={options.subject} {...optionsRest} />;
+  return <Single key={key} className={options.className} subject={options.subject} />;
 };
