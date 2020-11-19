@@ -4,8 +4,8 @@
   box-sizing: inherit;
 }
 
-:focus {
-  outline: none;
+:focus:not(:focus-visible) {
+  outline-style: none;
 }
 
 :focus-visible {
