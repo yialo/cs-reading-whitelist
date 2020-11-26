@@ -4075,6 +4075,15 @@
         "css",
         "css_flexbox"
       ]
+    },
+    {
+      "caption": "What the Heck is Node modules strict by default?",
+      "url": "http://imaginativethinking.ca/what-the-heck-is-node-modules-strict-by-default/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "nodejs"
+      ]
     }
   ]
 }
