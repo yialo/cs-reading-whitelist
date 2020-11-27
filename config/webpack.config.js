@@ -260,8 +260,8 @@ module.exports = (env = {}) => {
           ],
         }),
         new DefinePlugin({
-          'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-          'process.env.PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH),
+          'GLOBAL_ENV_VARIABLE_MODE': JSON.stringify(process.env.NODE_ENV),
+          'GLOBAL_ENV_VARIABLE_PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH),
         }),
       ];
 

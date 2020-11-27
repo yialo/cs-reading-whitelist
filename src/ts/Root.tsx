@@ -12,7 +12,7 @@ import { rootReducer } from './store/reducers';
 
 const appliedMiddleware = applyMiddleware(thunk);
 const enhancer = (
-  (process.env.NODE_ENV === 'development')
+  GLOBAL_ENV_VARIABLE_MODE === 'development'
     ? composeWithDevTools(appliedMiddleware)
     : appliedMiddleware
 );

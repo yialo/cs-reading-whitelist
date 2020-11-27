@@ -39,7 +39,7 @@ interface SubjectsApiResponse {
 }
 
 export const fetchSubjects: AsyncActionCreatorType = () => async (dispatch) => {
-  const apiUrl = `${process.env.PUBLIC_PATH as string}response/subjects.json?${Date.now()}`;
+  const apiUrl = `${GLOBAL_ENV_VARIABLE_PUBLIC_PATH as string}response/subjects.json?${Date.now()}`;
   try {
     const response = await window.fetch(apiUrl);
     const { data: list } = await response.json() as SubjectsApiResponse;
