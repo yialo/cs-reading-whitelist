@@ -57,6 +57,11 @@ module.exports = (env = {}) => {
   dotEnv.config({ path: path.join(ROOT_PATH, '.env.local') });
   dotEnv.config({ path: path.join(ROOT_PATH, `.env.${target}`) });
 
+  const stats = {
+    all: isDevelopment ? false : undefined,
+    colors: true,
+  };
+
   return {
     context: PATH.SRC,
 
@@ -65,6 +70,8 @@ module.exports = (env = {}) => {
       historyApiFallback: true,
       host: process.env.WDS_HOST || SERVER_DEFAULTS.HOST,
       port: process.env.WDS_PORT || SERVER_DEFAULTS.PORT,
+      publicPath: process.env.PUBLIC_PATH,
+      stats,
       hot: true,
       inline: true,
       open: true,
@@ -172,22 +179,24 @@ module.exports = (env = {}) => {
 
     optimization: (() => {
       const optimizationConfig = {
-        noEmitOnErrors: true,
+        chunkIds: isProduction ? 'deterministic' : 'named',
+        emitOnErrors: false,
+        runtimeChunk: 'single',
         splitChunks: {
           chunks: 'all',
           minChunks: 2,
           cacheGroups: {
             default: false,
+            defaultVendors: {
+              name: 'vendors',
+              test: /[\\/]node_modules[\\/]/,
+              priority: 0,
+              enforce: true,
+            },
             reactDom: {
               name: 'react-dom',
               test: /[\\/]node_modules[\\/]@hot-loader[\\/]react-dom[\\/]/,
               priority: 1,
-              enforce: true,
-            },
-            vendor: {
-              name: 'vendors',
-              test: /[\\/]node_modules[\\/]/,
-              priority: 0,
               enforce: true,
             },
           },
@@ -259,8 +268,8 @@ module.exports = (env = {}) => {
           ],
         }),
         new DefinePlugin({
-          'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-          'process.env.PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH),
+          'GLOBAL_ENV_VARIABLE_MODE': JSON.stringify(process.env.NODE_ENV),
+          'GLOBAL_ENV_VARIABLE_PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH),
         }),
       ];
 
@@ -269,6 +278,7 @@ module.exports = (env = {}) => {
           analyzerPort: 8889,
         }));
       }
+
       if (needTypeCheck) {
         pluginList.push(new TsCheckerWebpackPlugin({
           typescript: {
@@ -283,6 +293,10 @@ module.exports = (env = {}) => {
       return pluginList;
     })(),
 
+    performance: {
+      maxEntrypointSize: 400000,
+    },
+
     resolve: {
       alias: ALIAS,
       extensions: [
@@ -293,20 +307,8 @@ module.exports = (env = {}) => {
       ],
     },
 
-    stats: (() => {
-      const statsConfig = {
-        colors: true,
-      };
-      if (isDevelopment) {
-        Object.assign(statsConfig, {
-          assets: false,
-          entrypoints: false,
-          modules: false,
-        });
-      }
-      return statsConfig;
-    })(),
+    stats,
 
-    target: 'web',
+    target: ['web'],
   };
 };
