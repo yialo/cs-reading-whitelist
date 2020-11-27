@@ -12,6 +12,15 @@ module.exports = {
       },
     ],
     'react-hot-loader/babel',
+    [
+      'transform-imports',
+      {
+        'lodash': {
+          transform: 'lodash/${member}',
+          preventFullImport: true,
+        },
+      },
+    ],
   ],
   presets: [
     [
