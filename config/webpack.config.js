@@ -57,6 +57,11 @@ module.exports = (env = {}) => {
   dotEnv.config({ path: path.join(ROOT_PATH, '.env.local') });
   dotEnv.config({ path: path.join(ROOT_PATH, `.env.${target}`) });
 
+  const stats = {
+    all: isDevelopment ? false : undefined,
+    colors: true,
+  };
+
   return {
     context: PATH.SRC,
 
@@ -65,6 +70,8 @@ module.exports = (env = {}) => {
       historyApiFallback: true,
       host: process.env.WDS_HOST || SERVER_DEFAULTS.HOST,
       port: process.env.WDS_PORT || SERVER_DEFAULTS.PORT,
+      publicPath: process.env.PUBLIC_PATH,
+      stats,
       hot: true,
       inline: true,
       open: true,
@@ -174,6 +181,7 @@ module.exports = (env = {}) => {
       const optimizationConfig = {
         chunkIds: isProduction ? 'deterministic' : 'named',
         emitOnErrors: false,
+        runtimeChunk: 'single',
         splitChunks: {
           chunks: 'all',
           minChunks: 2,
@@ -270,6 +278,7 @@ module.exports = (env = {}) => {
           analyzerPort: 8889,
         }));
       }
+
       if (needTypeCheck) {
         pluginList.push(new TsCheckerWebpackPlugin({
           typescript: {
@@ -284,6 +293,10 @@ module.exports = (env = {}) => {
       return pluginList;
     })(),
 
+    performance: {
+      maxEntrypointSize: 400000,
+    },
+
     resolve: {
       alias: ALIAS,
       extensions: [
@@ -294,19 +307,7 @@ module.exports = (env = {}) => {
       ],
     },
 
-    stats: (() => {
-      const statsConfig = {
-        colors: true,
-      };
-      if (isDevelopment) {
-        Object.assign(statsConfig, {
-          assets: false,
-          entrypoints: false,
-          modules: false,
-        });
-      }
-      return statsConfig;
-    })(),
+    stats,
 
     target: ['web'],
   };
