@@ -1,13 +1,13 @@
 {
   "name": "cs-reading-whitelist",
   "scripts": {
-    "build": "npm run webpack -- --env.target=production",
-    "build:analyze": "npm run build -- --env.analyze",
+    "build": "npm run webpack -- --env target=production",
+    "build:analyze": "npm run build -- --env analyze",
     "build:stats": "npm run build --profile --json > ./stats/webpack-bundle-stats.json",
     "deploy": "gh-pages -d ./dist/",
-    "dev": "npm run webpack-dev-server -- --env.target=development",
-    "dev:tscheck": "npm run dev -- --env.tscheck",
-    "dev:write": "npm run dev -- --env.write",
+    "dev": "npm run webpack:serve -- --env target=development",
+    "dev:tscheck": "npm run dev -- --env tscheck",
+    "dev:write": "npm run dev -- --env write",
     "imagemin": "gulp imagemin -f ./scripts/imagemin.js",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint ./config/**/*.js ./src/**/*.{j,t}s?(x)",
@@ -17,8 +17,8 @@
     "nodemon:dev": "npm run nodemon -- dev",
     "test": "jest --config=./config/jest.config.js",
     "tscheck": "tsc",
-    "webpack": "webpack --config ./config/webpack.config.js",
-    "webpack-dev-server": "webpack-dev-server --config ./config/webpack.config.js"
+    "webpack": "webpack -c ./config/webpack.config.js",
+    "webpack:serve": "webpack serve -c ./config/webpack.config.js"
   },
   "author": "Aleksei Arro <polsck@gmail.com>",
   "browserslist": [
@@ -75,7 +75,7 @@
     "terser-webpack-plugin": "4.2.3",
     "webpack": "4.44.2",
     "webpack-bundle-analyzer": "3.9.0",
-    "webpack-cli": "3.3.12"
+    "webpack-cli": "4.2.0"
   },
   "devDependencies": {
     "@types/classnames": "2.2.11",
