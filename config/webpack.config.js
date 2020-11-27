@@ -172,22 +172,22 @@ module.exports = (env = {}) => {
 
     optimization: (() => {
       const optimizationConfig = {
-        noEmitOnErrors: true,
+        emitOnErrors: false,
         splitChunks: {
           chunks: 'all',
           minChunks: 2,
           cacheGroups: {
             default: false,
+            defaultVendors: {
+              name: 'vendors',
+              test: /[\\/]node_modules[\\/]/,
+              priority: 0,
+              enforce: true,
+            },
             reactDom: {
               name: 'react-dom',
               test: /[\\/]node_modules[\\/]@hot-loader[\\/]react-dom[\\/]/,
               priority: 1,
-              enforce: true,
-            },
-            vendor: {
-              name: 'vendors',
-              test: /[\\/]node_modules[\\/]/,
-              priority: 0,
               enforce: true,
             },
           },
