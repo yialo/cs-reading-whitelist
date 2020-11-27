@@ -2,10 +2,6 @@
 
 module.exports = {
   extends: ['yialo/preset-web-babel'],
-  globals: {
-    GLOBAL_ENV_VARIABLE_MODE: 'readonly',
-    GLOBAL_ENV_VARIABLE_PUBLIC_PATH: 'readonly',
-  },
   ignorePatterns: [
     '*.html',
     '/dist/',
