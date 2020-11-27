@@ -1,1 +1,1 @@
-export { NamingPage } from './NamingPage';
+export { NamingPage as default } from './NamingPage';

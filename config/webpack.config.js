@@ -172,6 +172,7 @@ module.exports = (env = {}) => {
 
     optimization: (() => {
       const optimizationConfig = {
+        chunkIds: isProduction ? 'deterministic' : 'named',
         emitOnErrors: false,
         splitChunks: {
           chunks: 'all',
