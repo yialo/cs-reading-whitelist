@@ -245,6 +245,10 @@ module.exports = (env = {}) => {
       publicPath: process.env.PUBLIC_PATH,
     },
 
+    performance: {
+      maxEntrypointSize: 400000,
+    },
+
     plugins: (() => {
       const pluginList = [
         new CaseSensitivePathsPlugin(),
@@ -292,10 +296,6 @@ module.exports = (env = {}) => {
       }
       return pluginList;
     })(),
-
-    performance: {
-      maxEntrypointSize: 400000,
-    },
 
     resolve: {
       alias: ALIAS,
