@@ -308,6 +308,6 @@ module.exports = (env = {}) => {
       return statsConfig;
     })(),
 
-    target: 'web',
+    target: ['web'],
   };
 };
