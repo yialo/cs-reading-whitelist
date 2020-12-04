@@ -309,6 +309,6 @@ module.exports = (env = {}) => {
 
     stats,
 
-    target: ['web'],
+    target: 'web',
   };
 };
