@@ -10,15 +10,15 @@
     "dev:write": "npm run dev -- --env write",
     "imagemin": "gulp imagemin -f ./scripts/imagemin.js",
     "lint": "npm run lint:scripts && npm run lint:styles",
-    "lint:scripts": "eslint ./config/**/*.js ./src/**/*.{j,t}s?(x)",
+    "lint:scripts": "eslint ./*.js ./scripts/**/*.js ./src/**/*.{j,t}s?(x)",
     "lint:styles": "stylelint ./src/**/*.scss",
-    "nodemon": "nodemon --config ./config/nodemon.json",
+    "nodemon": "nodemon --config ./nodemon.json",
     "nodemon:build": "npm run nodemon -- build",
     "nodemon:dev": "npm run nodemon -- dev",
-    "test": "jest --config=./config/jest.config.js",
+    "test": "jest -c=./jest.config.js",
     "tscheck": "tsc",
-    "webpack": "webpack -c ./config/webpack.config.js",
-    "webpack:serve": "webpack serve -c ./config/webpack.config.js"
+    "webpack": "webpack -c ./webpack.config.js",
+    "webpack:serve": "webpack serve -c ./webpack.config.js"
   },
   "author": "Aleksei Arro <polsck@gmail.com>",
   "browserslist": [

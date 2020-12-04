@@ -15,14 +15,11 @@ const TerserPlugin = require('terser-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
-const ROOT_PATH = path.resolve(__dirname, '../');
-
 const PATH = {
-  SRC: path.join(ROOT_PATH, 'src'),
-  DIST: path.join(ROOT_PATH, 'dist'),
-  CONFIG: path.join(ROOT_PATH, 'config'),
-  STATIC: path.join(ROOT_PATH, 'static'),
-  CSS_MODULES_IDENT_CONTEXT: path.join(ROOT_PATH, 'src/ts/components'),
+  SRC: path.join(__dirname, 'src'),
+  DIST: path.join(__dirname, 'dist'),
+  STATIC: path.join(__dirname, 'static'),
+  CSS_MODULES_IDENT_CONTEXT: path.join(__dirname, 'src/ts/components'),
 };
 
 const ALIAS = {
@@ -54,12 +51,16 @@ module.exports = (env = {}) => {
 
   const assetHash = isProduction ? '.[contenthash]' : '';
 
-  dotEnv.config({ path: path.join(ROOT_PATH, '.env.local') });
-  dotEnv.config({ path: path.join(ROOT_PATH, `.env.${target}`) });
+  dotEnv.config({ path: path.join(__dirname, '.env.local') });
+  dotEnv.config({ path: path.join(__dirname, `.env.${target}`) });
 
   const stats = {
     all: isDevelopment ? false : undefined,
     colors: true,
+    errors: true,
+    errorsCount: true,
+    warnings: true,
+    warningsCount: true,
   };
 
   return {
@@ -74,7 +75,6 @@ module.exports = (env = {}) => {
       stats,
       hot: true,
       inline: true,
-      open: true,
       overlay: true,
       writeToDisk: write
         ? (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/)
@@ -95,7 +95,6 @@ module.exports = (env = {}) => {
           test: /\.(?:j|t)sx?$/,
           loader: 'babel-loader',
           options: {
-            configFile: path.join(PATH.CONFIG, 'babel.config.js'),
             cacheDirectory: true,
           },
         };
@@ -286,7 +285,7 @@ module.exports = (env = {}) => {
       if (needTypeCheck) {
         pluginList.push(new TsCheckerWebpackPlugin({
           typescript: {
-            configFile: path.join(ROOT_PATH, 'tsconfig.json'),
+            configFile: path.join(__dirname, 'tsconfig.json'),
             diagnosticOptions: {
               semantic: true,
               syntactic: true,
