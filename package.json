@@ -4,7 +4,7 @@
     "build": "npm run webpack -- --env target=production",
     "build:analyze": "npm run build -- --env analyze",
     "build:stats": "npm run build --profile --json > ./stats/webpack-bundle-stats.json",
-    "deploy": "gh-pages -d ./dist/",
+    "deploy": "gh-pages -d ./dist/ -u \"Aleksei Arro <polsck@gmail.com>\"",
     "dev": "npm run webpack:serve -- --env target=development",
     "dev:tscheck": "npm run dev -- --env tscheck",
     "dev:write": "npm run dev -- --env write",
