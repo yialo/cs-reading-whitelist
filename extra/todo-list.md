@@ -17,3 +17,4 @@
 * Add search with select element
 * Add search by url substring
 * Add extended favicon set
+* Add CI/CD forkflow for deploy to GitHub Pages
