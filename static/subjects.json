@@ -4084,6 +4084,72 @@
         "javascript",
         "nodejs"
       ]
+    },
+    {
+      "caption": "Responsive layout with CSS grid, part 2: auto-fill & auto-fit",
+      "url": "https://blog.jonstodle.com/responsive-layout-with-css-grid-part-2-auto-fit-auto-fill/",
+      "lang": "en",
+      "tags": [
+        "css_grid"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Let's talk about reexports – and why they're bad for loading and runtime performance (by Ivan Akulov)",
+      "url": "https://twitter.com/iamakulov/status/1331551351214645251",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "build",
+        "webpack"
+      ],
+      "legend": "Подводные камни использования re-export в JavaScript."
+    },
+    {
+      "caption": "Лучший способ реализовать «обёртки» в CSS",
+      "url": "https://css-live.ru/articles/luchshij-sposob-realizovat-obyortki-v-css.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ],
+      "legend": "Простая с точки зрения описанных CSS-механизмов статья поднимает интересный вопрос из области архитектурных паттернов: есть ли принципиальная разница между обёрткой и контейнером?"
+    },
+    {
+      "caption": "HTML vs Body in CSS",
+      "url": "https://css-tricks.com/html-vs-body-in-css/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Font sizing with rem (by Jonathan Snook)",
+      "url": "https://snook.ca/archives/html_and_css/font-size-with-rem",
+      "lang": "en",
+      "tags": [
+        "css",
+        "typography"
+      ],
+      "legend": "Классическая статья о px vs em vs rem."
+    },
+    {
+      "caption": "Ликбез по типизации в языках программирования",
+      "url": "https://habr.com/ru/post/161205/",
+      "lang": "ru",
+      "tags": [
+        "typing"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Просто о Хиндли-Милнере",
+      "url": "https://habr.com/ru/post/125250/",
+      "lang": "ru",
+      "tags": [
+        "typing"
+      ],
+      "legend": ""
     }
   ]
 }
