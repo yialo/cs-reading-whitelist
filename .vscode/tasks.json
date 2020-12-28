@@ -16,5 +16,17 @@
       "type": "shell",
       "command": "npx jest extra/playground/learn-jest/sync.spec.js"
     },
+    {
+      "label": "tsc-watch",
+      "type": "shell",
+      "command": "./node_modules/.bin/tsc",
+      "args": ["--watch", "--noEmit", "--project", "./tsconfig.json"],
+      "problemMatcher": "$tsc-watch",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "revealProblems": "onProblem"
+      }
+    }
   ]
 }
