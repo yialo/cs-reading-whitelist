@@ -9,7 +9,7 @@ module.exports = {
   ],
   parserOptions: {
     babelOptions: {
-      configFile: './config/babel.config.js',
+      configFile: './babel.config.js',
     },
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
@@ -38,7 +38,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       webpack: {
-        config: './config/webpack.config.js',
+        config: './webpack.config.js',
       },
     },
   },

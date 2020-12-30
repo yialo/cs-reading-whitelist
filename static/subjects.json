@@ -2293,36 +2293,6 @@
       ]
     },
     {
-      "caption": "10 советов и приемов, которые помогут вам стать лучшим разработчиком на VueJS",
-      "url": "https://habr.com/ru/post/471212/",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "vue",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "Подборка инструментов для быстрой разработки приложений на Vue.js",
-      "url": "https://tproger.ru/translations/tools-for-vue-js/",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "vue",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "Как создавать Vue-компоненты, словно профи",
-      "url": "https://css-live.ru/articles/kak-sozdavat-vue-komponenty-slovno-profi.html",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "vue",
-        "4consider"
-      ]
-    },
-    {
       "caption": "Picturefill",
       "url": "https://scottjehl.github.io/picturefill/",
       "lang": "en",
@@ -4160,6 +4130,51 @@
         "html"
       ],
       "legend": "сокращение имён CSS-классов как экономия на спичках"
+    },
+    {
+      "caption": "Most used words in programming languages",
+      "url": "https://anvaka.github.io/common-words/#?lang=js",
+      "lang": "en",
+      "tags": [
+        "code_art"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Watch Out When Using SetTimeout() in For Loop",
+      "url": "https://medium.com/@axionoso/watch-out-when-using-settimeout-in-for-loop-js-75a047e27a5f",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Что нужно знать о популярных JS-фреймворках",
+      "url": "https://habr.com/ru/company/yandex_praktikum/blog/533702/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "react",
+        "redux",
+        "angular",
+        "vue",
+        "svelte"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "Автотесты «на пальцах»",
+      "series": [
+        {
+          "caption": "Первая часть: пирамида тестов",
+          "url": "https://bureau.ru/soviet/20191024/"
+        }
+      ],
+      "lang": "ru",
+      "tags": [
+        "testing"
+      ]
     }
   ]
 }
