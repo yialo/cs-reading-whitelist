@@ -21,11 +21,11 @@ const store = createStore(rootReducer, enhancer);
 const Root: React.FC = () => (
   <React.StrictMode>
     <ErrorBoundary>
-      <Router>
-        <Provider store={store}>
+      <Provider store={store}>
+        <Router>
           <App />
-        </Provider>
-      </Router>
+        </Router>
+      </Provider>
     </ErrorBoundary>
   </React.StrictMode>
 );
