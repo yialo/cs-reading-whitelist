@@ -5,12 +5,11 @@ const path = require('path');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const cssnano = require('cssnano');
 const dotEnv = require('dotenv');
 const TsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
-const CssOptimizationPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
@@ -201,6 +200,7 @@ module.exports = (env = {}) => {
           },
         },
       };
+
       if (isProduction) {
         optimizationConfig.minimizer = [
           new TerserPlugin({
@@ -215,10 +215,10 @@ module.exports = (env = {}) => {
               },
             },
           }),
-          new CssOptimizationPlugin({
-            assetNameRegExp: /\.css$/,
-            cssProcessor: cssnano,
-            cssProcessorPluginOptions: {
+
+          new CssMinimizerPlugin({
+            test: /\.css$/,
+            minimizerOptions: {
               preset: [
                 'default',
                 {
@@ -231,10 +231,10 @@ module.exports = (env = {}) => {
                 },
               ],
             },
-            canPrint: true,
           }),
         ];
       }
+
       return optimizationConfig;
     })(),
 
