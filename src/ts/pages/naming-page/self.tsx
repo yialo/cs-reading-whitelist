@@ -2,7 +2,7 @@ import React from 'react';
 
 import { NamingPageContents } from './c_contents';
 import { NamingPageList } from './c_list';
-import { ReferenceLinks } from './c_rerefence-links';
+import { ReferenceLinks } from './c_reference-links';
 
 import style from './style.scss';
 

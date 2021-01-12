@@ -8,6 +8,7 @@ export const ReferenceLinks: React.FC = () => {
   return (
     <div>
       <p>Создано на основе личного опыта и следующих подборок:</p>
+
       <ul>
         {REFERENCE_LINKS.map(([label, url], i) => (
           <li key={i}>
@@ -15,6 +16,7 @@ export const ReferenceLinks: React.FC = () => {
           </li>
         ))}
       </ul>
+
       <p>Автор выражает благодарность создателям указанных страниц.</p>
     </div>
   );
