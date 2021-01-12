@@ -4,15 +4,15 @@ export const KEYBOARD_KEYS = {
   SPACE: ' ',
 };
 
-export const FILTERS = {
-  CAPTION: 'caption',
-  HASHTAG: 'hashtag',
-} as const;
+export enum EFilter {
+  CAPTION = 'caption',
+  HASHTAG = 'hashtag',
+}
 
-export const SORTING = {
-  NEW: 'new',
-  OLD: 'old',
-};
+export enum ESorting {
+  NEW = 'new',
+  OLD = 'old',
+}
 
 const INITIAL_ROUTES = {
   HOME: '',

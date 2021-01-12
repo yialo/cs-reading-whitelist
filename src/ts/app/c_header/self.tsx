@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 
-import * as actionCreators from 'ts/action-creators';
+import { toggleTheme } from 'ts/store/action-creators';
 import { themeSelector } from 'ts/selectors';
 
 import { RootNavMenu } from '../c_nav-menu';
@@ -20,7 +20,7 @@ export const RootHeader: React.FC<IRootHeaderProps> = ({ className }) => {
   const dispatch = useDispatch();
 
   const handleToggle = () => {
-    dispatch(actionCreators.toggleTheme());
+    dispatch(toggleTheme());
   };
 
   return (

@@ -25,3 +25,5 @@ export const ControlBarAmountMeter: React.FC<IProps> = ({
     </p>
   );
 };
+
+ControlBarAmountMeter.displayName = 'ControlBar-AmountMeter';

@@ -7,9 +7,9 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 import { ErrorBoundary } from 'common/error-boundary';
+import { rootReducer } from 'ts/store/root-reducer';
 
 import { Root } from './c_root';
-import { rootReducer } from './reducers';
 
 const appliedMiddleware = applyMiddleware(thunk);
 

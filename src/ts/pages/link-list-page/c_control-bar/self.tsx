@@ -4,33 +4,33 @@ import classNames from 'classnames';
 import { Button } from 'common/button';
 import { MainButton } from 'common/main-button';
 import { TextInput } from 'common/text-input';
-import { FILTERS, SORTING } from 'ts/constants';
-import type { FilterName, SortingName } from 'ts/types';
+import { EFilter, ESorting } from 'ts/constants';
+import type { TFilterName, TSortingName } from 'ts/types';
 
-import { ControlBarAmountMeter as AmountMeter } from './c_amount-meter';
+import { ControlBarAmountMeter } from './c_amount-meter';
 
 import style from './style.scss';
 
 interface IProps {
   className?: string;
-  filterTarget: FilterName;
+  filterTarget: TFilterName;
   searchString: string;
-  sortingTarget: SortingName;
+  sortingTarget: TSortingName;
   totalAmount: number;
   visibleAmount: number;
-  onFilterToggle: (name: FilterName) => void;
+  onFilterToggle: (name: TFilterName) => void;
   onSearch: React.ChangeEventHandler;
-  onSortingToggle: (name: SortingName) => void;
+  onSortingToggle: (name: TSortingName) => void;
 }
 
-const FILTER_ENUM = {
-  [FILTERS.CAPTION]: 'заголовок',
-  [FILTERS.HASHTAG]: 'хэштег',
+const FILTER_DICT = {
+  [EFilter.CAPTION]: 'заголовок',
+  [EFilter.HASHTAG]: 'хэштег',
 } as const;
 
-const SORTING_ENUM = {
-  [SORTING.NEW]: 'новые',
-  [SORTING.OLD]: 'старые',
+const SORTING_DICT = {
+  [ESorting.NEW]: 'новые',
+  [ESorting.OLD]: 'старые',
 } as const;
 
 const filterGroupLabelId = 'filter-group-label';
@@ -59,12 +59,13 @@ export const ControlBar: React.FC<IProps> = ({
         <span className={style.tip} id={filterGroupLabelId}>
           Цель поиска:
         </span>
+
         <div
           className={style.filterControlGroup}
           aria-labelledby={filterGroupLabelId}
           role="radiogroup"
         >
-          {Object.entries(FILTER_ENUM).map(([name, legend], i, arr) => {
+          {Object.entries(FILTER_DICT).map(([name, legend], i, arr) => {
             const isCurrent = (filterTarget === name);
 
             let buttonClassName;
@@ -84,7 +85,7 @@ export const ControlBar: React.FC<IProps> = ({
                 aria-checked={isCurrent}
                 role="radio"
                 onClick={() => {
-                  onFilterToggle(name as FilterName);
+                  onFilterToggle(name as TFilterName);
                 }}
               >
                 {legend}
@@ -93,23 +94,26 @@ export const ControlBar: React.FC<IProps> = ({
           })}
         </div>
       </div>
+
       <TextInput
         ref={inputRef}
         className={style.searchbar}
         inputMode="search"
         legend="Введите текст для поиска"
-        tipChar={filterTarget === FILTERS.HASHTAG ? '#' : undefined}
+        tipChar={filterTarget === EFilter.HASHTAG ? '#' : undefined}
         value={searchString}
         onChange={onSearch}
       />
+
       <div className={style.sorting}>
         <span className={style.tip} id={sortingGroupLabelId}>Сортировка:</span>
+
         <div
           className={style.sortingControls}
           aria-labelledby={sortingGroupLabelId}
           role="radiogroup"
         >
-          {Object.entries(SORTING_ENUM).map(([name, legend]) => {
+          {Object.entries(SORTING_DICT).map(([name, legend]) => {
             const isCurrent = (name === sortingTarget);
             return (
               <Button
@@ -119,7 +123,7 @@ export const ControlBar: React.FC<IProps> = ({
                 aria-checked={isCurrent}
                 role="radio"
                 onClick={() => {
-                  onSortingToggle(name);
+                  onSortingToggle(name as TSortingName);
                 }}
               >
                 {`Сначала ${legend}`}
@@ -128,7 +132,8 @@ export const ControlBar: React.FC<IProps> = ({
           })}
         </div>
       </div>
-      <AmountMeter
+
+      <ControlBarAmountMeter
         isFiltered={searchString !== ''}
         {...{
           totalAmount,

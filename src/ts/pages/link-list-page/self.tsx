@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import * as actionCreators from 'ts/action-creators';
+import {
+  fetchSubjects,
+  searchInList,
+  showNextListPage,
+  toggleFilter,
+  toggleSorting,
+} from 'ts/store/action-creators';
 import { LIST_PAGE_SIZE } from 'ts/constants';
 import {
   fetchSelector,
@@ -10,7 +16,7 @@ import {
   getVisibleList,
   listSelector,
 } from 'ts/selectors';
-import type { FilterName, SortingName } from 'ts/types';
+import type { TFilterName, TSortingName } from 'ts/types';
 
 import { ControlBar } from './c_control-bar';
 import { Preloader } from './c_preloader';
@@ -34,23 +40,23 @@ export const LinkListPage: React.FC = () => {
   const visibleAmount = isLastPage ? sortedAmount : (LIST_PAGE_SIZE * page);
 
   const handleSearch: React.ChangeEventHandler<HTMLInputElement> = (evt) => {
-    dispatch(actionCreators.searchInList(evt.target.value));
+    dispatch(searchInList(evt.target.value));
   };
 
   const handleShowMoreClick = () => {
-    dispatch(actionCreators.showNextListPage());
+    dispatch(showNextListPage());
   };
 
-  const handleFilterToggle = (nextFilterName: FilterName) => {
-    dispatch(actionCreators.toggleFilter(nextFilterName));
+  const handleFilterToggle = (nextFilterName: TFilterName) => {
+    dispatch(toggleFilter(nextFilterName));
   };
 
-  const handleSortingToggle = (nextSortingName: SortingName) => {
-    dispatch(actionCreators.toggleSorting(nextSortingName));
+  const handleSortingToggle = (nextSortingName: TSortingName) => {
+    dispatch(toggleSorting(nextSortingName));
   };
 
   useEffect(() => {
-    dispatch(actionCreators.fetchSubjects());
+    dispatch(fetchSubjects());
   }, [dispatch]);
 
   return (
