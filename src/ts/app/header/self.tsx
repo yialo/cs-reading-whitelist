@@ -11,7 +11,7 @@ import { themeSelector } from 'ts/selectors';
 
 import style from './style.scss';
 
-interface IProps {
+interface IRootHeaderProps {
   className?: string;
 }
 
@@ -19,7 +19,7 @@ interface IHeaderActionCreatorsInputMap {
   toggleTheme: SyncActionCreatorType;
 }
 
-export const AppHeader: React.FC<IProps> = ({ className }) => {
+export const RootHeader: React.FC<IRootHeaderProps> = ({ className }) => {
   const hasDarkTheme = useSelector(themeSelector.isDark);
 
   const { toggleTheme } = useActions<IHeaderActionCreatorsInputMap>(actionCreators);
@@ -34,8 +34,4 @@ export const AppHeader: React.FC<IProps> = ({ className }) => {
       />
     </header>
   );
-};
-
-AppHeader.defaultProps = {
-  className: '',
 };

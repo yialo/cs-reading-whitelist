@@ -2,12 +2,12 @@ import React from 'react';
 
 import style from './style.scss';
 
-interface AppFooterLink {
+interface IAppFooterLink {
   legend: string;
   url: string;
 }
 
-const FOOTER_LINKS: AppFooterLink[] = [
+const FOOTER_LINKS: IAppFooterLink[] = [
   {
     legend: 'GitHub',
     url: 'https://github.com/yialo/cs-reading-whitelist',
@@ -26,7 +26,7 @@ const FOOTER_LINKS: AppFooterLink[] = [
   },
 ];
 
-export const AppFooter: React.FC = () => {
+export const RootFooter: React.FC = () => {
   return (
     <footer className={style.root}>
       <ul className={style.list}>

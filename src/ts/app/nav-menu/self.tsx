@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import { KEYBOARD_KEYS, ROUTES } from 'ts/constants';
 
-import { AppNavMenuIcon } from './Icon';
+import { AppNavMenuIcon } from './c_icon';
 
 import style from './style.scss';
 
@@ -19,7 +19,7 @@ const routeList = [
 
 const BUTTON_ID = 'AppNavMenu-list';
 
-export const AppNavMenu: React.FC<IProps> = ({ className }) => {
+export const RootNavMenu: React.FC<IProps> = ({ className }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleMenuExpansion = () => {
@@ -72,8 +72,4 @@ export const AppNavMenu: React.FC<IProps> = ({ className }) => {
       </ul>
     </nav>
   );
-};
-
-AppNavMenu.defaultProps = {
-  className: '',
 };

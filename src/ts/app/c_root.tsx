@@ -5,8 +5,8 @@ import { useSelector } from 'react-redux';
 import { PageSwitcher } from 'ts/components/pages';
 import { themeSelector } from 'ts/selectors';
 
-import { AppFooter as Footer } from './Footer';
-import { AppHeader as Header } from './Header';
+import { RootFooter } from './footer';
+import { RootHeader } from './header';
 
 import style from './style.scss';
 
@@ -15,7 +15,7 @@ const disableOverlay = () => {
   $overlay?.classList.add('isHidden');
 };
 
-export const App: React.FC = () => {
+export const Root: React.FC = () => {
   const hasDarkTheme = useSelector(themeSelector.isDark);
 
   useEffect(() => {
@@ -24,9 +24,9 @@ export const App: React.FC = () => {
 
   return (
     <div className={classNames(style.root, { 'hasDarkTheme': hasDarkTheme })}>
-      <Header className={style.header} />
+      <RootHeader className={style.header} />
       <PageSwitcher />
-      <Footer />
+      <RootFooter />
     </div>
   );
 };

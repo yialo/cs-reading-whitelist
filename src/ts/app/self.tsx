@@ -6,9 +6,9 @@ import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
-import { App } from './components/App';
-import { ErrorBoundary } from 'common/ErrorBoundary';
-import { rootReducer } from './store/reducers';
+import { Root } from './c_root';
+import { ErrorBoundary } from 'common/error-boundary';
+import { rootReducer } from 'ts/store/reducers';
 
 const appliedMiddleware = applyMiddleware(thunk);
 const enhancer = (
@@ -18,16 +18,16 @@ const enhancer = (
 );
 const store = createStore(rootReducer, enhancer);
 
-const Root: React.FC = () => (
+const App: React.FC = () => (
   <React.StrictMode>
     <ErrorBoundary>
       <Provider store={store}>
         <Router>
-          <App />
+          <Root />
         </Router>
       </Provider>
     </ErrorBoundary>
   </React.StrictMode>
 );
 
-export const HotRoot = hot(Root);
+export const HotApp = hot(App);
