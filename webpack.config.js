@@ -18,12 +18,13 @@ const PATH = {
   SRC: path.join(__dirname, 'src'),
   DIST: path.join(__dirname, 'dist'),
   STATIC: path.join(__dirname, 'static'),
-  CSS_MODULES_IDENT_CONTEXT: path.join(__dirname, 'src/ts/components'),
+  CSS_MODULES_IDENT_CONTEXT: path.join(__dirname, 'src/ts'),
 };
 
 const ALIAS = {
   '@': PATH.SRC,
-  'common': path.join(PATH.SRC, 'ts/components/common'),
+  'common': path.join(PATH.SRC, 'ts/common'),
+  'domains': path.join(PATH.SRC, 'ts/domains'),
   'react-dom': '@hot-loader/react-dom',
   'scss': path.join(PATH.SRC, 'scss'),
   'ts': path.join(PATH.SRC, 'ts'),
@@ -271,8 +272,8 @@ module.exports = (env = {}) => {
           ],
         }),
         new DefinePlugin({
-          'GLOBAL_ENV_VARIABLE_MODE': JSON.stringify(process.env.NODE_ENV),
-          'GLOBAL_ENV_VARIABLE_PUBLIC_PATH': JSON.stringify(process.env.PUBLIC_PATH),
+          '__GLOBAL_ENV_VARIABLE__MODE__': JSON.stringify(process.env.NODE_ENV),
+          '__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__': JSON.stringify(process.env.PUBLIC_PATH),
         }),
       ];
 

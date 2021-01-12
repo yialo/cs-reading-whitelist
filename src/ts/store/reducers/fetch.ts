@@ -1,27 +1,6 @@
-import { IAction, ISubject } from 'ts/types';
+import { ACTION_TYPES } from 'ts/action-types';
 
-import { ACTION_TYPES } from '../actionTypes';
-
-type FetchList = ISubject[];
-type FetchError = Error | null;
-
-interface IFetchState {
-  error: FetchError;
-  list: FetchList;
-  isComplete: boolean;
-}
-
-interface IFetchCompleteAction extends IAction {
-  type: typeof ACTION_TYPES.FETCH.COMPLETE;
-  payload: FetchList;
-}
-
-interface IFetchErrorAction extends IAction {
-  type: typeof ACTION_TYPES.FETCH.ERROR;
-  payload: Error;
-}
-
-type FetchAction = IFetchCompleteAction | IFetchErrorAction;
+import type { TFetchReducer, IFetchState } from '../types';
 
 const INITIAL_STATE: IFetchState = {
   error: null,
@@ -29,10 +8,7 @@ const INITIAL_STATE: IFetchState = {
   isComplete: false,
 };
 
-export const fetchReducer = (
-  prevState: IFetchState | undefined,
-  action: FetchAction,
-): IFetchState => {
+export const fetchReducer: TFetchReducer = (prevState, action) => {
   const state = prevState ?? INITIAL_STATE;
 
   switch (action.type) {

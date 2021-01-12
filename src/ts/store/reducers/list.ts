@@ -1,57 +1,18 @@
-import { FILTERS, SORTING } from 'ts/constants';
-import type { IAction, FilterName, SortingName } from 'ts/types';
+import { ACTION_TYPES } from 'ts/action-types';
+import { EFilter, ESorting } from 'ts/constants';
 
-import { ACTION_TYPES } from '../actionTypes';
-
-type SearchString = string;
-
-interface IListState {
-  searchString: SearchString;
-  page: number;
-  filterName: FilterName;
-  sortingName: SortingName;
-}
-
-interface IListSearchAction extends IAction {
-  type: typeof ACTION_TYPES.LIST.SEARCH;
-  payload: SearchString;
-}
-
-interface IListFilterAction extends IAction {
-  type: typeof ACTION_TYPES.LIST.FILTER_TOGGLE;
-  payload: FilterName;
-}
-
-interface IListSortingAction extends IAction {
-  type: typeof ACTION_TYPES.LIST.SORTING_TOGGLE;
-  payload: SortingName;
-}
-
-interface IListPageAction extends IAction {
-  type: typeof ACTION_TYPES.LIST.NEXT_PAGE;
-  payload?: undefined;
-}
-
-type ListAction = (
-  | IListFilterAction
-  | IListSearchAction
-  | IListSortingAction
-  | IListPageAction
-);
+import type { TListReducer } from '../types';
 
 const INITIAL_PAGE = 1;
 
 const INITIAL_STATE = {
   searchString: '',
   page: INITIAL_PAGE,
-  filterName: FILTERS.CAPTION,
-  sortingName: SORTING.NEW,
+  filterName: EFilter.CAPTION,
+  sortingName: ESorting.NEW,
 };
 
-export const listReducer = (
-  prevState: IListState | undefined,
-  action: ListAction,
-): IListState => {
+export const listReducer: TListReducer = (prevState, action) => {
   const state = prevState ?? INITIAL_STATE;
 
   switch (action.type) {

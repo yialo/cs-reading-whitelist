@@ -1,1 +1,0 @@
-export { AppNavMenu } from './self';
