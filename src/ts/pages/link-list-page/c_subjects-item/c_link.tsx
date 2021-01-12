@@ -26,3 +26,5 @@ export const SubjectsItemLink: React.FC<ISubjectsItemLinkProps> = ({
     </a>
   );
 };
+
+SubjectsItemLink.displayName = 'SubjectsItem-Link';

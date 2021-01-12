@@ -47,3 +47,5 @@ export const SubjectsItemAppendix: React.FC<ISubjectsItemAppendixProps> = ({
     </>
   );
 };
+
+SubjectsItemAppendix.displayName = 'SubjectsItem-Appendix';

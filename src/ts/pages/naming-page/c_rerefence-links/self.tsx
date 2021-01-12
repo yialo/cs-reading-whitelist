@@ -19,5 +19,3 @@ export const ReferenceLinks: React.FC = () => {
     </div>
   );
 };
-
-ReferenceLinks.displayName = 'NamingPageReferenceLinks';

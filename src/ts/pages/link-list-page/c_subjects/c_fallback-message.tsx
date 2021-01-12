@@ -11,3 +11,5 @@ export const SubjectsFallbackMessage: React.FC<IProps> = ({ message }) => {
     <p className={style.fallbackMessage}>{message}</p>
   );
 };
+
+SubjectsFallbackMessage.displayName = 'Subjects-FallbackMessage';

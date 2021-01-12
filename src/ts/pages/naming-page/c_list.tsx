@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import { CONTENTS } from './data';
 
-export const List: React.FC = () => {
+export const NamingPageList: React.FC = () => {
   return (
     <>
       {CONTENTS.map((it, i) => (
@@ -30,4 +30,4 @@ export const List: React.FC = () => {
   );
 };
 
-List.displayName = 'NamingPageList';
+NamingPageList.displayName = 'NamingPage-List';
