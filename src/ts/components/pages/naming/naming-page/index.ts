@@ -1,1 +1,0 @@
-export { NamingPage } from './self';

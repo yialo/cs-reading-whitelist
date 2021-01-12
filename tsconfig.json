@@ -20,7 +20,10 @@
         "./*"
       ],
       "common/*": [
-        "./ts/components/common/*"
+        "./ts/common/*"
+      ],
+      "domains/*": [
+        "./ts/domains/*"
       ],
       "scss/*": [
         "./scss/*"

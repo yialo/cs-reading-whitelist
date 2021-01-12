@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
-import { PageSwitcher } from 'ts/components/pages';
+import { PageSwitcher } from 'ts/pages';
 import { themeSelector } from 'ts/selectors';
 
-import { RootFooter } from './footer';
-import { RootHeader } from './header';
+import { RootFooter } from './c_footer';
+import { RootHeader } from './c_header';
 
 import style from './style.scss';
 

@@ -1,4 +1,4 @@
-import { FILTERS, SORTING } from './constants';
+import type { FILTERS, SORTING } from './constants';
 
 export type $Values<O> = O[keyof O];
 

@@ -28,6 +28,7 @@
   z-index: 1;
 }
 
+// TODO: extract to scss dir because of it is used by pages
 .main {
   --color_background-main: #{utils.$color-light-backgroundMain};
 

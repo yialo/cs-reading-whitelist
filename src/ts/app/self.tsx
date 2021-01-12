@@ -6,17 +6,18 @@ import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
-import { Root } from './c_root';
 import { ErrorBoundary } from 'common/error-boundary';
-import { rootReducer } from 'ts/store/reducers';
+
+import { Root } from './c_root';
+import { rootReducer } from './reducers';
 
 const appliedMiddleware = applyMiddleware(thunk);
-const enhancer = (
-  GLOBAL_ENV_VARIABLE_MODE === 'development'
-    ? composeWithDevTools(appliedMiddleware)
-    : appliedMiddleware
-);
-const store = createStore(rootReducer, enhancer);
+
+const storeEnhancer = __GLOBAL_ENV_VARIABLE__MODE__ === 'development'
+  ? composeWithDevTools(appliedMiddleware)
+  : appliedMiddleware;
+
+const store = createStore(rootReducer, storeEnhancer);
 
 const App: React.FC = () => (
   <React.StrictMode>
