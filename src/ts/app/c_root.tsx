@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
 import { PageSwitcher } from 'ts/pages';
-import { themeSelector } from 'ts/selectors';
+import { themeSelector } from 'ts/store/selectors';
 
 import { RootFooter } from './c_footer';
 import { RootHeader } from './c_header';

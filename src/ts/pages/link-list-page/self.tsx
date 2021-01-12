@@ -15,7 +15,7 @@ import {
   getSortedAmount,
   getVisibleList,
   listSelector,
-} from 'ts/selectors';
+} from 'ts/store/selectors';
 import type { TFilterName, TSortingName } from 'ts/types';
 
 import { ControlBar } from './c_control-bar';

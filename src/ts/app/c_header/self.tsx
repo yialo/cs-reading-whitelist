@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { toggleTheme } from 'ts/store/action-creators';
-import { themeSelector } from 'ts/selectors';
+import { themeSelector } from 'ts/store/selectors';
 
 import { RootNavMenu } from '../c_nav-menu';
 import { ThemeToggle } from '../c_theme-toggle';

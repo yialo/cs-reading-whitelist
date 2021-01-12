@@ -3,7 +3,7 @@ import { createSelector } from 'reselect';
 import { EFilter, ESorting, LIST_PAGE_SIZE } from 'ts/constants';
 import type { ISubject, TFilterName, TSortingName } from 'ts/types';
 
-import type { IState } from './store/types';
+import type { IState } from './types';
 
 export const fetchSelector = {
   error: (state: IState): Error | null => state.fetch.error,

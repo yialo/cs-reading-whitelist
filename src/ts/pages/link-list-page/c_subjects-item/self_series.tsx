@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
 import { KEYBOARD_KEYS } from 'ts/constants';
-import { listSelector } from 'ts/selectors';
+import { listSelector } from 'ts/store/selectors';
 import type { ISeriesSubject } from 'ts/types';
 
 import { SubjectsItemAppendix } from './c_appendix';
