@@ -1,25 +1,25 @@
 import { createSelector } from 'reselect';
 
-import { FILTERS, SORTING, LIST_PAGE_SIZE } from 'ts/constants';
-import type { ISubject, FilterName, SortingName } from 'ts/types';
+import { EFilter, ESorting, LIST_PAGE_SIZE } from 'ts/constants';
+import type { ISubject, TFilterName, TSortingName } from 'ts/types';
 
-import type { RootState } from './store/reducers';
+import type { IState } from './store/types';
 
 export const fetchSelector = {
-  error: (state: RootState): Error | null => state.fetch.error,
-  fullList: (state: RootState): ISubject[] => state.fetch.list,
-  isComplete: (state: RootState): boolean => state.fetch.isComplete,
+  error: (state: IState): Error | null => state.fetch.error,
+  fullList: (state: IState): ISubject[] => state.fetch.list,
+  isComplete: (state: IState): boolean => state.fetch.isComplete,
 };
 
 export const listSelector = {
-  filterName: (state: RootState): FilterName => state.list.filterName,
-  page: (state: RootState): number => state.list.page,
-  searchString: (state: RootState): string => state.list.searchString,
-  sortingName: (state: RootState): SortingName => state.list.sortingName,
+  filterName: (state: IState): TFilterName => state.list.filterName,
+  page: (state: IState): number => state.list.page,
+  searchString: (state: IState): string => state.list.searchString,
+  sortingName: (state: IState): TSortingName => state.list.sortingName,
 };
 
 export const themeSelector = {
-  isDark: (state: RootState): boolean => state.theme.isDark,
+  isDark: (state: IState): boolean => state.theme.isDark,
 };
 
 const selectFilteredList = createSelector(
@@ -37,13 +37,13 @@ const selectFilteredList = createSelector(
 
     return fullList.filter((item) => {
       switch (filterName) {
-        case FILTERS.CAPTION: {
+        case EFilter.CAPTION: {
           const hasMatchInMainCaption = item.caption.toLowerCase().includes(matcher);
           return hasMatchInMainCaption
             || item.series?.some((it) => it.caption.toLowerCase().includes(matcher));
         }
 
-        case FILTERS.HASHTAG: {
+        case EFilter.HASHTAG: {
           const hasMatchInMainTags = item.tags.some((tag) => tag.toLowerCase().includes(matcher));
           return hasMatchInMainTags
             || item.series?.some((it) => (
@@ -65,7 +65,7 @@ export const selectSortedList = createSelector(
     listSelector.page,
   ],
   (filteredList, sortingName) => (
-    sortingName === SORTING.NEW ? [...filteredList].reverse() : filteredList
+    sortingName === ESorting.NEW ? [...filteredList].reverse() : filteredList
   ),
 );
 

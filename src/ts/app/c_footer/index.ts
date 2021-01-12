@@ -1,0 +1,1 @@
+export { RootFooter } from './self';

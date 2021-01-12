@@ -537,68 +537,6 @@
       ]
     },
     {
-      "caption": "Скринкаст по Webpack (Learn.javascript.ru)",
-      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn",
-      "lang": "ru",
-      "tags": [
-        "build",
-        "webpack",
-        "video"
-      ],
-      "legend": "курс устарел, но часть концепций актуальна"
-    },
-    {
-      "caption": "Настройка Webpack 4 (Jack Coder)",
-      "url": "https://www.youtube.com/playlist?list=PLkCrmfIT6LBQWN02hNj6r1daz7965GxsV",
-      "lang": "ru",
-      "tags": [
-        "build",
-        "webpack",
-        "video"
-      ]
-    },
-    {
-      "caption": "html-webpack-plugin",
-      "url": "https://github.com/jantimon/html-webpack-plugin",
-      "lang": "en",
-      "tags": [
-        "build",
-        "webpack",
-        "webpack_plugin",
-        "docs"
-      ]
-    },
-    {
-      "caption": "html-webpack-template EJS syntax",
-      "url": "https://github.com/jaketrent/html-webpack-template/blob/master/index.ejs",
-      "lang": "en",
-      "tags": [
-        "build",
-        "webpack",
-        "docs"
-      ]
-    },
-    {
-      "caption": "Webpack Chart",
-      "url": "https://alexkuz.github.io/webpack-chart/",
-      "lang": "en",
-      "tags": [
-        "build",
-        "webpack",
-        "tool"
-      ]
-    },
-    {
-      "caption": "webpack-analyse",
-      "url": "https://webpack.github.io/analyse/",
-      "lang": "en",
-      "tags": [
-        "build",
-        "webpack",
-        "tool"
-      ]
-    },
-    {
       "caption": "Готовим идеальный CSS",
       "url": "https://habr.com/ru/company/constanta/blog/428800/",
       "lang": "ru",
@@ -607,48 +545,6 @@
         "webpack"
       ],
       "legend": "подключение и оптимизация стилей с помощью Webpack"
-    },
-    {
-      "caption": "Скринкаст по Gulp (Learn.javascript.ru)",
-      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZFLTE13V4qNWTZbeipNhCgQ",
-      "lang": "ru",
-      "tags": [
-        "build",
-        "gulp",
-        "video"
-      ],
-      "legend": "часть описанных в курсе подходов устарела"
-    },
-    {
-      "caption": "A quick guide for switching to Gulp 4",
-      "url": "https://codeburst.io/switching-to-gulp-4-0-271ae63530c0",
-      "lang": "en",
-      "tags": [
-        "build",
-        "gulp"
-      ],
-      "legend": "руководство по миграции с 3-й на 4-ю версии Gulp"
-    },
-    {
-      "caption": "Pug + Gulp",
-      "url": "http://4webfan.ru/pug-gulp/",
-      "lang": "ru",
-      "tags": [
-        "build",
-        "gulp",
-        "pug"
-      ],
-      "legend": "советы по настройке обработки whitespace-символов в HTML в случае Gulp-сборки с использованием Pug"
-    },
-    {
-      "caption": "Using rollup.js with gulp.js",
-      "url": "https://duske.me/using-rollup-js-with-gulp-js/",
-      "lang": "en",
-      "tags": [
-        "build",
-        "gulp",
-        "rollup"
-      ]
     },
     {
       "caption": "Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали",
@@ -2280,17 +2176,6 @@
         "4consider"
       ],
       "legend": "коллекция материалов для изучения ES2015, React, Redux, Webpack, Babel и т.п."
-    },
-    {
-      "caption": "Скринкаст по React",
-      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZEz2unvD0a2Spv7RehBrpDO",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "react",
-        "video",
-        "4consider"
-      ]
     },
     {
       "caption": "Picturefill",
@@ -4174,6 +4059,33 @@
       "lang": "ru",
       "tags": [
         "testing"
+      ]
+    },
+    {
+      "caption": "Observable в RxJS: краткое введение",
+      "url": "https://medium.com/@kosmogradsky/observable-%D0%B2-rxjs-%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE%D0%B5-%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-34939ff5f7d7",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "reactive_programming"
+      ]
+    },
+    {
+      "caption": "React-redux: просто о zombie children and stale props (Вадим Бударин)",
+      "url": "https://vadim-budarin.medium.com/react-%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D0%BD%D0%BE-%D0%BE-zombie-children-and-stale-props-d31247ea08",
+      "lang": "ru",
+      "tags": [
+        "react",
+        "redux"
+      ]
+    },
+    {
+      "caption": "Why useActions react-redux hook is unnecessary (by Dan Abramov)",
+      "url": "https://github.com/reduxjs/react-redux/issues/1252#issuecomment-488160930",
+      "lang": "",
+      "tags": [
+        "react",
+        "redux"
       ]
     }
   ]

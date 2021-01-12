@@ -1,24 +1,24 @@
-import { ACTION_TYPES } from '../actionTypes';
-import type { IAction } from '../types';
+import { ACTION_TYPES } from 'ts/action-types';
 
-interface IThemeState {
-  isDark: boolean;
-}
+import type { TThemeReducer, IThemeState } from '../types';
 
-const INITIAL_STATE = {
+const INITIAL_STATE: IThemeState = {
   isDark: false,
 };
 
-export const themeReducer = (
-  prevState: IThemeState | undefined,
-  action: IAction,
-): IThemeState => {
+export const themeReducer: TThemeReducer = (prevState, action) => {
   const state = prevState ?? INITIAL_STATE;
-  if (action.type === ACTION_TYPES.THEME.TOGGLE) {
-    return {
-      ...state,
-      isDark: !state.isDark,
-    };
+
+  switch (action.type) {
+    case ACTION_TYPES.THEME.TOGGLE: {
+      return {
+        ...state,
+        isDark: !state.isDark,
+      };
+    }
+
+    default: {
+      return state;
+    }
   }
-  return state;
 };

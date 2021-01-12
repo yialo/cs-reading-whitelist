@@ -1,9 +1,10 @@
-import { FILTERS, SORTING } from './constants';
+import type { EFilter, ESorting } from './constants';
 
 export type $Values<O> = O[keyof O];
 
-export type FilterName = $Values<typeof FILTERS>;
-export type SortingName = $Values<typeof SORTING>;
+export type TFilterName = EFilter;
+export type TSortingName = ESorting;
+export type TSearchString = string;
 
 export type SubjectCaption = string;
 export type SubjectLang = string;

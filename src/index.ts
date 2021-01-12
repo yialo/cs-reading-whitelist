@@ -2,6 +2,6 @@ import '@csstools/normalize.css';
 
 import 'scss/index.scss';
 
-import { init } from './ts/init';
+import { init } from './ts/app';
 
 init();

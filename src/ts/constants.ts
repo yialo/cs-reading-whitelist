@@ -4,15 +4,15 @@ export const KEYBOARD_KEYS = {
   SPACE: ' ',
 };
 
-export const FILTERS = {
-  CAPTION: 'caption',
-  HASHTAG: 'hashtag',
-} as const;
+export enum EFilter {
+  CAPTION = 'caption',
+  HASHTAG = 'hashtag',
+}
 
-export const SORTING = {
-  NEW: 'new',
-  OLD: 'old',
-};
+export enum ESorting {
+  NEW = 'new',
+  OLD = 'old',
+}
 
 const INITIAL_ROUTES = {
   HOME: '',
@@ -25,7 +25,7 @@ type RouteEnum = {
 
 const createActualRoutes = (routeEnum: RouteEnum) => Object.entries(routeEnum)
   .reduce((routes: RouteEnum, [name, path]) => {
-    routes[name] = `${GLOBAL_ENV_VARIABLE_PUBLIC_PATH as string}${path}`;
+    routes[name] = `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}${path}`;
     return routes;
   }, {});
 

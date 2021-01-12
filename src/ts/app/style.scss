@@ -1,0 +1,55 @@
+@use "~scss/utils";
+
+.root {
+  --color_text-caption: #{utils.$color-light-textCaption};
+  --color_background-global: #{utils.$color-light-backgroundGlobal};
+  --color_background-secondary: #{utils.$color-light-backgroundSecondary};
+  --color_text: #{utils.$color-light-text};
+
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  color: var(--color_text);
+  background-color: var(--color_background-global);
+
+  &:global(.hasDarkTheme) {
+    --color_text-caption: #{utils.$color-dark-textCaption};
+    --color_background-global: #{utils.$color-dark-backgroundGlobal};
+    --color_background-secondary: #{utils.$color-dark-backgroundSecondary};
+    --color_text: #{utils.$color-dark-text};
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+// TODO: extract to scss dir because of it is used by pages
+.main {
+  --color_background-main: #{utils.$color-light-backgroundMain};
+
+  justify-self: center;
+  width: 100%;
+  max-width: utils.$viewport-sm-max;
+  padding-left: var(--size_paddingX);
+  padding-right: var(--size_paddingX);
+  background-color: var(--color_background-main);
+
+  @include utils.darkTheme() {
+    --color_background-main: #{utils.$color-dark-backgroundMain};
+  }
+
+  @media (max-width: utils.$viewport-xs-max) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

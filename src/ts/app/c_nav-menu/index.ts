@@ -1,0 +1,1 @@
+export { RootNavMenu } from './self';
