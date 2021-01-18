@@ -480,7 +480,7 @@
         "video",
         "4consider"
       ],
-      "legend": "курс устарел, но часть концепций актуальна"
+      "legend": "хотя курс внешне устарел, вся базовая информация актуальна"
     },
     {
       "caption": "NodeJS Event Loop",
@@ -513,16 +513,6 @@
       "lang": "en",
       "tags": [
         "nodejs",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "Уроки Node JS и Express (Гоша Дударь)",
-      "url": "https://www.youtube.com/playlist?list=PL0lO_mIqDDFX0qH9w5YQIDV6Wxy0oawet",
-      "lang": "ru",
-      "tags": [
-        "nodejs",
-        "video",
         "4consider"
       ]
     },
@@ -3796,8 +3786,7 @@
       "tags": [
         "react",
         "react_hooks"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Developing UI (by Adam Morse)",
@@ -3807,8 +3796,7 @@
         "testing",
         "code_quality",
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "The Elements of UI Engineering (by Dan Abramov)",
@@ -3816,8 +3804,7 @@
       "lang": "en",
       "tags": [
         "ux_ui"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "React as a UI Runtime (by Dan Abramov)",
@@ -3825,8 +3812,7 @@
       "lang": "en",
       "tags": [
         "react"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Why Do React Elements Have a $$typeof Property? (by Dan Abramov)",
@@ -3835,8 +3821,7 @@
       "tags": [
         "react",
         "security"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "DOMException: The play() request was interrupted (by François Beaufort)",
@@ -3845,8 +3830,7 @@
       "tags": [
         "javascript",
         "dom"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Delay unmounting of the component in React (by Tomasz Ferens)",
@@ -3854,8 +3838,7 @@
       "lang": "en",
       "tags": [
         "react"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Метрики шрифтов",
@@ -3947,8 +3930,7 @@
       "lang": "en",
       "tags": [
         "css_grid"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Let's talk about reexports – and why they're bad for loading and runtime performance (by Ivan Akulov)",
@@ -3976,8 +3958,7 @@
       "lang": "en",
       "tags": [
         "css"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Font sizing with rem (by Jonathan Snook)",
@@ -3995,8 +3976,7 @@
       "lang": "ru",
       "tags": [
         "typing"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Просто о Хиндли-Милнере",
@@ -4004,8 +3984,7 @@
       "lang": "ru",
       "tags": [
         "typing"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Минимизация классов в HTML (Виталий Харисов)",
@@ -4022,8 +4001,7 @@
       "lang": "en",
       "tags": [
         "code_art"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Watch Out When Using SetTimeout() in For Loop",
@@ -4031,8 +4009,7 @@
       "lang": "en",
       "tags": [
         "javascript"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Что нужно знать о популярных JS-фреймворках",
@@ -4045,8 +4022,7 @@
         "angular",
         "vue",
         "svelte"
-      ],
-      "legend": ""
+      ]
     },
     {
       "caption": "Автотесты «на пальцах»",
@@ -4086,6 +4062,34 @@
       "tags": [
         "react",
         "redux"
+      ]
+    },
+    {
+      "caption": "The 5 Types Of React Application State",
+      "url": "http://jamesknelson.com/5-types-react-application-state/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_state_management"
+      ]
+    },
+    {
+      "caption": "How to Organize a Large React Application and Make It Scale",
+      "url": "https://www.sitepoint.com/organize-large-react-application/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "code_quality"
+      ],
+      "legend": "возможно, в мире с TypeScript использовать propTypes не стоит"
+    },
+        {
+      "caption": "How to fix nasty circular dependency issues once and for all in JavaScript & TypeScript (by Michel Weststrate)",
+      "url": "https://medium.com/visual-development/how-to-fix-nasty-circular-dependency-issues-once-and-for-all-in-javascript-typescript-a04c987cf0de",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "code_quality"
       ]
     }
   ]
