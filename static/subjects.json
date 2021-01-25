@@ -3436,7 +3436,7 @@
     },
     {
       "caption": "React Components, Elements, and Instances (by Dan Abramov)",
-      "url": "https://medium.com/@dan_abramov/react-components-elements-and-instances-90800811f8ca",
+      "url": "https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html",
       "lang": "en",
       "tags": [
         "react"
