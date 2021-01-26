@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 
-import { Button } from 'common/button';
-import { MainButton } from 'common/main-button';
-import { TextInput } from 'common/text-input';
+import { Button } from 'common/c_button';
+import { MainButton } from 'common/c_main-button';
+import { TextInput } from 'common/c_text-input';
 import { EFilter, ESorting } from 'ts/constants';
 import type { TFilterName, TSortingName } from 'ts/types';
 
