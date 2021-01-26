@@ -3,10 +3,7 @@ import classNames from 'classnames';
 
 import style from './style.scss';
 
-type InputRef = React.RefObject<HTMLInputElement>;
-
-interface ITextInputProps {
-  forwardedRef: InputRef;
+interface ITextPropsWithoutForwardedRef {
   className?: string;
   inputMode: React.HTMLAttributes<HTMLInputElement>['inputMode'];
   legend: string;
@@ -15,9 +12,13 @@ interface ITextInputProps {
   onChange: (evt: React.ChangeEvent) => void;
 }
 
+interface ITextInputProps extends ITextPropsWithoutForwardedRef {
+  forwardedRef: React.ForwardedRef<HTMLInputElement>;
+}
+
 const TextInput: React.FC<ITextInputProps> = ({
-  forwardedRef,
   className,
+  forwardedRef,
   inputMode,
   legend,
   tipChar,
@@ -31,6 +32,7 @@ const TextInput: React.FC<ITextInputProps> = ({
       {hasTipChar && (
         <span className={style.tipChar} aria-hidden="true">{tipChar}</span>
       )}
+
       <label
         className={style.label}
         aria-label={legend}
@@ -48,8 +50,11 @@ const TextInput: React.FC<ITextInputProps> = ({
   );
 };
 
-export const TextInputWithRef = forwardRef<ITextInputProps, InputRef>(
-  (propsRest, ref) => <TextInput {...propsRest} forwardedRef={ref} />,
-);
+TextInput.displayName = 'TextInput';
 
-TextInputWithRef.displayName = 'TextInput';
+export const TextInputWithForwardedRef = forwardRef<
+HTMLInputElement,
+ITextPropsWithoutForwardedRef
+>((props, ref) => <TextInput {...props} forwardedRef={ref} />);
+
+TextInputWithForwardedRef.displayName = 'TextInput';

@@ -51,6 +51,12 @@ const selectFilteredList = createSelector(
             ));
         }
 
+        case EFilter.URL: {
+          const hasMatchInMainUrl = item.url?.toLowerCase().includes(matcher);
+          return hasMatchInMainUrl
+            || item.series?.some((it) => it.url.toLowerCase().includes(matcher));
+        }
+
         default:
           return true;
       }
