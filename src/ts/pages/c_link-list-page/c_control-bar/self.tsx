@@ -36,6 +36,19 @@ const SORTING_DICT = {
 
 const sortingGroupLabelId = 'sorting-group-label';
 
+const getInputTipChar = (filterTarget: EFilter) => {
+  switch (filterTarget) {
+    case (EFilter.HASHTAG):
+      return '#';
+
+    case (EFilter.URL):
+      return '://';
+
+    default:
+      return undefined;
+  }
+};
+
 export const ControlBar: React.FC<IProps> = ({
   className,
   filterTarget,
@@ -47,7 +60,7 @@ export const ControlBar: React.FC<IProps> = ({
   onSearch,
   onSortingToggle,
 }) => {
-  const inputRef = useRef<HTMLInputElement>();
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     inputRef.current?.focus();
@@ -69,7 +82,7 @@ export const ControlBar: React.FC<IProps> = ({
         className={style.searchbar}
         inputMode="search"
         legend="Введите текст для поиска"
-        tipChar={filterTarget === EFilter.HASHTAG ? '#' : undefined}
+        tipChar={getInputTipChar(filterTarget)}
         value={searchString}
         onChange={onSearch}
       />
