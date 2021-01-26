@@ -4091,6 +4091,42 @@
         "javascript",
         "code_quality"
       ]
+    },
+    {
+      "caption": "Все ли вы знаете о useCallback",
+      "url": "https://habr.com/ru/post/529950/",
+      "lang": "ru",
+      "tags": [
+        "react",
+        "react_hooks"
+      ]
+    },
+    {
+      "caption": "Руководство по рендеренгу в React",
+      "url": "https://bxnotes.ru/conspect/lib/react/react-notes/rendering/",
+      "lang": "ru",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Зачем айтишнику личный бренд",
+      "url": "https://habr.com/ru/company/oleg-bunin/blog/476110/",
+      "lang": "ru",
+      "tags": [
+        "productivity",
+        "soft_skills"
+      ]
+    },
+    {
+      "caption": "Understanding ReactJS setState",
+      "url": "https://medium.com/@baphemot/understanding-reactjs-setstate-a4640451865b",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_state_management"
+      ],
+      "legend": "краткий обзор особенностей работы this.setState"
     }
   ]
 }
