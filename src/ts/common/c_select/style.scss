@@ -25,9 +25,9 @@
 .expanderButton {
   composes: _button;
 
-  border: 1px solid black;
+  border: 1px solid utils.$color-lightGray;
   border-radius: 2px;
-  background-color: #d4d4d4;
+  background-color: utils.$color-gray;
 }
 
 .list {
@@ -37,7 +37,7 @@
   z-index: 1;
   top: 100%;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid utils.$color-lightGray;
   border-top-style: none;
   background-color: white;
 }

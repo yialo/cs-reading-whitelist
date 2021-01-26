@@ -1,5 +1,7 @@
+@use "~scss/utils";
+
 $borderWidth: 1px;
-$border: $borderWidth solid #bababa;
+$border: $borderWidth solid utils.$color-lightGray;
 $borderRadius: 2px;
 $padding: 8px;
 $fontSize: 20px;
