@@ -1,1 +1,1 @@
-export { TextInput } from './self';
+export { TextInputWithForwardedRef as TextInput } from './self';
