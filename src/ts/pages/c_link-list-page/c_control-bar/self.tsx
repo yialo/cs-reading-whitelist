@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 
 import { Button } from 'common/c_button';
-import { MainButton } from 'common/c_main-button';
+import { Select } from 'common/c_select';
 import { TextInput } from 'common/c_text-input';
 import { EFilter, ESorting } from 'ts/constants';
 import type { TFilterName, TSortingName } from 'ts/types';
@@ -24,8 +24,9 @@ interface IProps {
 }
 
 const FILTER_DICT = {
-  [EFilter.CAPTION]: 'заголовок',
-  [EFilter.HASHTAG]: 'хэштег',
+  [EFilter.CAPTION]: 'заголовку',
+  [EFilter.HASHTAG]: 'хэштегу',
+  [EFilter.URL]: 'URL-адресу',
 } as const;
 
 const SORTING_DICT = {
@@ -33,7 +34,6 @@ const SORTING_DICT = {
   [ESorting.OLD]: 'старые',
 } as const;
 
-const filterGroupLabelId = 'filter-group-label';
 const sortingGroupLabelId = 'sorting-group-label';
 
 export const ControlBar: React.FC<IProps> = ({
@@ -56,43 +56,12 @@ export const ControlBar: React.FC<IProps> = ({
   return (
     <div className={classNames(style.root, className)}>
       <div className={style.filter}>
-        <span className={style.tip} id={filterGroupLabelId}>
-          Цель поиска:
-        </span>
-
-        <div
-          className={style.filterControlGroup}
-          aria-labelledby={filterGroupLabelId}
-          role="radiogroup"
-        >
-          {Object.entries(FILTER_DICT).map(([name, legend], i, arr) => {
-            const isCurrent = (filterTarget === name);
-
-            let buttonClassName;
-            if (i === 0) {
-              buttonClassName = style.filterControl_first;
-            } else if (i === arr.length - 1) {
-              buttonClassName = style.filterControl_last;
-            } else {
-              buttonClassName = style.filterControl;
-            }
-
-            return (
-              <MainButton
-                key={name}
-                className={buttonClassName}
-                disabled={isCurrent}
-                aria-checked={isCurrent}
-                role="radio"
-                onClick={() => {
-                  onFilterToggle(name as TFilterName);
-                }}
-              >
-                {legend}
-              </MainButton>
-            );
-          })}
-        </div>
+        <Select
+          tip="Искать по:"
+          filterDict={FILTER_DICT}
+          value={filterTarget}
+          onChange={onFilterToggle}
+        />
       </div>
 
       <TextInput
@@ -106,7 +75,7 @@ export const ControlBar: React.FC<IProps> = ({
       />
 
       <div className={style.sorting}>
-        <span className={style.tip} id={sortingGroupLabelId}>Сортировка:</span>
+        <span className={style.sortingTip} id={sortingGroupLabelId}>Сортировка:</span>
 
         <div
           className={style.sortingControls}

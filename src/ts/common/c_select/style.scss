@@ -1,0 +1,58 @@
+@use "~scss/utils";
+
+.root {
+  display: flex;
+  align-items: center;
+}
+
+.tip {
+  font-size: 18px;
+  margin-right: 16px;
+}
+
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 144px;
+}
+
+._button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.expanderButton {
+  composes: _button;
+
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #d4d4d4;
+}
+
+.list {
+  composes: list from "~scss/scaffold.scss";
+
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-top-style: none;
+  background-color: white;
+}
+
+.option {
+  background-color: inherit;
+}
+
+.optionButton {
+  composes: _button;
+
+  text-align: left;
+  background-color: inherit;
+
+  &_selected {
+    background-color: #cccccc;
+  }
+}
