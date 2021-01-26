@@ -7,6 +7,7 @@ export const KEYBOARD_KEYS = {
 export enum EFilter {
   CAPTION = 'caption',
   HASHTAG = 'hashtag',
+  URL = 'url',
 }
 
 export enum ESorting {

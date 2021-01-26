@@ -14,7 +14,5 @@
 * Migrate to rems
 * Add optional **author** field and sorting by author
 * Add tag cloud
-* Add search with select element
-* Add search by url substring
 * Add extended favicon set
 * Add CI/CD forkflow for deploy to GitHub Pages

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { MainButton } from 'common/main-button';
+import { MainButton } from 'common/c_main-button';
 
 import style from './style.scss';
 

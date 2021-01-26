@@ -73,6 +73,20 @@
   margin-bottom: 16px;
 }
 
+.sortingTip {
+  font-size: 18px;
+
+  @media (max-width: utils.$viewport-xs-max) {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    margin-right: 16px;
+    width: auto;
+  }
+}
+
 .sortingControls {
   display: grid;
   grid-auto-flow: column;
@@ -110,19 +124,5 @@
         transparent 3px 5px,
       );
     }
-  }
-}
-
-.tip {
-  font-size: 18px;
-
-  @media (max-width: utils.$viewport-xs-max) {
-    margin-bottom: 8px;
-    width: 100%;
-  }
-
-  @media (min-width: utils.$viewport-sm-min) {
-    margin-right: 16px;
-    width: auto;
   }
 }
