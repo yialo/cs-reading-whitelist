@@ -1386,7 +1386,7 @@
       ]
     },
     {
-      "caption": "Что может поломать макет на гридах (CSS Grid Layout)",
+      "caption": "Что может поломать макет на гридах (Dave Rupert)",
       "url": "https://css-live.ru/articles/chto-mozhet-polomat-maket-na-gridax-css-grid-layout.html",
       "lang": "ru",
       "tags": [
@@ -1397,7 +1397,7 @@
       "legend": "об особенностях свойств overflow-x, min-width, max-width флекс- и грид-элементов"
     },
     {
-      "caption": "Ещё одна коллекция интересных фактов про CSS-гриды (CSS Grid Layout)",
+      "caption": "Ещё одна коллекция интересных фактов про CSS-гриды",
       "url": "https://css-live.ru/articles/eshhyo-odna-kollekciya-interesnyx-faktov-pro-css-gridy-css-grid-layout.html",
       "lang": "ru",
       "tags": [
@@ -1406,7 +1406,7 @@
       ]
     },
     {
-      "caption": "Большая статья про гриды (CSS Grid Layout)",
+      "caption": "Большая статья про гриды",
       "url": "https://css-live.ru/css/bolshaya-statya-pro-gridy-css-grid-layout.html",
       "lang": "ru",
       "tags": [
@@ -1416,7 +1416,7 @@
       ]
     },
     {
-      "caption": "Подробно о размещении элементов в грид-раскладке (CSS Grid Layout)",
+      "caption": "Подробно о размещении элементов в грид-раскладке",
       "url": "https://css-live.ru/articles/podrobno-o-razmeshhenii-elementov-v-grid-raskladke-css-grid-layout.html",
       "lang": "ru",
       "tags": [
@@ -2106,7 +2106,7 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "es2015+"
+        "4consider"
       ]
     },
     {
@@ -2115,7 +2115,7 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "fun"
+        "code_art"
       ]
     },
     {
@@ -4127,6 +4127,22 @@
         "react_state_management"
       ],
       "legend": "краткий обзор особенностей работы this.setState"
+    },
+    {
+      "caption": "The history of \"typeof null\" (by Dr. Axel Rauschmayer)",
+      "url": "https://2ality.com/2013/10/typeof-null.html",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ]
+    },
+    {
+      "caption": "undefined vs. null revisited (by Dr. Axel Rauschmayer)",
+      "url": "https://2ality.com/2021/01/undefined-null-revisited.html",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ]
     }
   ]
 }
