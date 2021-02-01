@@ -1,6 +1,5 @@
 # Todo list
 
-* Change main font
 * Add keyboard navigation in Select component
 * Add volumes
   * page with references to specs, docs, libs etc.
