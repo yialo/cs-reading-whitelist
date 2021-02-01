@@ -1,5 +1,6 @@
 # Todo list
 
+* Change main font
 * Add volumes
   * page with references to specs, docs, libs etc.
   * interesting fonts

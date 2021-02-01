@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 
 import { Button } from 'common/c_button';
+import { KEYBOARD_KEYS } from 'ts/constants';
 
 import style from './style.scss';
 
@@ -27,6 +28,21 @@ export const Select: React.FC<ISelectProps> = ({
   const [isExpanded, setIsExpanded] = useState(false);
 
   const tipId = `select-tip${tipIdPrefix ? `-${tipIdPrefix}` : ''}`;
+  const toggleButtonId = 'filter-toggle-button';
+
+  useEffect(() => {
+    const handleSelectCollapse = (event: KeyboardEvent) => {
+      if (event.key === KEYBOARD_KEYS.ESCAPE) {
+        setIsExpanded((prev) => prev && !prev);
+      }
+    };
+
+    document.addEventListener('keydown', handleSelectCollapse);
+
+    return () => {
+      document.removeEventListener('keydown', handleSelectCollapse);
+    };
+  }, []);
 
   return (
     <div className={classNames(style.root, className)}>
@@ -36,9 +52,12 @@ export const Select: React.FC<ISelectProps> = ({
 
       <div className={style.body}>
         <Button
-          className={style.expanderButton}
-          id="filter"
-          aria-labelledby={tipId}
+          className={classNames(style.expanderButton, {
+            [style.expanderButton_hasPopup]: isExpanded,
+          })}
+          id={toggleButtonId}
+          aria-haspopup="listbox"
+          aria-labelledby={`${tipId} ${toggleButtonId}`}
           onClick={() => {
             setIsExpanded((prev) => !prev);
           }}
