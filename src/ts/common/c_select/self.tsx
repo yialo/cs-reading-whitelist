@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 
 import { Button } from 'common/c_button';
+import { KEYBOARD_KEYS } from 'ts/constants';
 
 import style from './style.scss';
 
@@ -16,6 +17,8 @@ interface ISelectProps {
   onChange: (filter: string) => void;
 }
 
+const TOGGLE_BUTTON_ID = 'filter-toggle-button';
+
 export const Select: React.FC<ISelectProps> = ({
   className,
   filterDict,
@@ -28,6 +31,36 @@ export const Select: React.FC<ISelectProps> = ({
 
   const tipId = `select-tip${tipIdPrefix ? `-${tipIdPrefix}` : ''}`;
 
+  const $toggleButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const handleCollapse = () => {
+      setIsExpanded((prev) => prev && !prev);
+    };
+
+    const handleKeyPress = (event: KeyboardEvent) => {
+      if (event.key === KEYBOARD_KEYS.ESCAPE) {
+        handleCollapse();
+      }
+    };
+
+    const handleClick = (event: MouseEvent) => {
+      console.log({ target: event.target });
+
+      if (event.target !== $toggleButtonRef.current) {
+        handleCollapse();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyPress);
+    document.addEventListener('click', handleClick);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+      document.removeEventListener('click', handleClick);
+    };
+  }, []);
+
   return (
     <div className={classNames(style.root, className)}>
       <span className={style.tip} id={tipId}>
@@ -36,9 +69,13 @@ export const Select: React.FC<ISelectProps> = ({
 
       <div className={style.body}>
         <Button
-          className={style.expanderButton}
-          id="filter"
-          aria-labelledby={tipId}
+          ref={$toggleButtonRef}
+          className={classNames(style.toggleButton, {
+            [style.toggleButton_hasPopup]: isExpanded,
+          })}
+          id={TOGGLE_BUTTON_ID}
+          aria-haspopup="listbox"
+          aria-labelledby={`${tipId} ${TOGGLE_BUTTON_ID}`}
           onClick={() => {
             setIsExpanded((prev) => !prev);
           }}

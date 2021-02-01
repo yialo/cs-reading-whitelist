@@ -22,12 +22,34 @@
   padding: 0.5rem 1rem;
 }
 
-.expanderButton {
+.toggleButton {
   composes: _button;
 
+  position: relative;
+  display: flex;
+  justify-content: space-between;
   border: 1px solid utils.$color-lightGray;
   border-radius: 2px;
+  text-align: left;
   background-color: utils.$color-gray;
+
+  &::after {
+    content: "";
+    position: relative;
+    top: 5px;
+    border-width: 8px;
+    border-bottom-width: 0;
+    border-style: solid;
+    border-color: utils.$color-darkGray;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+
+  &_hasPopup {
+    &::after {
+      transform: rotate(0.5turn);
+    }
+  }
 }
 
 .list {
