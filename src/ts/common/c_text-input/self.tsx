@@ -50,8 +50,6 @@ const TextInput: React.FC<ITextInputProps> = ({
   );
 };
 
-TextInput.displayName = 'TextInput';
-
 export const TextInputWithForwardedRef = forwardRef<
 HTMLInputElement,
 ITextPropsWithoutForwardedRef
