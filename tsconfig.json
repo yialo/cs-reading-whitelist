@@ -15,6 +15,7 @@
     "newLine": "lf",
     "noEmit": true,
     "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
     "paths": {
       "@/*": [
         "./*"
