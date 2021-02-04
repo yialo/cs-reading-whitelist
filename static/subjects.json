@@ -1544,7 +1544,7 @@
       ]
     },
     {
-      "caption": "Sass Guidelines",
+      "caption": "Sass Guidelines (by Kitty (Hugo) Giraudel)",
       "url": "https://sass-guidelin.es/",
       "lang": "en",
       "tags": [
@@ -1627,7 +1627,7 @@
       ]
     },
     {
-      "caption": "7 техник Sass для написания хорошего кода",
+      "caption": "7 техник Sass для написания хорошего кода (by Andrius Juskenas)",
       "url": "https://techrocks.ru/2017/07/19/sass-techniques/",
       "lang": "ru",
       "tags": [
@@ -3536,7 +3536,7 @@
       ]
     },
     {
-      "caption": "Promises: States and Fates",
+      "caption": "Promises: States and Fates (by Domenic Denicola)",
       "url": "https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md",
       "lang": "en",
       "tags": [
