@@ -1,9 +1,9 @@
-@use "~scss/utils";
+@use "scss/utils";
 
 $pageContentMaxWidth: 672px;
 
 .root {
-  composes: main from "~ts/app/style.scss";
+  composes: main from "ts/app/style.scss";
 
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@ $pageContentMaxWidth: 672px;
 }
 
 .headline {
-  composes: headline from "~scss/scaffold.scss";
+  composes: headline from "scss/scaffold.scss";
 }
 
 .subjects {
