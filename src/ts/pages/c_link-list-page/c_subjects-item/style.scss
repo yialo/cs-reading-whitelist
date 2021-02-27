@@ -1,4 +1,4 @@
-@use "~scss/utils";
+@use "scss/utils";
 
 .root_series {
   --size_triangle: 16px;
@@ -34,7 +34,7 @@
 }
 
 .link {
-  composes: link from "~scss/scaffold.scss";
+  composes: link from "scss/scaffold.scss";
 }
 
 .seriesButton {
@@ -64,7 +64,7 @@
 }
 
 .seriesList {
-  composes: list from "~scss/scaffold.scss";
+  composes: list from "scss/scaffold.scss";
   display: grid;
   row-gap: 8px;
   margin-top: 8px;
@@ -95,7 +95,7 @@
 }
 
 .tags {
-  composes: list from "~scss/scaffold.scss";
+  composes: list from "scss/scaffold.scss";
   display: inline;
   font-style: italic;
 }
