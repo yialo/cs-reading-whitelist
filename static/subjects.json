@@ -4142,6 +4142,77 @@
       "tags": [
         "javascript"
       ]
+    },
+    {
+      "caption": "Weak Type Detection in TypeScript",
+      "url": "https://mariusschulz.com/blog/weak-type-detection-in-typescript",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "Interface vs Type alias in TypeScript",
+      "url": "https://medium.com/@martin_hotell/interface-vs-type-alias-in-typescript-2-7-2a8f1777af4c",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "Рекурсивно определяем числа Фибоначчи с помощью мемоизации в JavaScript (Стас Багрецов)",
+      "url": "https://stasonmars.ru/javascript/recursivno-opredelyaem-chisla-fibonacci-s-pomoshiu-memoizacii-v-javascript/",
+      "lang": "ru",
+      "tags": [
+        "algorithms",
+        "javascript"
+      ]
+    },
+    {
+      "caption": "What it means to be a senior engineer",
+      "url": "https://kaihao.dev/posts/What-it-means-to-be-a-senior-engineer",
+      "lang": "en",
+      "tags": [
+        "soft_skills"
+      ]
+    },
+    {
+      "caption": "Stale props and zombie children in Redux",
+      "url": "https://kaihao.dev/posts/Stale-props-and-zombie-children-in-Redux",
+      "lang": "en",
+      "tags": [
+        "react",
+        "redux",
+        "react_hooks"
+      ],
+      "legend": "хардкорный лонгрид о внутреннем устройстве и эволюции библиотеки react-redux"
+    },
+    {
+      "caption": "How to correctly use a curried selector function with react-redux's useSelector hook?",
+      "url": "https://stackoverflow.com/questions/57464286/how-to-correctly-use-a-curried-selector-function-with-react-reduxs-useselector",
+      "lang": "en",
+      "tags": [
+        "react",
+        "redux",
+        "react_hooks"
+      ]
+    },
+    {
+      "caption": "Bail out if stateProps can be calculated early and did not change",
+      "url": "https://github.com/reduxjs/react-redux/pull/348",
+      "lang": "en",
+      "tags": [
+        "react",
+        "redux"
+      ]
+    },
+    {
+      "caption": "React props: Should I pass the object or its properties? Does it make much difference?",
+      "url": "https://stackoverflow.com/questions/52621169/react-props-should-i-pass-the-object-or-its-properties-does-it-make-much-diffe",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
     }
   ]
 }
