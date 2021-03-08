@@ -5,11 +5,13 @@ const path = require('path');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const dotEnv = require('dotenv');
 const TsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const posthtmlExpressions = require('posthtml-expressions');
+const posthtmlInclude = require('posthtml-include');
 const TerserPlugin = require('terser-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
@@ -100,11 +102,24 @@ module.exports = (env = {}) => {
         };
 
         const templateLoaderRule = {
-          test: /\.pug$/,
-          loader: 'pug-loader',
-          options: {
-            pretty: !isProduction,
-          },
+          test: /\.html$/,
+          use: [
+            {
+              loader: 'html-loader',
+              options: {
+                minimize: isProduction,
+              },
+            },
+            {
+              loader: 'posthtml-loader',
+              options: {
+                plugins: [
+                  posthtmlInclude(),
+                  posthtmlExpressions(),
+                ],
+              },
+            },
+          ],
         };
 
         const styleLoaderRule = {
@@ -260,8 +275,9 @@ module.exports = (env = {}) => {
           filename: `assets/css/[name]${assetHash}.css`,
         }),
         new HtmlPlugin({
+          favicon: path.join(PATH.SRC, 'favicons/favicon.ico'),
           filename: 'index.html',
-          template: path.join(PATH.SRC, 'pug/index.pug'),
+          template: path.join(PATH.SRC, 'html/index.html'),
         }),
         new CopyPlugin({
           patterns: [
