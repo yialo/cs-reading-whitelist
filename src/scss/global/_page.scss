@@ -3,14 +3,14 @@
     height: 100%;
   }
 
-  .Page-body {
+  .Page-Body {
     position: relative;
     min-width: var(--size_pageMinWidth);
     height: inherit;
     overflow-y: scroll;
   }
 
-  .Page-overlay {
+  .Page-Overlay {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -27,7 +27,7 @@
     }
   }
 
-  .Page-root {
+  .Page-Root {
     position: relative;
     z-index: 0;
   }
