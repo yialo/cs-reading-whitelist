@@ -4193,6 +4193,17 @@
         "video",
         "typescript"
       ]
+    },
+    {
+      "caption": "Проектирование предметной области на TypeScript в функциональном стиле (Сергей Черепанов)",
+      "url": "https://youtu.be/cT-VOwWjJJs",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "typescript",
+        "fp",
+        "design_patterns"
+      ]
     }
   ]
 }
