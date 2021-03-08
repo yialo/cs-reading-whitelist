@@ -1861,40 +1861,11 @@
       ]
     },
     {
-      "caption": "JS для начинающих. Урок 1.11: Циклы",
-      "url": "https://true-coder.ru/js-dlya-nachinayushhix/js-dlya-nachinayushhix-urok-1-11-cikly.html",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "algorithms"
-      ]
-    },
-    {
       "caption": "Вы освоили азы JavaScript. Но что дальше?",
       "url": "https://css-live.ru/articles/vy-osvoili-azy-javascript-no-chto-dalshe.html",
       "lang": "ru",
       "tags": [
         "javascript"
-      ]
-    },
-    {
-      "caption": "Опережающие и ретроспективные проверки в регулярных выражениях",
-      "url": "https://habr.com/ru/post/159483/",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "regexp",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "JSON Schema Reference",
-      "url": "https://json-schema.org/understanding-json-schema/reference/index.html",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "json",
-        "docs"
       ]
     },
     {
@@ -4212,6 +4183,15 @@
       "lang": "en",
       "tags": [
         "react"
+      ]
+    },
+    {
+      "caption": "Продвинутый TypeScript (Михаил Башуров)",
+      "url": "https://youtu.be/m0uRxCCno00",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "typescript"
       ]
     }
   ]
