@@ -531,7 +531,7 @@
       "url": "https://habr.com/ru/company/constanta/blog/428800/",
       "lang": "ru",
       "tags": [
-        "build",
+        "build_tools",
         "webpack"
       ],
       "legend": "подключение и оптимизация стилей с помощью Webpack"
@@ -2840,7 +2840,7 @@
         "gulp",
         "nodejs",
         "npm",
-        "build"
+        "build_tools"
       ]
     },
     {
@@ -2893,7 +2893,7 @@
         "blogs",
         "javascript",
         "npm",
-        "build",
+        "build_tools",
         "webpack",
         "react"
       ],
@@ -2904,7 +2904,7 @@
       "url": "https://blog.flennik.com/the-fine-art-of-the-webpack-2-config-dc4d19d7f172",
       "lang": "en",
       "tags": [
-        "build",
+        "build_tools",
         "webpack"
       ]
     },
@@ -3522,7 +3522,7 @@
       "lang": "ru",
       "tags": [
         "javascript",
-        "build",
+        "build_tools",
         "webpack"
       ]
     },
@@ -3532,7 +3532,7 @@
       "lang": "ru",
       "tags": [
         "javascript",
-        "build",
+        "build_tools",
         "webpack"
       ]
     },
@@ -3908,7 +3908,7 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "build",
+        "build_tools",
         "webpack"
       ],
       "legend": "Подводные камни использования re-export в JavaScript."
@@ -4203,6 +4203,42 @@
         "typescript",
         "fp",
         "design_patterns"
+      ]
+    },
+    {
+      "caption": "Собираем бандл мечты с помощью Webpack (Максим Соснов)",
+      "url": "https://habr.com/ru/company/oleg-bunin/blog/433324/",
+      "lang": "ru",
+      "tags": [
+        "webpack",
+        "build_tools"
+      ],
+      "legend": "Речь идёт о webpack 4, поэтому некоторые пакеты уже не актуальны. Предложена интересная техника организации файлов настроек."
+    },
+    {
+      "caption": "Getting Started with Docker Using Node.js",
+      "series": [
+        {
+          "caption": "Part I",
+          "url": "https://www.docker.com/blog/getting-started-with-docker-using-node-jspart-i/"
+        },
+        {
+          "caption": "Part II",
+          "url": "https://www.docker.com/blog/getting-started-with-docker-using-node-part-ii/"
+        }
+      ],
+      "lang": "en",
+      "tags": [
+        "docker"
+      ]
+    },
+    {
+      "caption": "Типы данных в CSS (София Валитова)",
+      "url": "https://youtu.be/PoWpkLeJnBA",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css_houdini"
       ]
     }
   ]
