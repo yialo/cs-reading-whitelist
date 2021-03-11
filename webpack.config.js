@@ -10,8 +10,6 @@ const dotEnv = require('dotenv');
 const TsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
-const posthtmlExpressions = require('posthtml-expressions');
-const posthtmlInclude = require('posthtml-include');
 const TerserPlugin = require('terser-webpack-plugin');
 const { DefinePlugin, ProgressPlugin } = require('webpack');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
@@ -103,23 +101,10 @@ module.exports = (env = {}) => {
 
         const templateLoaderRule = {
           test: /\.html$/,
-          use: [
-            {
-              loader: 'html-loader',
-              options: {
-                minimize: isProduction,
-              },
-            },
-            {
-              loader: 'posthtml-loader',
-              options: {
-                plugins: [
-                  posthtmlInclude(),
-                  posthtmlExpressions(),
-                ],
-              },
-            },
-          ],
+          loader: 'html-loader',
+          options: {
+            minimize: isProduction,
+          },
         };
 
         const styleLoaderRule = {
@@ -275,9 +260,9 @@ module.exports = (env = {}) => {
           filename: `assets/css/[name]${assetHash}.css`,
         }),
         new HtmlPlugin({
-          favicon: path.join(PATH.SRC, 'favicons/favicon.ico'),
           filename: 'index.html',
           template: path.join(PATH.SRC, 'html/index.html'),
+          favicon: path.join(PATH.SRC, 'favicons/favicon.ico'),
         }),
         new CopyPlugin({
           patterns: [
