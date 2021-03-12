@@ -3096,7 +3096,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "react_state_management"
+        "state_management"
       ]
     },
     {
@@ -3106,7 +3106,7 @@
       "tags": [
         "react",
         "react_hooks",
-        "react_state_management",
+        "state_management",
         "redux"
       ]
     },
@@ -3145,7 +3145,7 @@
       "tags": [
         "react",
         "react_hooks",
-        "react_state_management",
+        "state_management",
         "redux"
       ]
     },
@@ -3295,7 +3295,7 @@
       "tags": [
         "video",
         "react",
-        "react_state_management",
+        "state_management",
         "redux"
       ],
       "legend": "Redux: что не так с отправкой нескольких Actions подряд (синхронно)?"
@@ -3307,7 +3307,7 @@
       "tags": [
         "video",
         "react",
-        "react_state_management",
+        "state_management",
         "redux"
       ],
       "legend": "Redux и вычисляемые поля. Сталкивались ли вы с проблемой распухающих объектов Action, поскольку одни редьюсеры требуют данные от других редьюсеров? Где и как правильно работать с вычисляемыми полями?"
@@ -3319,7 +3319,7 @@
       "tags": [
         "video",
         "react",
-        "react_state_management"
+        "state_management"
       ],
       "legend": "Разберём на пальцах пример из документации к React из главы \"Lifting State Up\" про два поля ввода температуры по Цельсию и по Фаренгейту и как правильно их синхронизировать."
     },
@@ -3330,7 +3330,7 @@
       "tags": [
         "video",
         "react",
-        "react_state_management",
+        "state_management",
         "redux"
       ],
       "legend": "Вопрос: можно ли и нужно ли использовать локальный state в компонентах при использовании Redux? Краткий ответ: локальный state это нормально, используем!"
@@ -3342,7 +3342,7 @@
       "tags": [
         "video",
         "react",
-        "react_state_management",
+        "state_management",
         "redux"
       ],
       "legend": "Если мы решили хранить локальное состояние компонента где-то внутри компонента (а не в Redux), стоит ли это делать в this.state или завести отдельную переменную this.effectiveValue?"
@@ -3354,7 +3354,7 @@
       "tags": [
         "video",
         "react",
-        "react_state_management",
+        "state_management",
         "redux",
         "performance"
       ],
@@ -3367,7 +3367,7 @@
       "tags": [
         "video",
         "react",
-        "react_state_management",
+        "state_management",
         "redux",
         "performance"
       ],
@@ -3379,7 +3379,7 @@
       "lang": "ru",
       "tags": [
         "react",
-        "react_state_management",
+        "state_management",
         "functional_programming",
         "rocket_science"
       ]
@@ -3390,7 +3390,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "react_state_management",
+        "state_management",
         "redux",
         "performance"
       ]
@@ -3401,7 +3401,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "react_state_management"
+        "state_management"
       ]
     },
     {
@@ -3419,7 +3419,7 @@
       "tags": [
         "video",
         "react",
-        "react_state_management",
+        "state_management",
         "react_router",
         "mobx",
         "rocket_science"
@@ -3431,7 +3431,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "react_state_management"
+        "state_management"
       ]
     },
     {
@@ -3467,7 +3467,7 @@
       "tags": [
         "audio",
         "react",
-        "react_state_management"
+        "state_management"
       ],
       "legend": "Небольшая заметка, размышление на тему можно ли жить без внешнего контейнера состояния и какие при этом возникают проблемы и неудобства? Как организовывать код?"
     },
@@ -3737,7 +3737,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "react_state_management"
+        "state_management"
       ]
     },
     {
@@ -3746,7 +3746,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "react_state_management"
+        "state_management"
       ]
     },
     {
@@ -4040,7 +4040,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "react_state_management"
+        "state_management"
       ]
     },
     {
@@ -4094,7 +4094,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "react_state_management"
+        "state_management"
       ],
       "legend": "краткий обзор особенностей работы this.setState"
     },
@@ -4240,6 +4240,14 @@
         "video",
         "css",
         "css_houdini"
+      ]
+    },
+    {
+      "caption": "Архитектура менеджера состояния (Артём Арутюнян)",
+      "url": "https://youtu.be/N2rAQ4uC6VY",
+      "lang": "ru",
+      "tags": [
+        "state_management"
       ]
     }
   ]
