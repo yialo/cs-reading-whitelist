@@ -8,7 +8,6 @@
   * recommendations
   * VSCode extensions
 * Add backend
-  * deploy on Heroku
   * Firebase integration
 * Create Emmet cheatsheet tool app with search
   * parse official docs HTML with Puppeteer
