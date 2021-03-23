@@ -4249,6 +4249,32 @@
       "tags": [
         "state_management"
       ]
+    },
+    {
+      "caption": "The melting pot of JavaScript (by Dan Abramov)",
+      "url": "https://increment.com/development/the-melting-pot-of-javascript/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "code_quality",
+        "build_tools"
+      ]
+    },
+    {
+      "caption": "Chrome 80 brings support for let and class redeclarations in the Console",
+      "url": "https://dev.to/cooldashing24/chrome-now-allows-for-let-and-class-redeclarations-in-the-console-2m0f",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ]
+    },
+    {
+      "caption": "CSS colors (София Валитова)",
+      "url": "https://css-live.ru/css/css-colors.html",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ]
     }
   ]
 }
