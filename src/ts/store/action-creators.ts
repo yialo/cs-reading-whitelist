@@ -21,7 +21,6 @@ export const toggleFilter = (nextFilterName: TFilterName): IListFilterAction => 
   payload: nextFilterName,
 });
 
-
 export const toggleSorting = (nextSortingName: TSortingName): IListSortingAction => ({
   type: ACTION_TYPES.LIST.SORTING_TOGGLE,
   payload: nextSortingName,
