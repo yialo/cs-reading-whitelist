@@ -1544,7 +1544,7 @@
       ]
     },
     {
-      "caption": "Sass Guidelines (by Kitty (Hugo) Giraudel)",
+      "caption": "Sass Guidelines (by Hugo Giraudel)",
       "url": "https://sass-guidelin.es/",
       "lang": "en",
       "tags": [
@@ -4293,6 +4293,25 @@
         "react"
       ],
       "legend": "На первый взгляд, материал статьи кажется устаревшим в мире с Hooks API. Тем не менее, здесь есть нетленные примеры хода мыслей разработчика в процессе организации компонентной структуры React-приложения."
+    },
+    {
+      "caption": "Preventing rerenders with React.memo and useContext hook (by Dan Abramov)",
+      "url": "https://github.com/facebook/react/issues/15156#issuecomment-474590693",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks",
+        "react_context"
+      ]
+    },
+    {
+      "caption": "Reconciling the useEffect Tree (by Ryan Florence)",
+      "url": "https://reacttraining.com/blog/react-effect-tree/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks"
+      ]
     }
   ]
 }
