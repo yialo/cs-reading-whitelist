@@ -1,8 +1,8 @@
 import { ACTION_TYPES } from 'ts/action-types';
 
-import type { TThemeReducer, IThemeState } from '../types';
+import type { TThemeReducer, TThemeState } from '../types';
 
-const INITIAL_STATE: IThemeState = {
+const INITIAL_STATE: TThemeState = {
   isDark: false,
 };
 

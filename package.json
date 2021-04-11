@@ -17,7 +17,7 @@
     "nodemon:build": "npm run nodemon -- build",
     "nodemon:dev": "npm run nodemon -- dev",
     "test": "jest -c=./jest.config.js",
-    "typecheck": "tsc",
+    "tsc": "tsc",
     "webpack": "webpack -c ./webpack.config.js",
     "webpack:serve": "webpack serve -c ./webpack.config.js"
   },

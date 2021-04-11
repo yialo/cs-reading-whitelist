@@ -1,18 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 
-import { Button } from 'common/c_button';
-import { Select } from 'common/c_select';
-import { TextInput } from 'common/c_text-input';
+import { Button } from 'ts/common/c_button';
+import { Select } from 'ts/common/c_select';
+import { TextInput } from 'ts/common/c_text-input';
 import { EFilter, ESorting } from 'ts/constants';
-import type { TFilterName, TSortingName } from 'ts/types';
+import type { TClassNameable, TFilterName, TSortingName } from 'ts/types';
 
 import { ControlBarAmountMeter } from './c_amount-meter';
 
 import style from './style.scss';
 
-interface IProps {
-  className?: string;
+type TProps = TClassNameable & {
   filterTarget: TFilterName;
   searchString: string;
   sortingTarget: TSortingName;
@@ -21,7 +20,7 @@ interface IProps {
   onFilterToggle: (name: TFilterName) => void;
   onSearch: React.ChangeEventHandler;
   onSortingToggle: (name: TSortingName) => void;
-}
+};
 
 const FILTER_DICT = {
   [EFilter.CAPTION]: 'заголовку',
@@ -49,7 +48,7 @@ const getInputTipChar = (filterTarget: EFilter) => {
   }
 };
 
-export const ControlBar: React.FC<IProps> = ({
+export const ControlBar: React.FC<TProps> = ({
   className,
   filterTarget,
   searchString,

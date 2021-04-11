@@ -3,23 +3,23 @@ import { createSelector } from 'reselect';
 import { EFilter, ESorting, LIST_PAGE_SIZE } from 'ts/constants';
 import type { ISubject, TFilterName, TSortingName } from 'ts/types';
 
-import type { IState } from './types';
+import type { TState } from './types';
 
 export const fetchSelector = {
-  error: (state: IState): Error | null => state.fetch.error,
-  fullList: (state: IState): ISubject[] => state.fetch.list,
-  isComplete: (state: IState): boolean => state.fetch.isComplete,
+  error: (state: TState): Error | null => state.fetch.error,
+  fullList: (state: TState): ISubject[] => state.fetch.list,
+  isComplete: (state: TState): boolean => state.fetch.isComplete,
 };
 
 export const listSelector = {
-  filterName: (state: IState): TFilterName => state.list.filterName,
-  page: (state: IState): number => state.list.page,
-  searchString: (state: IState): string => state.list.searchString,
-  sortingName: (state: IState): TSortingName => state.list.sortingName,
+  filterName: (state: TState): TFilterName => state.list.filterName,
+  page: (state: TState): number => state.list.page,
+  searchString: (state: TState): string => state.list.searchString,
+  sortingName: (state: TState): TSortingName => state.list.sortingName,
 };
 
 export const themeSelector = {
-  isDark: (state: IState): boolean => state.theme.isDark,
+  isDark: (state: TState): boolean => state.theme.isDark,
 };
 
 const selectFilteredList = createSelector(

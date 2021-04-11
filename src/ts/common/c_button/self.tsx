@@ -3,13 +3,13 @@ import classNames from 'classnames';
 
 import style from './style.scss';
 
-type IButtonPropsWithoutForwardedRef = React.ComponentPropsWithoutRef<'button'>;
+type TButtonPropsWithoutForwardedRef = React.ComponentPropsWithoutRef<'button'>;
 
-export interface IButtonProps extends IButtonPropsWithoutForwardedRef {
-  forwardedRef: React.ForwardedRef<HTMLButtonElement>;
-}
+export type TButtonProps = TButtonPropsWithoutForwardedRef & {
+  forwardedRef?: React.ForwardedRef<HTMLButtonElement>;
+};
 
-const Button: React.FC<IButtonProps> = ({
+const Button: React.FC<TButtonProps> = ({
   children,
   className,
   forwardedRef,
@@ -28,7 +28,7 @@ const Button: React.FC<IButtonProps> = ({
   );
 };
 
-export const ButtonWithRef = forwardRef<HTMLButtonElement, IButtonPropsWithoutForwardedRef>(
+export const ButtonWithRef = forwardRef<HTMLButtonElement, TButtonPropsWithoutForwardedRef>(
   (props, ref) => <Button {...props} forwardedRef={ref} />,
 );
 ButtonWithRef.displayName = 'Button';

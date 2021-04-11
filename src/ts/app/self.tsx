@@ -6,7 +6,7 @@ import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
-import { ErrorBoundary } from 'common/c_error-boundary';
+import { ErrorBoundary } from 'ts/common/c_error-boundary';
 import { rootReducer } from 'ts/store/root-reducer';
 
 import { Root } from './c_root';

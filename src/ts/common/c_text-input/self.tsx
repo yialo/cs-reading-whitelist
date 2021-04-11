@@ -1,22 +1,23 @@
 import React, { forwardRef } from 'react';
 import classNames from 'classnames';
 
+import type { TClassNameable } from 'ts/types';
+
 import style from './style.scss';
 
-interface ITextPropsWithoutForwardedRef {
-  className?: string;
+type TTextPropsWithoutForwardedRef = TClassNameable & {
   inputMode: React.HTMLAttributes<HTMLInputElement>['inputMode'];
   legend: string;
   tipChar?: string;
   value: string;
   onChange: (evt: React.ChangeEvent) => void;
-}
+};
 
-interface ITextInputProps extends ITextPropsWithoutForwardedRef {
+type TProps = TTextPropsWithoutForwardedRef & {
   forwardedRef: React.ForwardedRef<HTMLInputElement>;
-}
+};
 
-const TextInput: React.FC<ITextInputProps> = ({
+const TextInput: React.FC<TProps> = ({
   className,
   forwardedRef,
   inputMode,
@@ -52,7 +53,7 @@ const TextInput: React.FC<ITextInputProps> = ({
 
 export const TextInputWithForwardedRef = forwardRef<
 HTMLInputElement,
-ITextPropsWithoutForwardedRef
+TTextPropsWithoutForwardedRef
 >((props, ref) => <TextInput {...props} forwardedRef={ref} />);
 
 TextInputWithForwardedRef.displayName = 'TextInput';

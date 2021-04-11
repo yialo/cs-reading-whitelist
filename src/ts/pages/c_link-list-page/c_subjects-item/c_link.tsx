@@ -4,13 +4,13 @@ import type { SubjectCaption, SubjectLang, SubjectUrl } from 'ts/types';
 
 import style from './style.scss';
 
-interface ISubjectsItemLinkProps {
+type TProps = {
   caption: SubjectCaption;
   lang: SubjectLang;
   url: SubjectUrl;
-}
+};
 
-export const SubjectsItemLink: React.FC<ISubjectsItemLinkProps> = ({
+export const SubjectsItemLink: React.FC<TProps> = ({
   caption,
   lang,
   url,
