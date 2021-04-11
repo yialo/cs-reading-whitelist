@@ -10,7 +10,6 @@
     "dev:write": "npm run dev -- --env write",
     "imagemin": "gulp imagemin -f ./scripts/imagemin.js",
     "lint": "npm run lint:styles && npm run lint:scripts && npm run lint:editorconfig && npm run typecheck",
-    "lint:editorconfig": "editorconfig-checker --exclude \".git|node_modules\"",
     "lint:scripts": "eslint ./*.js ./scripts/**/*.js ./src/**/*.{j,t}s?(x)",
     "lint:styles": "stylelint ./src/**/*.scss",
     "nodemon": "nodemon --config ./nodemon.json",
