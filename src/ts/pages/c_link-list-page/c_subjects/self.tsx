@@ -1,23 +1,22 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { MainButton } from 'common/c_main-button';
-import type { ISubject } from 'ts/types';
+import { MainButton } from 'ts/common/c_main-button';
+import type { TClassNameable, ISubject } from 'ts/types';
 
 import { renderSubjectsItem } from '../c_subjects-item';
 import { SubjectsFallbackMessage } from './c_fallback-message';
 
 import style from './style.scss';
 
-interface IProps {
-  className?: string;
+type TProps = TClassNameable & {
   list: ISubject[];
   hasFetchError: boolean;
   isLastPage: boolean;
   onShowMoreClick: () => void;
-}
+};
 
-export const Subjects: React.FC<IProps> = ({
+export const Subjects: React.FC<TProps> = ({
   className,
   list,
   hasFetchError,

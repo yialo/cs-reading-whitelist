@@ -3,14 +3,11 @@ import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
 import { KEYBOARD_KEYS, ROUTES } from 'ts/constants';
+import type { TClassNameable } from 'ts/types';
 
 import { AppNavMenuIcon } from './c_icon';
 
 import style from './style.scss';
-
-interface IProps {
-  className?: string;
-}
 
 const routeList = [
   [ROUTES.HOME, 'Reading'],
@@ -19,7 +16,7 @@ const routeList = [
 
 const BUTTON_ID = 'AppNavMenu-list';
 
-export const RootNavMenu: React.FC<IProps> = ({ className }) => {
+export const RootNavMenu: React.FC<TClassNameable> = ({ className }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleMenuExpansion = () => {

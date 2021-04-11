@@ -6,68 +6,68 @@ import type { TFilterName, TSearchString, TSortingName, ISubject } from 'ts/type
 
 export type TFetchList = ISubject[];
 
-export interface IFetchState {
+export type TFetchState = {
   error: Error | null;
   list: TFetchList;
   isComplete: boolean;
-}
+};
 
-export interface IListState {
+export type TListState = {
   searchString: TSearchString;
   page: number;
   filterName: TFilterName;
   sortingName: TSortingName;
-}
+};
 
-export interface IThemeState {
+export type TThemeState = {
   isDark: boolean;
-}
+};
 
-export interface IState {
-  fetch: IFetchState;
-  list: IListState;
-  theme: IThemeState;
-}
+export type TState = {
+  fetch: TFetchState;
+  list: TListState;
+  theme: TThemeState;
+};
 
-interface IFetchCompleteAction extends Action<typeof ACTION_TYPES.FETCH.COMPLETE> {
+type TFetchCompleteAction = Action<typeof ACTION_TYPES.FETCH.COMPLETE> & {
   payload: TFetchList;
-}
+};
 
-interface IFetchErrorAction extends Action<typeof ACTION_TYPES.FETCH.ERROR> {
+type TFetchErrorAction = Action<typeof ACTION_TYPES.FETCH.ERROR> & {
   payload: Error;
-}
+};
 
-type TFetchAction = IFetchCompleteAction | IFetchErrorAction;
+type TFetchAction = TFetchCompleteAction | TFetchErrorAction;
 
-export type TFetchReducer = Reducer<IFetchState, TFetchAction>;
+export type TFetchReducer = Reducer<TFetchState, TFetchAction>;
 
-export type TFetchActionCreator = ThunkAction<Promise<void>, IState, undefined, TFetchAction>;
+export type TFetchActionCreator = ThunkAction<Promise<void>, TState, undefined, TFetchAction>;
 
 export type IThemeToggleAction = Action<typeof ACTION_TYPES.THEME.TOGGLE>;
 
-export type TThemeReducer = Reducer<IThemeState, IThemeToggleAction>;
+export type TThemeReducer = Reducer<TThemeState, IThemeToggleAction>;
 
-export interface IListSearchAction extends Action<typeof ACTION_TYPES.LIST.SEARCH> {
+export type TListSearchAction = Action<typeof ACTION_TYPES.LIST.SEARCH> & {
   payload: TSearchString;
-}
+};
 
-export interface IListFilterAction extends Action<typeof ACTION_TYPES.LIST.FILTER_TOGGLE> {
+export type TListFilterAction = Action<typeof ACTION_TYPES.LIST.FILTER_TOGGLE> & {
   payload: TFilterName;
-}
+};
 
-export interface IListSortingAction extends Action<typeof ACTION_TYPES.LIST.SORTING_TOGGLE> {
+export type TListSortingAction = Action<typeof ACTION_TYPES.LIST.SORTING_TOGGLE> & {
   payload: TSortingName;
-}
+};
 
-export interface IListPageAction extends Action<typeof ACTION_TYPES.LIST.NEXT_PAGE> {
+export type TListPageAction = Action<typeof ACTION_TYPES.LIST.NEXT_PAGE> & {
   payload?: undefined;
-}
+};
 
 type TListAction = (
-  | IListFilterAction
-  | IListSearchAction
-  | IListSortingAction
-  | IListPageAction
+  | TListFilterAction
+  | TListSearchAction
+  | TListSortingAction
+  | TListPageAction
 );
 
-export type TListReducer = Reducer<IListState, TListAction>;
+export type TListReducer = Reducer<TListState, TListAction>;

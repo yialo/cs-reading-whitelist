@@ -1,8 +1,8 @@
 import { ACTION_TYPES } from 'ts/action-types';
 
-import type { TFetchReducer, IFetchState } from '../types';
+import type { TFetchReducer, TFetchState } from '../types';
 
-const INITIAL_STATE: IFetchState = {
+const INITIAL_STATE: TFetchState = {
   error: null,
   list: [],
   isComplete: false,

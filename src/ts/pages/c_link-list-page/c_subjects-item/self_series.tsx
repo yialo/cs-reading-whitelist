@@ -4,21 +4,20 @@ import { useSelector } from 'react-redux';
 
 import { KEYBOARD_KEYS } from 'ts/constants';
 import { listSelector } from 'ts/store/selectors';
-import type { ISeriesSubject } from 'ts/types';
+import type { TClassNameable, TSeriesSubject } from 'ts/types';
 
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
-import type { IClassNameable } from './types';
 
 import style from './style.scss';
 
-interface ISeriesSubjectsItemProps extends IClassNameable {
-  subject: ISeriesSubject;
-}
+type TProps = TClassNameable & {
+  subject: TSeriesSubject;
+};
 
 const buttonKeys = [KEYBOARD_KEYS.ENTER, KEYBOARD_KEYS.SPACE];
 
-export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({
+export const SeriesSubjectsItem: React.FC<TProps> = ({
   className,
   subject,
 }) => {
@@ -51,7 +50,7 @@ export const SeriesSubjectsItem: React.FC<ISeriesSubjectsItemProps> = ({
   return (
     <li
       className={classNames(style.root_series, className, {
-        [style.isExpanded]: isExpanded,
+        [style.isExpanded!]: isExpanded,
       })}
     >
       <div className={style.series}>

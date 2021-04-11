@@ -4,29 +4,29 @@ import type { TFilterName, TSearchString, TSortingName } from 'ts/types';
 import type {
   TFetchActionCreator,
   TFetchList,
-  IListFilterAction,
-  IListPageAction,
-  IListSearchAction,
-  IListSortingAction,
+  TListFilterAction,
+  TListPageAction,
+  TListSearchAction,
+  TListSortingAction,
   IThemeToggleAction,
 } from './types';
 
-export const searchInList = (nextSearchString: TSearchString): IListSearchAction => ({
+export const searchInList = (nextSearchString: TSearchString): TListSearchAction => ({
   type: ACTION_TYPES.LIST.SEARCH,
   payload: nextSearchString,
 });
 
-export const toggleFilter = (nextFilterName: TFilterName): IListFilterAction => ({
+export const toggleFilter = (nextFilterName: TFilterName): TListFilterAction => ({
   type: ACTION_TYPES.LIST.FILTER_TOGGLE,
   payload: nextFilterName,
 });
 
-export const toggleSorting = (nextSortingName: TSortingName): IListSortingAction => ({
+export const toggleSorting = (nextSortingName: TSortingName): TListSortingAction => ({
   type: ACTION_TYPES.LIST.SORTING_TOGGLE,
   payload: nextSortingName,
 });
 
-export const showNextListPage = (): IListPageAction => ({
+export const showNextListPage = (): TListPageAction => ({
   type: ACTION_TYPES.LIST.NEXT_PAGE,
 });
 
@@ -34,16 +34,16 @@ export const toggleTheme = (): IThemeToggleAction => ({
   type: ACTION_TYPES.THEME.TOGGLE,
 });
 
-interface ISubjectsApiResponse {
+type TSubjectsApiResponse = {
   data: TFetchList;
-}
+};
 
 export const fetchSubjects = (): TFetchActionCreator => async (dispatch) => {
   const apiUrl = `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}response/subjects.json?${Date.now()}`;
 
   try {
     const response = await window.fetch(apiUrl);
-    const { data: list } = await response.json() as ISubjectsApiResponse;
+    const { data: list } = await response.json() as TSubjectsApiResponse;
 
     dispatch({
       type: ACTION_TYPES.FETCH.COMPLETE,

@@ -8,7 +8,7 @@ const pngquant = require('imagemin-pngquant');
 const svgo = require('imagemin-svgo');
 const zopfli = require('imagemin-zopfli');
 
-const svgoOptions = require('./svgoOptions.js');
+const svgoOptions = require('../svgo.config');
 
 const minify = () => (
   src('../minify/in/*.{jp?(e)g,png,svg}')
@@ -16,7 +16,7 @@ const minify = () => (
       jpegtran({ progressive: true }),
       mozjpeg({ quality: 90 }),
       pngquant({ speed: 1, quality: [0.8, 0.8] }),
-      svgo({ plugins: svgoOptions }),
+      svgo(svgoOptions),
       zopfli({ more: true }),
     ]))
     .pipe(dest('../minify/out'))

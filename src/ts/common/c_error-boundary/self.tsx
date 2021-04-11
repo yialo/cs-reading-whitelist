@@ -2,16 +2,16 @@ import React from 'react';
 
 import style from './style.scss';
 
-interface IProps {
+type TProps = {
   children: React.ReactNode;
-}
+};
 
-interface IState {
+type TState = {
   error: Error | null;
-}
+};
 
-export class ErrorBoundary extends React.Component<IProps, IState> {
-  static getDerivedStateFromError(err: Error): IState {
+export class ErrorBoundary extends React.Component<TProps, TState> {
+  static getDerivedStateFromError(err: Error): TState {
     return { error: err };
   }
 

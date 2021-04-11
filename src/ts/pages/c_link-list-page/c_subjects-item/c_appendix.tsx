@@ -5,13 +5,13 @@ import type { SubjectLang, SubjectLegend, SubjectTag } from 'ts/types';
 
 import style from './style.scss';
 
-interface ISubjectsItemAppendixProps {
+type TProps = {
   lang?: SubjectLang;
   legend?: SubjectLegend;
   tags?: SubjectTag[];
-}
+};
 
-export const SubjectsItemAppendix: React.FC<ISubjectsItemAppendixProps> = ({
+export const SubjectsItemAppendix: React.FC<TProps> = ({
   lang = '',
   legend = '',
   tags = [],

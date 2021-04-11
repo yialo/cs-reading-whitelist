@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 
-import { Button } from 'common/c_button';
+import { Button } from 'ts/common/c_button';
 import { KEYBOARD_KEYS } from 'ts/constants';
+import type { TClassNameable } from 'ts/types';
 
 import style from './style.scss';
 
-interface ISelectProps {
-  className?: string;
+type TProps = TClassNameable & {
   filterDict: {
     [filter: string]: string;
   };
@@ -15,11 +15,11 @@ interface ISelectProps {
   tip: React.ReactNode;
   value: string;
   onChange: (filter: string) => void;
-}
+};
 
 const TOGGLE_BUTTON_ID = 'filter-toggle-button';
 
-export const Select: React.FC<ISelectProps> = ({
+export const Select: React.FC<TProps> = ({
   className,
   filterDict,
   tip,
@@ -71,7 +71,7 @@ export const Select: React.FC<ISelectProps> = ({
         <Button
           ref={$toggleButtonRef}
           className={classNames(style.toggleButton, {
-            [style.toggleButton_hasPopup]: isExpanded,
+            [style.toggleButton_hasPopup!]: isExpanded,
           })}
           id={TOGGLE_BUTTON_ID}
           aria-haspopup="listbox"
@@ -97,7 +97,7 @@ export const Select: React.FC<ISelectProps> = ({
                 >
                   <Button
                     className={classNames(style.optionButton, {
-                      [style.optionButton_selected]: isSelected,
+                      [style.optionButton_selected!]: isSelected,
                     })}
                     onClick={() => {
                       setIsExpanded(false);

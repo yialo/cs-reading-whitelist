@@ -13,29 +13,33 @@ export type SubjectUrl = string;
 export type SubjectTag = string;
 
 // TODO: add generic type for cases of lang in all series or in each item
-export interface ISubjectSeriesItem {
+export type TSubjectSeriesItem = {
   caption: SubjectCaption;
   lang?: SubjectLang;
   legend?: SubjectLegend;
   tags?: SubjectTag[];
   url: SubjectUrl;
-}
+};
 
-interface IBaseSubject {
+type TBaseSubject = {
   caption: SubjectCaption;
   lang: SubjectLang;
   legend?: SubjectLegend;
   tags: SubjectTag[];
-}
+};
 
-export interface ISingleSublect extends IBaseSubject {
+export type TSingleSublect = TBaseSubject & {
   series?: undefined;
   url: SubjectUrl;
-}
+};
 
-export interface ISeriesSubject extends IBaseSubject {
-  series: ISubjectSeriesItem[];
+export type TSeriesSubject = TBaseSubject & {
+  series: TSubjectSeriesItem[];
   url?: undefined;
-}
+};
 
-export type ISubject = ISingleSublect | ISeriesSubject;
+export type ISubject = TSingleSublect | TSeriesSubject;
+
+export type TClassNameable = {
+  className?: string;
+};

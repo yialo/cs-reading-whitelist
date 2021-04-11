@@ -1,15 +1,15 @@
-interface INamingPageItem {
+type TNamingPageItem = {
   title: string;
   names: string[];
-}
+};
 
-interface INamingPageContensItem {
+type TNamingPageContensItem = {
   title: string;
   id: string;
-  items: INamingPageItem[];
-}
+  items: TNamingPageItem[];
+};
 
-export const CONTENTS: INamingPageContensItem[] = [
+export const CONTENTS: TNamingPageContensItem[] = [
   {
     title: 'Базовые',
     id: 'basic',

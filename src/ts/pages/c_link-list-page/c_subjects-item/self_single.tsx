@@ -1,16 +1,15 @@
 import React from 'react';
 
-import type { ISingleSublect } from 'ts/types';
+import type { TClassNameable, TSingleSublect } from 'ts/types';
 
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
-import type { IClassNameable } from './types';
 
-interface ISingleSubjectsItemProps extends IClassNameable {
-  subject: ISingleSublect;
-}
+type TProps = TClassNameable & {
+  subject: TSingleSublect;
+};
 
-export const SingleSubjectsItem: React.FC<ISingleSubjectsItemProps> = ({
+export const SingleSubjectsItem: React.FC<TProps> = ({
   className,
   subject,
 }) => {
