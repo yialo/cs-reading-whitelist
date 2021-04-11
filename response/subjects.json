@@ -4304,6 +4304,15 @@
         "react",
         "react_hooks"
       ]
+    },
+    {
+      "caption": "JavaScript-реализация throttle на пальцах (Пётр Мязин)",
+      "url": "https://youtu.be/-v31jfaTyhU",
+      "lang": "ru",
+      "tags": [
+        "algorithms",
+        "javascript"
+      ]
     }
   ]
 }
