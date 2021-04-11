@@ -87,10 +87,10 @@ export const ControlBar: React.FC<TProps> = ({
       />
 
       <div className={style.sorting}>
-        <span className={style.sortingTip} id={sortingGroupLabelId}>Сортировка:</span>
+        <span className={style.sorting__tip} id={sortingGroupLabelId}>Сортировка:</span>
 
         <div
-          className={style.sortingControls}
+          className={style.sorting__controls}
           aria-labelledby={sortingGroupLabelId}
           role="radiogroup"
         >
@@ -99,7 +99,7 @@ export const ControlBar: React.FC<TProps> = ({
             return (
               <Button
                 key={name}
-                className={style.sortingButton}
+                className={style.sorting__button}
                 disabled={isCurrent}
                 aria-checked={isCurrent}
                 role="radio"
