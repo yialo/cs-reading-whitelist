@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { Preloader } from 'ts/common/c_preloader';
 import {
   fetchSubjects,
   searchInList,
@@ -19,7 +20,6 @@ import {
 import type { TFilterName, TSortingName } from 'ts/types';
 
 import { ControlBar } from './c_control-bar';
-import { Preloader } from './c_preloader';
 import { Subjects } from './c_subjects';
 
 import style from './style.scss';
@@ -87,7 +87,7 @@ export const LinkListPage: React.FC = () => {
               onShowMoreClick={handleShowMoreClick}
             />
           </>
-        ) : <Preloader />
+        ) : <Preloader className={style.preloader} />
       }
     </main>
   );

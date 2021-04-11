@@ -27,6 +27,7 @@ type RouteEnum = {
   [name: string]: string;
 };
 
+// FIXME: find out the reason of TS issue
 const createActualRoutes = (routeEnum: RouteEnum) => Object.entries(routeEnum)
   .reduce((routes: RouteEnum, [name, path]) => {
     routes[name] = `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}${path}`;
