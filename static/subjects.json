@@ -3691,14 +3691,6 @@
       ]
     },
     {
-      "caption": "How to learn React.js in 2020 (by Robin Wieruch)",
-      "url": "https://www.robinwieruch.de/learn-react-js",
-      "lang": "en",
-      "tags": [
-        "react"
-      ]
-    },
-    {
       "caption": "How to fetch data with React Hooks? (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/react-hooks-fetch-data",
       "lang": "en",
@@ -4367,6 +4359,16 @@
       "lang": "ru",
       "tags": [
         "css"
+      ]
+    },
+    {
+      "caption": "How to test Axios in Jest by Example (by Robin Wieruch)",
+      "url": "https://www.robinwieruch.de/axios-jest",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "async",
+        "testing"
       ]
     }
   ]
