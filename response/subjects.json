@@ -3405,7 +3405,7 @@
         "video",
         "react",
         "state_management",
-        "react_router",
+        "routing",
         "mobx",
         "rocket_science"
       ]
@@ -4369,6 +4369,15 @@
         "javascript",
         "async",
         "testing"
+      ]
+    },
+    {
+      "caption": "Роутер как у сына маминой подруги (Павел Малышев)",
+      "url": "https://youtu.be/kf5zccSyEso",
+      "lang": "ru",
+      "tags": [
+        "routing",
+        "state_management"
       ]
     }
   ]
