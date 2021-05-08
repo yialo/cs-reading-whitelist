@@ -46,7 +46,7 @@
       "url": "https://snipcart.com/blog/tips-on-code-refactoring-from-a-former-addict",
       "lang": "en",
       "tags": [
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -63,7 +63,7 @@
       "url": "https://www.makeuseof.com/tag/10-tips-writing-cleaner-better-code/",
       "lang": "en",
       "tags": [
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -88,7 +88,7 @@
       ],
       "lang": "ru",
       "tags": [
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -551,7 +551,7 @@
       "tags": [
         "html",
         "css",
-        "code_quality"
+        "clean_code"
       ],
       "legend": "подборка антипаттернов вёрстки"
     },
@@ -673,7 +673,7 @@
       "lang": "ru",
       "tags": [
         "css",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -869,7 +869,7 @@
       "lang": "ru",
       "tags": [
         "css",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1070,7 +1070,7 @@
       "url": "https://nicothin.pro/page/reflex",
       "lang": "ru",
       "tags": [
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1146,7 +1146,7 @@
       "lang": "ru",
       "tags": [
         "4consider",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1154,7 +1154,7 @@
       "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3",
       "lang": "ru",
       "tags": [
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1271,7 +1271,7 @@
         "css",
         "sass",
         "bem",
-        "code_quality"
+        "clean_code"
       ],
       "legend": "список рекомендаций по неусложнению жизни себе и другим участникам проекта по вёрстке"
     },
@@ -1303,7 +1303,7 @@
       "tags": [
         "css",
         "css_naming",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1321,7 +1321,7 @@
       "lang": "ru",
       "tags": [
         "css",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1331,7 +1331,7 @@
       "tags": [
         "css",
         "sass",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1633,7 +1633,7 @@
       "tags": [
         "css",
         "sass",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1788,7 +1788,7 @@
       "lang": "ru",
       "tags": [
         "javascript",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1797,7 +1797,7 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1824,7 +1824,7 @@
       "lang": "ru",
       "tags": [
         "javascript",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -1940,7 +1940,7 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -2886,7 +2886,7 @@
     },
     {
       "caption": "The Fine Art of the Webpack Config",
-      "url": "https://blog.flennik.com/the-fine-art-of-the-webpack-2-config-dc4d19d7f172",
+      "url": "https://medium.com/flennik-interface-design/the-fine-art-of-the-webpack-2-config-dc4d19d7f172",
       "lang": "en",
       "tags": [
         "build_tools",
@@ -2982,7 +2982,7 @@
       "url": "https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project",
       "lang": "en",
       "tags": [
-        "code_quality",
+        "clean_code",
         "typescript"
       ]
     },
@@ -3071,7 +3071,7 @@
       "url": "https://www.daolf.com/posts/best-programming-books/",
       "lang": "en",
       "tags": [
-        "code_quality",
+        "clean_code",
         "design_patterns"
       ]
     },
@@ -3165,7 +3165,7 @@
       "url": "https://12factor.net/",
       "lang": "en",
       "tags": [
-        "code_quality",
+        "clean_code",
         "deployment"
       ],
       "legend": "A methodology for building modern, scalable, maintainable software-as-a-service apps."
@@ -3219,7 +3219,7 @@
       "url": "https://www.ietf.org/rfc/rfc2119.txt",
       "lang": "en",
       "tags": [
-        "code_quality"
+        "clean_code"
       ],
       "legend": "RFC 2119: MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, OPTIONAL"
     },
@@ -3242,7 +3242,7 @@
         "javascript",
         "react",
         "design_patterns",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -3486,7 +3486,7 @@
       "lang": "ru",
       "tags": [
         "design_patterns",
-        "code_quality",
+        "clean_code",
         "oop",
         "solid"
       ]
@@ -3627,7 +3627,7 @@
       "url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
       "lang": "en",
       "tags": [
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -3635,7 +3635,7 @@
       "url": "https://kentcdodds.com/blog/aha-programming",
       "lang": "en",
       "tags": [
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -3741,7 +3741,7 @@
       "lang": "en",
       "tags": [
         "testing",
-        "code_quality",
+        "clean_code",
         "ux_ui"
       ]
     },
@@ -4026,7 +4026,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "code_quality"
+        "clean_code"
       ],
       "legend": "возможно, в мире с TypeScript использовать propTypes не стоит"
     },
@@ -4036,7 +4036,7 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -4233,7 +4233,7 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "code_quality",
+        "clean_code",
         "build_tools"
       ]
     },
@@ -4259,7 +4259,7 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "code_quality"
+        "clean_code"
       ]
     },
     {
@@ -4305,7 +4305,7 @@
       "lang": "en",
       "tags": [
         "open_source",
-        "code_quality",
+        "clean_code",
         "soft_skills"
       ]
     },
@@ -4378,6 +4378,31 @@
       "tags": [
         "routing",
         "state_management"
+      ]
+    },
+    {
+      "caption": "Avoid Nesting when you're Testing (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/avoid-nesting-when-youre-testing",
+      "lang": "en",
+      "tags": [
+        "testing"
+      ]
+    },
+    {
+      "caption": "Test Isolation with React (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/test-isolation-with-react",
+      "lang": "en",
+      "tags": [
+        "testing",
+        "react"
+      ]
+    },
+    {
+      "caption": "AHA Testing (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/aha-testing",
+      "lang": "en",
+      "tags": [
+        "testing"
       ]
     }
   ]
