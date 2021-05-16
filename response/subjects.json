@@ -1882,7 +1882,8 @@
       "url": "https://www.internet-technologies.ru/articles/formy-v-html5-javascript-i-api-dlya-prinuditelnoy-validacii-form.html",
       "lang": "ru",
       "tags": [
-        "javascript"
+        "dom",
+        "forms"
       ]
     },
     {
@@ -3017,15 +3018,6 @@
     {
       "caption": "How to Work with Forms, Inputs and Events in React",
       "url": "https://medium.com/capital-one-tech/how-to-work-with-forms-inputs-and-events-in-react-c337171b923b",
-      "lang": "en",
-      "tags": [
-        "react",
-        "forms"
-      ]
-    },
-    {
-      "caption": "Controlled and uncontrolled form inputs in React don't have to be complicated (by Gosha Arinich)",
-      "url": "https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/",
       "lang": "en",
       "tags": [
         "react",
@@ -4403,6 +4395,60 @@
       "lang": "en",
       "tags": [
         "testing"
+      ]
+    },
+    {
+      "caption": "On Forms in React (by Gosha Arinich)",
+      "series": [
+        {
+          "caption": "Controlled and uncontrolled form inputs in React don't have to be complicated",
+          "url": "https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/"
+        },
+        {
+          "caption": "Transitioning from uncontrolled inputs to controlled",
+          "url": "https://goshakkk.name/turn-uncontrolled-into-controlled/"
+        },
+        {
+          "caption": "Why not field-level validations?",
+          "url": "https://goshakkk.name/y-no-field-level-validations/"
+        },
+        {
+          "caption": "Form recipe: Conditionally disabling the Submit button",
+          "url": "https://goshakkk.name/form-recipe-disable-submit-button-react/"
+        },
+        {
+          "caption": "Instant form field validation with React's controlled inputs",
+          "url": "https://goshakkk.name/instant-form-fields-validation-react/"
+        },
+        {
+          "caption": "Validating a React form upon submit",
+          "url": "https://goshakkk.name/submit-time-validation-react/"
+        },
+        {
+          "caption": "How to handle validations involving several fields?",
+          "url": "https://goshakkk.name/validations-several-fields/"
+        }
+      ],
+      "lang": "en",
+      "tags": [
+        "react",
+        "forms"
+      ]
+    },
+    {
+      "caption": "Prop Drilling (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/prop-drilling",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "When to break up a component into multiple components (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/when-to-break-up-a-component-into-multiple-components",
+      "lang": "en",
+      "tags": [
+        "react"
       ]
     }
   ]
