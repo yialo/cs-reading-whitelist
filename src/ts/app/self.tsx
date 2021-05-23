@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import { hot } from 'react-hot-loader/root';
 import { Provider } from 'react-redux';
 import { HashRouter as Router } from 'react-router-dom';
@@ -20,7 +20,7 @@ const storeEnhancer = __GLOBAL_ENV_VARIABLE__MODE__ === 'development'
 const store = createStore(rootReducer, storeEnhancer);
 
 const App: React.FC = () => (
-  <React.StrictMode>
+  <StrictMode>
     <ErrorBoundary>
       <Provider store={store}>
         <Router>
@@ -28,7 +28,7 @@ const App: React.FC = () => (
         </Router>
       </Provider>
     </ErrorBoundary>
-  </React.StrictMode>
+  </StrictMode>
 );
 
 export const HotApp = hot(App);
