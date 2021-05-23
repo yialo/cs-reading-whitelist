@@ -4427,6 +4427,26 @@
         {
           "caption": "How to handle validations involving several fields?",
           "url": "https://goshakkk.name/validations-several-fields/"
+        },
+        {
+          "caption": "How do you make a React form start out with some values prefilled when editing?",
+          "url": "https://goshakkk.name/react-forms-for-editing/"
+        },
+        {
+          "caption": "Collecting data from a wizard form",
+          "url": "https://goshakkk.name/wizard-form-collect-info/"
+        },
+        {
+          "caption": "Here's what you can do to make migrating your forms to Redux easier in the future",
+          "url": "https://goshakkk.name/prep-forms-for-redux/"
+        },
+        {
+          "caption": "Should you store your form state in Redux?",
+          "url": "https://goshakkk.name/should-i-put-form-state-into-redux/"
+        },
+        {
+          "caption": "Making dynamic form inputs with React",
+          "url": "https://goshakkk.name/array-form-inputs/"
         }
       ],
       "lang": "en",
@@ -4449,6 +4469,42 @@
       "lang": "en",
       "tags": [
         "react"
+      ]
+    },
+    {
+      "caption": "Simplest, no-dependency router is... state (by Gosha Arinich)",
+      "url": "https://goshakkk.name/min-viable-router-is-state/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "routing",
+        "state_management"
+      ]
+    },
+    {
+      "caption": "Learning how to learn course: brief text version",
+      "url": "https://www.reddit.com/r/GetMotivated/comments/5950tm/text_i_just_finished_the_online_coursera_course/",
+      "lang": "en",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "caption": "Redux vs MobX vs Flux vs... Do you even need that? (by Gosha Arinich)",
+      "url": "https://goshakkk.name/redux-vs-mobx-vs-flux-etoomanychoices/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "state_management"
+      ]
+    },
+    {
+      "caption": "So you completed the official React tutorial. What's next? (by Gosha Arinich)",
+      "url": "https://goshakkk.name/next-steps-official-react-tutorial/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "productivity"
       ]
     }
   ]
