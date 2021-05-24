@@ -4487,7 +4487,8 @@
       "lang": "en",
       "tags": [
         "productivity"
-      ]
+      ],
+      "legend": "Тезисы курса Learning How to Learn"
     },
     {
       "caption": "Redux vs MobX vs Flux vs... Do you even need that? (by Gosha Arinich)",
@@ -4505,6 +4506,22 @@
       "tags": [
         "react",
         "productivity"
+      ]
+    },
+    {
+      "caption": "You don't need a tutorial for every-freaking-thing (by Gosha Arinich)",
+      "url": "https://goshakkk.name/no-tutorial-for-everything/",
+      "lang": "en",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "caption": "Как я однажды верстал форму регистрации (Михайло Иванкив)",
+      "url": "https://youtu.be/C5vIEHHG1aA",
+      "lang": "ru",
+      "tags": [
+        "algorithms"
       ]
     }
   ]
