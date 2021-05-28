@@ -4138,7 +4138,7 @@
       ]
     },
     {
-      "caption": "Bail out if stateProps can be calculated early and did not change",
+      "caption": "Bail out if stateProps can be calculated early and did not change (by Dan Abramov)",
       "url": "https://github.com/reduxjs/react-redux/pull/348",
       "lang": "en",
       "tags": [
