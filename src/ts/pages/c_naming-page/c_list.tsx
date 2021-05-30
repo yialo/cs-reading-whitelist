@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, FC } from 'react';
 
 import { CONTENTS } from './data';
 
-export const NamingPageList: React.FC = () => (
+export const NamingPageList: FC = () => (
   <>
     {CONTENTS.map((it, i) => (
       <Fragment key={i}>
-        <section id={it.id} >
+        <section id={it.id}>
           <h2>{it.title}</h2>
 
           {it.items.map((subIt, j) => (

@@ -4138,7 +4138,7 @@
       ]
     },
     {
-      "caption": "Bail out if stateProps can be calculated early and did not change",
+      "caption": "Bail out if stateProps can be calculated early and did not change (by Dan Abramov)",
       "url": "https://github.com/reduxjs/react-redux/pull/348",
       "lang": "en",
       "tags": [
@@ -4482,7 +4482,7 @@
       ]
     },
     {
-      "caption": "Learning how to learn course: brief text version",
+      "caption": "Learning How to Learn course: brief text version",
       "url": "https://www.reddit.com/r/GetMotivated/comments/5950tm/text_i_just_finished_the_online_coursera_course/",
       "lang": "en",
       "tags": [
@@ -4522,6 +4522,24 @@
       "lang": "ru",
       "tags": [
         "algorithms"
+      ]
+    },
+    {
+      "caption": "One way NOT to abuse Redux (by Gosha Arinich)",
+      "url": "https://goshakkk.name/one-way-not-to-abuse-redux/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "redux"
+      ]
+    },
+    {
+      "caption": "Redux anti-pattern: dumb mapStateToProps (by Gosha Arinich)",
+      "url": "https://goshakkk.name/redux-antipattern-mapstatetoprops/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "redux"
       ]
     }
   ]
