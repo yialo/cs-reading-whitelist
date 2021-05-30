@@ -4523,6 +4523,24 @@
       "tags": [
         "algorithms"
       ]
+    },
+    {
+      "caption": "One way NOT to abuse Redux (by Gosha Arinich)",
+      "url": "https://goshakkk.name/one-way-not-to-abuse-redux/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "redux"
+      ]
+    },
+    {
+      "caption": "Redux anti-pattern: dumb mapStateToProps (by Gosha Arinich)",
+      "url": "https://goshakkk.name/redux-antipattern-mapstatetoprops/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "redux"
+      ]
     }
   ]
 }
