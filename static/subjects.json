@@ -4488,7 +4488,7 @@
       "tags": [
         "productivity"
       ],
-      "legend": "Тезисы курса Learning How to Learn"
+      "legend": "Тезисы курса «Learning How to Learn»"
     },
     {
       "caption": "Redux vs MobX vs Flux vs... Do you even need that? (by Gosha Arinich)",
@@ -4540,6 +4540,44 @@
       "tags": [
         "react",
         "redux"
+      ]
+    },
+    {
+      "caption": "Правила общения удалённых разработчиков",
+      "url": "https://blog.csssr.com/ru/article/how-remote-developers-talk",
+      "lang": "ru",
+      "tags": [
+        "soft_skills"
+      ]
+    },
+    {
+      "caption": "History of the browser user-agent string",
+      "url": "https://webaim.org/blog/user-agent-string-history/",
+      "lang": "en",
+      "tags": [
+        "fun"
+      ]
+    },
+    {
+      "caption": "Стимуляторы работы программиста",
+      "series": [
+        {
+          "caption": "Обстановка",
+          "url": "https://blog.csssr.com/ru/article/work-better"
+        },
+        {
+          "caption": "Мотивация",
+          "url": "https://blog.csssr.com/ru/article/work-harder"
+        },
+        {
+          "caption": "Здоровье",
+          "url": "https://blog.csssr.com/ru/article/work-stronger",
+          "legend": "С рекомендациями по выбору продуктов питания не согласен (нужно учитывать больше медицинских факторов), в остальном ценно."
+        }
+      ],
+      "lang": "ru",
+      "tags": [
+        "productivity"
       ]
     }
   ]
