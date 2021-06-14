@@ -4588,6 +4588,14 @@
         "clean_code",
         "video"
       ]
+    },
+    {
+      "caption": "Алгоритм чтения книг по программированию",
+      "url": "https://blog.csssr.com/ru/article/tech-book-reading/",
+      "lang": "ru",
+      "tags": [
+        "productivity"
+      ]
     }
   ]
 }
