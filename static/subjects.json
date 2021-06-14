@@ -472,15 +472,14 @@
       ]
     },
     {
-      "caption": "Скринкаст по Node.JS (Learn.javascript.ru)",
+      "caption": "Скринкаст по Node.JS (Learn.javascript.ru, 2013)",
       "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZFWfEQpNixIHVvp191Hb3Gg",
       "lang": "ru",
       "tags": [
         "nodejs",
-        "video",
-        "4consider"
+        "video"
       ],
-      "legend": "хотя курс внешне устарел, вся базовая информация актуальна"
+      "legend": "Внешне курс устарел, поэтому в 2021 году это скорее сборник задач, а не уроки по списыванию чужого кода с доски. Если честно выполнять все поставленные автором задачи, читая документацию новых версий используемых библиотек (или их современных аналогов, npmtrends.com в помощь), будут получены реальные практические знания. Впасть в иллюзию компетентности не получится: или делаешь, или признаёшь, что не хочешь разбираться."
     },
     {
       "caption": "NodeJS Event Loop",
@@ -4575,6 +4574,24 @@
           "legend": "С рекомендациями по выбору продуктов питания не согласен (нужно учитывать больше медицинских факторов), в остальном ценно."
         }
       ],
+      "lang": "ru",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "caption": "Надёжный JavaScript: в погоне за мифом (Илья Климов)",
+      "url": "https://youtu.be/o9zh5EHrpQA",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "clean_code",
+        "video"
+      ]
+    },
+    {
+      "caption": "Алгоритм чтения книг по программированию",
+      "url": "https://blog.csssr.com/ru/article/tech-book-reading/",
       "lang": "ru",
       "tags": [
         "productivity"
