@@ -4596,6 +4596,53 @@
       "tags": [
         "productivity"
       ]
+    },
+    {
+      "caption": "Веб-сервер на Ubuntu 20 с нуля: nginx, HTTPS, Brotli и HTTP/2 (Вадим Макеев)",
+      "url": "https://youtu.be/XDWWxA6g1eA",
+      "lang": "ru",
+      "tags": [
+        "video",
+        "deployment",
+        "linux"
+      ]
+    },
+    {
+      "caption": "How to use React Context effectively (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/how-to-use-react-context-effectively",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_context"
+      ]
+    },
+    {
+      "caption": "How to optimize your context value (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/how-to-optimize-your-context-value",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_context"
+      ]
+    },
+    {
+      "caption": "Hooks, State, Closures, and useReducer (by Adam Rackis)",
+      "url": "https://adamrackis.dev/state-and-use-reducer/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_hooks",
+        "state_management"
+      ]
+    },
+    {
+      "caption": "Markdown/MDX with Next.js",
+      "url": "https://nextjs.org/blog/markdown",
+      "lang": "en",
+      "tags": [
+        "jamstack",
+        "nextjs"
+      ]
     }
   ]
 }
