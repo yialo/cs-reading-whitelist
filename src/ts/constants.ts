@@ -18,22 +18,9 @@ export enum ESorting {
   OLD = 'old',
 }
 
-const INITIAL_ROUTES = {
-  HOME: '',
-  NAMING: 'naming',
-} as const;
-
-type RouteEnum = {
-  [name: string]: string;
+export const ROUTES = {
+  HOME: __GLOBAL_ENV_VARIABLE__PUBLIC_PATH__,
+  NAMING: `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}naming`,
 };
-
-// FIXME: find out the reason of TS issue
-const createActualRoutes = (routeEnum: RouteEnum) => Object.entries(routeEnum)
-  .reduce((routes: RouteEnum, [name, path]) => {
-    routes[name] = `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}${path}`;
-    return routes;
-  }, {});
-
-export const ROUTES = createActualRoutes(INITIAL_ROUTES);
 
 export const LIST_PAGE_SIZE = 10;
