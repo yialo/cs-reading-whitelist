@@ -4643,6 +4643,14 @@
         "jamstack",
         "nextjs"
       ]
+    },
+    {
+      "caption": "Colocation (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/colocation",
+      "lang": "en",
+      "tags": [
+        "clean_code"
+      ]
     }
   ]
 }
