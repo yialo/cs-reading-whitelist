@@ -4651,6 +4651,15 @@
       "tags": [
         "clean_code"
       ]
+    },
+    {
+      "caption": "Mapped Types should distribute over Union Types",
+      "url": "https://github.com/microsoft/TypeScript/issues/28339",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ],
+      "legend": "Как обойти проблему разрушения алгебраических типов (Discriminated Union) после применения к ним маппинга"
     }
   ]
 }
