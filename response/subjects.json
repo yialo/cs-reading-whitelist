@@ -3597,15 +3597,6 @@
       ]
     },
     {
-      "caption": "Объяснены: значения nofollow / dofollow, noopener, noreferrer и noindex",
-      "url": "https://saitsamy.blogspot.com/2019/12/what-noopener-noreferrer-dofollow-nofollow-explained.html#nofollow-explained5",
-      "lang": "ru",
-      "tags": [
-        "seo",
-        "security"
-      ]
-    },
-    {
       "caption": "PX, EM or REM Media Queries?",
       "url": "https://zellwk.com/blog/media-query-units/",
       "lang": "en",
@@ -4660,6 +4651,25 @@
         "typescript"
       ],
       "legend": "Как обойти проблему разрушения алгебраических типов (Discriminated Union) после применения к ним маппинга"
+    },
+    {
+      "caption": "Unix Answers: Stopped Jobs and Job Control",
+      "url": "http://www.glue.umd.edu/afs/glue.umd.edu/system/info/olh/Utilities/Unix_answers/unix_jobs.html",
+      "lang": "en",
+      "tags": [
+        "linux"
+      ],
+      "legend": "Что делать, если сервер не даёт разорвать SSH-соединение из-за незавершённых задач"
+    },
+    {
+      "caption": "React: Rethinking best practices (Pete Hunt, JSConf EU 2013)",
+      "url": "https://youtu.be/x7cQ3mrcKaY",
+      "lang": "en",
+      "tags": [
+        "video",
+        "react",
+        "design_patterns"
+      ]
     }
   ]
 }
