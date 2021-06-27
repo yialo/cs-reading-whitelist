@@ -4670,6 +4670,40 @@
         "react",
         "design_patterns"
       ]
+    },
+    {
+      "caption": "How @supports Works (by Chris Coyier)",
+      "url": "https://css-tricks.com/how-supports-works/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ]
+    },
+    {
+      "caption": "One simple trick to optimize React re-renders (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/optimize-react-re-renders",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "State Colocation will make your React app faster (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/state-colocation-will-make-your-react-app-faster",
+      "lang": "en",
+      "tags": [
+        "react",
+        "state_management"
+      ]
+    },
+    {
+      "caption": "One React mistake that's slowing you down (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/one-react-mistake-thats-slowing-you-down/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "design_patterns"
+      ]
     }
   ]
 }
