@@ -108,7 +108,7 @@ module.exports = (env = {}) => {
         const styleLoaderRule = {
           test: /\.s?css$/,
           use: [
-            (isProduction ? CssExtractPlugin.loader : 'style-loader'),
+            (isProduction || write ? CssExtractPlugin.loader : 'style-loader'),
             {
               loader: 'css-loader',
               options: {
@@ -145,12 +145,11 @@ module.exports = (env = {}) => {
           ],
         };
 
-        const getFileLoaderRule = ({ testRegexp, outputSubdir }) => ({
+        const createAssetResourceRule = ({ testRegexp, outputSubdir }) => ({
           test: testRegexp,
-          loader: 'file-loader',
-          options: {
-            name: `[name]${assetHash}.[ext]`,
-            outputPath: `static/${outputSubdir}`,
+          type: 'asset/resource',
+          generator: {
+            filename: `static/${outputSubdir}/[name]${assetHash}[ext]`,
           },
         });
 
@@ -158,15 +157,11 @@ module.exports = (env = {}) => {
           scriptLoaderRule,
           templateLoaderRule,
           styleLoaderRule,
-          getFileLoaderRule({
+          createAssetResourceRule({
             testRegexp: /\.(jpe?g|png|svg)$/,
-            outputSubdir: 'img',
+            outputSubdir: 'images',
           }),
-          getFileLoaderRule({
-            testRegexp: /\.ico$/,
-            outputSubdir: 'favicons',
-          }),
-          getFileLoaderRule({
+          createAssetResourceRule({
             testRegexp: /\.woff2?$/,
             outputSubdir: 'fonts',
           }),
@@ -190,7 +185,7 @@ module.exports = (env = {}) => {
               priority: 0,
               enforce: true,
             },
-            reactDom: {
+            react: {
               name: 'react',
               test: /[\\/]node_modules[\\/](@hot-loader[\\/]react-dom|object-assign|react|scheduler)[\\/]/,
               priority: 1,
