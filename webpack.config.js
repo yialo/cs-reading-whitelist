@@ -150,7 +150,7 @@ module.exports = (env = {}) => {
           loader: 'file-loader',
           options: {
             name: `[name]${assetHash}.[ext]`,
-            outputPath: `assets/${outputSubdir}`,
+            outputPath: `static/${outputSubdir}`,
           },
         });
 
@@ -191,8 +191,8 @@ module.exports = (env = {}) => {
               enforce: true,
             },
             reactDom: {
-              name: 'react-dom',
-              test: /[\\/]node_modules[\\/]@hot-loader[\\/]react-dom[\\/]/,
+              name: 'react',
+              test: /[\\/]node_modules[\\/](@hot-loader[\\/]react-dom|object-assign|react|scheduler)[\\/]/,
               priority: 1,
               enforce: true,
             },
@@ -238,7 +238,7 @@ module.exports = (env = {}) => {
     })(),
 
     output: {
-      filename: `assets/js/[name]${assetHash}.js`,
+      filename: `static/js/[name]${assetHash}.js`,
       path: PATH.DIST,
       publicPath: process.env.PUBLIC_PATH,
     },
@@ -255,7 +255,7 @@ module.exports = (env = {}) => {
         }),
         new ProgressPlugin(),
         new CssExtractPlugin({
-          filename: `assets/css/[name]${assetHash}.css`,
+          filename: `static/css/[name]${assetHash}.css`,
         }),
         new HtmlPlugin({
           filename: 'index.html',
@@ -266,7 +266,7 @@ module.exports = (env = {}) => {
           patterns: [
             {
               from: PATH.STATIC,
-              to: path.join(PATH.DIST, 'response'),
+              to: path.join(PATH.DIST, 'data'),
             },
           ],
         }),
