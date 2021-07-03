@@ -3237,15 +3237,6 @@
       ]
     },
     {
-      "caption": "Inclusive Components: Toggle Buttons (Heydon Pickering)",
-      "url": "https://inclusive-components.design/toggle-button/",
-      "lang": "en",
-      "tags": [
-        "a11y",
-        "wai_aria"
-      ]
-    },
-    {
       "caption": "Как учиться продуктивно",
       "url": "https://htmlacademy.ru/blog/education/all/productive-study",
       "lang": "ru",
@@ -4703,6 +4694,33 @@
       "tags": [
         "react",
         "design_patterns"
+      ]
+    },
+    {
+      "caption": "Объяснены значения nofollow / dofollow, noopener, noreferrer и noindex",
+      "url": "https://saitsamy.blogspot.com/2019/12/what-noopener-noreferrer-dofollow-nofollow-explained.html",
+      "lang": "ru",
+      "tags": [
+        "seo",
+        "security"
+      ]
+    },
+    {
+      "caption": "Inclusive Components (by Heydon Pickering)",
+      "series": [
+        {
+          "caption": "Toggle Buttons",
+          "url": "https://inclusive-components.design/toggle-button/"
+        },
+        {
+          "caption": "A Todo List",
+          "url": "https://inclusive-components.design/a-todo-list/"
+        }
+      ],
+      "lang": "en",
+      "tags": [
+        "a11y",
+        "wai_aria"
       ]
     }
   ]
