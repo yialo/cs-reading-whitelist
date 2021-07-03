@@ -39,7 +39,7 @@ type TSubjectsApiResponse = {
 };
 
 export const fetchSubjects = (): TFetchActionCreator => async (dispatch) => {
-  const apiUrl = `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}response/subjects.json?${Date.now()}`;
+  const apiUrl = `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}data/subjects.json?${Date.now()}`;
 
   try {
     const response = await window.fetch(apiUrl);
