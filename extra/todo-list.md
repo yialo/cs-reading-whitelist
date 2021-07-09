@@ -17,3 +17,4 @@
 * Add extended favicon set
 * Add CI/CD forkflow for deploy to GitHub Pages
 * Use markdown instead of JSON for content
+* Move app from `HashRouter` to `BrowserRouter`
