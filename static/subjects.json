@@ -4722,6 +4722,46 @@
         "a11y",
         "wai_aria"
       ]
+    },
+    {
+      "caption": "Why you shouldn't put refs in a dependency array (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/why-you-shouldnt-put-refs-in-a-dependency-array/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Myths about useEffect (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/myths-about-useeffect/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "useEffect vs useLayoutEffect (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/useeffect-vs-uselayouteffect",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "How React Uses Closures to Avoid Bugs (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/how-react-uses-closures-to-avoid-bugs/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "The Latest Ref Pattern in React (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/the-latest-ref-pattern-in-react/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
     }
   ]
 }
