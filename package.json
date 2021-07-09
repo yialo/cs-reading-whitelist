@@ -79,7 +79,7 @@
     "@types/react-redux": "7.1.18",
     "@types/react-router-dom": "5.1.8",
     "babel-jest": "27.0.6",
-    "eslint-config-yialo": "0.5.31",
+    "eslint-config-yialo": "0.5.32",
     "gh-pages": "3.2.3",
     "gulp": "4.0.2",
     "gulp-imagemin": "7.1.0",
