@@ -1014,9 +1014,9 @@
       ]
     },
     {
-      "caption": "Оформление модальных окон",
-      "url": "http://prgssr.ru/development/oformlenie-modalnyh-okon.html",
-      "lang": "ru",
+      "caption": "Considerations for Styling a Modal (by Chris Coyier)",
+      "url": "https://css-tricks.com/considerations-styling-modal/",
+      "lang": "en",
       "tags": [
         "css"
       ]
