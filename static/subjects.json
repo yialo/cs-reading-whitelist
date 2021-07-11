@@ -2077,7 +2077,7 @@
       ]
     },
     {
-      "caption": "await vs return vs return await",
+      "caption": "await vs return vs return await (by Jake Archibald)",
       "url": "https://jakearchibald.com/2017/await-vs-return-vs-return-await/",
       "lang": "en",
       "tags": [
@@ -4758,6 +4758,22 @@
     {
       "caption": "The Latest Ref Pattern in React (by Kent C. Dodds)",
       "url": "https://epicreact.dev/the-latest-ref-pattern-in-react/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "`export default thing` is different to `export { thing as default }` (by Jake Archibald)",
+      "url": "https://jakearchibald.com/2021/export-default-thing-vs-thing-as-default/",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ]
+    },
+    {
+      "caption": "Making setInterval Declarative with React Hooks (by Dan Abramov)",
+      "url": "https://overreacted.io/making-setinterval-declarative-with-react-hooks/",
       "lang": "en",
       "tags": [
         "react"
