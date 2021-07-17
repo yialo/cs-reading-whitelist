@@ -4778,6 +4778,41 @@
       "tags": [
         "react"
       ]
+    },
+    {
+      "caption": "The math of CSS Locks (by Florens Verschelde)",
+      "url": "https://fvsch.com/css-locks",
+      "lang": "en",
+      "tags": [
+        "css"
+      ]
+    },
+    {
+      "caption": "What the heck is the event loop anyway? (by Philip Roberts)",
+      "url": "https://youtu.be/8aGhZQkoFbQ",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "async"
+      ],
+      "legend": ""
+    },
+    {
+      "caption": "The Event Loop (by Jake Archibald, SmashingConf London)",
+      "url": "https://vimeo.com/254947206",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "async"
+      ]
+    },
+    {
+      "caption": "Importing React Through the Ages (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/importing-react-through-the-ages/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
     }
   ]
 }
