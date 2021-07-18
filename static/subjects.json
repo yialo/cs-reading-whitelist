@@ -4813,6 +4813,30 @@
       "tags": [
         "react"
       ]
+    },
+    {
+      "caption": "Why I Love React (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/why-i-love-react/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Avoid soul-crushing components (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/soul-crushing-components/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Requisite React (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/requisite-react/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
     }
   ]
 }
