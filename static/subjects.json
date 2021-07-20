@@ -893,8 +893,7 @@
       "url": "https://css-live.ru/css/pravilnaya-shpargalka-po-css-kaskadu.html",
       "lang": "ru",
       "tags": [
-        "css",
-        "important"
+        "css"
       ]
     },
     {
@@ -902,7 +901,6 @@
       "url": "https://css-live.ru/articles/css-i-proizvoditelnost-seti.html",
       "lang": "ru",
       "tags": [
-        "important",
         "css",
         "performance"
       ]
@@ -1348,8 +1346,7 @@
       "lang": "ru",
       "tags": [
         "css",
-        "css_naming",
-        "important"
+        "css_naming"
       ]
     },
     {
@@ -1468,8 +1465,7 @@
       "lang": "ru",
       "tags": [
         "css",
-        "css_grid",
-        "important"
+        "css_grid"
       ]
     },
     {
@@ -1753,8 +1749,7 @@
       "url": "https://learn.javascript.ru/",
       "lang": "ru",
       "tags": [
-        "javascript",
-        "important"
+        "javascript"
       ]
     },
     {
@@ -2526,8 +2521,7 @@
       "url": "https://git-scm.com/book/en/v2",
       "lang": "en",
       "tags": [
-        "git",
-        "important"
+        "git"
       ],
       "legend": "настольная книга"
     },
