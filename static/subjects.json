@@ -4855,6 +4855,43 @@
       "tags": [
         "react"
       ]
+    },
+    {
+      "caption": "Further Adventures of the Event Loop (by Erin Zimmer)",
+      "url": "https://youtu.be/u1kqx6AenYw",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "async"
+      ],
+      "legend": "Из всех обзорных материалов на тему event loop, которые встречал, этот нахожу наиболее последовательным и полным. Разобрана работа событийного цикла в браузерах, Node.js, WebWorker'ах."
+    },
+    {
+      "caption": "My State Management Mistake (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/my-state-management-mistake/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "state_management"
+      ]
+    },
+    {
+      "caption": "Why you've been bad about Profiling React Apps (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/why-youve-been-bad-about-profiling-react-apps/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "performance"
+      ]
+    },
+    {
+      "caption": "Stop Stumbling Around in React Learning Darkness (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/stop-stumbling-around-in-react-learning-darkness/",
+      "lang": "en",
+      "tags": [
+        "productivity"
+      ],
+      "legend": "Как правильно изучать новое, какую стратегию выбрать и как избежать расхода сил и времени на бессмысленную/вредную активность."
     }
   ]
 }

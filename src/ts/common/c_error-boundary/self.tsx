@@ -15,7 +15,7 @@ export class ErrorBoundary extends React.Component<TProps, TState> {
     return { error: err };
   }
 
-  state = {
+  state: TState = {
     error: null,
   };
 
