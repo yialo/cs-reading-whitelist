@@ -15,6 +15,7 @@
     "nodemon": "nodemon --config ./nodemon.json",
     "nodemon:build": "npm run nodemon -- build",
     "nodemon:dev": "npm run nodemon -- dev",
+    "publish": "npm run build && npm run deploy",
     "test": "jest -c=./jest.config.js",
     "tsc": "tsc",
     "webpack": "webpack -c ./webpack.config.js",
