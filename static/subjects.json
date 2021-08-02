@@ -351,14 +351,6 @@
       ]
     },
     {
-      "caption": "Как настроить VS Code для разработки на JavaScript",
-      "url": "https://guides.hexlet.io/vscode-js-setup/",
-      "lang": "ru",
-      "tags": [
-        "editors"
-      ]
-    },
-    {
       "caption": "The Three Types of Performance Testing",
       "url": "https://csswizardry.com/2018/10/three-types-of-performance-testing/",
       "lang": "en",
@@ -1490,7 +1482,7 @@
       "legend": "Таб Аткинс описывает минусы флексбоксов и представляет прототип будущих гридов"
     },
     {
-      "caption": "Как работает функция 'minmax()'",
+      "caption": "Как работает функция minmax()",
       "url": "https://css-live.ru/articles/kak-rabotaet-funkciya-minmax.html",
       "lang": "ru",
       "tags": [
@@ -4894,11 +4886,11 @@
       "legend": "Как правильно изучать новое, какую стратегию выбрать и как избежать расхода сил и времени на бессмысленную/вредную активность."
     },
     {
-      "caption": "Монорепозитории и где они обитают (Михаил Трошев)",
+      "caption": "Монорепозитории и где они обитают (Михаил Трошев, Яндекс)",
       "url": "https://youtu.be/yW2pg7__a0o",
       "lang": "ru",
       "tags": [
-        "git"
+        "vcs"
       ]
     },
     {
@@ -4915,6 +4907,14 @@
       "lang": "en",
       "tags": [
         "react"
+      ]
+    },
+    {
+      "caption": "Разработка в монорепозитории (Азат Разетдинов, Яндекс)",
+      "url": "https://habr.com/ru/company/yandex/blog/469021/",
+      "lang": "ru",
+      "tags": [
+        "vcs"
       ]
     }
   ]
