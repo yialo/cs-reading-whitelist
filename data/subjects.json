@@ -4892,6 +4892,30 @@
         "productivity"
       ],
       "legend": "Как правильно изучать новое, какую стратегию выбрать и как избежать расхода сил и времени на бессмысленную/вредную активность."
+    },
+    {
+      "caption": "Монорепозитории и где они обитают (Михаил Трошев)",
+      "url": "https://youtu.be/yW2pg7__a0o",
+      "lang": "ru",
+      "tags": [
+        "git"
+      ]
+    },
+    {
+      "caption": "Why React needs a key prop (by Kent C. Dodds)",
+      "url": "https://epicreact.dev/why-react-needs-a-key-prop/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Understanding React's key prop (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/understanding-reacts-key-prop",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
     }
   ]
 }
