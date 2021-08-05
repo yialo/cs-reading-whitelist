@@ -581,7 +581,7 @@
       ]
     },
     {
-      "caption": "Парадоксы 'display: contents' и будущее текста в CSS",
+      "caption": "Парадоксы display: contents и будущее текста в CSS",
       "url": "https://css-live.ru/css/paradoksy-displaycontents-i-budushhee-teksta-v-css.html",
       "lang": "ru",
       "tags": [
@@ -1621,17 +1621,6 @@
         "css",
         "sass",
         "clean_code"
-      ]
-    },
-    {
-      "caption": "Справочник по синтаксису Razor для ASP.NET Core",
-      "url": "https://docs.microsoft.com/ru-ru/aspnet/core/mvc/views/razor",
-      "lang": "ru",
-      "tags": [
-        "html",
-        "html_templates",
-        "c-sharp",
-        "dotnet"
       ]
     },
     {
@@ -4915,6 +4904,31 @@
       "lang": "ru",
       "tags": [
         "vcs"
+      ]
+    },
+    {
+      "caption": "Классические приёмы программирования во фронтенде (Игорь Алексеенко)",
+      "url": "https://youtu.be/Up85vj9YP3w",
+      "lang": "ru",
+      "tags": [
+        "design_patterns"
+      ]
+    },
+    {
+      "caption": "Use ternaries rather than && in JSX (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/use-ternaries-rather-than-and-and-in-jsx",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Когда флексбоксы не всесильны, или сюрприз тёмной стороны CSS",
+      "url": "https://css-live.ru/articles-css/flexbox-vs-css-table-vertical-centering-inlines.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css_flexbox"
       ]
     }
   ]
