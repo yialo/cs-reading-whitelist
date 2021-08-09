@@ -2735,15 +2735,6 @@
       ]
     },
     {
-      "caption": "Articles & Experiments by Roman Komarov",
-      "url": "https://www.kizu.ru/",
-      "lang": "en",
-      "tags": [
-        "blogs"
-      ],
-      "legend": "блог Романа Комарова"
-    },
-    {
       "caption": "The world needs full-stack craftsmen (Антон Кекс)",
       "url": "https://www.youtube.com/watch?v=qd9N9eU1Qn0",
       "lang": "ru",
@@ -4929,6 +4920,22 @@
       "tags": [
         "css",
         "css_flexbox"
+      ]
+    },
+    {
+      "caption": "Битва за базовую линию (Роман Комаров)",
+      "url": "https://www.kizu.ru/ru/flex-baseline/",
+      "lang": "ru",
+      "tags": [
+        "css"
+      ]
+    },
+    {
+      "caption": "Свойства для выравнивания всего и их новые тайны (Илья Стрельцын)",
+      "url": "https://css-live.ru/articles-css/svojstva-dlya-vyravnivaniya-vsego-i-ix-novye-tajny.html",
+      "lang": "ru",
+      "tags": [
+        "css"
       ]
     }
   ]
