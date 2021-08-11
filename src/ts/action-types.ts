@@ -10,18 +10,12 @@ enum ListActionType {
   NEXT_PAGE = 'list:next-page',
 }
 
-enum ThemeActionType {
-  TOGGLE = 'theme:toggle',
-}
-
 export const ACTION_TYPES = {
   FETCH: FetchActionType,
   LIST: ListActionType,
-  THEME: ThemeActionType,
 } as const;
 
 export type ActionNameType = (
   | FetchActionType
   | ListActionType
-  | ThemeActionType
 );

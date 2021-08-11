@@ -1,12 +1,13 @@
 import React, { StrictMode } from 'react';
 import { hot } from 'react-hot-loader/root';
-import { Provider } from 'react-redux';
+import { Provider as ReduxProvider } from 'react-redux';
 import { HashRouter as Router } from 'react-router-dom';
 import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 import { ErrorBoundary } from 'ts/common/c_error-boundary';
+import { ThemeProvider } from 'ts/common/theme';
 import { rootReducer } from 'ts/store/root-reducer';
 
 import { Root } from './c_root';
@@ -22,11 +23,13 @@ const store = createStore(rootReducer, storeEnhancer);
 const App: React.FC = () => (
   <StrictMode>
     <ErrorBoundary>
-      <Provider store={store}>
+      <ReduxProvider store={store}>
         <Router>
-          <Root />
+          <ThemeProvider>
+            <Root />
+          </ThemeProvider>
         </Router>
-      </Provider>
+      </ReduxProvider>
     </ErrorBoundary>
   </StrictMode>
 );

@@ -18,10 +18,6 @@ export const listSelector = {
   sortingName: (state: TState): TSortingName => state.list.sortingName,
 };
 
-export const themeSelector = {
-  isDark: (state: TState): boolean => state.theme.isDark,
-};
-
 const selectFilteredList = createSelector(
   [
     fetchSelector.fullList,

@@ -19,14 +19,9 @@ export type TListState = {
   sortingName: TSortingName;
 };
 
-export type TThemeState = {
-  isDark: boolean;
-};
-
 export type TState = {
   fetch: TFetchState;
   list: TListState;
-  theme: TThemeState;
 };
 
 type TFetchCompleteAction = Action<typeof ACTION_TYPES.FETCH.COMPLETE> & {
@@ -42,10 +37,6 @@ type TFetchAction = TFetchCompleteAction | TFetchErrorAction;
 export type TFetchReducer = Reducer<TFetchState, TFetchAction>;
 
 export type TFetchActionCreator = ThunkAction<Promise<void>, TState, undefined, TFetchAction>;
-
-export type IThemeToggleAction = Action<typeof ACTION_TYPES.THEME.TOGGLE>;
-
-export type TThemeReducer = Reducer<TThemeState, IThemeToggleAction>;
 
 export type TListSearchAction = Action<typeof ACTION_TYPES.LIST.SEARCH> & {
   payload: TSearchString;
