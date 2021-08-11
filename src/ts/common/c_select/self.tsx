@@ -3,25 +3,23 @@ import classNames from 'classnames';
 
 import { Button } from 'ts/common/c_button';
 import { KEYBOARD_KEYS } from 'ts/constants';
-import type { TClassNameable } from 'ts/types';
+import { TClassNameable } from 'ts/types';
 
 import style from './style.scss';
 
 type TProps = TClassNameable & {
-  filterDict: {
-    [filter: string]: string;
-  };
+  dict: Record<string, string>;
   tipIdPrefix?: string;
   tip: React.ReactNode;
   value: string;
-  onChange: (filter: string) => void;
+  onChange: (newValue: string) => void;
 };
 
 const TOGGLE_BUTTON_ID = 'filter-toggle-button';
 
 export const Select: React.FC<TProps> = ({
   className,
-  filterDict,
+  dict,
   tip,
   tipIdPrefix,
   value,
@@ -80,17 +78,17 @@ export const Select: React.FC<TProps> = ({
             setIsExpanded((prev) => !prev);
           }}
         >
-          {filterDict[value]}
+          {dict[value]}
         </Button>
 
         {isExpanded && (
           <ul className={style.list} role="listbox">
-            {Object.entries(filterDict).map(([filter, filterName]) => {
-              const isSelected = filter === value;
+            {Object.entries(dict).map(([name, caption]) => {
+              const isSelected = name === value;
 
               return (
                 <li
-                  key={filter}
+                  key={name}
                   className={style.option}
                   role="option"
                   aria-selected={isSelected}
@@ -101,10 +99,10 @@ export const Select: React.FC<TProps> = ({
                     })}
                     onClick={() => {
                       setIsExpanded(false);
-                      onChange(filter);
+                      onChange(name);
                     }}
                   >
-                    {filterName}
+                    {caption}
                   </Button>
                 </li>
               );

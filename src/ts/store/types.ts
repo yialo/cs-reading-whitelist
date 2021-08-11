@@ -1,8 +1,8 @@
-import type { Action, Reducer } from 'redux';
-import type { ThunkAction } from 'redux-thunk';
+import { Action, Reducer } from 'redux';
+import { ThunkAction } from 'redux-thunk';
 
-import type { ACTION_TYPES } from 'ts/action-types';
-import type { TFilterName, TSearchString, TSortingName, ISubject } from 'ts/types';
+import { ACTION_TYPES } from 'ts/action-types';
+import { TFilterName, TSearchString, TSortingName, ISubject } from 'ts/types';
 
 export type TFetchList = ISubject[];
 
@@ -19,14 +19,9 @@ export type TListState = {
   sortingName: TSortingName;
 };
 
-export type TThemeState = {
-  isDark: boolean;
-};
-
 export type TState = {
   fetch: TFetchState;
   list: TListState;
-  theme: TThemeState;
 };
 
 type TFetchCompleteAction = Action<typeof ACTION_TYPES.FETCH.COMPLETE> & {
@@ -42,10 +37,6 @@ type TFetchAction = TFetchCompleteAction | TFetchErrorAction;
 export type TFetchReducer = Reducer<TFetchState, TFetchAction>;
 
 export type TFetchActionCreator = ThunkAction<Promise<void>, TState, undefined, TFetchAction>;
-
-export type IThemeToggleAction = Action<typeof ACTION_TYPES.THEME.TOGGLE>;
-
-export type TThemeReducer = Reducer<TThemeState, IThemeToggleAction>;
 
 export type TListSearchAction = Action<typeof ACTION_TYPES.LIST.SEARCH> & {
   payload: TSearchString;

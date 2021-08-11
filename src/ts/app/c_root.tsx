@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import classNames from 'classnames';
-import { useSelector } from 'react-redux';
 
 import { PageSwitcher } from 'ts/pages';
-import { themeSelector } from 'ts/store/selectors';
+import { useHasDarkTheme } from 'ts/common/theme';
 
 import { RootFooter } from './c_footer';
 import { RootHeader } from './c_header';
@@ -16,7 +15,7 @@ const disableOverlay = () => {
 };
 
 export const Root: React.FC = () => {
-  const hasDarkTheme = useSelector(themeSelector.isDark);
+  const hasDarkTheme = useHasDarkTheme();
 
   useEffect(() => {
     disableOverlay();

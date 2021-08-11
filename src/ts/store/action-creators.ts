@@ -1,14 +1,13 @@
 import { ACTION_TYPES } from 'ts/action-types';
-import type { TFilterName, TSearchString, TSortingName } from 'ts/types';
+import { TFilterName, TSearchString, TSortingName } from 'ts/types';
 
-import type {
+import {
   TFetchActionCreator,
   TFetchList,
   TListFilterAction,
   TListPageAction,
   TListSearchAction,
   TListSortingAction,
-  IThemeToggleAction,
 } from './types';
 
 export const searchInList = (nextSearchString: TSearchString): TListSearchAction => ({
@@ -28,10 +27,6 @@ export const toggleSorting = (nextSortingName: TSortingName): TListSortingAction
 
 export const showNextListPage = (): TListPageAction => ({
   type: ACTION_TYPES.LIST.NEXT_PAGE,
-});
-
-export const toggleTheme = (): IThemeToggleAction => ({
-  type: ACTION_TYPES.THEME.TOGGLE,
 });
 
 type TSubjectsApiResponse = {

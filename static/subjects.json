@@ -4914,7 +4914,7 @@
       ]
     },
     {
-      "caption": "Когда флексбоксы не всесильны, или сюрприз тёмной стороны CSS",
+      "caption": "Когда флексбоксы не всесильны, или сюрприз тёмной стороны CSS (Илья Стрельцын)",
       "url": "https://css-live.ru/articles-css/flexbox-vs-css-table-vertical-centering-inlines.html",
       "lang": "ru",
       "tags": [
@@ -4934,6 +4934,14 @@
       "caption": "Свойства для выравнивания всего и их новые тайны (Илья Стрельцын)",
       "url": "https://css-live.ru/articles-css/svojstva-dlya-vyravnivaniya-vsego-i-ix-novye-tajny.html",
       "lang": "ru",
+      "tags": [
+        "css"
+      ]
+    },
+    {
+      "caption": "Intrinsic Sizing In CSS (by Ahmad Shadeed)",
+      "url": "https://ishadeed.com/article/intrinsic-sizing-in-css/",
+      "lang": "en",
       "tags": [
         "css"
       ]

@@ -1,8 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Button } from 'ts/common/c_button';
-import type { TButtonProps } from 'ts/common/c_button';
+import { Button, TButtonProps } from 'ts/common/c_button';
 
 import style from './style.scss';
 

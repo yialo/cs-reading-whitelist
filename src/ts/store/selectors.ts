@@ -1,9 +1,9 @@
 import { createSelector } from 'reselect';
 
 import { EFilter, ESorting, LIST_PAGE_SIZE } from 'ts/constants';
-import type { ISubject, TFilterName, TSortingName } from 'ts/types';
+import { ISubject, TFilterName, TSortingName } from 'ts/types';
 
-import type { TState } from './types';
+import { TState } from './types';
 
 export const fetchSelector = {
   error: (state: TState): Error | null => state.fetch.error,
@@ -16,10 +16,6 @@ export const listSelector = {
   page: (state: TState): number => state.list.page,
   searchString: (state: TState): string => state.list.searchString,
   sortingName: (state: TState): TSortingName => state.list.sortingName,
-};
-
-export const themeSelector = {
-  isDark: (state: TState): boolean => state.theme.isDark,
 };
 
 const selectFilteredList = createSelector(

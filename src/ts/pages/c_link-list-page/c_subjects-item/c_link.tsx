@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { SubjectCaption, SubjectLang, SubjectUrl } from 'ts/types';
+import { SubjectCaption, SubjectLang, SubjectUrl } from 'ts/types';
 
 import style from './style.scss';
 

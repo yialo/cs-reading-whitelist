@@ -1,4 +1,4 @@
-import type { EFilter, ESorting } from './constants';
+import { EFilter, ESorting } from './constants';
 
 export type $Values<O> = O[keyof O];
 
