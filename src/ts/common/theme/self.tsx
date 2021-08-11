@@ -7,8 +7,26 @@ const ThemeStateContext = React.createContext<TThemeName | undefined>(undefined)
 const ThemeUpdaterContext = React
   .createContext<TThemeDispatch | undefined>(undefined);
 
+const THEME_LS_KEY = 'ui-theme';
+
+const getInitialTheme = () => {
+  let theme: TThemeName | null;
+
+  try {
+    theme = (window.localStorage.getItem(THEME_LS_KEY) as TThemeName | null);
+
+    if (!theme) {
+      theme = 'light';
+    }
+  } catch {
+    theme = 'light';
+  }
+
+  return theme;
+};
+
 export const ThemeProvider: React.FC = ({ children }) => {
-  const [theme, setTheme] = React.useState<TThemeName>('light');
+  const [theme, setTheme] = React.useState<TThemeName>(getInitialTheme);
 
   return (
     <ThemeStateContext.Provider value={theme}>
@@ -25,6 +43,10 @@ export const useHasDarkTheme = () => {
   if (theme === undefined) {
     throw new Error('useThemeState must be used within a ThemeProvider');
   }
+
+  React.useEffect(() => {
+    window.localStorage.setItem(THEME_LS_KEY, theme);
+  }, [theme]);
 
   return theme === 'dark';
 };
