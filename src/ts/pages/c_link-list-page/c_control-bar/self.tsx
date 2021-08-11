@@ -5,7 +5,7 @@ import { Button } from 'ts/common/c_button';
 import { Select } from 'ts/common/c_select';
 import { TextInput } from 'ts/common/c_text-input';
 import { EFilter, ESorting } from 'ts/constants';
-import type { TClassNameable, TFilterName, TSortingName } from 'ts/types';
+import { TClassNameable, TFilterName, TSortingName } from 'ts/types';
 
 import { ControlBarAmountMeter } from './c_amount-meter';
 
@@ -69,10 +69,11 @@ export const ControlBar: React.FC<TProps> = ({
     <div className={classNames(style.root, className)}>
       <div className={style.filter}>
         <Select
+          className={className}
           tip="Искать по:"
-          filterDict={FILTER_DICT}
+          dict={FILTER_DICT}
           value={filterTarget}
-          onChange={onFilterToggle}
+          onChange={onFilterToggle as (val: string) => void}
         />
       </div>
 

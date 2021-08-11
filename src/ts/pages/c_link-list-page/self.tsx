@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { Preloader } from 'ts/common/c_preloader';
+import { LIST_PAGE_SIZE } from 'ts/constants';
 import {
   fetchSubjects,
   searchInList,
@@ -9,7 +10,6 @@ import {
   toggleFilter,
   toggleSorting,
 } from 'ts/store/action-creators';
-import { LIST_PAGE_SIZE } from 'ts/constants';
 import {
   fetchSelector,
   getIsLastPage,
@@ -17,7 +17,7 @@ import {
   getVisibleList,
   listSelector,
 } from 'ts/store/selectors';
-import type { TFilterName, TSortingName } from 'ts/types';
+import { TFilterName, TSortingName } from 'ts/types';
 
 import { ControlBar } from './c_control-bar';
 import { Subjects } from './c_subjects';
@@ -79,6 +79,7 @@ export const LinkListPage: React.FC = () => {
               onSearch={handleSearch}
               onSortingToggle={handleSortingToggle}
             />
+
             <Subjects
               className={style.subjects}
               list={subjectList}

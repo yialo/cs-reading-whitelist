@@ -1,9 +1,9 @@
 import { createSelector } from 'reselect';
 
 import { EFilter, ESorting, LIST_PAGE_SIZE } from 'ts/constants';
-import type { ISubject, TFilterName, TSortingName } from 'ts/types';
+import { ISubject, TFilterName, TSortingName } from 'ts/types';
 
-import type { TState } from './types';
+import { TState } from './types';
 
 export const fetchSelector = {
   error: (state: TState): Error | null => state.fetch.error,

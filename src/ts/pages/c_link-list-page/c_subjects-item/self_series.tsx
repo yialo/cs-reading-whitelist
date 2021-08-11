@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 import { KEYBOARD_KEYS } from 'ts/constants';
 import { listSelector } from 'ts/store/selectors';
-import type { TClassNameable, TSeriesSubject } from 'ts/types';
+import { TClassNameable, TSeriesSubject } from 'ts/types';
 
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';

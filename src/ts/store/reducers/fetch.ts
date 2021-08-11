@@ -1,6 +1,6 @@
 import { ACTION_TYPES } from 'ts/action-types';
 
-import type { TFetchReducer, TFetchState } from '../types';
+import { TFetchReducer, TFetchState } from '../types';
 
 const INITIAL_STATE: TFetchState = {
   error: null,

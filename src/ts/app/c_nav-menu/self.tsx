@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
 import { KEYBOARD_KEYS, ROUTES } from 'ts/constants';
-import type { TClassNameable } from 'ts/types';
+import { TClassNameable } from 'ts/types';
 
 import { AppNavMenuIcon } from './c_icon';
 
@@ -12,7 +12,7 @@ import style from './style.scss';
 const routeList = [
   [ROUTES.HOME, 'Reading'],
   [ROUTES.NAMING, 'Naming'],
-];
+] as const;
 
 const BUTTON_ID = 'AppNavMenu-list';
 

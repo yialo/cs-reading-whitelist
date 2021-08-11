@@ -1,8 +1,8 @@
-import type { Action, Reducer } from 'redux';
-import type { ThunkAction } from 'redux-thunk';
+import { Action, Reducer } from 'redux';
+import { ThunkAction } from 'redux-thunk';
 
-import type { ACTION_TYPES } from 'ts/action-types';
-import type { TFilterName, TSearchString, TSortingName, ISubject } from 'ts/types';
+import { ACTION_TYPES } from 'ts/action-types';
+import { TFilterName, TSearchString, TSortingName, ISubject } from 'ts/types';
 
 export type TFetchList = ISubject[];
 
