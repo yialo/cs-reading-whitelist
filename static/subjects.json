@@ -647,7 +647,7 @@
       "lang": "en",
       "tags": [
         "css",
-        "stacking_context"
+        "css_stacking_context"
       ]
     },
     {
@@ -698,7 +698,7 @@
       "lang": "ru",
       "tags": [
         "css",
-        "stacking_context"
+        "css_stacking_context"
       ]
     },
     {
@@ -793,7 +793,7 @@
       "lang": "ru",
       "tags": [
         "css",
-        "stacking_context"
+        "css_stacking_context"
       ]
     },
     {
@@ -835,7 +835,7 @@
       "lang": "ru",
       "tags": [
         "css",
-        "stacking_context"
+        "css_stacking_context"
       ]
     },
     {
@@ -1085,7 +1085,7 @@
       "lang": "ru",
       "tags": [
         "css",
-        "stacking_context",
+        "css_stacking_context",
         "css_flexbox"
       ]
     },
@@ -4944,6 +4944,32 @@
       "lang": "en",
       "tags": [
         "css"
+      ]
+    },
+    {
+      "caption": "Большая статья про гриды (CSS Grid Layout) (Илья Стрельцын)",
+      "url": "https://css-live.ru/css/bolshaya-statya-pro-gridy-css-grid-layout.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css_grid"
+      ]
+    },
+    {
+      "caption": "Фронтенд как у сына маминой подруги",
+      "url": "https://habr.com/ru/company/yoomoney/blog/354416/",
+      "lang": "ru",
+      "tags": [
+        "project_management"
+      ]
+    },
+    {
+      "caption": "Дорогостоящие ошибки: почему нам пришлось отказаться от Firebase",
+      "url": "https://proglib.io/p/dorogostoyashchie-oshibki-pochemu-nam-prishlos-otkazatsya-ot-firebase-2020-12-27/amp/",
+      "lang": "ru",
+      "tags": [
+        "databases",
+        "clean_code"
       ]
     }
   ]
