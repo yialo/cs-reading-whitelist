@@ -233,22 +233,6 @@
       ]
     },
     {
-      "caption": "Веб-стандарты",
-      "url": "https://web-standards.ru/",
-      "lang": "ru",
-      "tags": [
-        "blogs"
-      ]
-    },
-    {
-      "caption": "CSS-live",
-      "url": "https://css-live.ru/",
-      "lang": "ru",
-      "tags": [
-        "blogs"
-      ]
-    },
-    {
       "caption": "noteskeeper.ru",
       "url": "https://noteskeeper.ru/",
       "lang": "ru",
@@ -258,31 +242,6 @@
       "legend": "персональный журнал заметок Владимира Кузнецова"
     },
     {
-      "caption": "nicothin.pro",
-      "url": "https://nicothin.pro/",
-      "lang": "ru",
-      "tags": [
-        "blogs"
-      ],
-      "legend": "блог Николая Громова о веб-разработке"
-    },
-    {
-      "caption": "Типичный верстальщик",
-      "url": "http://tpverstak.ru/blog/",
-      "lang": "ru",
-      "tags": [
-        "blogs"
-      ]
-    },
-    {
-      "caption": "Прогрессор",
-      "url": "http://prgssr.ru/",
-      "lang": "ru",
-      "tags": [
-        "blogs"
-      ]
-    },
-    {
       "caption": "Сайт Юлии Бухваловой (Yoksel)",
       "url": "http://css.yoksel.ru/",
       "lang": "",
@@ -290,31 +249,6 @@
         "blogs"
       ],
       "legend": "много неочевидного об SVG"
-    },
-    {
-      "caption": "CSS Wizardry",
-      "url": "https://csswizardry.com/",
-      "lang": "en",
-      "tags": [
-        "blogs"
-      ],
-      "legend": "Front-end Architecture and Performance Engineering by Harry Roberts"
-    },
-    {
-      "caption": "CSS-Tricks",
-      "url": "https://css-tricks.com",
-      "lang": "en",
-      "tags": [
-        "blogs"
-      ]
-    },
-    {
-      "caption": "Flavio Copes",
-      "url": "https://flaviocopes.com/",
-      "lang": "en",
-      "tags": [
-        "blogs"
-      ]
     },
     {
       "caption": "METANIT",
@@ -329,7 +263,6 @@
       "url": "https://vscodecandothat.com/",
       "lang": "en",
       "tags": [
-        "blogs",
         "editors"
       ]
     },
@@ -4970,6 +4903,48 @@
       "tags": [
         "databases",
         "clean_code"
+      ]
+    },
+    {
+      "caption": "Подробно о размещении элементов в грид-раскладке (CSS Grid Layout) (by Manuel Rego Casasnovas)",
+      "url": "https://css-live.ru/articles/podrobno-o-razmeshhenii-elementov-v-grid-raskladke-css-grid-layout.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css_grid"
+      ]
+    },
+    {
+      "caption": "Как грид-раскладка (Grid Layout) провела лето (by Manuel Rego Casasnovas)",
+      "url": "https://css-live.ru/articles/kak-grid-raskladka-grid-layout-provela-leto.html",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "css_grid"
+      ]
+    },
+    {
+      "caption": "Docker для фронтендера (Алексей Авдеев)",
+      "url": "https://youtu.be/SMM3bsYyFls",
+      "lang": "ru",
+      "tags": [
+        "docker"
+      ]
+    },
+    {
+      "caption": "Как стать выдающимся фронтенд-разработчиком (by Philip Walton)",
+      "url": "https://css-live.ru/faq/kak-stat-vydayushhimsya-frontenderom.html",
+      "lang": "ru",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "caption": "Лексическое окружение (LexicalEnvironment) и Замыкание (Closures) в EcmaScript (by Alex_Shcherbackov)",
+      "url": "https://habr.com/ru/post/474852/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
       ]
     }
   ]
