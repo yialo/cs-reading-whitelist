@@ -65,18 +65,23 @@ module.exports = (env = {}) => {
     context: PATH.SRC,
 
     devServer: isDevelopment ? {
-      contentBase: PATH.STATIC,
       historyApiFallback: true,
       host: process.env.WDS_HOST || SERVER_DEFAULTS.HOST,
       port: process.env.WDS_PORT || SERVER_DEFAULTS.PORT,
-      publicPath: process.env.PUBLIC_PATH,
-      stats,
       hot: true,
-      inline: true,
-      overlay: true,
-      writeToDisk: write
-        ? (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/)
-        : false,
+      client: {
+        overlay: true,
+      },
+      devMiddleware: {
+        publicPath: process.env.PUBLIC_PATH,
+        stats,
+        writeToDisk: write
+          ? (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/)
+          : false,
+      },
+      static: {
+        directory: PATH.STATIC,
+      },
     } : {},
 
     devtool: isDevelopment ? 'eval-source-map' : false,

@@ -41,5 +41,5 @@ export type TSeriesSubject = TBaseSubject & {
 export type ISubject = TSingleSublect | TSeriesSubject;
 
 export type TClassNameable = {
-  className?: string;
+  className?: string | undefined;
 };
