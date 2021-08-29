@@ -8,7 +8,7 @@ import style from './style.scss';
 type TTextPropsWithoutForwardedRef = TClassNameable & {
   inputMode: React.HTMLAttributes<HTMLInputElement>['inputMode'];
   legend: string;
-  tipChar?: string;
+  tipChar?: string | undefined;
   value: string;
   onChange: (evt: React.ChangeEvent) => void;
 };

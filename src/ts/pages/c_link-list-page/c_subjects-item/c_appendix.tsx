@@ -6,9 +6,9 @@ import { SubjectLang, SubjectLegend, SubjectTag } from 'ts/types';
 import style from './style.scss';
 
 type TProps = {
-  lang?: SubjectLang;
-  legend?: SubjectLegend;
-  tags?: SubjectTag[];
+  lang: SubjectLang | undefined;
+  legend: SubjectLegend | undefined;
+  tags: SubjectTag[] | undefined;
 };
 
 export const SubjectsItemAppendix: React.FC<TProps> = ({
