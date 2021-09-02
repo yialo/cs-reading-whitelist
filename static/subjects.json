@@ -2651,7 +2651,7 @@
       ]
     },
     {
-      "caption": "Uncommon Use Cases For Pseudo Elements",
+      "caption": "Uncommon Use Cases for Pseudo Elements (by Ahmad Shadeed)",
       "url": "https://ishadeed.com/article/unusual-use-cases-pseudo-elements/",
       "lang": "en",
       "tags": [
@@ -4872,7 +4872,7 @@
       ]
     },
     {
-      "caption": "Intrinsic Sizing In CSS (by Ahmad Shadeed)",
+      "caption": "Intrinsic Sizing in CSS (by Ahmad Shadeed)",
       "url": "https://ishadeed.com/article/intrinsic-sizing-in-css/",
       "lang": "en",
       "tags": [
@@ -4940,11 +4940,36 @@
       ]
     },
     {
+      "caption": "Взгляд со стороны EcmaScript на общую теорию ООП (by Alex_Shcherbackov)",
+      "url": "https://habr.com/ru/post/468157/",
+      "lang": "ru",
+      "tags": [
+        "javascript",
+        "oop"
+      ]
+    },
+    {
+      "caption": "this и ScopeChain в EcmaScript (by Alex_Shcherbackov)",
+      "url": "https://habr.com/ru/post/468943/",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ]
+    },
+    {
       "caption": "Лексическое окружение (LexicalEnvironment) и Замыкание (Closures) в EcmaScript (by Alex_Shcherbackov)",
       "url": "https://habr.com/ru/post/474852/",
       "lang": "ru",
       "tags": [
         "javascript"
+      ]
+    },
+    {
+      "caption": "min(), max(), and clamp() CSS functions (by Ahmad Shadeed)",
+      "url": "https://ishadeed.com/article/css-min-max-clamp/",
+      "lang": "en",
+      "tags": [
+        "css"
       ]
     }
   ]
