@@ -1327,39 +1327,9 @@
       ]
     },
     {
-      "caption": "Большая статья про гриды",
-      "url": "https://css-live.ru/css/bolshaya-statya-pro-gridy-css-grid-layout.html",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "Подробно о размещении элементов в грид-раскладке",
-      "url": "https://css-live.ru/articles/podrobno-o-razmeshhenii-elementov-v-grid-raskladke-css-grid-layout.html",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid",
-        "4consider"
-      ]
-    },
-    {
       "caption": "7 способов размещения элементов с помощью макета CSS Grid",
       "url": "https://webformyself.com/7-sposobov-razmeshheniya-elementov-s-pomoshhyu-maketa-css-grid/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "A Complete Guide to Grid",
-      "url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
-      "lang": "en",
       "tags": [
         "css",
         "css_grid",
@@ -1800,15 +1770,6 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ]
-    },
-    {
-      "caption": "Нужно ли чистить строки в JavaScript?",
-      "url": "https://habr.com/ru/post/449368/",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "4consider"
       ]
     },
     {
@@ -2659,9 +2620,9 @@
       ]
     },
     {
-      "caption": "Оформление строчных блоков кода (Роман Комаров)",
-      "url": "https://www.kizu.ru/ru/styling-inline-code/",
-      "lang": "ru",
+      "caption": "Styling inline code (by Roman Komarov)",
+      "url": "https://www.kizu.ru/styling-inline-code/",
+      "lang": "en",
       "tags": [
         "css",
         "typography"
@@ -4856,9 +4817,9 @@
       ]
     },
     {
-      "caption": "Битва за базовую линию (Роман Комаров)",
-      "url": "https://www.kizu.ru/ru/flex-baseline/",
-      "lang": "ru",
+      "caption": "Battle for Baseline (by Roman Komarov)",
+      "url": "https://www.kizu.ru/flex-baseline/",
+      "lang": "en",
       "tags": [
         "css"
       ]
@@ -4970,6 +4931,24 @@
       "lang": "en",
       "tags": [
         "css"
+      ]
+    },
+    {
+      "caption": "Flexible Overflow (by Roman Komarov)",
+      "url": "https://www.kizu.ru/flexible-overflow/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css_flexbox"
+      ]
+    },
+    {
+      "caption": "A Deep Dive Into CSS Grid minmax() (by Ahmad Shadeed)",
+      "url": "https://ishadeed.com/article/css-grid-minmax/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "css_grid"
       ]
     }
   ]
