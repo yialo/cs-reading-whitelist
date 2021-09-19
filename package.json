@@ -94,5 +94,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yialo/cs-reading-whitelist.git"
-  }
+  },
+  "version": "0.1.0"
 }
