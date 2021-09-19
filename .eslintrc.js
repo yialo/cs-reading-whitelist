@@ -1,45 +1,40 @@
 'use strict';
 
+const tsConfigMixin = {
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: './tsconfig.json',
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+        project: './tsconfig.json',
+      },
+    },
+  },
+};
+
 module.exports = {
-  extends: ['yialo/preset-web-babel'],
   ignorePatterns: [
     '*.html',
     '/dist/',
     '/extra/',
   ],
-  parserOptions: {
-    babelOptions: {
-      configFile: './babel.config.js',
-    },
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
-  },
   overrides: [
     {
-      files: ['./**/*.{spec,test}.ts?(x)'],
-      extends: ['yialo/preset-web-ts-check-jest'],
-    },
-    {
-      files: [
-        './*.js',
-        './config/**/*.js',
-        './scripts/**/*.js',
-      ],
-      extends: ['yialo/preset-node'],
-      settings: {
-        'import/resolver': 'node',
-      },
+      files: ['./*.js'],
+      extends: ['yialo/presets/node'],
     },
     {
       files: ['./src/**/*.ts?(x)'],
-      extends: ['yialo/preset-web-ts-check'],
+      extends: ['yialo/presets/web-react-ts-check'],
+      ...tsConfigMixin,
+    },
+    {
+      files: ['./src/**/*.{spec,test}.ts?(x)'],
+      extends: ['yialo/presets/web-react-ts-check-jest'],
+      ...tsConfigMixin,
     },
   ],
-  settings: {
-    'import/resolver': {
-      webpack: {
-        config: './webpack.config.js',
-      },
-    },
-  },
 };

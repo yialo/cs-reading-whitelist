@@ -58,7 +58,7 @@ export const RootNavMenu: React.FC<TClassNameable> = ({ className }) => {
           <li key={label}>
             <NavLink
               activeClassName={style.link_active}
-              className={style.link}
+              className={style.link as string}
               to={route}
               exact
             >
