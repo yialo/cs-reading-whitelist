@@ -11,7 +11,7 @@ type TState = {
 };
 
 export class ErrorBoundary extends React.Component<TProps, TState> {
-  static getDerivedStateFromError(err: Error): TState {
+  static getDerivedStateFromError(err: Error) {
     return { error: err };
   }
 
@@ -19,7 +19,7 @@ export class ErrorBoundary extends React.Component<TProps, TState> {
     error: null,
   };
 
-  render(): React.ReactNode {
+  render() {
     if (this.state.error) {
       return <p className={style.root}>Something went wrong in React app:(</p>;
     }

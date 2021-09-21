@@ -4959,6 +4959,14 @@
         "project_management",
         "productivity"
       ]
+    },
+    {
+      "caption": "TypeScript: In defense of any (by Stefan Baumgartner)",
+      "url": "https://fettblog.eu/typescript-any-is-ok/",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
     }
   ]
 }
