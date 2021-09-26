@@ -3016,7 +3016,7 @@
       "lang": "en",
       "tags": [
         "clean_code",
-        "deployment"
+        "devops"
       ],
       "legend": "A methodology for building modern, scalable, maintainable software-as-a-service apps."
     },
@@ -4444,7 +4444,7 @@
       "lang": "ru",
       "tags": [
         "video",
-        "deployment",
+        "devops",
         "linux"
       ]
     },
@@ -4966,6 +4966,15 @@
       "lang": "en",
       "tags": [
         "typescript"
+      ]
+    },
+    {
+      "caption": "Why using pre-push Git Hooks with Husky is not always a good idea (by Kacper Wdowik)",
+      "url": "https://faun.pub/why-using-pre-push-git-hooks-with-husky-is-not-always-a-good-idea-6233b8afcf83",
+      "lang": "en",
+      "tags": [
+        "devops",
+        "git"
       ]
     }
   ]
