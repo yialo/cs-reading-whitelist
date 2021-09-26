@@ -15,7 +15,7 @@
     "nodemon:build": "npm run nodemon -- build",
     "nodemon:dev": "npm run nodemon -- dev",
     "publish": "npm run build && npm run deploy",
-    "test": "jest -c=./jest.config.js",
+    "test": "jest -c=./jest.config.js --passWithNoTests",
     "typecheck": "tsc --skipLibCheck",
     "webpack": "webpack -c ./webpack.config.js",
     "webpack:serve": "webpack serve -c ./webpack.config.js"
