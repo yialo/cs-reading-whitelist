@@ -31,7 +31,7 @@
     "strict": true
   },
   "include": [
-    "./src/**/*",
-    "./custom.d.ts"
+    "./*.d.ts",
+    "./src/**/*"
   ]
 }
