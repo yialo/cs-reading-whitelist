@@ -4976,6 +4976,32 @@
         "devops",
         "git"
       ]
+    },
+    {
+      "caption": "Index Signatures in TypeScript (by Dmitri Pavlutin)",
+      "url": "https://dmitripavlutin.com/typescript-index-signatures/",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "TypeScript + React: Component patterns (by Stefan Baumgartner)",
+      "url": "https://fettblog.eu/typescript-react-component-patterns/",
+      "lang": "en",
+      "tags": [
+        "typescript",
+        "react"
+      ]
+    },
+    {
+      "caption": "TypeScript + React: Children types are broken (by Stefan Baumgartner)",
+      "url": "https://fettblog.eu/react-types-for-children-are-broken/",
+      "lang": "en",
+      "tags": [
+        "typescript",
+        "react"
+      ]
     }
   ]
 }
