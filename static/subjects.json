@@ -5002,6 +5002,22 @@
         "typescript",
         "react"
       ]
+    },
+    {
+      "caption": "3 cases where JavaScript generators rock + understanding them (by Gosha Arinich)",
+      "url": "https://goshakkk.name/javascript-generators-understanding-sample-use-cases/",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ]
+    },
+    {
+      "caption": "The Definitive Guide to the JavaScript Generators (by Gajus Kuizinas)",
+      "url": "https://github.com/gajus/gajus.com-blog/blob/master/posts/the-definitive-guide-to-the-javascript-generators/index.md",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ]
     }
   ]
 }
