@@ -1,7 +1,6 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
 
-import { ACTION_TYPES } from 'ts/action-types';
-
+import { ACTION_TYPES } from './action-types';
 import { TFetchList } from './types';
 
 type TSubjectsApiResponsePayload = {

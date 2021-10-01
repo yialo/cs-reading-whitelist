@@ -1,7 +1,8 @@
 import { Action, Reducer } from 'redux';
 
-import { ACTION_TYPES } from 'ts/action-types';
 import { TFilterName, TSearchString, TSortingName, ISubject } from 'ts/types';
+
+import { ACTION_TYPES } from './action-types';
 
 export type TFetchList = ISubject[];
 
