@@ -5018,6 +5018,14 @@
       "tags": [
         "javascript"
       ]
+    },
+    {
+      "caption": "Монорепозитории: пожалуйста не надо (by Matt Klein)",
+      "url": "https://habr.com/ru/post/435306/",
+      "lang": "ru",
+      "tags": [
+        "vcs"
+      ]
     }
   ]
 }
