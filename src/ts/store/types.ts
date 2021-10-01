@@ -1,5 +1,4 @@
 import { Action, Reducer } from 'redux';
-import { ThunkAction } from 'redux-thunk';
 
 import { ACTION_TYPES } from 'ts/action-types';
 import { TFilterName, TSearchString, TSortingName, ISubject } from 'ts/types';
@@ -24,19 +23,13 @@ export type TState = {
   list: TListState;
 };
 
-type TFetchCompleteAction = Action<typeof ACTION_TYPES.FETCH.COMPLETE> & {
-  payload: TFetchList;
-};
+type TFetchStartAction = Action<typeof ACTION_TYPES.FETCH.START>;
+type TFetchCompleteAction = Action<typeof ACTION_TYPES.FETCH.COMPLETE> & { payload: TFetchList };
+type TFetchErrorAction = Action<typeof ACTION_TYPES.FETCH.ERROR> & { payload: Error };
 
-type TFetchErrorAction = Action<typeof ACTION_TYPES.FETCH.ERROR> & {
-  payload: Error;
-};
-
-type TFetchAction = TFetchCompleteAction | TFetchErrorAction;
+type TFetchAction = TFetchStartAction | TFetchCompleteAction | TFetchErrorAction;
 
 export type TFetchReducer = Reducer<TFetchState, TFetchAction>;
-
-export type TFetchActionCreator = ThunkAction<Promise<void>, TState, undefined, TFetchAction>;
 
 export type TListSearchAction = Action<typeof ACTION_TYPES.LIST.SEARCH> & {
   payload: TSearchString;

@@ -2,8 +2,6 @@ import { ACTION_TYPES } from 'ts/action-types';
 import { TFilterName, TSearchString, TSortingName } from 'ts/types';
 
 import {
-  TFetchActionCreator,
-  TFetchList,
   TListFilterAction,
   TListPageAction,
   TListSearchAction,
@@ -29,25 +27,4 @@ export const showNextListPage = (): TListPageAction => ({
   type: ACTION_TYPES.LIST.NEXT_PAGE,
 });
 
-type TSubjectsApiResponse = {
-  data: TFetchList;
-};
-
-export const fetchSubjects = (): TFetchActionCreator => async (dispatch) => {
-  const apiUrl = `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}data/subjects.json?${Date.now()}`;
-
-  try {
-    const response = await window.fetch(apiUrl);
-    const { data: list } = await response.json() as TSubjectsApiResponse;
-
-    dispatch({
-      type: ACTION_TYPES.FETCH.COMPLETE,
-      payload: list,
-    });
-  } catch (error) {
-    dispatch({
-      type: ACTION_TYPES.FETCH.ERROR,
-      payload: error as Error,
-    });
-  }
-};
+export const fetchSubjects = () => ({ type: ACTION_TYPES.FETCH.START });
