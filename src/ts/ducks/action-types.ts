@@ -1,4 +1,5 @@
 enum FetchActionType {
+  START = 'fetch:start',
   COMPLETE = 'fetch:complete',
   ERROR = 'fetch:error',
 }

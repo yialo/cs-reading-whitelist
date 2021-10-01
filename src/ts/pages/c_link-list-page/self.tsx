@@ -9,14 +9,14 @@ import {
   showNextListPage,
   toggleFilter,
   toggleSorting,
-} from 'ts/store/action-creators';
+} from 'ts/ducks/action-creators';
 import {
   fetchSelector,
   getIsLastPage,
   getSortedAmount,
   getVisibleList,
   listSelector,
-} from 'ts/store/selectors';
+} from 'ts/ducks/selectors';
 import { TFilterName, TSortingName } from 'ts/types';
 
 import { ControlBar } from './c_control-bar';

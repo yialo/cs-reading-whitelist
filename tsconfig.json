@@ -10,7 +10,7 @@
     "jsx": "preserve",
     "lib": [
       "DOM",
-      "ES2020"
+      "ES2021"
     ],
     "newLine": "lf",
     "noEmit": true,

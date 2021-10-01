@@ -907,7 +907,7 @@
       "url": "https://css-live.ru/articles/komponenty-i-razdelenie-otvetstvennosti.html",
       "lang": "ru",
       "tags": [
-        "design_patterns"
+        "architecture"
       ]
     },
     {
@@ -1039,7 +1039,7 @@
       "lang": "ru",
       "tags": [
         "oop",
-        "design_patterns"
+        "architecture"
       ]
     },
     {
@@ -1048,7 +1048,7 @@
       "lang": "ru",
       "tags": [
         "oop",
-        "design_patterns",
+        "architecture",
         "4consider"
       ]
     },
@@ -1058,7 +1058,7 @@
       "lang": "ru",
       "tags": [
         "oop",
-        "design_patterns",
+        "architecture",
         "4consider"
       ]
     },
@@ -1086,7 +1086,7 @@
       "tags": [
         "4consider",
         "oop",
-        "design_patterns"
+        "architecture"
       ]
     },
     {
@@ -1116,7 +1116,7 @@
       "tags": [
         "css",
         "css_naming",
-        "design_patterns"
+        "architecture"
       ]
     },
     {
@@ -1853,7 +1853,7 @@
       "lang": "ru",
       "tags": [
         "javascript",
-        "design_patterns",
+        "architecture",
         "4consider"
       ]
     },
@@ -2653,7 +2653,7 @@
       "lang": "ru",
       "tags": [
         "javascript",
-        "design_patterns",
+        "architecture",
         "video"
       ],
       "legend": "о паттернах MVC/MVP/MVVM/etc."
@@ -2922,7 +2922,7 @@
       "lang": "en",
       "tags": [
         "clean_code",
-        "design_patterns"
+        "architecture"
       ]
     },
     {
@@ -3091,7 +3091,7 @@
       "tags": [
         "javascript",
         "react",
-        "design_patterns",
+        "architecture",
         "clean_code"
       ]
     },
@@ -3326,7 +3326,7 @@
       "url": "https://habr.com/ru/post/413707/",
       "lang": "ru",
       "tags": [
-        "design_patterns",
+        "architecture",
         "clean_code",
         "oop",
         "solid"
@@ -4011,7 +4011,7 @@
         "video",
         "typescript",
         "fp",
-        "design_patterns"
+        "architecture"
       ]
     },
     {
@@ -4518,7 +4518,7 @@
       "tags": [
         "video",
         "react",
-        "design_patterns"
+        "architecture"
       ]
     },
     {
@@ -4552,7 +4552,7 @@
       "lang": "en",
       "tags": [
         "react",
-        "design_patterns"
+        "architecture"
       ]
     },
     {
@@ -4796,7 +4796,7 @@
       "url": "https://youtu.be/Up85vj9YP3w",
       "lang": "ru",
       "tags": [
-        "design_patterns"
+        "architecture"
       ]
     },
     {
@@ -5017,6 +5017,14 @@
       "lang": "en",
       "tags": [
         "javascript"
+      ]
+    },
+    {
+      "caption": "Монорепозитории: пожалуйста не надо (by Matt Klein)",
+      "url": "https://habr.com/ru/post/435306/",
+      "lang": "ru",
+      "tags": [
+        "vcs"
       ]
     }
   ]

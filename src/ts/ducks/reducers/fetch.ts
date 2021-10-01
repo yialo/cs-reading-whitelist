@@ -1,5 +1,4 @@
-import { ACTION_TYPES } from 'ts/action-types';
-
+import { ACTION_TYPES } from '../action-types';
 import { TFetchReducer, TFetchState } from '../types';
 
 const INITIAL_STATE: TFetchState = {

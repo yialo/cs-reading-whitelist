@@ -1,6 +1,6 @@
-import { ACTION_TYPES } from 'ts/action-types';
 import { EFilter, ESorting } from 'ts/constants';
 
+import { ACTION_TYPES } from '../action-types';
 import { TListReducer } from '../types';
 
 const INITIAL_PAGE = 1;
