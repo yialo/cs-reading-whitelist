@@ -5026,6 +5026,31 @@
       "tags": [
         "vcs"
       ]
+    },
+    {
+      "caption": "Getting Your head Straight: A New CSS Performance Diagnostics Snippet (by Vitaly Friedman & Harry Roberts)",
+      "url": "https://www.smashingmagazine.com/2021/09/css-head-tag/",
+      "lang": "en",
+      "tags": [
+        "performance"
+      ]
+    },
+    {
+      "caption": "Aria-Controls is Poop (by by Heydon Pickering)",
+      "url": "https://heydonworks.com/article/aria-controls-is-poop/",
+      "lang": "en",
+      "tags": [
+        "a11y",
+        "wai_aria"
+      ]
+    },
+    {
+      "caption": "Траспиляция из async/await в генераторы (Пётр Мязин)",
+      "url": "https://youtu.be/czgxE_UQnDQ",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ]
     }
   ]
 }
