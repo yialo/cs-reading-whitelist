@@ -5051,6 +5051,15 @@
       "tags": [
         "javascript"
       ]
+    },
+    {
+      "caption": "React useReducer with Middleware (by Robin Wieruch)",
+      "url": "https://www.robinwieruch.de/react-usereducer-middleware",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": "В комментариях к статье есть ценные замечания"
     }
   ]
 }
