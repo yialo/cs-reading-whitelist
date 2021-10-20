@@ -1722,15 +1722,6 @@
       ]
     },
     {
-      "caption": "Babel / JS: Настройка окружения",
-      "url": "https://ru.hexlet.io/courses/js-setup-environment/lessons/babel/theory_unit",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "babel"
-      ]
-    },
-    {
       "caption": "Учите ванильный JavaScript, прежде чем браться за фреймворки",
       "url": "https://www.cat-in-web.ru/vanilla-js/",
       "lang": "ru",
@@ -5060,6 +5051,47 @@
         "react"
       ],
       "legend": "В комментариях к статье есть ценные замечания"
+    },
+    {
+      "caption": "The Art of the Error Message (by Marina Posniak)",
+      "url": "https://medium.com/s/user-friendly/the-art-of-the-error-message-9f878d0bff80",
+      "lang": "en",
+      "tags": [
+        "ux_ui"
+      ]
+    },
+    {
+      "caption": "Если вы откладываете работу, значит рептильный мозг просто не дает вам на нее энергию (Лусинэ Цатурян)",
+      "url": "https://highload.today/esli-vy-otkladyvaete-rabotu-znachit-reptilnyj-mozg-prosto-ne-daet-vam-na-nee-energiyu-kouch-lusine-tsaturyan-o-motivatsii-i-kak-ee-najti-it-spetsialistam/",
+      "lang": "ru",
+      "tags": [
+        "productivity"
+      ],
+      "legend": "о мотивации и как её найти IT-специалистам"
+    },
+    {
+      "caption": "ESNext: Import Assertions: JSON Modules, CSS Modules etc. (by Bramus Van Damme)",
+      "url": "https://www.bram.us/2021/10/14/esnext-import-assertions-json-modules-css-modules/",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ]
+    },
+    {
+      "caption": "Control the behavior of JavaScript imports with Import Maps (by Bramus Van Damme)",
+      "url": "https://www.bram.us/2021/03/03/control-the-behavior-of-javascript-imports-with-import-maps/",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ]
+    },
+    {
+      "caption": "Get state callback with useReducer in React - add reducer middlewares (by Tran Van Sang)",
+      "url": "https://transang.me/get-state-callback-with-usereducer-in-react/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
     }
   ]
 }
