@@ -5092,6 +5092,26 @@
       "tags": [
         "react"
       ]
+    },
+    {
+      "caption": "Discussion: Async Operations with useReducer Hook",
+      "url": "https://gist.github.com/astoilkov/013c513e33fe95fa8846348038d8fe42",
+      "lang": "en",
+      "tags": [
+        "react",
+        "state_management",
+        "async"
+      ]
+    },
+    {
+      "caption": "ФП vs ООП (by Robert Martin)",
+      "url": "https://habr.com/ru/post/474518/",
+      "lang": "ru",
+      "tags": [
+        "clean_code",
+        "oop",
+        "fp"
+      ]
     }
   ]
 }
