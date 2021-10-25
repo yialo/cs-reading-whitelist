@@ -244,7 +244,7 @@
     {
       "caption": "Сайт Юлии Бухваловой (Yoksel)",
       "url": "http://css.yoksel.ru/",
-      "lang": "",
+      "lang": "ru",
       "tags": [
         "blogs"
       ],
@@ -1954,8 +1954,8 @@
       ]
     },
     {
-      "caption": "Полное понимание синхронного и асинхронного JavaScript с 'async/await'",
-      "url": "https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B0%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-javascript-%D1%81-async-await-ba5f47f4436",
+      "caption": "Полное понимание синхронного и асинхронного JavaScript с 'async/await' (Стас Багрецов)",
+      "url": "https://stasonmars.ru/javascript/polnoe-ponimanie-syncronnogo-i-asyncronnogo-javascript-s-async-await/",
       "lang": "ru",
       "tags": [
         "javascript"
@@ -2993,8 +2993,8 @@
       ]
     },
     {
-      "caption": "Разница между width и flex-basis",
-      "url": "https://medium.com/@stasonmars/%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-width-%D0%B8-flex-basis-f34e658ce6a2",
+      "caption": "CSS width vs flex-basis (by Mastery Games)",
+      "url": "https://mastery.games/post/the-difference-between-width-and-flex-basis/",
       "lang": "ru",
       "tags": [
         "css",
@@ -3180,7 +3180,7 @@
     {
       "caption": "Пятиминутка React #14. Redux Business Logic (part 2)",
       "url": "https://youtu.be/ST_0yLXXQeo",
-      "lang": "",
+      "lang": "ru",
       "tags": [
         "video",
         "react",
@@ -3421,9 +3421,9 @@
       ]
     },
     {
-      "caption": "useEffect(fn, []) это не новый componentDidMount() (by Brad Westfall)",
-      "url": "https://medium.com/@stasonmars/useeffect-fn-%D1%8D%D1%82%D0%BE-%D0%BD%D0%B5-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B8%CC%86-componentdidmount-e19a3831ec2e",
-      "lang": "",
+      "caption": "useEffect(fn, []) is not the new componentDidMount() (by Brad Westfall)",
+      "url": "https://reacttraining.com/blog/useEffect-is-not-the-new-componentDidMount/",
+      "lang": "en",
       "tags": [
         "react",
         "react_hooks"
@@ -5091,6 +5091,26 @@
       "lang": "en",
       "tags": [
         "react"
+      ]
+    },
+    {
+      "caption": "Discussion: Async Operations with useReducer Hook",
+      "url": "https://gist.github.com/astoilkov/013c513e33fe95fa8846348038d8fe42",
+      "lang": "en",
+      "tags": [
+        "react",
+        "state_management",
+        "async"
+      ]
+    },
+    {
+      "caption": "ФП vs ООП (by Robert Martin)",
+      "url": "https://habr.com/ru/post/474518/",
+      "lang": "ru",
+      "tags": [
+        "clean_code",
+        "oop",
+        "fp"
       ]
     }
   ]
