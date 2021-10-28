@@ -5112,6 +5112,23 @@
         "oop",
         "fp"
       ]
+    },
+    {
+      "caption": "CSS: но­вый вид JavaScript (by Heydon Pickering)",
+      "url": "https://web-standards.ru/articles/css-new-kind-of-javascript/",
+      "lang": "ru",
+      "tags": [
+        "css",
+        "dom"
+      ]
+    },
+    {
+      "caption": "Tidy TypeScript: Prefer union types over enums (by Stefan Baumgartner)",
+      "url": "https://fettblog.eu/tidy-typescript-avoid-enums/",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
     }
   ]
 }
