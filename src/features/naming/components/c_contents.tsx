@@ -1,18 +1,19 @@
 import * as React from 'react';
-
-import { CONTENTS } from '../data';
+import { useSelector } from 'react-redux';
 
 import commonStyle from '@/scss/scaffold.scss';
 
-const CONTENT_HEADERS = CONTENTS.map(({ title, id }) => ({ title, id }));
+import { selectContentHeaders } from '../ducks/selectors';
 
-export const NamingPageContents: React.FC = () => {
+export const NamingContents: React.FC = () => {
+  const headers = useSelector(selectContentHeaders);
+
   return (
     <section>
       <h2>Содержание</h2>
 
       <ul>
-        {CONTENT_HEADERS.map((header, i) => (
+        {headers.map((header, i) => (
           <li key={i}>
             <a className={commonStyle.link} href={`#${header.id}`}>{header.title}</a>
           </li>
@@ -22,4 +23,4 @@ export const NamingPageContents: React.FC = () => {
   );
 };
 
-NamingPageContents.displayName = 'Naming-Contents';
+NamingContents.displayName = 'Naming-Contents';

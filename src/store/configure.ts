@@ -1,10 +1,19 @@
 import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
+import { all, call } from 'redux-saga/effects';
 
-import { watchFetchSubjects } from '@/features/link-list/ducks/sagas';
+import { watchFetchLinkList } from '@/features/link-list/ducks/sagas';
+import { watchFetchNaming } from '@/features/naming/ducks/sagas';
 
 import { rootReducer } from './state';
+
+const rootSaga = function* () {
+  yield all([
+    call(watchFetchLinkList),
+    call(watchFetchNaming),
+  ]);
+};
 
 export const configureStore = () => {
   const sagaMiddleware = createSagaMiddleware();
@@ -16,7 +25,7 @@ export const configureStore = () => {
 
   const store = createStore(rootReducer, storeEnhancer);
 
-  sagaMiddleware.run(watchFetchSubjects);
+  sagaMiddleware.run(rootSaga);
 
   return store;
 };
