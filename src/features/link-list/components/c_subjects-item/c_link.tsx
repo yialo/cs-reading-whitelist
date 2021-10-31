@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { SubjectCaption, SubjectLang, SubjectUrl } from '@/types';
+import { SubjectCaption, SubjectLang, SubjectUrl } from '../../types';
 
 import style from './style.scss';
 

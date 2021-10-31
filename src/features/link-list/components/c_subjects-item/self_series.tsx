@@ -1,12 +1,13 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 import { useSelector } from 'react-redux';
 
-import { listSelector } from '@/ducks/selectors';
 import { KEYBOARD_KEY } from '@/enums';
-import { TClassNameable, TSeriesSubject } from '@/types';
+import { TClassNameable } from '@/types';
 import { includes } from '@/utils/typing';
 
+import { listSelector } from '../../ducks/selectors';
+import { TSeriesSubject } from '../../types';
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
 
@@ -50,7 +51,7 @@ export const SeriesSubjectsItem: React.FC<TProps> = ({
 
   return (
     <li
-      className={classNames(style.root_series, className, {
+      className={cn(style.root_series, className, {
         [style.isExpanded!]: isExpanded,
       })}
     >

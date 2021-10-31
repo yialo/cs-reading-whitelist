@@ -1,22 +1,22 @@
 import { createSelector } from 'reselect';
 
 import { LIST_PAGE_SIZE } from '@/constants';
-import { FILTER, SORTING } from '@/enums';
-import { ISubject, TFilterName, TSortingName } from '@/types';
+import { TState } from '@/store/root-reducer';
 
-import { TState } from './types';
+import { FILTER, SORTING, TFilter, TSorting } from '../enums';
+import { TSubject } from '../types';
 
 export const fetchSelector = {
-  error: (state: TState): Error | null => state.fetch.error,
-  fullList: (state: TState): ISubject[] => state.fetch.list,
-  isComplete: (state: TState): boolean => state.fetch.isComplete,
+  error: (state: TState): Error | null => state.links.error,
+  fullList: (state: TState): TSubject[] => state.links.list,
+  isComplete: (state: TState): boolean => state.links.isComplete,
 };
 
 export const listSelector = {
-  filterName: (state: TState): TFilterName => state.list.filterName,
-  page: (state: TState): number => state.list.page,
-  searchString: (state: TState): string => state.list.searchString,
-  sortingName: (state: TState): TSortingName => state.list.sortingName,
+  filterName: (state: TState): TFilter => state.links.filterName,
+  page: (state: TState): number => state.links.page,
+  searchString: (state: TState): string => state.links.searchString,
+  sortingName: (state: TState): TSorting => state.links.sortingName,
 };
 
 const selectFilteredList = createSelector(

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 import { NavLink } from 'react-router-dom';
 
 import { ROUTES } from '@/constants';
@@ -40,7 +40,7 @@ export const RootNavMenu: React.FC<TClassNameable> = ({ className }) => {
 
   return (
     <nav
-      className={classNames(style.root, className, {
+      className={cn(style.root, className, {
         'isCollapsedScreenSm': !isExpanded,
       })}
     >

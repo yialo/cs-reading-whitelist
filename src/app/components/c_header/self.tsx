@@ -1,5 +1,5 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import { TClassNameable } from '@/types';
 
@@ -10,7 +10,7 @@ import style from './self.scss';
 
 export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
   return (
-    <header className={classNames(style.root, className)}>
+    <header className={cn(style.root, className)}>
       <RootNavMenu />
       <ThemeToggle className={style.themeToggle} />
     </header>

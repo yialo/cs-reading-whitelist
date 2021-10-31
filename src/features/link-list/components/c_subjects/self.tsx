@@ -1,16 +1,17 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import { MainButton } from '@/components/c_main-button';
-import { TClassNameable, ISubject } from '@/types';
+import { TClassNameable } from '@/types';
 
+import { TSubject } from '../../types';
 import { renderSubjectsItem } from '../c_subjects-item';
 import { SubjectsFallbackMessage } from './c_fallback-message';
 
 import style from './style.scss';
 
 type TProps = TClassNameable & {
-  list: ISubject[];
+  list: TSubject[];
   hasFetchError: boolean;
   isLastPage: boolean;
   onShowMoreClick: () => void;
@@ -32,7 +33,7 @@ export const Subjects: React.FC<TProps> = ({
   }
 
   return (
-    <div className={classNames(style.root, className)}>
+    <div className={cn(style.root, className)}>
       <ul className={style.list}>
         {list.map((subject, i, arr) => renderSubjectsItem({
           className: style[i === arr.length - 1 ? 'item_last' : 'item'],

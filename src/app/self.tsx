@@ -5,7 +5,7 @@ import { HashRouter as Router } from 'react-router-dom';
 
 import { ErrorBoundary } from '@/components/c_error-boundary';
 import { ThemeProvider } from '@/components/theme';
-import { configureStore } from '@/ducks/store';
+import { configureStore } from '@/store/configure';
 
 import { Root } from './components/c_root';
 

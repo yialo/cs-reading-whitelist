@@ -2,8 +2,9 @@ import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
 
+import { watchFetchSubjects } from '@/features/link-list/ducks/sagas';
+
 import { rootReducer } from './root-reducer';
-import { watchFetchSubjects } from './sagas';
 
 export const configureStore = () => {
   const sagaMiddleware = createSagaMiddleware();

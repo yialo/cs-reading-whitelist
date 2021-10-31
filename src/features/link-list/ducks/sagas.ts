@@ -1,10 +1,10 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
 
-import { ACTION_TYPES } from './action-types';
-import { TFetchList } from './types';
+import { TSubject } from '../types';
+import { ACTION_TYPE } from './action-types';
 
 type TSubjectsApiResponsePayload = {
-  data: TFetchList;
+  data: TSubject[];
 };
 
 const getSubjectsFromApi = async () => {
@@ -19,17 +19,17 @@ const fetchSubjects = function* () {
     const responsePayload = (yield call(getSubjectsFromApi)) as TSubjectsApiResponsePayload;
 
     yield put({
-      type: ACTION_TYPES.FETCH.COMPLETE,
+      type: ACTION_TYPE.FETCH_SUCCESS,
       payload: responsePayload.data,
     });
   } catch (error) {
     yield put({
-      type: ACTION_TYPES.FETCH.ERROR,
-      payload: error as Error,
+      type: ACTION_TYPE.FETCH_FAILURE,
+      payload: error,
     });
   }
 };
 
 export const watchFetchSubjects = function* () {
-  yield takeLatest(ACTION_TYPES.FETCH.START, fetchSubjects);
+  yield takeLatest(ACTION_TYPE.FETCH_START, fetchSubjects);
 };

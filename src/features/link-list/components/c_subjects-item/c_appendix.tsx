@@ -1,7 +1,7 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 
-import { SubjectLang, SubjectLegend, SubjectTag } from '@/types';
+import { SubjectLang, SubjectLegend, SubjectTag } from '../../types';
 
 import style from './style.scss';
 
@@ -21,7 +21,7 @@ export const SubjectsItemAppendix: React.FC<TProps> = ({
       {Boolean(lang) && (
         <>
           {' '}
-          <span className={classNames(style[`langBadge_${lang}`])}>
+          <span className={cn(style[`langBadge_${lang}`])}>
             {lang}
           </span>
         </>

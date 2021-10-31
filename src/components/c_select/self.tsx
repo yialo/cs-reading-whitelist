@@ -1,5 +1,5 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import { Button } from '@/components/c_button';
 import { KEYBOARD_KEY } from '@/enums';
@@ -60,7 +60,7 @@ export const Select: React.FC<TProps> = ({
   }, []);
 
   return (
-    <div className={classNames(style.root, className)}>
+    <div className={cn(style.root, className)}>
       <span className={style.tip} id={tipId}>
         {tip}
       </span>
@@ -68,7 +68,7 @@ export const Select: React.FC<TProps> = ({
       <div className={style.body}>
         <Button
           ref={$toggleButtonRef}
-          className={classNames(style.toggleButton, {
+          className={cn(style.toggleButton, {
             [style.toggleButton_hasPopup!]: isExpanded,
           })}
           id={TOGGLE_BUTTON_ID}
@@ -94,7 +94,7 @@ export const Select: React.FC<TProps> = ({
                   aria-selected={isSelected}
                 >
                   <Button
-                    className={classNames(style.optionButton, {
+                    className={cn(style.optionButton, {
                       [style.optionButton_selected!]: isSelected,
                     })}
                     onClick={() => {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import { useHasDarkTheme } from '@/components/theme';
 
@@ -22,7 +22,7 @@ export const Root: React.FC = () => {
   }, []);
 
   return (
-    <div className={classNames(style.root, { 'hasDarkTheme': hasDarkTheme })}>
+    <div className={cn(style.root, { 'hasDarkTheme': hasDarkTheme })}>
       <RootHeader className={style.header} />
       <PageSwitcher />
       <RootFooter />

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import { TClassNameable } from '@/types';
 
@@ -29,7 +29,7 @@ const TextInput: React.FC<TProps> = ({
   const hasTipChar = !!tipChar;
 
   return (
-    <div className={classNames(style.root, className)}>
+    <div className={cn(style.root, className)}>
       {hasTipChar && (
         <span className={style.tipChar} aria-hidden="true">{tipChar}</span>
       )}

@@ -9,15 +9,15 @@ import {
   showNextListPage,
   toggleFilter,
   toggleSorting,
-} from '@/ducks/action-creators';
+} from '../ducks/actions';
 import {
   fetchSelector,
   getIsLastPage,
   getSortedAmount,
   getVisibleList,
   listSelector,
-} from '@/ducks/selectors';
-import { TFilterName, TSortingName } from '@/types';
+} from '../ducks/selectors';
+import { TFilter, TSorting } from '../enums';
 
 import { ControlBar } from '../components/c_control-bar';
 import { Subjects } from '../components/c_subjects';
@@ -47,11 +47,11 @@ export const LinkList: React.FC = () => {
     dispatch(showNextListPage());
   };
 
-  const handleFilterToggle = (nextFilterName: TFilterName) => {
+  const handleFilterToggle = (nextFilterName: TFilter) => {
     dispatch(toggleFilter(nextFilterName));
   };
 
-  const handleSortingToggle = (nextSortingName: TSortingName) => {
+  const handleSortingToggle = (nextSortingName: TSorting) => {
     dispatch(toggleSorting(nextSortingName));
   };
 

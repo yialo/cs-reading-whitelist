@@ -1,5 +1,5 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import style from './style.scss';
 
@@ -19,7 +19,7 @@ const Button: React.FC<TButtonProps> = ({
   return (
     <button
       ref={forwardedRef}
-      className={classNames(style.root, className)}
+      className={cn(style.root, className)}
       type={type}
       {...propsRest}
     >

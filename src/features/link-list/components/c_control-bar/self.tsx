@@ -1,25 +1,26 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 
 import { Button } from '@/components/c_button';
 import { Select } from '@/components/c_select';
 import { TextInput } from '@/components/c_text-input';
-import { FILTER, TFilter, SORTING } from '@/enums';
-import { TClassNameable, TFilterName, TSortingName } from '@/types';
+import { TClassNameable } from '@/types';
+
+import { FILTER, TFilter, SORTING, TSorting } from '../../enums';
 
 import { ControlBarAmountMeter } from './c_amount-meter';
 
 import style from './style.scss';
 
 type TProps = TClassNameable & {
-  filterTarget: TFilterName;
+  filterTarget: TFilter;
   searchString: string;
-  sortingTarget: TSortingName;
+  sortingTarget: TSorting;
   totalAmount: number;
   visibleAmount: number;
-  onFilterToggle: (name: TFilterName) => void;
+  onFilterToggle: (filter: TFilter) => void;
   onSearch: React.ChangeEventHandler;
-  onSortingToggle: (name: TSortingName) => void;
+  onSortingToggle: (sorting: TSorting) => void;
 };
 
 const FILTER_DICT = {
@@ -66,7 +67,7 @@ export const ControlBar: React.FC<TProps> = ({
   }, []);
 
   return (
-    <div className={classNames(style.root, className)}>
+    <div className={cn(style.root, className)}>
       <div className={style.filter}>
         <Select
           className={className}
@@ -105,7 +106,7 @@ export const ControlBar: React.FC<TProps> = ({
                 aria-checked={isCurrent}
                 role="radio"
                 onClick={() => {
-                  onSortingToggle(name as TSortingName);
+                  onSortingToggle(name as TSorting);
                 }}
               >
                 {`Сначала ${legend}`}
