@@ -1,5 +1,5 @@
 import '@/scss/index.scss';
 
-import { init } from './ts/app';
+import { init } from './app';
 
 init();

@@ -1,0 +1,17 @@
+@use "@/scss/utils";
+
+.root {
+  composes: main from "@/app/style.scss";
+
+  line-height: 1.5;
+}
+
+.headline {
+  composes: headline from "@/scss/scaffold.scss";
+
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  composes: link from "@/scss/scaffold.scss";
+}
