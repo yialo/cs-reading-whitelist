@@ -1,5 +1,5 @@
 import * as React from 'react';
-import cn from 'classnames';
+import cn from 'clsx';
 
 import { Button } from '@/components/c_button';
 import { KEYBOARD_KEY } from '@/enums';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import cn from 'classnames';
+import cn from 'clsx';
 
 import { MainButton } from '@/components/c_main-button';
 import { useHasDarkTheme, useThemeToggle } from '@/components/theme';

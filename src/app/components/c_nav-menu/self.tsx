@@ -1,5 +1,5 @@
 import * as React from 'react';
-import cn from 'classnames';
+import cn from 'clsx';
 import { NavLink } from 'react-router-dom';
 
 import { ROUTES } from '@/constants';
