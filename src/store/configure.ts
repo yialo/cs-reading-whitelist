@@ -4,7 +4,7 @@ import createSagaMiddleware from 'redux-saga';
 
 import { watchFetchSubjects } from '@/features/link-list/ducks/sagas';
 
-import { rootReducer } from './root-reducer';
+import { rootReducer } from './state';
 
 export const configureStore = () => {
   const sagaMiddleware = createSagaMiddleware();
