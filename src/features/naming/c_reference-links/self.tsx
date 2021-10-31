@@ -1,8 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 
 import { REFERENCE_LINKS } from './data';
 
-import style from '../style.scss';
+import commonStyle from '@/scss/scaffold.scss';
 
 export const ReferenceLinks: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ export const ReferenceLinks: React.FC = () => {
       <ul>
         {REFERENCE_LINKS.map(([label, url], i) => (
           <li key={i}>
-            <a className={style.link} href={url}>{label}</a>
+            <a className={commonStyle.link} href={url}>{label}</a>
           </li>
         ))}
       </ul>

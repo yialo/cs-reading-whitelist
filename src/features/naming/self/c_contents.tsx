@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CONTENTS } from './data';
 
-import style from './style.scss';
+import commonStyle from '@/scss/scaffold.scss';
 
 const CONTENT_HEADERS = CONTENTS.map(({ title, id }) => ({ title, id }));
 
@@ -14,7 +14,7 @@ export const NamingPageContents: React.FC = () => {
       <ul>
         {CONTENT_HEADERS.map((header, i) => (
           <li key={i}>
-            <a className={style.link} href={`#${header.id}`}>{header.title}</a>
+            <a className={commonStyle.link} href={`#${header.id}`}>{header.title}</a>
           </li>
         ))}
       </ul>
