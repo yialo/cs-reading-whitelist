@@ -1,6 +1,6 @@
 import React, { Fragment, FC } from 'react';
 
-import { CONTENTS } from './data';
+import { CONTENTS } from '../data';
 
 export const NamingPageList: FC = () => (
   <>
@@ -31,4 +31,4 @@ export const NamingPageList: FC = () => (
   </>
 );
 
-NamingPageList.displayName = 'NamingPage-List';
+NamingPageList.displayName = 'Naming-List';

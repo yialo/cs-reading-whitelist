@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CONTENTS } from './data';
+import { CONTENTS } from '../data';
 
 import commonStyle from '@/scss/scaffold.scss';
 
@@ -22,4 +22,4 @@ export const NamingPageContents: React.FC = () => {
   );
 };
 
-NamingPageContents.displayName = 'NamingPage-Contents';
+NamingPageContents.displayName = 'Naming-Contents';

@@ -3,13 +3,14 @@ type TNamingPageItem = {
   names: string[];
 };
 
-type TNamingPageContensItem = {
+type TNamingPageContentsItem = {
   title: string;
   id: string;
   items: TNamingPageItem[];
 };
 
-export const CONTENTS: TNamingPageContensItem[] = [
+// TODO: move to JSON resource
+export const CONTENTS: TNamingPageContentsItem[] = [
   {
     title: 'Базовые',
     id: 'basic',

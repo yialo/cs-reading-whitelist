@@ -19,8 +19,8 @@ import {
 } from '@/ducks/selectors';
 import { TFilterName, TSortingName } from '@/types';
 
-import { ControlBar } from '../c_control-bar';
-import { Subjects } from '../c_subjects';
+import { ControlBar } from '../components/c_control-bar';
+import { Subjects } from '../components/c_subjects';
 
 import style from './style.scss';
 
