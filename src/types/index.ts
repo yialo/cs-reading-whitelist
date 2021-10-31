@@ -1,6 +1,4 @@
-import { TFilter, TSorting } from './enums';
-
-export type $Values<O> = O[keyof O];
+import { TFilter, TSorting } from '../enums';
 
 export type TFilterName = TFilter;
 export type TSortingName = TSorting;

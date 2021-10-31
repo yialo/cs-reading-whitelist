@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import { listSelector } from '@/ducks/selectors';
 import { KEYBOARD_KEY } from '@/enums';
 import { TClassNameable, TSeriesSubject } from '@/types';
+import { includes } from '@/utils/typing';
 
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
@@ -15,7 +16,7 @@ type TProps = TClassNameable & {
   subject: TSeriesSubject;
 };
 
-const buttonKeys = [KEYBOARD_KEY.ENTER, KEYBOARD_KEY.SPACE];
+const BUTTON_KEYS = [KEYBOARD_KEY.ENTER, KEYBOARD_KEY.SPACE] as const;
 
 export const SeriesSubjectsItem: React.FC<TProps> = ({
   className,
@@ -60,7 +61,7 @@ export const SeriesSubjectsItem: React.FC<TProps> = ({
           aria-expanded={isExpanded}
           onClick={handleExpansion}
           onKeyDown={(event) => {
-            if (buttonKeys.includes(event.key)) {
+            if (includes(BUTTON_KEYS, event.key)) {
               handleExpansion();
             }
           }}
