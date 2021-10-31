@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { Preloader } from '@/components/c_preloader';
 import { LIST_PAGE_SIZE } from '@/constants';
+import { MainLayout } from '@/layouts/c_main-layout';
+
 import {
   fetchSubjects,
   searchInList,
@@ -60,7 +62,7 @@ export const LinkList: React.FC = () => {
   }, [dispatch]);
 
   return (
-    <main className={style.root}>
+    <MainLayout>
       <div className={style.header}>
         <h1 className={style.headline}>Полезные материалы по Computer Science</h1>
       </div>
@@ -90,6 +92,6 @@ export const LinkList: React.FC = () => {
           </>
         ) : <Preloader className={style.preloader} />
       }
-    </main>
+    </MainLayout>
   );
 };

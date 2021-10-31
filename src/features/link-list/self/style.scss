@@ -1,14 +1,5 @@
 @use "@/scss/utils";
 
-$pageContentMaxWidth: 672px;
-
-.root {
-  composes: main from "@/scss/scaffold.scss";
-
-  display: flex;
-  flex-direction: column;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
