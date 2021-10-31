@@ -1,5 +1,6 @@
 # Todo list
 
+* Add request cancelation with AbortController
 * Add keyboard navigation in Select component
 * Add volumes
   * page with references to specs, docs, libs etc.
