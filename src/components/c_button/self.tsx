@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import * as React from 'react';
 import classNames from 'classnames';
 
 import style from './style.scss';
@@ -28,7 +28,8 @@ const Button: React.FC<TButtonProps> = ({
   );
 };
 
-export const ButtonWithRef = forwardRef<HTMLButtonElement, TButtonPropsWithoutForwardedRef>(
+export const ButtonWithRef = React.forwardRef<HTMLButtonElement, TButtonPropsWithoutForwardedRef>(
   (props, ref) => <Button {...props} forwardedRef={ref} />,
 );
+
 ButtonWithRef.displayName = 'Button';

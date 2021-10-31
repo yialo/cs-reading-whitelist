@@ -1,7 +1,7 @@
 @use "@/scss/utils";
 
 .root {
-  composes: main from "@/app/style.scss";
+  composes: main from "@/scss/scaffold.scss";
 
   line-height: 1.5;
 }

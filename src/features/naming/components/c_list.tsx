@@ -1,32 +1,32 @@
-import React, { Fragment, FC } from 'react';
+import * as React from 'react';
 
 import { CONTENTS } from '../data';
 
-export const NamingPageList: FC = () => (
+export const NamingPageList: React.FC = () => (
   <>
     {CONTENTS.map((it, i) => (
-      <Fragment key={i}>
+      <React.Fragment key={i}>
         <section id={it.id}>
           <h2>{it.title}</h2>
 
           {it.items.map((subIt, j) => (
-            <Fragment key={j}>
+            <React.Fragment key={j}>
               <h3>{subIt.title}</h3>
 
               <pre>
                 {subIt.names.map((name, k) => (
-                  <Fragment key={k}>
+                  <React.Fragment key={k}>
                     <code>{name}</code>
                     {k !== subIt.names.length - 1 && ', '}
-                  </Fragment>
+                  </React.Fragment>
                 ))}
               </pre>
-            </Fragment>
+            </React.Fragment>
           ))}
         </section>
 
         {i !== CONTENTS.length - 1 && <hr />}
-      </Fragment>
+      </React.Fragment>
     ))}
   </>
 );

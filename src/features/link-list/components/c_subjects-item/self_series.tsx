@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import * as React from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
@@ -31,9 +31,9 @@ export const SeriesSubjectsItem: React.FC<TProps> = ({
   } = subject;
 
   const isSearchBegins = !!useSelector(listSelector.searchString);
-  const [state, setState] = useState({ isExpanded: false });
+  const [state, setState] = React.useState({ isExpanded: false });
 
-  const hasNoStateChangesYetRef = useRef(true);
+  const hasNoStateChangesYetRef = React.useRef(true);
   const isExpanded = hasNoStateChangesYetRef.current ? isSearchBegins : state.isExpanded;
 
   const handleExpansion = () => {

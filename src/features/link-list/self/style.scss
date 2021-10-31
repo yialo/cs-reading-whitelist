@@ -3,7 +3,7 @@
 $pageContentMaxWidth: 672px;
 
 .root {
-  composes: main from "@/app/style.scss";
+  composes: main from "@/scss/scaffold.scss";
 
   display: flex;
   flex-direction: column;

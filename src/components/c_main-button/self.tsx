@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import classNames from 'classnames';
 
 import { Button, TButtonProps } from '@/components/c_button';

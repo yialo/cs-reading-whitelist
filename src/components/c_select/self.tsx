@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import * as React from 'react';
 import classNames from 'classnames';
 
 import { Button } from '@/components/c_button';
@@ -25,13 +25,13 @@ export const Select: React.FC<TProps> = ({
   value,
   onChange,
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = React.useState(false);
 
   const tipId = `select-tip${tipIdPrefix ? `-${tipIdPrefix}` : ''}`;
 
-  const $toggleButtonRef = useRef<HTMLButtonElement>(null);
+  const $toggleButtonRef = React.useRef<HTMLButtonElement>(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const handleCollapse = () => {
       setIsExpanded((prev) => prev && !prev);
     };

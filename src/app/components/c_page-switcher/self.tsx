@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import * as React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
 import { Preloader } from '@/components/c_preloader';
@@ -8,7 +8,7 @@ import { LazyLinkListPage, LazyNamingPage } from './lazy';
 
 export const PageSwitcher: React.FC = () => {
   return (
-    <Suspense fallback={<Preloader />}>
+    <React.Suspense fallback={<Preloader />}>
       <Switch>
         <Route path={ROUTES.HOME} exact>
           <LazyLinkListPage />
@@ -22,6 +22,6 @@ export const PageSwitcher: React.FC = () => {
           <Redirect to={ROUTES.HOME} />
         </Route>
       </Switch>
-    </Suspense>
+    </React.Suspense>
   );
 };

@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
+import * as React from 'react';
 import classNames from 'classnames';
 
 import { useHasDarkTheme } from '@/components/theme';
-import { PageSwitcher } from '@/pages';
 
-import { RootFooter } from './c_footer';
-import { RootHeader } from './c_header';
+import { RootFooter } from '../c_footer';
+import { RootHeader } from '../c_header';
+import { PageSwitcher } from '../c_page-switcher';
 
-import style from './style.scss';
+import style from './self.scss';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
@@ -17,7 +17,7 @@ const disableOverlay = () => {
 export const Root: React.FC = () => {
   const hasDarkTheme = useHasDarkTheme();
 
-  useEffect(() => {
+  React.useEffect(() => {
     disableOverlay();
   }, []);
 

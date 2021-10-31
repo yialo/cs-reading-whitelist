@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import * as React from 'react';
 import classNames from 'classnames';
 
 import { Button } from '@/components/c_button';
@@ -59,9 +59,9 @@ export const ControlBar: React.FC<TProps> = ({
   onSearch,
   onSortingToggle,
 }) => {
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = React.useRef<HTMLInputElement>(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     inputRef.current?.focus();
   }, []);
 

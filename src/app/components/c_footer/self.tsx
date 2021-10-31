@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 
-import style from './style.scss';
+import style from './self.scss';
 
 type TAppFooterLink = {
   legend: string;

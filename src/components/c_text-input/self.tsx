@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import * as React from 'react';
 import classNames from 'classnames';
 
 import { TClassNameable } from '@/types';
@@ -51,7 +51,7 @@ const TextInput: React.FC<TProps> = ({
   );
 };
 
-export const TextInputWithForwardedRef = forwardRef<
+export const TextInputWithForwardedRef = React.forwardRef<
 HTMLInputElement,
 TTextPropsWithoutForwardedRef
 >((props, ref) => <TextInput {...props} forwardedRef={ref} />);

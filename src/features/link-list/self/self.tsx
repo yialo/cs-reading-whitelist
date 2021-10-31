@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { Preloader } from '@/components/c_preloader';
@@ -55,7 +55,7 @@ export const LinkList: React.FC = () => {
     dispatch(toggleSorting(nextSortingName));
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     dispatch(fetchSubjects());
   }, [dispatch]);
 

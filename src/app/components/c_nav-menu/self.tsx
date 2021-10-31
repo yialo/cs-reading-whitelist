@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import * as React from 'react';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
@@ -18,13 +18,13 @@ const routeList = [
 const BUTTON_ID = 'AppNavMenu-list';
 
 export const RootNavMenu: React.FC<TClassNameable> = ({ className }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleMenuExpansion = () => {
     setIsExpanded((prevState) => !prevState);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === KEYBOARD_KEY.ESCAPE) {
         setIsExpanded((prev) => prev && !prev);
