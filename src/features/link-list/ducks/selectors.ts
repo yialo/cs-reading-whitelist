@@ -9,7 +9,10 @@ import { TSubject } from '../types';
 export const fetchSelector = {
   error: (state: TState): Error | null => state.links.error,
   fullList: (state: TState): TSubject[] => state.links.list,
-  isComplete: (state: TState): boolean => state.links.isComplete,
+  isComplete: (state: TState): boolean => {
+    const { process } = state.links;
+    return process === 'SUCCESS' || process === 'FAILURE';
+  },
 };
 
 export const listSelector = {
