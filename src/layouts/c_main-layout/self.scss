@@ -1,0 +1,26 @@
+@use "@/scss/utils";
+
+.root {
+  --color_background-main: #{utils.$color-light-backgroundMain};
+
+  justify-self: center;
+  width: 100%;
+  max-width: utils.$viewport-sm-max;
+  padding-left: var(--size_paddingX);
+  padding-right: var(--size_paddingX);
+  background-color: var(--color_background-main);
+
+  @include utils.darkTheme() {
+    --color_background-main: #{utils.$color-dark-backgroundMain};
+  }
+
+  @media (max-width: utils.$viewport-xs-max) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

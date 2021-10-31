@@ -3,6 +3,7 @@
 const path = require('path');
 
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const CircularDependencyPlugin = require('circular-dependency-plugin');
 const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -24,8 +25,6 @@ const PATH = {
 const ALIAS = {
   '@': PATH.SRC,
   'react-dom': '@hot-loader/react-dom',
-  'scss': path.join(PATH.SRC, 'scss'),
-  'ts': path.join(PATH.SRC, 'ts'),
 };
 
 const SERVER_DEFAULTS = {
@@ -36,6 +35,7 @@ const SERVER_DEFAULTS = {
 module.exports = (env = {}) => {
   const {
     analyze: needAnalyze,
+    circular: checkCircularDeps,
     target,
     tscheck: needTypeCheck,
     write,
@@ -293,6 +293,13 @@ module.exports = (env = {}) => {
           },
         }));
       }
+
+      if (checkCircularDeps) {
+        pluginList.push(new CircularDependencyPlugin({
+          failOnError: true,
+        }));
+      }
+
       return pluginList;
     })(),
 

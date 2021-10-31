@@ -1,0 +1,31 @@
+@use "@/scss/utils";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: utils.$viewport-xs-max) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    margin-bottom: 32px;
+  }
+}
+
+.controlBar {
+  margin-bottom: 15px;
+}
+
+.headline {
+  composes: headline from "@/scss/scaffold.scss";
+}
+
+.subjects {
+  flex-grow: 1;
+}
+
+.preloader {
+  flex-grow: 1;
+}

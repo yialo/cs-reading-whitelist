@@ -1,0 +1,29 @@
+@use "@/scss/utils";
+
+.root {
+  --color_text-caption: #{utils.$color-light-textCaption};
+  --color_background-global: #{utils.$color-light-backgroundGlobal};
+  --color_background-secondary: #{utils.$color-light-backgroundSecondary};
+  --color_text: #{utils.$color-light-text};
+
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  color: var(--color_text);
+  background-color: var(--color_background-global);
+
+  &:global(.hasDarkTheme) {
+    --color_text-caption: #{utils.$color-dark-textCaption};
+    --color_background-global: #{utils.$color-dark-backgroundGlobal};
+    --color_background-secondary: #{utils.$color-dark-backgroundSecondary};
+    --color_text: #{utils.$color-dark-text};
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

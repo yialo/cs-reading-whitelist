@@ -1,0 +1,101 @@
+@use "@/scss/utils";
+
+.root_series {
+  --size_triangle: 16px;
+  --size_paddingLeft: calc(var(--size_triangle) * 1.5);
+}
+
+.langBadge {
+  --color_lang-badge_en: #90caf9;
+  --color_lang-badge_ru: #80cbc4;
+
+  display: inline-block;
+  border-radius: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+
+  &_en {
+    composes: langBadge;
+    background-color: var(--color_lang-badge_en);
+  }
+
+  &_ru {
+    composes: langBadge;
+    background-color: var(--color_lang-badge_ru);
+  }
+}
+
+.legend {
+  color: var(--color_text);
+}
+
+.link {
+  composes: link from "@/scss/scaffold.scss";
+}
+
+.seriesButton {
+  --size_halfTriangle: calc(var(--size_triangle) / 2);
+
+  position: relative;
+  display: inline;
+  padding-left: var(--size_paddingLeft);
+  color: var(--color_text-caption);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - var(--size_halfTriangle));
+    left: var(--size_halfTriangle);
+    border: var(--size_halfTriangle) solid var(--color_text-caption);
+    border-right-width: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    transition: transform 0.2s;
+
+    .isExpanded & {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.seriesList {
+  composes: list from "@/scss/scaffold.scss";
+  display: grid;
+  row-gap: 8px;
+  margin-top: 8px;
+}
+
+.seriesItem {
+  position: relative;
+  padding-left: var(--size_paddingLeft);
+
+  &::before {
+    // TODO: add abstraction for more precise size and position calculation
+    $size: 6px;
+
+    content: "";
+    position: absolute;
+    width: $size;
+    height: $size;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: var(--color_text-caption);
+  }
+}
+
+.tag {
+  display: inline;
+  color: var(--color_text);
+}
+
+.tags {
+  composes: list from "@/scss/scaffold.scss";
+  display: inline;
+  font-style: italic;
+}

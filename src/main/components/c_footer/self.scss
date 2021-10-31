@@ -1,0 +1,26 @@
+@use "@/scss/utils";
+
+.root {
+  padding: 16px var(--size_paddingX);
+  background-color: var(--color_background-secondary);
+}
+
+.link {
+  composes: link from "@/scss/scaffold.scss";
+}
+
+.list {
+  composes: list from "@/scss/scaffold.scss";
+
+  display: grid;
+  justify-content: center;
+  grid-gap: 16px;
+
+  @media (max-width: utils.$viewport-xs-max) {
+    grid-template-columns: auto auto;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    grid-auto-flow: column;
+  }
+}

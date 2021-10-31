@@ -5129,6 +5129,46 @@
       "tags": [
         "typescript"
       ]
+    },
+    {
+      "caption": "A beginner's guide to Big O Notation (by Rob Bell)",
+      "url": "https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation",
+      "lang": "en",
+      "tags": [
+        "algorithms"
+      ]
+    },
+    {
+      "caption": "The Bug-O Notation (by Dan Abramov)",
+      "url": "https://overreacted.io/the-bug-o-notation/",
+      "lang": "en",
+      "tags": [
+        "clean_code"
+      ]
+    },
+    {
+      "caption": "Optimized for Change (by Dan Abramov)",
+      "url": "https://overreacted.io/optimized-for-change/",
+      "lang": "en",
+      "tags": [
+        "clean_code"
+      ]
+    },
+    {
+      "caption": "Falling Into The Pit of Success (by Jeff Atwood)",
+      "url": "https://blog.codinghorror.com/falling-into-the-pit-of-success/",
+      "lang": "en",
+      "tags": [
+        "clean_code"
+      ]
+    },
+    {
+      "caption": "Exhaustive switch statements with TypeScript (by Dan Diprose)",
+      "url": "https://dev.to/ddiprose/exhaustive-switch-statement-with-typescript-26dh",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
     }
   ]
 }
