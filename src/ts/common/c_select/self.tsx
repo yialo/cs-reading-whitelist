@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 
-import { Button } from 'ts/common/c_button';
-import { KEYBOARD_KEYS } from 'ts/constants';
-import { TClassNameable } from 'ts/types';
+import { Button } from '@/ts/common/c_button';
+import { KEYBOARD_KEY } from '@/ts/enums';
+import { TClassNameable } from '@/ts/types';
 
 import style from './style.scss';
 
@@ -37,7 +37,7 @@ export const Select: React.FC<TProps> = ({
     };
 
     const handleKeyPress = (event: KeyboardEvent) => {
-      if (event.key === KEYBOARD_KEYS.ESCAPE) {
+      if (event.key === KEYBOARD_KEY.ESCAPE) {
         handleCollapse();
       }
     };

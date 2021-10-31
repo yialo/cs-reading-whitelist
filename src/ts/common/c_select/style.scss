@@ -1,4 +1,4 @@
-@use "scss/utils";
+@use "@/scss/utils";
 
 .root {
   display: flex;
@@ -53,7 +53,7 @@
 }
 
 .list {
-  composes: list from "scss/scaffold.scss";
+  composes: list from "@/scss/scaffold.scss";
 
   position: absolute;
   z-index: 1;

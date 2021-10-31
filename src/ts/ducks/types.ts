@@ -1,6 +1,6 @@
 import { Action, Reducer } from 'redux';
 
-import { TFilterName, TSearchString, TSortingName, ISubject } from 'ts/types';
+import { TFilterName, TSearchString, TSortingName, ISubject } from '@/ts/types';
 
 import { ACTION_TYPES } from './action-types';
 

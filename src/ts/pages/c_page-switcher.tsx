@@ -1,8 +1,8 @@
 import React, { Suspense } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
-import { Preloader } from 'ts/common/c_preloader';
-import { ROUTES } from 'ts/constants';
+import { Preloader } from '@/ts/common/c_preloader';
+import { ROUTES } from '@/ts/constants';
 
 import { LazyLinkListPage, LazyNamingPage } from './lazy';
 

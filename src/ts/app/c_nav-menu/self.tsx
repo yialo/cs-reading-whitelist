@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
-import { KEYBOARD_KEYS, ROUTES } from 'ts/constants';
-import { TClassNameable } from 'ts/types';
+import { ROUTES } from '@/ts/constants';
+import { KEYBOARD_KEY } from '@/ts/enums';
+import { TClassNameable } from '@/ts/types';
 
 import { AppNavMenuIcon } from './c_icon';
 
@@ -25,7 +26,7 @@ export const RootNavMenu: React.FC<TClassNameable> = ({ className }) => {
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === KEYBOARD_KEYS.ESCAPE) {
+      if (event.key === KEYBOARD_KEY.ESCAPE) {
         setIsExpanded((prev) => prev && !prev);
       }
     };

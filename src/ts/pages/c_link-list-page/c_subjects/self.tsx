@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { MainButton } from 'ts/common/c_main-button';
-import { TClassNameable, ISubject } from 'ts/types';
+import { MainButton } from '@/ts/common/c_main-button';
+import { TClassNameable, ISubject } from '@/ts/types';
 
 import { renderSubjectsItem } from '../c_subjects-item';
 import { SubjectsFallbackMessage } from './c_fallback-message';

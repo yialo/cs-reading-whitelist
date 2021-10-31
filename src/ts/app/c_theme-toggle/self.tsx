@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { MainButton } from 'ts/common/c_main-button';
-import { useHasDarkTheme, useThemeToggle } from 'ts/common/theme';
-import { TClassNameable } from 'ts/types';
+import { MainButton } from '@/ts/common/c_main-button';
+import { useHasDarkTheme, useThemeToggle } from '@/ts/common/theme';
+import { TClassNameable } from '@/ts/types';
 
 import style from './style.scss';
 

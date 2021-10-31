@@ -1,4 +1,4 @@
-import { TFilterName, TSearchString, TSortingName } from 'ts/types';
+import { TFilterName, TSearchString, TSortingName } from '@/ts/types';
 
 import { ACTION_TYPES } from './action-types';
 import {

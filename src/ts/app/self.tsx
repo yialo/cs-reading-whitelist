@@ -3,9 +3,9 @@ import { hot } from 'react-hot-loader/root';
 import { Provider as ReduxProvider } from 'react-redux';
 import { HashRouter as Router } from 'react-router-dom';
 
-import { ErrorBoundary } from 'ts/common/c_error-boundary';
-import { ThemeProvider } from 'ts/common/theme';
-import { configureStore } from 'ts/ducks/store';
+import { ErrorBoundary } from '@/ts/common/c_error-boundary';
+import { ThemeProvider } from '@/ts/common/theme';
+import { configureStore } from '@/ts/ducks/store';
 
 import { Root } from './c_root';
 

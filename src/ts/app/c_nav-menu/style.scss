@@ -1,4 +1,4 @@
-@use "scss/utils";
+@use "@/scss/utils";
 
 .root {
   position: relative;
@@ -36,7 +36,7 @@
 }
 
 .list {
-  composes: list from "scss/scaffold.scss";
+  composes: list from "@/scss/scaffold.scss";
 
   @media (max-width: utils.$viewport-sm-max) {
     position: absolute;

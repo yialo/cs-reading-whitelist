@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import classNames from 'classnames';
 
-import { PageSwitcher } from 'ts/pages';
-import { useHasDarkTheme } from 'ts/common/theme';
+import { PageSwitcher } from '@/ts/pages';
+import { useHasDarkTheme } from '@/ts/common/theme';
 
 import { RootFooter } from './c_footer';
 import { RootHeader } from './c_header';

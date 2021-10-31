@@ -1,7 +1,8 @@
 import { createSelector } from 'reselect';
 
-import { EFilter, ESorting, LIST_PAGE_SIZE } from 'ts/constants';
-import { ISubject, TFilterName, TSortingName } from 'ts/types';
+import { LIST_PAGE_SIZE } from '@/ts/constants';
+import { FILTER, SORTING } from '@/ts/enums';
+import { ISubject, TFilterName, TSortingName } from '@/ts/types';
 
 import { TState } from './types';
 
@@ -33,13 +34,13 @@ const selectFilteredList = createSelector(
 
     return fullList.filter((item) => {
       switch (filterName) {
-        case EFilter.CAPTION: {
+        case FILTER.CAPTION: {
           const hasMatchInMainCaption = item.caption.toLowerCase().includes(matcher);
           return hasMatchInMainCaption
             || item.series?.some((it) => it.caption.toLowerCase().includes(matcher));
         }
 
-        case EFilter.HASHTAG: {
+        case FILTER.HASHTAG: {
           const hasMatchInMainTags = item.tags.some((tag) => tag.toLowerCase().includes(matcher));
           return hasMatchInMainTags
             || item.series?.some((it) => (
@@ -47,7 +48,7 @@ const selectFilteredList = createSelector(
             ));
         }
 
-        case EFilter.URL: {
+        case FILTER.URL: {
           const hasMatchInMainUrl = item.url?.toLowerCase().includes(matcher);
           return hasMatchInMainUrl
             || item.series?.some((it) => it.url.toLowerCase().includes(matcher));
@@ -67,7 +68,7 @@ export const selectSortedList = createSelector(
     listSelector.page,
   ],
   (filteredList, sortingName) => (
-    sortingName === ESorting.NEW ? [...filteredList].reverse() : filteredList
+    sortingName === SORTING.NEW ? [...filteredList].reverse() : filteredList
   ),
 );
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TClassNameable, TSingleSublect } from 'ts/types';
+import { TClassNameable, TSingleSublect } from '@/ts/types';
 
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';

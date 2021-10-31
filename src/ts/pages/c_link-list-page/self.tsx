@@ -1,23 +1,23 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Preloader } from 'ts/common/c_preloader';
-import { LIST_PAGE_SIZE } from 'ts/constants';
+import { Preloader } from '@/ts/common/c_preloader';
+import { LIST_PAGE_SIZE } from '@/ts/constants';
 import {
   fetchSubjects,
   searchInList,
   showNextListPage,
   toggleFilter,
   toggleSorting,
-} from 'ts/ducks/action-creators';
+} from '@/ts/ducks/action-creators';
 import {
   fetchSelector,
   getIsLastPage,
   getSortedAmount,
   getVisibleList,
   listSelector,
-} from 'ts/ducks/selectors';
-import { TFilterName, TSortingName } from 'ts/types';
+} from '@/ts/ducks/selectors';
+import { TFilterName, TSortingName } from '@/ts/types';
 
 import { ControlBar } from './c_control-bar';
 import { Subjects } from './c_subjects';

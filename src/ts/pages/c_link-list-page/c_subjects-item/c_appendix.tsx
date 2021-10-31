@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { SubjectLang, SubjectLegend, SubjectTag } from 'ts/types';
+import { SubjectLang, SubjectLegend, SubjectTag } from '@/ts/types';
 
 import style from './style.scss';
 

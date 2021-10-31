@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { TClassNameable } from 'ts/types';
+import { TClassNameable } from '@/ts/types';
 
 import style from './style.scss';
 

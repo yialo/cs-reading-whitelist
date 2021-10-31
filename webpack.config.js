@@ -24,8 +24,6 @@ const PATH = {
 const ALIAS = {
   '@': PATH.SRC,
   'react-dom': '@hot-loader/react-dom',
-  'scss': path.join(PATH.SRC, 'scss'),
-  'ts': path.join(PATH.SRC, 'ts'),
 };
 
 const SERVER_DEFAULTS = {

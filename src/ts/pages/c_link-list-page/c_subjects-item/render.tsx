@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TClassNameable, ISubject, TSeriesSubject } from 'ts/types';
+import { TClassNameable, ISubject, TSeriesSubject } from '@/ts/types';
 
 import { SeriesSubjectsItem } from './self_series';
 import { SingleSubjectsItem } from './self_single';

@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 
-import { Button } from 'ts/common/c_button';
-import { Select } from 'ts/common/c_select';
-import { TextInput } from 'ts/common/c_text-input';
-import { EFilter, ESorting } from 'ts/constants';
-import { TClassNameable, TFilterName, TSortingName } from 'ts/types';
+import { Button } from '@/ts/common/c_button';
+import { Select } from '@/ts/common/c_select';
+import { TextInput } from '@/ts/common/c_text-input';
+import { FILTER, TFilter, SORTING } from '@/ts/enums';
+import { TClassNameable, TFilterName, TSortingName } from '@/ts/types';
 
 import { ControlBarAmountMeter } from './c_amount-meter';
 
@@ -23,24 +23,24 @@ type TProps = TClassNameable & {
 };
 
 const FILTER_DICT = {
-  [EFilter.CAPTION]: 'заголовку',
-  [EFilter.HASHTAG]: 'хэштегу',
-  [EFilter.URL]: 'URL-адресу',
+  [FILTER.CAPTION]: 'заголовку',
+  [FILTER.HASHTAG]: 'хэштегу',
+  [FILTER.URL]: 'URL-адресу',
 } as const;
 
 const SORTING_DICT = {
-  [ESorting.NEW]: 'новые',
-  [ESorting.OLD]: 'старые',
+  [SORTING.NEW]: 'новые',
+  [SORTING.OLD]: 'старые',
 } as const;
 
 const sortingGroupLabelId = 'sorting-group-label';
 
-const getInputTipChar = (filterTarget: EFilter) => {
+const getInputTipChar = (filterTarget: TFilter) => {
   switch (filterTarget) {
-    case (EFilter.HASHTAG):
+    case (FILTER.HASHTAG):
       return '#';
 
-    case (EFilter.URL):
+    case (FILTER.URL):
       return '://';
 
     default:

@@ -1,4 +1,4 @@
-import { EFilter, ESorting } from 'ts/constants';
+import { FILTER, SORTING } from '@/ts/enums';
 
 import { ACTION_TYPES } from '../action-types';
 import { TListReducer } from '../types';
@@ -8,8 +8,8 @@ const INITIAL_PAGE = 1;
 const INITIAL_STATE = {
   searchString: '',
   page: INITIAL_PAGE,
-  filterName: EFilter.CAPTION,
-  sortingName: ESorting.NEW,
+  filterName: FILTER.CAPTION,
+  sortingName: SORTING.NEW,
 };
 
 export const listReducer: TListReducer = (prevState, action) => {

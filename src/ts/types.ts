@@ -1,9 +1,9 @@
-import { EFilter, ESorting } from './constants';
+import { TFilter, TSorting } from './enums';
 
 export type $Values<O> = O[keyof O];
 
-export type TFilterName = EFilter;
-export type TSortingName = ESorting;
+export type TFilterName = TFilter;
+export type TSortingName = TSorting;
 export type TSearchString = string;
 
 export type SubjectCaption = string;

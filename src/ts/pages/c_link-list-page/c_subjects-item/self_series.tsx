@@ -2,9 +2,9 @@ import React, { useRef, useState } from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 
-import { KEYBOARD_KEYS } from 'ts/constants';
-import { listSelector } from 'ts/ducks/selectors';
-import { TClassNameable, TSeriesSubject } from 'ts/types';
+import { listSelector } from '@/ts/ducks/selectors';
+import { KEYBOARD_KEY } from '@/ts/enums';
+import { TClassNameable, TSeriesSubject } from '@/ts/types';
 
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
@@ -15,7 +15,7 @@ type TProps = TClassNameable & {
   subject: TSeriesSubject;
 };
 
-const buttonKeys = [KEYBOARD_KEYS.ENTER, KEYBOARD_KEYS.SPACE];
+const buttonKeys = [KEYBOARD_KEY.ENTER, KEYBOARD_KEY.SPACE];
 
 export const SeriesSubjectsItem: React.FC<TProps> = ({
   className,
