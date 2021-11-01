@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { Preloader } from '@/components/c_preloader';
 import { MainLayout } from '@/layouts/c_main-layout';
 import { TState } from '@/store/state';
 
@@ -12,11 +13,13 @@ import { ACTION_TYPE } from '../ducks/action-types';
 import style from './self.scss';
 
 const selectNamingProcess = (state: TState) => state.naming.process;
+const selectNamingError = (state: TState) => state.naming.error;
 
 export const Naming: React.FC = () => {
   const dispatch = useDispatch();
 
   const process = useSelector(selectNamingProcess);
+  const error = useSelector(selectNamingError);
 
   React.useEffect(() => {
     if (process === 'IDLE') {
@@ -24,29 +27,36 @@ export const Naming: React.FC = () => {
     }
   }, [process, dispatch]);
 
+  const renderContent = () => {
+    switch (process) {
+      case 'LOADING':
+        return <Preloader className={style.preloader} />;
+
+      case 'FAILURE':
+        return <div>{error}</div>;
+
+      default:
+        return (
+          <div>
+            <h1 className={style.headline}>Типовые названия UI-компонентов</h1>
+            <hr />
+
+            <ReferenceLinks />
+            <hr />
+
+            <NamingContents />
+            <hr />
+            <NamingList />
+          </div>
+        );
+    }
+  };
+
   return (
-    <MainLayout className={style.root}>
-      <h1 className={style.headline}>Типовые названия UI-компонентов</h1>
-      <hr />
-
-      <ReferenceLinks />
-      <hr />
-
-      {(process === 'IDLE' || process === 'LOADING') && (
-        <div>Loading...</div>
-      )}
-
-      {process === 'FAILURE' && (
-        <div>Could not fetch data</div>
-      )}
-
-      {process === 'SUCCESS' && (
-        <>
-          <NamingContents />
-          <hr />
-          <NamingList />
-        </>
-      )}
+    <MainLayout>
+      <div className={style.root}>
+        {renderContent()}
+      </div>
     </MainLayout>
   );
 };

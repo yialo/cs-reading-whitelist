@@ -5,6 +5,8 @@ import commonStyle from '@/scss/scaffold.scss';
 
 import { selectContentHeaders } from '../ducks/selectors';
 
+import utilStyle from '../utils.scss';
+
 export const NamingContents: React.FC = () => {
   const headers = useSelector(selectContentHeaders);
 
@@ -12,7 +14,7 @@ export const NamingContents: React.FC = () => {
     <section>
       <h2>Содержание</h2>
 
-      <ul>
+      <ul className={utilStyle.list}>
         {headers.map((header, i) => (
           <li key={i}>
             <a className={commonStyle.link} href={`#${header.id}`}>{header.title}</a>
