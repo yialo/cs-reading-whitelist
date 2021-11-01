@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { Preloader } from '@/components/c_preloader';
 import { LIST_PAGE_SIZE } from '@/constants';
+import { PROCESS } from '@/enums';
 import { MainLayout } from '@/layouts/c_main-layout';
 
 import {
@@ -13,11 +14,15 @@ import {
   toggleSorting,
 } from '../ducks/actions';
 import {
-  fetchSelector,
-  getIsLastPage,
-  getSortedAmount,
-  getVisibleList,
-  listSelector,
+  selectProcess,
+  selectError,
+  selectFilter,
+  selectSearchString,
+  selectSorting,
+  selectPage,
+  selectSortedAmount,
+  selectVisibleList,
+  selectIsLastPage,
 } from '../ducks/selectors';
 import { TFilter, TSorting } from '../enums';
 
@@ -27,15 +32,17 @@ import { Subjects } from '../components/c_subjects';
 import style from './style.scss';
 
 export const LinkList: React.FC = () => {
-  const fetchError = useSelector(fetchSelector.error);
-  const filterName = useSelector(listSelector.filterName);
-  const page = useSelector(listSelector.page);
-  const searchString = useSelector(listSelector.searchString);
-  const sortedAmount = useSelector(getSortedAmount);
-  const sortingName = useSelector(listSelector.sortingName);
-  const subjectList = useSelector(getVisibleList);
-  const isFetchComplete = useSelector(fetchSelector.isComplete);
-  const isLastPage = useSelector(getIsLastPage);
+  const process = useSelector(selectProcess);
+  const error = useSelector(selectError);
+
+  const filter = useSelector(selectFilter);
+  const searchString = useSelector(selectSearchString);
+
+  const page = useSelector(selectPage);
+  const sortedAmount = useSelector(selectSortedAmount);
+  const sorting = useSelector(selectSorting);
+  const subjectList = useSelector(selectVisibleList);
+  const isLastPage = useSelector(selectIsLastPage);
 
   const dispatch = useDispatch();
 
@@ -58,41 +65,52 @@ export const LinkList: React.FC = () => {
   };
 
   React.useEffect(() => {
-    dispatch(fetchSubjects());
-  }, [dispatch]);
+    if (process === PROCESS.IDLE) {
+      dispatch(fetchSubjects());
+    }
+  }, [process, dispatch]);
+
+  const renderContent = () => {
+    switch (process) {
+      case PROCESS.IDLE:
+      case PROCESS.LOADING:
+        return <Preloader className={style.preloader} />;
+
+      default:
+        return (
+          <>
+            <div className={style.header}>
+              <h1 className={style.headline}>Полезные материалы по Computer Science</h1>
+            </div>
+
+            <ControlBar
+              className={style.controlBar}
+              filterTarget={filter}
+              searchString={searchString}
+              sortingTarget={sorting}
+              totalAmount={sortedAmount}
+              visibleAmount={visibleAmount}
+              onFilterToggle={handleFilterToggle}
+              onSearch={handleSearch}
+              onSortingToggle={handleSortingToggle}
+            />
+
+            <Subjects
+              className={style.subjects}
+              list={subjectList}
+              hasFetchError={!!error}
+              isLastPage={isLastPage}
+              onShowMoreClick={handleShowMoreClick}
+            />
+          </>
+        );
+    }
+  };
 
   return (
     <MainLayout>
       <div className={style.root}>
-        {
-          isFetchComplete ? (
-            <>
-              <div className={style.header}>
-                <h1 className={style.headline}>Полезные материалы по Computer Science</h1>
-              </div>
-
-              <ControlBar
-                className={style.controlBar}
-                filterTarget={filterName}
-                searchString={searchString}
-                sortingTarget={sortingName}
-                totalAmount={sortedAmount}
-                visibleAmount={visibleAmount}
-                onFilterToggle={handleFilterToggle}
-                onSearch={handleSearch}
-                onSortingToggle={handleSortingToggle}
-              />
-
-              <Subjects
-                className={style.subjects}
-                list={subjectList}
-                hasFetchError={!!fetchError}
-                isLastPage={isLastPage}
-                onShowMoreClick={handleShowMoreClick}
-              />
-            </>
-          ) : <Preloader className={style.preloader} />
-        }
+        {renderContent()}
       </div>
     </MainLayout>
   );

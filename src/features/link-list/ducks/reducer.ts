@@ -1,3 +1,5 @@
+import { PROCESS } from '@/enums';
+
 import { FILTER, SORTING } from '../enums';
 import { ACTION_TYPE } from './action-types';
 import { TLinkListReducer, TLinkListState } from './types';
@@ -10,8 +12,8 @@ const INITIAL_STATE: TLinkListState = {
   process: 'IDLE',
   searchString: '',
   page: INITIAL_PAGE,
-  filterName: FILTER.CAPTION,
-  sortingName: SORTING.NEW,
+  filter: FILTER.CAPTION,
+  sorting: SORTING.NEW,
 };
 
 export const linkListReducer: TLinkListReducer = (prevState, action) => {
@@ -19,38 +21,38 @@ export const linkListReducer: TLinkListReducer = (prevState, action) => {
 
   switch (action.type) {
     case ACTION_TYPE.FETCH_START: {
-      if (state.process === 'LOADING') {
+      if (state.process === PROCESS.LOADING) {
         return state;
       }
 
       return {
         ...state,
-        process: 'LOADING',
+        process: PROCESS.LOADING,
         error: null,
       };
     }
 
     case ACTION_TYPE.FETCH_SUCCESS: {
-      if (state.process !== 'LOADING') {
+      if (state.process !== PROCESS.LOADING) {
         return state;
       }
 
       return {
         ...state,
         list: action.payload,
-        process: 'SUCCESS',
+        process: PROCESS.SUCCESS,
       };
     }
 
     case ACTION_TYPE.FETCH_FAILURE: {
-      if (state.process !== 'LOADING') {
+      if (state.process !== PROCESS.LOADING) {
         return state;
       }
 
       return {
         ...state,
         list: [],
-        process: 'FAILURE',
+        process: PROCESS.FAILURE,
         error: action.payload,
       };
     }
@@ -66,7 +68,7 @@ export const linkListReducer: TLinkListReducer = (prevState, action) => {
     case ACTION_TYPE.FILTER: {
       return {
         ...state,
-        filterName: action.payload,
+        filter: action.payload,
         page: INITIAL_PAGE,
       };
     }
@@ -74,7 +76,7 @@ export const linkListReducer: TLinkListReducer = (prevState, action) => {
     case ACTION_TYPE.SORTING: {
       return {
         ...state,
-        sortingName: action.payload,
+        sorting: action.payload,
       };
     }
 

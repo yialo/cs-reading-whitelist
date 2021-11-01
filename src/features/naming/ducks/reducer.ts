@@ -1,3 +1,5 @@
+import { PROCESS } from '@/enums';
+
 import { ACTION_TYPE } from './action-types';
 import { TNamingReducer, TNamingState } from './types';
 
@@ -12,37 +14,37 @@ export const namingReducer: TNamingReducer = (prevState, action) => {
 
   switch (action.type) {
     case ACTION_TYPE.FETCH_START: {
-      if (state.process === 'LOADING') {
+      if (state.process === PROCESS.LOADING) {
         return state;
       }
 
       return {
         ...state,
-        process: 'LOADING',
+        process: PROCESS.LOADING,
         error: null,
       };
     }
 
     case ACTION_TYPE.FETCH_SUCCESS: {
-      if (state.process !== 'LOADING') {
+      if (state.process !== PROCESS.LOADING) {
         return state;
       }
 
       return {
         ...state,
-        process: 'SUCCESS',
+        process: PROCESS.SUCCESS,
         content: action.payload,
       };
     }
 
     case ACTION_TYPE.FETCH_FAILURE: {
-      if (state.process !== 'LOADING') {
+      if (state.process !== PROCESS.LOADING) {
         return state;
       }
 
       return {
         ...state,
-        process: 'FAILURE',
+        process: PROCESS.FAILURE,
         error: action.payload,
         content: [],
       };
