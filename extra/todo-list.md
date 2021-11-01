@@ -1,5 +1,6 @@
 # Todo list
 
+* Add scrollToTop button at Naming page
 * Add request cancelation with AbortController
 * Add keyboard navigation in Select component
 * Add volumes
