@@ -5169,6 +5169,14 @@
       "tags": [
         "typescript"
       ]
+    },
+    {
+      "caption": "TypeScript: Array.includes on narrow types",
+      "url": "https://fettblog.eu/typescript-array-includes/",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
     }
   ]
 }
