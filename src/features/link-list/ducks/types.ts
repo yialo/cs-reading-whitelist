@@ -1,5 +1,6 @@
 import { Reducer } from 'redux';
 
+import { TProcess } from '@/enums';
 import { TAction } from '@/types/redux';
 
 import { TFilter, TSorting } from '../enums';
@@ -9,7 +10,7 @@ import { ACTION_TYPE } from './action-types';
 export type TLinkListState = {
   list: TSubject[];
   error: Error | null;
-  isComplete: boolean;
+  process: TProcess;
   searchString: string;
   filterName: TFilter;
   sortingName: TSorting;

@@ -1,3 +1,5 @@
+import { Values } from '@/types/utils';
+
 export const KEYBOARD_KEY = {
   // NOTE: for future implementation of keyboard navigation
   // UP: 'ArrowUp',
@@ -6,3 +8,12 @@ export const KEYBOARD_KEY = {
   ESCAPE: 'Escape',
   SPACE: ' ',
 } as const;
+
+export const PROCESS = {
+  IDLE: 'IDLE',
+  LOADING: 'LOADING',
+  SUCCESS: 'SUCCESS',
+  FAILURE: 'FAILURE',
+} as const;
+
+export type TProcess = Values<typeof PROCESS>;

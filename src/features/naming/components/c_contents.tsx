@@ -1,20 +1,39 @@
 import * as React from 'react';
+import { useSelector } from 'react-redux';
 
-import { CONTENTS } from '../data';
+import { Button } from '@/components/c_button';
+
+import { selectContentHeaders } from '../ducks/selectors';
 
 import commonStyle from '@/scss/scaffold.scss';
+import utilStyle from '../utils.scss';
 
-const CONTENT_HEADERS = CONTENTS.map(({ title, id }) => ({ title, id }));
+export const NamingContents: React.FC = () => {
+  const headers = useSelector(selectContentHeaders);
 
-export const NamingPageContents: React.FC = () => {
   return (
     <section>
       <h2>Содержание</h2>
 
-      <ul>
-        {CONTENT_HEADERS.map((header, i) => (
-          <li key={i}>
-            <a className={commonStyle.link} href={`#${header.id}`}>{header.title}</a>
+      <ul className={utilStyle.list}>
+        {headers.map(({ id, title }) => (
+          <li key={id}>
+            <Button
+              className={commonStyle.link}
+              role="link"
+              onClick={() => {
+                const $targetElement = document.getElementById(id);
+
+                if ($targetElement) {
+                  window.scrollTo({
+                    top: $targetElement.offsetTop,
+                    behavior: 'smooth',
+                  });
+                }
+              }}
+            >
+              {title}
+            </Button>
           </li>
         ))}
       </ul>
@@ -22,4 +41,4 @@ export const NamingPageContents: React.FC = () => {
   );
 };
 
-NamingPageContents.displayName = 'Naming-Contents';
+NamingContents.displayName = 'Naming-Contents';

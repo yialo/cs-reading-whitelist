@@ -1,6 +1,6 @@
 # Todo list
 
-* Add PROCESS enum for communication state management
+* Add request cancelation with AbortController
 * Add keyboard navigation in Select component
 * Add volumes
   * page with references to specs, docs, libs etc.
@@ -19,3 +19,4 @@
 * Add CI/CD forkflow for deploy to GitHub Pages
 * Use markdown instead of JSON for content
 * Move app from `HashRouter` to `BrowserRouter`
+* Make ThemeToggle more accessible (look Heydon Pickering's article about toggle buttons)

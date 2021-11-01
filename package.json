@@ -6,7 +6,7 @@
     "build:stats": "npm run build --profile --json > ./stats/webpack-bundle-stats.json",
     "deploy": "gh-pages -d ./dist/",
     "dev": "npm run webpack:serve -- --env target=development",
-    "dev:circular": "npm run dev -- --env circular",
+    "dev:nocircular": "npm run dev -- --env nocircular",
     "dev:tscheck": "npm run dev -- --env tscheck",
     "dev:write": "npm run dev -- --env write",
     "lint": "npm run lint:styles && npm run lint:scripts && npm run typecheck",

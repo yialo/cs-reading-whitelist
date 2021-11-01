@@ -35,7 +35,7 @@ const SERVER_DEFAULTS = {
 module.exports = (env = {}) => {
   const {
     analyze: needAnalyze,
-    circular: checkCircularDeps,
+    nocircular: noCheckCircularDeps = false,
     target,
     tscheck: needTypeCheck,
     write,
@@ -294,7 +294,7 @@ module.exports = (env = {}) => {
         }));
       }
 
-      if (checkCircularDeps) {
+      if (!noCheckCircularDeps) {
         pluginList.push(new CircularDependencyPlugin({
           failOnError: true,
         }));

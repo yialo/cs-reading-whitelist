@@ -63,35 +63,37 @@ export const LinkList: React.FC = () => {
 
   return (
     <MainLayout>
-      <div className={style.header}>
-        <h1 className={style.headline}>Полезные материалы по Computer Science</h1>
+      <div className={style.root}>
+        {
+          isFetchComplete ? (
+            <>
+              <div className={style.header}>
+                <h1 className={style.headline}>Полезные материалы по Computer Science</h1>
+              </div>
+
+              <ControlBar
+                className={style.controlBar}
+                filterTarget={filterName}
+                searchString={searchString}
+                sortingTarget={sortingName}
+                totalAmount={sortedAmount}
+                visibleAmount={visibleAmount}
+                onFilterToggle={handleFilterToggle}
+                onSearch={handleSearch}
+                onSortingToggle={handleSortingToggle}
+              />
+
+              <Subjects
+                className={style.subjects}
+                list={subjectList}
+                hasFetchError={!!fetchError}
+                isLastPage={isLastPage}
+                onShowMoreClick={handleShowMoreClick}
+              />
+            </>
+          ) : <Preloader className={style.preloader} />
+        }
       </div>
-
-      {
-        isFetchComplete ? (
-          <>
-            <ControlBar
-              className={style.controlBar}
-              filterTarget={filterName}
-              searchString={searchString}
-              sortingTarget={sortingName}
-              totalAmount={sortedAmount}
-              visibleAmount={visibleAmount}
-              onFilterToggle={handleFilterToggle}
-              onSearch={handleSearch}
-              onSortingToggle={handleSortingToggle}
-            />
-
-            <Subjects
-              className={style.subjects}
-              list={subjectList}
-              hasFetchError={!!fetchError}
-              isLastPage={isLastPage}
-              onShowMoreClick={handleShowMoreClick}
-            />
-          </>
-        ) : <Preloader className={style.preloader} />
-      }
     </MainLayout>
   );
 };

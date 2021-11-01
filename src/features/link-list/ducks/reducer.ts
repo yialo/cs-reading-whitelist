@@ -7,7 +7,7 @@ const INITIAL_PAGE = 1;
 const INITIAL_STATE: TLinkListState = {
   error: null,
   list: [],
-  isComplete: false,
+  process: 'IDLE',
   searchString: '',
   page: INITIAL_PAGE,
   filterName: FILTER.CAPTION,
@@ -18,19 +18,40 @@ export const linkListReducer: TLinkListReducer = (prevState, action) => {
   const state = prevState ?? INITIAL_STATE;
 
   switch (action.type) {
+    case ACTION_TYPE.FETCH_START: {
+      if (state.process === 'LOADING') {
+        return state;
+      }
+
+      return {
+        ...state,
+        process: 'LOADING',
+        error: null,
+      };
+    }
+
     case ACTION_TYPE.FETCH_SUCCESS: {
+      if (state.process !== 'LOADING') {
+        return state;
+      }
+
       return {
         ...state,
         list: action.payload,
-        isComplete: true,
+        process: 'SUCCESS',
       };
     }
 
     case ACTION_TYPE.FETCH_FAILURE: {
+      if (state.process !== 'LOADING') {
+        return state;
+      }
+
       return {
         ...state,
+        list: [],
+        process: 'FAILURE',
         error: action.payload,
-        isComplete: true,
       };
     }
 
