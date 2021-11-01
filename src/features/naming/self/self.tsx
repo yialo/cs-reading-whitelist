@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { Preloader } from '@/components/c_preloader';
+import { PROCESS } from '@/enums';
 import { MainLayout } from '@/layouts/c_main-layout';
 import { TState } from '@/store/state';
 
@@ -22,17 +23,18 @@ export const Naming: React.FC = () => {
   const error = useSelector(selectNamingError);
 
   React.useEffect(() => {
-    if (process === 'IDLE') {
+    if (process === PROCESS.IDLE) {
       dispatch({ type: ACTION_TYPE.FETCH_START });
     }
   }, [process, dispatch]);
 
   const renderContent = () => {
     switch (process) {
-      case 'LOADING':
+      case PROCESS.IDLE:
+      case PROCESS.LOADING:
         return <Preloader className={style.preloader} />;
 
-      case 'FAILURE':
+      case PROCESS.FAILURE:
         return <div>{error}</div>;
 
       default:

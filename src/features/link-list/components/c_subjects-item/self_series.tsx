@@ -19,10 +19,7 @@ type TProps = TClassNameable & {
 
 const BUTTON_KEYS = [KEYBOARD_KEY.ENTER, KEYBOARD_KEY.SPACE] as const;
 
-export const SeriesSubjectsItem: React.FC<TProps> = ({
-  className,
-  subject,
-}) => {
+export const SeriesSubjectsItem: React.FC<TProps> = ({ className, subject }) => {
   const {
     caption,
     lang,

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { Preloader } from '@/components/c_preloader';
 import { LIST_PAGE_SIZE } from '@/constants';
+import { PROCESS } from '@/enums';
 import { MainLayout } from '@/layouts/c_main-layout';
 
 import {
@@ -64,15 +65,15 @@ export const LinkList: React.FC = () => {
   };
 
   React.useEffect(() => {
-    if (process === 'IDLE') {
+    if (process === PROCESS.IDLE) {
       dispatch(fetchSubjects());
     }
   }, [process, dispatch]);
 
   const renderContent = () => {
     switch (process) {
-      case 'IDLE':
-      case 'LOADING':
+      case PROCESS.IDLE:
+      case PROCESS.LOADING:
         return <Preloader className={style.preloader} />;
 
       default:
