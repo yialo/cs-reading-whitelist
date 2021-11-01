@@ -7,7 +7,7 @@ import commonStyle from '@/scss/scaffold.scss';
 export const ReferenceLinks: React.FC = () => {
   return (
     <div>
-      <p>Создано на основе личного опыта и следующих подборок:</p>
+      <p>Создано на основе личного опыта и подборок из этих статей:</p>
 
       <ul>
         {REFERENCE_LINKS.map(([label, url], i) => (
@@ -16,8 +16,6 @@ export const ReferenceLinks: React.FC = () => {
           </li>
         ))}
       </ul>
-
-      <p>Автор выражает благодарность создателям указанных страниц.</p>
     </div>
   );
 };
