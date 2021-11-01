@@ -10,8 +10,8 @@ const INITIAL_STATE: TLinkListState = {
   process: 'IDLE',
   searchString: '',
   page: INITIAL_PAGE,
-  filterName: FILTER.CAPTION,
-  sortingName: SORTING.NEW,
+  filter: FILTER.CAPTION,
+  sorting: SORTING.NEW,
 };
 
 export const linkListReducer: TLinkListReducer = (prevState, action) => {
@@ -66,7 +66,7 @@ export const linkListReducer: TLinkListReducer = (prevState, action) => {
     case ACTION_TYPE.FILTER: {
       return {
         ...state,
-        filterName: action.payload,
+        filter: action.payload,
         page: INITIAL_PAGE,
       };
     }
@@ -74,7 +74,7 @@ export const linkListReducer: TLinkListReducer = (prevState, action) => {
     case ACTION_TYPE.SORTING: {
       return {
         ...state,
-        sortingName: action.payload,
+        sorting: action.payload,
       };
     }
 

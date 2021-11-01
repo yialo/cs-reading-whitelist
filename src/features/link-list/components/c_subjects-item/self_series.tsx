@@ -6,7 +6,7 @@ import { KEYBOARD_KEY } from '@/enums';
 import { TClassNameable } from '@/types';
 import { includes } from '@/utils/typing';
 
-import { listSelector } from '../../ducks/selectors';
+import { selectSearchString } from '../../ducks/selectors';
 import { TSeriesSubject } from '../../types';
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
@@ -31,15 +31,15 @@ export const SeriesSubjectsItem: React.FC<TProps> = ({
     tags,
   } = subject;
 
-  const isSearchBegins = !!useSelector(listSelector.searchString);
+  const isEmptySearch = !!useSelector(selectSearchString);
   const [state, setState] = React.useState({ isExpanded: false });
 
   const hasNoStateChangesYetRef = React.useRef(true);
-  const isExpanded = hasNoStateChangesYetRef.current ? isSearchBegins : state.isExpanded;
+  const isExpanded = hasNoStateChangesYetRef.current ? isEmptySearch : state.isExpanded;
 
   const handleExpansion = () => {
     if (hasNoStateChangesYetRef.current) {
-      setState({ isExpanded: !isSearchBegins });
+      setState({ isExpanded: !isEmptySearch });
     } else {
       setState((prev) => ({ isExpanded: !prev.isExpanded }));
     }

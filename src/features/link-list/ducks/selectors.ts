@@ -3,32 +3,24 @@ import { createSelector } from 'reselect';
 import { LIST_PAGE_SIZE } from '@/constants';
 import { TState } from '@/store/state';
 
-import { FILTER, SORTING, TFilter, TSorting } from '../enums';
-import { TSubject } from '../types';
+import { FILTER, SORTING } from '../enums';
 
-export const fetchSelector = {
-  error: (state: TState): Error | null => state.links.error,
-  fullList: (state: TState): TSubject[] => state.links.list,
-  isComplete: (state: TState): boolean => {
-    const { process } = state.links;
-    return process === 'SUCCESS' || process === 'FAILURE';
-  },
-};
+export const selectProcess = (state: TState) => state.links.process;
+export const selectError = (state: TState) => state.links.error;
+const selectContent = (state: TState) => state.links.list;
 
-export const listSelector = {
-  filterName: (state: TState): TFilter => state.links.filterName,
-  page: (state: TState): number => state.links.page,
-  searchString: (state: TState): string => state.links.searchString,
-  sortingName: (state: TState): TSorting => state.links.sortingName,
-};
+export const selectFilter = (state: TState) => state.links.filter;
+export const selectSearchString = (state: TState) => state.links.searchString;
+export const selectSorting = (state: TState) => state.links.sorting;
+export const selectPage = (state: TState) => state.links.page;
 
 const selectFilteredList = createSelector(
   [
-    fetchSelector.fullList,
-    listSelector.searchString,
-    listSelector.filterName,
+    selectContent,
+    selectSearchString,
+    selectFilter,
   ],
-  (fullList, searchString, filterName) => {
+  (fullList, searchString, filter) => {
     const matcher = searchString.toLowerCase();
 
     if (matcher === '') {
@@ -36,7 +28,7 @@ const selectFilteredList = createSelector(
     }
 
     return fullList.filter((item) => {
-      switch (filterName) {
+      switch (filter) {
         case FILTER.CAPTION: {
           const hasMatchInMainCaption = item.caption.toLowerCase().includes(matcher);
           return hasMatchInMainCaption
@@ -67,35 +59,29 @@ const selectFilteredList = createSelector(
 export const selectSortedList = createSelector(
   [
     selectFilteredList,
-    listSelector.sortingName,
-    listSelector.page,
+    selectSorting,
+    selectPage,
   ],
-  (filteredList, sortingName) => (
-    sortingName === SORTING.NEW ? [...filteredList].reverse() : filteredList
+  (filteredList, sorting) => (
+    sorting === SORTING.NEW ? [...filteredList].reverse() : filteredList
   ),
 );
 
-export const getSortedAmount = createSelector(
+export const selectSortedAmount = createSelector(
   [selectSortedList],
   (sortedList) => sortedList.length,
 );
 
-export const getVisibleList = createSelector(
-  [
-    selectSortedList,
-    listSelector.page,
-  ],
+export const selectVisibleList = createSelector(
+  [selectSortedList, selectPage],
   (sortedList, page) => {
     const itemsToShowAmount = page * LIST_PAGE_SIZE;
     return sortedList.slice(0, itemsToShowAmount);
   },
 );
 
-export const getIsLastPage = createSelector(
-  [
-    getSortedAmount,
-    listSelector.page,
-  ],
+export const selectIsLastPage = createSelector(
+  [selectSortedAmount, selectPage],
   (sortedAmount, page) => {
     const totalPages = Math.ceil(sortedAmount / LIST_PAGE_SIZE);
     return page === totalPages;

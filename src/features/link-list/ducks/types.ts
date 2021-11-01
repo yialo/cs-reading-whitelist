@@ -12,8 +12,8 @@ export type TLinkListState = {
   error: Error | null;
   process: TProcess;
   searchString: string;
-  filterName: TFilter;
-  sortingName: TSorting;
+  filter: TFilter;
+  sorting: TSorting;
   page: number;
 };
 
