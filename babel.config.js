@@ -10,7 +10,6 @@ module.exports = {
         helpers: true,
       },
     ],
-    'react-hot-loader/babel',
     [
       'transform-imports',
       {
@@ -20,7 +19,8 @@ module.exports = {
         },
       },
     ],
-  ],
+    process.env.BABEL_ENV !== 'production' && 'react-refresh/babel',
+  ].filter(Boolean),
   presets: [
     [
       '@babel/preset-env',
