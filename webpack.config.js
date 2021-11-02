@@ -2,6 +2,7 @@
 
 const path = require('path');
 
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
 const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
@@ -24,7 +25,6 @@ const PATH = {
 
 const ALIAS = {
   '@': PATH.SRC,
-  'react-dom': '@hot-loader/react-dom',
 };
 
 const SERVER_DEFAULTS = {
@@ -87,7 +87,7 @@ module.exports = (env = {}) => {
     devtool: isDevelopment ? 'eval-source-map' : false,
 
     entry: {
-      app: ['react-hot-loader/patch', path.join(PATH.SRC, 'index.ts')],
+      app: path.join(PATH.SRC, 'index.ts'),
     },
 
     mode: (isDevelopment || isProduction) ? target : 'none',
@@ -192,7 +192,7 @@ module.exports = (env = {}) => {
             },
             react: {
               name: 'react',
-              test: /[\\/]node_modules[\\/](@hot-loader[\\/]react-dom|object-assign|react|scheduler)[\\/]/,
+              test: /[\\/]node_modules[\\/](react-dom|object-assign|react|scheduler)[\\/]/,
               priority: 1,
               enforce: true,
             },
@@ -275,6 +275,10 @@ module.exports = (env = {}) => {
           '__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__': JSON.stringify(process.env.PUBLIC_PATH),
         }),
       ];
+
+      if (!isProduction) {
+        pluginList.push(new ReactRefreshWebpackPlugin());
+      }
 
       if (needAnalyze) {
         pluginList.push(new BundleAnalyzerPlugin({
