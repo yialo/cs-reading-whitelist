@@ -15,7 +15,7 @@
     "nodemon": "nodemon --config ./nodemon.json",
     "nodemon:build": "npm run nodemon -- build",
     "nodemon:dev": "npm run nodemon -- dev",
-    "publish": "npm ci && npm run build && npm run deploy",
+    "publish": "npm ci && npm run lint && npm run build && npm run deploy",
     "test": "jest -c=./jest.config.js --passWithNoTests",
     "typecheck": "tsc",
     "webpack": "webpack -c ./webpack.config.js",
