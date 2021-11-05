@@ -1,5 +1,6 @@
 # Todo list
 
+* Move hosting from GitHub Pages to Netlify
 * Add optional **author** field and sorting by author
 * Format LinkList item as card
 * Add scrollToTop button at Naming page
