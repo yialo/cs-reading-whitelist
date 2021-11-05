@@ -17,3 +17,10 @@ export const PROCESS = {
 } as const;
 
 export type TProcess = Values<typeof PROCESS>;
+
+export const ROUTE = {
+  HOME: '',
+  NAMING: 'naming',
+} as const;
+
+export type TRoute = Values<typeof ROUTE>;

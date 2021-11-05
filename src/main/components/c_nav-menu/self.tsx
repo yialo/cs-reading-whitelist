@@ -2,8 +2,7 @@ import * as React from 'react';
 import cn from 'clsx';
 import { NavLink } from 'react-router-dom';
 
-import { ROUTES } from '@/constants';
-import { KEYBOARD_KEY } from '@/enums';
+import { KEYBOARD_KEY, ROUTE, TRoute } from '@/enums';
 import { TClassNameable } from '@/types';
 
 import { AppNavMenuIcon } from './c_icon';
@@ -11,17 +10,17 @@ import { AppNavMenuIcon } from './c_icon';
 import style from './style.scss';
 
 type TNavLink = {
-  url: string;
+  url: TRoute;
   label: string;
 };
 
 const routeList: ReadonlyArray<TNavLink> = [
   {
-    url: ROUTES.HOME,
+    url: ROUTE.HOME,
     label: 'Reading',
   },
   {
-    url: ROUTES.NAMING,
+    url: ROUTE.NAMING,
     label: 'Naming',
   },
 ] as const;
