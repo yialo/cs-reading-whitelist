@@ -43,8 +43,6 @@ export const Select: React.FC<TProps> = ({
     };
 
     const handleClick = (event: MouseEvent) => {
-      console.log({ target: event.target });
-
       if (event.target !== $toggleButtonRef.current) {
         handleCollapse();
       }

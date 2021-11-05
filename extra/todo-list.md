@@ -1,5 +1,7 @@
 # Todo list
 
+* Add optional **author** field and sorting by author
+* Format LinkList item as card
 * Add scrollToTop button at Naming page
 * Add request cancelation with AbortController
 * Add keyboard navigation in Select component
@@ -14,7 +16,6 @@
 * Create Emmet cheatsheet tool app with search
   * parse official docs HTML with Puppeteer
 * Migrate to rems
-* Add optional **author** field and sorting by author
 * Add tag cloud
 * Add extended favicon set
 * Add CI/CD forkflow for deploy to GitHub Pages

@@ -2,17 +2,27 @@ import * as React from 'react';
 import cn from 'clsx';
 import { NavLink } from 'react-router-dom';
 
-import { ROUTES } from '@/constants';
-import { KEYBOARD_KEY } from '@/enums';
+import { KEYBOARD_KEY, ROUTE, TRoute } from '@/enums';
 import { TClassNameable } from '@/types';
 
 import { AppNavMenuIcon } from './c_icon';
 
 import style from './style.scss';
 
-const routeList = [
-  [ROUTES.HOME, 'Reading'],
-  [ROUTES.NAMING, 'Naming'],
+type TNavLink = {
+  url: TRoute;
+  label: string;
+};
+
+const routeList: ReadonlyArray<TNavLink> = [
+  {
+    url: ROUTE.HOME,
+    label: 'Reading',
+  },
+  {
+    url: ROUTE.NAMING,
+    label: 'Naming',
+  },
 ] as const;
 
 const BUTTON_ID = 'AppNavMenu-list';
@@ -55,13 +65,14 @@ export const RootNavMenu: React.FC<TClassNameable> = ({ className }) => {
         <AppNavMenuIcon isExpanded={isExpanded} />
       </button>
       <ul className={style.list} id={BUTTON_ID}>
-        {routeList.map(([route, label]) => (
+        {routeList.map(({ url, label }) => (
           <li key={label}>
             <NavLink
-              activeClassName={style.link_active}
-              className={style.link}
-              to={route}
-              exact
+              className={({ isActive }) => cn(style.link, {
+                [style.link_active!]: isActive,
+              })}
+              to={url}
+              end
             >
               {label}
             </NavLink>
