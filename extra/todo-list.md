@@ -1,6 +1,5 @@
 # Todo list
 
-* Add 404 page
 * Add optional **author** field and sorting by author
 * Format LinkList item as card
 * Add scrollToTop button at Naming page

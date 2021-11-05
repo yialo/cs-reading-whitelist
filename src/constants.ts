@@ -1,10 +1,14 @@
-import { Values } from '@/types/utils';
-
-export const ROUTES = {
-  HOME: __GLOBAL_ENV_VARIABLE__PUBLIC_PATH__,
-  NAMING: `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}naming`,
+const ROUTER_CONFIG = {
+  HOME: '',
+  NAMING: 'naming',
 } as const;
 
-export type TRoute = Values<typeof ROUTES>;
+type TRouteKey = keyof typeof ROUTER_CONFIG;
+
+export const ROUTES = Object.entries(ROUTER_CONFIG)
+  .reduce((result, [key, value]) => {
+    result[key as TRouteKey] = `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}${value}`;
+    return result;
+  }, {} as Record<TRouteKey, string>);
 
 export const LIST_PAGE_SIZE = 10;

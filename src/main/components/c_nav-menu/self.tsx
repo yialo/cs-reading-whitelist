@@ -2,7 +2,7 @@ import * as React from 'react';
 import cn from 'clsx';
 import { NavLink } from 'react-router-dom';
 
-import { ROUTES, TRoute } from '@/constants';
+import { ROUTES } from '@/constants';
 import { KEYBOARD_KEY } from '@/enums';
 import { TClassNameable } from '@/types';
 
@@ -11,7 +11,7 @@ import { AppNavMenuIcon } from './c_icon';
 import style from './style.scss';
 
 type TNavLink = {
-  url: TRoute;
+  url: string;
   label: string;
 };
 
