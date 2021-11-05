@@ -27,4 +27,11 @@ describe('fetchLinkListWorker step-by-step test', () => {
 
     expect(result).toEqual(expected);
   });
+
+  it('should be done', () => {
+    const result = gen.next().done;
+    const expected = true;
+
+    expect(result).toBe(expected);
+  });
 });
