@@ -1,5 +1,7 @@
 import { runSaga } from 'redux-saga';
+import { PutEffect } from 'redux-saga/effects';
 
+import { TNamingSection } from '../types';
 import { ACTION_TYPE } from './action-types';
 import { TNamingApiResponsePayload } from './api';
 import { TNamingAction } from './types';
@@ -30,13 +32,23 @@ describe('fetchNamingWorker', () => {
 
       const dispatched: TNamingAction[] = [];
 
-      await runSaga({
-        dispatch: (action: TNamingAction) => {
-          dispatched.push(action);
+      await runSaga(
+        {
+          dispatch: (action: TNamingAction) => {
+            dispatched.push(action);
+          },
         },
-      // eslint-disable-next-line
-      // @ts-ignore
-      }, fetchNamingWorker).toPromise();
+        fetchNamingWorker as (
+          () => Generator<
+          PutEffect<{
+            type: typeof ACTION_TYPE.FETCH_SUCCESS;
+            payload: TNamingSection[];
+          }>,
+          void,
+          TNamingApiResponsePayload | undefined
+          >
+        ),
+      ).toPromise();
 
       const expected: TNamingAction[] = [
         {
@@ -70,13 +82,23 @@ describe('fetchNamingWorker', () => {
 
       const dispatched: TNamingAction[] = [];
 
-      await runSaga({
-        dispatch: (action: TNamingAction) => {
-          dispatched.push(action);
+      await runSaga(
+        {
+          dispatch: (action: TNamingAction) => {
+            dispatched.push(action);
+          },
         },
-      // eslint-disable-next-line
-      // @ts-ignore
-      }, fetchNamingWorker).toPromise();
+        fetchNamingWorker as (
+          () => Generator<
+          PutEffect<{
+            type: typeof ACTION_TYPE.FETCH_FAILURE;
+            payload: Error;
+          }>,
+          void,
+          TNamingApiResponsePayload | undefined
+          >
+        ),
+      ).toPromise();
 
       const expected: TNamingAction[] = [
         {
