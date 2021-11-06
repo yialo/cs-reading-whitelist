@@ -1,21 +1,9 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
 
-import { TNamingSection } from '../types';
 import { ACTION_TYPE } from './action-types';
+import { fetchNaming, TNamingApiResponsePayload } from './api';
 
-type TNamingApiResponsePayload = {
-  data: TNamingSection[];
-};
-
-
-const fetchNaming = async () => {
-  const apiUrl = `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}data/naming.json?${Date.now()}`;
-
-  const response = await fetch(apiUrl);
-  return response.json() as Promise<TNamingApiResponsePayload>;
-};
-
-const fetchNamingWorker = function* () {
+export const fetchNamingWorker = function* () {
   try {
     const responsePayload = (yield call(fetchNaming)) as TNamingApiResponsePayload;
 

@@ -17,6 +17,7 @@
     "nodemon:dev": "npm run nodemon -- dev",
     "publish": "npm ci && npm run lint && npm run build && npm run deploy",
     "test": "jest -c=./jest.config.js --passWithNoTests",
+    "test:watch": "npm test -- --watch",
     "typecheck": "tsc",
     "webpack": "webpack -c ./webpack.config.js",
     "webpack:serve": "webpack serve -c ./webpack.config.js"
