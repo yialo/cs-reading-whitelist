@@ -18,7 +18,7 @@ export const PROCESS = {
 export type TProcess = Values<typeof PROCESS>;
 
 export const ROUTE = {
-  HOME: '',
+  HOME: '/',
   NAMING: 'naming',
 } as const;
 

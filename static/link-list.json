@@ -4643,7 +4643,8 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "async"
+        "async",
+        "event_driven_architecture"
       ],
       "legend": ""
     },
@@ -4653,7 +4654,8 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "async"
+        "async",
+        "event_driven_architecture"
       ]
     },
     {
@@ -4719,7 +4721,8 @@
       "lang": "en",
       "tags": [
         "javascript",
-        "async"
+        "async",
+        "event_driven_architecture"
       ],
       "legend": "Из всех обзорных материалов на тему event loop, которые встречал, этот нахожу наиболее последовательным и полным. Разобрана работа событийного цикла в браузерах, Node.js, WebWorker'ах."
     },
@@ -5209,6 +5212,14 @@
       "lang": "en",
       "tags": [
         "productivity"
+      ]
+    },
+    {
+      "caption": "Event-Driven Architecture: детали реализаций Event Loop (Вадим Горбачёв)",
+      "url": "https://youtu.be/Zu18cMJGeqw",
+      "lang": "ru",
+      "tags": [
+        "event_driven_architecture"
       ]
     }
   ]
