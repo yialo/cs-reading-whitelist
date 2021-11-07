@@ -1,12 +1,11 @@
 import { Values } from '@/types/utils';
 
 export const KEYBOARD_KEY = {
-  // NOTE: for future implementation of keyboard navigation
-  // UP: 'ArrowUp',
-  // DOWN: 'ArrowDown',
   ENTER: 'Enter',
   ESCAPE: 'Escape',
   SPACE: ' ',
+  UP: 'ArrowUp',
+  DOWN: 'ArrowDown',
 } as const;
 
 export const PROCESS = {

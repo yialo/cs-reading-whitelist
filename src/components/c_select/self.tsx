@@ -36,7 +36,7 @@ export const Select: React.FC<TProps> = ({
       setIsExpanded((prev) => prev && !prev);
     };
 
-    const handleKeyPress = (event: KeyboardEvent) => {
+    const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === KEYBOARD_KEY.ESCAPE) {
         handleCollapse();
       }
@@ -48,14 +48,65 @@ export const Select: React.FC<TProps> = ({
       }
     };
 
-    document.addEventListener('keydown', handleKeyPress);
+    document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('click', handleClick);
 
     return () => {
-      document.removeEventListener('keydown', handleKeyPress);
+      document.removeEventListener('keydown', handleKeyDown);
       document.removeEventListener('click', handleClick);
     };
   }, []);
+
+  React.useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (
+        $toggleButtonRef.current === document.activeElement
+        && event.key === KEYBOARD_KEY.DOWN
+      ) {
+        setIsExpanded(true);
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
+  const options = React.useMemo(() => Object.entries(dict), [dict]);
+
+  React.useEffect(() => {
+    const handleKeyDown = ({ key }: KeyboardEvent) => {
+      if (isExpanded) {
+        const currentOptionIndex = options.findIndex((option) => option[0] === value);
+
+        let shift = 0;
+
+        if (key === KEYBOARD_KEY.DOWN) {
+          shift = 1;
+        } else if (key === KEYBOARD_KEY.UP) {
+          shift = -1;
+        }
+
+        if (!shift) {
+          return;
+        }
+
+        const newOptionValue = options[currentOptionIndex + shift]?.[0];
+
+        if (newOptionValue) {
+          onChange(newOptionValue);
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isExpanded, options, value, onChange]);
 
   return (
     <div className={cn(style.root, className)}>
@@ -81,7 +132,7 @@ export const Select: React.FC<TProps> = ({
 
         {isExpanded && (
           <ul className={style.list} role="listbox">
-            {Object.entries(dict).map(([name, caption]) => {
+            {options.map(([name, caption]) => {
               const isSelected = name === value;
 
               return (
