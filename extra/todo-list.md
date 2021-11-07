@@ -7,7 +7,6 @@
 * Add scrollToTop button at Naming page
 * Add request cancellation with AbortController
 * (Maybe) Migrate to axios
-* Add keyboard navigation in Select component
 * Add volumes
   * page with references to specs, docs, libs etc.
   * interesting fonts
