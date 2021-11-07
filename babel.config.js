@@ -19,7 +19,7 @@ module.exports = {
         },
       },
     ],
-    process.env.BABEL_ENV !== 'production' && 'react-refresh/babel',
+    process.env.BABEL_ENV === 'development' && 'react-refresh/babel',
   ].filter(Boolean),
   presets: [
     [

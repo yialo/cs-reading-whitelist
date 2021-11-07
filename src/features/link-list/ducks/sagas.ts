@@ -7,14 +7,14 @@ type TLinkListApiResponsePayload = {
   data: TSubject[];
 };
 
-const getSubjectsFromApi = async () => {
+export const getSubjectsFromApi = async () => {
   const apiUrl = `${__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}data/link-list.json?${Date.now()}`;
 
   const response = await fetch(apiUrl);
   return response.json() as Promise<TLinkListApiResponsePayload>;
 };
 
-const fetchLinkListWorker = function* () {
+export const fetchLinkListWorker = function* () {
   try {
     const responsePayload = (yield call(getSubjectsFromApi)) as TLinkListApiResponsePayload;
 
