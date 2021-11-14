@@ -5221,6 +5221,15 @@
       "tags": [
         "event_driven_architecture"
       ]
+    },
+    {
+      "caption": "Just use :focus styles, damnit (by Chris Ferdinandi)",
+      "url": "https://gomakethings.com/just-use-focus-styles-damnit/",
+      "lang": "en",
+      "tags": [
+        "a11y",
+        "css"
+      ]
     }
   ]
 }
