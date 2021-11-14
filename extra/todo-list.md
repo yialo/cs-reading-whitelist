@@ -1,9 +1,7 @@
 # Todo list
 
-* Move hosting from GitHub Pages to Netlify
-* Move app from `HashRouter` to `BrowserRouter`
-* Add optional **author** field and sorting by author
 * Format LinkList item as card
+  * Add optional **author** field and sorting by author
 * Add scrollToTop button at Naming page
 * Add request cancellation with AbortController
 * (Maybe) Migrate to axios
@@ -17,7 +15,7 @@
   * Firebase integration
 * Create Emmet cheatsheet tool app with search
   * parse official docs HTML with Puppeteer
-* Migrate to rems
+* (Maybe) Migrate to rems
 * Add tag cloud
 * Add extended favicon set
 * Add CI/CD forkflow for deploy to GitHub Pages
