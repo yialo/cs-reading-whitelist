@@ -15,7 +15,7 @@ export const App: React.FC = () => {
     <React.StrictMode>
       <ErrorBoundary>
         <ReduxProvider store={store}>
-          <HashRouter basename={__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}>
+          <HashRouter>
             <ThemeProvider>
               <Root />
             </ThemeProvider>
