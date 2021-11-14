@@ -1,5 +1,6 @@
 # Todo list
 
+* Deploy app on Netlify instead of Github Pages
 * Format LinkList item as card
   * Add optional **author** field and sorting by author
 * Add scrollToTop button at Naming page
