@@ -15,7 +15,7 @@ export const App: React.FC = () => {
     <React.StrictMode>
       <ErrorBoundary>
         <ReduxProvider store={store}>
-          <BrowserRouter>
+          <BrowserRouter basename={__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}>
             <ThemeProvider>
               <Root />
             </ThemeProvider>
