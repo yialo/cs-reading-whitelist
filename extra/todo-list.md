@@ -1,6 +1,5 @@
 # Todo list
 
-* Deploy app on Netlify instead of Github Pages
 * Format LinkList item as card
   * Add optional **author** field and sorting by author
 * Add scrollToTop button at Naming page
@@ -19,6 +18,3 @@
 * (Maybe) Migrate to rems
 * Add tag cloud
 * Add extended favicon set
-* Add CI/CD forkflow for deploy to GitHub Pages
-* Use markdown instead of JSON for content
-* Make ThemeToggle more accessible (look Heydon Pickering's article about toggle buttons)

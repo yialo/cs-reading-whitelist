@@ -14,7 +14,7 @@ type TNavLink = {
   label: string;
 };
 
-const routeList: ReadonlyArray<TNavLink> = [
+const ROUTE_LIST: ReadonlyArray<TNavLink> = [
   {
     url: ROUTE.HOME,
     label: 'Reading',
@@ -27,7 +27,7 @@ const routeList: ReadonlyArray<TNavLink> = [
 
 const BUTTON_ID = 'AppNavMenu-list';
 
-export const RootNavMenu: React.FC<TClassNameable> = ({ className }) => {
+export const AppNavMenu: React.FC<TClassNameable> = ({ className }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleMenuExpansion = () => {
@@ -65,7 +65,7 @@ export const RootNavMenu: React.FC<TClassNameable> = ({ className }) => {
         <AppNavMenuIcon isExpanded={isExpanded} />
       </button>
       <ul className={style.list} id={BUTTON_ID}>
-        {routeList.map(({ url, label }) => (
+        {ROUTE_LIST.map(({ url, label }) => (
           <li key={label}>
             <NavLink
               className={({ isActive }) => cn(style.link, {
@@ -73,6 +73,9 @@ export const RootNavMenu: React.FC<TClassNameable> = ({ className }) => {
               })}
               to={url}
               end
+              onClick={() => {
+                setIsExpanded(false);
+              }}
             >
               {label}
             </NavLink>

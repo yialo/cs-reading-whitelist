@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Provider as ReduxProvider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 import { ErrorBoundary } from '@/components/c_error-boundary';
 import { ThemeProvider } from '@/components/theme';
@@ -15,11 +15,11 @@ export const App: React.FC = () => {
     <React.StrictMode>
       <ErrorBoundary>
         <ReduxProvider store={store}>
-          <BrowserRouter basename={__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__}>
+          <HashRouter>
             <ThemeProvider>
               <Root />
             </ThemeProvider>
-          </BrowserRouter>
+          </HashRouter>
         </ReduxProvider>
       </ErrorBoundary>
     </React.StrictMode>
