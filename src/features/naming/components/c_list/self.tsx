@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
 
-import { selectContent } from '../ducks/selectors';
+import { selectContent } from '../../ducks/selectors';
+
+import style from './self.scss';
 
 export const NamingList: React.FC = () => {
   const content = useSelector(selectContent);
@@ -11,13 +13,13 @@ export const NamingList: React.FC = () => {
       {content.map((it, i) => (
         <React.Fragment key={i}>
           <section id={it.id}>
-            <h2>{it.title}</h2>
+            <h2 className={style.heading}>{it.title}</h2>
 
             {it.items.map((subIt, j) => (
               <React.Fragment key={j}>
-                <h3>{subIt.title}</h3>
+                <h3 className={style.heading}>{subIt.title}</h3>
 
-                <pre>
+                <pre className={style.preformatted}>
                   {subIt.names.map((name, k) => (
                     <React.Fragment key={k}>
                       <code>{name}</code>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cn from 'clsx';
 
-import { ButtonBase } from '@/components/c_button-base';
+import { MainButton } from '@/components/c_main-button';
 import { useHasDarkTheme, useThemeToggle } from '@/components/theme';
 import { TClassNameable } from '@/types';
 
@@ -12,13 +12,13 @@ export const ThemeToggle: React.FC<TClassNameable> = ({ className }) => {
   const toggleTheme = useThemeToggle();
 
   return (
-    <ButtonBase
+    <MainButton
       className={cn(style.root, className)}
       aria-label="Режим тёмной темы"
       aria-pressed={hasDarkTheme}
       onClick={toggleTheme}
     >
       {`Go ${hasDarkTheme ? 'light' : 'dark'}`}
-    </ButtonBase>
+    </MainButton>
   );
 };

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cn from 'clsx';
 
-import { ButtonBase } from '@/components/c_button-base';
+import { MainButton } from '@/components/c_main-button';
 import { TClassNameable } from '@/types';
 
 import { TSubject } from '../../types';
@@ -41,9 +41,9 @@ export const Subjects: React.FC<TProps> = ({
         }))}
       </ul>
       {!isLastPage && (
-        <ButtonBase className={style.button} onClick={onShowMoreClick}>
+        <MainButton className={style.button} onClick={onShowMoreClick}>
           Показать ещё
-        </ButtonBase>
+        </MainButton>
       )}
     </div>
   );
