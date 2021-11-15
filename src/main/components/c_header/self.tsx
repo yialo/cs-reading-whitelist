@@ -3,7 +3,7 @@ import cn from 'clsx';
 
 import { TClassNameable } from '@/types';
 
-import { RootNavMenu } from '../c_nav-menu';
+import { AppNavMenu } from '../c_nav-menu';
 import { ThemeToggle } from '../c_theme-toggle';
 
 import style from './self.scss';
@@ -11,7 +11,7 @@ import style from './self.scss';
 export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
   return (
     <header className={cn(style.root, className)}>
-      <RootNavMenu />
+      <AppNavMenu />
       <ThemeToggle className={style.themeToggle} />
     </header>
   );

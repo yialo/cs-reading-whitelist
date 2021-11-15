@@ -41,7 +41,7 @@
   @media (max-width: utils.$viewport-sm-max) {
     position: absolute;
     top: calc(100% + 4px);
-    left: -16px;
+    left: calc(var(--size_paddingX) * -1);
     display: grid;
     row-gap: 16px;
     padding: 16px 16px;

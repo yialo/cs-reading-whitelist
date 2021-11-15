@@ -1,1 +1,1 @@
-export { RootNavMenu } from './self';
+export { AppNavMenu } from './self';
