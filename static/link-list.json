@@ -5218,6 +5218,23 @@
         "a11y",
         "css"
       ]
+    },
+    {
+      "caption": "Beyond React 16 (by Dan Abramov, JSConf Iceland)",
+      "url": "https://youtu.be/nLF0n9SACd4",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Fiber Principles: Contributing to Fiber (by Sebastian Markbåge)",
+      "url": "https://github.com/facebook/react/issues/7942",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_fiber"
+      ]
     }
   ]
 }
