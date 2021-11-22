@@ -3094,101 +3094,110 @@
         "productivity"
       ]
     },
+
     {
-      "caption": "Пятиминутка React #3. Hot Module Replacement или React Hot Loader?",
-      "url": "https://youtu.be/pHLzvtoOI3A",
-      "lang": "ru",
-      "tags": [
-        "video",
-        "webpack",
-        "react"
+      "caption": "Пятиминутка React",
+      "series": [
+        {
+          "caption": "Выпуск #3. Hot Module Replacement или React Hot Loader?",
+          "url": "https://youtu.be/pHLzvtoOI3A",
+          "tags": [
+            "webpack",
+            "react"
+          ],
+          "legend": "В чём разница между Hot Module Replacement или React Hot Loader и как это всё работает?"
+        },
+        {
+          "caption": "Выпуск #4. Redux, Actions подряд",
+          "url": "https://youtu.be/xcZNBeMddq0",
+          "tags": [
+            "react",
+            "state_management",
+            "redux"
+          ],
+          "legend": "Redux: что не так с отправкой нескольких Actions подряд (синхронно)?"
+        },
+        {
+          "caption": "Выпуск #5. Redux, Derived Data",
+          "url": "https://youtu.be/9FQs9VRxJcI",
+          "tags": [
+            "react",
+            "state_management",
+            "redux"
+          ],
+          "legend": "Redux и вычисляемые поля. Сталкивались ли вы с проблемой распухающих объектов Action, поскольку одни редьюсеры требуют данные от других редьюсеров? Где и как правильно работать с вычисляемыми полями?"
+        },
+        {
+          "caption": "Выпуск #9. Lifting State Up Example Explained",
+          "url": "https://youtu.be/8u0ym886JuQ",
+          "tags": [
+            "react",
+            "state_management"
+          ],
+          "legend": "Разберём на пальцах пример из документации к React из главы \"Lifting State Up\" про два поля ввода температуры по Цельсию и по Фаренгейту и как правильно их синхронизировать."
+        },
+        {
+          "caption": "Выпуск #10. Redux and Local State",
+          "url": "https://youtu.be/sXfij1rj6zI",
+          "tags": [
+            "react",
+            "state_management",
+            "redux"
+          ],
+          "legend": "Вопрос: можно ли и нужно ли использовать локальный state в компонентах при использовании Redux? Краткий ответ: локальный state это нормально, используем!"
+        },
+        {
+          "caption": "Выпуск #11. this.state или this.effectiveValue?",
+          "url": "https://youtu.be/Ap_XJp4bnsQ",
+          "tags": [
+            "react",
+            "state_management",
+            "redux"
+          ],
+          "legend": "Если мы решили хранить локальное состояние компонента где-то внутри компонента (а не в Redux), стоит ли это делать в this.state или завести отдельную переменную this.effectiveValue?"
+        },
+        {
+          "caption": "Выпуск #13. Redux Business Logic (part 1)",
+          "url": "https://youtu.be/s-CzuVMEj4M",
+          "tags": [
+            "react",
+            "state_management",
+            "redux",
+            "performance"
+          ],
+          "legend": "Где в React-Redux приложениии должен быть расположен код отвечающий за бизнес логику? Рассмотрим частный пример с бизнес логикой исключительно на клиенте."
+        },
+        {
+          "caption": "Выпуск #14. Redux Business Logic (part 2)",
+          "url": "https://youtu.be/ST_0yLXXQeo",
+          "tags": [
+            "react",
+            "state_management",
+            "redux",
+            "performance"
+          ],
+          "legend": "В предыдущем выпуске подкаста мы разбирались с вопросом где разместить бизнес логику при использовании Redux. Но остались острые вопросы, которые я не успел осветить. Углубимся в тему ещё немного!"
+        },
+        {
+          "caption": "Выпуск #29. Мониторинг ошибок",
+          "url": "https://youtu.be/7JeMpnvzs8M",
+          "tags": [
+            "video",
+            "javascript"
+          ],
+          "legend": "Как обрабатывать ошибки в JavaScript и как их эффективно мониторить на production? По итогам RamblerFront& meetup #2."
+        },
+        {
+          "caption": "Выпуск #30. setState и организация кода",
+          "url": "https://5minreact.ru/posts/030-setstate-practice/",
+          "tags": [
+            "react",
+            "state_management"
+          ],
+          "legend": "Небольшая заметка, размышление на тему можно ли жить без внешнего контейнера состояния и какие при этом возникают проблемы и неудобства? Как организовывать код?"
+        }
       ],
-      "legend": "В чём разница между Hot Module Replacement или React Hot Loader и как это всё работает?"
-    },
-    {
-      "caption": "Пятиминутка React #4. Redux, Actions подряд",
-      "url": "https://youtu.be/xcZNBeMddq0",
-      "lang": "ru",
-      "tags": [
-        "video",
-        "react",
-        "state_management",
-        "redux"
-      ],
-      "legend": "Redux: что не так с отправкой нескольких Actions подряд (синхронно)?"
-    },
-    {
-      "caption": "Пятиминутка React #5. Redux, Derived Data",
-      "url": "https://youtu.be/9FQs9VRxJcI",
-      "lang": "ru",
-      "tags": [
-        "video",
-        "react",
-        "state_management",
-        "redux"
-      ],
-      "legend": "Redux и вычисляемые поля. Сталкивались ли вы с проблемой распухающих объектов Action, поскольку одни редьюсеры требуют данные от других редьюсеров? Где и как правильно работать с вычисляемыми полями?"
-    },
-    {
-      "caption": "Пятиминутка React #9. Lifting State Up Example Explained",
-      "url": "https://youtu.be/8u0ym886JuQ",
-      "lang": "ru",
-      "tags": [
-        "video",
-        "react",
-        "state_management"
-      ],
-      "legend": "Разберём на пальцах пример из документации к React из главы \"Lifting State Up\" про два поля ввода температуры по Цельсию и по Фаренгейту и как правильно их синхронизировать."
-    },
-    {
-      "caption": "Пятиминутка React #10. Redux and Local State",
-      "url": "https://youtu.be/sXfij1rj6zI",
-      "lang": "ru",
-      "tags": [
-        "video",
-        "react",
-        "state_management",
-        "redux"
-      ],
-      "legend": "Вопрос: можно ли и нужно ли использовать локальный state в компонентах при использовании Redux? Краткий ответ: локальный state это нормально, используем!"
-    },
-    {
-      "caption": "Пятиминутка React #11. this.state или this.effectiveValue?",
-      "url": "https://youtu.be/Ap_XJp4bnsQ",
-      "lang": "ru",
-      "tags": [
-        "video",
-        "react",
-        "state_management",
-        "redux"
-      ],
-      "legend": "Если мы решили хранить локальное состояние компонента где-то внутри компонента (а не в Redux), стоит ли это делать в this.state или завести отдельную переменную this.effectiveValue?"
-    },
-    {
-      "caption": "Пятиминутка React #13. Redux Business Logic (part 1)",
-      "url": "https://youtu.be/s-CzuVMEj4M",
-      "lang": "ru",
-      "tags": [
-        "video",
-        "react",
-        "state_management",
-        "redux",
-        "performance"
-      ],
-      "legend": "Где в React-Redux приложениии должен быть расположен код отвечающий за бизнес логику? Рассмотрим частный пример с бизнес логикой исключительно на клиенте."
-    },
-    {
-      "caption": "Пятиминутка React #14. Redux Business Logic (part 2)",
-      "url": "https://youtu.be/ST_0yLXXQeo",
-      "lang": "ru",
-      "tags": [
-        "video",
-        "react",
-        "state_management",
-        "redux",
-        "performance"
-      ],
-      "legend": "В предыдущем выпуске подкаста мы разбирались с вопросом где разместить бизнес логику при использовании Redux. Но остались острые вопросы, которые я не успел осветить. Углубимся в тему ещё немного!"
+      "lang": "ru"
     },
     {
       "caption": "getDerivedStateFromState – или как сделать из простой проблемы сложную (by Anton Korzunov aka Kashey)",
@@ -3266,27 +3275,6 @@
       "tags": [
         "typescript"
       ]
-    },
-    {
-      "caption": "Пятиминутка React #29. Мониторинг ошибок",
-      "url": "https://youtu.be/7JeMpnvzs8M",
-      "lang": "ru",
-      "tags": [
-        "video",
-        "javascript"
-      ],
-      "legend": "Как обрабатывать ошибки в JavaScript и как их эффективно мониторить на production? По итогам RamblerFront& meetup #2."
-    },
-    {
-      "caption": "Пятиминутка React #30. setState и организация кода",
-      "url": "https://5minreact.ru/posts/030-setstate-practice/",
-      "lang": "ru",
-      "tags": [
-        "audio",
-        "react",
-        "state_management"
-      ],
-      "legend": "Небольшая заметка, размышление на тему можно ли жить без внешнего контейнера состояния и какие при этом возникают проблемы и неудобства? Как организовывать код?"
     },
     {
       "caption": "How to Write a Git Commit Message (by Chris Beams)",
