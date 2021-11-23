@@ -3,6 +3,7 @@
 * Format LinkList item as card
   * Add optional **author** field and sorting by author
   * Add optional **mediaType** field and sorting by media (video, audio etc.)
+* Remove **#rocket_science** tag
 * Add scrollToTop button at Naming page
 * Add request cancellation with AbortController
 * (Maybe) Migrate to axios
