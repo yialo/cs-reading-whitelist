@@ -5235,6 +5235,41 @@
         "react",
         "react_fiber"
       ]
+    },
+    {
+      "caption": "The Difference between a Good Take-Home Project and a Not-So-Good",
+      "url": "https://www.gimtec.io/articles/the-difference-between-a-good-take-home-project-and-a-not-so-good/",
+      "lang": "en",
+      "tags": [
+        "clean_code"
+      ]
+    },
+    {
+      "caption": "Rust Is The Future of JavaScript Infrastructure (by Lee Robinson)",
+      "url": "https://leerob.io/blog/rust",
+      "lang": "en",
+      "tags": [
+        "rust",
+        "javascript",
+        "opinionated"
+      ]
+    },
+    {
+      "caption": "Дженерики в TypeScript (Сергей Вахрамов)",
+      "url": "https://habr.com/ru/company/tinkoff/blog/588655/",
+      "lang": "ru",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "Introducing downshift for React (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/introducing-downshift-for-react",
+      "lang": "en",
+      "tags": [
+        "react",
+        "a11y"
+      ]
     }
   ]
 }
