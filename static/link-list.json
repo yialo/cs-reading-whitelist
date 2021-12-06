@@ -1973,17 +1973,6 @@
       ]
     },
     {
-      "caption": "React Things",
-      "url": "https://github.com/rtivital/react-things",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "react",
-        "4consider"
-      ],
-      "legend": "коллекция материалов для изучения ES2015, React, Redux, Webpack, Babel и т.п."
-    },
-    {
       "caption": "Picturefill",
       "url": "https://scottjehl.github.io/picturefill/",
       "lang": "en",
@@ -5269,6 +5258,23 @@
       "tags": [
         "react",
         "a11y"
+      ]
+    },
+    {
+      "caption": "How to be Lazy, Dumb, and Successful (by Jeff Atwood)",
+      "url": "https://blog.codinghorror.com/how-to-be-lazy-dumb-and-successful/",
+      "lang": "en",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "caption": "Почему джуны никому не нужны и как это изменить? (Максим Кравец)",
+      "url": "https://habr.com/ru/post/585892/",
+      "lang": "ru",
+      "tags": [
+        "project_management",
+        "productivity"
       ]
     }
   ]
