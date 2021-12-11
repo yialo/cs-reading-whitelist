@@ -267,15 +267,6 @@
       ]
     },
     {
-      "caption": "Просто о Vim",
-      "url": "http://rus-linux.net/MyLDP/BOOKS/Vim/prosto-o-vim-01.html",
-      "lang": "ru",
-      "tags": [
-        "editors",
-        "4consider"
-      ]
-    },
-    {
       "caption": "10 essential Vim plugins for 2018",
       "url": "https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9",
       "lang": "en",
@@ -407,50 +398,6 @@
       "legend": "Внешне курс устарел, поэтому в 2021 году это скорее сборник задач, а не уроки по списыванию чужого кода с доски. Если честно выполнять все поставленные автором задачи, читая документацию новых версий используемых библиотек (или их современных аналогов, npmtrends.com в помощь), будут получены реальные практические знания. Впасть в иллюзию компетентности не получится: или делаешь, или признаёшь, что не хочешь разбираться."
     },
     {
-      "caption": "NodeJS Event Loop",
-      "series": [
-        {
-          "caption": "Part 1: Event Loop and the Big Picture",
-          "url": "https://blog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810"
-        },
-        {
-          "caption": "Part 2: Timers, Immediates and Process.nextTick",
-          "url": "https://blog.insiderattack.net/timers-immediates-and-process-nexttick-nodejs-event-loop-part-2-2c53fd511bb3"
-        },
-        {
-          "caption": "Part 3: Promises, Next-Ticks, and Immediates",
-          "url": "https://blog.insiderattack.net/promises-next-ticks-and-immediates-nodejs-event-loop-part-3-9226cbe7a6aa"
-        },
-        {
-          "caption": "Part 4: Handling IO",
-          "url": "https://blog.insiderattack.net/handling-io-nodejs-event-loop-part-4-418062f917d1"
-        },
-        {
-          "caption": "Part 5: Event Loop Best Practices",
-          "url": "https://blog.insiderattack.net/event-loop-best-practices-nodejs-event-loop-part-5-e29b2b50bfe2"
-        },
-        {
-          "caption": "Part 6: New Changes to the Timers and Microtasks in Node v11.0.0 (and above)",
-          "url": "https://blog.insiderattack.net/new-changes-to-timers-and-microtasks-from-node-v11-0-0-and-above-68d112743eb3"
-        }
-      ],
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "Node JS Tutorial for Beginners (The Net Ninja)",
-      "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
-      "lang": "en",
-      "tags": [
-        "nodejs",
-        "video",
-        "4consider"
-      ]
-    },
-    {
       "caption": "Готовим идеальный CSS",
       "url": "https://habr.com/ru/company/constanta/blog/428800/",
       "lang": "ru",
@@ -546,16 +493,6 @@
       "lang": "ru",
       "tags": [
         "css"
-      ]
-    },
-    {
-      "caption": "Advanced CSS Theming with Custom Properties and JavaScript",
-      "url": "https://www.sitepoint.com/css-theming-custom-properties-javascript/",
-      "lang": "en",
-      "tags": [
-        "css",
-        "css_custom_properties",
-        "4consider"
       ]
     },
     {
@@ -661,15 +598,6 @@
       "tags": [
         "web_components",
         "js"
-      ]
-    },
-    {
-      "caption": "Understanding the Critical Rendering Path",
-      "url": "https://bitsofco.de/understanding-the-critical-rendering-path/",
-      "lang": "en",
-      "tags": [
-        "performance",
-        "4consider"
       ]
     },
     {
@@ -802,15 +730,6 @@
       "lang": "ru",
       "tags": [
         "css"
-      ]
-    },
-    {
-      "caption": "Постепенная деградация",
-      "url": "https://htmlacademy.ru/blog/useful/html/graceful-degradation",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "4consider"
       ]
     },
     {
@@ -1023,68 +942,10 @@
       ]
     },
     {
-      "caption": "CSS-features | Glo Academy",
-      "url": "https://www.youtube.com/playlist?list=PL3LQJkGQtzc56HquxrkwPdQt9Q1wHm21P",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "video",
-        "4consider"
-      ],
-      "legend": "разбор вёрстки сложных кейсов (3D-трансформации, анимации)"
-    },
-    {
       "caption": "Паттерны ООП в метафорах",
       "url": "https://habr.com/ru/post/136766/",
       "lang": "ru",
       "tags": [
-        "oop",
-        "architecture"
-      ]
-    },
-    {
-      "caption": "ООП в картинках",
-      "url": "https://habr.com/ru/post/463125/",
-      "lang": "ru",
-      "tags": [
-        "oop",
-        "architecture",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "SolidBook",
-      "url": "https://ota-solid.now.sh/",
-      "lang": "ru",
-      "tags": [
-        "oop",
-        "architecture",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "Код с запашком",
-      "url": "https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4_%D1%81_%D0%B7%D0%B0%D0%BF%D0%B0%D1%88%D0%BA%D0%BE%D0%BC",
-      "lang": "ru",
-      "tags": [
-        "4consider",
-        "clean_code"
-      ]
-    },
-    {
-      "caption": "Рефакторинг",
-      "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3",
-      "lang": "ru",
-      "tags": [
-        "clean_code"
-      ]
-    },
-    {
-      "caption": "Refactoring Guru",
-      "url": "https://refactoring.guru/ru/",
-      "lang": "ru",
-      "tags": [
-        "4consider",
         "oop",
         "architecture"
       ]
@@ -1196,17 +1057,6 @@
         "clean_code"
       ],
       "legend": "список рекомендаций по неусложнению жизни себе и другим участникам проекта по вёрстке"
-    },
-    {
-      "caption": "Sensible CSS Guidelines for large scale projects",
-      "url": "https://github.com/chris-pearce/css-guidelines",
-      "lang": "en",
-      "tags": [
-        "css",
-        "css_naming",
-        "4consider"
-      ],
-      "legend": "много полезного, в частности: набор вариантов написания CSS-классов для состояний (JS hooks), глобальные и локальные переменные"
     },
     {
       "caption": "Battling BEM CSS: 10 Common Problems And How To Avoid Them",
@@ -1324,16 +1174,6 @@
       "tags": [
         "css",
         "css_grid"
-      ]
-    },
-    {
-      "caption": "7 способов размещения элементов с помощью макета CSS Grid",
-      "url": "https://webformyself.com/7-sposobov-razmeshheniya-elementov-s-pomoshhyu-maketa-css-grid/",
-      "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid",
-        "4consider"
       ]
     },
     {
@@ -1805,15 +1645,6 @@
       ]
     },
     {
-      "caption": "Что за черт, Javascript",
-      "url": "https://habr.com/ru/company/mailru/blog/335292/",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "4consider"
-      ]
-    },
-    {
       "caption": "Prototype, proto и оператор 'new'",
       "url": "https://habr.com/ru/post/140810/",
       "lang": "ru",
@@ -1836,16 +1667,6 @@
       "lang": "ru",
       "tags": [
         "javascript"
-      ]
-    },
-    {
-      "caption": "Паттерны для масштабируемых JavaScript-приложений (Эдди Османи)",
-      "url": "http://largescalejs.ru/",
-      "lang": "ru",
-      "tags": [
-        "javascript",
-        "architecture",
-        "4consider"
       ]
     },
     {
@@ -1876,26 +1697,6 @@
     {
       "caption": "ES6: Расширение литерала объектов",
       "url": "http://jsraccoon.ru/es6-object-literal",
-      "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
-    },
-    {
-      "caption": "Справочник современных концепций JavaScript",
-      "series": [
-        {
-          "caption": "Часть 1. Основы функционального программирования, реактивного программирования и функционального реактивного программирования на JavaScript",
-          "url": "https://medium.com/devschacht/glossary-of-modern-javascript-concepts-1198b24e8f56"
-        },
-        {
-          "caption": "Часть 2. Изучите область видимости, замыкания, потоки данных и концепции, широко используемые в современных JavaScript фреймворках и приложениях",
-          "url": "https://medium.com/devschacht/%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D0%B9-javascript-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-8ecf07f3f36a",
-          "tags": [
-            "4consider"
-          ]
-        }
-      ],
       "lang": "ru",
       "tags": [
         "javascript"
@@ -1984,17 +1785,6 @@
       "legend": "полифил для поддержки элемента &lt;picture&gt; в IE"
     },
     {
-      "caption": "Everything you always wanted to know about touch icons",
-      "url": "https://mathiasbynens.be/notes/touch-icons",
-      "lang": "en",
-      "tags": [
-        "graphics",
-        "favicons",
-        "4consider"
-      ],
-      "legend": "как подготовить favicons, touch icons, tile icons"
-    },
-    {
       "caption": "Real Favicon Generator",
       "url": "https://realfavicongenerator.net/",
       "lang": "en",
@@ -2032,17 +1822,6 @@
         "graphics",
         "colors"
       ]
-    },
-    {
-      "caption": "'srcset' and 'sizes'",
-      "url": "https://ericportis.com/posts/2014/srcset-sizes/",
-      "lang": "en",
-      "tags": [
-        "graphics",
-        "html",
-        "4consider"
-      ],
-      "legend": "углублённый разбор функционала элемента &lt;picture&gt;"
     },
     {
       "caption": "Сколько нужно верстальщиков, чтобы вставить <picture>? (Вадим Макеев)",
@@ -2114,34 +1893,6 @@
       "caption": "Размеры в SVG",
       "url": "http://css.yoksel.ru/svg-sizes/",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "svg"
-      ]
-    },
-    {
-      "caption": "Understanding SVG Coordinate Systems and Transformations",
-      "series": [
-        {
-          "caption": "Part 1 — The viewport, viewBox, and preserveAspectRatio",
-          "url": "https://www.sarasoueidan.com/blog/svg-coordinate-systems/"
-        },
-        {
-          "caption": "Part 2 — The transform Attribute",
-          "url": "https://www.sarasoueidan.com/blog/svg-transformations/",
-          "tags": [
-            "4consider"
-          ]
-        },
-        {
-          "caption": "Part 3 — Establishing New Viewports",
-          "url": "https://www.sarasoueidan.com/blog/nesting-svgs/",
-          "tags": [
-            "4consider"
-          ]
-        }
-      ],
-      "lang": "en",
       "tags": [
         "graphics",
         "svg"
@@ -2241,15 +1992,6 @@
       ]
     },
     {
-      "caption": "Иконочные шрифты и почему они не нужны",
-      "url": "https://nicothin.pro/page/icon-fonts-2017",
-      "lang": "ru",
-      "tags": [
-        "typography",
-        "4consider"
-      ]
-    },
-    {
       "caption": "Управляем поведением font-face в CSS",
       "url": "https://ymatuhin.ru/front-end/font-display/",
       "lang": "ru",
@@ -2286,25 +2028,6 @@
         "video"
       ],
       "legend": "подходы к решению проблемы масштабирования текста"
-    },
-    {
-      "caption": "Исчерпывающее руководство по стратегиям загрузки веб-шрифтов",
-      "url": "https://css-live.ru/articles/ischerpyvayushhee-rukovodstvo-po-strategiyam-zagruzki-veb-shriftov.html",
-      "lang": "ru",
-      "tags": [
-        "typography",
-        "performance",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "Введение в систему 8pt сеток",
-      "url": "https://habr.com/ru/company/digital-ecosystems/blog/319700/",
-      "lang": "ru",
-      "tags": [
-        "4consider",
-        "ux_ui"
-      ]
     },
     {
       "caption": "Как озаглавить форму записи в парикмахерскую",
@@ -2379,16 +2102,6 @@
         "git"
       ],
       "legend": "настольная книга"
-    },
-    {
-      "caption": "Скринкаст по Git (Learn.javascript.ru)",
-      "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h",
-      "lang": "ru",
-      "tags": [
-        "git",
-        "4consider",
-        "video"
-      ]
     },
     {
       "caption": "Learn Git Branching",
@@ -2544,42 +2257,12 @@
       ]
     },
     {
-      "caption": "11 концепций и команд git, которые заставят вас плакать",
-      "url": "https://proglib.io/p/painful-git/",
-      "lang": "ru",
-      "tags": [
-        "git",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "Understanding Git Conceptually",
-      "url": "https://www.sbf5.com/~cduan/technical/git/",
-      "lang": "en",
-      "tags": [
-        "git",
-        "4consider"
-      ],
-      "legend": "сверхглубокое погружение в Git"
-    },
-    {
-      "caption": "Git — инструмент для совместной работы, с нуля и до регламента в команде (Сергей Сергеев)",
-      "url": "https://www.youtube.com/watch?v=yDSs80lu3ak",
-      "lang": "ru",
-      "tags": [
-        "git",
-        "video",
-        "4consider"
-      ]
-    },
-    {
-      "caption": "Джуность",
+      "caption": "Джуность: грейды Digital специалистов",
       "url": "https://anmedio.github.io/junost/",
       "lang": "ru",
       "tags": [
-        "general"
-      ],
-      "legend": "грейды Digital-специалистов"
+        "productivity"
+      ]
     },
     {
       "caption": "Редакс в реальной жизни (Иван Акулов)",
@@ -2750,16 +2433,6 @@
         "productivity",
         "soft_skills"
       ]
-    },
-    {
-      "caption": "70 JavaScript Interview Questions",
-      "url": "https://dev.to/macmacky/70-javascript-interview-questions-5gfi",
-      "lang": "en",
-      "tags": [
-        "javascript",
-        "4consider"
-      ],
-      "legend": "подборка вопросов и ответов по JavaScript для собеседования"
     },
     {
       "caption": "Принцип экономии мыслетоплива (Максим Дорофеев)",
@@ -4118,7 +3791,7 @@
       ]
     },
     {
-      "caption": "You Probably Don't Need Derived State",
+      "caption": "You Probably Don't Need Derived State (by Brian Vaughn)",
       "url": "https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html",
       "lang": "en",
       "tags": [
@@ -5275,6 +4948,14 @@
       "tags": [
         "project_management",
         "productivity"
+      ]
+    },
+    {
+      "caption": "Update on Async Rendering (by Brian Vaughn)",
+      "url": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html",
+      "lang": "en",
+      "tags": [
+        "react"
       ]
     }
   ]
