@@ -85,7 +85,7 @@
     "husky": "7.0.4",
     "jest": "27.4.4",
     "nodemon": "2.0.15",
-    "stylelint-config-yialo": "0.2.17",
+    "stylelint-config-yialo": "0.2.19",
     "typescript": "4.5.3",
     "webpack-dev-server": "4.6.0"
   },
