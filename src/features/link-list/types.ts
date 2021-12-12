@@ -17,17 +17,18 @@ type TBaseSubject = {
   caption: SubjectCaption;
   lang: SubjectLang;
   legend?: SubjectLegend;
-  tags: SubjectTag[];
 };
 
 export type TSingleSublect = TBaseSubject & {
   series?: undefined;
   url: SubjectUrl;
+  tags: SubjectTag[];
 };
 
 export type TSeriesSubject = TBaseSubject & {
   series: TSubjectSeriesItem[];
   url?: undefined;
+  tags?: SubjectTag[];
 };
 
 export type TSubject = TSingleSublect | TSeriesSubject;
