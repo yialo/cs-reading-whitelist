@@ -37,7 +37,6 @@ module.exports = (env = {}) => {
     analyze: needAnalyze,
     nocircular: noCheckCircularDeps = false,
     target,
-    tscheck: needTypeCheck,
     write,
   } = env;
 
@@ -274,6 +273,16 @@ module.exports = (env = {}) => {
           '__GLOBAL_ENV_VARIABLE__MODE__': JSON.stringify(process.env.NODE_ENV),
           '__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__': JSON.stringify(process.env.PUBLIC_PATH),
         }),
+        new TsCheckerWebpackPlugin({
+          async: isDevelopment,
+          typescript: {
+            configFile: path.join(__dirname, 'tsconfig.json'),
+            diagnosticOptions: {
+              semantic: true,
+              syntactic: true,
+            },
+          },
+        }),
       ];
 
       if (!isProduction) {
@@ -283,18 +292,6 @@ module.exports = (env = {}) => {
       if (needAnalyze) {
         pluginList.push(new BundleAnalyzerPlugin({
           analyzerPort: 8889,
-        }));
-      }
-
-      if (needTypeCheck) {
-        pluginList.push(new TsCheckerWebpackPlugin({
-          typescript: {
-            configFile: path.join(__dirname, 'tsconfig.json'),
-            diagnosticOptions: {
-              semantic: true,
-              syntactic: true,
-            },
-          },
         }));
       }
 

@@ -7,7 +7,6 @@
     "deploy": "gh-pages -d ./dist/",
     "dev": "npm run webpack:serve -- --env target=development",
     "dev:nocircular": "npm run dev -- --env nocircular",
-    "dev:tscheck": "npm run dev -- --env tscheck",
     "dev:write": "npm run dev -- --env write",
     "lint": "npm run lint:styles && npm run lint:scripts && npm run typecheck",
     "lint:scripts": "eslint ./*.js ./src/**/*.{j,t}s?(x)",
