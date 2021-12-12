@@ -2142,9 +2142,9 @@
       ]
     },
     {
-      "caption": "Шпаргалка по git-flow",
-      "url": "https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html",
-      "lang": "ru",
+      "caption": "git-flow cheatsheet (by Daniel Kummer)",
+      "url": "https://danielkummer.github.io/git-flow-cheatsheet/index.html",
+      "lang": "en",
       "tags": [
         "git",
         "git_flow",
@@ -2756,7 +2756,6 @@
         "productivity"
       ]
     },
-
     {
       "caption": "Пятиминутка React",
       "series": [
