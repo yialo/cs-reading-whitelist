@@ -31,12 +31,16 @@ const selectFilteredList = createSelector(
       switch (filter) {
         case FILTER.CAPTION: {
           const hasMatchInMainCaption = item.caption.toLowerCase().includes(matcher);
+
           return hasMatchInMainCaption
             || item.series?.some((it) => it.caption.toLowerCase().includes(matcher));
         }
 
         case FILTER.HASHTAG: {
-          const hasMatchInMainTags = item.tags.some((tag) => tag.toLowerCase().includes(matcher));
+          const hasMatchInMainTags = !!item.tags?.some(
+            (tag) => tag.toLowerCase().includes(matcher),
+          );
+
           return hasMatchInMainTags
             || item.series?.some((it) => (
               it.tags?.some((tag) => tag.toLowerCase().includes(matcher))
