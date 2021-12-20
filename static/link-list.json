@@ -2867,8 +2867,7 @@
       "tags": [
         "react",
         "state_management",
-        "functional_programming",
-        "rocket_science"
+        "fp"
       ]
     },
     {
@@ -2908,8 +2907,7 @@
         "react",
         "state_management",
         "routing",
-        "mobx",
-        "rocket_science"
+        "mobx"
       ]
     },
     {
@@ -4955,6 +4953,14 @@
       "lang": "en",
       "tags": [
         "react"
+      ]
+    },
+    {
+      "caption": "Лень ‒ это нормально: почему мозг не хочет учиться, и как его разгрузить",
+      "url": "https://trends.rbc.ru/trends/education/61b30e6b9a79479f67a7b843",
+      "lang": "ru",
+      "tags": [
+        "productivity"
       ]
     }
   ]
