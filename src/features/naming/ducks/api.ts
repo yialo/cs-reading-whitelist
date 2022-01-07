@@ -1,4 +1,4 @@
-import { TNamingSection } from '../types';
+import type { TNamingSection } from '../types';
 
 export type TNamingApiResponsePayload = {
   data: TNamingSection[];

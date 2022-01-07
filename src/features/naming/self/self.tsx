@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Preloader } from '@/components/c_preloader';
 import { PROCESS } from '@/enums';
 import { MainLayout } from '@/layouts/c_main-layout';
-import { TState } from '@/store/state';
+import type { TState } from '@/store/state';
 
 import { NamingContents } from '../components/c_contents';
 import { NamingList } from '../components/c_list';

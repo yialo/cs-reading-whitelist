@@ -1,10 +1,10 @@
-import { Reducer } from 'redux';
+import type { Reducer } from 'redux';
 
-import { TProcess } from '@/enums';
-import { TAction } from '@/types/redux';
+import type { TProcess } from '@/enums';
+import type { TAction } from '@/types/redux';
 
-import { TNamingSection } from '../types';
-import { ACTION_TYPE } from './action-types';
+import type { TNamingSection } from '../types';
+import type { ACTION_TYPE } from './action-types';
 
 export type TNamingState = {
   process: TProcess;

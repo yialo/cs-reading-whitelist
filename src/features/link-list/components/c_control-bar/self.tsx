@@ -4,9 +4,9 @@ import cn from 'clsx';
 import { Button } from '@/components/c_button';
 import { Select } from '@/components/c_select';
 import { TextInput } from '@/components/c_text-input';
-import { TClassNameable } from '@/types';
+import type { TClassNameable } from '@/types/common';
 
-import { FILTER, TFilter, SORTING, TSorting } from '../../enums';
+import { FILTER, type TFilter, SORTING, type TSorting } from '../../enums';
 
 import { ControlBarAmountMeter } from './c_amount-meter';
 

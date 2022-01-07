@@ -1,10 +1,10 @@
 import { runSaga } from 'redux-saga';
-import { PutEffect } from 'redux-saga/effects';
+import type { PutEffect } from 'redux-saga/effects';
 
-import { TNamingSection } from '../types';
+import type { TNamingSection } from '../types';
 import { ACTION_TYPE } from './action-types';
-import { TNamingApiResponsePayload } from './api';
-import { TNamingAction } from './types';
+import type { TNamingApiResponsePayload } from './api';
+import type { TNamingAction } from './types';
 
 type TApiCallerMock = jest.MockedFunction<
 () => Promise<TNamingApiResponsePayload>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cn from 'clsx';
 
-import { TClassNameable } from '@/types';
+import type { TClassNameable } from '@/types/common';
 
 import style from './style.scss';
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cn from 'clsx';
 
-import { SubjectLang, SubjectLegend, SubjectTag } from '../../types';
+import type { SubjectLang, SubjectLegend, SubjectTag } from '../../types';
 
 import style from './style.scss';
 

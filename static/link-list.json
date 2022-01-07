@@ -4962,6 +4962,40 @@
       "tags": [
         "productivity"
       ]
+    },
+    {
+      "caption": "React Associated Components (by Marshall Bowers)",
+      "url": "https://maxdeviant.com/posts/2021/react-associated-components/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Streamlining React Elements (by Sebastian Markbåge)",
+      "url": "https://reactjs.org/blog/2015/02/24/streamlining-react-elements.html",
+      "lang": "en",
+      "tags": [
+        "react"
+      ],
+      "legend": "Объясняется ряд изменений в реализации React-элементов, что произошли в 2015 году"
+    },
+    {
+      "caption": "Анонимные функции в JavaScript (by Sergey Ufocoder)",
+      "url": "https://medium.com/devschacht/anonymous-functions-in-javascript-ff6b9ba85de0",
+      "lang": "ru",
+      "tags": [
+        "javascript"
+      ]
+    },
+    {
+      "caption": "SMOOSHCAST: React Fiber Deep Dive with Dan Abramov",
+      "url": "https://youtu.be/aS41Y_eyNrU",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_fiber"
+      ]
     }
   ]
 }

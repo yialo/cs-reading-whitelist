@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-import { TState } from '@/store/state';
+import type { TState } from '@/store/state';
 
 export const selectContent = (state: TState) => state.naming.content;
 

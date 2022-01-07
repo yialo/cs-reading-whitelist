@@ -2,7 +2,7 @@ import { PROCESS } from '@/enums';
 
 import { FILTER, SORTING } from '../enums';
 import { ACTION_TYPE } from './action-types';
-import { TLinkListReducer, TLinkListState } from './types';
+import type { TLinkListReducer, TLinkListState } from './types';
 
 const INITIAL_PAGE = 1;
 

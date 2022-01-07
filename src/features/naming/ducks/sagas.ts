@@ -1,7 +1,7 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
 
 import { ACTION_TYPE } from './action-types';
-import { fetchNaming, TNamingApiResponsePayload } from './api';
+import { fetchNaming, type TNamingApiResponsePayload } from './api';
 
 export const fetchNamingWorker = function* () {
   try {

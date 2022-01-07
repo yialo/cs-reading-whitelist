@@ -1,11 +1,11 @@
-import { Reducer } from 'redux';
+import type { Reducer } from 'redux';
 
-import { TProcess } from '@/enums';
-import { TAction } from '@/types/redux';
+import type { TProcess } from '@/enums';
+import type { TAction } from '@/types/redux';
 
-import { TFilter, TSorting } from '../enums';
-import { TSubject } from '../types';
-import { ACTION_TYPE } from './action-types';
+import type { TFilter, TSorting } from '../enums';
+import type { TSubject } from '../types';
+import type { ACTION_TYPE } from './action-types';
 
 export type TLinkListState = {
   list: TSubject[];

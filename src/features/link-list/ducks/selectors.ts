@@ -1,7 +1,7 @@
 import { createSelector } from 'reselect';
 
 import { LIST_PAGE_SIZE } from '@/constants';
-import { TState } from '@/store/state';
+import type { TState } from '@/store/state';
 
 import { FILTER, SORTING } from '../enums';
 

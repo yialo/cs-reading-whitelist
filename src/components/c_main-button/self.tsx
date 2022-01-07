@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cn from 'clsx';
 
-import { Button, TButtonProps } from '@/components/c_button';
+import { Button, type TButtonProps } from '@/components/c_button';
 
 import style from './style.scss';
 

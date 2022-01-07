@@ -1,6 +1,6 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
 
-import { TSubject } from '../types';
+import type { TSubject } from '../types';
 import { ACTION_TYPE } from './action-types';
 
 type TLinkListApiResponsePayload = {
