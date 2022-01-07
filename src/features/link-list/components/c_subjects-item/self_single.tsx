@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import { TClassNameable } from '@/types';
+import type { TClassNameable } from '@/types/common';
 
-import { TSingleSublect } from '../../types';
+import type { TSingleSublect } from '../../types';
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
 

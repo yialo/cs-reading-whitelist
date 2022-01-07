@@ -3,7 +3,7 @@ import cn from 'clsx';
 
 import { Button } from '@/components/c_button';
 import { KEYBOARD_KEY } from '@/enums';
-import { TClassNameable } from '@/types';
+import type { TClassNameable } from '@/types/common';
 
 import style from './style.scss';
 

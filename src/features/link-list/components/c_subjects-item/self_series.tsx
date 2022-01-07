@@ -3,11 +3,11 @@ import cn from 'clsx';
 import { useSelector } from 'react-redux';
 
 import { KEYBOARD_KEY } from '@/enums';
-import { TClassNameable } from '@/types';
+import type { TClassNameable } from '@/types/common';
 import { includes } from '@/utils/typing';
 
 import { selectSearchString } from '../../ducks/selectors';
-import { TSeriesSubject } from '../../types';
+import type { TSeriesSubject } from '../../types';
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
 

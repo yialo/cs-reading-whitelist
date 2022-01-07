@@ -3,7 +3,7 @@ import cn from 'clsx';
 
 import { MainButton } from '@/components/c_main-button';
 import { useHasDarkTheme, useThemeToggle } from '@/components/theme';
-import { TClassNameable } from '@/types';
+import type { TClassNameable } from '@/types/common';
 
 import style from './style.scss';
 

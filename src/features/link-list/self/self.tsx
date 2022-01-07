@@ -24,7 +24,7 @@ import {
   selectVisibleList,
   selectIsLastPage,
 } from '../ducks/selectors';
-import { TFilter, TSorting } from '../enums';
+import type { TFilter, TSorting } from '../enums';
 
 import { ControlBar } from '../components/c_control-bar';
 import { Subjects } from '../components/c_subjects';

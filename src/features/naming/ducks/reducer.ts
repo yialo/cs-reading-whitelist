@@ -1,7 +1,7 @@
 import { PROCESS } from '@/enums';
 
 import { ACTION_TYPE } from './action-types';
-import { TNamingReducer, TNamingState } from './types';
+import type { TNamingReducer, TNamingState } from './types';
 
 const INITIAL_STATE: TNamingState = {
   process: 'IDLE',

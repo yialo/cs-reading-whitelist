@@ -1,4 +1,4 @@
-import { Values } from '@/types/utils';
+import type { Values } from '@/types/utils';
 
 export const FILTER = {
   CAPTION: 'caption',

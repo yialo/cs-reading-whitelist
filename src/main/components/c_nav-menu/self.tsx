@@ -2,8 +2,8 @@ import * as React from 'react';
 import cn from 'clsx';
 import { NavLink } from 'react-router-dom';
 
-import { KEYBOARD_KEY, ROUTE, TRoute } from '@/enums';
-import { TClassNameable } from '@/types';
+import { KEYBOARD_KEY, ROUTE, type TRoute } from '@/enums';
+import type { TClassNameable } from '@/types/common';
 
 import { AppNavMenuIcon } from './c_icon';
 

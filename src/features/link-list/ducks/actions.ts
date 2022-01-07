@@ -1,7 +1,7 @@
-import { TFilter, TSorting } from '../enums';
+import type { TFilter, TSorting } from '../enums';
 
 import { ACTION_TYPE } from './action-types';
-import {
+import type {
   TFetchStartAction,
   TFilterAction,
   TPageAction,

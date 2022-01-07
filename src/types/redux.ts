@@ -1,4 +1,4 @@
-import { Action } from 'redux';
+import type { Action } from 'redux';
 
 export type TAction<T, P = undefined> = P extends undefined
   ? Action<T>

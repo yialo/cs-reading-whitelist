@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import { TClassNameable } from '@/types';
+import type { TClassNameable } from '@/types/common';
 
-import { TSubject, TSeriesSubject } from '../../types';
+import type { TSubject, TSeriesSubject } from '../../types';
 
 import { SeriesSubjectsItem } from './self_series';
 import { SingleSubjectsItem } from './self_single';

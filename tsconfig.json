@@ -6,6 +6,7 @@
     "esModuleInterop": true,
     "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
     "isolatedModules": true,
     "jsx": "preserve",
     "lib": [

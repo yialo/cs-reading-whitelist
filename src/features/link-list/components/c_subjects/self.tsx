@@ -2,9 +2,9 @@ import * as React from 'react';
 import cn from 'clsx';
 
 import { MainButton } from '@/components/c_main-button';
-import { TClassNameable } from '@/types';
+import type { TClassNameable } from '@/types/common';
 
-import { TSubject } from '../../types';
+import type { TSubject } from '../../types';
 import { renderSubjectsItem } from '../c_subjects-item';
 import { SubjectsFallbackMessage } from './c_fallback-message';
 
