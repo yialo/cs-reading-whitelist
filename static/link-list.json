@@ -2738,7 +2738,7 @@
       ]
     },
     {
-      "caption": "Minimal API Surface Area (Sebastian Markbage)",
+      "caption": "Minimal API Surface Area (by Sebastian Markbåge)",
       "url": "https://youtu.be/4anAwXYqLG8",
       "lang": "en",
       "tags": [
@@ -4995,6 +4995,39 @@
       "tags": [
         "react",
         "react_fiber"
+      ]
+    },
+    {
+      "caption": "React Fiber Architecture (by Andrew Clark)",
+      "url": "https://github.com/acdlite/react-fiber-architecture",
+      "lang": "en",
+      "tags": [
+        "react",
+        "react_fiber"
+      ]
+    },
+    {
+      "caption": "React - Basic Theoretical Concepts (by Sebastian Markbåge)",
+      "url": "https://github.com/reactjs/react-basic",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Algebraic Effects for the Rest of Us (by Dan Abramov)",
+      "url": "https://overreacted.io/algebraic-effects-for-the-rest-of-us/",
+      "lang": "en",
+      "tags": [
+        "fp"
+      ]
+    },
+    {
+      "caption": "How Does setState Know What to Do? (by Dan Abramov)",
+      "url": "https://overreacted.io/how-does-setstate-know-what-to-do/",
+      "lang": "en",
+      "tags": [
+        "react"
       ]
     }
   ]
