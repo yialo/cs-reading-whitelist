@@ -5029,6 +5029,40 @@
       "tags": [
         "react"
       ]
+    },
+    {
+      "caption": "React hooks: not magic, just arrays (by Rudi Yardley)",
+      "url": "https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e",
+      "lang": "en",
+      "tags": [
+        "react_hooks"
+      ]
+    },
+    {
+      "caption": "Writing Resilient Components (by Dan Abramov)",
+      "url": "https://overreacted.io/writing-resilient-components/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Things I Don’t Know as of 2018 (by Dan Abramov)",
+      "url": "https://overreacted.io/things-i-dont-know-as-of-2018/",
+      "lang": "en",
+      "tags": [
+        "productivity"
+      ],
+      "legend": "О том, что опыт решения реальных задач важнее количества изученных технологий."
+    },
+    {
+      "caption": "Boolean attributes in HTML and ARIA: what's the difference? (by Hidde de Vries)",
+      "url": "https://hiddedevries.nl/en/blog/2022-01-12-boolean-attributes-in-html-and-aria-whats-the-difference",
+      "lang": "en",
+      "tags": [
+        "html",
+        "wai_aria"
+      ]
     }
   ]
 }
