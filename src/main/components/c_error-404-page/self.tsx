@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import cn from 'clsx';
 
 import { MainLayout } from '@/layouts/c_main-layout';
 
