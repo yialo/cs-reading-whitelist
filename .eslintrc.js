@@ -5,6 +5,9 @@ const tsConfigMixin = {
     tsconfigRootDir: __dirname,
     project: './tsconfig.json',
   },
+  rules: {
+    'react/react-in-jsx-scope': 'off',
+  },
   settings: {
     'import/resolver': {
       typescript: {
