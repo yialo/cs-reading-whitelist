@@ -7,7 +7,6 @@ module.exports = {
       '@babel/plugin-transform-runtime',
       {
         corejs: 3,
-        helpers: true,
       },
     ],
     [
@@ -25,9 +24,7 @@ module.exports = {
     [
       '@babel/preset-env',
       {
-        corejs: 3,
-        bugfixes: true,
-        loose: false,
+        corejs: '3.20',
         modules: process.env.BABEL_ENV === 'test' ? 'auto' : false,
         useBuiltIns: 'usage',
       },
@@ -37,11 +34,6 @@ module.exports = {
       {
         runtime: 'automatic',
         development: process.env.BABEL_ENV === 'development',
-        // pragma: 'React.createElement',
-        // pragmaFrag: 'React.Fragment',
-        throwIfNamespace: true,
-        // useBuiltIns: false,
-        // useSpread: false,
       },
     ],
     [
