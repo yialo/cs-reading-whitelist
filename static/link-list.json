@@ -5063,6 +5063,15 @@
         "html",
         "wai_aria"
       ]
+    },
+    {
+      "caption": "Выведение Action type с помощью TypeScript (Дмитрий Новиков)",
+      "url": "https://habr.com/ru/company/alfa/blog/452620/",
+      "lang": "ru",
+      "tags": [
+        "redux",
+        "typescript"
+      ]
     }
   ]
 }
