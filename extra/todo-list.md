@@ -1,5 +1,6 @@
 # Todo list
 
+* Add search input reset button
 * Add transparency to Header
 * Format LinkList item as card
   * Add optional **author** field and sorting by author
