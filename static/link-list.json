@@ -3880,51 +3880,51 @@
       "series": [
         {
           "caption": "Controlled and uncontrolled form inputs in React don't have to be complicated",
-          "url": "https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/"
+          "url": "https://goshacmd.com/controlled-vs-uncontrolled-inputs-react/"
         },
         {
           "caption": "Transitioning from uncontrolled inputs to controlled",
-          "url": "https://goshakkk.name/turn-uncontrolled-into-controlled/"
+          "url": "https://goshacmd.com/turn-uncontrolled-into-controlled/"
         },
         {
           "caption": "Why not field-level validations?",
-          "url": "https://goshakkk.name/y-no-field-level-validations/"
+          "url": "https://goshacmd.com/y-no-field-level-validations/"
         },
         {
           "caption": "Form recipe: Conditionally disabling the Submit button",
-          "url": "https://goshakkk.name/form-recipe-disable-submit-button-react/"
+          "url": "https://goshacmd.com/form-recipe-disable-submit-button-react/"
         },
         {
           "caption": "Instant form field validation with React's controlled inputs",
-          "url": "https://goshakkk.name/instant-form-fields-validation-react/"
+          "url": "https://goshacmd.com/instant-form-fields-validation-react/"
         },
         {
           "caption": "Validating a React form upon submit",
-          "url": "https://goshakkk.name/submit-time-validation-react/"
+          "url": "https://goshacmd.com/submit-time-validation-react/"
         },
         {
           "caption": "How to handle validations involving several fields?",
-          "url": "https://goshakkk.name/validations-several-fields/"
+          "url": "https://goshacmd.com/validations-several-fields/"
         },
         {
           "caption": "How do you make a React form start out with some values prefilled when editing?",
-          "url": "https://goshakkk.name/react-forms-for-editing/"
+          "url": "https://goshacmd.com/react-forms-for-editing/"
         },
         {
           "caption": "Collecting data from a wizard form",
-          "url": "https://goshakkk.name/wizard-form-collect-info/"
+          "url": "https://goshacmd.com/wizard-form-collect-info/"
         },
         {
           "caption": "Here's what you can do to make migrating your forms to Redux easier in the future",
-          "url": "https://goshakkk.name/prep-forms-for-redux/"
+          "url": "https://goshacmd.com/prep-forms-for-redux/"
         },
         {
           "caption": "Should you store your form state in Redux?",
-          "url": "https://goshakkk.name/should-i-put-form-state-into-redux/"
+          "url": "https://goshacmd.com/should-i-put-form-state-into-redux/"
         },
         {
           "caption": "Making dynamic form inputs with React",
-          "url": "https://goshakkk.name/array-form-inputs/"
+          "url": "https://goshacmd.com/array-form-inputs/"
         }
       ],
       "lang": "en",
@@ -3951,7 +3951,7 @@
     },
     {
       "caption": "Simplest, no-dependency router is... state (by Gosha Arinich)",
-      "url": "https://goshakkk.name/min-viable-router-is-state/",
+      "url": "https://goshacmd.com/min-viable-router-is-state/",
       "lang": "en",
       "tags": [
         "react",
@@ -3970,7 +3970,7 @@
     },
     {
       "caption": "Redux vs MobX vs Flux vs... Do you even need that? (by Gosha Arinich)",
-      "url": "https://goshakkk.name/redux-vs-mobx-vs-flux-etoomanychoices/",
+      "url": "https://goshacmd.com/redux-vs-mobx-vs-flux-etoomanychoices/",
       "lang": "en",
       "tags": [
         "react",
@@ -3979,7 +3979,7 @@
     },
     {
       "caption": "So you completed the official React tutorial. What's next? (by Gosha Arinich)",
-      "url": "https://goshakkk.name/next-steps-official-react-tutorial/",
+      "url": "https://goshacmd.com/next-steps-official-react-tutorial/",
       "lang": "en",
       "tags": [
         "react",
@@ -3988,7 +3988,7 @@
     },
     {
       "caption": "You don't need a tutorial for every-freaking-thing (by Gosha Arinich)",
-      "url": "https://goshakkk.name/no-tutorial-for-everything/",
+      "url": "https://goshacmd.com/no-tutorial-for-everything/",
       "lang": "en",
       "tags": [
         "productivity"
@@ -4004,7 +4004,7 @@
     },
     {
       "caption": "One way NOT to abuse Redux (by Gosha Arinich)",
-      "url": "https://goshakkk.name/one-way-not-to-abuse-redux/",
+      "url": "https://goshacmd.com/one-way-not-to-abuse-redux/",
       "lang": "en",
       "tags": [
         "react",
@@ -4013,7 +4013,7 @@
     },
     {
       "caption": "Redux anti-pattern: dumb mapStateToProps (by Gosha Arinich)",
-      "url": "https://goshakkk.name/redux-antipattern-mapstatetoprops/",
+      "url": "https://goshacmd.com/redux-antipattern-mapstatetoprops/",
       "lang": "en",
       "tags": [
         "react",
@@ -4646,7 +4646,7 @@
     },
     {
       "caption": "3 cases where JavaScript generators rock + understanding them (by Gosha Arinich)",
-      "url": "https://goshakkk.name/javascript-generators-understanding-sample-use-cases/",
+      "url": "https://goshacmd.com/javascript-generators-understanding-sample-use-cases/",
       "lang": "en",
       "tags": [
         "javascript"
