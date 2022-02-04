@@ -48,8 +48,8 @@ export const LinkList: React.FC = () => {
 
   const visibleAmount = isLastPage ? sortedAmount : (LIST_PAGE_SIZE * page);
 
-  const handleSearch: React.ChangeEventHandler<HTMLInputElement> = (evt) => {
-    dispatch(searchInList(evt.target.value));
+  const handleSearch = (value: string) => {
+    dispatch(searchInList(value));
   };
 
   const handleShowMoreClick = () => {

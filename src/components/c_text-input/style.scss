@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "@/scss/utils";
 
 $borderWidth: 1px;
@@ -6,6 +7,7 @@ $borderRadius: 2px;
 $padding: 8px;
 $fontSize: 20px;
 $lineHeight: 1;
+$adjacentColor: #777777;
 
 $height: $fontSize * $lineHeight + ($padding + $borderWidth) * 2;
 
@@ -30,22 +32,63 @@ $height: $fontSize * $lineHeight + ($padding + $borderWidth) * 2;
   background-color: white;
   width: 100%;
 
-  &_adjacent {
-    composes: field;
+  &_adjacent_left {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
+
+  &_adjacent_right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+._adjacent {
+  border: $border;
+  padding-top: $padding;
+  padding-bottom: $padding;
+  background-color: white;
 }
 
 .tipChar {
-  width: $height;
-  border: $border;
+  composes: _adjacent;
+
+  width: $height + 4px;
   border-right-style: none;
   border-top-left-radius: $borderRadius;
   border-bottom-left-radius: $borderRadius;
-  padding-top: $padding;
-  padding-bottom: $padding;
   text-align: center;
-  color: #777777;
-  background-color: white;
+  color: $adjacentColor;
+}
+
+.clear {
+  composes: _adjacent;
+
+  position: relative;
+  width: $height;
+  border-left-style: none;
+  border-top-right-radius: $borderRadius;
+  border-bottom-right-radius: $borderRadius;
+
+  @mixin stick($rotationAngle) {
+    $stick-width: math.div($height, 2);
+    $stick-height: 1px;
+
+    content: "";
+    position: absolute;
+    top: calc(50% - math.div($stick-height, 2));
+    left: calc(50% - math.div($stick-width, 2));
+    transform: rotate($rotationAngle);
+    width: $stick-width;
+    height: $stick-height;
+    background-color: $adjacentColor;
+  }
+
+  &::before {
+    @include stick(45deg);
+  }
+
+  &::after {
+    @include stick(-45deg);
+  }
 }

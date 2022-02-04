@@ -1,7 +1,9 @@
 import * as React from 'react';
 import cn from 'clsx';
 
+import { Button } from '@/components/c_button';
 import type { TClassNameable } from '@/types/common';
+
 
 import style from './style.scss';
 
@@ -10,7 +12,7 @@ type TTextPropsWithoutForwardedRef = TClassNameable & {
   legend: string;
   tipChar?: string | undefined;
   value: string;
-  onChange: (evt: React.ChangeEvent) => void;
+  onChange: (value: string) => void;
 };
 
 type TProps = TTextPropsWithoutForwardedRef & {
@@ -26,7 +28,12 @@ const TextInput: React.FC<TProps> = ({
   value,
   onChange,
 }) => {
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = (event) => {
+    onChange(event.target.value);
+  };
+
   const hasTipChar = !!tipChar;
+  const hasClearButton = value !== '';
 
   return (
     <div className={cn(style.root, className)}>
@@ -40,13 +47,30 @@ const TextInput: React.FC<TProps> = ({
       >
         <input
           ref={forwardedRef}
-          className={style[hasTipChar ? 'field_adjacent' : 'field']}
+          className={cn(style.field, {
+            [style.field_adjacent_left!]: hasTipChar,
+            [style.field_adjacent_right!]: hasClearButton,
+          })}
           inputMode={inputMode}
           type="text"
           value={value}
-          onChange={onChange}
+          onChange={handleChange}
         />
       </label>
+
+      {hasClearButton && (
+        <Button
+          aria-label="Очистить поле ввода"
+          className={style.clear}
+          onClick={() => {
+            onChange('');
+
+            if (forwardedRef && typeof forwardedRef !== 'function') {
+              forwardedRef.current?.focus();
+            }
+          }}
+        />
+      )}
     </div>
   );
 };
