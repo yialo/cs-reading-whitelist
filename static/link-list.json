@@ -2727,17 +2727,6 @@
       "legend": "RFC 2119: MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, OPTIONAL"
     },
     {
-      "caption": "Asynchronous Redux Actions Using Redux Thunk",
-      "url": "https://alligator.io/redux/redux-thunk/",
-      "lang": "en",
-      "tags": [
-        "async",
-        "redux",
-        "redux_middleware",
-        "redux_thunk"
-      ]
-    },
-    {
       "caption": "Minimal API Surface Area (by Sebastian Markbåge)",
       "url": "https://youtu.be/4anAwXYqLG8",
       "lang": "en",
@@ -4896,7 +4885,7 @@
       ]
     },
     {
-      "caption": "The Difference between a Good Take-Home Project and a Not-So-Good",
+      "caption": "The Difference between a Good Take-Home Project and a Not-So-Good (by Llorenç Muntaner)",
       "url": "https://www.gimtec.io/articles/the-difference-between-a-good-take-home-project-and-a-not-so-good/",
       "lang": "en",
       "tags": [
@@ -5079,6 +5068,49 @@
       "lang": "en",
       "tags": [
         "javascript"
+      ]
+    },
+    {
+      "caption": "3 common approaches to side-effects in Redux apps (by Gosha Arinich)",
+      "url": "https://goshacmd.com/redux-side-effect-approaches/",
+      "lang": "en",
+      "tags": [
+        "redux"
+      ]
+    },
+    {
+      "caption": "Detecting state changes with Redux-Saga (by Gosha Arinich)",
+      "url": "https://goshacmd.com/detect-state-change-redux-saga/",
+      "lang": "en",
+      "tags": [
+        "redux_saga"
+      ]
+    },
+    {
+      "caption": "How to use Tail Call Optimizations in JavaScript (by Kesk -*-)",
+      "url": "https://javascript.plainenglish.io/javascript-optimizations-tail-call-optimization-tco-471b4f8e4f37",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "algorithms"
+      ]
+    },
+    {
+      "caption": "Arrange-Act-Assert (by Jeff Grigg)",
+      "url": "http://wiki.c2.com/?ArrangeActAssert",
+      "lang": "en",
+      "tags": [
+        "testing",
+        "clean_code"
+      ],
+      "legend": "Подход к написанию тестов"
+    },
+    {
+      "caption": "Starting Development tasks: Don’t Bite More Than You Can Chew (by Llorenç Muntaner)",
+      "url": "https://www.gimtec.io/articles/dont-bite-more-than-you-can-chew/",
+      "lang": "en",
+      "tags": [
+        "productivity"
       ]
     }
   ]
