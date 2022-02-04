@@ -19,7 +19,7 @@ type TProps = TClassNameable & {
   totalAmount: number;
   visibleAmount: number;
   onFilterToggle: (filter: TFilter) => void;
-  onSearch: React.ChangeEventHandler;
+  onSearch: (value: string) => void;
   onSortingToggle: (sorting: TSorting) => void;
 };
 

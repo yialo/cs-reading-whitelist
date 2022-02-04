@@ -10,7 +10,7 @@ type TTextPropsWithoutForwardedRef = TClassNameable & {
   legend: string;
   tipChar?: string | undefined;
   value: string;
-  onChange: (evt: React.ChangeEvent) => void;
+  onChange: (value: string) => void;
 };
 
 type TProps = TTextPropsWithoutForwardedRef & {
@@ -28,6 +28,10 @@ const TextInput: React.FC<TProps> = ({
 }) => {
   const hasTipChar = !!tipChar;
 
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = (event) => {
+    onChange(event.target.value);
+  };
+
   return (
     <div className={cn(style.root, className)}>
       {hasTipChar && (
@@ -44,7 +48,7 @@ const TextInput: React.FC<TProps> = ({
           inputMode={inputMode}
           type="text"
           value={value}
-          onChange={onChange}
+          onChange={handleChange}
         />
       </label>
     </div>
