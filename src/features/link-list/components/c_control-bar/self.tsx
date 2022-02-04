@@ -34,20 +34,13 @@ const SORTING_DICT = {
   [SORTING.OLD]: 'старые',
 } as const;
 
+const TIP_CHAR_DICT = {
+  [FILTER.CAPTION]: 'abc',
+  [FILTER.HASHTAG]: '#',
+  [FILTER.URL]: '://',
+} as const;
+
 const sortingGroupLabelId = 'sorting-group-label';
-
-const getInputTipChar = (filterTarget: TFilter) => {
-  switch (filterTarget) {
-    case (FILTER.HASHTAG):
-      return '#';
-
-    case (FILTER.URL):
-      return '://';
-
-    default:
-      return undefined;
-  }
-};
 
 export const ControlBar: React.FC<TProps> = ({
   className,
@@ -83,7 +76,7 @@ export const ControlBar: React.FC<TProps> = ({
         className={style.searchbar}
         inputMode="search"
         legend="Введите текст для поиска"
-        tipChar={getInputTipChar(filterTarget)}
+        tipChar={TIP_CHAR_DICT[filterTarget]}
         value={searchString}
         onChange={onSearch}
       />

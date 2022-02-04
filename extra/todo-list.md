@@ -1,6 +1,5 @@
 # Todo list
 
-* Add search input reset button
 * Add transparency to Header
 * Add [Prettier](https://create-react-app.dev/docs/setting-up-your-editor/#formatting-code-automatically)
 * Format LinkList item as card
