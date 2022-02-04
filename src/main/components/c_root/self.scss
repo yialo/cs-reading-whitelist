@@ -4,6 +4,7 @@
   --color_text-caption: #{utils.$color-light-textCaption};
   --color_background-global: #{utils.$color-light-backgroundGlobal};
   --color_background-secondary: #{utils.$color-light-backgroundSecondary};
+  --color_background-secondary-translucent: #{rgb(utils.$color-light-backgroundSecondary, 0.5)};
   --color_text: #{utils.$color-light-text};
 
   position: relative;

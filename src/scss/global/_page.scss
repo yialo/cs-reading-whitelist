@@ -1,6 +1,7 @@
 :global {
   .Page {
     height: 100%;
+    overflow-y: hidden;
   }
 
   .Page-Body {
@@ -14,12 +15,12 @@
     position: absolute;
     z-index: 1;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: inherit;
     background-color: var(--color_overlay);
 
     &.isHidden {
