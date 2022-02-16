@@ -27,7 +27,7 @@ export const NamingContents: React.FC = () => {
                 const $targetElement = document.getElementById(id);
 
                 if ($targetElement) {
-                  window.scrollTo({
+                  document.body.scrollTo({
                     top: $targetElement.offsetTop,
                     behavior: 'smooth',
                   });

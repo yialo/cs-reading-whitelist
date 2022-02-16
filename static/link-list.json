@@ -5112,6 +5112,30 @@
       "tags": [
         "productivity"
       ]
+    },
+    {
+      "caption": "Make Impossible States Impossible (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/make-impossible-states-impossible",
+      "lang": "en",
+      "tags": [
+        "state_management"
+      ]
+    },
+    {
+      "caption": "10 bad TypeScript habits to break this year (by Daniel Bartholomae)",
+      "url": "https://startup-cto.net/10-bad-typescript-habits-to-break-this-year",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "Git is case-sensitive and your filesystem may not be - Weird folder merging on Windows (by Scott Hanselman)",
+      "url": "https://www.hanselman.com/blog/git-is-casesensitive-and-your-filesystem-may-not-be-weird-folder-merging-on-windows",
+      "lang": "en",
+      "tags": [
+        "git"
+      ]
     }
   ]
 }
