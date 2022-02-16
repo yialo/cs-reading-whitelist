@@ -10,20 +10,20 @@ export const NamingList: React.FC = () => {
 
   return (
     <>
-      {content.map((it, i) => (
+      {content.map((section, i) => (
         <React.Fragment key={i}>
-          <section id={it.id}>
-            <h2 className={style.heading}>{it.title}</h2>
+          <section id={section.id}>
+            <h2 className={style.heading}>{section.title}</h2>
 
-            {it.items.map((subIt, j) => (
+            {section.items.map((sectionItem, j) => (
               <React.Fragment key={j}>
-                <h3 className={style.heading}>{subIt.title}</h3>
+                <h3 className={style.heading}>{sectionItem.title}</h3>
 
                 <pre className={style.preformatted}>
-                  {subIt.names.map((name, k) => (
+                  {sectionItem.names.map((name, k) => (
                     <React.Fragment key={k}>
                       <code>{name}</code>
-                      {k !== subIt.names.length - 1 && ', '}
+                      {k !== sectionItem.names.length - 1 && ', '}
                     </React.Fragment>
                   ))}
                 </pre>
