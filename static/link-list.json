@@ -5136,6 +5136,14 @@
       "tags": [
         "git"
       ]
+    },
+    {
+      "caption": "Using Typescript to make invalid states irrepresentable (by Javier Casas)",
+      "url": "http://www.javiercasas.com/articles/typescript-impossible-states-irrepresentable",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
     }
   ]
 }
