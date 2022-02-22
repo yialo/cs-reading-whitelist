@@ -30,12 +30,12 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "@babel/core": "7.16.12",
-    "@babel/plugin-transform-runtime": "7.16.10",
+    "@babel/core": "7.17.5",
+    "@babel/plugin-transform-runtime": "7.17.0",
     "@babel/preset-env": "7.16.11",
     "@babel/preset-react": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
-    "@babel/runtime-corejs3": "7.16.8",
+    "@babel/runtime-corejs3": "7.17.2",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.4",
     "autoprefixer": "10.4.2",
     "babel-loader": "8.2.3",
