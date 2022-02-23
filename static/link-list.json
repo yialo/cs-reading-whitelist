@@ -516,7 +516,6 @@
       "url": "https://medium.com/hackernoon/my-approach-to-using-z-index-eca67feb079c",
       "lang": "en",
       "tags": [
-        "css",
         "css_stacking_context"
       ]
     },
@@ -567,7 +566,6 @@
       "url": "https://habr.com/ru/post/431046/",
       "lang": "ru",
       "tags": [
-        "css",
         "css_stacking_context"
       ]
     },
@@ -653,7 +651,6 @@
       "url": "https://www.internet-technologies.ru/articles/kak-rabotaet-z-index.html",
       "lang": "ru",
       "tags": [
-        "css",
         "css_stacking_context"
       ]
     },
@@ -695,7 +692,6 @@
       "url": "https://habr.com/ru/post/225721/",
       "lang": "ru",
       "tags": [
-        "css",
         "css_stacking_context"
       ]
     },
@@ -936,7 +932,6 @@
       "url": "http://prgssr.ru/development/kak-rabotayut-v-fleksbokse-z-index-i-avtootstupy.html",
       "lang": "ru",
       "tags": [
-        "css",
         "css_stacking_context",
         "css_flexbox"
       ]
@@ -5143,6 +5138,14 @@
       "lang": "en",
       "tags": [
         "typescript"
+      ]
+    },
+    {
+      "caption": "Managing CSS Z-Index In Large Projects (by Steven Frieson)",
+      "url": "https://www.smashingmagazine.com/2021/02/css-z-index-large-projects/",
+      "lang": "en",
+      "tags": [
+        "css_stacking_context"
       ]
     }
   ]
