@@ -2,6 +2,8 @@ import * as React from 'react';
 import cn from 'clsx';
 import debounce from 'lodash/debounce';
 
+import { Button } from '@/components/c_button';
+import { Portal } from '@/components/c_portal';
 import type { TClassNameable } from '@/types/common';
 
 import { AppNavMenu } from '../c_nav-menu';
@@ -13,7 +15,7 @@ const SCROLL_THRESHOLD = 100;
 const SCROLL_DEBOUNCE_DELAY = 25;
 
 export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
-  const [isTranslucent, setIsTranslucent] = React.useState(false);
+  const [isScrolledEnough, setIsScrolledEnough] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = debounce((event: Event) => {
@@ -22,7 +24,7 @@ export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
       }
 
       const shouldBeTranslucent = event.target.scrollTop > SCROLL_THRESHOLD;
-      setIsTranslucent(shouldBeTranslucent);
+      setIsScrolledEnough(shouldBeTranslucent);
     }, SCROLL_DEBOUNCE_DELAY);
 
     document.body.addEventListener('scroll', handleScroll);
@@ -37,13 +39,25 @@ export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
       className={cn(
         style.root,
         {
-          [style.root_translucent!]: isTranslucent,
+          [style.root_translucent!]: isScrolledEnough,
         },
         className,
       )}
     >
       <AppNavMenu />
       <ThemeToggle className={style.themeToggle} />
+
+      <Portal>
+        <Button
+          aria-label="Вернуться наверх"
+          className={cn(style.goTopButton, {
+            [style.goTopButton_visible!]: isScrolledEnough,
+          })}
+          onClick={() => {
+            document.body.scrollTo({ top: 0 });
+          }}
+        />
+      </Portal>
     </header>
   );
 };

@@ -11,7 +11,7 @@ import style from './self.scss';
 
 const disableOverlay = () => {
   const $overlay = document.getElementById('overlay');
-  $overlay?.classList.add('isHidden');
+  $overlay?.remove();
 };
 
 export const Root: React.FC = () => {
