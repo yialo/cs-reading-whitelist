@@ -6,6 +6,13 @@ const tsConfigMixin = {
     project: './tsconfig.json',
   },
   rules: {
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        allow: 'always',
+        extensions: ['.jsx', '.tsx'],
+      },
+    ],
     'react/react-in-jsx-scope': 'off',
   },
   settings: {

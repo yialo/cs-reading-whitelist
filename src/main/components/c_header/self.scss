@@ -17,3 +17,46 @@
   flex-shrink: 0;
   flex-basis: 120px;
 }
+
+.goTopButton {
+  $size: 50px;
+  $arrow-height: 10px;
+  $arrow-semiWidth: 12px;
+  $arrow-color: utils.$color-darkGray;
+
+  position: fixed;
+  z-index: 1;
+  bottom: 40px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.1s;
+  pointer-events: none;
+
+  &::before {
+    content: "";
+    width: $arrow-semiWidth * 2;
+    height: $arrow-height;
+    border-style: solid;
+    border-color: transparent transparent utils.$color-darkGray;
+    border-width: 0 $arrow-semiWidth $arrow-height;
+  }
+
+  &::after {
+    content: "";
+    width: 12px;
+    height: 20px;
+    background-color: utils.$color-darkGray;
+  }
+
+  &_visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
