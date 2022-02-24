@@ -35,7 +35,7 @@ export const AppNavMenu: React.FC<TClassNameable> = ({ className }) => {
   React.useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === KEYBOARD_KEY.ESCAPE) {
-        setIsExpanded((prev) => prev && !prev);
+        setIsExpanded(false);
       }
     };
 
