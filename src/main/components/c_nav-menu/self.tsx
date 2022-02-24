@@ -25,8 +25,6 @@ const ROUTE_LIST: ReadonlyArray<TNavLink> = [
   },
 ] as const;
 
-const BUTTON_ID = 'AppNavMenu-list';
-
 export const AppNavMenu: React.FC<TClassNameable> = ({ className }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
@@ -55,7 +53,7 @@ export const AppNavMenu: React.FC<TClassNameable> = ({ className }) => {
       })}
     >
       <button
-        aria-controls={BUTTON_ID}
+        aria-haspopup="listbox"
         aria-expanded={isExpanded}
         aria-label="Меню"
         className={style.button}
@@ -64,7 +62,7 @@ export const AppNavMenu: React.FC<TClassNameable> = ({ className }) => {
       >
         <AppNavMenuIcon isExpanded={isExpanded} />
       </button>
-      <ul className={style.list} id={BUTTON_ID}>
+      <ul className={style.list}>
         {ROUTE_LIST.map(({ url, label }) => (
           <li key={label}>
             <NavLink
