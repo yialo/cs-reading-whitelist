@@ -32,81 +32,58 @@ export const Select: React.FC<TProps> = ({
   const $toggleButtonRef = React.useRef<HTMLButtonElement>(null);
 
   React.useEffect(() => {
-    const handleCollapse = () => {
-      setIsExpanded((prev) => prev && !prev);
-    };
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === KEYBOARD_KEY.ESCAPE) {
-        handleCollapse();
-      }
-    };
-
     const handleClick = (event: MouseEvent) => {
-      if (event.target !== $toggleButtonRef.current) {
-        handleCollapse();
+      if (
+        !$toggleButtonRef.current
+        || $toggleButtonRef.current.contains(event.target as Node)
+      ) {
+        return;
       }
+
+      setIsExpanded(false);
     };
 
-    document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('click', handleClick);
 
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
       document.removeEventListener('click', handleClick);
-    };
-  }, []);
-
-  React.useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (
-        $toggleButtonRef.current === document.activeElement
-        && event.key === KEYBOARD_KEY.DOWN
-      ) {
-        setIsExpanded(true);
-      }
-    };
-
-    document.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
 
   const options = React.useMemo(() => Object.entries(dict), [dict]);
 
-  React.useEffect(() => {
-    const handleKeyDown = ({ key }: KeyboardEvent) => {
-      if (isExpanded) {
-        const currentOptionIndex = options.findIndex((option) => option[0] === value);
-
-        let shift = 0;
-
-        if (key === KEYBOARD_KEY.DOWN) {
-          shift = 1;
-        } else if (key === KEYBOARD_KEY.UP) {
-          shift = -1;
-        }
-
-        if (!shift) {
-          return;
-        }
-
-        const newOptionValue = options[currentOptionIndex + shift]?.[0];
-
-        if (newOptionValue) {
-          onChange(newOptionValue);
-        }
+  const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> = ({ key }) => {
+    if (!isExpanded) {
+      if (key === KEYBOARD_KEY.DOWN) {
+        setIsExpanded(true);
+        return;
       }
-    };
+    }
 
-    document.addEventListener('keydown', handleKeyDown);
+    if (key === KEYBOARD_KEY.ESCAPE) {
+      setIsExpanded(false);
+      return;
+    }
 
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [isExpanded, options, value, onChange]);
+    let shift = 0;
+
+    if (key === KEYBOARD_KEY.DOWN) {
+      shift = 1;
+    } else if (key === KEYBOARD_KEY.UP) {
+      shift = -1;
+    }
+
+    if (!shift) {
+      return;
+    }
+
+    const currentOptionIndex = options.findIndex((option) => option[0] === value);
+    const newOptionValue = options[currentOptionIndex + shift]?.[0];
+
+    if (newOptionValue) {
+      onChange(newOptionValue);
+    }
+  };
 
   return (
     <div className={cn(style.root, className)}>
@@ -121,11 +98,13 @@ export const Select: React.FC<TProps> = ({
             [style.toggleButton_hasPopup!]: isExpanded,
           })}
           id={TOGGLE_BUTTON_ID}
+          aria-expanded={isExpanded}
           aria-haspopup="listbox"
           aria-labelledby={`${tipId} ${TOGGLE_BUTTON_ID}`}
           onClick={() => {
             setIsExpanded((prev) => !prev);
           }}
+          onKeyDown={handleKeyDown}
         >
           {dict[value]}
         </Button>
@@ -149,6 +128,12 @@ export const Select: React.FC<TProps> = ({
                     onClick={() => {
                       setIsExpanded(false);
                       onChange(name);
+                      $toggleButtonRef.current?.focus();
+                    }}
+                    onKeyDown={(event) => {
+                      if (event.key === KEYBOARD_KEY.ESCAPE) {
+                        setIsExpanded(false);
+                      }
                     }}
                   >
                     {caption}

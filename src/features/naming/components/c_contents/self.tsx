@@ -10,6 +10,8 @@ import commonStyle from '@/scss/scaffold.scss';
 import utilStyle from '../../utils.scss';
 import style from './self.scss';
 
+const $pageRoot = document.querySelector('.Page-Root');
+
 export const NamingContents: React.FC = () => {
   const headers = useSelector(selectContentHeaders);
 
@@ -24,12 +26,15 @@ export const NamingContents: React.FC = () => {
               className={cn(commonStyle.link, style.anchor)}
               role="link"
               onClick={() => {
+                if (!$pageRoot) {
+                  return;
+                }
+
                 const $targetElement = document.getElementById(id);
 
                 if ($targetElement) {
-                  document.body.scrollTo({
+                  $pageRoot.scrollTo({
                     top: $targetElement.offsetTop,
-                    behavior: 'smooth',
                   });
                 }
               }}

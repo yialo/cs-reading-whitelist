@@ -8,6 +8,12 @@
     position: relative;
     min-width: var(--size_pageMinWidth);
     height: inherit;
+  }
+
+  .Page-Root {
+    position: relative;
+    z-index: 0;
+    height: inherit;
     overflow-y: scroll;
   }
 
@@ -26,10 +32,5 @@
     &.isHidden {
       display: none;
     }
-  }
-
-  .Page-Root {
-    position: relative;
-    z-index: 0;
   }
 }
