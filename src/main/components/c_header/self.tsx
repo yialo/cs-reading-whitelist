@@ -64,12 +64,13 @@ export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
     $pageRoot.addEventListener('scroll', handleScroll);
 
     return () => {
+      handleScroll.cancel();
       $pageRoot.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const renderGoTopButton = () => {
-    const button = (
+    const goTopButton = (
       <div
         className={style.goTopButton}
         style={{ paddingBottom: goTopButtonBottomShift }}
@@ -88,7 +89,7 @@ export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
       </div>
     );
 
-    return createPortal(button, ref_$goTopButtonContainer.current);
+    return createPortal(goTopButton, ref_$goTopButtonContainer.current);
   };
 
   return (
