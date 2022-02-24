@@ -12,29 +12,53 @@ import { ThemeToggle } from '../c_theme-toggle';
 
 import style from './self.scss';
 
-const SCROLL_THRESHOLD = 100;
+const SCROLL_TOP_THRESHOLD = 100;
 const SCROLL_DEBOUNCE_DELAY = 25;
 
+const GO_TOP_BUTTON_SHIFT = {
+  NORMAL: 40,
+  STICKY: 60,
+};
+
 const $pageRoot = document.querySelector('.Page-Root');
-const $goTopButtonContainer = document.getElementById('go-top-button');
 
 export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
   const [isScrolledEnough, setIsScrolledEnough] = React.useState(false);
+  const [goTopButtonBottomShift, setgoTopButtonBottomShift] = React.useState(
+    GO_TOP_BUTTON_SHIFT.NORMAL,
+  );
 
   const hasDarkTheme = useHasDarkTheme();
 
+  const ref_$goTopButtonContainer = React.useRef(document.createElement('div'));
+
   React.useEffect(() => {
-    if (!$pageRoot) {
+    const $container = ref_$goTopButtonContainer.current;
+
+    document.body.appendChild($container);
+
+    return () => {
+      document.body.removeChild($container);
+    };
+  }, []);
+
+  React.useEffect(() => {
+    if (!($pageRoot instanceof HTMLDivElement)) {
       return;
     }
 
-    const handleScroll = debounce((event: Event) => {
-      if (!(event.target instanceof HTMLElement)) {
-        return;
-      }
-
-      const shouldBeTranslucent = event.target.scrollTop > SCROLL_THRESHOLD;
+    const handleScroll = debounce(() => {
+      const shouldBeTranslucent = $pageRoot.scrollTop > SCROLL_TOP_THRESHOLD;
       setIsScrolledEnough(shouldBeTranslucent);
+
+      const shouldGoTopButtonBeSticky = $pageRoot.scrollHeight
+        - ($pageRoot.scrollTop + $pageRoot.offsetHeight) < GO_TOP_BUTTON_SHIFT.STICKY;
+
+      setgoTopButtonBottomShift(
+        shouldGoTopButtonBeSticky
+          ? GO_TOP_BUTTON_SHIFT.STICKY
+          : GO_TOP_BUTTON_SHIFT.NORMAL,
+      );
     }, SCROLL_DEBOUNCE_DELAY);
 
     $pageRoot.addEventListener('scroll', handleScroll);
@@ -45,12 +69,11 @@ export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
   }, []);
 
   const renderGoTopButton = () => {
-    if (!$goTopButtonContainer) {
-      return null;
-    }
-
     const button = (
-      <div className={style.goTopButton}>
+      <div
+        className={style.goTopButton}
+        style={{ paddingBottom: goTopButtonBottomShift }}
+      >
         <Button
           aria-label="Вернуться наверх"
           className={cn(style.goTopButton__inner, {
@@ -65,7 +88,7 @@ export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
       </div>
     );
 
-    return createPortal(button, $goTopButtonContainer);
+    return createPortal(button, ref_$goTopButtonContainer.current);
   };
 
   return (
