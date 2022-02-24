@@ -19,44 +19,65 @@
 }
 
 .goTopButton {
-  $size: 50px;
-  $arrow-height: 10px;
-  $arrow-semiWidth: 12px;
-  $arrow-color: utils.$color-darkGray;
-
-  position: fixed;
-  z-index: 1;
-  bottom: 40px;
-  right: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: $size;
-  height: $size;
-  border-radius: 50%;
-  opacity: 0;
-  transition: opacity 0.1s;
-  pointer-events: none;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
 
-  &::before {
-    content: "";
-    width: $arrow-semiWidth * 2;
-    height: $arrow-height;
-    border-style: solid;
-    border-color: transparent transparent utils.$color-darkGray;
-    border-width: 0 $arrow-semiWidth $arrow-height;
+  @media (max-width: utils.$viewport-xs-max) {
+    padding-right: 30px;
   }
 
-  &::after {
-    content: "";
-    width: 12px;
-    height: 20px;
-    background-color: utils.$color-darkGray;
+  @media (min-width: utils.$viewport-sm-min) {
+    padding-right: 40px;
   }
 
-  &_visible {
-    opacity: 1;
-    pointer-events: auto;
+  &__inner {
+    $size: 50px;
+    $arrow-height: 10px;
+    $arrow-semiWidth: 12px;
+
+    --color-buttonBackground: #{utils.$color-darkGray};
+    --color_arrow: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    background-color: var(--color-buttonBackground);
+    opacity: 0;
+    transition: opacity 0.1s;
+    pointer-events: none;
+
+    &_visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    &_theme_dark {
+      --color-buttonBackground: #{utils.$color-gray};
+      --color_arrow: #{utils.$color-darkGray};
+    }
+
+    &::before {
+      content: "";
+      width: $arrow-semiWidth * 2;
+      height: $arrow-height;
+      border-style: solid;
+      border-color: transparent transparent var(--color_arrow);
+      border-width: 0 $arrow-semiWidth $arrow-height;
+    }
+
+    &::after {
+      content: "";
+      width: 12px;
+      height: 20px;
+      background-color: var(--color_arrow);
+    }
   }
 }
