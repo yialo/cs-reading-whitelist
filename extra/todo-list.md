@@ -1,6 +1,5 @@
 # Todo list
 
-* Add scrollToTop on page change
 * Add [Prettier](https://create-react-app.dev/docs/setting-up-your-editor/#formatting-code-automatically)
 * Format LinkList item as card
   * Add optional **author** field and sorting by author
