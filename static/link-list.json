@@ -5147,6 +5147,62 @@
       "tags": [
         "css_stacking_context"
       ]
+    },
+    {
+      "caption": "TypeScript: Narrow types in catch clauses (by Stefan Baumgartner)",
+      "url": "https://fettblog.eu/typescript-typing-catch-clauses/",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "How not to learn TypeScript (by Stefan Baumgartner)",
+      "url": "https://fettblog.eu/how-not-to-learn-typescript/",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "TypeScript: The constructor interface pattern (by Stefan Baumgartner)",
+      "url": "https://fettblog.eu/typescript-interface-constructor-pattern/",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "Assertion Functions in TypeScript (by Marius Schulz)",
+      "url": "https://mariusschulz.com/blog/assertion-functions-in-typescript",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "How to fix TS2322: could be instantiated with a different subtype of constraint 'object'?",
+      "url": "https://stackoverflow.com/questions/56505560/how-to-fix-ts2322-could-be-instantiated-with-a-different-subtype-of-constraint",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "The Type Hierarchy Tree (by Zhenghao He)",
+      "url": "https://www.zhenghao.io/posts/type-hierarchy-tree",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "Effector's beginner guide (by Yan Lavriushev)",
+      "url": "https://dev.to/effector/effector-s-beginner-guide-3jl4",
+      "lang": "en",
+      "tags": [
+        "effector"
+      ]
     }
   ]
 }
