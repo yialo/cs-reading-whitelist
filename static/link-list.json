@@ -4134,7 +4134,7 @@
       "legend": "Что делать, если сервер не даёт разорвать SSH-соединение из-за незавершённых задач"
     },
     {
-      "caption": "React: Rethinking best practices (Pete Hunt, JSConf EU 2013)",
+      "caption": "React: Rethinking best practices (by Pete Hunt, JSConf EU 2013)",
       "url": "https://youtu.be/x7cQ3mrcKaY",
       "lang": "en",
       "tags": [
@@ -5202,6 +5202,96 @@
       "lang": "en",
       "tags": [
         "effector"
+      ]
+    },
+    {
+      "caption": "Advanced Redux: Design Patterns and Practices (by Nir Kaufman, JSHeroes 2018)",
+      "url": "https://youtu.be/5gl3cCB_26M",
+      "lang": "en",
+      "tags": [
+        "redux"
+      ]
+    },
+    {
+      "caption": "Мои правила хорошей дизайн-системы. Компоненты и архитектура интерфейса в Figma (Роман Камушкин)",
+      "url": "https://habr.com/ru/post/340774/",
+      "lang": "ru",
+      "tags": [
+        "ux_ui",
+        "design_systems",
+        "figma"
+      ]
+    },
+    {
+      "caption": "Why Do React Hooks Rely on Call Order? (by Dan Abramov)",
+      "url": "https://overreacted.io/why-do-hooks-rely-on-call-order/",
+      "lang": "en",
+      "tags": [
+        "react_hooks"
+      ]
+    },
+    {
+      "caption": "True functional programming with JS (by Artem Kobzar)",
+      "url": "https://youtu.be/XCY0MWor_jw",
+      "lang": "ru",
+      "tags": [
+        "functional_programming"
+      ]
+    },
+    {
+      "caption": "Deep dive: How do React hooks really work? (by Shawn Wang)",
+      "url": "https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/",
+      "lang": "en",
+      "tags": [
+        "react_hooks"
+      ]
+    },
+    {
+      "caption": "The Law of Leaky Abstractions (by Joel Spolsky)",
+      "url": "https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/",
+      "lang": "en",
+      "tags": [
+        "clean_code"
+      ]
+    },
+    {
+      "caption": "Reactiflux chat log: React-Redux, stale props, and subscriptions (with Mark Erikson)",
+      "url": "https://gist.github.com/markerikson/faac6ae4aca7b82a058e13216a7888ec",
+      "lang": "en",
+      "tags": [
+        "redux"
+      ]
+    },
+    {
+      "caption": "Lazy registration with Redux and Sagas (by Gosha Arinich)",
+      "url": "https://goshacmd.com/lazy-auth-redux-saga-flow/",
+      "lang": "en",
+      "tags": [
+        "redux_saga"
+      ]
+    },
+    {
+      "caption": "Analytics on easy mode with Redux-Saga (by Gosha Arinich)",
+      "url": "https://goshacmd.com/analytics-easy-redux-saga/",
+      "lang": "en",
+      "tags": [
+        "redux_saga"
+      ]
+    },
+    {
+      "caption": "Чистая архитектура во фронтенде (Александр Беспоясов)",
+      "url": "https://bespoyasov.ru/blog/clean-architecture-on-frontend/",
+      "lang": "ru",
+      "tags": [
+        "architecture"
+      ]
+    },
+    {
+      "caption": "Goodbye, Clean Code (by Dan Abramov)",
+      "url": "https://overreacted.io/goodbye-clean-code/",
+      "lang": "en",
+      "tags": [
+        "clean_code"
       ]
     }
   ]
