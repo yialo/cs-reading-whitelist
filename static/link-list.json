@@ -5293,6 +5293,80 @@
       "tags": [
         "clean_code"
       ]
+    },
+    {
+      "caption": "Update to remove the \"setState on unmounted component\" warning (by Dan Abramov)",
+      "url": "https://github.com/reactwg/react-18/discussions/82",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "EBI Architecture (by Herberto Graça)",
+      "url": "https://herbertograca.com/2017/08/24/ebi-architecture/",
+      "lang": "en",
+      "tags": [
+        "architecture"
+      ],
+      "legend": "Entity-Boundary-Interactor"
+    },
+    {
+      "caption": "Domain-Driven Design (by Herberto Graça)",
+      "url": "https://herbertograca.com/2017/09/07/domain-driven-design/",
+      "lang": "en",
+      "tags": [
+        "architecture",
+        "ddd"
+      ]
+    },
+    {
+      "caption": "Onion Architecture (by Herberto Graça)",
+      "url": "https://herbertograca.com/2017/09/21/onion-architecture/",
+      "lang": "en",
+      "tags": [
+        "architecture"
+      ]
+    },
+    {
+      "caption": "Ports & Adapters Architecture (by Herberto Graça)",
+      "url": "https://herbertograca.com/2017/09/14/ports-adapters-architecture/",
+      "lang": "en",
+      "tags": [
+        "architecture"
+      ]
+    },
+    {
+      "caption": "Commit Naming Rules",
+      "url": "https://developerexperience.io/practices/commit-naming-rules",
+      "lang": "en",
+      "tags": [
+        "git"
+      ]
+    },
+    {
+      "caption": "Poor Code Quality",
+      "url": "https://developerexperience.io/problems/poor-code-quality",
+      "lang": "en",
+      "tags": [
+        "clean_code"
+      ]
+    },
+    {
+      "caption": "How to Write Good Commit Messages: A Practical Git Guide (by Bolaji Ayodeji)",
+      "url": "https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/",
+      "lang": "en",
+      "tags": [
+        "git"
+      ]
+    },
+    {
+      "caption": "thank u, next: an introduction to linked lists (by Ali Spittel)",
+      "url": "https://dev.to/aspittel/thank-u-next-an-introduction-to-linked-lists-4pph",
+      "lang": "en",
+      "tags": [
+        "data_structures"
+      ]
     }
   ]
 }
