@@ -1,3 +1,4 @@
+import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { App } from './c_app';
@@ -10,5 +11,6 @@ export const init = (): void => {
   }
 
   const appRoot = ReactDOM.createRoot($rootNode);
-  appRoot.render(<App />);
+  const app = <React.StrictMode><App /></React.StrictMode>;
+  appRoot.render(app);
 };

@@ -12,16 +12,14 @@ const store = configureStore();
 
 export const App: React.FC = () => {
   return (
-    <React.StrictMode>
-      <ErrorBoundary>
-        <ReduxProvider store={store}>
-          <HashRouter>
-            <ThemeProvider>
-              <Root />
-            </ThemeProvider>
-          </HashRouter>
-        </ReduxProvider>
-      </ErrorBoundary>
-    </React.StrictMode>
+    <ErrorBoundary>
+      <ReduxProvider store={store}>
+        <HashRouter>
+          <ThemeProvider>
+            <Root />
+          </ThemeProvider>
+        </HashRouter>
+      </ReduxProvider>
+    </ErrorBoundary>
   );
 };
