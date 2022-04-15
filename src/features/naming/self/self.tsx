@@ -35,7 +35,7 @@ export const Naming: React.FC = () => {
         return <Preloader className={style.preloader} />;
 
       case PROCESS.FAILURE:
-        return <div>{error}</div>;
+        return error ? <div>{error.toString()}</div> : null;
 
       default:
         return (
