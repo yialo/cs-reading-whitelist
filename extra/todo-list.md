@@ -1,6 +1,7 @@
 # Todo list
 
-* Debounce text input
+* Migrate to [RTK](https://redux.js.org/introduction/why-rtk-is-redux-today)
+* Add useTransition to text input
 * Add [Prettier](https://create-react-app.dev/docs/setting-up-your-editor/#formatting-code-automatically)
 * Format LinkList item as card
   * Add optional **author** field and sorting by author
