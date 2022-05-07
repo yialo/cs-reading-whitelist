@@ -2921,7 +2921,7 @@
     },
     {
       "caption": "How to Write a Git Commit Message (by Chris Beams)",
-      "url": "https://chris.beams.io/posts/git-commit/",
+      "url": "https://cbea.ms/git-commit/",
       "lang": "en",
       "tags": [
         "git"
