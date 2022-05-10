@@ -54,7 +54,7 @@
     "html-webpack-plugin": "5.5.0",
     "lodash": "4.17.21",
     "mini-css-extract-plugin": "2.6.0",
-    "postcss": "8.4.12",
+    "postcss": "8.4.13",
     "postcss-loader": "6.2.1",
     "react": "18.1.0",
     "react-dom": "18.1.0",
@@ -84,7 +84,7 @@
     "husky": "7.0.4",
     "jest": "27.5.1",
     "nodemon": "2.0.16",
-    "stylelint-config-yialo": "0.2.27",
+    "stylelint-config-yialo": "0.3.0",
     "typescript": "4.6.4",
     "webpack-dev-server": "4.9.0"
   },
