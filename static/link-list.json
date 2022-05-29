@@ -2921,7 +2921,7 @@
     },
     {
       "caption": "How to Write a Git Commit Message (by Chris Beams)",
-      "url": "https://chris.beams.io/posts/git-commit/",
+      "url": "https://cbea.ms/git-commit/",
       "lang": "en",
       "tags": [
         "git"
@@ -5295,8 +5295,17 @@
       ]
     },
     {
-      "caption": "Update to remove the \"setState on unmounted component\" warning (by Dan Abramov)",
-      "url": "https://github.com/reactwg/react-18/discussions/82",
+      "caption": "Remove the warning for setState on unmounted components (by Dan Abramov)",
+      "series": [
+        {
+          "caption": "",
+          "url": "https://github.com/facebook/react/pull/22114"
+        },
+        {
+          "caption": "ReactWG discussion",
+          "url": "https://github.com/reactwg/react-18/discussions/82"
+        }
+      ],
       "lang": "en",
       "tags": [
         "react"
@@ -5366,6 +5375,14 @@
       "lang": "en",
       "tags": [
         "data_structures"
+      ]
+    },
+    {
+      "caption": "Demotivated Team",
+      "url": "https://developerexperience.io/problems/demotivated-team",
+      "lang": "en",
+      "tags": [
+        "project_management"
       ]
     }
   ]
