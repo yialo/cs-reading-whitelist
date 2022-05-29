@@ -13,6 +13,8 @@
       "DOM",
       "ES2021"
     ],
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "newLine": "lf",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
@@ -24,7 +26,8 @@
         "./*"
       ],
     },
-    "strict": true
+    "strict": true,
+    "target": "ES2015"
   },
   "include": [
     "./src/**/*"
