@@ -5295,8 +5295,17 @@
       ]
     },
     {
-      "caption": "Update to remove the \"setState on unmounted component\" warning (by Dan Abramov)",
-      "url": "https://github.com/reactwg/react-18/discussions/82",
+      "caption": "Remove the warning for setState on unmounted components (by Dan Abramov)",
+      "series": [
+        {
+          "caption": "",
+          "url": "https://github.com/facebook/react/pull/22114"
+        },
+        {
+          "caption": "ReactWG discussion",
+          "url": "https://github.com/reactwg/react-18/discussions/82"
+        }
+      ],
       "lang": "en",
       "tags": [
         "react"
