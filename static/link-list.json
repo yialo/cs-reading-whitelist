@@ -5181,7 +5181,7 @@
       ]
     },
     {
-      "caption": "How to fix TS2322: could be instantiated with a different subtype of constraint 'object'?",
+      "caption": "How to fix: could be instantiated with a different subtype of constraint",
       "url": "https://stackoverflow.com/questions/56505560/how-to-fix-ts2322-could-be-instantiated-with-a-different-subtype-of-constraint",
       "lang": "en",
       "tags": [
@@ -5383,6 +5383,24 @@
       "lang": "en",
       "tags": [
         "project_management"
+      ]
+    },
+    {
+      "caption": "How to fix: could be instantiated with an arbitrary type which could be unrelated to",
+      "series": [
+        {
+          "caption": "R and Response<Command>",
+          "url": "https://stackoverflow.com/questions/62623637/r-could-be-instantiated-with-an-arbitrary-type-which-could-be-unrelated-to-re",
+          "lang": "en"
+        },
+        {
+          "caption": "Почему это не работает?",
+          "url": "https://qna.habr.com/q/828517",
+          "lang": "ru"
+        }
+      ],
+      "tags": [
+        "typescript"
       ]
     }
   ]
