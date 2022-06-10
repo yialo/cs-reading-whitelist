@@ -5402,6 +5402,56 @@
       "tags": [
         "typescript"
       ]
+    },
+    {
+      "caption": "Autoprefixing, with CSS variables! (by Lea Verou)",
+      "url": "https://lea.verou.me/2016/09/autoprefixing-with-css-variables/",
+      "lang": "en",
+      "tags": [
+        "css_custom_properties"
+      ]
+    },
+    {
+      "caption": "Вам больше не нужны ветви для фич (Артур Хайбуллин)",
+      "url": "https://medium.com/nuances-of-programming/%D0%B2%D0%B0%D0%BC-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D0%BD%D0%B5-%D0%BD%D1%83%D0%B6%D0%BD%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%84%D0%B8%D1%87-8a8cdbfe97c",
+      "lang": "ru",
+      "tags": [
+        "tbd",
+        "git"
+      ]
+    },
+    {
+      "caption": "Upgrading to React 18 with TypeScript (by John Reilly)",
+      "url": "https://blog.logrocket.com/upgrading-react-18-typescript/",
+      "lang": "en",
+      "tags": [
+        "react",
+        "typescript"
+      ]
+    },
+    {
+      "caption": "Git Interactive Rebase, Squash, Amend and Other Ways of Rewriting History (by Tute Costa)",
+      "url": "https://thoughtbot.com/blog/git-interactive-rebase-squash-amend-rewriting-history",
+      "lang": "en",
+      "tags": [
+        "git"
+      ]
+    },
+    {
+      "caption": "DDD, Hexagonal, Onion, Clean, CQRS, … How I put it all together (by Herberto Graça)",
+      "url": "https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/",
+      "lang": "en",
+      "tags": [
+        "architecture"
+      ]
+    },
+    {
+      "caption": "I stopped using environment variables for config (by Mahesh C. Regmi)",
+      "url": "https://maheshchandraregmi.com.np/i-stopped-using-environment-variables-for-config",
+      "lang": "en",
+      "tags": [
+        "devops"
+      ]
     }
   ]
 }
