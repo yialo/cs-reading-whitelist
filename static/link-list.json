@@ -5452,6 +5452,54 @@
       "tags": [
         "devops"
       ]
+    },
+    {
+      "caption": "An Overlooked Factor For Performance Optimization In React (by Zhenghao He)",
+      "url": "https://www.zhenghao.io/posts/top-level-perf",
+      "lang": "en",
+      "tags": [
+        "react_context"
+      ]
+    },
+    {
+      "caption": "Don't Stop Me Now: How to Use React useTransition() hook (by Dmitri Pavlutin)",
+      "url": "https://dmitripavlutin.com/react-usetransition/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Filtering arrays with TypeScript type guards (by Spencer Miskoviak)",
+      "url": "https://www.skovy.dev/blog/typescript-filter-array-with-type-guard",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "Exploring React 18’s three new APIs (by Chak Shun Yu)",
+      "url": "https://blog.logrocket.com/exploring-react-18-three-new-apis/",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Implementing advanced usePrevious hook with React useRef (by Nadia Makarevich)",
+      "url": "https://www.developerway.com/posts/implementing-advanced-use-previous-hook",
+      "lang": "en",
+      "tags": [
+        "react_hooks"
+      ]
+    },
+    {
+      "caption": "Concurrent React for Library Maintainers (by Ricky Hanlon)",
+      "url": "https://github.com/reactwg/react-18/discussions/70",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
     }
   ]
 }
