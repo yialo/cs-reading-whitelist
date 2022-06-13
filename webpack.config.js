@@ -68,6 +68,7 @@ module.exports = (env = {}) => {
       host: process.env.WDS_HOST || SERVER_DEFAULTS.HOST,
       port: process.env.WDS_PORT || SERVER_DEFAULTS.PORT,
       hot: true,
+      open: true,
       client: {
         overlay: true,
       },
