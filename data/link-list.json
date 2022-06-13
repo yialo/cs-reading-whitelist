@@ -5295,14 +5295,14 @@
       ]
     },
     {
-      "caption": "Remove the warning for setState on unmounted components (by Dan Abramov)",
+      "caption": "Remove the warning for setState on unmounted components",
       "series": [
         {
           "caption": "Pull request",
           "url": "https://github.com/facebook/react/pull/22114"
         },
         {
-          "caption": "ReactWG discussion",
+          "caption": "ReactWG discussion #82",
           "url": "https://github.com/reactwg/react-18/discussions/82"
         }
       ],
@@ -5494,11 +5494,111 @@
       ]
     },
     {
-      "caption": "Concurrent React for Library Maintainers (by Ricky Hanlon)",
+      "caption": "Concurrent React for Library Maintainers (ReactWG discussion #70)",
       "url": "https://github.com/reactwg/react-18/discussions/70",
       "lang": "en",
       "tags": [
         "react"
+      ]
+    },
+    {
+      "caption": "Suspense in React 18",
+      "series": [
+        {
+          "caption": "RFC",
+          "url": "https://github.com/reactjs/rfcs/blob/main/text/0213-suspense-in-react-18.md"
+        },
+        {
+          "caption": "ReactWG discussion #7",
+          "url": "https://github.com/reactwg/react-18/discussions/7"
+        }
+      ],
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "useMutableSource -> useSyncExternalStore",
+      "series": [
+        {
+          "caption": "ReactWG discussion #86",
+          "url": "https://github.com/reactwg/react-18/discussions/86"
+        },
+        {
+          "caption": "useMutableSource and selector stability (ReactWG discussion #84)",
+          "url": "https://github.com/reactwg/react-18/discussions/84"
+        }
+      ],
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "How to support Reusable State in Effects (ReactWG discussion #18)",
+      "url": "https://github.com/reactwg/react-18/discussions/18",
+      "lang": "en",
+      "tags": [
+        "react_hooks",
+        "state_management"
+      ]
+    },
+    {
+      "caption": "useRef: Warn about reading or writing mutable values during render",
+      "url": "https://github.com/facebook/react/pull/18545",
+      "lang": "",
+      "tags": [
+        "react_hooks"
+      ]
+    },
+    {
+      "caption": "React start losing its way (by Olenin Slava)",
+      "url": "https://towardsdev.com/react-start-losing-its-way-e765db4d2b07",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Avoid Git Merge Conflicts During a Big Rebase (by Felix Rieseberg)",
+      "url": "https://felixrieseberg.com/better-rebasing/",
+      "lang": "en",
+      "tags": [
+        "git"
+      ]
+    },
+    {
+      "caption": "More than concentric layers (by Herberto Graça)",
+      "url": "https://herbertograca.com/2018/07/07/more-than-concentric-layers/",
+      "lang": "en",
+      "tags": [
+        "architecture"
+      ]
+    },
+    {
+      "caption": "Is it OK to have type aliases for primitive types in TypeScript?",
+      "url": "https://softwareengineering.stackexchange.com/questions/437593/is-it-ok-to-have-type-aliases-for-primitive-types-in-typescript",
+      "lang": "en",
+      "tags": [
+        "typescript"
+      ]
+    },
+    {
+      "caption": "Rust from 0 to 80% for JavaScript Developers (by Michael Salim)",
+      "url": "https://michaelsalim.co.uk/blog/rust-from-0-to-80-for-js-dev/",
+      "lang": "en",
+      "tags": [
+        "rust",
+        "javascript"
+      ]
+    },
+    {
+      "caption": "Keeping A GitHub Fork Updated (by Dan Croak)",
+      "url": "https://thoughtbot.com/blog/keeping-a-github-fork-updated",
+      "lang": "en",
+      "tags": [
+        "git"
       ]
     }
   ]
