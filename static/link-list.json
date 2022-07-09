@@ -5687,13 +5687,14 @@
       ]
     },
     {
-      "caption": "",
-      "url": "",
-      "lang": "",
+      "caption": "Message \"npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead\"",
+      "url": "https://stackoverflow.com/questions/72401421/message-npm-warn-config-global-global-local-are-deprecated-use-loc",
+      "lang": "en",
       "tags": [
-        ""
+        "nodejs",
+        "npm"
       ],
-      "legend": ""
+      "legend": "Решаем проблему с npm на Windows"
     }
   ]
 }
