@@ -5417,6 +5417,7 @@
       "lang": "ru",
       "tags": [
         "trunk_based_development",
+        "feature_toggles",
         "git"
       ]
     },
@@ -5665,6 +5666,34 @@
       "tags": [
         "git"
       ]
+    },
+    {
+      "caption": "A feature based approach to React development (by Ryan Lanciaux)",
+      "url": "https://ryanlanciaux.com/blog/2017/08/20/a-feature-based-approach-to-react-development/",
+      "lang": "en",
+      "tags": [
+        "architecture",
+        "react",
+        "feature_toggles"
+      ],
+      "legend": "Не самый актуальный материал в целом, но есть мысли о feature toggles в конце статьи"
+    },
+    {
+      "caption": "You don't need void 0 in JavaScript (by Lars Grammel)",
+      "url": "https://p42.ai/blog/2022-05-10/you-dont-need-void-0",
+      "lang": "en",
+      "tags": [
+        "javascript"
+      ]
+    },
+    {
+      "caption": "",
+      "url": "",
+      "lang": "",
+      "tags": [
+        ""
+      ],
+      "legend": ""
     }
   ]
 }
