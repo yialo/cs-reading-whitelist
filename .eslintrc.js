@@ -6,6 +6,7 @@ const tsConfigMixin = {
     project: './tsconfig.json',
   },
   rules: {
+    // TODO: rethink after plugin update
     'react/jsx-filename-extension': [
       'error',
       {
@@ -13,7 +14,14 @@ const tsConfigMixin = {
         extensions: ['.jsx', '.tsx'],
       },
     ],
+    'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/no-unstable-nested-components': [
+      'error',
+      {
+        'allowAsProps': true,
+      },
+    ],
   },
   settings: {
     'import/resolver': {
