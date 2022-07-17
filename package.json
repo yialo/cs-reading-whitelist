@@ -51,7 +51,7 @@
     "css-minimizer-webpack-plugin": "4.0.0",
     "dotenv": "16.0.1",
     "fork-ts-checker-webpack-plugin": "7.2.12",
-    "html-loader": "3.1.2",
+    "html-loader": "4.1.0",
     "html-webpack-plugin": "5.5.0",
     "lodash": "4.17.21",
     "mini-css-extract-plugin": "2.6.1",
