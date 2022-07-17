@@ -5695,6 +5695,108 @@
         "npm"
       ],
       "legend": "Решаем проблему с npm на Windows"
+    },
+    {
+      "caption": "How to Organize Your React + Redux Codebase (by Manujith Pallewatte)",
+      "url": "https://www.pluralsight.com/guides/how-to-organize-your-react-+-redux-codebase",
+      "lang": "en",
+      "tags": [
+        "architecture",
+        "react",
+        "redux"
+      ]
+    },
+    {
+      "caption": "Please put units in names (by Ruud van Asseldonk)",
+      "url": "https://ruudvanasseldonk.com/2022/03/20/please-put-units-in-names",
+      "lang": "en",
+      "tags": [
+        "clean_code"
+      ]
+    },
+    {
+      "caption": "Почему utils & helpers это свалка (Сергей Сова)",
+      "url": "https://sova.dev/ru/why-utils-and-helpers-is-a-dump/",
+      "lang": "ru",
+      "tags": [
+        "architecture"
+      ]
+    },
+    {
+      "caption": "Open External next/link Links in a New Tab (by Sean C Davis)",
+      "url": "https://www.seancdavis.com/posts/open-external-nextlink-links-in-a-new-tab/",
+      "lang": "en",
+      "tags": [
+        "nextjs",
+        "react"
+      ]
+    },
+    {
+      "caption": "Actionless and Stateless Reducers in React (by Jules Blom)",
+      "url": "https://julesblom.com/writing/actionless-and-stateless-reducers",
+      "lang": "en",
+      "tags": [
+        "react",
+        "state_management"
+      ]
+    },
+    {
+      "caption": "React Reducer Patterns (by Patrick Smith)",
+      "url": "https://components.guide/react+typescript/reducer-patterns",
+      "lang": "en",
+      "tags": [
+        "react",
+        "state_management"
+      ]
+    },
+    {
+      "caption": "Idempotent JavaScript Operations (by Patrick Smith)",
+      "url": "https://components.guide/robust-javascript/idempotent-javascript-operations",
+      "lang": "en",
+      "tags": [
+        "algorithms",
+        "javascript"
+      ]
+    },
+    {
+      "caption": "Zero Hook Dependencies. The pain of useEffect’s dependencies (by Patrick Smith)",
+      "url": "https://components.guide/react+typescript/zero-hook-dependencies",
+      "lang": "en",
+      "tags": [
+        "react_hooks"
+      ]
+    },
+    {
+      "caption": "Are you sure that’s a number input? (by Kilian Valkhof)",
+      "url": "https://kilianvalkhof.com/2022/css-html/are-you-sure-thats-a-number-input/",
+      "lang": "en",
+      "tags": [
+        "html"
+      ]
+    },
+    {
+      "caption": "Can I :has() (by Brian Kardell)",
+      "url": "https://bkardell.com/blog/canihas.html",
+      "lang": "en",
+      "tags": [
+        "css"
+      ]
+    },
+    {
+      "caption": "The Unlocked Possibilities of the :has() Selector (by Jim Nielsen)",
+      "url": "https://blog.jim-nielsen.com/2022/unlocked-possibilities-of-has-selector/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ]
+    },
+    {
+      "caption": "A Previous Sibling Selector (by Jim Nielsen)",
+      "url": "https://blog.jim-nielsen.com/2022/previous-sibling-selector/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ]
     }
   ]
 }
