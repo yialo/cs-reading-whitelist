@@ -5797,6 +5797,50 @@
       "tags": [
         "css"
       ]
+    },
+    {
+      "caption": "Avoid anonymous components with displayName (by Jules Blom)",
+      "url": "https://julesblom.com/writing/component-displayname",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Goodbye, useEffect (by David Khourshid)",
+      "url": "https://youtu.be/HPoC-k7Rxwo",
+      "lang": "en",
+      "tags": [
+        "react",
+        "state_management"
+      ]
+    },
+    {
+      "caption": "Why React developers should modularize their applications? (by Alexis Mangin)",
+      "url": "https://alexmngn.medium.com/why-react-developers-should-modularize-their-applications-d26d381854c1",
+      "lang": "en",
+      "tags": [
+        "architecture",
+        "react"
+      ]
+    },
+    {
+      "caption": "Writing Scalable React Apps with the Component Folder Pattern (by Donavon West)",
+      "url": "https://medium.com/styled-components/component-folder-pattern-ee42df37ec68",
+      "lang": "en",
+      "tags": [
+        "react",
+        "architecture"
+      ]
+    },
+    {
+      "caption": "Как и зачем типизировать CSS-переменные? (София Валитова)",
+      "url": "https://ru.ariarzer.dev/articles/2022/css-variables-typing.html",
+      "lang": "ru",
+      "tags": [
+        "css_custom_properties",
+        "css_houdini"
+      ]
     }
   ]
 }
