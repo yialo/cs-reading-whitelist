@@ -45,8 +45,7 @@ $height: $fontSize * $lineHeight + ($padding + $borderWidth) * 2;
 
 ._adjacent {
   border: $border;
-  padding-top: $padding;
-  padding-bottom: $padding;
+  padding-block: $padding;
   background-color: white;
 }
 

@@ -6,8 +6,7 @@
   justify-self: center;
   width: 100%;
   max-width: utils.$viewport-sm-max;
-  padding-left: var(--size_paddingX);
-  padding-right: var(--size_paddingX);
+  padding-inline: var(--size_paddingX);
   background-color: var(--color_background-main);
 
   @include utils.darkTheme() {
@@ -15,12 +14,10 @@
   }
 
   @media (max-width: utils.$viewport-xs-max) {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-block: 24px;
   }
 
   @media (min-width: utils.$viewport-sm-min) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-block: 32px;
   }
 }

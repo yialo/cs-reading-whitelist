@@ -73,7 +73,7 @@ export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
     const goTopButton = (
       <div
         className={style.goTopButton}
-        style={{ paddingBottom: goTopButtonBottomShift }}
+        style={{ paddingBlockEnd: goTopButtonBottomShift }}
       >
         <Button
           aria-label="Вернуться наверх"

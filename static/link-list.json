@@ -5841,6 +5841,48 @@
         "css_custom_properties",
         "css_houdini"
       ]
+    },
+    {
+      "caption": "Solving The Dangler Conundrum with Container Queries and :has() (by Dave Rupert)",
+      "url": "https://daverupert.com/2022/07/solving-the-dangler-conundrum-with-has-and-container-queries/",
+      "lang": "en",
+      "tags": [
+        "css_containment",
+        "css_grid"
+      ]
+    },
+    {
+      "caption": "Background opacity with one line of CSS (by Shruti Balasa)",
+      "url": "https://www.getrevue.co/profile/shrutibalasa/issues/background-opacity-with-one-line-of-css-1294197",
+      "lang": "en",
+      "tags": [
+        "css"
+      ]
+    },
+    {
+      "caption": "Is there a grid-wrap similar to flex-wrap? (by Shruti Balasa)",
+      "url": "https://www.getrevue.co/profile/shrutibalasa/issues/is-there-a-grid-wrap-similar-to-flex-wrap-1305183",
+      "lang": "en",
+      "tags": [
+        "css_grid"
+      ]
+    },
+    {
+      "caption": "On ratings and meters (Lea Verou)",
+      "url": "https://lea.verou.me/2022/08/on-ratings-and-meters/",
+      "lang": "en",
+      "tags": [
+        "html",
+        "a11y"
+      ]
+    },
+    {
+      "caption": "Scrum vs Kanban: в чем разница и что выбрать? (by Alexander Sergeev)",
+      "url": "https://habr.com/ru/amp/post/351048/",
+      "lang": "ru",
+      "tags": [
+        "project_management"
+      ]
     }
   ]
 }

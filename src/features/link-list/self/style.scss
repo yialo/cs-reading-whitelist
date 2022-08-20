@@ -12,16 +12,16 @@
   align-items: center;
 
   @media (max-width: utils.$viewport-xs-max) {
-    margin-bottom: 16px;
+    margin-block-end: 16px;
   }
 
   @media (min-width: utils.$viewport-sm-min) {
-    margin-bottom: 32px;
+    margin-block-end: 32px;
   }
 }
 
 .controlBar {
-  margin-bottom: 15px;
+  margin-block-end: 15px;
 }
 
 .headline {
