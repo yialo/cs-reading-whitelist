@@ -11,8 +11,7 @@
 
   display: inline-block;
   border-radius: 2px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-inline: 2px;
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
@@ -42,7 +41,7 @@
 
   position: relative;
   display: inline;
-  padding-left: var(--size_paddingLeft);
+  padding-inline-start: var(--size_paddingLeft);
   color: var(--color_text-caption);
   cursor: pointer;
 
@@ -72,7 +71,7 @@
 
 .seriesItem {
   position: relative;
-  padding-left: var(--size_paddingLeft);
+  padding-inline-start: var(--size_paddingLeft);
 
   &::before {
     // TODO: add abstraction for more precise size and position calculation

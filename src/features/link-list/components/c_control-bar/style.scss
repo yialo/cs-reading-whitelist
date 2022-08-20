@@ -6,9 +6,8 @@
   margin-left: calc(var(--size_paddingX) * -1);
   margin-right: calc(var(--size_paddingX) * -1);
   border-bottom: 1px solid #bdbdbd;
-  padding-bottom: 16px;
-  padding-left: var(--size_paddingX);
-  padding-right: var(--size_paddingX);
+  padding-block-end: 16px;
+  padding-inline: var(--size_paddingX);
 }
 
 .adaptiveRow {
