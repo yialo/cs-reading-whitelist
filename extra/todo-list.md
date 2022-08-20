@@ -5,7 +5,7 @@
 * Add useTransition to text input
 * Add [Prettier](https://create-react-app.dev/docs/setting-up-your-editor/#formatting-code-automatically)
 * Format LinkList item as card
-  * Add optional **author** field and sorting by author
+  * Add optional **author** field section (name, links) and sorting by author name
   * Add optional **mediaType** field and sorting by media (video, audio etc.)
 * Add request cancellation with AbortController
 * Add volumes
