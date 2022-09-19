@@ -37,12 +37,10 @@
     content: "";
     position: relative;
     top: 5px;
-    border-width: 8px;
-    border-bottom-width: 0;
     border-style: solid;
-    border-color: utils.$color-darkGray;
-    border-left-color: transparent;
-    border-right-color: transparent;
+    border-block-end-style: none;
+    border-width: 8px;
+    border-color: utils.$color-darkGray transparent;
   }
 
   &_hasPopup {
@@ -60,7 +58,7 @@
   top: 100%;
   width: 100%;
   border: 1px solid utils.$color-lightGray;
-  border-top-style: none;
+  border-block-start-style: none;
   background-color: white;
 }
 
