@@ -51,9 +51,8 @@
     top: calc(50% - var(--size_halfTriangle));
     left: var(--size_halfTriangle);
     border: var(--size_halfTriangle) solid var(--color_text-caption);
-    border-right-width: 0;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
+    border-inline-end-width: 0;
+    border-block-color: transparent;
     transition: transform 0.2s;
 
     .isExpanded & {
