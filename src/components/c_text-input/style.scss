@@ -23,6 +23,7 @@ $height: $fontSize * $lineHeight + ($padding + $borderWidth) * 2;
 
 .field {
   display: block;
+  width: 100%;
   height: $height;
   padding: $padding;
   border: $border;
@@ -30,16 +31,15 @@ $height: $fontSize * $lineHeight + ($padding + $borderWidth) * 2;
   font-size: inherit;
   line-height: inherit;
   background-color: white;
-  width: 100%;
 
   &_adjacent_left {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-start-start-radius: 0;
+    border-end-start-radius: 0;
   }
 
   &_adjacent_right {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-start-end-radius: 0;
+    border-end-end-radius: 0;
   }
 }
 
@@ -54,8 +54,8 @@ $height: $fontSize * $lineHeight + ($padding + $borderWidth) * 2;
 
   width: $height + 4px;
   border-inline-end-style: none;
-  border-top-left-radius: $borderRadius;
-  border-bottom-left-radius: $borderRadius;
+  border-start-start-radius: $borderRadius;
+  border-end-start-radius: $borderRadius;
   text-align: center;
   color: $adjacentColor;
 }
@@ -66,8 +66,8 @@ $height: $fontSize * $lineHeight + ($padding + $borderWidth) * 2;
   position: relative;
   width: $height;
   border-inline-start-style: none;
-  border-top-right-radius: $borderRadius;
-  border-bottom-right-radius: $borderRadius;
+  border-start-end-radius: $borderRadius;
+  border-end-end-radius: $borderRadius;
 
   @mixin stick($rotationAngle) {
     $stick-width: math.div($height, 2);
