@@ -5907,6 +5907,32 @@
       "tags": [
         "css"
       ]
+    },
+    {
+      "caption": "Необычное применение Fork API (Сергей Сова)",
+      "url": "https://sova.dev/ru/unusual-use-of-fork-api/",
+      "lang": "ru",
+      "tags": [
+        "effector"
+      ]
+    },
+    {
+      "caption": "How to write CommonJS exports that can be name-imported from ESM (by Dr. Axel Rauschmayer)",
+      "url": "https://2ality.com/2022/10/commonjs-named-exports.html",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "nodejs"
+      ]
+    },
+    {
+      "caption": "Pattern Matching in JavaScript (by Kyle Shevlin)",
+      "url": "https://kyleshevlin.com/pattern-matching",
+      "lang": "en",
+      "tags": [
+        "algorithms",
+        "javascript"
+      ]
     }
   ]
 }
