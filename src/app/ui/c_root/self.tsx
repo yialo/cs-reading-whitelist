@@ -2,7 +2,7 @@ import * as React from 'react';
 import cn from 'clsx';
 import { useLocation } from 'react-router-dom';
 
-import { useHasDarkTheme } from '@/components/theme';
+import { useHasDarkTheme } from '@/shared/ui';
 import { usePrevious } from '@/hooks/use-previous';
 
 import { RootFooter } from '../c_footer';

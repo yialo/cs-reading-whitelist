@@ -2,11 +2,11 @@ import * as React from 'react';
 import { Provider as ReduxProvider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
 
-import { ErrorBoundary } from '@/components/c_error-boundary';
-import { ThemeProvider } from '@/components/theme';
+import { ThemeProvider } from '@/shared/ui';
 import { configureStore } from '@/store/configure';
 
-import { Root } from './components/c_root';
+import { ErrorBoundary } from './c_error-boundary';
+import { Root } from './c_root';
 
 const store = configureStore();
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import { Preloader } from '@/components/c_preloader';
+import { Preloader } from '@/shared/ui';
 import { ROUTE } from '@/enums';
 
 import { Error404Page } from '../c_error-404-page';

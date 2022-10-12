@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cn from 'clsx';
 
-import { MainButton } from '@/components/c_main-button';
+import { MainButton } from '@/shared/ui';
 import type { TClassNameable } from '@/types/common';
 
 import type { TSubject } from '../../types';
