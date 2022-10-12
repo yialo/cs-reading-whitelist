@@ -1,5 +1,6 @@
 # Todo list
 
+* Fix CSS order mess after minification
 * Migrate to [RTK](https://redux.js.org/introduction/why-rtk-is-redux-today)
 * Add useTransition to text input
 * Add [Prettier](https://create-react-app.dev/docs/setting-up-your-editor/#formatting-code-automatically)
