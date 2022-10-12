@@ -20,3 +20,4 @@
 * (Maybe) Migrate to rems
 * Add tag cloud
 * Add extended favicon set
+* (Maybe) Remove html-loader or html-webpack-plugin
