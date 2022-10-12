@@ -1,13 +1,10 @@
 import * as React from 'react';
 import cn from 'clsx';
 
-import { Button } from '@/components/c_button';
-import { Select } from '@/components/c_select';
-import { TextInput } from '@/components/c_text-input';
+import { Button, Select, TextInput } from '@/shared/ui';
 import type { TClassNameable } from '@/types/common';
 
 import { FILTER, type TFilter, SORTING, type TSorting } from '../../enums';
-
 import { ControlBarAmountMeter } from './c_amount-meter';
 
 import style from './style.scss';

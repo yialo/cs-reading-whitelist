@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Preloader } from '@/components/c_preloader';
+import { Preloader } from '@/shared/ui';
 import { PROCESS } from '@/enums';
 import { MainLayout } from '@/layouts/c_main-layout';
 import type { TState } from '@/store/state';

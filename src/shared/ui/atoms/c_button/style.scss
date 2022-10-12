@@ -7,6 +7,12 @@
   line-height: inherit;
   background-color: transparent;
 
+  &_main {
+    border-radius: 2px;
+    padding: 8px 16px;
+    line-height: 1.25;
+  }
+
   &:disabled {
     cursor: default;
   }

@@ -3,8 +3,7 @@ import cn from 'clsx';
 import debounce from 'lodash/debounce';
 import { createPortal } from 'react-dom';
 
-import { Button } from '@/components/c_button';
-import { useHasDarkTheme } from '@/components/theme';
+import { Button, useHasDarkTheme } from '@/shared/ui';
 import type { TClassNameable } from '@/types/common';
 
 import { AppNavMenu } from '../c_nav-menu';

@@ -1,10 +1,9 @@
 import * as React from 'react';
 import cn from 'clsx';
 
-import { Button } from '@/components/c_button';
 import type { TClassNameable } from '@/types/common';
 
-
+import { Button } from '../../atoms';
 import style from './style.scss';
 
 type TTextPropsWithoutForwardedRef = TClassNameable & {

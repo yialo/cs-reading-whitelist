@@ -2,7 +2,7 @@ import * as React from 'react';
 import cn from 'clsx';
 import { useSelector } from 'react-redux';
 
-import { Button } from '@/components/c_button';
+import { Button } from '@/shared/ui';
 
 import { selectContentHeaders } from '../../ducks/selectors';
 
