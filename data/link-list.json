@@ -4,75 +4,56 @@
       "caption": "Frontend WhiteList",
       "url": "https://github.com/melnik909/frontend-whitelist",
       "lang": "ru",
-      "tags": [
-        "cheatsheet"
-      ],
+      "tags": ["cheatsheet"],
       "legend": "список авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов"
     },
     {
       "caption": "Словарь фронтенд-терминов",
       "url": "https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md",
       "lang": "ru",
-      "tags": [
-        "cheatsheet"
-      ]
+      "tags": ["cheatsheet"]
     },
     {
       "caption": "Рекомендуемые книги по frontend-разработке",
       "url": "https://web-standards.ru/books/",
       "lang": "ru",
-      "tags": [
-        "cheatsheet"
-      ]
+      "tags": ["cheatsheet"]
     },
     {
       "caption": "Floating Point Math",
       "url": "http://0.30000000000000004.com/",
       "lang": "en",
-      "tags": [
-        "algorithms"
-      ]
+      "tags": ["algorithms"]
     },
     {
       "caption": "(Законы Акина) законы космической инженерии",
       "url": "https://habr.com/ru/post/354936/",
       "lang": "ru",
-      "tags": [
-        "project_management"
-      ]
+      "tags": ["project_management"]
     },
     {
       "caption": "Tips on Code Refactoring, From a Former Addict",
       "url": "https://snipcart.com/blog/tips-on-code-refactoring-from-a-former-addict",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "How To Learn Anything Faster - 5 Tips to Increase your Learning Speed (feat. _Project Better Self_)",
       "url": "https://www.youtube.com/watch?v=rA2XHWM__yE",
       "lang": "en",
-      "tags": [
-        "video",
-        "productivity"
-      ]
+      "tags": ["video", "productivity"]
     },
     {
       "caption": "10 Tips for Writing Cleaner & Better Code",
       "url": "https://www.makeuseof.com/tag/10-tips-writing-cleaner-better-code/",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Без вопросов, без плана, зато с рюшечками: что общего между узбекскими строителями и плохими разработчиками?",
       "url": "https://cmsmagazine.ru/journal/items-no-questions-no-plan/",
       "lang": "ru",
-      "tags": [
-        "project_management"
-      ]
+      "tags": ["project_management"]
     },
     {
       "caption": "Хороший разработчик и его образ мышления",
@@ -87,903 +68,630 @@
         }
       ],
       "lang": "ru",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Бизнес, у которого никогда не будет клиентов из интернета",
       "url": "https://vc.ru/marketing/60262-biznes-u-kotorogo-nikogda-ne-budet-klientov-iz-interneta",
       "lang": "ru",
-      "tags": [
-        "project_management"
-      ]
+      "tags": ["project_management"]
     },
     {
       "caption": "An A-Z Index of the Linux command line: bash + utilities",
       "url": "https://ss64.com/bash/",
       "lang": "en",
-      "tags": [
-        "cli",
-        "bash"
-      ]
+      "tags": ["cli", "bash"]
     },
     {
       "caption": "Оценка задач фронтендера",
       "url": "https://frontender.info/estimating-a-front-end-web-dev-job/",
       "lang": "ru",
-      "tags": [
-        "project_management"
-      ]
+      "tags": ["project_management"]
     },
     {
       "caption": "О jQuery и Bootstrap: расставляем точки над «i»",
       "url": "https://frontender.info/whats-wrong-with-jquery-and-bootstrap/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "js",
-        "bootstrap",
-        "jquery"
-      ]
+      "tags": ["css", "js", "bootstrap", "jquery"]
     },
     {
       "caption": "Как я победила 7-летний недосып и стала жаворонком",
       "url": "https://lifehacker.ru/pobedila-7-letnij-nedosyp/",
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Чем хорош язык Go и зачем его изучать? Все плюшки Golang",
       "url": "https://proglib.io/p/language-go/",
       "lang": "ru",
-      "tags": [
-        "golang"
-      ]
+      "tags": ["golang"]
     },
     {
       "caption": "Как я перестал верить технологиям (Алексей Симоненко)",
       "url": "https://www.youtube.com/watch?v=f4uXBpP_xxY",
       "lang": "ru",
-      "tags": [
-        "methodology",
-        "video"
-      ]
+      "tags": ["methodology", "video"]
     },
     {
       "caption": "Лебедь рак и щука: как технологии тянут фронтенд на дно (Евгений Гусев)",
       "url": "https://www.youtube.com/watch?v=jPbqeSSDuug",
       "lang": "ru",
-      "tags": [
-        "methodology",
-        "video"
-      ]
+      "tags": ["methodology", "video"]
     },
     {
       "caption": "Anti hype как не гнаться за технологиями и начать жить (Andrey Listochkin)",
       "url": "https://www.youtube.com/watch?v=xPFRUM_oDKA",
       "lang": "ru",
-      "tags": [
-        "methodology",
-        "video"
-      ]
+      "tags": ["methodology", "video"]
     },
     {
       "caption": "Мерцание технологий, или Инжиниринг 21-го века (Максим Юзва)",
       "url": "https://www.youtube.com/watch?v=MzTng78DCm4",
       "lang": "ru",
-      "tags": [
-        "methodology",
-        "video"
-      ]
+      "tags": ["methodology", "video"]
     },
     {
       "caption": "5 минут (Вадим Макишвили)",
       "url": "https://www.youtube.com/watch?v=iBHr8gKc5L8",
       "lang": "ru",
-      "tags": [
-        "video",
-        "productivity"
-      ]
+      "tags": ["video", "productivity"]
     },
     {
       "caption": "Введение в понятие алгоритма",
       "url": "https://inf1.info/algorithmbasics",
       "lang": "ru",
-      "tags": [
-        "algorithms"
-      ]
+      "tags": ["algorithms"]
     },
     {
       "caption": "Как UX/UI дизайнеру достичь баланса между работой и обучением?",
       "url": "https://vc.ru/design/84443-kak-ux-ui-dizayneru-dostich-balansa-mezhdu-rabotoy-i-obucheniem",
       "lang": "ru",
-      "tags": [
-        "productivity",
-        "ux_ui"
-      ],
+      "tags": ["productivity", "ux_ui"],
       "legend": "рекомендации актуальны для всех работников IT-сферы"
     },
     {
       "caption": "Тяжела ли работа программиста — взгляд с точки зрения психофизиологии",
       "url": "https://habr.com/ru/post/468277/",
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Multiple Commands on a Single Windows Command Line",
       "url": "https://htipe.wordpress.com/2009/07/19/multiple-commands-on-a-single-windows-command-line/",
       "lang": "en",
-      "tags": [
-        "cli",
-        "cmd"
-      ],
+      "tags": ["cli", "cmd"],
       "legend": "difference between '&' and '&&' in command line"
     },
     {
       "caption": "Dr. Richard Felder's Study Checklist",
       "url": "https://www.engr.ncsu.edu/wp-content/uploads/drive/1Ib-0f_OMXAtmzDxncBziM4G0YWqRtret/1999-r_memo.pdf?fbclid=IwAR02E5DPt8muE6Na6MTF67BbALMoWpkpH0n0IaXwOlg3xH6MOsb-CTxrYaw",
       "lang": "en",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "noteskeeper.ru",
       "url": "https://noteskeeper.ru/",
       "lang": "ru",
-      "tags": [
-        "blogs"
-      ],
+      "tags": ["blogs"],
       "legend": "персональный журнал заметок Владимира Кузнецова"
     },
     {
       "caption": "Сайт Юлии Бухваловой (Yoksel)",
       "url": "http://css.yoksel.ru/",
       "lang": "ru",
-      "tags": [
-        "blogs"
-      ],
+      "tags": ["blogs"],
       "legend": "много неочевидного об SVG"
     },
     {
       "caption": "METANIT",
       "url": "https://metanit.com/",
       "lang": "ru",
-      "tags": [
-        "blogs"
-      ]
+      "tags": ["blogs"]
     },
     {
       "caption": "VS Code can do that?!",
       "url": "https://vscodecandothat.com/",
       "lang": "en",
-      "tags": [
-        "editors"
-      ]
+      "tags": ["editors"]
     },
     {
       "caption": "10 essential Vim plugins for 2018",
       "url": "https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9",
       "lang": "en",
-      "tags": [
-        "editors"
-      ]
+      "tags": ["editors"]
     },
     {
       "caption": "The Three Types of Performance Testing",
       "url": "https://csswizardry.com/2018/10/three-types-of-performance-testing/",
       "lang": "en",
-      "tags": [
-        "testing",
-        "performance"
-      ]
+      "tags": ["testing", "performance"]
     },
     {
       "caption": "Три истории о тестировании (Марина Миронович)",
       "url": "https://www.youtube.com/watch?v=dfYZ6QejnnM",
       "lang": "ru",
-      "tags": [
-        "testing",
-        "video"
-      ]
+      "tags": ["testing", "video"]
     },
     {
       "caption": "Как не надо тестировать (Иван Стрелков)",
       "url": "https://www.youtube.com/watch?v=ni9Zz1j8fI4",
       "lang": "ru",
-      "tags": [
-        "testing",
-        "video"
-      ]
+      "tags": ["testing", "video"]
     },
     {
       "caption": "NPM Documentation",
       "url": "https://docs.npmjs.com/",
       "lang": "en",
-      "tags": [
-        "nodejs",
-        "npm",
-        "docs"
-      ]
+      "tags": ["nodejs", "npm", "docs"]
     },
     {
       "caption": "Полезные команды для работы с Node.js",
       "url": "https://htmlacademy.ru/blog/useful/nodejs/useful-commands-for-working-with-nodejs",
       "lang": "ru",
-      "tags": [
-        "nodejs",
-        "npm",
-        "cheatsheet"
-      ]
+      "tags": ["nodejs", "npm", "cheatsheet"]
     },
     {
       "caption": "10 привычек довольного node.js разработчика",
       "url": "https://habr.com/ru/company/Voximplant/blog/277707/",
       "lang": "ru",
-      "tags": [
-        "nodejs",
-        "npm",
-        "cheatsheet"
-      ]
+      "tags": ["nodejs", "npm", "cheatsheet"]
     },
     {
       "caption": "Вы не знаете npm",
       "url": "https://habr.com/ru/sandbox/108916/",
       "lang": "ru",
-      "tags": [
-        "nodejs",
-        "npm",
-        "cheatsheet"
-      ]
+      "tags": ["nodejs", "npm", "cheatsheet"]
     },
     {
       "caption": "The package.json guide",
       "url": "https://flaviocopes.com/package-json/",
       "lang": "en",
-      "tags": [
-        "nodejs",
-        "npm"
-      ]
+      "tags": ["nodejs", "npm"]
     },
     {
       "caption": "Разбираемся с версиями пакетов в node",
       "url": "https://monsterlessons.com/project/lessons/razbiraemsya-s-versiyami-paketov-v-node",
       "lang": "ru",
-      "tags": [
-        "nodejs",
-        "npm"
-      ]
+      "tags": ["nodejs", "npm"]
     },
     {
       "caption": "8 npm Tricks You Can Use to Impress Your Colleagues",
       "url": "https://www.freecodecamp.org/news/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e/",
       "lang": "en",
-      "tags": [
-        "nodejs",
-        "npm",
-        "cheatsheet"
-      ]
+      "tags": ["nodejs", "npm", "cheatsheet"]
     },
     {
       "caption": "Как запустить JavaScript с помощью Node.js",
       "url": "https://htmlacademy.ru/blog/useful/javascript/how-start-javascript-on-nodejs",
       "lang": "ru",
-      "tags": [
-        "nodejs"
-      ]
+      "tags": ["nodejs"]
     },
     {
       "caption": "11 простых npm трюков, которые вас удивят",
       "url": "https://medium.com/@echobrain/11-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D1%85-npm-%D1%82%D1%80%D1%8E%D0%BA%D0%BE%D0%B2-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%B2%D0%B0%D1%81-%D1%83%D0%B4%D0%B8%D0%B2%D1%8F%D1%82-d00510587ec",
       "lang": "ru",
-      "tags": [
-        "nodejs",
-        "npm",
-        "cheatsheet"
-      ]
+      "tags": ["nodejs", "npm", "cheatsheet"]
     },
     {
       "caption": "Скринкаст по Node.JS (Learn.javascript.ru, 2013)",
       "url": "https://www.youtube.com/playlist?list=PLDyvV36pndZFWfEQpNixIHVvp191Hb3Gg",
       "lang": "ru",
-      "tags": [
-        "nodejs",
-        "video"
-      ],
+      "tags": ["nodejs", "video"],
       "legend": "Внешне курс устарел, поэтому в 2021 году это скорее сборник задач, а не уроки по списыванию чужого кода с доски. Если честно выполнять все поставленные автором задачи, читая документацию новых версий используемых библиотек (или их современных аналогов, npmtrends.com в помощь), будут получены реальные практические знания. Впасть в иллюзию компетентности не получится: или делаешь, или признаёшь, что не хочешь разбираться."
     },
     {
       "caption": "Готовим идеальный CSS",
       "url": "https://habr.com/ru/company/constanta/blog/428800/",
       "lang": "ru",
-      "tags": [
-        "build_tools",
-        "webpack"
-      ],
+      "tags": ["build_tools", "webpack"],
       "legend": "подключение и оптимизация стилей с помощью Webpack"
     },
     {
       "caption": "Новые (и старые) единицы измерения в CSS, о которых вы никогда не слышали",
       "url": "https://ru.hexlet.io/blog/posts/new-and-old-css-units",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "HTML & CSS: как не надо",
       "url": "https://yoksel.github.io/bad-practices/",
       "lang": "ru",
-      "tags": [
-        "html",
-        "css",
-        "clean_code"
-      ],
+      "tags": ["html", "css", "clean_code"],
       "legend": "подборка антипаттернов вёрстки"
     },
     {
       "caption": "Мой ванильный CSS (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=CaDnbOjXjRg",
       "lang": "ru",
-      "tags": [
-        "css",
-        "video"
-      ]
+      "tags": ["css", "video"]
     },
     {
       "caption": "A Sliding Nightmare: Understanding the Range Input",
       "url": "https://css-tricks.com/sliding-nightmare-understanding-range-input/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Styling Cross-Browser Compatible Range Inputs with CSS",
       "url": "https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Упорядочивание багов кроссбраузерности Flexbox",
       "url": "https://css-live.ru/articles/uporyadochivanie-bagov-krossbrauzernosti-flexbox.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_flexbox"
-      ]
+      "tags": ["css", "css_flexbox"]
     },
     {
       "caption": "Парадоксы display: contents и будущее текста в CSS",
       "url": "https://css-live.ru/css/paradoksy-displaycontents-i-budushhee-teksta-v-css.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Где всё сложно с переносами строк. Вот все CSS- и HTML-хитрости для этого",
       "url": "https://css-live.ru/articles/gde-vsyo-slozhno-s-perenosami-strok-vot-vse-css-i-html-xitrosti-dlya-etogo.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "CSS Flexbox cheatsheet (by Malven Co.)",
       "url": "http://flexbox.malven.co/",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_flexbox",
-        "tool",
-        "cheatsheet"
-      ]
+      "tags": ["css", "css_flexbox", "tool", "cheatsheet"]
     },
     {
       "caption": "Разбираемся с clip-path",
       "url": "https://getinstance.info/articles/css/making-sense-of-clip-path/",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Пользовательские CSS-атрибуты как механизм передачи данных из JavaScript в CSS",
       "url": "https://css-live.ru/articles/polzovatelskie-css-atributy-kak-mexanizm-peredachi-dannyx-iz-javascript-v-css.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Архитектура CSS",
       "url": "https://web-standards.ru/articles/css-architecture/",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "My approach to using 'z-index'",
       "url": "https://medium.com/hackernoon/my-approach-to-using-z-index-eca67feb079c",
       "lang": "en",
-      "tags": [
-        "css_stacking_context"
-      ]
+      "tags": ["css_stacking_context"]
     },
     {
       "caption": "Псевдоэлементы, которых не может быть",
       "url": "https://css-live.ru/articles-css/impossible-pseudos.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "«Запашки» CSS-кода",
       "url": "https://css-live.ru/articles/zapashki-css-koda.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "clean_code"
-      ]
+      "tags": ["css", "clean_code"]
     },
     {
       "caption": "A Tale of 'width' and 'max-width'",
       "url": "https://css-tricks.com/tale-width-max-width/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Building a Circular Navigation with CSS Transforms",
       "url": "https://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Длинная телега про Bootstrap",
       "url": "https://gist.github.com/iAdramelk/d328b73c72cab92ef95f",
       "lang": "ru",
-      "tags": [
-        "css",
-        "bootstrap"
-      ]
+      "tags": ["css", "bootstrap"]
     },
     {
       "caption": "Как на самом деле работают 'z-index'",
       "url": "https://habr.com/ru/post/431046/",
       "lang": "ru",
-      "tags": [
-        "css_stacking_context"
-      ]
+      "tags": ["css_stacking_context"]
     },
     {
       "caption": "Как вставить двадцать видео с Ютуба и не скачать слона (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=4JS70KB9GS0",
       "lang": "ru",
-      "tags": [
-        "css",
-        "video",
-        "performance"
-      ]
+      "tags": ["css", "video", "performance"]
     },
     {
       "caption": "Прототип изоляции стилей для Shower на веб-компонентах (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=_FRIRJZYlxU",
       "lang": "ru",
-      "tags": [
-        "css",
-        "video",
-        "web_components"
-      ]
+      "tags": ["css", "video", "web_components"]
     },
     {
       "caption": "DocumentFragment: что это такое и как с ним (не) бороться",
       "url": "https://habr.com/ru/post/413287/",
       "lang": "ru",
-      "tags": [
-        "web_components",
-        "js"
-      ]
+      "tags": ["web_components", "js"]
     },
     {
       "caption": "Styling a Select Like It’s 2019",
       "url": "https://www.filamentgroup.com/lab/select-css.html",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Houdini: Maybe The Most Exciting Development In CSS You’ve Never Heard Of",
       "url": "https://www.smashingmagazine.com/2016/03/houdini-maybe-the-most-exciting-development-in-css-youve-never-heard-of/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Варианты «clearfix-хака» и его замен: сводная таблица",
       "url": "https://css-live.ru/articles-css/clearfix-block-formatting-context-methods-cheatsheet.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Почему мы не добавим в HTML элемент <чудесный>?",
       "url": "https://css-live.ru/faq/pochemu-my-ne-dobavim-v-html-element.html",
       "lang": "ru",
-      "tags": [
-        "html"
-      ]
+      "tags": ["html"]
     },
     {
       "caption": "Устойчивый, декларативный, контекстный (новый взгляд на сильные стороны CSS)",
       "url": "https://css-live.ru/articles/ustojchivyj-deklarativnyj-kontekstnyj-novyj-vzglyad-na-silnye-storony-css.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Фокусы со стилями для фокуса",
       "url": "https://css-live.ru/articles/fokusy-so-stilyami-dlya-fokusa.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Как работает 'z-index'",
       "url": "https://www.internet-technologies.ru/articles/kak-rabotaet-z-index.html",
       "lang": "ru",
-      "tags": [
-        "css_stacking_context"
-      ]
+      "tags": ["css_stacking_context"]
     },
     {
       "caption": "Свойства 'object-fit' и 'object-position'. Масштабируем пропорционально",
       "url": "https://html5book.ru/svoystva-object-fit-i-object-position/",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Сторонний CSS небезопасен",
       "url": "https://css-live.ru/articles-css/storonnij-css-nebezopasen.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "security"
-      ]
+      "tags": ["css", "security"]
     },
     {
       "caption": "Новый 'display: flow-root' — не clearfix, но что это и зачем?",
       "url": "https://css-live.ru/faq/displayflow-root-not-clearfix.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "О «призраках» в CSS и борьбе с ними: анонимные боксы",
       "url": "https://css-live.ru/articles/mysterious-css-anonymous-boxes.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "То, что вам никто не говорил о 'z-index' в статье «То, что вам никто не говорил о z-index»",
       "url": "https://habr.com/ru/post/225721/",
       "lang": "ru",
-      "tags": [
-        "css_stacking_context"
-      ]
+      "tags": ["css_stacking_context"]
     },
     {
       "caption": "'display: contents' и его новые друзья спешат на помощь",
       "url": "https://css-live.ru/articles/display-contents-practice.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "CSS-свойство 'display' и контексты форматирования",
       "url": "https://css-live.ru/articles-css/display-and-formatting-contexts.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Каждый раз, когда вы называете проприетарную фичу словом «CSS3», в мире умирает котенок",
       "url": "https://css-live.ru/articles-css/kazhdyj-raz-kogda-vy-nazyvaete-proprietarnuyu-fichu-slovom-css3-v-mire-umiraet-kotenok.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "clean_code"
-      ]
+      "tags": ["css", "clean_code"]
     },
     {
       "caption": "Стандарт для нестандартного",
       "url": "https://css-live.ru/articles-css/standart-dlya-nestandartnogo.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Правильная шпаргалка по CSS-каскаду",
       "url": "https://css-live.ru/css/pravilnaya-shpargalka-po-css-kaskadu.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "CSS и производительность сети",
       "url": "https://css-live.ru/articles/css-i-proizvoditelnost-seti.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "performance"
-      ]
+      "tags": ["css", "performance"]
     },
     {
       "caption": "Равномерное выравнивание блоков по ширине",
       "url": "https://css-live.ru/articles-css/ravnomernoe-vyravnivanie-blokov-po-shirine.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Ссылки против кнопок в современных веб-приложениях",
       "url": "https://css-live.ru/articles/ssylki-protiv-knopok-v-sovremennyx-veb-prilozheniyax.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "a11y"
-      ]
+      "tags": ["css", "a11y"]
     },
     {
       "caption": "Aspect Ratio Boxes",
       "url": "https://css-tricks.com/aspect-ratio-boxes/",
       "lang": "en",
-      "tags": [
-        ""
-      ]
+      "tags": [""]
     },
     {
       "caption": "Изучаем матрицы трансформаций в CSS",
       "url": "https://css-live.ru/articles/izuchaem-matricy-transformacij-v-css.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_transform"
-      ]
+      "tags": ["css", "css_transform"]
     },
     {
       "caption": "CSS3 3D-трансформации",
       "url": "https://html5book.ru/3d-transform/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_transform"
-      ]
+      "tags": ["css", "css_transform"]
     },
     {
       "caption": "CSS border-image clarifying",
       "url": "https://codepen.io/yialo/pen/mZJVBq",
       "lang": "en",
-      "tags": [
-        "css",
-        "mine"
-      ],
+      "tags": ["css", "mine"],
       "legend": "мои примеры различных значений CSS-свойства border-image. В частности, можно увидеть, что количество фрагментов при border-image-repeat: round вычисляется по правилам округления до целого ('Math.round()' в JS, например): [0, 0.5) ‒ в меньшую сторону, [0.5, 1) ‒ в большую. Округляется частное от деления размера области бокса, предназначенной для размещения боковой части рамки, на размер соответствующей области выбранного в border-image-source изображения, оставшейся доступным после применения к нему border-image-slice."
     },
     {
       "caption": "'font-feature-settings'",
       "url": "https://css-tricks.com/almanac/properties/f/font-feature-settings/",
       "lang": "en",
-      "tags": [
-        "css",
-        "typography"
-      ]
+      "tags": ["css", "typography"]
     },
     {
       "caption": "CSS Diner",
       "url": "https://flukeout.github.io/",
       "lang": "en",
-      "tags": [
-        "css",
-        "tutorial"
-      ],
+      "tags": ["css", "tutorial"],
       "legend": "tutorial по CSS-селекторам"
     },
     {
       "caption": "Компоненты и разделение ответственности",
       "url": "https://css-live.ru/articles/komponenty-i-razdelenie-otvetstvennosti.html",
       "lang": "ru",
-      "tags": [
-        "architecture"
-      ]
+      "tags": ["architecture"]
     },
     {
       "caption": "Отладка CSS",
       "url": "https://css-live.ru/articles/otladka-css.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "debugging"
-      ]
+      "tags": ["css", "debugging"]
     },
     {
       "caption": "MaintainableCSS (Adam Silver)",
       "url": "https://maintainablecss.com/",
       "lang": "en",
-      "tags": [
-        "css"
-      ],
+      "tags": ["css"],
       "legend": "ещё один взгляд на модулярный CSS"
     },
     {
       "caption": "Почему я в восторге от «родных» CSS-переменных",
       "url": "https://css-live.ru/articles/about-native-css-variables.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Considerations for Styling a Modal (by Chris Coyier)",
       "url": "https://css-tricks.com/considerations-styling-modal/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "WebAssembly’s post-MVP future: A cartoon skill tree",
       "url": "https://hacks.mozilla.org/2018/10/webassemblys-post-mvp-future/",
       "lang": "en",
-      "tags": [
-        "wasm"
-      ]
+      "tags": ["wasm"]
     },
     {
       "caption": "'flex-grow' странный. Так ли это?",
       "url": "https://css-live.ru/articles/flex-grow-strannyj-tak-li-eto.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_flexbox"
-      ]
+      "tags": ["css", "css_flexbox"]
     },
     {
       "caption": "What’s next for CSS?",
       "url": "https://cssdb.org/",
       "lang": "en",
-      "tags": [
-        "css",
-        "tool"
-      ],
+      "tags": ["css", "tool"],
       "legend": "CSS features stage database"
     },
     {
       "caption": "Фантастические веб-спецификации и где они обитают",
       "url": "https://css-live.ru/css/fantasticheskie-veb-specifikacii-i-gde-oni-obitayut.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Аксиоматический CSS и лоботомированные совы",
       "url": "https://frontender.info/axiomatic-css-and-lobotomized-owls/",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "12 базовых рефлексов верстальщика",
       "url": "https://nicothin.pro/page/reflex",
       "lang": "ru",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Разбираемся с border-image из CSS3",
       "url": "https://css-live.ru/articles-css/razbiraemsya-s-border-image-iz-css3.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "'border-image' generator",
       "url": "https://border-image.com/",
       "lang": "en",
-      "tags": [
-        "css",
-        "tool"
-      ]
+      "tags": ["css", "tool"]
     },
     {
       "caption": "Как работают в флексбоксе 'z-index' и автоотступы",
       "url": "http://prgssr.ru/development/kak-rabotayut-v-fleksbokse-z-index-i-avtootstupy.html",
       "lang": "ru",
-      "tags": [
-        "css_stacking_context",
-        "css_flexbox"
-      ]
+      "tags": ["css_stacking_context", "css_flexbox"]
     },
     {
       "caption": "Паттерны ООП в метафорах",
       "url": "https://habr.com/ru/post/136766/",
       "lang": "ru",
-      "tags": [
-        "oop",
-        "architecture"
-      ]
+      "tags": ["oop", "architecture"]
     },
     {
       "caption": "БЭМ — норм (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=RM55tkWfHDc",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_naming",
-        "bem",
-        "video"
-      ]
+      "tags": ["css", "css_naming", "bem", "video"]
     },
     {
       "caption": "Как называть CSS-классы",
       "url": "https://habr.com/ru/post/303174/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_naming"
-      ]
+      "tags": ["css", "css_naming"]
     },
     {
       "caption": "Режимы и квази-режимы",
       "url": "https://noteskeeper.ru/62/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_naming",
-        "architecture"
-      ]
+      "tags": ["css", "css_naming", "architecture"]
     },
     {
       "caption": "CSS Guidelines (by Harry Roberts)",
       "url": "https://cssguidelin.es/",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_naming",
-        "bem"
-      ],
+      "tags": ["css", "css_naming", "bem"],
       "legend": "огромный набор рекомендаций по БЭМ"
     },
     {
@@ -1007,11 +715,7 @@
           "legend": "That's absolutely valid to make a mix of elements of the same BEM block!"
         }
       ],
-      "tags": [
-        "css",
-        "css_naming",
-        "bem"
-      ]
+      "tags": ["css", "css_naming", "bem"]
     },
     {
       "caption": "БЭМ и псевдоклассы",
@@ -1034,208 +738,132 @@
         }
       ],
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_naming",
-        "bem"
-      ],
+      "tags": ["css", "css_naming", "bem"],
       "legend": "для чего нужны модификаторы состояний и почему псевдоклассов может быть недостаточно"
     },
     {
       "caption": "Как работать с CSS-препроцессорами и БЭМ",
       "url": "https://nicothin.pro/idiomatic-pre-CSS/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "sass",
-        "bem",
-        "clean_code"
-      ],
+      "tags": ["css", "sass", "bem", "clean_code"],
       "legend": "список рекомендаций по неусложнению жизни себе и другим участникам проекта по вёрстке"
     },
     {
       "caption": "Battling BEM CSS: 10 Common Problems And How To Avoid Them",
       "url": "https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_naming",
-        "bem"
-      ]
+      "tags": ["css", "css_naming", "bem"]
     },
     {
       "caption": "Десять заповедей логичных файлов стилей",
       "url": "https://css-live.ru/articles/desyat-zapovedej-logichnyx-fajlov-stilej.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_naming",
-        "clean_code"
-      ]
+      "tags": ["css", "css_naming", "clean_code"]
     },
     {
       "caption": "Nesting Components",
       "url": "http://simurai.com/blog/2015/05/11/nesting-components",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_naming"
-      ]
+      "tags": ["css", "css_naming"]
     },
     {
       "caption": "idiomatic-css: Принципы написания однородного CSS-кода",
       "url": "https://github.com/necolas/idiomatic-css/blob/master/translations/ru-RU/README.md",
       "lang": "ru",
-      "tags": [
-        "css",
-        "clean_code"
-      ]
+      "tags": ["css", "clean_code"]
     },
     {
       "caption": "Airbnb CSS / Sass Styleguide",
       "url": "https://github.com/airbnb/css",
       "lang": "en",
-      "tags": [
-        "css",
-        "sass",
-        "clean_code"
-      ]
+      "tags": ["css", "sass", "clean_code"]
     },
     {
       "caption": "Что такое CSS-модули и зачем они нам?",
       "url": "https://frontender.info/css-modules-part-1-need/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_naming"
-      ]
+      "tags": ["css", "css_naming"]
     },
     {
       "caption": "Семантический CSS",
       "url": "https://css-live.ru/articles/semanticheskij-css.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_naming"
-      ]
+      "tags": ["css", "css_naming"]
     },
     {
       "caption": "БЭМантика: пишите осмысленные стили без повторов",
       "url": "https://css-live.ru/articles/bemantika-pishite-osmyslennye-stili-bez-povtorov.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_naming",
-        "bem"
-      ]
+      "tags": ["css", "css_naming", "bem"]
     },
     {
       "caption": "Пишем БЭМ правильно (Игорь Зенич)",
       "url": "https://www.youtube.com/watch?v=kBgHdSOj33A",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_naming",
-        "bem",
-        "video"
-      ]
+      "tags": ["css", "css_naming", "bem", "video"]
     },
     {
       "caption": "CSS Grid cheatsheet (by Malven Co.)",
       "url": "http://grid.malven.co/",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_grid",
-        "tool",
-        "cheatsheet"
-      ]
+      "tags": ["css", "css_grid", "tool", "cheatsheet"]
     },
     {
       "caption": "Что может поломать макет на гридах (Dave Rupert)",
       "url": "https://css-live.ru/articles/chto-mozhet-polomat-maket-na-gridax-css-grid-layout.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid",
-        "css_flexbox"
-      ],
+      "tags": ["css", "css_grid", "css_flexbox"],
       "legend": "об особенностях свойств overflow-x, min-width, max-width флекс- и грид-элементов"
     },
     {
       "caption": "Ещё одна коллекция интересных фактов про CSS-гриды",
       "url": "https://css-live.ru/articles/eshhyo-odna-kollekciya-interesnyx-faktov-pro-css-gridy-css-grid-layout.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Подсетки в Grid Layout жизненно важны",
       "url": "https://css-live.ru/articles/podsetki-v-grid-layout-zhiznenno-vazhny.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Мысли вслух о подсетках в CSS Grid Layout",
       "url": "https://css-live.ru/articles/mysli-vslux-o-podsetkax-v-css-grid-layout.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Простая сетка на гридах с фолбэками с помощью @supports",
       "url": "https://css-live.ru/articles/verstka-prostoj-setki-s-folbekami-ispolzuyushhimi-direktivu-supports-feature-queries.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Grid Garden",
       "url": "http://cssgridgarden.com/",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_grid",
-        "tutorial"
-      ],
+      "tags": ["css", "css_grid", "tutorial"],
       "legend": "интерактивный тур в игровом формате"
     },
     {
       "caption": "Why Flexboxes Aren't Good for Page Layout",
       "url": "https://www.xanthir.com/blog/b4580",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_grid"
-      ],
+      "tags": ["css", "css_grid"],
       "legend": "Таб Аткинс описывает минусы флексбоксов и представляет прототип будущих гридов"
     },
     {
       "caption": "Как работает функция minmax()",
       "url": "https://css-live.ru/articles/kak-rabotaet-funkciya-minmax.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "CSS-гриды + CSS-колонки",
       "url": "https://css-live.ru/articles/css-gridy-css-kolonki-%E2%99%A5.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Золотая рыбка CSS3 Grid Layout (Максим Усачёв)",
@@ -1254,508 +882,349 @@
         }
       ],
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Химия CSS-гридов",
       "url": "https://css-live.ru/css/ximiya-css-gridov.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Sass Guidelines (by Hugo Giraudel)",
       "url": "https://sass-guidelin.es/",
       "lang": "en",
-      "tags": [
-        "css",
-        "sass"
-      ]
+      "tags": ["css", "sass"]
     },
     {
       "caption": "How To Write Your Own Custom Sass Functions",
       "url": "https://vanseodesign.com/css/custom-sass-functions/",
       "lang": "en",
-      "tags": [
-        "css",
-        "sass"
-      ]
+      "tags": ["css", "sass"]
     },
     {
       "caption": "Pug '&attributes' and 'attributes' escaping behaviour",
       "url": "https://codepen.io/yialo/pen/vvPGGE",
       "lang": "en",
-      "tags": [
-        "html",
-        "html_templates",
-        "pug",
-        "mine"
-      ],
+      "tags": ["html", "html_templates", "pug", "mine"],
       "legend": "примеры экранирования атрибутов HTML-препроцессором Pug"
     },
     {
       "caption": "Как правильно использовать переменные в препроцессорах LESS и SASS",
       "url": "https://habr.com/ru/post/332382/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "sass",
-        "less"
-      ],
+      "tags": ["css", "sass", "less"],
       "legend": "обозначенные архитектурные проблемы актуальны всегда, хотя предложенные решения теряют смысл после появления поддержки модулей (@use/@forwards) в Sass"
     },
     {
       "caption": "Организация кода для CSS-препроцессора",
       "url": "https://canonium.com/articles/organizing-code-in-project",
       "lang": "ru",
-      "tags": [
-        "css",
-        "sass",
-        "less"
-      ]
+      "tags": ["css", "sass", "less"]
     },
     {
       "caption": "Организация кода для HTML-препроцессоров",
       "url": "https://canonium.com/articles/organizing-html-code-in-project",
       "lang": "ru",
-      "tags": [
-        "html",
-        "html_templates",
-        "pug"
-      ]
+      "tags": ["html", "html_templates", "pug"]
     },
     {
       "caption": "Markdown Guide",
       "url": "https://www.markdownguide.org/",
       "lang": "en",
-      "tags": [
-        "html",
-        "html_templates",
-        "markdown"
-      ]
+      "tags": ["html", "html_templates", "markdown"]
     },
     {
       "caption": "CommonMark Markdown",
       "url": "https://commonmark.org/",
       "lang": "en",
-      "tags": [
-        "html",
-        "html_templates",
-        "markdown",
-        "commonmark",
-        "docs"
-      ]
+      "tags": ["html", "html_templates", "markdown", "commonmark", "docs"]
     },
     {
       "caption": "7 техник Sass для написания хорошего кода (by Andrius Juskenas)",
       "url": "https://techrocks.ru/2017/07/19/sass-techniques/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "sass",
-        "clean_code"
-      ]
+      "tags": ["css", "sass", "clean_code"]
     },
     {
       "caption": "PostCSS Preset Env: Babel for CSS",
       "url": "https://dev.to/adrianbdesigns/postcss-preset-env-babel-for-css-12hp",
       "lang": "en",
-      "tags": [
-        "css",
-        "postcss"
-      ]
+      "tags": ["css", "postcss"]
     },
     {
       "caption": "Расставание с Sass: дело не в тебе, дело во мне",
       "url": "https://css-live.ru/articles/rasstavanie-s-sass-delo-ne-v-tebe-delo-vo-mne.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "sass",
-        "postcss"
-      ]
+      "tags": ["css", "sass", "postcss"]
     },
     {
       "caption": "AST explorer",
       "url": "https://astexplorer.net/",
       "lang": "en",
-      "tags": [
-        "postcss",
-        "tool"
-      ],
+      "tags": ["postcss", "tool"],
       "legend": "песочница для тестирования трансформаций JavaScript, CSS и многого другого, подходит для прототипирования PostCSS-плагинов"
     },
     {
       "caption": "Семантическая верстка HTML5: начало будущего",
       "url": "http://codeacademy.ru/blog/62/semanticheskaya-verstka-html5-nachalo-budushchego",
       "lang": "ru",
-      "tags": [
-        "html",
-        "a11y"
-      ]
+      "tags": ["html", "a11y"]
     },
     {
       "caption": "Правила использования ARIA в HTML",
       "url": "https://habr.com/ru/post/323876/",
       "lang": "ru",
-      "tags": [
-        "html",
-        "a11y",
-        "wai_aria"
-      ]
+      "tags": ["html", "a11y", "wai_aria"]
     },
     {
       "caption": "HTML For Screen Readers - Labelling Elements",
       "url": "https://bitsofco.de/html-for-screen-readers-labelling-elements/",
       "lang": "en",
-      "tags": [
-        "html",
-        "a11y",
-        "wai_aria"
-      ]
+      "tags": ["html", "a11y", "wai_aria"]
     },
     {
       "caption": "Семантика для циников (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=bDYEnNzprzE",
       "lang": "ru",
-      "tags": [
-        "a11y",
-        "video"
-      ]
+      "tags": ["a11y", "video"]
     },
     {
       "caption": "Элемент HTML '<time>'",
       "url": "https://habr.com/ru/post/229291/",
       "lang": "ru",
-      "tags": [
-        "html",
-        "a11y"
-      ]
+      "tags": ["html", "a11y"]
     },
     {
       "caption": "The Difference Between 'role=\"presentation\"' and 'aria-hidden=\"true\"'",
       "url": "https://timwright.org/blog/2016/11/19/difference-rolepresentation-aria-hiddentrue/",
       "lang": "en",
-      "tags": [
-        "a11y",
-        "wai_aria"
-      ]
+      "tags": ["a11y", "wai_aria"]
     },
     {
       "caption": "Понимание семантики",
       "url": "https://css-live.ru/articles/ponimanie-semantiki.html",
       "lang": "ru",
-      "tags": [
-        "a11y"
-      ]
+      "tags": ["a11y"]
     },
     {
       "caption": "Почему семантический HTML важен, и как TypeScript помогает это понять",
       "url": "https://css-live.ru/articles/pochemu-semanticheskij-html-vazhen-i-kak-typescript-pomogaet-eto-ponyat.html",
       "lang": "ru",
-      "tags": [
-        "html",
-        "a11y"
-      ]
+      "tags": ["html", "a11y"]
     },
     {
       "caption": "Современный учебник JavaScript",
       "url": "https://learn.javascript.ru/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "The Complete JavaScript Handbook (by Flavio Copes)",
       "url": "https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Осваиваем замыкания в Javascript",
       "url": "https://medium.com/@sshambir/%D0%BE%D1%81%D0%B2%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-5b83267ef7d1",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Подключение JavaScript кода",
       "url": "https://devman.org/encyclopedia/frontend/frontend_plug_js/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Красивый и чистый: инструменты, которые помогают добиться почти идеального кода",
       "url": "https://habr.com/ru/company/skillbox/blog/428231/",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "clean_code"
-      ]
+      "tags": ["javascript", "clean_code"]
     },
     {
       "caption": "Airbnb JavaScript Style Guide",
       "url": "https://github.com/airbnb/javascript/",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "clean_code"
-      ]
+      "tags": ["javascript", "clean_code"]
     },
     {
       "caption": "Integrating Prettier + ESLint + Airbnb Style Guide in VSCode",
       "url": "https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "editors"
-      ]
+      "tags": ["javascript", "editors"]
     },
     {
       "caption": "Как кодить на JavaScript в 2019? Тренды, тенденции, предсказания",
       "url": "https://proglib.io/p/javascript-2019/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ],
+      "tags": ["javascript"],
       "legend": "обзор содержит большую подборку ссылок на учебные материалы, которые будут актуальны и после 2019 года"
     },
     {
       "caption": "Всегда чистый код: 5 инструментов для JavaScript-разработчика",
       "url": "https://proglib.io/p/clean-code-tools/",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "clean_code"
-      ]
+      "tags": ["javascript", "clean_code"]
     },
     {
       "caption": "Асинхронный JavaScript против отложенного",
       "url": "https://habr.com/ru/post/323790/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Веб-фреймворки: введение для новичков",
       "url": "https://tproger.ru/translations/web-frameworks-how-to-get-started/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Учите ванильный JavaScript, прежде чем браться за фреймворки",
       "url": "https://www.cat-in-web.ru/vanilla-js/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Вы освоили азы JavaScript. Но что дальше?",
       "url": "https://css-live.ru/articles/vy-osvoili-azy-javascript-no-chto-dalshe.html",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Как работает рекурсия – объяснение в блок-схемах и видео",
       "url": "https://habr.com/ru/post/337030/",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "algorithms"
-      ]
+      "tags": ["javascript", "algorithms"]
     },
     {
       "caption": "Формы в HTML5: JavaScript и API для принудительной валидации форм",
       "url": "https://www.internet-technologies.ru/articles/formy-v-html5-javascript-i-api-dlya-prinuditelnoy-validacii-form.html",
       "lang": "ru",
-      "tags": [
-        "dom",
-        "forms"
-      ]
+      "tags": ["dom", "forms"]
     },
     {
       "caption": "Немедленно вызываемые функции - IIFE (Immediately-Invoked Function Expression)",
       "url": "https://getinstance.info/articles/javascript/immediately-invoked-function-expressions/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Ад обратных вызовов",
       "url": "http://callbackhell.ru/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "12 хитростей JavaScript, которых вы не найдете в большинстве уроков",
       "url": "http://jem-space.ru/12-khitrostiei-javascript-kotorykh-vy-nie-naidietie-v-bolshinstvie-urokov/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Hacks for Creating JavaScript Arrays",
       "url": "https://www.freecodecamp.org/news/https-medium-com-gladchinda-hacks-for-creating-javascript-arrays-a1b80cb372b/",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Ключевое слово this в javascript — учимся определять контекст на практике",
       "url": "https://habr.com/ru/post/149516/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "The art of naming variables",
       "url": "https://hackernoon.com/the-art-of-naming-variables-52f44de00aad",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "clean_code"
-      ]
+      "tags": ["javascript", "clean_code"]
     },
     {
       "caption": "Prototype, proto и оператор 'new'",
       "url": "https://habr.com/ru/post/140810/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ],
+      "tags": ["javascript"],
       "legend": "разбор действий, которые выполняет движок при обработке инструкций, содержащих 'new'"
     },
     {
       "caption": "Javascript Anomaly",
       "url": "https://github.com/ufocoder/javascript.anomaly",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "ES6: Реструктуризующее присваивание",
       "url": "http://jsraccoon.ru/es6-destructuring",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Глубокое погружение в ES-модули в картинках",
       "url": "https://medium.com/web-standards/es-modules-cartoon-dive-71f42c1e851a",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Logical XOR in JavaScript",
       "url": "http://www.howtocreate.co.uk/xor.html",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "HTMLCollection, NodeList и массив объектов",
       "url": "https://medium.com/@kanby/htmlcollection-nodelist-%D0%B8-%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-582cbd9ae1fc",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "dom"
-      ]
+      "tags": ["javascript", "dom"]
     },
     {
       "caption": "ES6: Расширение литерала объектов",
       "url": "http://jsraccoon.ru/es6-object-literal",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Разъяснения насчёт JavaScript, ECMA–262, TC39 и транскомпиляторов ECMAScript",
       "url": "https://frontender.info/javascript-ecma-262-tc39-and-ecmascript-transpilers-explained/",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "babel"
-      ]
+      "tags": ["javascript", "babel"]
     },
     {
       "caption": "Asyncstepping",
       "url": "http://asyncstepping.glitch.me/",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "tool"
-      ],
+      "tags": ["javascript", "tool"],
       "legend": "наглядный пример для тестирования асинхронного JS в (Chrome) DevTools"
     },
     {
       "caption": "Properties in JavaScript: definition versus assignment (by Dr. Axel Rauschmayer)",
       "url": "https://2ality.com/2012/08/property-definition-assignment.html",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "JavaScript Hacks and Creative Coding (by Martin Kleppe)",
       "url": "http://aem1k.com/",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "code_art"
-      ]
+      "tags": ["javascript", "code_art"]
     },
     {
       "caption": "await vs return vs return await (by Jake Archibald)",
       "url": "https://jakearchibald.com/2017/await-vs-return-vs-return-await/",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Почему использовать 'return await' плохая идея?",
       "url": "https://medium.com/@kanby/%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-return-await-%D0%BF%D0%BB%D0%BE%D1%85%D0%B0%D1%8F-%D0%B8%D0%B4%D0%B5%D1%8F-e87b70015f0c",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Полное понимание синхронного и асинхронного JavaScript с 'async/await' (Стас Багрецов)",
       "url": "https://stasonmars.ru/javascript/polnoe-ponimanie-syncronnogo-i-asyncronnogo-javascript-s-async-await/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Введение в Immutable.js и основные концепции функционального программирования",
@@ -1772,135 +1241,87 @@
       "caption": "Picturefill",
       "url": "https://scottjehl.github.io/picturefill/",
       "lang": "en",
-      "tags": [
-        "html",
-        "graphics",
-        "polyfill"
-      ],
+      "tags": ["html", "graphics", "polyfill"],
       "legend": "полифил для поддержки элемента &lt;picture&gt; в IE"
     },
     {
       "caption": "Real Favicon Generator",
       "url": "https://realfavicongenerator.net/",
       "lang": "en",
-      "tags": [
-        "graphics",
-        "favicons",
-        "tool"
-      ],
+      "tags": ["graphics", "favicons", "tool"],
       "legend": "онлайн-сервис для создания полного набора favicon для всех современных платформ и устройств"
     },
     {
       "caption": "Какие нужны фавиконки (HTML Шорты)",
       "url": "https://www.youtube.com/watch?v=iG9WF8VpogY",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "favicons",
-        "video"
-      ]
+      "tags": ["graphics", "favicons", "video"]
     },
     {
       "caption": "Favicon сегодня: форматы, поддержка, автоматизация",
       "url": "https://habr.com/ru/post/330584/",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "favicons"
-      ]
+      "tags": ["graphics", "favicons"]
     },
     {
       "caption": "Теория цвета в цифрах",
       "url": "https://habr.com/ru/post/189766/",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "colors"
-      ]
+      "tags": ["graphics", "colors"]
     },
     {
       "caption": "Сколько нужно верстальщиков, чтобы вставить <picture>? (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=Szo-2D7TtEU",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "html",
-        "video"
-      ]
+      "tags": ["graphics", "html", "video"]
     },
     {
       "caption": "Почему гибкие изображения?",
       "url": "https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "html"
-      ]
+      "tags": ["graphics", "html"]
     },
     {
       "caption": "Иллюстратор для верстальщиков",
       "url": "https://www.youtube.com/watch?v=h6CHstX40rE",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "editors",
-        "video"
-      ]
+      "tags": ["graphics", "editors", "video"]
     },
     {
       "caption": "Погружение в 'object-fit: cover' с полифилом и без (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=aZJMOVpMhtc",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "css",
-        "video"
-      ]
+      "tags": ["graphics", "css", "video"]
     },
     {
       "caption": "SVG маски и вау-эффекты: о магии простыми словами",
       "url": "https://habr.com/ru/post/349362/",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "svg"
-      ]
+      "tags": ["graphics", "svg"]
     },
     {
       "caption": "Styling SVG '<use>' content with CSS",
       "url": "https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/",
       "lang": "en",
-      "tags": [
-        "graphics",
-        "svg"
-      ]
+      "tags": ["graphics", "svg"]
     },
     {
       "caption": "SVG: группировка и переиспользование элементов",
       "url": "http://css.yoksel.ru/svg-groups-use/",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "svg"
-      ]
+      "tags": ["graphics", "svg"]
     },
     {
       "caption": "Размеры в SVG",
       "url": "http://css.yoksel.ru/svg-sizes/",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "svg"
-      ]
+      "tags": ["graphics", "svg"]
     },
     {
       "caption": "Структурирование, группировка и привязка в SVG — элементы '<g>', '<use>', '<defs>' и '<symbol>'",
       "url": "https://habr.com/ru/post/230443/",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "svg"
-      ]
+      "tags": ["graphics", "svg"]
     },
     {
       "caption": "Инлайновый контекст форматирования (ИКФ) (Максим Усачёв)",
@@ -1955,18 +1376,13 @@
         }
       ],
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Подключение шрифта к странице: как нужно делать сейчас",
       "url": "https://nicothin.pro/page/web-fonts",
       "lang": "ru",
-      "tags": [
-        "typography",
-        "css"
-      ]
+      "tags": ["typography", "css"]
     },
     {
       "caption": "Подключение нестандартных шрифтов",
@@ -1981,764 +1397,520 @@
         }
       ],
       "lang": "ru",
-      "tags": [
-        "typography",
-        "css"
-      ]
+      "tags": ["typography", "css"]
     },
     {
       "caption": "Управляем поведением font-face в CSS",
       "url": "https://ymatuhin.ru/front-end/font-display/",
       "lang": "ru",
-      "tags": [
-        "typography",
-        "css"
-      ]
+      "tags": ["typography", "css"]
     },
     {
       "caption": "Prevention of double font preloading in Blink-based browsers",
       "url": "https://github.com/cds-snc/ircc-rescheduler/pull/374",
       "lang": "en",
-      "tags": [
-        "typography",
-        "performance"
-      ]
+      "tags": ["typography", "performance"]
     },
     {
       "caption": "The Inter typeface family",
       "url": "https://rsms.me/inter/",
       "lang": "en",
-      "tags": [
-        "typography"
-      ],
+      "tags": ["typography"],
       "legend": "крутой шрифт, разработанный специально для комфортного чтения с экрана"
     },
     {
       "caption": "Ответ на главный вопрос в CSS (Михаил Иванкив)",
       "url": "https://www.youtube.com/watch?v=cO2-zYzjyD0",
       "lang": "ru",
-      "tags": [
-        "css",
-        "typography",
-        "video"
-      ],
+      "tags": ["css", "typography", "video"],
       "legend": "подходы к решению проблемы масштабирования текста"
     },
     {
       "caption": "Как озаглавить форму записи в парикмахерскую",
       "url": "https://bureau.ru/soviet/20190514/",
       "lang": "ru",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "Развиваем дизайнерское чутье",
       "url": "https://medium.com/russian/%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B5-%D1%87%D1%83%D1%82%D1%8C%D0%B5-b7cac4a84b56",
       "lang": "ru",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "Слышал мнение, что частица «не» не воспринимается читателем. Это правда?",
       "url": "https://bureau.ru/soviet/20190630/",
       "lang": "ru",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "Табличка на экране оплаты Эпл‑пея",
       "url": "https://bureau.ru/soviet/20190625/",
       "lang": "ru",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "О метафорах в иконках",
       "url": "https://bureau.ru/soviet/20190629/",
       "lang": "ru",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "Различие между иконкой и логотипом",
       "url": "https://bureau.ru/soviet/20190720/",
       "lang": "ru",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "Дорожный указатель «Фрамир двери»",
       "url": "https://bureau.ru/soviet/20190716/",
       "lang": "ru",
-      "tags": [
-        "ux_ui"
-      ],
+      "tags": ["ux_ui"],
       "legend": "проработка дизайна дорожного указателя"
     },
     {
       "caption": "Подписи «переключателей»",
       "url": "https://bureau.ru/soviet/20190723/",
       "lang": "ru",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "Pro Git",
       "url": "https://git-scm.com/book/en/v2",
       "lang": "en",
-      "tags": [
-        "git"
-      ],
+      "tags": ["git"],
       "legend": "настольная книга"
     },
     {
       "caption": "Learn Git Branching",
       "url": "https://learngitbranching.js.org/",
       "lang": "ru",
-      "tags": [
-        "git",
-        "tutorial"
-      ],
+      "tags": ["git", "tutorial"],
       "legend": "интерактивный тур в игровом формате"
     },
     {
       "caption": "First Aid Git",
       "url": "http://firstaidgit.ru/",
       "lang": "ru",
-      "tags": [
-        "git",
-        "cheatsheet"
-      ],
+      "tags": ["git", "cheatsheet"],
       "legend": "подробнейший FAQ в переводе HTML Academy"
     },
     {
       "caption": "Словарь терминов Git и GitHub",
       "url": "https://github.com/web-standards-ru/dictionary/blob/master/git.md",
       "lang": "ru",
-      "tags": [
-        "git",
-        "cheatsheet"
-      ]
+      "tags": ["git", "cheatsheet"]
     },
     {
       "caption": "Шпаргалка по консольным командам Git",
       "url": "https://github.com/nicothin/web-development/blob/master/git/readme.md",
       "lang": "ru",
-      "tags": [
-        "git",
-        "cheatsheet"
-      ]
+      "tags": ["git", "cheatsheet"]
     },
     {
       "caption": "git-flow cheatsheet (by Daniel Kummer)",
       "url": "https://danielkummer.github.io/git-flow-cheatsheet/index.html",
       "lang": "en",
-      "tags": [
-        "git",
-        "git_flow",
-        "cheatsheet"
-      ]
+      "tags": ["git", "git_flow", "cheatsheet"]
     },
     {
       "caption": "Git and Git Flow Cheat Sheet",
       "url": "http://bilalarslan.me/git-cheat-sheet/",
       "lang": "en",
-      "tags": [
-        "git",
-        "git_flow",
-        "cheatsheet"
-      ]
+      "tags": ["git", "git_flow", "cheatsheet"]
     },
     {
       "caption": "Git How To",
       "url": "https://githowto.com/",
       "lang": "en",
-      "tags": [
-        "git",
-        "tutorial"
-      ],
+      "tags": ["git", "tutorial"],
       "legend": "интерактивный тур"
     },
     {
       "caption": "Режим fast-forward в Git",
       "url": "http://zencoder.ru/git/fast-forward-git/",
       "lang": "ru",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Самые типичные ошибки и вопросы, связанные с Git, и удобные способы их решения",
       "url": "https://tproger.ru/translations/most-common-git-screwupsquestions-and-solutions/",
       "lang": "ru",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Правильные способы исключения файлов в Git",
       "url": "https://habr.com/ru/post/202696/",
       "lang": "ru",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Как склеить коммиты и зачем это нужно",
       "url": "https://htmlacademy.ru/blog/useful/git/how-to-squash-commits-and-why-it-is-needed",
       "lang": "ru",
-      "tags": [
-        "git"
-      ],
+      "tags": ["git"],
       "legend": "как применять squash"
     },
     {
       "caption": "10 полезных Git команд, которые облегчат работу",
       "url": "https://proglib.io/p/10-tips-git/",
       "lang": "ru",
-      "tags": [
-        "git",
-        "cheatsheet"
-      ]
+      "tags": ["git", "cheatsheet"]
     },
     {
       "caption": "Про Git, Github и Gitflow простыми словами",
       "url": "https://proglib.io/p/git-github-gitflow/",
       "lang": "ru",
-      "tags": [
-        "git",
-        "git_flow"
-      ]
+      "tags": ["git", "git_flow"]
     },
     {
       "caption": "Удачная модель ветвления для Git",
       "url": "https://habr.com/ru/post/106912/",
       "lang": "ru",
-      "tags": [
-        "git",
-        "git_flow"
-      ]
+      "tags": ["git", "git_flow"]
     },
     {
       "caption": "Полезные команды для работы с Git",
       "url": "https://htmlacademy.ru/blog/useful/git/useful-commands-for-working-with-git",
       "lang": "ru",
-      "tags": [
-        "git",
-        "cheatsheet"
-      ]
+      "tags": ["git", "cheatsheet"]
     },
     {
       "caption": "Работа с Git через консоль",
       "url": "https://htmlacademy.ru/blog/useful/git/git-console",
       "lang": "ru",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Как оформлять коммиты, чтобы потом не было больно",
       "url": "https://habr.com/ru/company/voximplant/blog/276695/",
       "lang": "ru",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Джуность: грейды Digital специалистов",
       "url": "https://anmedio.github.io/junost/",
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Редакс в реальной жизни (Иван Акулов)",
       "url": "https://iamakulov.com/talks/redux-in-real-life/",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "flux",
-        "redux"
-      ]
+      "tags": ["javascript", "flux", "redux"]
     },
     {
       "caption": "Uncommon Use Cases for Pseudo Elements (by Ahmad Shadeed)",
       "url": "https://ishadeed.com/article/unusual-use-cases-pseudo-elements/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Styling inline code (by Roman Komarov)",
       "url": "https://www.kizu.ru/styling-inline-code/",
       "lang": "en",
-      "tags": [
-        "css",
-        "typography"
-      ]
+      "tags": ["css", "typography"]
     },
     {
       "caption": "The world needs full-stack craftsmen (Антон Кекс)",
       "url": "https://www.youtube.com/watch?v=qd9N9eU1Qn0",
       "lang": "ru",
-      "tags": [
-        "video",
-        "productivity",
-        "project_management"
-      ]
+      "tags": ["video", "productivity", "project_management"]
     },
     {
       "caption": "Зачем программисту чувство стиля? (Антон Кекс)",
       "url": "https://www.youtube.com/watch?v=d_oOvd793Lo",
       "lang": "ru",
-      "tags": [
-        "video",
-        "productivity"
-      ]
+      "tags": ["video", "productivity"]
     },
     {
       "caption": "Эти страшные буквы MV* (Александра Шинкевич)",
       "url": "https://www.youtube.com/watch?v=5WgsKtlHUls",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "architecture",
-        "video"
-      ],
+      "tags": ["javascript", "architecture", "video"],
       "legend": "о паттернах MVC/MVP/MVVM/etc."
     },
     {
       "caption": "Философия React",
       "url": "https://ru.reactjs.org/docs/thinking-in-react.html",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "dom",
-        "react"
-      ],
+      "tags": ["javascript", "dom", "react"],
       "legend": "действенный подход к разработке web-интерфейсов в целом, не обязательно на React"
     },
     {
       "caption": "Как быть начинающим разработчиком и не сойти с ума",
       "url": "http://blog.csssr.ru/2016/09/19/how-to-be-a-beginner-developer",
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "The Problem with gulp-util",
       "url": "https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5",
       "lang": "en",
-      "tags": [
-        "gulp",
-        "nodejs",
-        "npm",
-        "build_tools"
-      ]
+      "tags": ["gulp", "nodejs", "npm", "build_tools"]
     },
     {
       "caption": "Twig Processing Order & Scope",
       "url": "https://nystudio107.com/blog/twig-processing-order-and-scope",
       "lang": "en",
-      "tags": [
-        "html_templates",
-        "twig"
-      ]
+      "tags": ["html_templates", "twig"]
     },
     {
       "caption": "Эти токсичные, токсичные собеседования",
       "url": "https://habr.com/ru/company/exante/blog/335096/",
       "lang": "ru",
-      "tags": [
-        "soft_skills"
-      ]
+      "tags": ["soft_skills"]
     },
     {
       "caption": "Краткий гайд о том, как нанимать нормальных людей",
       "url": "https://vas3k.ru/inside/46/",
       "lang": "ru",
-      "tags": [
-        "soft_skills"
-      ]
+      "tags": ["soft_skills"]
     },
     {
       "caption": "Про интерфейсные тексты, психологию, UX-ляпы и развитие",
       "url": "https://designpub.ru/ux-digest-2019-83cb551080ce",
       "lang": "ru",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "Красивое выравнивание блоков по резиновой сетке. По-новому",
       "url": "https://css-live.ru/css/responsive-grid-css-grid-layout-auto-fill.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "SurviveJS",
       "url": "https://survivejs.com/",
       "lang": "en",
-      "tags": [
-        "blogs",
-        "javascript",
-        "npm",
-        "build_tools",
-        "webpack",
-        "react"
-      ],
+      "tags": ["blogs", "javascript", "npm", "build_tools", "webpack", "react"],
       "legend": "продвинутые техники применения Webpack, создания React-приложений и разработки поддерживаемых npm-проектов"
     },
     {
       "caption": "The Fine Art of the Webpack Config",
       "url": "https://medium.com/flennik-interface-design/the-fine-art-of-the-webpack-2-config-dc4d19d7f172",
       "lang": "en",
-      "tags": [
-        "build_tools",
-        "webpack"
-      ]
+      "tags": ["build_tools", "webpack"]
     },
     {
       "caption": "Flexbugs collection",
       "url": "https://github.com/philipwalton/flexbugs",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_flexbox"
-      ]
+      "tags": ["css", "css_flexbox"]
     },
     {
       "caption": "«Правила роста: от джуниора до CTO», конспект вебинара Фёдора Борщёва",
       "url": "https://habr.com/ru/post/482958/",
       "lang": "ru",
-      "tags": [
-        "productivity",
-        "soft_skills"
-      ]
+      "tags": ["productivity", "soft_skills"]
     },
     {
       "caption": "Принцип экономии мыслетоплива (Максим Дорофеев)",
       "url": "https://www.youtube.com/watch?v=fWR5SFhBUWc",
       "lang": "ru",
-      "tags": [
-        "video",
-        "productivity"
-      ]
+      "tags": ["video", "productivity"]
     },
     {
       "caption": "Agile Product Ownership in a Nutshell",
       "url": "https://www.youtube.com/watch?v=502ILHjX9EE",
       "lang": "en",
-      "tags": [
-        "project_management",
-        "agile",
-        "video"
-      ]
+      "tags": ["project_management", "agile", "video"]
     },
     {
       "caption": "8 conditional rendering methods in React (by Esteban Herrera)",
       "url": "https://blog.logrocket.com/conditional-rendering-in-react-c6b0e5af381e/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Как развить привычку отжиматься, чистить зубы, бегать, учить языки, и делать что угодно",
       "url": "https://zen.yandex.ru/media/menscience/kak-razvit-privychku-otjimatsia-chistit-zuby-begat-uchit-iazyki-i-delat-chto-ugodno-5dbd32a8a06eaf00b110d5fd",
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "_ ___ ______? (Вадим Макеев)",
       "url": "https://www.youtube.com/watch?v=uI3Q5m9xkkw",
       "lang": "ru",
-      "tags": [
-        "video",
-        "typography",
-        "performance"
-      ],
+      "tags": ["video", "typography", "performance"],
       "legend": "оптимизация загрузки и отображения шрифтов"
     },
     {
       "caption": "TypeScript With Babel: A Beautiful Marriage",
       "url": "https://iamturns.com/typescript-babel/",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "typescript",
-        "babel"
-      ]
+      "tags": ["javascript", "typescript", "babel"]
     },
     {
       "caption": "Using ESLint and Prettier in a TypeScript Project",
       "url": "https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project",
       "lang": "en",
-      "tags": [
-        "clean_code",
-        "typescript"
-      ]
+      "tags": ["clean_code", "typescript"]
     },
     {
       "caption": "Верстальщик. Наследие (Сергей Попов)",
       "url": "https://www.youtube.com/watch?v=Z9of2cj28hY",
       "lang": "ru",
-      "tags": [
-        "video",
-        "css"
-      ]
+      "tags": ["video", "css"]
     },
     {
       "caption": "Ошибка. Осознание, примирение, извлечение пользы (Вадим Макишвили)",
       "url": "https://www.youtube.com/watch?v=4srVRott8uU",
       "lang": "ru",
-      "tags": [
-        "video",
-        "soft_skills"
-      ]
+      "tags": ["video", "soft_skills"]
     },
     {
       "caption": "Know your ARIA: 'Hidden' vs 'None' (by Scott O'Hara)",
       "url": "https://www.scottohara.me/blog/2018/05/05/hidden-vs-none.html",
       "lang": "en",
-      "tags": [
-        "a11y",
-        "wai_aria"
-      ]
+      "tags": ["a11y", "wai_aria"]
     },
     {
       "caption": "How to Work with Forms, Inputs and Events in React",
       "url": "https://medium.com/capital-one-tech/how-to-work-with-forms-inputs-and-events-in-react-c337171b923b",
       "lang": "en",
-      "tags": [
-        "react",
-        "forms"
-      ]
+      "tags": ["react", "forms"]
     },
     {
       "caption": "Правдивая ложь оптимистичных интерфейсов",
       "url": "https://habr.com/ru/company/jugru/blog/315806/",
       "lang": "ru",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "Картинки как коробки. Что же там внутри? (Полина Гуртовая)",
       "url": "https://habr.com/ru/company/yandex/blog/493616/",
       "lang": "ru",
-      "tags": [
-        "graphics",
-        "performance"
-      ]
+      "tags": ["graphics", "performance"]
     },
     {
       "caption": "Вы используете devDependencies неправильно",
       "url": "https://incubator.flaks.dev/devdependencies-mistake",
       "lang": "ru",
-      "tags": [
-        "npm"
-      ]
+      "tags": ["npm"]
     },
     {
       "caption": "Как работать с async/await в циклах JavaScript",
       "url": "https://habr.com/ru/post/435084/",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "async"
-      ]
+      "tags": ["javascript", "async"]
     },
     {
       "caption": "The 25 best programming books of all-time. A data-backed answer",
       "url": "https://www.daolf.com/posts/best-programming-books/",
       "lang": "en",
-      "tags": [
-        "clean_code",
-        "architecture"
-      ]
+      "tags": ["clean_code", "architecture"]
     },
     {
       "caption": "Beware: React setState is asynchronous!",
       "url": "https://medium.com/@wereHamster/beware-react-setstate-is-asynchronous-ce87ef1a9cf3",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "Rebuilding Redux with Hooks and Context",
       "url": "https://medium.com/maxime-heckel/rebuilding-redux-with-hooks-and-context-e16b59faf51c",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks",
-        "state_management",
-        "redux"
-      ]
+      "tags": ["react", "react_hooks", "state_management", "redux"]
     },
     {
       "caption": "Каково оно учить JavaScript в 2016",
       "url": "https://habr.com/ru/post/312022/",
       "lang": "ru",
-      "tags": [
-        "fun"
-      ]
+      "tags": ["fun"]
     },
     {
       "caption": "React Redux: performance considerations when dispatching multiple actions",
       "url": "https://medium.com/unsplash/react-redux-performance-considerations-when-dispatching-multiple-actions-5162047bf8a6",
       "lang": "en",
-      "tags": [
-        "react",
-        "redux",
-        "performance"
-      ]
+      "tags": ["react", "redux", "performance"]
     },
     {
       "caption": "Повышение производительности React и Redux с Reselect",
       "url": "https://medium.com/devschacht/neil-fenton-improving-react-and-redux-performance-with-reselect-40f1d3efba89",
       "lang": "ru",
-      "tags": [
-        "react",
-        "redux",
-        "performance"
-      ]
+      "tags": ["react", "redux", "performance"]
     },
     {
       "caption": "Redux — Не нужен! Заменяем с помощью useContext и useReducer в React?",
       "url": "https://habr.com/ru/post/473070/",
       "lang": "ru",
-      "tags": [
-        "react",
-        "react_hooks",
-        "state_management",
-        "redux"
-      ]
+      "tags": ["react", "react_hooks", "state_management", "redux"]
     },
     {
       "caption": "Исследование бездны null и undefined в JavaScript",
       "url": "https://github.com/FrontenderMagazine/exploring-the-abyss-of-null-and-undefined-in-javascript/blob/master/rus.md",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Arrow Functions in Class Properties Might Not Be As Great As We Think",
       "url": "https://medium.com/@charpeni/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think-3b3551c440b1",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "performance"
-      ]
+      "tags": ["javascript", "performance"]
     },
     {
       "caption": "CSS width vs flex-basis (by Mastery Games)",
       "url": "https://mastery.games/post/the-difference-between-width-and-flex-basis/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_flexbox"
-      ]
+      "tags": ["css", "css_flexbox"]
     },
     {
       "caption": "The Twelve-Factor App manifest",
       "url": "https://12factor.net/",
       "lang": "en",
-      "tags": [
-        "clean_code",
-        "devops"
-      ],
+      "tags": ["clean_code", "devops"],
       "legend": "A methodology for building modern, scalable, maintainable software-as-a-service apps."
     },
     {
       "caption": "Алгоритмы и структуры данных для начинающих: сложность алгоритмов",
       "url": "https://tproger.ru/translations/algorithms-and-data-structures/",
       "lang": "ru",
-      "tags": [
-        "algorithms"
-      ]
+      "tags": ["algorithms"]
     },
     {
       "caption": "Integer и Float в Javascript",
       "url": "https://medium.com/@frontman/integer-%D0%B8-float-%D0%B2-javascript-9ca16ba1484f",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "React Conditional Rendering (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/conditional-rendering-react",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "How to fetch data in React (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/react-fetching-data",
       "lang": "en",
-      "tags": [
-        "react",
-        "async",
-        "testing"
-      ]
+      "tags": ["react", "async", "testing"]
     },
     {
       "caption": "The Basics of Easing (by Paul Lewis)",
       "url": "https://developers.google.com/web/fundamentals/design-and-ux/animations/the-basics-of-easing",
       "lang": "en",
-      "tags": [
-        "css",
-        "animations"
-      ],
+      "tags": ["css", "animations"],
       "legend": "Some best practices for CSS animation usage"
     },
     {
       "caption": "Key words for use in RFCs to Indicate Requirement Levels",
       "url": "https://www.ietf.org/rfc/rfc2119.txt",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ],
+      "tags": ["clean_code"],
       "legend": "RFC 2119: MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, OPTIONAL"
     },
     {
       "caption": "Minimal API Surface Area (by Sebastian Markbåge)",
       "url": "https://youtu.be/4anAwXYqLG8",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "react",
-        "architecture",
-        "clean_code"
-      ]
+      "tags": ["javascript", "react", "architecture", "clean_code"]
     },
     {
       "caption": "Как учиться продуктивно",
       "url": "https://htmlacademy.ru/blog/education/all/productive-study",
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Пятиминутка React",
@@ -2746,99 +1918,61 @@
         {
           "caption": "Выпуск #3. Hot Module Replacement или React Hot Loader?",
           "url": "https://youtu.be/pHLzvtoOI3A",
-          "tags": [
-            "webpack",
-            "react"
-          ],
+          "tags": ["webpack", "react"],
           "legend": "В чём разница между Hot Module Replacement или React Hot Loader и как это всё работает?"
         },
         {
           "caption": "Выпуск #4. Redux, Actions подряд",
           "url": "https://youtu.be/xcZNBeMddq0",
-          "tags": [
-            "react",
-            "state_management",
-            "redux"
-          ],
+          "tags": ["react", "state_management", "redux"],
           "legend": "Redux: что не так с отправкой нескольких Actions подряд (синхронно)?"
         },
         {
           "caption": "Выпуск #5. Redux, Derived Data",
           "url": "https://youtu.be/9FQs9VRxJcI",
-          "tags": [
-            "react",
-            "state_management",
-            "redux"
-          ],
+          "tags": ["react", "state_management", "redux"],
           "legend": "Redux и вычисляемые поля. Сталкивались ли вы с проблемой распухающих объектов Action, поскольку одни редьюсеры требуют данные от других редьюсеров? Где и как правильно работать с вычисляемыми полями?"
         },
         {
           "caption": "Выпуск #9. Lifting State Up Example Explained",
           "url": "https://youtu.be/8u0ym886JuQ",
-          "tags": [
-            "react",
-            "state_management"
-          ],
+          "tags": ["react", "state_management"],
           "legend": "Разберём на пальцах пример из документации к React из главы \"Lifting State Up\" про два поля ввода температуры по Цельсию и по Фаренгейту и как правильно их синхронизировать."
         },
         {
           "caption": "Выпуск #10. Redux and Local State",
           "url": "https://youtu.be/sXfij1rj6zI",
-          "tags": [
-            "react",
-            "state_management",
-            "redux"
-          ],
+          "tags": ["react", "state_management", "redux"],
           "legend": "Вопрос: можно ли и нужно ли использовать локальный state в компонентах при использовании Redux? Краткий ответ: локальный state это нормально, используем!"
         },
         {
           "caption": "Выпуск #11. this.state или this.effectiveValue?",
           "url": "https://youtu.be/Ap_XJp4bnsQ",
-          "tags": [
-            "react",
-            "state_management",
-            "redux"
-          ],
+          "tags": ["react", "state_management", "redux"],
           "legend": "Если мы решили хранить локальное состояние компонента где-то внутри компонента (а не в Redux), стоит ли это делать в this.state или завести отдельную переменную this.effectiveValue?"
         },
         {
           "caption": "Выпуск #13. Redux Business Logic (part 1)",
           "url": "https://youtu.be/s-CzuVMEj4M",
-          "tags": [
-            "react",
-            "state_management",
-            "redux",
-            "performance"
-          ],
+          "tags": ["react", "state_management", "redux", "performance"],
           "legend": "Где в React-Redux приложениии должен быть расположен код отвечающий за бизнес логику? Рассмотрим частный пример с бизнес логикой исключительно на клиенте."
         },
         {
           "caption": "Выпуск #14. Redux Business Logic (part 2)",
           "url": "https://youtu.be/ST_0yLXXQeo",
-          "tags": [
-            "react",
-            "state_management",
-            "redux",
-            "performance"
-          ],
+          "tags": ["react", "state_management", "redux", "performance"],
           "legend": "В предыдущем выпуске подкаста мы разбирались с вопросом где разместить бизнес логику при использовании Redux. Но остались острые вопросы, которые я не успел осветить. Углубимся в тему ещё немного!"
         },
         {
           "caption": "Выпуск #29. Мониторинг ошибок",
           "url": "https://youtu.be/7JeMpnvzs8M",
-          "tags": [
-            "video",
-            "javascript"
-          ],
+          "tags": ["video", "javascript"],
           "legend": "Как обрабатывать ошибки в JavaScript и как их эффективно мониторить на production? По итогам RamblerFront& meetup #2."
         },
         {
           "caption": "Выпуск #30. setState и организация кода",
           "url": "https://5minreact.ru/posts/030-setstate-practice/",
-          "tags": [
-            "react",
-            "state_management"
-          ],
+          "tags": ["react", "state_management"],
           "legend": "Небольшая заметка, размышление на тему можно ли жить без внешнего контейнера состояния и какие при этом возникают проблемы и неудобства? Как организовывать код?"
         }
       ],
@@ -2848,416 +1982,287 @@
       "caption": "getDerivedStateFromState – или как сделать из простой проблемы сложную (by Anton Korzunov aka Kashey)",
       "url": "https://habr.com/ru/post/353564/",
       "lang": "ru",
-      "tags": [
-        "react",
-        "state_management",
-        "fp"
-      ]
+      "tags": ["react", "state_management", "fp"]
     },
     {
       "caption": "Increase your React + Redux Application Performance With the Reselect Library",
       "url": "https://medium.com/better-programming/increase-your-react-redux-application-performance-with-reselect-library-3f4d632a08c5",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management",
-        "redux",
-        "performance"
-      ]
+      "tags": ["react", "state_management", "redux", "performance"]
     },
     {
       "caption": "Where to Hold React Component Data: state, store, static, and this",
       "url": "https://www.freecodecamp.org/news/where-do-i-belong-a-guide-to-saving-react-component-data-in-state-store-static-and-this-c49b335e2a00/",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "React Components, Elements, and Instances (by Dan Abramov)",
       "url": "https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Complexity: Divide and Conquer! (by Michel Weststrate)",
       "url": "https://youtu.be/3J9EJrvqOiM",
       "lang": "en",
-      "tags": [
-        "video",
-        "react",
-        "state_management",
-        "routing",
-        "mobx"
-      ]
+      "tags": ["video", "react", "state_management", "routing", "mobx"]
     },
     {
       "caption": "How to handle state in React. The missing FAQ (by Osmel Mora)",
       "url": "https://medium.com/react-ecosystem/how-to-handle-state-in-react-6f2d3cd73a0c",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "Никто не знает CSS: специфичность — не каскад (Илья Стрельцын)",
       "url": "https://css-live.ru/css/nikto-ne-znaet-css-specifichnost-ne-kaskad.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Собеседование по TypeScript: 20 вопросов и ответов",
       "url": "https://habr.com/ru/company/ruvds/blog/419993/",
       "lang": "ru",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "How to Write a Git Commit Message (by Chris Beams)",
       "url": "https://cbea.ms/git-commit/",
       "lang": "en",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Developer tip: Keep your commits \"atomic\"",
       "url": "https://www.freshconsulting.com/atomic-commits/",
       "lang": "en",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Hype Driven Development",
       "url": "https://habr.com/ru/company/edison/blog/316668/",
       "lang": "ru",
-      "tags": [
-        "methodology"
-      ]
+      "tags": ["methodology"]
     },
     {
       "caption": "Очень простое объяснение принципов SOLID",
       "url": "https://habr.com/ru/post/413707/",
       "lang": "ru",
-      "tags": [
-        "architecture",
-        "clean_code",
-        "oop",
-        "solid"
-      ]
+      "tags": ["architecture", "clean_code", "oop", "solid"]
     },
     {
       "caption": "Promises: States and Fates (by Domenic Denicola)",
       "url": "https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "async"
-      ],
+      "tags": ["javascript", "async"],
       "legend": "This document helps clarify the different adjectives surrounding promises, by dividing them up into two categories: states and fates."
     },
     {
       "caption": "Внутреннее устройство бандла webpack (Алексей Иванов)",
       "url": "https://youtu.be/jE1ibm037Fo",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "build_tools",
-        "webpack"
-      ]
+      "tags": ["javascript", "build_tools", "webpack"]
     },
     {
       "caption": "Глубокое погружение в webpack (Стас Курилов)",
       "url": "https://youtu.be/aiYkJOPD9v8",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "build_tools",
-        "webpack"
-      ]
+      "tags": ["javascript", "build_tools", "webpack"]
     },
     {
       "caption": "TypeScript Deep Dive (by Basarat Ali Syed)",
       "url": "https://basarat.gitbook.io/typescript/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Краткий гид по open‑source лицензиям",
       "url": "https://codex.so/licenses",
       "lang": "ru",
-      "tags": [
-        "opensource"
-      ]
+      "tags": ["opensource"]
     },
     {
       "caption": "Peer dependencies — NPM",
       "url": "https://medium.com/@ngubanethabo.ambrose/peer-dependencies-npm-a0970f60481f",
       "lang": "en",
-      "tags": [
-        "npm"
-      ],
+      "tags": ["npm"],
       "legend": "about notable npm package.json feature"
     },
     {
       "caption": "Как собрать пакет npm",
       "url": "https://www.unix-lab.org/posts/npm-build/",
       "lang": "ru",
-      "tags": [
-        "npm"
-      ]
+      "tags": ["npm"]
     },
     {
       "caption": "Почему функциональное программирование такое сложное",
       "url": "https://habr.com/ru/post/505928/",
       "lang": "ru",
-      "tags": [
-        "fp"
-      ]
+      "tags": ["fp"]
     },
     {
       "caption": "Death by a thousand useCallbacks (Royi Hagigi)",
       "url": "https://royi-codes.now.sh/thousand-usecallbacks/",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks"
-      ]
+      "tags": ["react", "react_hooks"]
     },
     {
       "caption": "Merging refs",
       "url": "https://dev.to/thekashey/merging-refs-41l8",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks"
-      ]
+      "tags": ["react", "react_hooks"]
     },
     {
       "caption": "Принципы работы современных веб-браузеров",
       "url": "https://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/",
       "lang": "ru",
-      "tags": [
-        "browser_engines"
-      ]
+      "tags": ["browser_engines"]
     },
     {
       "caption": "useEffect(fn, []) is not the new componentDidMount() (by Brad Westfall)",
       "url": "https://reacttraining.com/blog/useEffect-is-not-the-new-componentDidMount/",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks"
-      ]
+      "tags": ["react", "react_hooks"]
     },
     {
       "caption": "Публикация пакета в npm",
       "url": "https://codex.so/npm",
       "lang": "ru",
-      "tags": [
-        "npm"
-      ]
+      "tags": ["npm"]
     },
     {
       "caption": "PX, EM or REM Media Queries?",
       "url": "https://zellwk.com/blog/media-query-units/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "The Wrong Abstraction (by Sandi Metz)",
       "url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "AHA Programming (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/aha-programming",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "When to useMemo and useCallback (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/usememo-and-usecallback",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks"
-      ]
+      "tags": ["react", "react_hooks"]
     },
     {
       "caption": "The trick to viewport units on mobile (by Louis Hoebregts)",
       "url": "https://css-tricks.com/the-trick-to-viewport-units-on-mobile/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "React, Inline Functions, and Performance (by Ryan Florence)",
       "url": "https://reacttraining.com/blog/react-inline-functions-and-performance/",
       "lang": "en",
-      "tags": [
-        "react",
-        "performance"
-      ]
+      "tags": ["react", "performance"]
     },
     {
       "caption": "Wins for Hooks (by Brad Westfall)",
       "url": "https://reacttraining.com/blog/wins-for-hooks/",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks"
-      ]
+      "tags": ["react", "react_hooks"]
     },
     {
       "caption": "How Are Function Components Different from Classes? (by Dan Abramov)",
       "url": "https://overreacted.io/how-are-function-components-different-from-classes/",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks"
-      ]
+      "tags": ["react", "react_hooks"]
     },
     {
       "caption": "Как организовать процесс сдачи задачи и код‑ревью в рамках спринта? (Фёдор Борщёв)",
       "url": "https://bureau.ru/soviet/20200910/",
       "lang": "ru",
-      "tags": [
-        "project_management"
-      ]
+      "tags": ["project_management"]
     },
     {
       "caption": "How to fetch data with React Hooks? (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/react-hooks-fetch-data",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks"
-      ]
+      "tags": ["react", "react_hooks"]
     },
     {
       "caption": "Further understanding reconciliation (by Dan Abramov)",
       "url": "https://github.com/facebook/react/issues/11793#issuecomment-349955504",
       "lang": "en",
-      "tags": [
-        "react"
-      ],
+      "tags": ["react"],
       "legend": "тонкости согласования React Virtual DOM"
     },
     {
       "caption": "Does React keep the order for state updates? (by Dan Abramov)",
       "url": "https://stackoverflow.com/questions/48563650/does-react-keep-the-order-for-state-updates/48610973#48610973",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "RFClarification: why is setState asynchronous? (by Dan Abramov)",
       "url": "https://github.com/facebook/react/issues/11527#issuecomment-360199710",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "A Complete Guide to useEffect (by Dan Abramov)",
       "url": "https://overreacted.io/a-complete-guide-to-useeffect/",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks"
-      ]
+      "tags": ["react", "react_hooks"]
     },
     {
       "caption": "Developing UI (by Adam Morse)",
       "url": "http://mrmrs.cc/writing/developing-ui/",
       "lang": "en",
-      "tags": [
-        "testing",
-        "clean_code",
-        "ux_ui"
-      ]
+      "tags": ["testing", "clean_code", "ux_ui"]
     },
     {
       "caption": "The Elements of UI Engineering (by Dan Abramov)",
       "url": "https://overreacted.io/the-elements-of-ui-engineering/",
       "lang": "en",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "React as a UI Runtime (by Dan Abramov)",
       "url": "https://overreacted.io/react-as-a-ui-runtime/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Why Do React Elements Have a $$typeof Property? (by Dan Abramov)",
       "url": "https://overreacted.io/why-do-react-elements-have-typeof-property/",
       "lang": "en",
-      "tags": [
-        "react",
-        "security"
-      ]
+      "tags": ["react", "security"]
     },
     {
       "caption": "DOMException: The play() request was interrupted (by François Beaufort)",
       "url": "https://developers.google.com/web/updates/2017/06/play-request-was-interrupted",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "dom"
-      ]
+      "tags": ["javascript", "dom"]
     },
     {
       "caption": "Delay unmounting of the component in React (by Tomasz Ferens)",
       "url": "https://medium.com/@tomaszferens/delay-unmounting-of-the-component-in-react-8d6f6e73cdc",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Метрики шрифтов",
       "url": "http://indians.ru/a-font-sizes.htm",
       "lang": "ru",
-      "tags": [
-        "typography"
-      ],
+      "tags": ["typography"],
       "legend": "Хотя приведённая информация касается металлического набора, она может быть полезна для frontend-разработчиков и UX/UI-дизайнеров , т.к. многие термины используется и в цифровой типографике."
     },
     {
       "caption": "Неизведанные глубины CSS: метрики шрифта, line-height и vertical-align (by Vincent De Oliveira)",
       "url": "https://css-live.ru/css/metriki-shrifta-line-height-vertical-align.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "typography"
-      ]
+      "tags": ["css", "typography"]
     },
     {
       "caption": "Sass @extend caveats and gotchas",
@@ -3265,9 +2270,7 @@
         {
           "caption": "BEM modifiers: multiple classes vs @extend (by Ben Smithett)",
           "url": "https://www.bensmithett.com/bem-modifiers-multiple-classes-vs-extend/",
-          "tags": [
-            "bem"
-          ]
+          "tags": ["bem"]
         },
         {
           "caption": "Why You Should Avoid Sass @extend (by Hugo Giraudel)",
@@ -3283,147 +2286,102 @@
         }
       ],
       "lang": "en",
-      "tags": [
-        "css",
-        "sass"
-      ]
+      "tags": ["css", "sass"]
     },
     {
       "caption": "Why not export default?",
       "url": "https://t.me/s/why_not_export_default",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ],
+      "tags": ["javascript"],
       "legend": "Почему не стоит использовать export default в своей кодовой базе?"
     },
     {
       "caption": "Sass vars, CSS vars, and semantic theme vars",
       "url": "https://daverupert.com/2020/10/variable-layers/",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_custom_properties",
-        "sass"
-      ]
+      "tags": ["css", "css_custom_properties", "sass"]
     },
     {
       "caption": "11 вещей которые я узнал, читая спецификацию flexbox (by David Gilbertson)",
       "url": "https://habr.com/ru/post/329820/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_flexbox"
-      ]
+      "tags": ["css", "css_flexbox"]
     },
     {
       "caption": "What the Heck is Node modules strict by default?",
       "url": "http://imaginativethinking.ca/what-the-heck-is-node-modules-strict-by-default/",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "nodejs"
-      ]
+      "tags": ["javascript", "nodejs"]
     },
     {
       "caption": "Responsive layout with CSS grid, part 2: auto-fill & auto-fit",
       "url": "https://blog.jonstodle.com/responsive-layout-with-css-grid-part-2-auto-fit-auto-fill/",
       "lang": "en",
-      "tags": [
-        "css_grid"
-      ]
+      "tags": ["css_grid"]
     },
     {
       "caption": "Let's talk about reexports – and why they're bad for loading and runtime performance (by Ivan Akulov)",
       "url": "https://twitter.com/iamakulov/status/1331551351214645251",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "build_tools",
-        "webpack"
-      ],
+      "tags": ["javascript", "build_tools", "webpack"],
       "legend": "Подводные камни использования re-export в JavaScript."
     },
     {
       "caption": "Лучший способ реализовать «обёртки» в CSS",
       "url": "https://css-live.ru/articles/luchshij-sposob-realizovat-obyortki-v-css.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ],
+      "tags": ["css"],
       "legend": "Простая с точки зрения описанных CSS-механизмов статья поднимает интересный вопрос из области архитектурных паттернов: есть ли принципиальная разница между обёрткой и контейнером?"
     },
     {
       "caption": "HTML vs Body in CSS",
       "url": "https://css-tricks.com/html-vs-body-in-css/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Font sizing with rem (by Jonathan Snook)",
       "url": "https://snook.ca/archives/html_and_css/font-size-with-rem",
       "lang": "en",
-      "tags": [
-        "css",
-        "typography"
-      ],
+      "tags": ["css", "typography"],
       "legend": "Классическая статья о px vs em vs rem."
     },
     {
       "caption": "Ликбез по типизации в языках программирования",
       "url": "https://habr.com/ru/post/161205/",
       "lang": "ru",
-      "tags": [
-        "typing"
-      ]
+      "tags": ["typing"]
     },
     {
       "caption": "Просто о Хиндли-Милнере",
       "url": "https://habr.com/ru/post/125250/",
       "lang": "ru",
-      "tags": [
-        "typing"
-      ]
+      "tags": ["typing"]
     },
     {
       "caption": "Минимизация классов в HTML (Виталий Харисов)",
       "url": "https://ru.bem.info/forum/1130/",
       "lang": "ru",
-      "tags": [
-        "html"
-      ],
+      "tags": ["html"],
       "legend": "сокращение имён CSS-классов как экономия на спичках"
     },
     {
       "caption": "Most used words in programming languages",
       "url": "https://anvaka.github.io/common-words/#?lang=js",
       "lang": "en",
-      "tags": [
-        "code_art"
-      ]
+      "tags": ["code_art"]
     },
     {
       "caption": "Watch Out When Using SetTimeout() in For Loop",
       "url": "https://medium.com/@axionoso/watch-out-when-using-settimeout-in-for-loop-js-75a047e27a5f",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Что нужно знать о популярных JS-фреймворках",
       "url": "https://habr.com/ru/company/yandex_praktikum/blog/533702/",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "react",
-        "redux",
-        "angular",
-        "vue",
-        "svelte"
-      ]
+      "tags": ["javascript", "react", "redux", "angular", "vue", "svelte"]
     },
     {
       "caption": "Автотесты «на пальцах»",
@@ -3434,216 +2392,148 @@
         }
       ],
       "lang": "ru",
-      "tags": [
-        "testing"
-      ]
+      "tags": ["testing"]
     },
     {
       "caption": "Observable в RxJS: краткое введение",
       "url": "https://medium.com/@kosmogradsky/observable-%D0%B2-rxjs-%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE%D0%B5-%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-34939ff5f7d7",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "reactive_programming"
-      ]
+      "tags": ["javascript", "reactive_programming"]
     },
     {
       "caption": "React-redux: просто о zombie children and stale props (Вадим Бударин)",
       "url": "https://vadim-budarin.medium.com/react-%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D0%BD%D0%BE-%D0%BE-zombie-children-and-stale-props-d31247ea08",
       "lang": "ru",
-      "tags": [
-        "react",
-        "redux"
-      ]
+      "tags": ["react", "redux"]
     },
     {
       "caption": "Why useActions react-redux hook is unnecessary (by Dan Abramov)",
       "url": "https://github.com/reduxjs/react-redux/issues/1252#issuecomment-488160930",
       "lang": "en",
-      "tags": [
-        "react",
-        "redux"
-      ]
+      "tags": ["react", "redux"]
     },
     {
       "caption": "The 5 Types Of React Application State",
       "url": "http://jamesknelson.com/5-types-react-application-state/",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "How to Organize a Large React Application and Make It Scale",
       "url": "https://www.sitepoint.com/organize-large-react-application/",
       "lang": "en",
-      "tags": [
-        "react",
-        "clean_code"
-      ],
+      "tags": ["react", "clean_code"],
       "legend": "возможно, в мире с TypeScript использовать propTypes не стоит"
     },
-        {
+    {
       "caption": "How to fix nasty circular dependency issues once and for all in JavaScript & TypeScript (by Michel Weststrate)",
       "url": "https://medium.com/visual-development/how-to-fix-nasty-circular-dependency-issues-once-and-for-all-in-javascript-typescript-a04c987cf0de",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "clean_code"
-      ]
+      "tags": ["javascript", "clean_code"]
     },
     {
       "caption": "Все ли вы знаете о useCallback",
       "url": "https://habr.com/ru/post/529950/",
       "lang": "ru",
-      "tags": [
-        "react",
-        "react_hooks"
-      ]
+      "tags": ["react", "react_hooks"]
     },
     {
       "caption": "Руководство по рендеренгу в React",
       "url": "https://bxnotes.ru/conspect/lib/react/react-notes/rendering/",
       "lang": "ru",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Зачем айтишнику личный бренд",
       "url": "https://habr.com/ru/company/oleg-bunin/blog/476110/",
       "lang": "ru",
-      "tags": [
-        "productivity",
-        "soft_skills"
-      ]
+      "tags": ["productivity", "soft_skills"]
     },
     {
       "caption": "Understanding ReactJS setState",
       "url": "https://medium.com/@baphemot/understanding-reactjs-setstate-a4640451865b",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ],
+      "tags": ["react", "state_management"],
       "legend": "краткий обзор особенностей работы this.setState"
     },
     {
       "caption": "The history of \"typeof null\" (by Dr. Axel Rauschmayer)",
       "url": "https://2ality.com/2013/10/typeof-null.html",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "undefined vs. null revisited (by Dr. Axel Rauschmayer)",
       "url": "https://2ality.com/2021/01/undefined-null-revisited.html",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Weak Type Detection in TypeScript",
       "url": "https://mariusschulz.com/blog/weak-type-detection-in-typescript",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Interface vs Type alias in TypeScript",
       "url": "https://medium.com/@martin_hotell/interface-vs-type-alias-in-typescript-2-7-2a8f1777af4c",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Рекурсивно определяем числа Фибоначчи с помощью мемоизации в JavaScript (Стас Багрецов)",
       "url": "https://stasonmars.ru/javascript/recursivno-opredelyaem-chisla-fibonacci-s-pomoshiu-memoizacii-v-javascript/",
       "lang": "ru",
-      "tags": [
-        "algorithms",
-        "javascript"
-      ]
+      "tags": ["algorithms", "javascript"]
     },
     {
       "caption": "What it means to be a senior engineer",
       "url": "https://kaihao.dev/posts/What-it-means-to-be-a-senior-engineer",
       "lang": "en",
-      "tags": [
-        "soft_skills"
-      ]
+      "tags": ["soft_skills"]
     },
     {
       "caption": "Stale props and zombie children in Redux",
       "url": "https://kaihao.dev/posts/Stale-props-and-zombie-children-in-Redux",
       "lang": "en",
-      "tags": [
-        "react",
-        "redux",
-        "react_hooks"
-      ],
+      "tags": ["react", "redux", "react_hooks"],
       "legend": "хардкорный лонгрид о внутреннем устройстве и эволюции библиотеки react-redux"
     },
     {
       "caption": "How to correctly use a curried selector function with react-redux's useSelector hook?",
       "url": "https://stackoverflow.com/questions/57464286/how-to-correctly-use-a-curried-selector-function-with-react-reduxs-useselector",
       "lang": "en",
-      "tags": [
-        "react",
-        "redux",
-        "react_hooks"
-      ]
+      "tags": ["react", "redux", "react_hooks"]
     },
     {
       "caption": "Bail out if stateProps can be calculated early and did not change (by Dan Abramov)",
       "url": "https://github.com/reduxjs/react-redux/pull/348",
       "lang": "en",
-      "tags": [
-        "react",
-        "redux"
-      ]
+      "tags": ["react", "redux"]
     },
     {
       "caption": "React props: Should I pass the object or its properties? Does it make much difference?",
       "url": "https://stackoverflow.com/questions/52621169/react-props-should-i-pass-the-object-or-its-properties-does-it-make-much-diffe",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Продвинутый TypeScript (Михаил Башуров)",
       "url": "https://youtu.be/m0uRxCCno00",
       "lang": "ru",
-      "tags": [
-        "video",
-        "typescript"
-      ]
+      "tags": ["video", "typescript"]
     },
     {
       "caption": "Проектирование предметной области на TypeScript в функциональном стиле (Сергей Черепанов)",
       "url": "https://youtu.be/cT-VOwWjJJs",
       "lang": "ru",
-      "tags": [
-        "video",
-        "typescript",
-        "fp",
-        "architecture"
-      ]
+      "tags": ["video", "typescript", "fp", "architecture"]
     },
     {
       "caption": "Собираем бандл мечты с помощью Webpack (Максим Соснов)",
       "url": "https://habr.com/ru/company/oleg-bunin/blog/433324/",
       "lang": "ru",
-      "tags": [
-        "webpack",
-        "build_tools"
-      ],
+      "tags": ["webpack", "build_tools"],
       "legend": "Речь идёт о webpack 4, поэтому некоторые пакеты уже не актуальны. Предложена интересная техника организации файлов настроек."
     },
     {
@@ -3659,205 +2549,140 @@
         }
       ],
       "lang": "en",
-      "tags": [
-        "docker"
-      ]
+      "tags": ["docker"]
     },
     {
       "caption": "Типы данных в CSS (София Валитова)",
       "url": "https://youtu.be/PoWpkLeJnBA",
       "lang": "ru",
-      "tags": [
-        "video",
-        "css",
-        "css_houdini"
-      ]
+      "tags": ["video", "css", "css_houdini"]
     },
     {
       "caption": "Архитектура менеджера состояния (Артём Арутюнян)",
       "url": "https://youtu.be/N2rAQ4uC6VY",
       "lang": "ru",
-      "tags": [
-        "state_management"
-      ]
+      "tags": ["state_management"]
     },
     {
       "caption": "The melting pot of JavaScript (by Dan Abramov)",
       "url": "https://increment.com/development/the-melting-pot-of-javascript/",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "clean_code",
-        "build_tools"
-      ]
+      "tags": ["javascript", "clean_code", "build_tools"]
     },
     {
       "caption": "Chrome 80 brings support for let and class redeclarations in the Console",
       "url": "https://dev.to/cooldashing24/chrome-now-allows-for-let-and-class-redeclarations-in-the-console-2m0f",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "CSS colors (София Валитова)",
       "url": "https://css-live.ru/css/css-colors.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "The Shocking Immaturity of JavaScript (by Jared White)",
       "url": "https://dev.to/jaredcwhite/the-shocking-immaturity-of-javascript-c70",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "clean_code"
-      ]
+      "tags": ["javascript", "clean_code"]
     },
     {
       "caption": "Presentational and Container Components (by Dan Abramov)",
       "url": "https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0",
       "lang": "en",
-      "tags": [
-        "react"
-      ],
+      "tags": ["react"],
       "legend": "На первый взгляд, материал статьи кажется устаревшим в мире с Hooks API. Тем не менее, здесь есть нетленные примеры хода мыслей разработчика в процессе организации компонентной структуры React-приложения."
     },
     {
       "caption": "Preventing rerenders with React.memo and useContext hook (by Dan Abramov)",
       "url": "https://github.com/facebook/react/issues/15156#issuecomment-474590693",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks",
-        "react_context"
-      ]
+      "tags": ["react", "react_hooks", "react_context"]
     },
     {
       "caption": "Reconciling the useEffect Tree (by Ryan Florence)",
       "url": "https://reacttraining.com/blog/react-effect-tree/",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks"
-      ]
+      "tags": ["react", "react_hooks"]
     },
     {
       "caption": "JavaScript-реализация throttle на пальцах (Пётр Мязин)",
       "url": "https://youtu.be/-v31jfaTyhU",
       "lang": "ru",
-      "tags": [
-        "algorithms",
-        "javascript"
-      ]
+      "tags": ["algorithms", "javascript"]
     },
     {
       "caption": "The Social Coding Contract (by Justin Searls)",
       "url": "https://www.youtube.com/watch?v=HFRU6eQKp4Y",
       "lang": "en",
-      "tags": [
-        "open_source",
-        "clean_code",
-        "soft_skills"
-      ]
+      "tags": ["open_source", "clean_code", "soft_skills"]
     },
     {
       "caption": "Tricking TypeScript Into Typing Untyped JavaScript Modules",
       "url": "https://kamranicus.com/tricking-typescript-into-typing-untyped-javascript-modules/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "You Probably Don't Need Derived State (by Brian Vaughn)",
       "url": "https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Application State Management with React (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/application-state-management-with-react",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_context",
-        "state_management"
-      ]
+      "tags": ["react", "react_context", "state_management"]
     },
     {
       "caption": "The Problem with React's Context API (by Lee Warrick)",
       "url": "https://leewarrick.com/blog/the-problem-with-context/",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_context"
-      ]
+      "tags": ["react", "react_context"]
     },
     {
       "caption": "How to use React Testing Library Tutorial (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/react-testing-library",
       "lang": "en",
-      "tags": [
-        "react",
-        "testing"
-      ]
+      "tags": ["react", "testing"]
     },
     {
       "caption": "CSS-нестинг — боль­ше, чем са­хар",
       "url": "https://web-standards.ru/articles/css-nesting/",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "How to test Axios in Jest by Example (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/axios-jest",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "async",
-        "testing"
-      ]
+      "tags": ["javascript", "async", "testing"]
     },
     {
       "caption": "Роутер как у сына маминой подруги (Павел Малышев)",
       "url": "https://youtu.be/kf5zccSyEso",
       "lang": "ru",
-      "tags": [
-        "routing",
-        "state_management"
-      ]
+      "tags": ["routing", "state_management"]
     },
     {
       "caption": "Avoid Nesting when you're Testing (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/avoid-nesting-when-youre-testing",
       "lang": "en",
-      "tags": [
-        "testing"
-      ]
+      "tags": ["testing"]
     },
     {
       "caption": "Test Isolation with React (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/test-isolation-with-react",
       "lang": "en",
-      "tags": [
-        "testing",
-        "react"
-      ]
+      "tags": ["testing", "react"]
     },
     {
       "caption": "AHA Testing (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/aha-testing",
       "lang": "en",
-      "tags": [
-        "testing"
-      ]
+      "tags": ["testing"]
     },
     {
       "caption": "On Forms in React (by Gosha Arinich)",
@@ -3912,113 +2737,80 @@
         }
       ],
       "lang": "en",
-      "tags": [
-        "react",
-        "forms"
-      ]
+      "tags": ["react", "forms"]
     },
     {
       "caption": "Prop Drilling (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/prop-drilling",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "When to break up a component into multiple components (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/when-to-break-up-a-component-into-multiple-components",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Simplest, no-dependency router is... state (by Gosha Arinich)",
       "url": "https://goshacmd.com/min-viable-router-is-state/",
       "lang": "en",
-      "tags": [
-        "react",
-        "routing",
-        "state_management"
-      ]
+      "tags": ["react", "routing", "state_management"]
     },
     {
       "caption": "Learning How to Learn course: brief text version",
       "url": "https://www.reddit.com/r/GetMotivated/comments/5950tm/text_i_just_finished_the_online_coursera_course/",
       "lang": "en",
-      "tags": [
-        "productivity"
-      ],
+      "tags": ["productivity"],
       "legend": "Тезисы курса «Learning How to Learn»"
     },
     {
       "caption": "Redux vs MobX vs Flux vs... Do you even need that? (by Gosha Arinich)",
       "url": "https://goshacmd.com/redux-vs-mobx-vs-flux-etoomanychoices/",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "So you completed the official React tutorial. What's next? (by Gosha Arinich)",
       "url": "https://goshacmd.com/next-steps-official-react-tutorial/",
       "lang": "en",
-      "tags": [
-        "react",
-        "productivity"
-      ]
+      "tags": ["react", "productivity"]
     },
     {
       "caption": "You don't need a tutorial for every-freaking-thing (by Gosha Arinich)",
       "url": "https://goshacmd.com/no-tutorial-for-everything/",
       "lang": "en",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Как я однажды верстал форму регистрации (Михайло Иванкив)",
       "url": "https://youtu.be/C5vIEHHG1aA",
       "lang": "ru",
-      "tags": [
-        "algorithms"
-      ]
+      "tags": ["algorithms"]
     },
     {
       "caption": "One way NOT to abuse Redux (by Gosha Arinich)",
       "url": "https://goshacmd.com/one-way-not-to-abuse-redux/",
       "lang": "en",
-      "tags": [
-        "react",
-        "redux"
-      ]
+      "tags": ["react", "redux"]
     },
     {
       "caption": "Redux anti-pattern: dumb mapStateToProps (by Gosha Arinich)",
       "url": "https://goshacmd.com/redux-antipattern-mapstatetoprops/",
       "lang": "en",
-      "tags": [
-        "react",
-        "redux"
-      ]
+      "tags": ["react", "redux"]
     },
     {
       "caption": "Правила общения удалённых разработчиков",
       "url": "https://blog.csssr.com/ru/article/how-remote-developers-talk",
       "lang": "ru",
-      "tags": [
-        "soft_skills"
-      ]
+      "tags": ["soft_skills"]
     },
     {
       "caption": "History of the browser user-agent string",
       "url": "https://webaim.org/blog/user-agent-string-history/",
       "lang": "en",
-      "tags": [
-        "fun"
-      ]
+      "tags": ["fun"]
     },
     {
       "caption": "Стимуляторы работы программиста",
@@ -4038,153 +2830,105 @@
         }
       ],
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Надёжный JavaScript: в погоне за мифом (Илья Климов)",
       "url": "https://youtu.be/o9zh5EHrpQA",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "clean_code",
-        "video"
-      ]
+      "tags": ["javascript", "clean_code", "video"]
     },
     {
       "caption": "Алгоритм чтения книг по программированию",
       "url": "https://blog.csssr.com/ru/article/tech-book-reading/",
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Веб-сервер на Ubuntu 20 с нуля: nginx, HTTPS, Brotli и HTTP/2 (Вадим Макеев)",
       "url": "https://youtu.be/XDWWxA6g1eA",
       "lang": "ru",
-      "tags": [
-        "video",
-        "devops",
-        "linux"
-      ]
+      "tags": ["video", "devops", "linux"]
     },
     {
       "caption": "How to use React Context effectively (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/how-to-use-react-context-effectively",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_context"
-      ]
+      "tags": ["react", "react_context"]
     },
     {
       "caption": "How to optimize your context value (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/how-to-optimize-your-context-value",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_context"
-      ]
+      "tags": ["react", "react_context"]
     },
     {
       "caption": "Hooks, State, Closures, and useReducer (by Adam Rackis)",
       "url": "https://adamrackis.dev/state-and-use-reducer/",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_hooks",
-        "state_management"
-      ]
+      "tags": ["react", "react_hooks", "state_management"]
     },
     {
       "caption": "Markdown/MDX with Next.js",
       "url": "https://nextjs.org/blog/markdown",
       "lang": "en",
-      "tags": [
-        "jamstack",
-        "nextjs"
-      ]
+      "tags": ["jamstack", "nextjs"]
     },
     {
       "caption": "Colocation (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/colocation",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Mapped Types should distribute over Union Types",
       "url": "https://github.com/microsoft/TypeScript/issues/28339",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ],
+      "tags": ["typescript"],
       "legend": "Как обойти проблему разрушения алгебраических типов (Discriminated Union) после применения к ним маппинга"
     },
     {
       "caption": "Unix Answers: Stopped Jobs and Job Control",
       "url": "http://www.glue.umd.edu/afs/glue.umd.edu/system/info/olh/Utilities/Unix_answers/unix_jobs.html",
       "lang": "en",
-      "tags": [
-        "linux"
-      ],
+      "tags": ["linux"],
       "legend": "Что делать, если сервер не даёт разорвать SSH-соединение из-за незавершённых задач"
     },
     {
       "caption": "React: Rethinking best practices (by Pete Hunt, JSConf EU 2013)",
       "url": "https://youtu.be/x7cQ3mrcKaY",
       "lang": "en",
-      "tags": [
-        "video",
-        "react",
-        "architecture"
-      ]
+      "tags": ["video", "react", "architecture"]
     },
     {
       "caption": "How @supports Works (by Chris Coyier)",
       "url": "https://css-tricks.com/how-supports-works/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "One simple trick to optimize React re-renders (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/optimize-react-re-renders",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "State Colocation will make your React app faster (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/state-colocation-will-make-your-react-app-faster",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "One React mistake that's slowing you down (by Kent C. Dodds)",
       "url": "https://epicreact.dev/one-react-mistake-thats-slowing-you-down/",
       "lang": "en",
-      "tags": [
-        "react",
-        "architecture"
-      ]
+      "tags": ["react", "architecture"]
     },
     {
       "caption": "Объяснены значения nofollow / dofollow, noopener, noreferrer и noindex",
       "url": "https://saitsamy.blogspot.com/2019/12/what-noopener-noreferrer-dofollow-nofollow-explained.html",
       "lang": "ru",
-      "tags": [
-        "seo",
-        "security"
-      ]
+      "tags": ["seo", "security"]
     },
     {
       "caption": "Inclusive Components (by Heydon Pickering)",
@@ -4199,1100 +2943,795 @@
         }
       ],
       "lang": "en",
-      "tags": [
-        "a11y",
-        "wai_aria"
-      ]
+      "tags": ["a11y", "wai_aria"]
     },
     {
       "caption": "Why you shouldn't put refs in a dependency array (by Kent C. Dodds)",
       "url": "https://epicreact.dev/why-you-shouldnt-put-refs-in-a-dependency-array/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Myths about useEffect (by Kent C. Dodds)",
       "url": "https://epicreact.dev/myths-about-useeffect/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "useEffect vs useLayoutEffect (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/useeffect-vs-uselayouteffect",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "How React Uses Closures to Avoid Bugs (by Kent C. Dodds)",
       "url": "https://epicreact.dev/how-react-uses-closures-to-avoid-bugs/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "The Latest Ref Pattern in React (by Kent C. Dodds)",
       "url": "https://epicreact.dev/the-latest-ref-pattern-in-react/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "`export default thing` is different to `export { thing as default }` (by Jake Archibald)",
       "url": "https://jakearchibald.com/2021/export-default-thing-vs-thing-as-default/",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Making setInterval Declarative with React Hooks (by Dan Abramov)",
       "url": "https://overreacted.io/making-setinterval-declarative-with-react-hooks/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "The math of CSS Locks (by Florens Verschelde)",
       "url": "https://fvsch.com/css-locks",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "What the heck is the event loop anyway? (by Philip Roberts)",
       "url": "https://youtu.be/8aGhZQkoFbQ",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "async",
-        "event_driven_architecture"
-      ],
+      "tags": ["javascript", "async", "event_driven_architecture"],
       "legend": ""
     },
     {
       "caption": "The Event Loop (by Jake Archibald, SmashingConf London)",
       "url": "https://vimeo.com/254947206",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "async",
-        "event_driven_architecture"
-      ]
+      "tags": ["javascript", "async", "event_driven_architecture"]
     },
     {
       "caption": "Importing React Through the Ages (by Kent C. Dodds)",
       "url": "https://epicreact.dev/importing-react-through-the-ages/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Why I Love React (by Kent C. Dodds)",
       "url": "https://epicreact.dev/why-i-love-react/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Avoid soul-crushing components (by Kent C. Dodds)",
       "url": "https://epicreact.dev/soul-crushing-components/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Requisite React (by Kent C. Dodds)",
       "url": "https://epicreact.dev/requisite-react/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "TypeScript: How to get types from arrays",
       "url": "https://steveholgado.com/typescript-types-from-arrays/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "ARIA Lists (by Scott O'Hara)",
       "url": "https://www.scottohara.me/blog/2018/05/26/aria-lists.html",
       "lang": "en",
-      "tags": [
-        "a11y",
-        "wai_aria"
-      ]
+      "tags": ["a11y", "wai_aria"]
     },
     {
       "caption": "How to give rendering control to users with prop getters (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/how-to-give-rendering-control-to-users-with-prop-getters",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Further Adventures of the Event Loop (by Erin Zimmer)",
       "url": "https://youtu.be/u1kqx6AenYw",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "async",
-        "event_driven_architecture"
-      ],
+      "tags": ["javascript", "async", "event_driven_architecture"],
       "legend": "Из всех обзорных материалов на тему event loop, которые встречал, этот нахожу наиболее последовательным и полным. Разобрана работа событийного цикла в браузерах, Node.js, WebWorker'ах."
     },
     {
       "caption": "My State Management Mistake (by Kent C. Dodds)",
       "url": "https://epicreact.dev/my-state-management-mistake/",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "Why you've been bad about Profiling React Apps (by Kent C. Dodds)",
       "url": "https://epicreact.dev/why-youve-been-bad-about-profiling-react-apps/",
       "lang": "en",
-      "tags": [
-        "react",
-        "performance"
-      ]
+      "tags": ["react", "performance"]
     },
     {
       "caption": "Stop Stumbling Around in React Learning Darkness (by Kent C. Dodds)",
       "url": "https://epicreact.dev/stop-stumbling-around-in-react-learning-darkness/",
       "lang": "en",
-      "tags": [
-        "productivity"
-      ],
+      "tags": ["productivity"],
       "legend": "Как правильно изучать новое, какую стратегию выбрать и как избежать расхода сил и времени на бессмысленную/вредную активность."
     },
     {
       "caption": "Монорепозитории и где они обитают (Михаил Трошев, Яндекс)",
       "url": "https://youtu.be/yW2pg7__a0o",
       "lang": "ru",
-      "tags": [
-        "vcs"
-      ]
+      "tags": ["vcs"]
     },
     {
       "caption": "Why React needs a key prop (by Kent C. Dodds)",
       "url": "https://epicreact.dev/why-react-needs-a-key-prop/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Understanding React's key prop (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/understanding-reacts-key-prop",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Разработка в монорепозитории (Азат Разетдинов, Яндекс)",
       "url": "https://habr.com/ru/company/yandex/blog/469021/",
       "lang": "ru",
-      "tags": [
-        "vcs"
-      ]
+      "tags": ["vcs"]
     },
     {
       "caption": "Классические приёмы программирования во фронтенде (Игорь Алексеенко)",
       "url": "https://youtu.be/Up85vj9YP3w",
       "lang": "ru",
-      "tags": [
-        "architecture"
-      ]
+      "tags": ["architecture"]
     },
     {
       "caption": "Use ternaries rather than && in JSX (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/use-ternaries-rather-than-and-and-in-jsx",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Когда флексбоксы не всесильны, или сюрприз тёмной стороны CSS (Илья Стрельцын)",
       "url": "https://css-live.ru/articles-css/flexbox-vs-css-table-vertical-centering-inlines.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_flexbox"
-      ]
+      "tags": ["css", "css_flexbox"]
     },
     {
       "caption": "Battle for Baseline (by Roman Komarov)",
       "url": "https://www.kizu.ru/flex-baseline/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Свойства для выравнивания всего и их новые тайны (Илья Стрельцын)",
       "url": "https://css-live.ru/articles-css/svojstva-dlya-vyravnivaniya-vsego-i-ix-novye-tajny.html",
       "lang": "ru",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Intrinsic Sizing in CSS (by Ahmad Shadeed)",
       "url": "https://ishadeed.com/article/intrinsic-sizing-in-css/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Большая статья про гриды (CSS Grid Layout) (Илья Стрельцын)",
       "url": "https://css-live.ru/css/bolshaya-statya-pro-gridy-css-grid-layout.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Фронтенд как у сына маминой подруги",
       "url": "https://habr.com/ru/company/yoomoney/blog/354416/",
       "lang": "ru",
-      "tags": [
-        "project_management"
-      ]
+      "tags": ["project_management"]
     },
     {
       "caption": "Дорогостоящие ошибки: почему нам пришлось отказаться от Firebase",
       "url": "https://proglib.io/p/dorogostoyashchie-oshibki-pochemu-nam-prishlos-otkazatsya-ot-firebase-2020-12-27/amp/",
       "lang": "ru",
-      "tags": [
-        "databases",
-        "clean_code"
-      ]
+      "tags": ["databases", "clean_code"]
     },
     {
       "caption": "Подробно о размещении элементов в грид-раскладке (CSS Grid Layout) (by Manuel Rego Casasnovas)",
       "url": "https://css-live.ru/articles/podrobno-o-razmeshhenii-elementov-v-grid-raskladke-css-grid-layout.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Как грид-раскладка (Grid Layout) провела лето (by Manuel Rego Casasnovas)",
       "url": "https://css-live.ru/articles/kak-grid-raskladka-grid-layout-provela-leto.html",
       "lang": "ru",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Docker для фронтендера (Алексей Авдеев)",
       "url": "https://youtu.be/SMM3bsYyFls",
       "lang": "ru",
-      "tags": [
-        "docker"
-      ]
+      "tags": ["docker"]
     },
     {
       "caption": "Как стать выдающимся фронтенд-разработчиком (by Philip Walton)",
       "url": "https://css-live.ru/faq/kak-stat-vydayushhimsya-frontenderom.html",
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Взгляд со стороны EcmaScript на общую теорию ООП (by Alex_Shcherbackov)",
       "url": "https://habr.com/ru/post/468157/",
       "lang": "ru",
-      "tags": [
-        "javascript",
-        "oop"
-      ]
+      "tags": ["javascript", "oop"]
     },
     {
       "caption": "this и ScopeChain в EcmaScript (by Alex_Shcherbackov)",
       "url": "https://habr.com/ru/post/468943/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Лексическое окружение (LexicalEnvironment) и Замыкание (Closures) в EcmaScript (by Alex_Shcherbackov)",
       "url": "https://habr.com/ru/post/474852/",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "min(), max(), and clamp() CSS functions (by Ahmad Shadeed)",
       "url": "https://ishadeed.com/article/css-min-max-clamp/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Flexible Overflow (by Roman Komarov)",
       "url": "https://www.kizu.ru/flexible-overflow/",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_flexbox"
-      ]
+      "tags": ["css", "css_flexbox"]
     },
     {
       "caption": "A Deep Dive Into CSS Grid minmax() (by Ahmad Shadeed)",
       "url": "https://ishadeed.com/article/css-grid-minmax/",
       "lang": "en",
-      "tags": [
-        "css",
-        "css_grid"
-      ]
+      "tags": ["css", "css_grid"]
     },
     {
       "caption": "Кто такие T-shaped специалисты и почему с ними команда становится лучше",
       "url": "https://rasa.pro/about/blog/1186/",
       "lang": "ru",
-      "tags": [
-        "project_management",
-        "productivity"
-      ]
+      "tags": ["project_management", "productivity"]
     },
     {
       "caption": "TypeScript: In defense of any (by Stefan Baumgartner)",
       "url": "https://fettblog.eu/typescript-any-is-ok/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Why using pre-push Git Hooks with Husky is not always a good idea (by Kacper Wdowik)",
       "url": "https://faun.pub/why-using-pre-push-git-hooks-with-husky-is-not-always-a-good-idea-6233b8afcf83",
       "lang": "en",
-      "tags": [
-        "devops",
-        "git"
-      ]
+      "tags": ["devops", "git"]
     },
     {
       "caption": "Index Signatures in TypeScript (by Dmitri Pavlutin)",
       "url": "https://dmitripavlutin.com/typescript-index-signatures/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "TypeScript + React: Component patterns (by Stefan Baumgartner)",
       "url": "https://fettblog.eu/typescript-react-component-patterns/",
       "lang": "en",
-      "tags": [
-        "typescript",
-        "react"
-      ]
+      "tags": ["typescript", "react"]
     },
     {
       "caption": "TypeScript + React: Children types are broken (by Stefan Baumgartner)",
       "url": "https://fettblog.eu/react-types-for-children-are-broken/",
       "lang": "en",
-      "tags": [
-        "typescript",
-        "react"
-      ]
+      "tags": ["typescript", "react"]
     },
     {
       "caption": "3 cases where JavaScript generators rock + understanding them (by Gosha Arinich)",
       "url": "https://goshacmd.com/javascript-generators-understanding-sample-use-cases/",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "The Definitive Guide to the JavaScript Generators (by Gajus Kuizinas)",
       "url": "https://github.com/gajus/gajus.com-blog/blob/master/posts/the-definitive-guide-to-the-javascript-generators/index.md",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Монорепозитории: пожалуйста не надо (by Matt Klein)",
       "url": "https://habr.com/ru/post/435306/",
       "lang": "ru",
-      "tags": [
-        "vcs"
-      ]
+      "tags": ["vcs"]
     },
     {
       "caption": "Getting Your head Straight: A New CSS Performance Diagnostics Snippet (by Vitaly Friedman & Harry Roberts)",
       "url": "https://www.smashingmagazine.com/2021/09/css-head-tag/",
       "lang": "en",
-      "tags": [
-        "performance"
-      ]
+      "tags": ["performance"]
     },
     {
       "caption": "Aria-Controls is Poop (by by Heydon Pickering)",
       "url": "https://heydonworks.com/article/aria-controls-is-poop/",
       "lang": "en",
-      "tags": [
-        "a11y",
-        "wai_aria"
-      ]
+      "tags": ["a11y", "wai_aria"]
     },
     {
       "caption": "Траспиляция из async/await в генераторы (Пётр Мязин)",
       "url": "https://youtu.be/czgxE_UQnDQ",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "React useReducer with Middleware (by Robin Wieruch)",
       "url": "https://www.robinwieruch.de/react-usereducer-middleware",
       "lang": "en",
-      "tags": [
-        "react"
-      ],
+      "tags": ["react"],
       "legend": "В комментариях к статье есть ценные замечания"
     },
     {
       "caption": "The Art of the Error Message (by Marina Posniak)",
       "url": "https://medium.com/s/user-friendly/the-art-of-the-error-message-9f878d0bff80",
       "lang": "en",
-      "tags": [
-        "ux_ui"
-      ]
+      "tags": ["ux_ui"]
     },
     {
       "caption": "Если вы откладываете работу, значит рептильный мозг просто не дает вам на нее энергию (Лусинэ Цатурян)",
       "url": "https://highload.today/esli-vy-otkladyvaete-rabotu-znachit-reptilnyj-mozg-prosto-ne-daet-vam-na-nee-energiyu-kouch-lusine-tsaturyan-o-motivatsii-i-kak-ee-najti-it-spetsialistam/",
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ],
+      "tags": ["productivity"],
       "legend": "о мотивации и как её найти IT-специалистам"
     },
     {
       "caption": "ESNext: Import Assertions: JSON Modules, CSS Modules etc. (by Bramus Van Damme)",
       "url": "https://www.bram.us/2021/10/14/esnext-import-assertions-json-modules-css-modules/",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Control the behavior of JavaScript imports with Import Maps (by Bramus Van Damme)",
       "url": "https://www.bram.us/2021/03/03/control-the-behavior-of-javascript-imports-with-import-maps/",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Get state callback with useReducer in React - add reducer middlewares (by Tran Van Sang)",
       "url": "https://transang.me/get-state-callback-with-usereducer-in-react/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Discussion: Async Operations with useReducer Hook",
       "url": "https://gist.github.com/astoilkov/013c513e33fe95fa8846348038d8fe42",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management",
-        "async"
-      ]
+      "tags": ["react", "state_management", "async"]
     },
     {
       "caption": "ФП vs ООП (by Robert Martin)",
       "url": "https://habr.com/ru/post/474518/",
       "lang": "ru",
-      "tags": [
-        "clean_code",
-        "oop",
-        "fp"
-      ]
+      "tags": ["clean_code", "oop", "fp"]
     },
     {
       "caption": "CSS: но­вый вид JavaScript (by Heydon Pickering)",
       "url": "https://web-standards.ru/articles/css-new-kind-of-javascript/",
       "lang": "ru",
-      "tags": [
-        "css",
-        "dom"
-      ]
+      "tags": ["css", "dom"]
     },
     {
       "caption": "Tidy TypeScript: Prefer union types over enums (by Stefan Baumgartner)",
       "url": "https://fettblog.eu/tidy-typescript-avoid-enums/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "A beginner's guide to Big O Notation (by Rob Bell)",
       "url": "https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation",
       "lang": "en",
-      "tags": [
-        "algorithms"
-      ]
+      "tags": ["algorithms"]
     },
     {
       "caption": "The Bug-O Notation (by Dan Abramov)",
       "url": "https://overreacted.io/the-bug-o-notation/",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Optimized for Change (by Dan Abramov)",
       "url": "https://overreacted.io/optimized-for-change/",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Falling Into The Pit of Success (by Jeff Atwood)",
       "url": "https://blog.codinghorror.com/falling-into-the-pit-of-success/",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Exhaustive switch statements with TypeScript (by Dan Diprose)",
       "url": "https://dev.to/ddiprose/exhaustive-switch-statement-with-typescript-26dh",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "TypeScript: Array.includes on narrow types (by Stefan Baumgartner)",
       "url": "https://fettblog.eu/typescript-array-includes/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "TypeScript + React: Why I don't use React.FC (by Stefan Baumgartner)",
       "url": "https://fettblog.eu/typescript-react-why-i-dont-use-react-fc/",
       "lang": "en",
-      "tags": [
-        "typescript",
-        "react"
-      ]
+      "tags": ["typescript", "react"]
     },
     {
       "caption": "TypeScript: Improving Object.keys (by Stefan Baumgartner)",
       "url": "https://fettblog.eu/typescript-better-object-keys/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Effective TypeScript, Item 54: Know How to Iterate Over Objects (by Dan Vanderkam)",
       "url": "https://effectivetypescript.com/2020/05/26/iterate-objects/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "To Everyone Who Asks for ‘Just a Little’ of Your Time: Here’s What It Costs to Say Yes (by Ryan Holiday)",
       "url": "https://ryanholiday.medium.com/to-everyone-who-asks-for-just-a-little-of-your-time-here-s-what-it-costs-to-say-yes-5eaa0d6ad057",
       "lang": "en",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Event-Driven Architecture: детали реализаций Event Loop (Вадим Горбачёв)",
       "url": "https://youtu.be/Zu18cMJGeqw",
       "lang": "ru",
-      "tags": [
-        "event_driven_architecture"
-      ]
+      "tags": ["event_driven_architecture"]
     },
     {
       "caption": "Just use :focus styles, damnit (by Chris Ferdinandi)",
       "url": "https://gomakethings.com/just-use-focus-styles-damnit/",
       "lang": "en",
-      "tags": [
-        "a11y",
-        "css"
-      ]
+      "tags": ["a11y", "css"]
     },
     {
       "caption": "Beyond React 16 (by Dan Abramov, JSConf Iceland)",
       "url": "https://youtu.be/nLF0n9SACd4",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Fiber Principles: Contributing to Fiber (by Sebastian Markbåge)",
       "url": "https://github.com/facebook/react/issues/7942",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_fiber"
-      ]
+      "tags": ["react", "react_fiber"]
     },
     {
       "caption": "The Difference between a Good Take-Home Project and a Not-So-Good (by Llorenç Muntaner)",
       "url": "https://www.gimtec.io/articles/the-difference-between-a-good-take-home-project-and-a-not-so-good/",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Rust Is The Future of JavaScript Infrastructure (by Lee Robinson)",
       "url": "https://leerob.io/blog/rust",
       "lang": "en",
-      "tags": [
-        "rust",
-        "javascript",
-        "opinionated"
-      ]
+      "tags": ["rust", "javascript", "opinionated"]
     },
     {
       "caption": "Дженерики в TypeScript (Сергей Вахрамов)",
       "url": "https://habr.com/ru/company/tinkoff/blog/588655/",
       "lang": "ru",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Introducing downshift for React (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/introducing-downshift-for-react",
       "lang": "en",
-      "tags": [
-        "react",
-        "a11y"
-      ]
+      "tags": ["react", "a11y"]
     },
     {
       "caption": "How to be Lazy, Dumb, and Successful (by Jeff Atwood)",
       "url": "https://blog.codinghorror.com/how-to-be-lazy-dumb-and-successful/",
       "lang": "en",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Почему джуны никому не нужны и как это изменить? (Максим Кравец)",
       "url": "https://habr.com/ru/post/585892/",
       "lang": "ru",
-      "tags": [
-        "project_management",
-        "productivity"
-      ]
+      "tags": ["project_management", "productivity"]
     },
     {
       "caption": "Update on Async Rendering (by Brian Vaughn)",
       "url": "https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Лень ‒ это нормально: почему мозг не хочет учиться, и как его разгрузить",
       "url": "https://trends.rbc.ru/trends/education/61b30e6b9a79479f67a7b843",
       "lang": "ru",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "React Associated Components (by Marshall Bowers)",
       "url": "https://maxdeviant.com/posts/2021/react-associated-components/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Streamlining React Elements (by Sebastian Markbåge)",
       "url": "https://reactjs.org/blog/2015/02/24/streamlining-react-elements.html",
       "lang": "en",
-      "tags": [
-        "react"
-      ],
+      "tags": ["react"],
       "legend": "Объясняется ряд изменений в реализации React-элементов, что произошли в 2015 году"
     },
     {
       "caption": "Анонимные функции в JavaScript (by Sergey Ufocoder)",
       "url": "https://medium.com/devschacht/anonymous-functions-in-javascript-ff6b9ba85de0",
       "lang": "ru",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "SMOOSHCAST: React Fiber Deep Dive with Dan Abramov",
       "url": "https://youtu.be/aS41Y_eyNrU",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_fiber"
-      ]
+      "tags": ["react", "react_fiber"]
     },
     {
       "caption": "React Fiber Architecture (by Andrew Clark)",
       "url": "https://github.com/acdlite/react-fiber-architecture",
       "lang": "en",
-      "tags": [
-        "react",
-        "react_fiber"
-      ]
+      "tags": ["react", "react_fiber"]
     },
     {
       "caption": "React - Basic Theoretical Concepts (by Sebastian Markbåge)",
       "url": "https://github.com/reactjs/react-basic",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Algebraic Effects for the Rest of Us (by Dan Abramov)",
       "url": "https://overreacted.io/algebraic-effects-for-the-rest-of-us/",
       "lang": "en",
-      "tags": [
-        "fp"
-      ]
+      "tags": ["fp"]
     },
     {
       "caption": "How Does setState Know What to Do? (by Dan Abramov)",
       "url": "https://overreacted.io/how-does-setstate-know-what-to-do/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "React hooks: not magic, just arrays (by Rudi Yardley)",
       "url": "https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e",
       "lang": "en",
-      "tags": [
-        "react_hooks"
-      ]
+      "tags": ["react_hooks"]
     },
     {
       "caption": "Writing Resilient Components (by Dan Abramov)",
       "url": "https://overreacted.io/writing-resilient-components/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Things I Don’t Know as of 2018 (by Dan Abramov)",
       "url": "https://overreacted.io/things-i-dont-know-as-of-2018/",
       "lang": "en",
-      "tags": [
-        "productivity"
-      ],
+      "tags": ["productivity"],
       "legend": "О том, что опыт решения реальных задач важнее количества изученных технологий."
     },
     {
       "caption": "Boolean attributes in HTML and ARIA: what's the difference? (by Hidde de Vries)",
       "url": "https://hiddedevries.nl/en/blog/2022-01-12-boolean-attributes-in-html-and-aria-whats-the-difference",
       "lang": "en",
-      "tags": [
-        "html",
-        "wai_aria"
-      ]
+      "tags": ["html", "wai_aria"]
     },
     {
       "caption": "Выведение Action type с помощью TypeScript (Дмитрий Новиков)",
       "url": "https://habr.com/ru/company/alfa/blog/452620/",
       "lang": "ru",
-      "tags": [
-        "redux",
-        "typescript"
-      ]
+      "tags": ["redux", "typescript"]
     },
     {
       "caption": "Replace null with ES6 Symbols (by Robin Pokorny)",
       "url": "https://javascript.plainenglish.io/replace-null-with-es6-symbols-c0e77d74542e",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "3 common approaches to side-effects in Redux apps (by Gosha Arinich)",
       "url": "https://goshacmd.com/redux-side-effect-approaches/",
       "lang": "en",
-      "tags": [
-        "redux"
-      ]
+      "tags": ["redux"]
     },
     {
       "caption": "Detecting state changes with Redux-Saga (by Gosha Arinich)",
       "url": "https://goshacmd.com/detect-state-change-redux-saga/",
       "lang": "en",
-      "tags": [
-        "redux_saga"
-      ]
+      "tags": ["redux_saga"]
     },
     {
       "caption": "How to use Tail Call Optimizations in JavaScript (by Kesk -*-)",
       "url": "https://javascript.plainenglish.io/javascript-optimizations-tail-call-optimization-tco-471b4f8e4f37",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "algorithms"
-      ]
+      "tags": ["javascript", "algorithms"]
     },
     {
       "caption": "Arrange-Act-Assert (by Jeff Grigg)",
       "url": "http://wiki.c2.com/?ArrangeActAssert",
       "lang": "en",
-      "tags": [
-        "testing",
-        "clean_code"
-      ],
+      "tags": ["testing", "clean_code"],
       "legend": "Подход к написанию тестов"
     },
     {
       "caption": "Starting Development tasks: Don’t Bite More Than You Can Chew (by Llorenç Muntaner)",
       "url": "https://www.gimtec.io/articles/dont-bite-more-than-you-can-chew/",
       "lang": "en",
-      "tags": [
-        "productivity"
-      ]
+      "tags": ["productivity"]
     },
     {
       "caption": "Make Impossible States Impossible (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/make-impossible-states-impossible",
       "lang": "en",
-      "tags": [
-        "state_management"
-      ]
+      "tags": ["state_management"]
     },
     {
       "caption": "10 bad TypeScript habits to break this year (by Daniel Bartholomae)",
       "url": "https://startup-cto.net/10-bad-typescript-habits-to-break-this-year",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Git is case-sensitive and your filesystem may not be - Weird folder merging on Windows (by Scott Hanselman)",
       "url": "https://www.hanselman.com/blog/git-is-casesensitive-and-your-filesystem-may-not-be-weird-folder-merging-on-windows",
       "lang": "en",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Using Typescript to make invalid states irrepresentable (by Javier Casas)",
       "url": "http://www.javiercasas.com/articles/typescript-impossible-states-irrepresentable",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Managing CSS Z-Index In Large Projects (by Steven Frieson)",
       "url": "https://www.smashingmagazine.com/2021/02/css-z-index-large-projects/",
       "lang": "en",
-      "tags": [
-        "css_stacking_context"
-      ]
+      "tags": ["css_stacking_context"]
     },
     {
       "caption": "TypeScript: Narrow types in catch clauses (by Stefan Baumgartner)",
       "url": "https://fettblog.eu/typescript-typing-catch-clauses/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "How not to learn TypeScript (by Stefan Baumgartner)",
       "url": "https://fettblog.eu/how-not-to-learn-typescript/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "TypeScript: The constructor interface pattern (by Stefan Baumgartner)",
       "url": "https://fettblog.eu/typescript-interface-constructor-pattern/",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Assertion Functions in TypeScript (by Marius Schulz)",
       "url": "https://mariusschulz.com/blog/assertion-functions-in-typescript",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "How to fix: could be instantiated with a different subtype of constraint",
       "url": "https://stackoverflow.com/questions/56505560/how-to-fix-ts2322-could-be-instantiated-with-a-different-subtype-of-constraint",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "The Type Hierarchy Tree (by Zhenghao He)",
       "url": "https://www.zhenghao.io/posts/type-hierarchy-tree",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Effector's beginner guide (by Yan Lavriushev)",
       "url": "https://dev.to/effector/effector-s-beginner-guide-3jl4",
       "lang": "en",
-      "tags": [
-        "effector"
-      ]
+      "tags": ["effector"]
     },
     {
       "caption": "Advanced Redux: Design Patterns and Practices (by Nir Kaufman, JSHeroes 2018)",
       "url": "https://youtu.be/5gl3cCB_26M",
       "lang": "en",
-      "tags": [
-        "redux"
-      ]
+      "tags": ["redux"]
     },
     {
       "caption": "Мои правила хорошей дизайн-системы. Компоненты и архитектура интерфейса в Figma (Роман Камушкин)",
       "url": "https://habr.com/ru/post/340774/",
       "lang": "ru",
-      "tags": [
-        "ux_ui",
-        "design_systems",
-        "figma"
-      ]
+      "tags": ["ux_ui", "design_systems", "figma"]
     },
     {
       "caption": "Why Do React Hooks Rely on Call Order? (by Dan Abramov)",
       "url": "https://overreacted.io/why-do-hooks-rely-on-call-order/",
       "lang": "en",
-      "tags": [
-        "react_hooks"
-      ]
+      "tags": ["react_hooks"]
     },
     {
       "caption": "True functional programming with JS (by Artem Kobzar)",
       "url": "https://youtu.be/XCY0MWor_jw",
       "lang": "ru",
-      "tags": [
-        "functional_programming"
-      ]
+      "tags": ["functional_programming"]
     },
     {
       "caption": "Deep dive: How do React hooks really work? (by Shawn Wang)",
       "url": "https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/",
       "lang": "en",
-      "tags": [
-        "react_hooks"
-      ]
+      "tags": ["react_hooks"]
     },
     {
       "caption": "The Law of Leaky Abstractions (by Joel Spolsky)",
       "url": "https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Reactiflux chat log: React-Redux, stale props, and subscriptions (with Mark Erikson)",
       "url": "https://gist.github.com/markerikson/faac6ae4aca7b82a058e13216a7888ec",
       "lang": "en",
-      "tags": [
-        "redux"
-      ]
+      "tags": ["redux"]
     },
     {
       "caption": "Lazy registration with Redux and Sagas (by Gosha Arinich)",
       "url": "https://goshacmd.com/lazy-auth-redux-saga-flow/",
       "lang": "en",
-      "tags": [
-        "redux_saga"
-      ]
+      "tags": ["redux_saga"]
     },
     {
       "caption": "Analytics on easy mode with Redux-Saga (by Gosha Arinich)",
       "url": "https://goshacmd.com/analytics-easy-redux-saga/",
       "lang": "en",
-      "tags": [
-        "redux_saga"
-      ]
+      "tags": ["redux_saga"]
     },
     {
       "caption": "Чистая архитектура во фронтенде (Александр Беспоясов)",
       "url": "https://bespoyasov.ru/blog/clean-architecture-on-frontend/",
       "lang": "ru",
-      "tags": [
-        "architecture"
-      ]
+      "tags": ["architecture"]
     },
     {
       "caption": "Goodbye, Clean Code (by Dan Abramov)",
       "url": "https://overreacted.io/goodbye-clean-code/",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Remove the warning for setState on unmounted components",
@@ -5307,83 +3746,62 @@
         }
       ],
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "EBI Architecture (by Herberto Graça)",
       "url": "https://herbertograca.com/2017/08/24/ebi-architecture/",
       "lang": "en",
-      "tags": [
-        "architecture"
-      ],
+      "tags": ["architecture"],
       "legend": "Entity-Boundary-Interactor"
     },
     {
       "caption": "Domain-Driven Design (by Herberto Graça)",
       "url": "https://herbertograca.com/2017/09/07/domain-driven-design/",
       "lang": "en",
-      "tags": [
-        "architecture",
-        "ddd"
-      ]
+      "tags": ["architecture", "ddd"]
     },
     {
       "caption": "Onion Architecture (by Herberto Graça)",
       "url": "https://herbertograca.com/2017/09/21/onion-architecture/",
       "lang": "en",
-      "tags": [
-        "architecture"
-      ]
+      "tags": ["architecture"]
     },
     {
       "caption": "Ports & Adapters Architecture (by Herberto Graça)",
       "url": "https://herbertograca.com/2017/09/14/ports-adapters-architecture/",
       "lang": "en",
-      "tags": [
-        "architecture"
-      ]
+      "tags": ["architecture"]
     },
     {
       "caption": "Commit Naming Rules",
       "url": "https://developerexperience.io/practices/commit-naming-rules",
       "lang": "en",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Poor Code Quality",
       "url": "https://developerexperience.io/problems/poor-code-quality",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "How to Write Good Commit Messages: A Practical Git Guide (by Bolaji Ayodeji)",
       "url": "https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/",
       "lang": "en",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "thank u, next: an introduction to linked lists (by Ali Spittel)",
       "url": "https://dev.to/aspittel/thank-u-next-an-introduction-to-linked-lists-4pph",
       "lang": "en",
-      "tags": [
-        "data_structures"
-      ]
+      "tags": ["data_structures"]
     },
     {
       "caption": "Demotivated Team",
       "url": "https://developerexperience.io/problems/demotivated-team",
       "lang": "en",
-      "tags": [
-        "project_management"
-      ]
+      "tags": ["project_management"]
     },
     {
       "caption": "How to fix: could be instantiated with an arbitrary type which could be unrelated to",
@@ -5399,108 +3817,79 @@
           "lang": "ru"
         }
       ],
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Autoprefixing, with CSS variables! (by Lea Verou)",
       "url": "https://lea.verou.me/2016/09/autoprefixing-with-css-variables/",
       "lang": "en",
-      "tags": [
-        "css_custom_properties"
-      ]
+      "tags": ["css_custom_properties"]
     },
     {
       "caption": "Вам больше не нужны ветви для фич (Артур Хайбуллин)",
       "url": "https://medium.com/nuances-of-programming/%D0%B2%D0%B0%D0%BC-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D0%BD%D0%B5-%D0%BD%D1%83%D0%B6%D0%BD%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%84%D0%B8%D1%87-8a8cdbfe97c",
       "lang": "ru",
-      "tags": [
-        "trunk_based_development",
-        "feature_toggles",
-        "git"
-      ]
+      "tags": ["trunk_based_development", "feature_toggles", "git"]
     },
     {
       "caption": "Upgrading to React 18 with TypeScript (by John Reilly)",
       "url": "https://blog.logrocket.com/upgrading-react-18-typescript/",
       "lang": "en",
-      "tags": [
-        "react",
-        "typescript"
-      ]
+      "tags": ["react", "typescript"]
     },
     {
       "caption": "Git Interactive Rebase, Squash, Amend and Other Ways of Rewriting History (by Tute Costa)",
       "url": "https://thoughtbot.com/blog/git-interactive-rebase-squash-amend-rewriting-history",
       "lang": "en",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "DDD, Hexagonal, Onion, Clean, CQRS, … How I put it all together (by Herberto Graça)",
       "url": "https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/",
       "lang": "en",
-      "tags": [
-        "architecture"
-      ]
+      "tags": ["architecture"]
     },
     {
       "caption": "I stopped using environment variables for config (by Mahesh C. Regmi)",
       "url": "https://maheshchandraregmi.com.np/i-stopped-using-environment-variables-for-config",
       "lang": "en",
-      "tags": [
-        "devops"
-      ]
+      "tags": ["devops"]
     },
     {
       "caption": "An Overlooked Factor For Performance Optimization In React (by Zhenghao He)",
       "url": "https://www.zhenghao.io/posts/top-level-perf",
       "lang": "en",
-      "tags": [
-        "react_context"
-      ]
+      "tags": ["react_context"]
     },
     {
       "caption": "Don't Stop Me Now: How to Use React useTransition() hook (by Dmitri Pavlutin)",
       "url": "https://dmitripavlutin.com/react-usetransition/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Filtering arrays with TypeScript type guards (by Spencer Miskoviak)",
       "url": "https://www.skovy.dev/blog/typescript-filter-array-with-type-guard",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Exploring React 18’s three new APIs (by Chak Shun Yu)",
       "url": "https://blog.logrocket.com/exploring-react-18-three-new-apis/",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Implementing advanced usePrevious hook with React useRef (by Nadia Makarevich)",
       "url": "https://www.developerway.com/posts/implementing-advanced-use-previous-hook",
       "lang": "en",
-      "tags": [
-        "react_hooks"
-      ]
+      "tags": ["react_hooks"]
     },
     {
       "caption": "Concurrent React for Library Maintainers (ReactWG discussion #70)",
       "url": "https://github.com/reactwg/react-18/discussions/70",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Suspense in React 18",
@@ -5515,9 +3904,7 @@
         }
       ],
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "useMutableSource -> useSyncExternalStore",
@@ -5532,364 +3919,262 @@
         }
       ],
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "How to support Reusable State in Effects (ReactWG discussion #18)",
       "url": "https://github.com/reactwg/react-18/discussions/18",
       "lang": "en",
-      "tags": [
-        "react_hooks",
-        "state_management"
-      ]
+      "tags": ["react_hooks", "state_management"]
     },
     {
       "caption": "useRef: Warn about reading or writing mutable values during render",
       "url": "https://github.com/facebook/react/pull/18545",
       "lang": "",
-      "tags": [
-        "react_hooks"
-      ]
+      "tags": ["react_hooks"]
     },
     {
       "caption": "React start losing its way (by Olenin Slava)",
       "url": "https://towardsdev.com/react-start-losing-its-way-e765db4d2b07",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Avoid Git Merge Conflicts During a Big Rebase (by Felix Rieseberg)",
       "url": "https://felixrieseberg.com/better-rebasing/",
       "lang": "en",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "More than concentric layers (by Herberto Graça)",
       "url": "https://herbertograca.com/2018/07/07/more-than-concentric-layers/",
       "lang": "en",
-      "tags": [
-        "architecture"
-      ]
+      "tags": ["architecture"]
     },
     {
       "caption": "Is it OK to have type aliases for primitive types in TypeScript?",
       "url": "https://softwareengineering.stackexchange.com/questions/437593/is-it-ok-to-have-type-aliases-for-primitive-types-in-typescript",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ]
+      "tags": ["typescript"]
     },
     {
       "caption": "Rust from 0 to 80% for JavaScript Developers (by Michael Salim)",
       "url": "https://michaelsalim.co.uk/blog/rust-from-0-to-80-for-js-dev/",
       "lang": "en",
-      "tags": [
-        "rust",
-        "javascript"
-      ]
+      "tags": ["rust", "javascript"]
     },
     {
       "caption": "Keeping A GitHub Fork Updated (by Dan Croak)",
       "url": "https://thoughtbot.com/blog/keeping-a-github-fork-updated",
       "lang": "en",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Low Coupling и High Cohesion (by German Gorelkin)",
       "url": "https://medium.com/german-gorelkin/low-coupling-high-cohesion-d36369fb1be9",
       "lang": "en",
-      "tags": [
-        "architecture"
-      ]
+      "tags": ["architecture"]
     },
     {
       "caption": "Why .every() on an empty list is true (by Vincent Driessen)",
       "url": "https://nvie.com/posts/why-every-on-an-empty-list-is-true/",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "content-visibility: the new CSS property that boosts your rendering performance (by Una Kravets, Vladimir Levin)",
       "url": "https://web.dev/content-visibility/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "How to useMemo and useCallback: you can remove most of them (by Nadia Makarevich)",
       "url": "https://www.developerway.com/posts/how-to-use-memo-use-callback",
       "lang": "en",
-      "tags": [
-        "react_hooks"
-      ]
+      "tags": ["react_hooks"]
     },
     {
       "caption": "How to Mimic Nominal Typing in TypeScript",
       "url": "https://ageek.dev/ts-nominal-typing",
       "lang": "en",
-      "tags": [
-        "typescript"
-      ],
+      "tags": ["typescript"],
       "legend": "Про брендирование"
     },
     {
       "caption": "The JavaScript block statement (by Lars Kappert)",
       "url": "https://www.webpro.nl/scraps/javascript-block-statement",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "A successful Git branching model (by Vincent Driessen)",
       "url": "https://nvie.com/posts/a-successful-git-branching-model/",
       "lang": "en",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "Please stop recommending Git Flow! (by George Stocker)",
       "url": "https://georgestocker.com/2020/03/04/please-stop-recommending-git-flow/",
       "lang": "en",
-      "tags": [
-        "git"
-      ]
+      "tags": ["git"]
     },
     {
       "caption": "A feature based approach to React development (by Ryan Lanciaux)",
       "url": "https://ryanlanciaux.com/blog/2017/08/20/a-feature-based-approach-to-react-development/",
       "lang": "en",
-      "tags": [
-        "architecture",
-        "react",
-        "feature_toggles"
-      ],
+      "tags": ["architecture", "react", "feature_toggles"],
       "legend": "Не самый актуальный материал в целом, но есть мысли о feature toggles в конце статьи"
     },
     {
       "caption": "You don't need void 0 in JavaScript (by Lars Grammel)",
       "url": "https://p42.ai/blog/2022-05-10/you-dont-need-void-0",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "Message \"npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead\"",
       "url": "https://stackoverflow.com/questions/72401421/message-npm-warn-config-global-global-local-are-deprecated-use-loc",
       "lang": "en",
-      "tags": [
-        "nodejs",
-        "npm"
-      ],
+      "tags": ["nodejs", "npm"],
       "legend": "Решаем проблему с npm на Windows"
     },
     {
       "caption": "How to Organize Your React + Redux Codebase (by Manujith Pallewatte)",
       "url": "https://www.pluralsight.com/guides/how-to-organize-your-react-+-redux-codebase",
       "lang": "en",
-      "tags": [
-        "architecture",
-        "react",
-        "redux"
-      ]
+      "tags": ["architecture", "react", "redux"]
     },
     {
       "caption": "Please put units in names (by Ruud van Asseldonk)",
       "url": "https://ruudvanasseldonk.com/2022/03/20/please-put-units-in-names",
       "lang": "en",
-      "tags": [
-        "clean_code"
-      ]
+      "tags": ["clean_code"]
     },
     {
       "caption": "Почему utils & helpers это свалка (Сергей Сова)",
       "url": "https://sova.dev/ru/why-utils-and-helpers-is-a-dump/",
       "lang": "ru",
-      "tags": [
-        "architecture"
-      ]
+      "tags": ["architecture"]
     },
     {
       "caption": "Open External next/link Links in a New Tab (by Sean C Davis)",
       "url": "https://www.seancdavis.com/posts/open-external-nextlink-links-in-a-new-tab/",
       "lang": "en",
-      "tags": [
-        "nextjs",
-        "react"
-      ]
+      "tags": ["nextjs", "react"]
     },
     {
       "caption": "Actionless and Stateless Reducers in React (by Jules Blom)",
       "url": "https://julesblom.com/writing/actionless-and-stateless-reducers",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "React Reducer Patterns (by Patrick Smith)",
       "url": "https://components.guide/react+typescript/reducer-patterns",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "Idempotent JavaScript Operations (by Patrick Smith)",
       "url": "https://components.guide/robust-javascript/idempotent-javascript-operations",
       "lang": "en",
-      "tags": [
-        "algorithms",
-        "javascript"
-      ]
+      "tags": ["algorithms", "javascript"]
     },
     {
       "caption": "Zero Hook Dependencies. The pain of useEffect’s dependencies (by Patrick Smith)",
       "url": "https://components.guide/react+typescript/zero-hook-dependencies",
       "lang": "en",
-      "tags": [
-        "react_hooks"
-      ]
+      "tags": ["react_hooks"]
     },
     {
       "caption": "Are you sure that’s a number input? (by Kilian Valkhof)",
       "url": "https://kilianvalkhof.com/2022/css-html/are-you-sure-thats-a-number-input/",
       "lang": "en",
-      "tags": [
-        "html"
-      ]
+      "tags": ["html"]
     },
     {
       "caption": "Can I :has() (by Brian Kardell)",
       "url": "https://bkardell.com/blog/canihas.html",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "The Unlocked Possibilities of the :has() Selector (by Jim Nielsen)",
       "url": "https://blog.jim-nielsen.com/2022/unlocked-possibilities-of-has-selector/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "A Previous Sibling Selector (by Jim Nielsen)",
       "url": "https://blog.jim-nielsen.com/2022/previous-sibling-selector/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Avoid anonymous components with displayName (by Jules Blom)",
       "url": "https://julesblom.com/writing/component-displayname",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Goodbye, useEffect (by David Khourshid)",
       "url": "https://youtu.be/HPoC-k7Rxwo",
       "lang": "en",
-      "tags": [
-        "react",
-        "state_management"
-      ]
+      "tags": ["react", "state_management"]
     },
     {
       "caption": "Why React developers should modularize their applications? (by Alexis Mangin)",
       "url": "https://alexmngn.medium.com/why-react-developers-should-modularize-their-applications-d26d381854c1",
       "lang": "en",
-      "tags": [
-        "architecture",
-        "react"
-      ]
+      "tags": ["architecture", "react"]
     },
     {
       "caption": "Writing Scalable React Apps with the Component Folder Pattern (by Donavon West)",
       "url": "https://medium.com/styled-components/component-folder-pattern-ee42df37ec68",
       "lang": "en",
-      "tags": [
-        "react",
-        "architecture"
-      ]
+      "tags": ["react", "architecture"]
     },
     {
       "caption": "Как и зачем типизировать CSS-переменные? (София Валитова)",
       "url": "https://ru.ariarzer.dev/articles/2022/css-variables-typing.html",
       "lang": "ru",
-      "tags": [
-        "css_custom_properties",
-        "css_houdini"
-      ]
+      "tags": ["css_custom_properties", "css_houdini"]
     },
     {
       "caption": "Solving The Dangler Conundrum with Container Queries and :has() (by Dave Rupert)",
       "url": "https://daverupert.com/2022/07/solving-the-dangler-conundrum-with-has-and-container-queries/",
       "lang": "en",
-      "tags": [
-        "css_containment",
-        "css_grid"
-      ]
+      "tags": ["css_containment", "css_grid"]
     },
     {
       "caption": "Background opacity with one line of CSS (by Shruti Balasa)",
       "url": "https://www.getrevue.co/profile/shrutibalasa/issues/background-opacity-with-one-line-of-css-1294197",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Is there a grid-wrap similar to flex-wrap? (by Shruti Balasa)",
       "url": "https://www.getrevue.co/profile/shrutibalasa/issues/is-there-a-grid-wrap-similar-to-flex-wrap-1305183",
       "lang": "en",
-      "tags": [
-        "css_grid"
-      ]
+      "tags": ["css_grid"]
     },
     {
       "caption": "On ratings and meters (Lea Verou)",
       "url": "https://lea.verou.me/2022/08/on-ratings-and-meters/",
       "lang": "en",
-      "tags": [
-        "html",
-        "a11y"
-      ]
+      "tags": ["html", "a11y"]
     },
     {
       "caption": "Scrum vs Kanban: в чем разница и что выбрать? (by Alexander Sergeev)",
       "url": "https://habr.com/ru/amp/post/351048/",
       "lang": "ru",
-      "tags": [
-        "project_management"
-      ]
+      "tags": ["project_management"]
     },
     {
       "caption": "Что такое HADI-цикл. Объясняем простыми словами (Ирина Опёнкина)",
       "url": "https://secretmag.ru/enciklopediya/chto-takoe-hadi-cikl-obyasnyaem-prostymi-slovami.htm",
       "lang": "ru",
-      "tags": [
-        "product_analytics"
+      "tags": ["product_analytics"
       ]
     },
     {
@@ -5931,6 +4216,14 @@
       "lang": "en",
       "tags": [
         "algorithms",
+        "javascript"
+      ]
+    },
+    {
+      "caption": "Default Exports in JavaScript Modules Are Terrible (by Lloyd Atkinson)",
+      "url": "https://www.lloydatkinson.net/posts/2022/default-exports-in-javascript-modules-are-terrible/",
+      "lang": "en",
+      "tags": [
         "javascript"
       ]
     }
