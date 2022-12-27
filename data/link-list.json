@@ -4226,6 +4226,32 @@
       "tags": [
         "javascript"
       ]
+    },
+    {
+      "caption": "You Should be Using Folder Components (by Izaak Schroeder)",
+      "url": "https://medium.com/bootstart/you-should-be-using-folder-components-b30b7d165c39",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Zettelkasten: как один немецкий учёный стал невероятно продуктивным (by Nikita Larionov)",
+      "url": "https://habr.com/ru/post/508672/",
+      "lang": "ru",
+      "tags": [
+        "productivity",
+        "zettelkasten"
+      ]
+    },
+    {
+      "caption": "Лучший софт для Zettelkasten (управления знаниями): сравнительная таблица (Дмитрий Райз)",
+      "url": "https://habr.com/ru/post/674014/",
+      "lang": "ru",
+      "tags": [
+        "productivity",
+        "zettelkasten"
+      ]
     }
   ]
 }
