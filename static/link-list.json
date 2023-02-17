@@ -4252,6 +4252,23 @@
         "productivity",
         "zettelkasten"
       ]
+    },
+    {
+      "caption": "Background opacity with one line of CSS (by Shruti Balasa)",
+      "url": "https://shrutibalasa.substack.com/p/background-opacity-with-one-line-22-08-10",
+      "lang": "en",
+      "tags": [
+        "css"
+      ]
+    },
+    {
+      "caption": "The gotcha of unhandled promise rejections (by Jake Archibald)",
+      "url": "https://jakearchibald.com/2023/unhandled-rejections/",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "async"
+      ]
     }
   ]
 }
