@@ -113,7 +113,7 @@ module.exports = (env = {}) => {
         const styleLoaderRule = {
           test: /\.s?css$/,
           use: [
-            (isProduction || write ? CssExtractPlugin.loader : 'style-loader'),
+            CssExtractPlugin.loader,
             {
               loader: 'css-loader',
               options: {
