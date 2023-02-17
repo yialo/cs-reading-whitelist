@@ -217,13 +217,13 @@ module.exports = (env = {}) => {
 
           new CssMinimizerPlugin({
             test: /\.css$/,
+            minify: CssMinimizerPlugin.cssnanoMinify,
             minimizerOptions: {
               preset: [
                 'default',
                 {
+                  cssDeclarationSorter: false,
                   discardComments: true,
-                },
-                {
                   normalizeCharset: {
                     add: true,
                   },
