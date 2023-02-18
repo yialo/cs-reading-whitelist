@@ -223,7 +223,7 @@ module.exports = (env = {}) => {
                 'default',
                 {
                   cssDeclarationSorter: false,
-                  discardComments: true,
+                  mergeLonghand: false,
                   normalizeCharset: {
                     add: true,
                   },
