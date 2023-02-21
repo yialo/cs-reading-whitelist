@@ -1,6 +1,5 @@
 # Todo list
 
-* Fix CSS order mess after minification
 * Update gitconfig example
 * Migrate to [RTK](https://redux.js.org/introduction/why-rtk-is-redux-today)
 * Add useTransition to text input
