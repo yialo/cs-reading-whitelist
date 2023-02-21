@@ -4269,6 +4269,42 @@
         "javascript",
         "async"
       ]
+    },
+    {
+      "caption": "Is CSS-in-JS actually bad? (by Mayank)",
+      "url": "https://blog.mayank.co/is-css-in-js-actually-bad",
+      "lang": "en",
+      "tags": [
+        "css_in_js",
+        "build_tools",
+        "performance"
+      ]
+    },
+    {
+      "caption": "The many definitions of server-side rendering (by Zach Leatherman)",
+      "url": "https://www.zachleat.com/web/ssr-overloaded/",
+      "lang": "en",
+      "tags": [
+        "ssr",
+        "ssg"
+      ]
+    },
+    {
+      "caption": "Use esm-import-transformer for \"isomorphic-ish\" ECMAScript Modules (by Zach Leatherman)",
+      "url": "https://www.zachleat.com/web/esm-import-transformer/",
+      "lang": "en",
+      "tags": [
+        "build_tools"
+      ]
+    },
+    {
+      "caption": "Using text symbols in pseudo-elements accessibly (by Mayank)",
+      "url": "https://blog.mayank.co/using-text-symbols-in-pseudo-elements-accessibly",
+      "lang": "en",
+      "tags": [
+        "css",
+        "a11y"
+      ]
     }
   ]
 }
