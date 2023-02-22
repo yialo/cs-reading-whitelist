@@ -1,6 +1,5 @@
 # Todo list
 
-* Update gitconfig example
 * Migrate to [RTK](https://redux.js.org/introduction/why-rtk-is-redux-today)
 * Add useTransition to text input
 * Add [Prettier](https://create-react-app.dev/docs/setting-up-your-editor/#formatting-code-automatically)
@@ -14,10 +13,8 @@
   * code snippets
   * recommendations
   * VSCode extensions
-* Add backend
-  * Firebase integration
 * Create Emmet cheatsheet tool app with search
-  * parse official docs HTML with Puppeteer
+  * parse official docs HTML with Playwright
 * (Maybe) Migrate to rems
 * Add tag cloud
 * Add extended favicon set

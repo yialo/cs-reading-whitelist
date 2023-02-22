@@ -4305,6 +4305,57 @@
         "css",
         "a11y"
       ]
+    },
+    {
+      "caption": "Why We're Breaking Up with CSS-in-JS (by Sam Magura)",
+      "url": "https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b",
+      "lang": "en",
+      "tags": [
+        "css_in_js",
+        "react"
+      ]
+    },
+    {
+      "caption": "Constructable Stylesheets (by Jason Miller)",
+      "url": "https://web.dev/constructable-stylesheets/",
+      "lang": "en",
+      "tags": [
+        "css",
+        "dom_api"
+      ]
+    },
+    {
+      "caption": "Library Upgrade Guide: <style> (most CSS-in-JS libs) (by Sebastian Markbåge)",
+      "url": "https://github.com/reactwg/react-18/discussions/110",
+      "lang": "en",
+      "tags": [
+        "react",
+        "css_in_js"
+      ]
+    },
+    {
+      "caption": "Mourning my obsolete Skillset (by Thomas Semmler)",
+      "url": "https://helloyes.dev/blog/2022/mourning-my-obsolete-skillset/",
+      "lang": "en",
+      "tags": [
+        "professional_growth"
+      ]
+    },
+    {
+      "caption": "The case for using Sass in 2022 (by Mayank)",
+      "url": "https://blog.mayank.co/the-case-for-using-sass-in-2022",
+      "lang": "en",
+      "tags": [
+        "sass"
+      ]
+    },
+    {
+      "caption": "How not to learn Rust (by Denys Séguret)",
+      "url": "https://dystroy.org/blog/how-not-to-learn-rust/",
+      "lang": "en",
+      "tags": [
+        "rust"
+      ]
     }
   ]
 }
