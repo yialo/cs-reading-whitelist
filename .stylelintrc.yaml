@@ -12,3 +12,5 @@ ignoreFiles:
   - './dist/**'
   - './docs/**'
   - './node_modules/**'
+rules:
+  declaration-property-value-no-unknown: null
