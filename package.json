@@ -1,5 +1,6 @@
 {
   "name": "cs-reading-whitelist",
+  "private": true,
   "scripts": {
     "build": "npm run webpack -- --env target=production",
     "build:analyze": "npm run build -- --env analyze",
@@ -21,7 +22,6 @@
     "webpack": "webpack -c ./webpack.config.js",
     "webpack:serve": "webpack serve -c ./webpack.config.js"
   },
-  "author": "Aleksei Arro <polsck@gmail.com>",
   "browserslist": [
     "defaults",
     "not ie 11",
@@ -92,10 +92,9 @@
   "engines": {
     "node": "18"
   },
-  "private": true,
+  "author": "Aleksei Arro <polsck@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yialo/cs-reading-whitelist.git"
-  },
-  "version": "0.1.0"
+  }
 }
