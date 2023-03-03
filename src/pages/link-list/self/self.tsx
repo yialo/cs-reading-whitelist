@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Preloader } from '@/shared/ui';
+import { MainLayout, Preloader } from '@/shared/ui';
 import { LIST_PAGE_SIZE } from '@/constants';
 import { PROCESS } from '@/enums';
-import { MainLayout } from '@/layouts/c_main-layout';
 
 import {
   fetchSubjects,

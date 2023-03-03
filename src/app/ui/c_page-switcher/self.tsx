@@ -3,9 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 
 import { Preloader } from '@/shared/ui';
 import { ROUTE } from '@/enums';
+import { LazyLinkListPage } from '@/pages/link-list';
 
 import { Error404Page } from '../c_error-404-page';
-import { LazyLinkListPage } from './lazy';
 
 export const PageSwitcher: React.FC = () => {
   return (
