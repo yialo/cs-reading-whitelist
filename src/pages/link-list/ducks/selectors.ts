@@ -1,18 +1,18 @@
 import { createSelector } from 'reselect';
 
 import { LIST_PAGE_SIZE } from '@/constants';
-import type { TState } from '@/store/state';
+import type { State } from '@/store/state';
 
 import { FILTER, SORTING } from '../enums';
 
-export const selectProcess = (state: TState) => state.links.process;
-export const selectError = (state: TState) => state.links.error;
-const selectContent = (state: TState) => state.links.list;
+export const selectProcess = (state: State) => state.links.process;
+export const selectError = (state: State) => state.links.error;
+const selectContent = (state: State) => state.links.list;
 
-export const selectFilter = (state: TState) => state.links.filter;
-export const selectSearchString = (state: TState) => state.links.searchString;
-export const selectSorting = (state: TState) => state.links.sorting;
-export const selectPage = (state: TState) => state.links.page;
+export const selectFilter = (state: State) => state.links.filter;
+export const selectSearchString = (state: State) => state.links.searchString;
+export const selectSorting = (state: State) => state.links.sorting;
+export const selectPage = (state: State) => state.links.page;
 
 const selectFilteredList = createSelector(
   [

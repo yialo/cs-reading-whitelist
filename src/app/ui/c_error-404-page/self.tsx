@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { MainLayout } from '@/layouts/c_main-layout';
+import { MainLayout } from '@/shared/ui';
 
 import style from './self.scss';
 

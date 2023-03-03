@@ -3,7 +3,7 @@ import cn from 'clsx';
 import { useLocation } from 'react-router-dom';
 
 import { useHasDarkTheme } from '@/shared/ui';
-import { usePrevious } from '@/hooks/use-previous';
+import { usePrevious } from '@/shared/hooks';
 
 import { RootFooter } from '../c_footer';
 import { RootHeader } from '../c_header';
