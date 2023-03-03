@@ -1,1 +1,0 @@
-export { NamingContents } from './self';

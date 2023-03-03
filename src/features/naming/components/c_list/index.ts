@@ -1,1 +1,0 @@
-export { NamingList } from './self';

@@ -19,10 +19,6 @@ const ROUTE_LIST: ReadonlyArray<TNavLink> = [
     url: ROUTE.HOME,
     label: 'Reading',
   },
-  {
-    url: ROUTE.NAMING,
-    label: 'Naming',
-  },
 ] as const;
 
 export const AppNavMenu: React.FC<TClassNameable> = ({ className }) => {

@@ -1,1 +1,0 @@
-export { Naming } from './self';

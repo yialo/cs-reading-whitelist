@@ -4,14 +4,12 @@ import createSagaMiddleware from 'redux-saga';
 import { all, call } from 'redux-saga/effects';
 
 import { watchFetchLinkList } from '@/features/link-list/ducks/sagas';
-import { watchFetchNaming } from '@/features/naming/ducks/sagas';
 
 import { rootReducer } from './state';
 
 const rootSaga = function* () {
   yield all([
     call(watchFetchLinkList),
-    call(watchFetchNaming),
   ]);
 };
 
