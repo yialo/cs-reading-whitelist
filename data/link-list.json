@@ -4364,6 +4364,31 @@
       "tags": [
         "product_management"
       ]
+    },
+    {
+      "caption": "Library Upgrade Guide: <head> (e.g. react-helmet) (by Sebastian Markbåge)",
+      "url": "https://github.com/reactwg/react-18/discussions/106",
+      "lang": "en",
+      "tags": [
+        "react"
+      ]
+    },
+    {
+      "caption": "Library Upgrade Guide: <link rel=\"stylesheet\"> (E.g. custom CSS imports/modules) (by Sebastian Markbåge)",
+      "url": "https://github.com/reactwg/react-18/discussions/108",
+      "lang": "en",
+      "tags": [
+        "react",
+        "css"
+      ]
+    },
+    {
+      "caption": "Don’t Fight the Cascade, Control It! (by Mads Stoumann)",
+      "url": "https://css-tricks.com/dont-fight-the-cascade-control-it/",
+      "lang": "en",
+      "tags": [
+        "css"
+      ]
     }
   ]
 }
