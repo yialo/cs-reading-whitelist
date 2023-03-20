@@ -8,4 +8,4 @@
   * Add optional **mediaType** field and sorting by media (video, audio etc.)
 * Add request cancellation with AbortController
 * Add extended favicon set
-* (Maybe) Remove html-loader or html-webpack-plugin
+* Migrate to Vite/Turbopack/SWC: see [Невероятный Vite под микроскопом](https://youtu.be/ndKgZRM7yjk)
