@@ -4389,6 +4389,15 @@
       "tags": [
         "css"
       ]
+    },
+    {
+      "caption": "All JavaScript and TypeScript Features of the last 3 years (by Linus Schlumberger)",
+      "url": "https://betterprogramming.pub/all-javascript-and-typescript-features-of-the-last-3-years-629c57e73e42",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "typescript"
+      ]
     }
   ]
 }
