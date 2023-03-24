@@ -4398,6 +4398,25 @@
         "javascript",
         "typescript"
       ]
+    },
+    {
+      "caption": "Zettelkasten и Obsidian — лучшие друзья вашей памяти и креативности (Дмитрий Райз)",
+      "url": "https://habr.com/ru/post/548154/",
+      "lang": "ru",
+      "tags": [
+        "productivity",
+        "zettelkasten",
+        "markdown"
+      ]
+    },
+    {
+      "caption": "Low floor, wide walls, high ceiling (by Gordon Brander)",
+      "url": "https://gordonbrander.com/pattern/low-floor-wide-walls-high-ceiling/",
+      "lang": "en",
+      "tags": [
+        "software_development",
+        "systems_design_patterns"
+      ]
     }
   ]
 }
