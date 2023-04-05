@@ -2,6 +2,7 @@
   "name": "cs-reading-whitelist",
   "private": true,
   "scripts": {
+    "start": "npm run dev",
     "build": "npm run webpack -- --env target=production",
     "build:analyze": "npm run build -- --env analyze",
     "build:stats": "npm run build --profile --json > ./stats/webpack-bundle-stats.json",
