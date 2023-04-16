@@ -1,6 +1,6 @@
 import * as React from 'react';
 import cn from 'clsx';
-import debounce from 'lodash/debounce';
+import { debounce } from 'lodash-es';
 import { createPortal } from 'react-dom';
 
 import { Button, useHasDarkTheme } from '@/shared/ui';
