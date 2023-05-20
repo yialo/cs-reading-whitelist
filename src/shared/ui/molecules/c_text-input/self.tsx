@@ -1,10 +1,10 @@
 import * as React from 'react';
 import cn from 'clsx';
-import type { TClassNameable } from '@/types/common';
+import type { WithClassName } from '@/shared/ui';
 import { Button } from '../../atoms';
 import style from './style.scss';
 
-type TTextPropsWithoutForwardedRef = TClassNameable & {
+type TTextPropsWithoutForwardedRef = WithClassName & {
   inputMode: React.HTMLAttributes<HTMLInputElement>['inputMode'];
   legend: string;
   tipChar?: string | undefined;

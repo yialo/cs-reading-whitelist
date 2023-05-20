@@ -4,7 +4,7 @@ import { debounce } from 'lodash-es';
 import { createPortal } from 'react-dom';
 import { ThemeToggle } from '@/features/toggle-theme';
 import { Button, useHasDarkTheme } from '@/shared/ui';
-import type { TClassNameable } from '@/types/common';
+import type { WithClassName } from '@/shared/ui';
 import { AppNavMenu } from './nav-menu';
 import style from './self.scss';
 
@@ -18,7 +18,7 @@ const GO_TOP_BUTTON_SHIFT = {
 
 const $pageRoot = document.querySelector('.Page-Root');
 
-export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
+export const RootHeader: React.FC<WithClassName> = ({ className }) => {
   const [isScrolledEnough, setIsScrolledEnough] = React.useState(false);
   const [goTopButtonBottomShift, setgoTopButtonBottomShift] = React.useState(
     GO_TOP_BUTTON_SHIFT.NORMAL,

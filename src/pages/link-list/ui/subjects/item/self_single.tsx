@@ -1,10 +1,10 @@
 import * as React from 'react';
 import type { SingleSublect } from '@/entities/subject';
-import type { TClassNameable } from '@/types/common';
+import type { WithClassName } from '@/shared/ui';
 import { SubjectsItemAppendix } from './appendix';
 import { SubjectsItemLink } from './link';
 
-type TProps = TClassNameable & {
+type TProps = WithClassName & {
   subject: SingleSublect;
 };
 

@@ -1,10 +1,10 @@
 import * as React from 'react';
 import cn from 'clsx';
 import { MainButton, useHasDarkTheme, useThemeToggle } from '@/shared/ui';
-import type { TClassNameable } from '@/types/common';
+import type { WithClassName } from '@/shared/ui';
 import style from './style.scss';
 
-export const ThemeToggle: React.FC<TClassNameable> = ({ className }) => {
+export const ThemeToggle: React.FC<WithClassName> = ({ className }) => {
   const hasDarkTheme = useHasDarkTheme();
   const toggleTheme = useThemeToggle();
 

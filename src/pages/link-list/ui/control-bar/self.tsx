@@ -1,12 +1,12 @@
 import * as React from 'react';
 import cn from 'clsx';
 import { Button, Select, TextInput } from '@/shared/ui';
-import type { TClassNameable } from '@/types/common';
+import type { WithClassName } from '@/shared/ui';
 import { FILTER, SORTING, type TFilter, type TSorting } from '../../config';
 import { ControlBarAmountMeter } from './amount-meter';
 import style from './style.scss';
 
-type TProps = TClassNameable & {
+type TProps = WithClassName & {
   filterTarget: TFilter;
   searchString: string;
   sortingTarget: TSorting;

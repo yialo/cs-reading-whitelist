@@ -2,7 +2,7 @@ import * as React from 'react';
 import cn from 'clsx';
 import { NavLink } from 'react-router-dom';
 import { KEYBOARD_KEY, ROUTE, type TRoute } from '@/shared/config';
-import type { TClassNameable } from '@/types/common';
+import type { WithClassName } from '@/shared/ui';
 import { AppNavMenuIcon } from './icon';
 import style from './style.scss';
 
@@ -18,7 +18,7 @@ const ROUTE_LIST: ReadonlyArray<TNavLink> = [
   },
 ] as const;
 
-export const AppNavMenu: React.FC<TClassNameable> = ({ className }) => {
+export const AppNavMenu: React.FC<WithClassName> = ({ className }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleMenuExpansion = () => {

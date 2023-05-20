@@ -2,12 +2,12 @@ import * as React from 'react';
 import cn from 'clsx';
 import type { Subject } from '@/entities/subject';
 import { MainButton } from '@/shared/ui';
-import type { TClassNameable } from '@/types/common';
+import type { WithClassName } from '@/shared/ui';
 import { SubjectsFallbackMessage } from './fallback-message';
 import { renderSubjectsItem } from './item';
 import style from './style.scss';
 
-interface Props extends TClassNameable {
+interface Props extends WithClassName {
   list: Subject[];
   hasFetchError: boolean;
   isLastPage: boolean;

@@ -1,11 +1,11 @@
 import * as React from 'react';
 import cn from 'clsx';
 import { KEYBOARD_KEY } from '@/shared/config';
-import type { TClassNameable } from '@/types/common';
+import type { WithClassName } from '@/shared/ui';
 import { Button } from '../../atoms';
 import style from './style.scss';
 
-type TProps = TClassNameable & {
+type TProps = WithClassName & {
   dict: Record<string, string>;
   tipIdPrefix?: string;
   tip: React.ReactNode;
