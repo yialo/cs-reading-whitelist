@@ -6,7 +6,6 @@ const tsConfigMixin = {
     project: './tsconfig.json',
   },
   rules: {
-    '@typescript-eslint/indent': 'off',
     // TODO: rethink after plugin update
     'react/jsx-filename-extension': [
       'error',
@@ -39,19 +38,19 @@ module.exports = {
   overrides: [
     {
       files: ['./*.js'],
-      extends: ['yialo/presets/node'],
+      extends: ['yialo/presets/node', 'prettier'],
       rules: {
         indent: 'off',
       },
     },
     {
       files: ['./src/**/*.ts?(x)'],
-      extends: ['yialo/presets/web-react-ts-check'],
+      extends: ['yialo/presets/web-react-ts-check', 'prettier'],
       ...tsConfigMixin,
     },
     {
       files: ['./src/**/*.{spec,test}.ts?(x)'],
-      extends: ['yialo/presets/web-react-ts-check-jest'],
+      extends: ['yialo/presets/web-react-ts-check-jest', 'prettier'],
       ...tsConfigMixin,
     },
   ],

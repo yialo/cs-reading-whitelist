@@ -2,10 +2,10 @@ import * as React from 'react';
 import cn from 'clsx';
 import { debounce } from 'lodash-es';
 import { createPortal } from 'react-dom';
+import { ThemeToggle } from '@/features/toggle-theme';
 import { Button, useHasDarkTheme } from '@/shared/ui';
 import type { TClassNameable } from '@/types/common';
 import { AppNavMenu } from '../c_nav-menu';
-import { ThemeToggle } from '../c_theme-toggle';
 import style from './self.scss';
 
 const SCROLL_TOP_THRESHOLD = 100;
