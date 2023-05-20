@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-import { LIST_PAGE_SIZE } from '@/constants';
+import { LIST_PAGE_SIZE } from '../config';
 import type { State } from '@/store/state';
 
 import { FILTER, SORTING } from '../enums';

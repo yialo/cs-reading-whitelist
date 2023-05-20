@@ -1,4 +1,4 @@
-import { PROCESS } from '@/enums';
+import { PROCESS } from '@/shared/config';
 
 import { FILTER, SORTING } from '../enums';
 import { ACTION_TYPE } from './action-types';

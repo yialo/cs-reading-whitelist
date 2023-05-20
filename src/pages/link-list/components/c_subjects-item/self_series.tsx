@@ -2,7 +2,7 @@ import * as React from 'react';
 import cn from 'clsx';
 import { useSelector } from 'react-redux';
 
-import { KEYBOARD_KEY } from '@/enums';
+import { KEYBOARD_KEY } from '@/shared/config';
 import type { TClassNameable } from '@/types/common';
 import { includes } from '@/utils/typing';
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cn from 'clsx';
 
-import { KEYBOARD_KEY } from '@/enums';
+import { KEYBOARD_KEY } from '@/shared/config';
 import type { TClassNameable } from '@/types/common';
 
 import { Button } from '../../atoms';

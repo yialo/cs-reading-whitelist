@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { MainLayout, Preloader } from '@/shared/ui';
-import { LIST_PAGE_SIZE } from '@/constants';
-import { PROCESS } from '@/enums';
+import { LIST_PAGE_SIZE } from '../config';
+import { PROCESS } from '@/shared/config';
 
 import {
   fetchSubjects,

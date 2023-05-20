@@ -1,6 +1,6 @@
 import type { Reducer } from 'redux';
 
-import type { TProcess } from '@/enums';
+import type { TProcess } from '@/shared/config';
 import type { TAction } from '@/types/redux';
 
 import type { TFilter, TSorting } from '../enums';
