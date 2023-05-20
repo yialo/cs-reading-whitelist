@@ -5,7 +5,7 @@ import { createPortal } from 'react-dom';
 import { ThemeToggle } from '@/features/toggle-theme';
 import { Button, useHasDarkTheme } from '@/shared/ui';
 import type { TClassNameable } from '@/types/common';
-import { AppNavMenu } from '../c_nav-menu';
+import { AppNavMenu } from './nav-menu';
 import style from './self.scss';
 
 const SCROLL_TOP_THRESHOLD = 100;
