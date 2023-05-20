@@ -1,7 +1,5 @@
 import * as React from 'react';
-
 import { MainLayout } from '@/shared/ui';
-
 import style from './self.scss';
 
 export const Error404Page = () => {

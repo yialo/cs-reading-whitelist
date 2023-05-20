@@ -1,8 +1,6 @@
 import * as React from 'react';
 import cn from 'clsx';
-
 import { Button, type TButtonProps } from './self';
-
 import style from './style.scss';
 
 export const MainButton: React.FC<TButtonProps> = ({

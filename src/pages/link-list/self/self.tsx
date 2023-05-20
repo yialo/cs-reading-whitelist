@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
-import { MainLayout, Preloader } from '@/shared/ui';
-import { LIST_PAGE_SIZE } from '../config';
 import { PROCESS } from '@/shared/config';
-
+import { MainLayout, Preloader } from '@/shared/ui';
+import { ControlBar } from '../components/c_control-bar';
+import { Subjects } from '../components/c_subjects';
+import { LIST_PAGE_SIZE } from '../config';
 import {
   fetchSubjects,
   searchInList,
@@ -13,21 +13,17 @@ import {
   toggleSorting,
 } from '../ducks/actions';
 import {
-  selectProcess,
   selectError,
   selectFilter,
-  selectSearchString,
-  selectSorting,
-  selectPage,
-  selectSortedAmount,
-  selectVisibleList,
   selectIsLastPage,
+  selectPage,
+  selectProcess,
+  selectSearchString,
+  selectSortedAmount,
+  selectSorting,
+  selectVisibleList,
 } from '../ducks/selectors';
 import type { TFilter, TSorting } from '../enums';
-
-import { ControlBar } from '../components/c_control-bar';
-import { Subjects } from '../components/c_subjects';
-
 import style from './style.scss';
 
 export const LinkList: React.FC = () => {

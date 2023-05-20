@@ -1,5 +1,4 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
-
 import type { Subject } from '@/entities/subject';
 import { ACTION_TYPE } from './action-types';
 

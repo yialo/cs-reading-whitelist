@@ -1,12 +1,9 @@
 import * as React from 'react';
 import cn from 'clsx';
-
 import { Button, Select, TextInput } from '@/shared/ui';
 import type { TClassNameable } from '@/types/common';
-
-import { FILTER, type TFilter, SORTING, type TSorting } from '../../enums';
+import { FILTER, SORTING, type TFilter, type TSorting } from '../../enums';
 import { ControlBarAmountMeter } from './c_amount-meter';
-
 import style from './style.scss';
 
 type TProps = TClassNameable & {

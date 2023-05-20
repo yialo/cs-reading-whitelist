@@ -1,9 +1,6 @@
 import * as React from 'react';
-
+import type { SeriesSubject, Subject } from '@/entities/subject';
 import type { TClassNameable } from '@/types/common';
-
-import type { Subject, SeriesSubject } from '@/entities/subject';
-
 import { SeriesSubjectsItem } from './self_series';
 import { SingleSubjectsItem } from './self_single';
 

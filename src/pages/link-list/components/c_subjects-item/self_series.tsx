@@ -1,16 +1,13 @@
 import * as React from 'react';
 import cn from 'clsx';
 import { useSelector } from 'react-redux';
-
+import type { SeriesSubject } from '@/entities/subject';
 import { KEYBOARD_KEY } from '@/shared/config';
 import type { TClassNameable } from '@/types/common';
 import { includes } from '@/utils/typing';
-
 import { selectSearchString } from '../../ducks/selectors';
-import type { SeriesSubject } from '@/entities/subject';
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
-
 import style from './style.scss';
 
 type TProps = TClassNameable & {

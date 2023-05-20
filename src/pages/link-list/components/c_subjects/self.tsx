@@ -1,13 +1,10 @@
 import * as React from 'react';
 import cn from 'clsx';
-
+import type { Subject } from '@/entities/subject';
 import { MainButton } from '@/shared/ui';
 import type { TClassNameable } from '@/types/common';
-import type { Subject } from '@/entities/subject';
-
 import { renderSubjectsItem } from '../c_subjects-item';
 import { SubjectsFallbackMessage } from './c_fallback-message';
-
 import style from './style.scss';
 
 interface Props extends TClassNameable {

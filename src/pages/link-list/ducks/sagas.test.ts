@@ -1,5 +1,4 @@
 import { call, put } from 'redux-saga/effects';
-
 import { ACTION_TYPE } from './action-types';
 import { fetchLinkListWorker, getSubjectsFromApi } from './sagas';
 

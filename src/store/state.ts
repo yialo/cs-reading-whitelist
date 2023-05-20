@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux';
-
 import { linkListReducer } from '@/pages/link-list/ducks/reducer';
 
 export const rootReducer = combineReducers({

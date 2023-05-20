@@ -1,8 +1,6 @@
 import { createSelector } from 'reselect';
-
-import { LIST_PAGE_SIZE } from '../config';
 import type { State } from '@/store/state';
-
+import { LIST_PAGE_SIZE } from '../config';
 import { FILTER, SORTING } from '../enums';
 
 export const selectProcess = (state: State) => state.links.process;

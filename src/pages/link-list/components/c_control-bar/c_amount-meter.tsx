@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import style from './style.scss';
 
 type TProps = {

@@ -6,6 +6,7 @@ const tsConfigMixin = {
     project: './tsconfig.json',
   },
   rules: {
+    '@typescript-eslint/indent': 'off',
     // TODO: rethink after plugin update
     'react/jsx-filename-extension': [
       'error',

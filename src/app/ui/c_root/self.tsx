@@ -1,14 +1,11 @@
 import * as React from 'react';
 import cn from 'clsx';
 import { useLocation } from 'react-router-dom';
-
-import { useHasDarkTheme } from '@/shared/ui';
 import { usePrevious } from '@/shared/hooks';
-
+import { useHasDarkTheme } from '@/shared/ui';
 import { RootFooter } from '../c_footer';
 import { RootHeader } from '../c_header';
 import { PageSwitcher } from '../c_page-switcher';
-
 import style from './self.scss';
 
 const $pageRoot = document.querySelector('.Page-Root');

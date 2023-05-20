@@ -1,10 +1,8 @@
 import * as React from 'react';
-import { Routes, Route } from 'react-router-dom';
-
-import { Preloader } from '@/shared/ui';
-import { ROUTE } from '@/shared/config';
+import { Route, Routes } from 'react-router-dom';
 import { LazyLinkListPage } from '@/pages/link-list';
-
+import { ROUTE } from '@/shared/config';
+import { Preloader } from '@/shared/ui';
 import { Error404Page } from '../c_error-404-page';
 
 export const PageSwitcher: React.FC = () => {

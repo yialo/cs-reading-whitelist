@@ -2,9 +2,7 @@ import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
 import { all, call } from 'redux-saga/effects';
-
 import { watchFetchLinkList } from '@/pages/link-list/ducks/sagas';
-
 import { rootReducer } from './state';
 
 const rootSaga = function* () {

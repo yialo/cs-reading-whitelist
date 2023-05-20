@@ -1,10 +1,8 @@
 import * as React from 'react';
 import { Provider as ReduxProvider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
-
 import { ThemeProvider } from '@/shared/ui';
 import { configureStore } from '@/store/configure';
-
 import { ErrorBoundary } from './c_error-boundary';
 import { Root } from './c_root';
 
