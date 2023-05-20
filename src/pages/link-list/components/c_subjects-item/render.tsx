@@ -2,15 +2,15 @@ import * as React from 'react';
 
 import type { TClassNameable } from '@/types/common';
 
-import type { TSubject, TSeriesSubject } from '../../types';
+import type { Subject, SeriesSubject } from '@/entities/subject';
 
 import { SeriesSubjectsItem } from './self_series';
 import { SingleSubjectsItem } from './self_single';
 
-const isSeries = (subject: TSubject): subject is TSeriesSubject => Boolean(subject.series);
+const isSeries = (subject: Subject): subject is SeriesSubject => Boolean(subject.series);
 
 type TSubjectRendererOptions = TClassNameable & {
-  subject: TSubject;
+  subject: Subject;
 };
 
 export const renderSubjectsItem = (options: TSubjectRendererOptions): React.ReactNode => {

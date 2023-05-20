@@ -7,14 +7,14 @@ import type { TClassNameable } from '@/types/common';
 import { includes } from '@/utils/typing';
 
 import { selectSearchString } from '../../ducks/selectors';
-import type { TSeriesSubject } from '../../types';
+import type { SeriesSubject } from '@/entities/subject';
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
 
 import style from './style.scss';
 
 type TProps = TClassNameable & {
-  subject: TSeriesSubject;
+  subject: SeriesSubject;
 };
 
 const BUTTON_KEYS = [KEYBOARD_KEY.ENTER, KEYBOARD_KEY.SPACE] as const;

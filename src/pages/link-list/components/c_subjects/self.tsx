@@ -3,21 +3,21 @@ import cn from 'clsx';
 
 import { MainButton } from '@/shared/ui';
 import type { TClassNameable } from '@/types/common';
+import type { Subject } from '@/entities/subject';
 
-import type { TSubject } from '../../types';
 import { renderSubjectsItem } from '../c_subjects-item';
 import { SubjectsFallbackMessage } from './c_fallback-message';
 
 import style from './style.scss';
 
-type TProps = TClassNameable & {
-  list: TSubject[];
+interface Props extends TClassNameable {
+  list: Subject[];
   hasFetchError: boolean;
   isLastPage: boolean;
   onShowMoreClick: () => void;
-};
+}
 
-export const Subjects: React.FC<TProps> = ({
+export const Subjects: React.FC<Props> = ({
   className,
   list,
   hasFetchError,

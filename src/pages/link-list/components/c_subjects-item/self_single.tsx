@@ -2,12 +2,12 @@ import * as React from 'react';
 
 import type { TClassNameable } from '@/types/common';
 
-import type { TSingleSublect } from '../../types';
+import type { SingleSublect } from '@/entities/subject';
 import { SubjectsItemAppendix } from './c_appendix';
 import { SubjectsItemLink } from './c_link';
 
 type TProps = TClassNameable & {
-  subject: TSingleSublect;
+  subject: SingleSublect;
 };
 
 export const SingleSubjectsItem: React.FC<TProps> = ({

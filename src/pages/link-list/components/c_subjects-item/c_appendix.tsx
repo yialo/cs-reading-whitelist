@@ -1,14 +1,12 @@
 import * as React from 'react';
 import cn from 'clsx';
 
-import type { SubjectLang, SubjectLegend, SubjectTag } from '../../types';
-
 import style from './style.scss';
 
 type TProps = {
-  lang: SubjectLang | undefined;
-  legend: SubjectLegend | undefined;
-  tags: SubjectTag[] | undefined;
+  lang: string | undefined;
+  legend: string | undefined;
+  tags: string[] | undefined;
 };
 
 export const SubjectsItemAppendix: React.FC<TProps> = ({

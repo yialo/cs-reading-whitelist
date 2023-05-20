@@ -4,11 +4,11 @@ import type { TProcess } from '@/enums';
 import type { TAction } from '@/types/redux';
 
 import type { TFilter, TSorting } from '../enums';
-import type { TSubject } from '../types';
+import type { Subject } from '@/entities/subject';
 import type { ACTION_TYPE } from './action-types';
 
 export type TLinkListState = {
-  list: TSubject[];
+  list: Subject[];
   error: Error | null;
   process: TProcess;
   searchString: string;
@@ -18,7 +18,7 @@ export type TLinkListState = {
 };
 
 export type TFetchStartAction = TAction<typeof ACTION_TYPE.FETCH_START>;
-type TFetchCompleteAction = TAction<typeof ACTION_TYPE.FETCH_SUCCESS, TSubject[]>;
+type TFetchCompleteAction = TAction<typeof ACTION_TYPE.FETCH_SUCCESS, Subject[]>;
 type TFetchFailureAction = TAction<typeof ACTION_TYPE.FETCH_FAILURE, Error>;
 
 export type TSearchAction = TAction<typeof ACTION_TYPE.SEARCH, string>;

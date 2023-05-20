@@ -1,13 +1,11 @@
 import * as React from 'react';
 
-import type { SubjectCaption, SubjectLang, SubjectUrl } from '../../types';
-
 import style from './style.scss';
 
 type TProps = {
-  caption: SubjectCaption;
-  lang: SubjectLang;
-  url: SubjectUrl;
+  caption: string;
+  lang: string;
+  url: string;
 };
 
 export const SubjectsItemLink: React.FC<TProps> = ({

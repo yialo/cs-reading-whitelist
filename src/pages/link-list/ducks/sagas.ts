@@ -1,10 +1,10 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
 
-import type { TSubject } from '../types';
+import type { Subject } from '@/entities/subject';
 import { ACTION_TYPE } from './action-types';
 
 type TLinkListApiResponsePayload = {
-  data: TSubject[];
+  data: Subject[];
 };
 
 export const getSubjectsFromApi = async () => {
