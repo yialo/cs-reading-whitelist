@@ -18,7 +18,10 @@ export type TLinkListState = {
 };
 
 export type TFetchStartAction = TAction<typeof ACTION_TYPE.FETCH_START>;
-type TFetchCompleteAction = TAction<typeof ACTION_TYPE.FETCH_SUCCESS, Subject[]>;
+type TFetchCompleteAction = TAction<
+  typeof ACTION_TYPE.FETCH_SUCCESS,
+  Subject[]
+>;
 type TFetchFailureAction = TAction<typeof ACTION_TYPE.FETCH_FAILURE, Error>;
 
 export type TSearchAction = TAction<typeof ACTION_TYPE.SEARCH, string>;
@@ -26,14 +29,13 @@ export type TFilterAction = TAction<typeof ACTION_TYPE.FILTER, TFilter>;
 export type TSortingAction = TAction<typeof ACTION_TYPE.SORTING, TSorting>;
 export type TPageAction = TAction<typeof ACTION_TYPE.NEXT_PAGE>;
 
-type TLinkListAction = (
+type TLinkListAction =
   | TFetchStartAction
   | TFetchCompleteAction
   | TFetchFailureAction
   | TSearchAction
   | TFilterAction
   | TSortingAction
-  | TPageAction
-);
+  | TPageAction;
 
 export type TLinkListReducer = Reducer<TLinkListState, TLinkListAction>;

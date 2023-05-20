@@ -45,7 +45,7 @@ export const LinkList: React.FC = () => {
 
   const dispatch = useDispatch();
 
-  const visibleAmount = isLastPage ? sortedAmount : (LIST_PAGE_SIZE * page);
+  const visibleAmount = isLastPage ? sortedAmount : LIST_PAGE_SIZE * page;
 
   const handleSearch = (value: string) => {
     dispatch(searchInList(value));
@@ -79,7 +79,9 @@ export const LinkList: React.FC = () => {
         return (
           <>
             <div className={style.header}>
-              <h1 className={style.headline}>Полезные материалы по Computer Science</h1>
+              <h1 className={style.headline}>
+                Полезные материалы по Computer Science
+              </h1>
             </div>
 
             <ControlBar
@@ -108,9 +110,7 @@ export const LinkList: React.FC = () => {
 
   return (
     <MainLayout>
-      <div className={style.root}>
-        {renderContent()}
-      </div>
+      <div className={style.root}>{renderContent()}</div>
     </MainLayout>
   );
 };

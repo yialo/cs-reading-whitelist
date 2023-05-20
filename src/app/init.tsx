@@ -11,6 +11,10 @@ export const init = () => {
   }
 
   const appRoot = ReactDomClient.createRoot($rootNode);
-  const app = <React.StrictMode><App /></React.StrictMode>;
+  const app = (
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
   appRoot.render(app);
 };

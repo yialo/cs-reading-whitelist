@@ -35,7 +35,7 @@ export const Root: React.FC = () => {
   }, [pathname, prevPathName]);
 
   return (
-    <div className={cn(style.root, { 'hasDarkTheme': hasDarkTheme })}>
+    <div className={cn(style.root, { hasDarkTheme: hasDarkTheme })}>
       <RootHeader className={style.header} />
       <PageSwitcher />
       <RootFooter />

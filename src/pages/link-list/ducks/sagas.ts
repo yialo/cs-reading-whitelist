@@ -16,7 +16,9 @@ export const getSubjectsFromApi = async () => {
 
 export const fetchLinkListWorker = function* () {
   try {
-    const responsePayload = (yield call(getSubjectsFromApi)) as TLinkListApiResponsePayload;
+    const responsePayload = (yield call(
+      getSubjectsFromApi,
+    )) as TLinkListApiResponsePayload;
 
     yield put({
       type: ACTION_TYPE.FETCH_SUCCESS,

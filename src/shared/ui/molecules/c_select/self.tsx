@@ -34,8 +34,8 @@ export const Select: React.FC<TProps> = ({
   React.useEffect(() => {
     const handleClick = (event: MouseEvent) => {
       if (
-        !$toggleButtonRef.current
-        || $toggleButtonRef.current.contains(event.target as Node)
+        !$toggleButtonRef.current ||
+        $toggleButtonRef.current.contains(event.target as Node)
       ) {
         return;
       }
@@ -52,7 +52,9 @@ export const Select: React.FC<TProps> = ({
 
   const options = React.useMemo(() => Object.entries(dict), [dict]);
 
-  const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> = ({ key }) => {
+  const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> = ({
+    key,
+  }) => {
     if (!isExpanded) {
       if (key === KEYBOARD_KEY.DOWN) {
         setIsExpanded(true);
@@ -77,7 +79,9 @@ export const Select: React.FC<TProps> = ({
       return;
     }
 
-    const currentOptionIndex = options.findIndex((option) => option[0] === value);
+    const currentOptionIndex = options.findIndex(
+      (option) => option[0] === value,
+    );
     const newOptionValue = options[currentOptionIndex + shift]?.[0];
 
     if (newOptionValue) {

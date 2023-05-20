@@ -35,10 +35,12 @@ export const Subjects: React.FC<Props> = ({
   return (
     <div className={cn(style.root, className)}>
       <ul className={style.list}>
-        {list.map((subject, i, arr) => renderSubjectsItem({
-          className: style[i === arr.length - 1 ? 'item_last' : 'item'],
-          subject,
-        }))}
+        {list.map((subject, i, arr) =>
+          renderSubjectsItem({
+            className: style[i === arr.length - 1 ? 'item_last' : 'item'],
+            subject,
+          }),
+        )}
       </ul>
       {!isLastPage && (
         <MainButton className={style.button} onClick={onShowMoreClick}>

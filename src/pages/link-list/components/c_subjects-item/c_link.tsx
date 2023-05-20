@@ -8,18 +8,9 @@ type TProps = {
   url: string;
 };
 
-export const SubjectsItemLink: React.FC<TProps> = ({
-  caption,
-  lang,
-  url,
-}) => {
+export const SubjectsItemLink: React.FC<TProps> = ({ caption, lang, url }) => {
   return (
-    <a
-      className={style.link}
-      href={url}
-      hrefLang={lang}
-      lang={lang}
-    >
+    <a className={style.link} href={url} hrefLang={lang} lang={lang}>
       {caption}
     </a>
   );

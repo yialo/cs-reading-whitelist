@@ -28,9 +28,10 @@ const Button: React.FC<TButtonProps> = ({
   );
 };
 
-const ButtonWithRef = React.forwardRef<HTMLButtonElement, TButtonPropsWithoutForwardedRef>(
-  (props, ref) => <Button {...props} forwardedRef={ref} />,
-);
+const ButtonWithRef = React.forwardRef<
+  HTMLButtonElement,
+  TButtonPropsWithoutForwardedRef
+>((props, ref) => <Button {...props} forwardedRef={ref} />);
 
 ButtonWithRef.displayName = 'Button';
 

@@ -7,9 +7,7 @@ type TProps = {
 };
 
 export const SubjectsFallbackMessage: React.FC<TProps> = ({ message }) => {
-  return (
-    <p className={style.fallbackMessage}>{message}</p>
-  );
+  return <p className={style.fallbackMessage}>{message}</p>;
 };
 
 SubjectsFallbackMessage.displayName = 'Subjects-FallbackMessage';

@@ -8,18 +8,17 @@ import { watchFetchLinkList } from '@/pages/link-list/ducks/sagas';
 import { rootReducer } from './state';
 
 const rootSaga = function* () {
-  yield all([
-    call(watchFetchLinkList),
-  ]);
+  yield all([call(watchFetchLinkList)]);
 };
 
 export const configureStore = () => {
   const sagaMiddleware = createSagaMiddleware();
   const appliedMiddleware = applyMiddleware(sagaMiddleware);
 
-  const storeEnhancer = __GLOBAL_ENV_VARIABLE__MODE__ === 'development'
-    ? composeWithDevTools(appliedMiddleware)
-    : appliedMiddleware;
+  const storeEnhancer =
+    __GLOBAL_ENV_VARIABLE__MODE__ === 'development'
+      ? composeWithDevTools(appliedMiddleware)
+      : appliedMiddleware;
 
   const store = createStore(rootReducer, storeEnhancer);
 

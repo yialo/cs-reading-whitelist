@@ -19,9 +19,7 @@ export const SubjectsItemAppendix: React.FC<TProps> = ({
       {Boolean(lang) && (
         <>
           {' '}
-          <span className={cn(style[`langBadge_${lang}`])}>
-            {lang}
-          </span>
+          <span className={cn(style[`langBadge_${lang}`])}>{lang}</span>
         </>
       )}
       {tags.length > 0 && (

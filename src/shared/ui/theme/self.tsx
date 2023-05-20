@@ -4,8 +4,9 @@ type ThemeName = 'light' | 'dark';
 type TThemeDispatch = React.Dispatch<React.SetStateAction<ThemeName>>;
 
 const ThemeStateContext = React.createContext<ThemeName | undefined>(undefined);
-const ThemeUpdaterContext = React
-  .createContext<TThemeDispatch | undefined>(undefined);
+const ThemeUpdaterContext = React.createContext<TThemeDispatch | undefined>(
+  undefined,
+);
 
 const THEME_LS_KEY = 'ui-theme';
 
@@ -13,7 +14,7 @@ const getInitialTheme = () => {
   let theme: ThemeName | null;
 
   try {
-    theme = (window.localStorage.getItem(THEME_LS_KEY) as ThemeName | null);
+    theme = window.localStorage.getItem(THEME_LS_KEY) as ThemeName | null;
 
     if (!theme) {
       theme = 'light';
@@ -63,7 +64,9 @@ export const useThemeToggle = () => {
   }
 
   const toggleTheme = React.useCallback(() => {
-    setTheme((prevTheme: ThemeName) => (prevTheme === 'dark' ? 'light' : 'dark'));
+    setTheme((prevTheme: ThemeName) =>
+      prevTheme === 'dark' ? 'light' : 'dark',
+    );
   }, [setTheme]);
 
   return toggleTheme;

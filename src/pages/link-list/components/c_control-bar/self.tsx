@@ -79,7 +79,9 @@ export const ControlBar: React.FC<TProps> = ({
       />
 
       <div className={style.sorting}>
-        <span className={style.sorting__tip} id={sortingGroupLabelId}>Сортировка:</span>
+        <span className={style.sorting__tip} id={sortingGroupLabelId}>
+          Сортировка:
+        </span>
 
         <div
           className={style.sorting__controls}
@@ -87,7 +89,7 @@ export const ControlBar: React.FC<TProps> = ({
           role="radiogroup"
         >
           {Object.entries(SORTING_DICT).map(([name, legend]) => {
-            const isCurrent = (name === sortingTarget);
+            const isCurrent = name === sortingTarget;
             return (
               <Button
                 key={name}

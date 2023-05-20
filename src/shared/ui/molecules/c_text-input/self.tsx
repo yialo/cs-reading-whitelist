@@ -37,13 +37,12 @@ const TextInput: React.FC<TProps> = ({
   return (
     <div className={cn(style.root, className)}>
       {hasTipChar && (
-        <span className={style.tipChar} aria-hidden="true">{tipChar}</span>
+        <span className={style.tipChar} aria-hidden="true">
+          {tipChar}
+        </span>
       )}
 
-      <label
-        className={style.label}
-        aria-label={legend}
-      >
+      <label className={style.label} aria-label={legend}>
         <input
           ref={forwardedRef}
           className={cn(style.field, {
@@ -75,8 +74,8 @@ const TextInput: React.FC<TProps> = ({
 };
 
 export const TextInputWithForwardedRef = React.forwardRef<
-HTMLInputElement,
-TTextPropsWithoutForwardedRef
+  HTMLInputElement,
+  TTextPropsWithoutForwardedRef
 >((props, ref) => <TextInput {...props} forwardedRef={ref} />);
 
 TextInputWithForwardedRef.displayName = 'TextInput';

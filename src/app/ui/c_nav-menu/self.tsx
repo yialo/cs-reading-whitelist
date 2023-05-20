@@ -45,7 +45,7 @@ export const AppNavMenu: React.FC<TClassNameable> = ({ className }) => {
   return (
     <nav
       className={cn(style.root, className, {
-        'isCollapsedScreenSm': !isExpanded,
+        isCollapsedScreenSm: !isExpanded,
       })}
     >
       <button
@@ -62,9 +62,11 @@ export const AppNavMenu: React.FC<TClassNameable> = ({ className }) => {
         {ROUTE_LIST.map(({ url, label }) => (
           <li key={label}>
             <NavLink
-              className={({ isActive }) => cn(style.link, {
-                [style.link_active!]: isActive,
-              })}
+              className={({ isActive }) =>
+                cn(style.link, {
+                  [style.link_active!]: isActive,
+                })
+              }
               to={url}
               end
               onClick={() => {

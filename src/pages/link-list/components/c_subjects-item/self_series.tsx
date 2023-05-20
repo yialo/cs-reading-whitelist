@@ -19,20 +19,19 @@ type TProps = TClassNameable & {
 
 const BUTTON_KEYS = [KEYBOARD_KEY.ENTER, KEYBOARD_KEY.SPACE] as const;
 
-export const SeriesSubjectsItem: React.FC<TProps> = ({ className, subject }) => {
-  const {
-    caption,
-    lang,
-    legend,
-    series,
-    tags,
-  } = subject;
+export const SeriesSubjectsItem: React.FC<TProps> = ({
+  className,
+  subject,
+}) => {
+  const { caption, lang, legend, series, tags } = subject;
 
   const isEmptySearch = !!useSelector(selectSearchString);
   const [state, setState] = React.useState({ isExpanded: false });
 
   const hasNoStateChangesYetRef = React.useRef(true);
-  const isExpanded = hasNoStateChangesYetRef.current ? isEmptySearch : state.isExpanded;
+  const isExpanded = hasNoStateChangesYetRef.current
+    ? isEmptySearch
+    : state.isExpanded;
 
   const handleExpansion = () => {
     if (hasNoStateChangesYetRef.current) {
@@ -71,8 +70,8 @@ export const SeriesSubjectsItem: React.FC<TProps> = ({ className, subject }) => 
       </div>
       {isExpanded && (
         <ul className={style.seriesList}>
-          {
-            series.map(({
+          {series.map(
+            ({
               caption: itemCaption,
               lang: itemLang,
               tags: itemTags,
@@ -87,8 +86,8 @@ export const SeriesSubjectsItem: React.FC<TProps> = ({ className, subject }) => 
                   tags={itemTags}
                 />
               </li>
-            ))
-          }
+            ),
+          )}
         </ul>
       )}
     </li>

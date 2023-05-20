@@ -50,8 +50,10 @@ export const RootHeader: React.FC<TClassNameable> = ({ className }) => {
       const shouldBeTranslucent = $pageRoot.scrollTop > SCROLL_TOP_THRESHOLD;
       setIsScrolledEnough(shouldBeTranslucent);
 
-      const shouldGoTopButtonBeSticky = $pageRoot.scrollHeight
-        - ($pageRoot.scrollTop + $pageRoot.offsetHeight) < GO_TOP_BUTTON_SHIFT.STICKY;
+      const shouldGoTopButtonBeSticky =
+        $pageRoot.scrollHeight -
+          ($pageRoot.scrollTop + $pageRoot.offsetHeight) <
+        GO_TOP_BUTTON_SHIFT.STICKY;
 
       setgoTopButtonBottomShift(
         shouldGoTopButtonBeSticky

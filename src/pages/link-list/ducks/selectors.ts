@@ -15,11 +15,7 @@ export const selectSorting = (state: State) => state.links.sorting;
 export const selectPage = (state: State) => state.links.page;
 
 const selectFilteredList = createSelector(
-  [
-    selectContent,
-    selectSearchString,
-    selectFilter,
-  ],
+  [selectContent, selectSearchString, selectFilter],
   (fullList, searchString, filter) => {
     const matcher = searchString.toLowerCase();
 
@@ -30,27 +26,37 @@ const selectFilteredList = createSelector(
     return fullList.filter((item) => {
       switch (filter) {
         case FILTER.CAPTION: {
-          const hasMatchInMainCaption = item.caption.toLowerCase().includes(matcher);
+          const hasMatchInMainCaption = item.caption
+            .toLowerCase()
+            .includes(matcher);
 
-          return hasMatchInMainCaption
-            || item.series?.some((it) => it.caption.toLowerCase().includes(matcher));
+          return (
+            hasMatchInMainCaption ||
+            item.series?.some((it) =>
+              it.caption.toLowerCase().includes(matcher),
+            )
+          );
         }
 
         case FILTER.HASHTAG: {
-          const hasMatchInMainTags = !!item.tags?.some(
-            (tag) => tag.toLowerCase().includes(matcher),
+          const hasMatchInMainTags = !!item.tags?.some((tag) =>
+            tag.toLowerCase().includes(matcher),
           );
 
-          return hasMatchInMainTags
-            || item.series?.some((it) => (
-              it.tags?.some((tag) => tag.toLowerCase().includes(matcher))
-            ));
+          return (
+            hasMatchInMainTags ||
+            item.series?.some((it) =>
+              it.tags?.some((tag) => tag.toLowerCase().includes(matcher)),
+            )
+          );
         }
 
         case FILTER.URL: {
           const hasMatchInMainUrl = item.url?.toLowerCase().includes(matcher);
-          return hasMatchInMainUrl
-            || item.series?.some((it) => it.url.toLowerCase().includes(matcher));
+          return (
+            hasMatchInMainUrl ||
+            item.series?.some((it) => it.url.toLowerCase().includes(matcher))
+          );
         }
 
         default:
@@ -61,14 +67,9 @@ const selectFilteredList = createSelector(
 );
 
 export const selectSortedList = createSelector(
-  [
-    selectFilteredList,
-    selectSorting,
-    selectPage,
-  ],
-  (filteredList, sorting) => (
-    sorting === SORTING.NEW ? [...filteredList].reverse() : filteredList
-  ),
+  [selectFilteredList, selectSorting, selectPage],
+  (filteredList, sorting) =>
+    sorting === SORTING.NEW ? [...filteredList].reverse() : filteredList,
 );
 
 export const selectSortedAmount = createSelector(

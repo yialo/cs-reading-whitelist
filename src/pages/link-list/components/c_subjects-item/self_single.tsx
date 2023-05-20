@@ -14,13 +14,7 @@ export const SingleSubjectsItem: React.FC<TProps> = ({
   className,
   subject,
 }) => {
-  const {
-    caption,
-    lang,
-    legend,
-    tags,
-    url,
-  } = subject;
+  const { caption, lang, legend, tags, url } = subject;
 
   return (
     <li className={className}>
