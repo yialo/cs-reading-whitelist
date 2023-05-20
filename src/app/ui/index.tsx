@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDomClient from 'react-dom/client';
-import { App } from './ui/c_app';
+import { App } from './app';
 
 export const init = () => {
   const $rootNode = document.getElementById('app-root');
