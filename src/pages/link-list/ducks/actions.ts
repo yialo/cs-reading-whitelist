@@ -1,4 +1,4 @@
-import type { TFilter, TSorting } from '../enums';
+import type { TFilter, TSorting } from '../config';
 import { ACTION_TYPE } from './action-types';
 import type {
   TFetchStartAction,

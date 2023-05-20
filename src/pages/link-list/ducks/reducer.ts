@@ -1,5 +1,5 @@
 import { PROCESS } from '@/shared/config';
-import { FILTER, SORTING } from '../enums';
+import { FILTER, SORTING } from '../config';
 import { ACTION_TYPE } from './action-types';
 import type { TLinkListReducer, TLinkListState } from './types';
 

@@ -2,16 +2,15 @@ import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { PROCESS } from '@/shared/config';
 import { MainLayout, Preloader } from '@/shared/ui';
-import { ControlBar } from '../components/c_control-bar';
-import { Subjects } from '../components/c_subjects';
-import { LIST_PAGE_SIZE } from '../config';
+import { LIST_PAGE_SIZE } from '../../config';
+import type { TFilter, TSorting } from '../../config';
 import {
   fetchSubjects,
   searchInList,
   showNextListPage,
   toggleFilter,
   toggleSorting,
-} from '../ducks/actions';
+} from '../../ducks/actions';
 import {
   selectError,
   selectFilter,
@@ -22,8 +21,9 @@ import {
   selectSortedAmount,
   selectSorting,
   selectVisibleList,
-} from '../ducks/selectors';
-import type { TFilter, TSorting } from '../enums';
+} from '../../ducks/selectors';
+import { ControlBar } from '../control-bar';
+import { Subjects } from '../subjects';
 import style from './style.scss';
 
 export const LinkList: React.FC = () => {

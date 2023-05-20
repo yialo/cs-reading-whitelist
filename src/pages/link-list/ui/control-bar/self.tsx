@@ -2,8 +2,8 @@ import * as React from 'react';
 import cn from 'clsx';
 import { Button, Select, TextInput } from '@/shared/ui';
 import type { TClassNameable } from '@/types/common';
-import { FILTER, SORTING, type TFilter, type TSorting } from '../../enums';
-import { ControlBarAmountMeter } from './c_amount-meter';
+import { FILTER, SORTING, type TFilter, type TSorting } from '../../config';
+import { ControlBarAmountMeter } from './amount-meter';
 import style from './style.scss';
 
 type TProps = TClassNameable & {

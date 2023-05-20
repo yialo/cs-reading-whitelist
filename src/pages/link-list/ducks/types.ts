@@ -2,7 +2,7 @@ import type { Reducer } from 'redux';
 import type { Subject } from '@/entities/subject';
 import type { TProcess } from '@/shared/config';
 import type { TAction } from '@/types/redux';
-import type { TFilter, TSorting } from '../enums';
+import type { TFilter, TSorting } from '../config';
 import type { ACTION_TYPE } from './action-types';
 
 export type TLinkListState = {

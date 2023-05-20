@@ -3,8 +3,8 @@ import cn from 'clsx';
 import type { Subject } from '@/entities/subject';
 import { MainButton } from '@/shared/ui';
 import type { TClassNameable } from '@/types/common';
-import { renderSubjectsItem } from '../c_subjects-item';
-import { SubjectsFallbackMessage } from './c_fallback-message';
+import { SubjectsFallbackMessage } from './fallback-message';
+import { renderSubjectsItem } from './item';
 import style from './style.scss';
 
 interface Props extends TClassNameable {

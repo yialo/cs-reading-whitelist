@@ -5,9 +5,9 @@ import type { SeriesSubject } from '@/entities/subject';
 import { KEYBOARD_KEY } from '@/shared/config';
 import type { TClassNameable } from '@/types/common';
 import { includes } from '@/utils/typing';
-import { selectSearchString } from '../../ducks/selectors';
-import { SubjectsItemAppendix } from './c_appendix';
-import { SubjectsItemLink } from './c_link';
+import { selectSearchString } from '../../../ducks/selectors';
+import { SubjectsItemAppendix } from './appendix';
+import { SubjectsItemLink } from './link';
 import style from './style.scss';
 
 type TProps = TClassNameable & {
