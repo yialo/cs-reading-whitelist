@@ -1,5 +1,6 @@
 # Todo list
 
+* Fix bug: input `Background opacity with one line of CSS` and see
 * Migrate to [RTK](https://redux.js.org/introduction/why-rtk-is-redux-today)
 * Add [Prettier](https://create-react-app.dev/docs/setting-up-your-editor/#formatting-code-automatically), see [Партизанщина](https://www.youtube.com/playlist?list=PLvTBThJr861wHraQuxx0ua2CFxK65Tpbj)
 * Add useTransition to text input

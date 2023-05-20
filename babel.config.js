@@ -9,22 +9,13 @@ module.exports = {
         corejs: 3,
       },
     ],
-    [
-      'transform-imports',
-      {
-        'lodash': {
-          transform: 'lodash/${member}',
-          preventFullImport: true,
-        },
-      },
-    ],
     process.env.BABEL_ENV === 'development' && 'react-refresh/babel',
   ].filter(Boolean),
   presets: [
     [
       '@babel/preset-env',
       {
-        corejs: '3.27',
+        corejs: '3.30',
         modules: process.env.BABEL_ENV === 'test' ? 'auto' : false,
         useBuiltIns: 'usage',
       },

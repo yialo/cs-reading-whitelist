@@ -4417,6 +4417,41 @@
         "software_development",
         "systems_design_patterns"
       ]
+    },
+    {
+      "caption": "The great renaming of Web/API",
+      "url": "https://openwebdocs.org/content/posts/web-api-page-titles/",
+      "lang": "en",
+      "tags": [
+        "documentation",
+        "api_design"
+      ]
+    },
+    {
+      "caption": "How to Favicon in 2023: Six files that fit most needs (by Andrey Sitnik)",
+      "url": "https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs",
+      "lang": "en",
+      "tags": [
+        "favicons"
+      ]
+    },
+    {
+      "caption": "Publishing and consuming ECMAScript modules via packages – the big picture (by Dr. Axel Rauschmayer)",
+      "url": "https://2ality.com/2022/01/esm-specifiers.html",
+      "lang": "en",
+      "tags": [
+        "javascript",
+        "esm",
+        "import_maps"
+      ]
+    },
+    {
+      "caption": "JavaScript import maps are now supported cross-browser (by Thomas Steiner)",
+      "url": "https://web.dev/import-maps-in-all-modern-browsers/",
+      "lang": "en",
+      "tags": [
+        "import_maps"
+      ]
     }
   ]
 }
