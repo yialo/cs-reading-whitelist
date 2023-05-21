@@ -43,8 +43,8 @@ module.exports = (env = {}) => {
   process.env.BABEL_ENV = target;
   process.env.NODE_ENV = target;
 
-  const isDevelopment = (target === 'development');
-  const isProduction = (target === 'production');
+  const isDevelopment = target === 'development';
+  const isProduction = target === 'production';
 
   const assetHash = isProduction ? '.[contenthash]' : '';
 
@@ -63,26 +63,28 @@ module.exports = (env = {}) => {
   return {
     context: PATH.SRC,
 
-    devServer: isDevelopment ? {
-      historyApiFallback: true,
-      host: process.env.WDS_HOST || SERVER_DEFAULTS.HOST,
-      port: process.env.WDS_PORT || SERVER_DEFAULTS.PORT,
-      hot: true,
-      open: true,
-      client: {
-        overlay: true,
-      },
-      devMiddleware: {
-        publicPath: process.env.PUBLIC_PATH,
-        stats,
-        writeToDisk: write
-          ? (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/)
-          : false,
-      },
-      static: {
-        directory: PATH.STATIC,
-      },
-    } : {},
+    devServer: isDevelopment
+      ? {
+          historyApiFallback: true,
+          host: process.env.WDS_HOST || SERVER_DEFAULTS.HOST,
+          port: process.env.WDS_PORT || SERVER_DEFAULTS.PORT,
+          hot: true,
+          open: true,
+          client: {
+            overlay: true,
+          },
+          devMiddleware: {
+            publicPath: process.env.PUBLIC_PATH,
+            stats,
+            writeToDisk: write
+              ? (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/)
+              : false,
+          },
+          static: {
+            directory: PATH.STATIC,
+          },
+        }
+      : {},
 
     devtool: isDevelopment ? 'eval-source-map' : false,
 
@@ -90,7 +92,7 @@ module.exports = (env = {}) => {
       app: path.join(PATH.SRC, 'index.ts'),
     },
 
-    mode: (isDevelopment || isProduction) ? target : 'none',
+    mode: isDevelopment || isProduction ? target : 'none',
 
     module: {
       rules: (() => {
@@ -122,7 +124,9 @@ module.exports = (env = {}) => {
                   exportLocalsConvention: 'asIs',
                   exportOnlyLocals: false,
                   localIdentContext: PATH.CSS_MODULES_IDENT_CONTEXT,
-                  localIdentName: isProduction ? '[hash:base64]' : '[path][local]',
+                  localIdentName: isProduction
+                    ? '[hash:base64]'
+                    : '[path][local]',
                 },
                 esModule: true,
                 importLoaders: 2,
@@ -271,8 +275,10 @@ module.exports = (env = {}) => {
           ],
         }),
         new DefinePlugin({
-          '__GLOBAL_ENV_VARIABLE__MODE__': JSON.stringify(process.env.NODE_ENV),
-          '__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__': JSON.stringify(process.env.PUBLIC_PATH),
+          __GLOBAL_ENV_VARIABLE__MODE__: JSON.stringify(process.env.NODE_ENV),
+          __GLOBAL_ENV_VARIABLE__PUBLIC_PATH__: JSON.stringify(
+            process.env.PUBLIC_PATH,
+          ),
         }),
         new TsCheckerWebpackPlugin({
           async: isDevelopment,
@@ -291,15 +297,19 @@ module.exports = (env = {}) => {
       }
 
       if (needAnalyze) {
-        pluginList.push(new BundleAnalyzerPlugin({
-          analyzerPort: 8889,
-        }));
+        pluginList.push(
+          new BundleAnalyzerPlugin({
+            analyzerPort: 8889,
+          }),
+        );
       }
 
       if (!noCheckCircularDeps) {
-        pluginList.push(new CircularDependencyPlugin({
-          failOnError: true,
-        }));
+        pluginList.push(
+          new CircularDependencyPlugin({
+            failOnError: true,
+          }),
+        );
       }
 
       return pluginList;
@@ -307,12 +317,7 @@ module.exports = (env = {}) => {
 
     resolve: {
       alias: ALIAS,
-      extensions: [
-        '.js',
-        '.jsx',
-        '.ts',
-        '.tsx',
-      ],
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
 
     stats,

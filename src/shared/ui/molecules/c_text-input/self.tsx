@@ -1,12 +1,10 @@
 import * as React from 'react';
 import cn from 'clsx';
-
-import type { TClassNameable } from '@/types/common';
-
+import type { WithClassName } from '@/shared/ui';
 import { Button } from '../../atoms';
 import style from './style.scss';
 
-type TTextPropsWithoutForwardedRef = TClassNameable & {
+type TTextPropsWithoutForwardedRef = WithClassName & {
   inputMode: React.HTMLAttributes<HTMLInputElement>['inputMode'];
   legend: string;
   tipChar?: string | undefined;
@@ -37,13 +35,12 @@ const TextInput: React.FC<TProps> = ({
   return (
     <div className={cn(style.root, className)}>
       {hasTipChar && (
-        <span className={style.tipChar} aria-hidden="true">{tipChar}</span>
+        <span className={style.tipChar} aria-hidden="true">
+          {tipChar}
+        </span>
       )}
 
-      <label
-        className={style.label}
-        aria-label={legend}
-      >
+      <label className={style.label} aria-label={legend}>
         <input
           ref={forwardedRef}
           className={cn(style.field, {
@@ -75,8 +72,8 @@ const TextInput: React.FC<TProps> = ({
 };
 
 export const TextInputWithForwardedRef = React.forwardRef<
-HTMLInputElement,
-TTextPropsWithoutForwardedRef
+  HTMLInputElement,
+  TTextPropsWithoutForwardedRef
 >((props, ref) => <TextInput {...props} forwardedRef={ref} />);
 
 TextInputWithForwardedRef.displayName = 'TextInput';
