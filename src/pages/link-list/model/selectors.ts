@@ -1,5 +1,5 @@
 import { createSelector } from 'reselect';
-import type { State } from '@/store/state';
+import type { State } from '@/store';
 import { FILTER, LIST_PAGE_SIZE, SORTING } from '../config';
 
 export const selectProcess = (state: State) => state.links.process;

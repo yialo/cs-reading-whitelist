@@ -1,3 +1,5 @@
+import type { Subject } from '@/entities/subject';
+import type { TProcess } from '@/shared/config';
 import type { Values } from '@/types/utils';
 
 export const LIST_PAGE_SIZE = 10;
@@ -16,3 +18,13 @@ export const SORTING = {
 } as const;
 
 export type TSorting = Values<typeof SORTING>;
+
+export interface LinkListState {
+  list: Subject[];
+  error: Error | null;
+  process: TProcess;
+  searchString: string;
+  filter: TFilter;
+  sorting: TSorting;
+  page: number;
+}

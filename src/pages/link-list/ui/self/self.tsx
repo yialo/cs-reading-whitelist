@@ -5,13 +5,6 @@ import { MainLayout, Preloader } from '@/shared/ui';
 import { LIST_PAGE_SIZE } from '../../config';
 import type { TFilter, TSorting } from '../../config';
 import {
-  fetchSubjects,
-  searchInList,
-  showNextListPage,
-  toggleFilter,
-  toggleSorting,
-} from '../../ducks/actions';
-import {
   selectError,
   selectFilter,
   selectIsLastPage,
@@ -21,7 +14,14 @@ import {
   selectSortedAmount,
   selectSorting,
   selectVisibleList,
-} from '../../ducks/selectors';
+} from '../../model/selectors';
+import {
+  fetchStart,
+  getNextPage,
+  search,
+  toggleFilter,
+  toggleSorting,
+} from '../../model/slice';
 import { ControlBar } from '../control-bar';
 import { Subjects } from '../subjects';
 import style from './style.scss';
@@ -44,11 +44,11 @@ export const LinkList: React.FC = () => {
   const visibleAmount = isLastPage ? sortedAmount : LIST_PAGE_SIZE * page;
 
   const handleSearch = (value: string) => {
-    dispatch(searchInList(value));
+    dispatch(search(value));
   };
 
   const handleShowMoreClick = () => {
-    dispatch(showNextListPage());
+    dispatch(getNextPage());
   };
 
   const handleFilterToggle = (nextFilterName: TFilter) => {
@@ -61,7 +61,7 @@ export const LinkList: React.FC = () => {
 
   React.useEffect(() => {
     if (process === PROCESS.IDLE) {
-      dispatch(fetchSubjects());
+      dispatch(fetchStart());
     }
   }, [process, dispatch]);
 
