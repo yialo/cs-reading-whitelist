@@ -2,6 +2,7 @@ import { configureStore as configureStoreViaRtk } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
 import { all, call } from 'redux-saga/effects';
 import { watchFetchLinkList } from '@/pages/link-list/ducks/sagas';
+import { ENV_MODE } from '@/shared/config';
 import { rootReducer } from './state';
 
 const rootSaga = function* () {
@@ -13,6 +14,7 @@ export const configureStore = () => {
 
   const store = configureStoreViaRtk({
     reducer: rootReducer,
+    devTools: __GLOBAL_ENV_VARIABLE__MODE__ !== ENV_MODE.PROD,
     middleware: (getDefaultMiddleware) => {
       return getDefaultMiddleware({
         thunk: false,

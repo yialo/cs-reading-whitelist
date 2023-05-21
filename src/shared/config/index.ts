@@ -1,5 +1,10 @@
 import type { Values } from '@/types/utils';
 
+export const ENV_MODE = {
+  DEV: 'development',
+  PROD: 'production',
+} as const;
+
 export const KEYBOARD_KEY = {
   ENTER: 'Enter',
   ESCAPE: 'Escape',
