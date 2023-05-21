@@ -6,7 +6,7 @@ import { FILTER, SORTING, type TFilter, type TSorting } from '../../config';
 import { ControlBarAmountMeter } from './amount-meter';
 import style from './style.scss';
 
-type TProps = WithClassName & {
+interface Props extends WithClassName {
   filterTarget: TFilter;
   searchString: string;
   sortingTarget: TSorting;
@@ -15,7 +15,7 @@ type TProps = WithClassName & {
   onFilterToggle: (filter: TFilter) => void;
   onSearch: (value: string) => void;
   onSortingToggle: (sorting: TSorting) => void;
-};
+}
 
 const FILTER_DICT = {
   [FILTER.CAPTION]: 'заголовку',
@@ -36,7 +36,7 @@ const TIP_CHAR_DICT = {
 
 const sortingGroupLabelId = 'sorting-group-label';
 
-export const ControlBar: React.FC<TProps> = ({
+export const ControlBar: React.FC<Props> = ({
   className,
   filterTarget,
   searchString,

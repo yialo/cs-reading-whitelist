@@ -1,4 +1,3 @@
-import * as React from 'react';
 import cn from 'clsx';
 import type { Subject } from '@/entities/subject';
 import { MainButton } from '@/shared/ui';

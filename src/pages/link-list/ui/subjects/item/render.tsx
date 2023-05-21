@@ -1,4 +1,3 @@
-import * as React from 'react';
 import type { SeriesSubject, Subject } from '@/entities/subject';
 import type { WithClassName } from '@/shared/ui';
 import { SeriesSubjectsItem } from './self_series';
@@ -7,12 +6,12 @@ import { SingleSubjectsItem } from './self_single';
 const isSeries = (subject: Subject): subject is SeriesSubject =>
   Boolean(subject.series);
 
-type TSubjectRendererOptions = WithClassName & {
+interface SubjectRendererOptions extends WithClassName {
   subject: Subject;
-};
+}
 
 export const renderSubjectsItem = (
-  options: TSubjectRendererOptions,
+  options: SubjectRendererOptions,
 ): React.ReactNode => {
   const key = options.subject.caption;
 

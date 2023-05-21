@@ -1,4 +1,3 @@
-import * as React from 'react';
 import cn from 'clsx';
 import type { WithClassName } from '@/shared/ui';
 import style from './style.scss';

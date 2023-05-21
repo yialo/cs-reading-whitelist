@@ -1,14 +1,13 @@
-import * as React from 'react';
 import cn from 'clsx';
 import style from './style.scss';
 
-type TProps = {
+interface Props {
   lang: string | undefined;
   legend: string | undefined;
   tags: string[] | undefined;
-};
+}
 
-export const SubjectsItemAppendix: React.FC<TProps> = ({
+export const SubjectsItemAppendix: React.FC<Props> = ({
   lang = '',
   legend = '',
   tags = [],

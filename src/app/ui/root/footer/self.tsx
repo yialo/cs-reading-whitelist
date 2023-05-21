@@ -1,12 +1,11 @@
-import * as React from 'react';
 import style from './self.scss';
 
-type TAppFooterLink = {
+interface AppFooterLink {
   legend: string;
   url: string;
-};
+}
 
-const FOOTER_LINKS: TAppFooterLink[] = [
+const FOOTER_LINKS: AppFooterLink[] = [
   {
     legend: 'GitHub',
     url: 'https://github.com/yialo/cs-reading-whitelist',

@@ -6,12 +6,12 @@ import type { WithClassName } from '@/shared/ui';
 import { AppNavMenuIcon } from './icon';
 import style from './style.scss';
 
-type TNavLink = {
+interface NavLink {
   url: TRoute;
   label: string;
-};
+}
 
-const ROUTE_LIST: ReadonlyArray<TNavLink> = [
+const ROUTE_LIST: ReadonlyArray<NavLink> = [
   {
     url: ROUTE.HOME,
     label: 'Reading',

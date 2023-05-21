@@ -1,20 +1,20 @@
 import * as React from 'react';
 import style from './style.scss';
 
-type TProps = {
+interface Props {
   children: React.ReactNode;
-};
+}
 
-type TState = {
+interface State {
   error: Error | null;
-};
+}
 
-export class ErrorBoundary extends React.Component<TProps, TState> {
+export class ErrorBoundary extends React.Component<Props, State> {
   static getDerivedStateFromError(err: Error) {
     return { error: err };
   }
 
-  state: TState = {
+  state: State = {
     error: null,
   };
 

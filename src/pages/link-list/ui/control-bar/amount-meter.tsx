@@ -1,13 +1,12 @@
-import * as React from 'react';
 import style from './style.scss';
 
-type TProps = {
+interface Props {
   totalAmount: number;
   visibleAmount: number;
   isFiltered: boolean;
-};
+}
 
-export const ControlBarAmountMeter: React.FC<TProps> = ({
+export const ControlBarAmountMeter: React.FC<Props> = ({
   totalAmount,
   visibleAmount,
   isFiltered,

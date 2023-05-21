@@ -1,4 +1,3 @@
-import * as React from 'react';
 import cn from 'clsx';
 import { MainButton, useHasDarkTheme, useThemeToggle } from '@/shared/ui';
 import type { WithClassName } from '@/shared/ui';
