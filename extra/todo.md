@@ -9,3 +9,6 @@
 - Add request cancellation with AbortController
 - Add extended favicon set
 - Migrate to Vite/Turbopack/SWC: see [Невероятный Vite под микроскопом](https://youtu.be/ndKgZRM7yjk)
+- Rename PROCESS's LOADING to FETCHING (look to Tanstack Query)
+- (After migration to TS 5) Apply verbatim syntax and get rid of separate 'import type {}'
+- Split selectors to global & local ones (to allow model reexport via index module)
