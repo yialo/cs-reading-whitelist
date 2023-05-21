@@ -7,7 +7,7 @@ process.env.BABEL_ENV = 'test';
 module.exports = {
   roots: ['<rootDir>/src'],
   globals: {
-    '__GLOBAL_ENV_VARIABLE__PUBLIC_PATH__': true,
+    __GLOBAL_ENV_VARIABLE__PUBLIC_PATH__: true,
   },
   moduleNameMapper: {
     '^@/(.*)': '<rootDir>/src/$1',

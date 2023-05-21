@@ -19,7 +19,7 @@ const tsConfigMixin = {
     'react/no-unstable-nested-components': [
       'error',
       {
-        'allowAsProps': true,
+        allowAsProps: true,
       },
     ],
   },
@@ -34,24 +34,23 @@ const tsConfigMixin = {
 };
 
 module.exports = {
-  ignorePatterns: [
-    '*.html',
-    '/dist/',
-    '/extra/',
-  ],
+  ignorePatterns: ['*.html', '/dist/', '/extra/'],
   overrides: [
     {
       files: ['./*.js'],
-      extends: ['yialo/presets/node'],
+      extends: ['yialo/presets/node', 'prettier'],
+      rules: {
+        indent: 'off',
+      },
     },
     {
       files: ['./src/**/*.ts?(x)'],
-      extends: ['yialo/presets/web-react-ts-check'],
+      extends: ['yialo/presets/web-react-ts-check', 'prettier'],
       ...tsConfigMixin,
     },
     {
       files: ['./src/**/*.{spec,test}.ts?(x)'],
-      extends: ['yialo/presets/web-react-ts-check-jest'],
+      extends: ['yialo/presets/web-react-ts-check-jest', 'prettier'],
       ...tsConfigMixin,
     },
   ],

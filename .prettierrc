@@ -1,0 +1,15 @@
+{
+  "quoteProps": "consistent",
+  "singleQuote": true,
+  "trailingComma": "all",
+  "importOrder": [
+    "^react$",
+    "<THIRD_PARTY_MODULES>",
+    "^@shared/(.*)$",
+    "^@entities/(.*)$",
+    "^@/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
+}
