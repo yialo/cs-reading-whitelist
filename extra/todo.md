@@ -2,6 +2,7 @@
 
 - Fix bug: input `Background opacity with one line of CSS` and see
 - Add `useTransition` to text input
+- [feat] Save search query in search param
 - Add extended favicon set
 - Rename PROCESS's LOADING to FETCHING (look to Tanstack Query)
 - Split selectors to global & local ones (to allow model reexport via index module)
