@@ -69,7 +69,6 @@
     "css-minimizer-webpack-plugin": "5.0.0",
     "dotenv": "16.0.3",
     "eslint-config-prettier": "8.8.0",
-    "eslint-config-yialo": "0.6.20",
     "fork-ts-checker-webpack-plugin": "8.0.0",
     "gh-pages": "5.0.0",
     "html-loader": "4.2.0",
