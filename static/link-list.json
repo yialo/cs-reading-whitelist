@@ -4367,6 +4367,12 @@
       "url": "https://web.dev/import-maps-in-all-modern-browsers/",
       "lang": "en",
       "tags": ["import_maps"]
+    },
+    {
+      "caption": "Why Engineers Need To Write (by Ryan Peterman)",
+      "url": "https://www.developing.dev/p/why-engineers-need-to-write",
+      "lang": "en",
+      "tags": ["technical_writing", "productivity", "mentorship"]
     }
   ]
 }
