@@ -4,19 +4,19 @@ import type { WithClassName } from '@/shared/ui';
 import { Button } from '../../atoms';
 import style from './style.scss';
 
-type TTextPropsWithoutForwardedRef = WithClassName & {
+interface TextPropsWithoutForwardedRef extends WithClassName {
   inputMode: React.HTMLAttributes<HTMLInputElement>['inputMode'];
   legend: string;
   tipChar?: string | undefined;
   value: string;
   onChange: (value: string) => void;
-};
+}
 
-type TProps = TTextPropsWithoutForwardedRef & {
+interface Props extends TextPropsWithoutForwardedRef {
   forwardedRef: React.ForwardedRef<HTMLInputElement>;
-};
+}
 
-const TextInput: React.FC<TProps> = ({
+const TextInput: React.FC<Props> = ({
   className,
   forwardedRef,
   inputMode,
@@ -73,7 +73,7 @@ const TextInput: React.FC<TProps> = ({
 
 export const TextInputWithForwardedRef = React.forwardRef<
   HTMLInputElement,
-  TTextPropsWithoutForwardedRef
+  TextPropsWithoutForwardedRef
 >((props, ref) => <TextInput {...props} forwardedRef={ref} />);
 
 TextInputWithForwardedRef.displayName = 'TextInput';

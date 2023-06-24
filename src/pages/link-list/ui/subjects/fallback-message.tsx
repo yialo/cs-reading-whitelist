@@ -1,11 +1,10 @@
-import * as React from 'react';
 import style from './style.scss';
 
-type TProps = {
+interface Props {
   message: string;
-};
+}
 
-export const SubjectsFallbackMessage: React.FC<TProps> = ({ message }) => {
+export const SubjectsFallbackMessage: React.FC<Props> = ({ message }) => {
   return <p className={style.fallbackMessage}>{message}</p>;
 };
 

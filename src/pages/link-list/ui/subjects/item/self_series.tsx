@@ -10,16 +10,13 @@ import { SubjectsItemAppendix } from './appendix';
 import { SubjectsItemLink } from './link';
 import style from './style.scss';
 
-type TProps = WithClassName & {
+interface Props extends WithClassName {
   subject: SeriesSubject;
-};
+}
 
 const BUTTON_KEYS = [KEYBOARD_KEY.ENTER, KEYBOARD_KEY.SPACE] as const;
 
-export const SeriesSubjectsItem: React.FC<TProps> = ({
-  className,
-  subject,
-}) => {
+export const SeriesSubjectsItem: React.FC<Props> = ({ className, subject }) => {
   const { caption, lang, legend, series, tags } = subject;
 
   const isEmptySearch = !!useSelector(selectSearchString);

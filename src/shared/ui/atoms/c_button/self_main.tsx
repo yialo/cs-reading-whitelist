@@ -1,9 +1,8 @@
-import * as React from 'react';
 import cn from 'clsx';
-import { Button, type TButtonProps } from './self';
+import { Button, type ButtonProps } from './self';
 import style from './style.scss';
 
-export const MainButton: React.FC<TButtonProps> = ({
+export const MainButton: React.FC<ButtonProps> = ({
   className,
   ...propsRest
 }) => {

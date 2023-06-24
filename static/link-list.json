@@ -3432,7 +3432,7 @@
     },
     {
       "caption": "The Difference between a Good Take-Home Project and a Not-So-Good (by Llorenç Muntaner)",
-      "url": "https://www.gimtec.io/articles/the-difference-between-a-good-take-home-project-and-a-not-so-good/",
+      "url": "https://frontendengineering.substack.com/p/the-difference-between-a-good-take-home-project-and-a-not-so-good",
       "lang": "en",
       "tags": ["clean_code"]
     },
@@ -3591,7 +3591,7 @@
     },
     {
       "caption": "Starting Development tasks: Don’t Bite More Than You Can Chew (by Llorenç Muntaner)",
-      "url": "https://www.gimtec.io/articles/dont-bite-more-than-you-can-chew/",
+      "url": "https://frontendengineering.substack.com/p/dont-bite-more-than-you-can-chew",
       "lang": "en",
       "tags": ["productivity"]
     },
@@ -4174,284 +4174,205 @@
       "caption": "Что такое HADI-цикл. Объясняем простыми словами (Ирина Опёнкина)",
       "url": "https://secretmag.ru/enciklopediya/chto-takoe-hadi-cikl-obyasnyaem-prostymi-slovami.htm",
       "lang": "ru",
-      "tags": ["product_analytics"
-      ]
+      "tags": ["product_analytics"]
     },
     {
       "caption": "Привлечь пользователя и заработать на нём: эффективность маркетинговой воронки AARRR на примере Tinder (by Pavel Kukhnavets)",
       "url": "https://vc.ru/marketing/32256-privlech-polzovatelya-i-zarabotat-na-nem-effektivnost-marketingovoy-voronki-aarrr-na-primere-tinder",
       "lang": "ru",
-      "tags": [
-        "product_analytics"
-      ]
+      "tags": ["product_analytics"]
     },
     {
       "caption": "Not All Zeros are Equal. And every ‘best practice’ comes with caveats (by Miriam Suzanne)",
       "url": "https://www.oddbird.net/2022/08/04/zero-units/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "Необычное применение Fork API (Сергей Сова)",
       "url": "https://sova.dev/ru/unusual-use-of-fork-api/",
       "lang": "ru",
-      "tags": [
-        "effector"
-      ]
+      "tags": ["effector"]
     },
     {
       "caption": "How to write CommonJS exports that can be name-imported from ESM (by Dr. Axel Rauschmayer)",
       "url": "https://2ality.com/2022/10/commonjs-named-exports.html",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "nodejs"
-      ]
+      "tags": ["javascript", "nodejs"]
     },
     {
       "caption": "Pattern Matching in JavaScript (by Kyle Shevlin)",
       "url": "https://kyleshevlin.com/pattern-matching",
       "lang": "en",
-      "tags": [
-        "algorithms",
-        "javascript"
-      ]
+      "tags": ["algorithms", "javascript"]
     },
     {
       "caption": "Default Exports in JavaScript Modules Are Terrible (by Lloyd Atkinson)",
       "url": "https://www.lloydatkinson.net/posts/2022/default-exports-in-javascript-modules-are-terrible/",
       "lang": "en",
-      "tags": [
-        "javascript"
-      ]
+      "tags": ["javascript"]
     },
     {
       "caption": "You Should be Using Folder Components (by Izaak Schroeder)",
       "url": "https://medium.com/bootstart/you-should-be-using-folder-components-b30b7d165c39",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Zettelkasten: как один немецкий учёный стал невероятно продуктивным (by Nikita Larionov)",
       "url": "https://habr.com/ru/post/508672/",
       "lang": "ru",
-      "tags": [
-        "productivity",
-        "zettelkasten"
-      ]
+      "tags": ["productivity", "zettelkasten"]
     },
     {
       "caption": "Лучший софт для Zettelkasten (управления знаниями): сравнительная таблица (Дмитрий Райз)",
       "url": "https://habr.com/ru/post/674014/",
       "lang": "ru",
-      "tags": [
-        "productivity",
-        "zettelkasten"
-      ]
+      "tags": ["productivity", "zettelkasten"]
     },
     {
       "caption": "Background opacity with one line of CSS (by Shruti Balasa)",
       "url": "https://shrutibalasa.substack.com/p/background-opacity-with-one-line-22-08-10",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "The gotcha of unhandled promise rejections (by Jake Archibald)",
       "url": "https://jakearchibald.com/2023/unhandled-rejections/",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "async"
-      ]
+      "tags": ["javascript", "async"]
     },
     {
       "caption": "Is CSS-in-JS actually bad? (by Mayank)",
       "url": "https://blog.mayank.co/is-css-in-js-actually-bad",
       "lang": "en",
-      "tags": [
-        "css_in_js",
-        "build_tools",
-        "performance"
-      ]
+      "tags": ["css_in_js", "build_tools", "performance"]
     },
     {
       "caption": "The many definitions of server-side rendering (by Zach Leatherman)",
       "url": "https://www.zachleat.com/web/ssr-overloaded/",
       "lang": "en",
-      "tags": [
-        "ssr",
-        "ssg"
-      ]
+      "tags": ["ssr", "ssg"]
     },
     {
       "caption": "Use esm-import-transformer for \"isomorphic-ish\" ECMAScript Modules (by Zach Leatherman)",
       "url": "https://www.zachleat.com/web/esm-import-transformer/",
       "lang": "en",
-      "tags": [
-        "build_tools"
-      ]
+      "tags": ["build_tools"]
     },
     {
       "caption": "Using text symbols in pseudo-elements accessibly (by Mayank)",
       "url": "https://blog.mayank.co/using-text-symbols-in-pseudo-elements-accessibly",
       "lang": "en",
-      "tags": [
-        "css",
-        "a11y"
-      ]
+      "tags": ["css", "a11y"]
     },
     {
       "caption": "Why We're Breaking Up with CSS-in-JS (by Sam Magura)",
       "url": "https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b",
       "lang": "en",
-      "tags": [
-        "css_in_js",
-        "react"
-      ]
+      "tags": ["css_in_js", "react"]
     },
     {
       "caption": "Constructable Stylesheets (by Jason Miller)",
       "url": "https://web.dev/constructable-stylesheets/",
       "lang": "en",
-      "tags": [
-        "css",
-        "dom_api"
-      ]
+      "tags": ["css", "dom_api"]
     },
     {
       "caption": "Library Upgrade Guide: <style> (most CSS-in-JS libs) (by Sebastian Markbåge)",
       "url": "https://github.com/reactwg/react-18/discussions/110",
       "lang": "en",
-      "tags": [
-        "react",
-        "css_in_js"
-      ]
+      "tags": ["react", "css_in_js"]
     },
     {
       "caption": "Mourning my obsolete Skillset (by Thomas Semmler)",
       "url": "https://helloyes.dev/blog/2022/mourning-my-obsolete-skillset/",
       "lang": "en",
-      "tags": [
-        "professional_growth"
-      ]
+      "tags": ["professional_growth"]
     },
     {
       "caption": "The case for using Sass in 2022 (by Mayank)",
       "url": "https://blog.mayank.co/the-case-for-using-sass-in-2022",
       "lang": "en",
-      "tags": [
-        "sass"
-      ]
+      "tags": ["sass"]
     },
     {
       "caption": "How not to learn Rust (by Denys Séguret)",
       "url": "https://dystroy.org/blog/how-not-to-learn-rust/",
       "lang": "en",
-      "tags": [
-        "rust"
-      ]
+      "tags": ["rust"]
     },
     {
       "caption": "Crossing The Chasm: Technology Adoption Lifecycle (by Mithun Sridharan)",
       "url": "https://thinkinsights.net/strategy/crossing-the-chasm/",
       "lang": "en",
-      "tags": [
-        "product_management"
-      ]
+      "tags": ["product_management"]
     },
     {
       "caption": "Library Upgrade Guide: <head> (e.g. react-helmet) (by Sebastian Markbåge)",
       "url": "https://github.com/reactwg/react-18/discussions/106",
       "lang": "en",
-      "tags": [
-        "react"
-      ]
+      "tags": ["react"]
     },
     {
       "caption": "Library Upgrade Guide: <link rel=\"stylesheet\"> (E.g. custom CSS imports/modules) (by Sebastian Markbåge)",
       "url": "https://github.com/reactwg/react-18/discussions/108",
       "lang": "en",
-      "tags": [
-        "react",
-        "css"
-      ]
+      "tags": ["react", "css"]
     },
     {
       "caption": "Don’t Fight the Cascade, Control It! (by Mads Stoumann)",
       "url": "https://css-tricks.com/dont-fight-the-cascade-control-it/",
       "lang": "en",
-      "tags": [
-        "css"
-      ]
+      "tags": ["css"]
     },
     {
       "caption": "All JavaScript and TypeScript Features of the last 3 years (by Linus Schlumberger)",
       "url": "https://betterprogramming.pub/all-javascript-and-typescript-features-of-the-last-3-years-629c57e73e42",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "typescript"
-      ]
+      "tags": ["javascript", "typescript"]
     },
     {
       "caption": "Zettelkasten и Obsidian — лучшие друзья вашей памяти и креативности (Дмитрий Райз)",
       "url": "https://habr.com/ru/post/548154/",
       "lang": "ru",
-      "tags": [
-        "productivity",
-        "zettelkasten",
-        "markdown"
-      ]
+      "tags": ["productivity", "zettelkasten", "markdown"]
     },
     {
       "caption": "Low floor, wide walls, high ceiling (by Gordon Brander)",
       "url": "https://gordonbrander.com/pattern/low-floor-wide-walls-high-ceiling/",
       "lang": "en",
-      "tags": [
-        "software_development",
-        "systems_design_patterns"
-      ]
+      "tags": ["software_development", "systems_design_patterns"]
     },
     {
       "caption": "The great renaming of Web/API",
       "url": "https://openwebdocs.org/content/posts/web-api-page-titles/",
       "lang": "en",
-      "tags": [
-        "documentation",
-        "api_design"
-      ]
+      "tags": ["documentation", "api_design"]
     },
     {
       "caption": "How to Favicon in 2023: Six files that fit most needs (by Andrey Sitnik)",
       "url": "https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs",
       "lang": "en",
-      "tags": [
-        "favicons"
-      ]
+      "tags": ["favicons"]
     },
     {
       "caption": "Publishing and consuming ECMAScript modules via packages – the big picture (by Dr. Axel Rauschmayer)",
       "url": "https://2ality.com/2022/01/esm-specifiers.html",
       "lang": "en",
-      "tags": [
-        "javascript",
-        "esm",
-        "import_maps"
-      ]
+      "tags": ["javascript", "esm", "import_maps"]
     },
     {
       "caption": "JavaScript import maps are now supported cross-browser (by Thomas Steiner)",
       "url": "https://web.dev/import-maps-in-all-modern-browsers/",
       "lang": "en",
-      "tags": [
-        "import_maps"
-      ]
+      "tags": ["import_maps"]
+    },
+    {
+      "caption": "Why Engineers Need To Write (by Ryan Peterman)",
+      "url": "https://www.developing.dev/p/why-engineers-need-to-write",
+      "lang": "en",
+      "tags": ["technical_writing", "productivity", "mentorship"]
     }
   ]
 }

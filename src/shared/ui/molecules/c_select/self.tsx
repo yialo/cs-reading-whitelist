@@ -5,17 +5,17 @@ import type { WithClassName } from '@/shared/ui';
 import { Button } from '../../atoms';
 import style from './style.scss';
 
-type TProps = WithClassName & {
+interface Props extends WithClassName {
   dict: Record<string, string>;
-  tipIdPrefix?: string;
   tip: React.ReactNode;
   value: string;
   onChange: (newValue: string) => void;
-};
+  tipIdPrefix?: string;
+}
 
 const TOGGLE_BUTTON_ID = 'filter-toggle-button';
 
-export const Select: React.FC<TProps> = ({
+export const Select: React.FC<Props> = ({
   className,
   dict,
   tip,
