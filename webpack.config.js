@@ -211,6 +211,7 @@ module.exports = (env = {}) => {
                 drop_console: true,
                 drop_debugger: true,
               },
+              mangle: !isProfiling,
               output: {
                 comments: false,
               },
