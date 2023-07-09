@@ -23,10 +23,6 @@ const PATH = {
   CSS_MODULES_IDENT_CONTEXT: path.join(__dirname, 'src/ts'),
 };
 
-const ALIAS = {
-  '@': PATH.SRC,
-};
-
 const SERVER_DEFAULTS = {
   HOST: 'localhost',
   PORT: 9050,
@@ -36,6 +32,7 @@ module.exports = (env = {}) => {
   const {
     analyze: needAnalyze,
     nocircular: noCheckCircularDeps = false,
+    profiling: isProfiling = false,
     target,
     write,
   } = env;
@@ -48,8 +45,9 @@ module.exports = (env = {}) => {
 
   const assetHash = isProduction ? '.[contenthash]' : '';
 
-  dotEnv.config({ path: path.join(__dirname, '.env.local') });
-  dotEnv.config({ path: path.join(__dirname, `.env.${target}`) });
+  dotEnv.config({
+    path: path.join(__dirname, `.env.${isProfiling ? 'profiling' : target}`),
+  });
 
   const stats = {
     all: isDevelopment ? false : undefined,
@@ -315,10 +313,20 @@ module.exports = (env = {}) => {
       return pluginList;
     })(),
 
-    resolve: {
-      alias: ALIAS,
-      extensions: ['.js', '.jsx', '.ts', '.tsx'],
-    },
+    resolve: (() => {
+      const alias = {
+        '@': PATH.SRC,
+      };
+
+      if (isProfiling) {
+        alias['react-dom$'] = 'react-dom/profiling';
+      }
+
+      return {
+        alias,
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      };
+    })(),
 
     stats,
 
