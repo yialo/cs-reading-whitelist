@@ -10,5 +10,6 @@
   - Add optional **author** field section (name, links) and sorting by author name
   - Add optional **mediaType** field and sorting by media (video, audio etc.)
 - Add request cancellation with AbortController
-- Migrate to Vite/Turbopack/SWC: see [Невероятный Vite под микроскопом](https://youtu.be/ndKgZRM7yjk)
+- Migrate to Vite/SWC
 - (After migration to TS 5) Apply verbatim syntax and get rid of separate 'import type {}'
+- Migrate dropdown to Popover API
