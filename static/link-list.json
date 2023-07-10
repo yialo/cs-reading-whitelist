@@ -4373,6 +4373,30 @@
       "url": "https://www.developing.dev/p/why-engineers-need-to-write",
       "lang": "en",
       "tags": ["technical_writing", "productivity", "mentorship"]
+    },
+    {
+      "caption": "TypeScript 5.2's New Keyword: 'using' (by Matt Pocock)",
+      "url": "https://www.totaltypescript.com/typescript-5-2-new-keyword-using",
+      "lang": "en",
+      "tags": ["typescript"]
+    },
+    {
+      "caption": "Encapsulating the Redux State Tree (by Randy Coulman)",
+      "url": "https://randycoulman.com/blog/2016/09/13/encapsulating-the-redux-state-tree/",
+      "lang": "en",
+      "tags": ["redux"]
+    },
+    {
+      "caption": "Profile a React App for Performance (by Kent C. Dodds)",
+      "url": "https://kentcdodds.com/blog/profile-a-react-app-for-performance",
+      "lang": "en",
+      "tags": ["react", "performance"]
+    },
+    {
+      "caption": "Rendering Performance (by Paul Lewis)",
+      "url": "https://web.dev/rendering-performance/",
+      "lang": "en",
+      "tags": ["performance"]
     }
   ]
 }
