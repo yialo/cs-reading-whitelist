@@ -76,4 +76,4 @@ export const TextInputWithForwardedRef = React.forwardRef<
   TextPropsWithoutForwardedRef
 >((props, ref) => <TextInput {...props} forwardedRef={ref} />);
 
-TextInputWithForwardedRef.displayName = 'TextInput';
+TextInputWithForwardedRef.displayName = 'ForwardRef(TextInput)';
