@@ -4397,6 +4397,12 @@
       "url": "https://web.dev/rendering-performance/",
       "lang": "en",
       "tags": ["performance"]
+    },
+    {
+      "caption": "When a millisecond is not a millisecond (by Noam Rosenthal)",
+      "url": "https://dev.to/noamr/when-a-millisecond-is-not-a-millisecond-3h6",
+      "lang": "en",
+      "tags": ["datetime", "javascript", "web_performance"]
     }
   ]
 }

@@ -30,6 +30,6 @@ const ButtonWithRef = React.forwardRef<
   React.ComponentPropsWithoutRef<'button'>
 >((props, ref) => <Button {...props} forwardedRef={ref} />);
 
-ButtonWithRef.displayName = 'Button';
+ButtonWithRef.displayName = 'ForwardRef(Button)';
 
 export { ButtonWithRef as Button };
