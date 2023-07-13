@@ -3,12 +3,12 @@
   "private": true,
   "scripts": {
     "start": "npm run dev",
-    "build": "npm run webpack -- --env target=production",
+    "build": "webpack -c ./webpack.config.js --env target=production",
     "build:analyze": "npm run build -- --env analyze",
     "build:profiling": "npm run build -- --env profiling",
     "build:stats": "npm run build --profile --json > ./stats/webpack-bundle-stats.json",
     "deploy": "gh-pages -d ./dist/",
-    "dev": "npm run webpack:serve -- --env target=development",
+    "dev": "webpack serve -c ./webpack.config.js --env target=development",
     "dev:nocircular": "npm run dev -- --env nocircular",
     "dev:write": "npm run dev -- --env write",
     "lint": "npm-run-all --parallel lint:styles lint:scripts typecheck",
@@ -24,9 +24,7 @@
     "serve": "serve -s ./dist/",
     "test": "jest -c=./jest.config.js --passWithNoTests",
     "test:watch": "npm test -- --watch",
-    "typecheck": "tsc",
-    "webpack": "webpack -c ./webpack.config.js",
-    "webpack:serve": "webpack serve -c ./webpack.config.js"
+    "typecheck": "tsc"
   },
   "browserslist": [
     "defaults",
@@ -55,10 +53,10 @@
     "@babel/runtime-corejs3": "7.22.6",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.10",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
-    "@types/jest": "29.5.2",
+    "@types/jest": "29.5.3",
     "@types/lodash-es": "4.17.7",
     "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
+    "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
     "babel-jest": "29.6.1",
     "babel-loader": "9.1.3",
