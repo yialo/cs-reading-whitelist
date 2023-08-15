@@ -4403,6 +4403,24 @@
       "url": "https://dev.to/noamr/when-a-millisecond-is-not-a-millisecond-3h6",
       "lang": "en",
       "tags": ["datetime", "javascript", "web_performance"]
+    },
+    {
+      "caption": "Demystifying Cache Normalization (by Khalil Stemmler)",
+      "url": "https://www.apollographql.com/blog/apollo-client/caching/demystifying-cache-normalization/",
+      "lang": "en",
+      "tags": ["graphql", "server_cache", "react"]
+    },
+    {
+      "caption": "Why we had to move away from React Query (by Robert Cooper)",
+      "url": "https://www.basedash.com/blog/why-we-had-to-move-away-from-react-query",
+      "lang": "en",
+      "tags": ["react", "server_cache"]
+    },
+    {
+      "caption": "cn() - Every Tailwind Coder Needs It (clsx + twMerge) (by ByteGrad)",
+      "url": "https://youtu.be/re2JFITR7TI",
+      "lang": "en",
+      "tags": ["tailwindcss"]
     }
   ]
 }
