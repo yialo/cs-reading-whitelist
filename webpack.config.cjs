@@ -99,6 +99,7 @@ module.exports = (env = {}) => {
           loader: 'babel-loader',
           options: {
             cacheDirectory: true,
+            configFile: path.join(__dirname, 'babel.config.cjs'),
           },
         };
 
