@@ -12,7 +12,7 @@
     "dev:nocircular": "npm run dev -- --env nocircular",
     "dev:write": "npm run dev -- --env write",
     "lint": "npm-run-all --parallel lint:styles lint:scripts typecheck",
-    "lint:scripts": "eslint ./*.js ./src/**/*.{j,t}s?(x)",
+    "lint:scripts": "eslint \"./*.cjs\" \"./src/**/*.{j,t}s?(x)\"",
     "lint:styles": "stylelint ./src/**/*.scss",
     "nodemon": "nodemon --config ./nodemon.json",
     "nodemon:build": "npm run nodemon -- build",
