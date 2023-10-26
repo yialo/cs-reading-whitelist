@@ -4390,37 +4390,92 @@
       "caption": "Profile a React App for Performance (by Kent C. Dodds)",
       "url": "https://kentcdodds.com/blog/profile-a-react-app-for-performance",
       "lang": "en",
-      "tags": ["react", "performance"]
+      "tags": ["react", "performance"],
+      "createdAt": "2023-07-09"
     },
     {
       "caption": "Rendering Performance (by Paul Lewis)",
       "url": "https://web.dev/rendering-performance/",
       "lang": "en",
-      "tags": ["performance"]
+      "tags": ["performance"],
+      "createdAt": "2023-07-09"
     },
     {
       "caption": "When a millisecond is not a millisecond (by Noam Rosenthal)",
       "url": "https://dev.to/noamr/when-a-millisecond-is-not-a-millisecond-3h6",
       "lang": "en",
-      "tags": ["datetime", "javascript", "web_performance"]
+      "tags": ["datetime", "javascript", "web_performance"],
+      "createdAt": "2023-07-11"
     },
     {
       "caption": "Demystifying Cache Normalization (by Khalil Stemmler)",
       "url": "https://www.apollographql.com/blog/apollo-client/caching/demystifying-cache-normalization/",
       "lang": "en",
-      "tags": ["graphql", "server_cache", "react"]
+      "tags": ["graphql", "server_cache", "react"],
+      "createdAt": "2023-07-30"
     },
     {
       "caption": "Why we had to move away from React Query (by Robert Cooper)",
       "url": "https://www.basedash.com/blog/why-we-had-to-move-away-from-react-query",
       "lang": "en",
-      "tags": ["react", "server_cache"]
+      "tags": ["react", "server_cache"],
+      "createdAt": "2023-07-30"
     },
     {
       "caption": "cn() - Every Tailwind Coder Needs It (clsx + twMerge) (by ByteGrad)",
       "url": "https://youtu.be/re2JFITR7TI",
       "lang": "en",
-      "tags": ["tailwindcss"]
+      "tags": ["tailwindcss"],
+      "createdAt": "2023-08-14"
+    },
+    {
+      "caption": "ESLint's new config system (by Nicholas C. Zakas)",
+      "series": [
+        {
+          "caption": "Part 1: Background",
+          "url": "https://eslint.org/blog/2022/08/new-config-system-part-1/",
+          "createdAt": "2023-09-02"
+        },
+        {
+          "caption": "Part 2: Introduction to flat config",
+          "url": "https://eslint.org/blog/2022/08/new-config-system-part-2/",
+          "createdAt": "2023-09-03"
+        },
+        {
+          "caption": "Part 3: Developer preview",
+          "url": "https://eslint.org/blog/2022/08/new-config-system-part-3/",
+          "createdAt": "2023-09-03"
+        }
+      ],
+      "lang": "en",
+      "tags": ["eslint"]
+    },
+    {
+      "caption": "TypeScript without TypeScript -- JSDoc superpowers (by Stefan Baumgartner)",
+      "url": "https://fettblog.eu/typescript-jsdoc-superpowers/",
+      "lang": "en",
+      "tags": ["typing", "javascript", "typescript"],
+      "createdAt": "2023-09-04"
+    },
+    {
+      "caption": "Islands Architecture (by Jason Miller)",
+      "url": "https://jasonformat.com/islands-architecture/",
+      "lang": "en",
+      "tags": [
+        "ssg",
+        "ssr",
+        "systems_design_patterns",
+        "web_performance",
+        "web_vitals"
+      ],
+      "createdAt": "2023-09-05"
+    },
+    {
+      "caption": "The new wave of React state management (by Frontendmastery)",
+      "url": "https://frontendmastery.com/posts/the-new-wave-of-react-state-management/",
+      "lang": "en",
+      "tags": ["state_management", "react"],
+      "createdAt": "2023-10-16"
     }
   ]
 }

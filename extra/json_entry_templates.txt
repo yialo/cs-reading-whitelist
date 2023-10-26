@@ -5,6 +5,7 @@
   "tags": [
     ""
   ],
+  "createdAt": "",
   "legend": ""
 }
 
@@ -17,6 +18,7 @@
       "tags": [
         ""
       ],
+      "createdAt": "",
       "legend": ""
     }
   ],
