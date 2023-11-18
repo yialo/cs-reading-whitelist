@@ -1,33 +1,20 @@
 {
   "data": [
     {
-      "caption": "Frontend WhiteList",
-      "url": "https://github.com/melnik909/frontend-whitelist",
-      "lang": "ru",
-      "tags": ["cheatsheet"],
-      "legend": "список авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов"
-    },
-    {
       "caption": "Словарь фронтенд-терминов",
-      "url": "https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md",
-      "lang": "ru",
-      "tags": ["cheatsheet"]
-    },
-    {
-      "caption": "Рекомендуемые книги по frontend-разработке",
-      "url": "https://web-standards.ru/books/",
+      "url": "https://github.com/web-standards-ru/dictionary/blob/main/dictionary.md",
       "lang": "ru",
       "tags": ["cheatsheet"]
     },
     {
       "caption": "Floating Point Math",
-      "url": "http://0.30000000000000004.com/",
+      "url": "https://0.30000000000000004.com/",
       "lang": "en",
       "tags": ["algorithms"]
     },
     {
       "caption": "(Законы Акина) законы космической инженерии",
-      "url": "https://habr.com/ru/post/354936/",
+      "url": "https://habr.com/ru/articles/354936/",
       "lang": "ru",
       "tags": ["project_management"]
     },
@@ -41,7 +28,7 @@
       "caption": "How To Learn Anything Faster - 5 Tips to Increase your Learning Speed (feat. _Project Better Self_)",
       "url": "https://www.youtube.com/watch?v=rA2XHWM__yE",
       "lang": "en",
-      "tags": ["video", "productivity"]
+      "tags": ["productivity"]
     },
     {
       "caption": "10 Tips for Writing Cleaner & Better Code",
@@ -146,8 +133,7 @@
       "caption": "Как UX/UI дизайнеру достичь баланса между работой и обучением?",
       "url": "https://vc.ru/design/84443-kak-ux-ui-dizayneru-dostich-balansa-mezhdu-rabotoy-i-obucheniem",
       "lang": "ru",
-      "tags": ["productivity", "ux_ui"],
-      "legend": "рекомендации актуальны для всех работников IT-сферы"
+      "tags": ["productivity", "ux_ui"]
     },
     {
       "caption": "Тяжела ли работа программиста — взгляд с точки зрения психофизиологии",
@@ -4381,8 +4367,29 @@
       "tags": ["typescript"]
     },
     {
-      "caption": "Encapsulating the Redux State Tree (by Randy Coulman)",
-      "url": "https://randycoulman.com/blog/2016/09/13/encapsulating-the-redux-state-tree/",
+      "caption": "Redux project modularization series (by Randy Coulman)",
+      "series": [
+        {
+          "caption": "Encapsulating the Redux State Tree",
+          "url": "https://randycoulman.com/blog/2016/09/13/encapsulating-the-redux-state-tree/"
+        },
+        {
+          "caption": "Redux Reducer/Selector Asymmetry",
+          "url": "https://randycoulman.com/blog/2016/09/20/redux-reducer-selector-asymmetry/"
+        },
+        {
+          "caption": "Modular Reducers and Selectors",
+          "url": "https://randycoulman.com/blog/2016/09/27/modular-reducers-and-selectors/"
+        },
+        {
+          "caption": "Globalizing Redux Selectors",
+          "url": "https://randycoulman.com/blog/2016/11/29/globalizing-redux-selectors/"
+        },
+        {
+          "caption": "Solving Circular Dependencies in Modular Redux",
+          "url": "https://randycoulman.com/blog/2018/06/12/solving-circular-dependencies-in-modular-redux/"
+        }
+      ],
       "lang": "en",
       "tags": ["redux"]
     },
@@ -4476,6 +4483,81 @@
       "lang": "en",
       "tags": ["state_management", "react"],
       "createdAt": "2023-10-16"
+    },
+    {
+      "caption": "About React and Redux applications (by Jack Hsu)",
+      "series": [
+        {
+          "caption": "Three Rules For Structuring (Redux) Applications",
+          "url": "https://jaysoo.ca/2016/02/28/organizing-redux-application/"
+        },
+        {
+          "caption": "The Anatomy Of A React & Redux Module, Applying The Three Rules)",
+          "url": "https://jaysoo.ca/2016/02/28/applying-code-organization-rules-to-concrete-redux-code/"
+        },
+        {
+          "caption": "Additional Guidelines For (Redux) Project Structure",
+          "url": "https://jaysoo.ca/2016/12/12/additional-guidelines-for-project-structure/"
+        }
+      ],
+      "lang": "en",
+      "tags": ["redux"]
+    },
+    {
+      "caption": "React 18 useEffect Double Call for APIs: Emergency Fix (by Jack Herrington)",
+      "url": "https://javascript.plainenglish.io/react-18-useeffect-double-call-for-apis-emergency-fix-724b7ee6a646",
+      "lang": "en",
+      "tags": ["react_hooks"],
+      "createdAt": "2023-10-04"
+    },
+    {
+      "caption": "A historical reference of React criticism (by Zach Leatherman)",
+      "url": "https://www.zachleat.com/web/react-criticism/",
+      "lang": "en",
+      "tags": ["react"],
+      "createdAt": "2023-10-07"
+    },
+    {
+      "caption": "React I Love You, But You're Bringing Me Down (by François Zaninotto)",
+      "url": "https://marmelab.com/blog/2022/09/20/react-i-love-you.html",
+      "lang": "en",
+      "tags": ["react"],
+      "createdAt": "2023-10-10"
+    },
+    {
+      "caption": "Next.js, just why? (by Pilcrow)",
+      "url": "https://pilcrow.vercel.app/blog/nextjs-why",
+      "lang": "en",
+      "tags": ["nextjs"],
+      "createdAt": "2023-10-20"
+    },
+    {
+      "caption": "Headless user interface components (by Merrick Christensen)",
+      "url": "https://www.merrickchristensen.com/articles/headless-user-interface-components/",
+      "lang": "en",
+      "tags": ["ui_design_patterns"],
+      "createdAt": "2023-11-02"
+    },
+    {
+      "caption": "Why Tailwind CSS Won (by Matt Rickard)",
+      "url": "https://matt-rickard.com/why-tailwind-css-won",
+      "lang": "en",
+      "tags": ["css", "tailwindcss"],
+      "createdAt": "2023-11-03"
+    },
+    {
+      "caption": "React Component as the API (by Matt Rickard)",
+      "url": "https://matt-rickard.com/react-component-as-the-api",
+      "lang": "en",
+      "tags": ["react"],
+      "createdAt": "2023-11-04"
+    },
+    {
+      "caption": "On Mixing Client and Server (by Matt Rickard)",
+      "url": "https://matt-rickard.com/on-mixing-client-and-server",
+      "lang": "en",
+      "tags": ["react"],
+      "createdAt": "2023-11-04"
     }
   ]
 }
