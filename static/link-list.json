@@ -1,33 +1,20 @@
 {
   "data": [
     {
-      "caption": "Frontend WhiteList",
-      "url": "https://github.com/melnik909/frontend-whitelist",
-      "lang": "ru",
-      "tags": ["cheatsheet"],
-      "legend": "список авторских статей, переводов, докладов и ресурсов на русском языке для разработчиков интерфейсов"
-    },
-    {
       "caption": "Словарь фронтенд-терминов",
-      "url": "https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md",
-      "lang": "ru",
-      "tags": ["cheatsheet"]
-    },
-    {
-      "caption": "Рекомендуемые книги по frontend-разработке",
-      "url": "https://web-standards.ru/books/",
+      "url": "https://github.com/web-standards-ru/dictionary/blob/main/dictionary.md",
       "lang": "ru",
       "tags": ["cheatsheet"]
     },
     {
       "caption": "Floating Point Math",
-      "url": "http://0.30000000000000004.com/",
+      "url": "https://0.30000000000000004.com/",
       "lang": "en",
       "tags": ["algorithms"]
     },
     {
       "caption": "(Законы Акина) законы космической инженерии",
-      "url": "https://habr.com/ru/post/354936/",
+      "url": "https://habr.com/ru/articles/354936/",
       "lang": "ru",
       "tags": ["project_management"]
     },
@@ -41,7 +28,7 @@
       "caption": "How To Learn Anything Faster - 5 Tips to Increase your Learning Speed (feat. _Project Better Self_)",
       "url": "https://www.youtube.com/watch?v=rA2XHWM__yE",
       "lang": "en",
-      "tags": ["video", "productivity"]
+      "tags": ["productivity"]
     },
     {
       "caption": "10 Tips for Writing Cleaner & Better Code",
@@ -146,8 +133,7 @@
       "caption": "Как UX/UI дизайнеру достичь баланса между работой и обучением?",
       "url": "https://vc.ru/design/84443-kak-ux-ui-dizayneru-dostich-balansa-mezhdu-rabotoy-i-obucheniem",
       "lang": "ru",
-      "tags": ["productivity", "ux_ui"],
-      "legend": "рекомендации актуальны для всех работников IT-сферы"
+      "tags": ["productivity", "ux_ui"]
     },
     {
       "caption": "Тяжела ли работа программиста — взгляд с точки зрения психофизиологии",
