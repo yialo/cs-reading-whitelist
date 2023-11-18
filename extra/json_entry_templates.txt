@@ -5,8 +5,7 @@
   "tags": [
     ""
   ],
-  "createdAt": "",
-  "legend": ""
+  "createdAt": ""
 }
 
 {
@@ -18,13 +17,11 @@
       "tags": [
         ""
       ],
-      "createdAt": "",
-      "legend": ""
+      "createdAt": ""
     }
   ],
   "lang": "",
   "tags": [
     ""
-  ],
-  "legend": ""
+  ]
 }
