@@ -12,4 +12,10 @@
 - Add request cancellation with AbortController
 - Migrate to Vite/SWC
 - (After migration to TS 5) Apply verbatim syntax and get rid of separate 'import type {}'
-- Migrate dropdown to Popover API
+- Migrate dropdown to Portal
+- (After update of my ESLint config) Restore esLint and eslint-config-prettier
+  ```json
+  "lint": "npm-run-all --parallel lint:styles lint:scripts typecheck",
+  "lint:scripts": "eslint \"./*.cjs\" \"./src/**/*.{j,t}s?(x)\"",
+  "publish": "npm run lint:styles && npm run lint:scripts && npm run build && npm run deploy",
+  ```
