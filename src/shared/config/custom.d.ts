@@ -14,8 +14,8 @@ interface ObjectConstructor {
   ): T extends object
     ? (keyof T)[]
     : T extends number
-    ? []
-    : T extends any[] | string
-    ? string[]
-    : never;
+      ? []
+      : T extends any[] | string
+        ? string[]
+        : never;
 }
