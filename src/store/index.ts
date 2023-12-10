@@ -1,4 +1,7 @@
-import { configureStore as configureStoreViaRtk } from '@reduxjs/toolkit';
+import {
+  type Middleware,
+  configureStore as configureStoreViaRtk,
+} from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
 import { all, call } from 'redux-saga/effects';
 import { watchFetchLinkList } from '@/pages/link-list/model/sagas';
@@ -20,7 +23,7 @@ export const configureStore = () => {
     middleware: (getDefaultMiddleware) => {
       return getDefaultMiddleware({
         thunk: false,
-      }).concat(sagaMiddleware);
+      }).concat(sagaMiddleware as Middleware);
     },
   });
 

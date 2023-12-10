@@ -1,4 +1,4 @@
-import { createSelector } from 'reselect';
+import { createSelector } from '@reduxjs/toolkit';
 import type { State } from '@/store';
 import { FILTER, LIST_PAGE_SIZE, SORTING } from '../config';
 
