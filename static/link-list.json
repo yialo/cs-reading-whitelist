@@ -4133,14 +4133,8 @@
       "tags": ["css_containment", "css_grid"]
     },
     {
-      "caption": "Background opacity with one line of CSS (by Shruti Balasa)",
-      "url": "https://www.getrevue.co/profile/shrutibalasa/issues/background-opacity-with-one-line-of-css-1294197",
-      "lang": "en",
-      "tags": ["css"]
-    },
-    {
       "caption": "Is there a grid-wrap similar to flex-wrap? (by Shruti Balasa)",
-      "url": "https://www.getrevue.co/profile/shrutibalasa/issues/is-there-a-grid-wrap-similar-to-flex-wrap-1305183",
+      "url": "https://shrutibalasa.substack.com/p/is-there-a-grid-wrap-similar-to-flex-22-08-17",
       "lang": "en",
       "tags": ["css_grid"]
     },
