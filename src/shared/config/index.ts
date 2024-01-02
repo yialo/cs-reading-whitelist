@@ -1,4 +1,4 @@
-import type { Values } from '@/types/utils';
+import type { Values } from '@type-utils';
 
 export const ENV_MODE = {
   DEV: 'development',
@@ -20,10 +20,10 @@ export const PROCESS = {
   FAILURE: 'FAILURE',
 } as const;
 
-export type TProcess = Values<typeof PROCESS>;
+export type Process = Values<typeof PROCESS>;
 
 export const ROUTE = {
   HOME: '/',
 } as const;
 
-export type TRoute = Values<typeof ROUTE>;
+export type Route = Values<typeof ROUTE>;

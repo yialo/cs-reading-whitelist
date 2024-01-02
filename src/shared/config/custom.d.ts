@@ -19,3 +19,7 @@ interface ObjectConstructor {
         ? string[]
         : never;
 }
+
+declare module '@type-utils' {
+  export type Values<O extends object> = O[keyof O];
+}

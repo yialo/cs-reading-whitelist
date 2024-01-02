@@ -1,6 +1,5 @@
 # Todo list
 
-- Fix bug: input `Background opacity with one line of CSS` and see
 - Add `useTransition` to text input
 - [feat] Save search query in search param
 - Add extended favicon set

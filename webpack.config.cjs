@@ -87,7 +87,7 @@ module.exports = (env = {}) => {
     devtool: isDevelopment ? 'eval-source-map' : false,
 
     entry: {
-      app: path.join(PATH.SRC, 'index.ts'),
+      app: path.join(PATH.SRC, 'main.ts'),
     },
 
     mode: isDevelopment || isProduction ? target : 'none',

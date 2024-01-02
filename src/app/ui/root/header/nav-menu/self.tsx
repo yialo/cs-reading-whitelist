@@ -1,13 +1,13 @@
 import * as React from 'react';
 import cn from 'clsx';
 import { NavLink } from 'react-router-dom';
-import { KEYBOARD_KEY, ROUTE, type TRoute } from '@/shared/config';
+import { KEYBOARD_KEY, ROUTE, type Route } from '@/shared/config';
 import type { WithClassName } from '@/shared/ui';
 import { AppNavMenuIcon } from './icon';
 import style from './style.scss';
 
 interface NavLink {
-  url: TRoute;
+  url: Route;
   label: string;
 }
 
