@@ -11,7 +11,7 @@
     "dev": "webpack serve -c ./webpack.config.cjs --env target=development",
     "dev:nocircular": "npm run dev -- --env nocircular",
     "dev:write": "npm run dev -- --env write",
-    "lint": "npm-run-all --parallel lint:styles typecheck",
+    "lint": "npm-run-all --parallel lint:styles tsc",
     "lint:styles": "stylelint ./src/**/*.scss",
     "nodemon": "nodemon --config ./nodemon.json",
     "nodemon:build": "npm run nodemon -- build",
@@ -22,7 +22,7 @@
     "serve": "serve -s ./dist/",
     "test": "jest -c=./jest.config.cjs --passWithNoTests",
     "test:watch": "npm test -- --watch",
-    "typecheck": "tsc"
+    "tsc": "tsc"
   },
   "browserslist": [
     "defaults",
