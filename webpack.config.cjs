@@ -39,6 +39,7 @@ module.exports = (env = {}) => {
     profiling: isProfiling = false,
     target,
     write,
+    open: shouldOpen = false,
   } = env;
 
   process.env.BABEL_ENV = target;
@@ -71,7 +72,7 @@ module.exports = (env = {}) => {
           host: process.env.WDS_HOST || SERVER_DEFAULTS.HOST,
           port: process.env.WDS_PORT || SERVER_DEFAULTS.PORT,
           hot: true,
-          open: true,
+          open: shouldOpen,
           client: {
             overlay: true,
           },
@@ -102,15 +103,6 @@ module.exports = (env = {}) => {
           options: {
             cacheDirectory: true,
             configFile: path.join(__dirname, 'babel.config.cjs'),
-          },
-        };
-
-        /** @type {import('webpack').RuleSetRule} */
-        const templateLoaderRule = {
-          test: /\.html$/,
-          loader: 'html-loader',
-          options: {
-            minimize: isProduction,
           },
         };
 
@@ -148,9 +140,6 @@ module.exports = (env = {}) => {
             {
               loader: 'sass-loader',
               options: {
-                sassOptions: {
-                  fiber: false,
-                },
                 sourceMap: true,
               },
             },
@@ -168,7 +157,6 @@ module.exports = (env = {}) => {
 
         return [
           scriptLoaderRule,
-          templateLoaderRule,
           styleLoaderRule,
           createAssetResourceRule({
             testRegexp: /\.(jpe?g|png|svg)$/,
@@ -271,6 +259,19 @@ module.exports = (env = {}) => {
           filename: 'index.html',
           template: path.join(PATH.SRC, 'static/html/index.html'),
           favicon: path.join(PATH.SRC, 'static/favicons/favicon.ico'),
+          minify: isProduction
+            ? {
+                collapseWhitespace: true,
+                keepClosingSlash: false,
+                minifyCSS: true,
+                minifyJS: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true,
+              }
+            : false,
         }),
         new CopyPlugin({
           patterns: [

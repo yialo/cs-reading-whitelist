@@ -1,11 +1,8 @@
-import {
-  type Middleware,
-  configureStore as configureStoreViaRtk,
-} from '@reduxjs/toolkit';
+import { configureStore as configureStoreViaRtk } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
 import { all, call } from 'redux-saga/effects';
 import { watchFetchLinkList } from '@/pages/link-list/model/sagas';
-import { linkListReducer } from '@/pages/link-list/model/slice';
+import { linkListSlice } from '@/pages/link-list/model/slice';
 import { ENV_MODE } from '@/shared/config';
 
 const rootSaga = function* () {
@@ -17,13 +14,13 @@ export const configureStore = () => {
 
   const store = configureStoreViaRtk({
     reducer: {
-      links: linkListReducer,
+      [linkListSlice.reducerPath]: linkListSlice.reducer,
     },
     devTools: __GLOBAL_ENV_VARIABLE__MODE__ !== ENV_MODE.PROD,
     middleware: (getDefaultMiddleware) => {
       return getDefaultMiddleware({
         thunk: false,
-      }).concat(sagaMiddleware as Middleware);
+      }).concat(sagaMiddleware);
     },
   });
 
@@ -31,5 +28,3 @@ export const configureStore = () => {
 
   return store;
 };
-
-export type State = ReturnType<ReturnType<typeof configureStore>['getState']>;

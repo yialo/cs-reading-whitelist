@@ -1,6 +1,6 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
 import type { Subject } from '@/entities/subject';
-import { fetchFailure, fetchStart, fetchSuccess } from './slice';
+import { linkListSlice } from './slice';
 
 type LinkListApiResponsePayload = {
   data: Subject[];
@@ -19,14 +19,14 @@ export const fetchLinkListWorker = function* () {
       getSubjectsFromApi,
     )) as LinkListApiResponsePayload;
 
-    yield put(fetchSuccess(responsePayload.data));
+    yield put(linkListSlice.actions.fetchSuccess(responsePayload.data));
   } catch (error) {
     if (error instanceof Error) {
-      yield put(fetchFailure(error));
+      yield put(linkListSlice.actions.fetchFailure(error));
     }
   }
 };
 
 export const watchFetchLinkList = function* () {
-  yield takeLatest(fetchStart.type, fetchLinkListWorker);
+  yield takeLatest(linkListSlice.actions.fetchStart.type, fetchLinkListWorker);
 };

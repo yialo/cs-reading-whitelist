@@ -4,64 +4,47 @@ import { PROCESS } from '@/shared/config';
 import { MainLayout, Preloader } from '@/shared/ui';
 import { LIST_PAGE_SIZE } from '../../config';
 import type { TFilter, TSorting } from '../../config';
-import {
-  selectError,
-  selectFilter,
-  selectIsLastPage,
-  selectPage,
-  selectProcess,
-  selectSearchString,
-  selectSortedAmount,
-  selectSorting,
-  selectVisibleList,
-} from '../../model/selectors';
-import {
-  fetchStart,
-  getNextPage,
-  search,
-  toggleFilter,
-  toggleSorting,
-} from '../../model/slice';
+import { linkListSlice } from '../../model/slice';
 import { ControlBar } from '../control-bar';
 import { Subjects } from '../subjects';
 import style from './style.scss';
 
 export const LinkList: React.FC = () => {
-  const process = useSelector(selectProcess);
-  const error = useSelector(selectError);
+  const process = useSelector(linkListSlice.selectors.process);
+  const error = useSelector(linkListSlice.selectors.error);
 
-  const filter = useSelector(selectFilter);
-  const searchString = useSelector(selectSearchString);
+  const filter = useSelector(linkListSlice.selectors.filter);
+  const searchString = useSelector(linkListSlice.selectors.searchString);
 
-  const page = useSelector(selectPage);
-  const sortedAmount = useSelector(selectSortedAmount);
-  const sorting = useSelector(selectSorting);
-  const subjectList = useSelector(selectVisibleList);
-  const isLastPage = useSelector(selectIsLastPage);
+  const page = useSelector(linkListSlice.selectors.page);
+  const sortedAmount = useSelector(linkListSlice.selectors.sortedAmount);
+  const sorting = useSelector(linkListSlice.selectors.sorting);
+  const subjectList = useSelector(linkListSlice.selectors.visibleList);
+  const isLastPage = useSelector(linkListSlice.selectors.isLastPage);
 
   const dispatch = useDispatch();
 
   const visibleAmount = isLastPage ? sortedAmount : LIST_PAGE_SIZE * page;
 
   const handleSearch = (value: string) => {
-    dispatch(search(value));
+    dispatch(linkListSlice.actions.search(value));
   };
 
   const handleShowMoreClick = () => {
-    dispatch(getNextPage());
+    dispatch(linkListSlice.actions.getNextPage());
   };
 
   const handleFilterToggle = (nextFilterName: TFilter) => {
-    dispatch(toggleFilter(nextFilterName));
+    dispatch(linkListSlice.actions.toggleFilter(nextFilterName));
   };
 
   const handleSortingToggle = (nextSortingName: TSorting) => {
-    dispatch(toggleSorting(nextSortingName));
+    dispatch(linkListSlice.actions.toggleSorting(nextSortingName));
   };
 
   React.useEffect(() => {
     if (process === PROCESS.IDLE) {
-      dispatch(fetchStart());
+      dispatch(linkListSlice.actions.fetchStart());
     }
   }, [process, dispatch]);
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import cn from 'clsx';
 import { NavLink } from 'react-router-dom';
 import { KEYBOARD_KEY, ROUTE, type Route } from '@/shared/config';
+import { cn } from '@/shared/lib/cn';
 import type { WithClassName } from '@/shared/ui';
 import { AppNavMenuIcon } from './icon';
 import style from './style.scss';

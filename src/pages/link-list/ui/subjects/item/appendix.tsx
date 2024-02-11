@@ -1,17 +1,11 @@
-import cn from 'clsx';
+import { cn } from '@/shared/lib/cn';
 import style from './style.scss';
 
-interface Props {
+export const SubjectsItemAppendix: React.FC<{
   lang: string | undefined;
   legend: string | undefined;
   tags: string[] | undefined;
-}
-
-export const SubjectsItemAppendix: React.FC<Props> = ({
-  lang = '',
-  legend = '',
-  tags = [],
-}) => {
+}> = ({ lang = '', legend = '', tags = [] }) => {
   return (
     <>
       {Boolean(lang) && (

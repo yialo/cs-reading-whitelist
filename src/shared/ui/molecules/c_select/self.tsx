@@ -1,39 +1,31 @@
 import * as React from 'react';
-import cn from 'clsx';
 import { KEYBOARD_KEY } from '@/shared/config';
+import { cn } from '@/shared/lib/cn';
 import type { WithClassName } from '@/shared/ui';
 import { Button } from '../../atoms';
 import style from './style.scss';
 
-interface Props extends WithClassName {
-  dict: Record<string, string>;
-  tip: React.ReactNode;
-  value: string;
-  onChange: (newValue: string) => void;
-  tipIdPrefix?: string;
-}
-
-const TOGGLE_BUTTON_ID = 'filter-toggle-button';
-
-export const Select: React.FC<Props> = ({
-  className,
-  dict,
-  tip,
-  tipIdPrefix,
-  value,
-  onChange,
-}) => {
+export const Select: React.FC<
+  WithClassName & {
+    dict: Record<string, string>;
+    tip: React.ReactNode;
+    value: string;
+    onChange: (newValue: string) => void;
+  }
+> = ({ className, dict, tip, value, onChange }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
-
-  const tipId = `select-tip${tipIdPrefix ? `-${tipIdPrefix}` : ''}`;
 
   const $toggleButtonRef = React.useRef<HTMLButtonElement>(null);
 
+  const tipId = React.useId();
+  const toggleButtonId = React.useId();
+
   React.useEffect(() => {
-    const handleClick = (event: MouseEvent) => {
+    const handleClickOutside = (event: MouseEvent) => {
       if (
         !$toggleButtonRef.current ||
-        $toggleButtonRef.current.contains(event.target as Node)
+        !(event.target instanceof Node) ||
+        $toggleButtonRef.current.contains(event.target)
       ) {
         return;
       }
@@ -41,10 +33,10 @@ export const Select: React.FC<Props> = ({
       setIsExpanded(false);
     };
 
-    document.addEventListener('click', handleClick);
+    document.addEventListener('click', handleClickOutside);
 
     return () => {
-      document.removeEventListener('click', handleClick);
+      document.removeEventListener('click', handleClickOutside);
     };
   }, []);
 
@@ -99,10 +91,10 @@ export const Select: React.FC<Props> = ({
           className={cn(style.toggleButton, {
             [style.toggleButton_hasPopup!]: isExpanded,
           })}
-          id={TOGGLE_BUTTON_ID}
+          id={toggleButtonId}
           aria-expanded={isExpanded}
           aria-haspopup="listbox"
-          aria-labelledby={`${tipId} ${TOGGLE_BUTTON_ID}`}
+          aria-labelledby={[tipId, toggleButtonId].join(' ')}
           onClick={() => {
             setIsExpanded((prev) => !prev);
           }}

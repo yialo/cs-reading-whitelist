@@ -1,21 +1,10 @@
 import * as React from 'react';
-import cn from 'clsx';
+import { cn } from '@/shared/lib/cn';
 import { Button, Select, TextInput } from '@/shared/ui';
 import type { WithClassName } from '@/shared/ui';
 import { FILTER, SORTING, type TFilter, type TSorting } from '../../config';
 import { ControlBarAmountMeter } from './amount-meter';
 import style from './style.scss';
-
-interface Props extends WithClassName {
-  filterTarget: TFilter;
-  searchString: string;
-  sortingTarget: TSorting;
-  totalAmount: number;
-  visibleAmount: number;
-  onFilterToggle: (filter: TFilter) => void;
-  onSearch: (value: string) => void;
-  onSortingToggle: (sorting: TSorting) => void;
-}
 
 const FILTER_DICT = {
   [FILTER.CAPTION]: 'заголовку',
@@ -36,7 +25,18 @@ const TIP_CHAR_DICT = {
 
 const sortingGroupLabelId = 'sorting-group-label';
 
-export const ControlBar: React.FC<Props> = ({
+export const ControlBar: React.FC<
+  WithClassName & {
+    filterTarget: TFilter;
+    searchString: string;
+    sortingTarget: TSorting;
+    totalAmount: number;
+    visibleAmount: number;
+    onFilterToggle: (filter: TFilter) => void;
+    onSearch: (value: string) => void;
+    onSortingToggle: (sorting: TSorting) => void;
+  }
+> = ({
   className,
   filterTarget,
   searchString,

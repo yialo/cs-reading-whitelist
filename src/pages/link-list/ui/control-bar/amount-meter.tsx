@@ -1,16 +1,10 @@
 import style from './style.scss';
 
-interface Props {
+export const ControlBarAmountMeter: React.FC<{
   totalAmount: number;
   visibleAmount: number;
   isFiltered: boolean;
-}
-
-export const ControlBarAmountMeter: React.FC<Props> = ({
-  totalAmount,
-  visibleAmount,
-  isFiltered,
-}) => {
+}> = ({ totalAmount, visibleAmount, isFiltered }) => {
   const isAllVisible = visibleAmount === totalAmount;
 
   return (

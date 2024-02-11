@@ -1,4 +1,4 @@
-import cn from 'clsx';
+import { cn } from '@/shared/lib/cn';
 import { Button, type ButtonProps } from './self';
 import style from './style.scss';
 

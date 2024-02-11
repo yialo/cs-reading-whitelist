@@ -1,12 +1,10 @@
 import style from './style.scss';
 
-interface Props {
+export const SubjectsItemLink: React.FC<{
   caption: string;
   lang: string;
   url: string;
-}
-
-export const SubjectsItemLink: React.FC<Props> = ({ caption, lang, url }) => {
+}> = ({ caption, lang, url }) => {
   return (
     <a className={style.link} href={url} hrefLang={lang} lang={lang}>
       {caption}

@@ -1,4 +1,4 @@
-import cn from 'clsx';
+import { cn } from '@/shared/lib/cn';
 import type { WithClassName } from '@/shared/ui';
 import style from './style.scss';
 

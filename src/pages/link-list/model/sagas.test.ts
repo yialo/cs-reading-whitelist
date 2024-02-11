@@ -1,6 +1,6 @@
 import { call, put } from 'redux-saga/effects';
 import { fetchLinkListWorker, getSubjectsFromApi } from './sagas';
-import { fetchSuccess } from './slice';
+import { linkListSlice } from './slice';
 
 describe('fetchLinkListWorker step-by-step test', () => {
   const gen = fetchLinkListWorker();
@@ -19,7 +19,7 @@ describe('fetchLinkListWorker step-by-step test', () => {
 
     const result = gen.next(responseDataMock).value;
 
-    const expected = put(fetchSuccess([]));
+    const expected = put(linkListSlice.actions.fetchSuccess([]));
 
     expect(result).toEqual(expected);
   });
