@@ -5,7 +5,7 @@ import type { SeriesSubject } from '@/entities/subject';
 import { KEYBOARD_KEY } from '@/shared/config';
 import { includes } from '@/shared/lib/typing';
 import type { WithClassName } from '@/shared/ui';
-import { selectSearchString } from '../../../model/selectors';
+import { linkListSlice } from '../../../model/slice';
 import { SubjectsItemAppendix } from './appendix';
 import { SubjectsItemLink } from './link';
 import style from './style.scss';
@@ -19,7 +19,7 @@ const BUTTON_KEYS = [KEYBOARD_KEY.ENTER, KEYBOARD_KEY.SPACE] as const;
 export const SeriesSubjectsItem: React.FC<Props> = ({ className, subject }) => {
   const { caption, lang, legend, series, tags } = subject;
 
-  const isEmptySearch = !!useSelector(selectSearchString);
+  const isEmptySearch = !!useSelector(linkListSlice.selectors.searchString);
   const [state, setState] = React.useState({ isExpanded: false });
 
   const hasNoStateChangesYetRef = React.useRef(true);
