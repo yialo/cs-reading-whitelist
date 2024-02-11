@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { useStrictContext } from '@/shared/hooks';
 
-type ThemeName = 'light' | 'dark';
-type ThemeDispatch = React.Dispatch<React.SetStateAction<ThemeName>>;
+type Theme = 'light' | 'dark';
+type ThemeDispatch = React.Dispatch<React.SetStateAction<Theme>>;
 
-const ThemeStateContext = React.createContext<ThemeName | undefined>(undefined);
+const ThemeStateContext = React.createContext<Theme | undefined>(undefined);
 ThemeStateContext.displayName = 'ThemeStateContext';
 
 const ThemeUpdaterContext = React.createContext<ThemeDispatch | undefined>(
@@ -14,14 +14,17 @@ ThemeUpdaterContext.displayName = 'ThemeUpdaterContext';
 
 const THEME_LS_KEY = 'ui-theme';
 
-const getInitialTheme = (): ThemeName => {
-  let theme = localStorage.getItem(THEME_LS_KEY) as ThemeName | null;
+const isTheme = (maybeTheme: string | null): maybeTheme is Theme =>
+  maybeTheme === 'light' || maybeTheme === 'dark';
 
-  if (!theme) {
-    theme = 'light';
+const getInitialTheme = (): Theme => {
+  const theme = localStorage.getItem(THEME_LS_KEY);
+
+  if (isTheme(theme)) {
+    return theme;
   }
 
-  return theme;
+  return 'light';
 };
 
 interface ThemeProviderProps {
@@ -54,9 +57,7 @@ export const useThemeToggle = () => {
   const setTheme = useStrictContext(ThemeUpdaterContext);
 
   const toggleTheme = React.useCallback(() => {
-    setTheme((prevTheme: ThemeName) =>
-      prevTheme === 'dark' ? 'light' : 'dark',
-    );
+    setTheme((prevTheme: Theme) => (prevTheme === 'dark' ? 'light' : 'dark'));
   }, [setTheme]);
 
   return toggleTheme;
