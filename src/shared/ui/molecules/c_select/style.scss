@@ -1,4 +1,4 @@
-@use "@/scss/utils";
+@use '@/shared/scss/utils';
 
 .root {
   display: flex;
@@ -34,7 +34,7 @@
   background-color: utils.$color-gray;
 
   &::after {
-    content: "";
+    content: '';
     position: relative;
     top: 5px;
     border-style: solid;
@@ -51,7 +51,7 @@
 }
 
 .list {
-  composes: list from "@/scss/scaffold.scss";
+  composes: list from '@/shared/scss/scaffold.scss';
 
   position: absolute;
   z-index: 1;

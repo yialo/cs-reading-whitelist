@@ -3,6 +3,7 @@ import cn from 'clsx';
 import { debounce } from 'lodash-es';
 import { createPortal } from 'react-dom';
 import { ThemeToggle } from '@/features/toggle-theme';
+import { DOM_ID } from '@/shared/config';
 import { Button, useHasDarkTheme } from '@/shared/ui';
 import type { WithClassName } from '@/shared/ui';
 import { AppNavMenu } from './nav-menu';
@@ -16,7 +17,7 @@ const GO_TOP_BUTTON_SHIFT = {
   STICKY: 60,
 };
 
-const $pageRoot = document.querySelector('.Page-Root');
+const getAppRoot = () => document.querySelector(DOM_ID.APP_ROOT);
 
 export const RootHeader: React.FC<WithClassName> = ({ className }) => {
   const [isScrolledEnough, setIsScrolledEnough] = React.useState(false);
@@ -26,30 +27,30 @@ export const RootHeader: React.FC<WithClassName> = ({ className }) => {
 
   const hasDarkTheme = useHasDarkTheme();
 
-  const ref_$goTopButtonContainer = React.useRef(document.createElement('div'));
+  const goTopButtonContainerRef = React.useRef(document.createElement('div'));
 
   React.useEffect(() => {
-    const $container = ref_$goTopButtonContainer.current;
-
-    document.body.appendChild($container);
+    const container = goTopButtonContainerRef.current;
+    document.body.appendChild(container);
 
     return () => {
-      document.body.removeChild($container);
+      document.body.removeChild(container);
     };
   }, []);
 
   React.useEffect(() => {
-    if (!($pageRoot instanceof HTMLDivElement)) {
+    const appRoot = getAppRoot();
+
+    if (!(appRoot instanceof HTMLDivElement)) {
       return;
     }
 
     const handleScroll = debounce(() => {
-      const shouldBeTranslucent = $pageRoot.scrollTop > SCROLL_TOP_THRESHOLD;
+      const shouldBeTranslucent = appRoot.scrollTop > SCROLL_TOP_THRESHOLD;
       setIsScrolledEnough(shouldBeTranslucent);
 
       const shouldGoTopButtonBeSticky =
-        $pageRoot.scrollHeight -
-          ($pageRoot.scrollTop + $pageRoot.offsetHeight) <
+        appRoot.scrollHeight - (appRoot.scrollTop + appRoot.offsetHeight) <
         GO_TOP_BUTTON_SHIFT.STICKY;
 
       setgoTopButtonBottomShift(
@@ -59,11 +60,11 @@ export const RootHeader: React.FC<WithClassName> = ({ className }) => {
       );
     }, SCROLL_DEBOUNCE_DELAY);
 
-    $pageRoot.addEventListener('scroll', handleScroll);
+    appRoot.addEventListener('scroll', handleScroll);
 
     return () => {
       handleScroll.cancel();
-      $pageRoot.removeEventListener('scroll', handleScroll);
+      appRoot.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -81,13 +82,13 @@ export const RootHeader: React.FC<WithClassName> = ({ className }) => {
           })}
           disabled={!isScrolledEnough}
           onClick={() => {
-            $pageRoot?.scrollTo({ top: 0 });
+            getAppRoot()?.scrollTo({ top: 0 });
           }}
         />
       </div>
     );
 
-    return createPortal(goTopButton, ref_$goTopButtonContainer.current);
+    return createPortal(goTopButton, goTopButtonContainerRef.current);
   };
 
   return (

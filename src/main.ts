@@ -1,4 +1,4 @@
-import '@/scss/index.scss';
-import { init } from './app';
+import '@/shared/scss/index.scss';
+import { init } from './app/ui';
 
 init();

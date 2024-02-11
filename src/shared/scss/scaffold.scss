@@ -1,4 +1,4 @@
-@use "@/scss/utils";
+@use '@/shared/scss/utils';
 
 .headline {
   margin-block: 0;
@@ -32,8 +32,8 @@
   @at-root {
     &:not(:active),
     &:not(:focus),
-    input#{&}[type="checkbox"],
-    input#{&}[type="radio"] {
+    input#{&}[type='checkbox'],
+    input#{&}[type='radio'] {
       @include utils.visuallyHiding();
     }
   }

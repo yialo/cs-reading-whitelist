@@ -19,7 +19,7 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const PATH = {
   SRC: path.join(__dirname, 'src'),
   DIST: path.join(__dirname, 'dist'),
-  STATIC: path.join(__dirname, 'static'),
+  STATIC_JSON: path.join(__dirname, 'src/static/json'),
   CSS_MODULES_IDENT_CONTEXT: path.join(__dirname, 'src/ts'),
 };
 
@@ -28,6 +28,10 @@ const SERVER_DEFAULTS = {
   PORT: 9050,
 };
 
+/**
+ * @param {Object.<string, any>} [env]
+ * @returns {import('webpack').Configuration}
+ */
 module.exports = (env = {}) => {
   const {
     analyze: needAnalyze,
@@ -78,9 +82,6 @@ module.exports = (env = {}) => {
               ? (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/)
               : false,
           },
-          static: {
-            directory: PATH.STATIC,
-          },
         }
       : {},
 
@@ -94,6 +95,7 @@ module.exports = (env = {}) => {
 
     module: {
       rules: (() => {
+        /** @type {import('webpack').RuleSetRule} */
         const scriptLoaderRule = {
           test: /\.(?:j|t)sx?$/,
           loader: 'babel-loader',
@@ -103,6 +105,7 @@ module.exports = (env = {}) => {
           },
         };
 
+        /** @type {import('webpack').RuleSetRule} */
         const templateLoaderRule = {
           test: /\.html$/,
           loader: 'html-loader',
@@ -111,6 +114,7 @@ module.exports = (env = {}) => {
           },
         };
 
+        /** @type {import('webpack').RuleSetRule} */
         const styleLoaderRule = {
           test: /\.s?css$/,
           use: [
@@ -153,6 +157,7 @@ module.exports = (env = {}) => {
           ],
         };
 
+        /** @returns {import('webpack').RuleSetRule} */
         const createAssetResourceRule = ({ testRegexp, outputSubdir }) => ({
           test: testRegexp,
           type: 'asset/resource',
@@ -178,6 +183,7 @@ module.exports = (env = {}) => {
     },
 
     optimization: (() => {
+      /** @type {import('webpack').Configuration['optimization']} */
       const optimizationConfig = {
         chunkIds: isProduction ? 'deterministic' : 'named',
         emitOnErrors: false,
@@ -263,13 +269,13 @@ module.exports = (env = {}) => {
         }),
         new HtmlPlugin({
           filename: 'index.html',
-          template: path.join(PATH.SRC, 'html/index.html'),
-          favicon: path.join(PATH.SRC, 'favicons/favicon.ico'),
+          template: path.join(PATH.SRC, 'static/html/index.html'),
+          favicon: path.join(PATH.SRC, 'static/favicons/favicon.ico'),
         }),
         new CopyPlugin({
           patterns: [
             {
-              from: PATH.STATIC,
+              from: PATH.STATIC_JSON,
               to: path.join(PATH.DIST, 'data'),
             },
           ],
@@ -315,6 +321,7 @@ module.exports = (env = {}) => {
       return pluginList;
     })(),
 
+    /** @type {import('webpack').Configuration['resolve']} */
     resolve: (() => {
       const alias = {
         '@': PATH.SRC,

@@ -1,19 +1,13 @@
 import * as React from 'react';
 import cn from 'clsx';
 import { useLocation } from 'react-router-dom';
+import { DOM_ID } from '@/shared/config';
 import { usePrevious } from '@/shared/hooks';
 import { useHasDarkTheme } from '@/shared/ui';
 import { RootFooter } from './footer';
 import { RootHeader } from './header';
 import { PageSwitcher } from './page-switcher';
 import style from './self.scss';
-
-const $pageRoot = document.querySelector('.Page-Root');
-
-const disableOverlay = () => {
-  const $overlay = document.getElementById('overlay');
-  $overlay?.remove();
-};
 
 export const Root: React.FC = () => {
   const { pathname } = useLocation();
@@ -22,12 +16,15 @@ export const Root: React.FC = () => {
   const hasDarkTheme = useHasDarkTheme();
 
   React.useEffect(() => {
-    disableOverlay();
+    const overlay = document.getElementById('page-overlay');
+    overlay?.remove();
   }, []);
 
   React.useEffect(() => {
-    if ($pageRoot && pathname !== prevPathName) {
-      $pageRoot.scrollTo({ top: 0 });
+    const appRoot = document.getElementById(DOM_ID.APP_ROOT);
+
+    if (appRoot && pathname !== prevPathName) {
+      appRoot.scrollTo({ top: 0 });
     }
   }, [pathname, prevPathName]);
 
