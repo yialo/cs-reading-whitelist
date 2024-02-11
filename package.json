@@ -2,7 +2,7 @@
   "name": "cs-reading-whitelist",
   "private": true,
   "scripts": {
-    "start": "npm run dev",
+    "start": "npm run dev -- --env open",
     "build": "webpack -c ./webpack.config.cjs --env target=production",
     "build:analyze": "npm run build -- --env analyze",
     "build:profiling": "npm run build -- --env profiling",
