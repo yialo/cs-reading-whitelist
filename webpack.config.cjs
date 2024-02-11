@@ -19,7 +19,7 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const PATH = {
   SRC: path.join(__dirname, 'src'),
   DIST: path.join(__dirname, 'dist'),
-  STATIC: path.join(__dirname, 'static'),
+  STATIC_JSON: path.join(__dirname, 'src/static/json'),
   CSS_MODULES_IDENT_CONTEXT: path.join(__dirname, 'src/ts'),
 };
 
@@ -81,9 +81,6 @@ module.exports = (env = {}) => {
             writeToDisk: write
               ? (filePath) => !filePath.match(/\.hot-update\.js(?:on|\.map)?$/)
               : false,
-          },
-          static: {
-            directory: PATH.STATIC,
           },
         }
       : {},
@@ -272,13 +269,13 @@ module.exports = (env = {}) => {
         }),
         new HtmlPlugin({
           filename: 'index.html',
-          template: path.join(PATH.SRC, 'html/index.html'),
-          favicon: path.join(PATH.SRC, 'favicons/favicon.ico'),
+          template: path.join(PATH.SRC, 'static/html/index.html'),
+          favicon: path.join(PATH.SRC, 'static/favicons/favicon.ico'),
         }),
         new CopyPlugin({
           patterns: [
             {
-              from: PATH.STATIC,
+              from: PATH.STATIC_JSON,
               to: path.join(PATH.DIST, 'data'),
             },
           ],
