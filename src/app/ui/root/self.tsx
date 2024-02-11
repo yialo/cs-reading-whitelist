@@ -1,6 +1,7 @@
 import * as React from 'react';
 import cn from 'clsx';
 import { useLocation } from 'react-router-dom';
+import { DOM_ID } from '@/shared/config';
 import { usePrevious } from '@/shared/hooks';
 import { useHasDarkTheme } from '@/shared/ui';
 import { RootFooter } from './footer';
@@ -20,7 +21,7 @@ export const Root: React.FC = () => {
   }, []);
 
   React.useEffect(() => {
-    const appRoot = document.getElementById('app-root');
+    const appRoot = document.getElementById(DOM_ID.APP_ROOT);
 
     if (appRoot && pathname !== prevPathName) {
       appRoot.scrollTo({ top: 0 });

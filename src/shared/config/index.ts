@@ -27,3 +27,7 @@ export const ROUTE = {
 } as const;
 
 export type Route = Values<typeof ROUTE>;
+
+export const DOM_ID = {
+  APP_ROOT: 'app-root',
+} as const;
