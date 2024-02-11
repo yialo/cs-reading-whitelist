@@ -31,27 +31,14 @@ export const Subjects: React.FC<Props> = ({
   return (
     <div className={cn(style.root, className)}>
       <ul className={style.list}>
-        {list.map((subject, i, arr) => {
-          const itemClassName =
-            style[i === arr.length - 1 ? 'item_last' : 'item'];
-
+        {list.map((subject) => {
           if (isSeries(subject)) {
             return (
-              <SeriesSubjectsItem
-                key={subject.caption}
-                className={itemClassName}
-                subject={subject}
-              />
+              <SeriesSubjectsItem key={subject.caption} subject={subject} />
             );
           }
 
-          return (
-            <SingleSubjectsItem
-              key={subject.caption}
-              className={itemClassName}
-              subject={subject}
-            />
-          );
+          return <SingleSubjectsItem key={subject.caption} subject={subject} />;
         })}
       </ul>
       {!isLastPage && (
