@@ -64,9 +64,8 @@ const selectFilteredList = createSelector(
 
           return (
             hasMatchInMainTags ||
-            item.series?.some(
-              (it) =>
-                it.tags?.some((tag) => tag.toLowerCase().includes(matcher)),
+            item.series?.some((it) =>
+              it.tags?.some((tag) => tag.toLowerCase().includes(matcher)),
             )
           );
         }
