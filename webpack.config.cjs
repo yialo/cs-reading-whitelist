@@ -107,15 +107,6 @@ module.exports = (env = {}) => {
         };
 
         /** @type {import('webpack').RuleSetRule} */
-        const templateLoaderRule = {
-          test: /\.html$/,
-          loader: 'html-loader',
-          options: {
-            minimize: isProduction,
-          },
-        };
-
-        /** @type {import('webpack').RuleSetRule} */
         const styleLoaderRule = {
           test: /\.s?css$/,
           use: [
@@ -166,7 +157,6 @@ module.exports = (env = {}) => {
 
         return [
           scriptLoaderRule,
-          templateLoaderRule,
           styleLoaderRule,
           createAssetResourceRule({
             testRegexp: /\.(jpe?g|png|svg)$/,
@@ -269,6 +259,19 @@ module.exports = (env = {}) => {
           filename: 'index.html',
           template: path.join(PATH.SRC, 'static/html/index.html'),
           favicon: path.join(PATH.SRC, 'static/favicons/favicon.ico'),
+          minify: isProduction
+            ? {
+                collapseWhitespace: true,
+                keepClosingSlash: false,
+                minifyCSS: true,
+                minifyJS: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true,
+              }
+            : false,
         }),
         new CopyPlugin({
           patterns: [
