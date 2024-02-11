@@ -1,10 +1,13 @@
 export const generateRtkSliceId = (() => {
   let count = 1;
 
-  return (sliceName = '') => {
-    const suffix = sliceName ? `[${sliceName}]` : '';
-    const id = `s${count}${suffix}`;
+  return (sliceName: string) => {
+    const trimmed = sliceName.trim();
+    const base = trimmed ? `${trimmed}_` : '';
+    const suffix = `(s${count})`;
+
     count += 1;
-    return id;
+
+    return `${base}${suffix}`;
   };
 })();
