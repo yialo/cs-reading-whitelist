@@ -8,13 +8,6 @@ import { RootHeader } from './header';
 import { PageSwitcher } from './page-switcher';
 import style from './self.scss';
 
-const $pageRoot = document.querySelector('.Page-Root');
-
-const disableOverlay = () => {
-  const $overlay = document.getElementById('overlay');
-  $overlay?.remove();
-};
-
 export const Root: React.FC = () => {
   const { pathname } = useLocation();
   const prevPathName = usePrevious(pathname);
@@ -22,12 +15,15 @@ export const Root: React.FC = () => {
   const hasDarkTheme = useHasDarkTheme();
 
   React.useEffect(() => {
-    disableOverlay();
+    const overlay = document.getElementById('page-overlay');
+    overlay?.remove();
   }, []);
 
   React.useEffect(() => {
-    if ($pageRoot && pathname !== prevPathName) {
-      $pageRoot.scrollTo({ top: 0 });
+    const appRoot = document.getElementById('app-root');
+
+    if (appRoot && pathname !== prevPathName) {
+      appRoot.scrollTo({ top: 0 });
     }
   }, [pathname, prevPathName]);
 
