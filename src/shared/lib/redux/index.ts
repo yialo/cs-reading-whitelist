@@ -1,2 +1,2 @@
-export { RtkReducerManager } from './rtk-reducer-manager';
+export { RtkReducerRegistry } from './rtk-reducer-registry';
 export { generateRtkSliceId } from './generate-rtk-slice-id';
