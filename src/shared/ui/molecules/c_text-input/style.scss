@@ -1,5 +1,5 @@
-@use "sass:math";
-@use "@/scss/utils";
+@use 'sass:math';
+@use '@/shared/scss/utils';
 
 $borderWidth: 1px;
 $border: $borderWidth solid utils.$color-lightGray;
@@ -73,7 +73,7 @@ $height: $fontSize * $lineHeight + ($padding + $borderWidth) * 2;
     $stick-width: math.div($height, 2);
     $stick-height: 1px;
 
-    content: "";
+    content: '';
     position: absolute;
     top: calc(50% - math.div($stick-height, 2));
     left: calc(50% - math.div($stick-width, 2));

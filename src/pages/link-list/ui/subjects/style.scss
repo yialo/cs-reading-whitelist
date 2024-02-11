@@ -1,5 +1,5 @@
-@use "sass:color";
-@use "@/scss/utils";
+@use 'sass:color';
+@use '@/shared/scss/utils';
 
 .root {
   line-height: 1.25;
@@ -31,7 +31,7 @@
 }
 
 .list {
-  composes: list from "@/scss/scaffold.scss";
+  composes: list from '@/shared/scss/scaffold.scss';
   display: flex;
   flex-direction: column;
 }

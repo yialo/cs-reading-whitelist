@@ -1,4 +1,4 @@
-import '@/scss/index.scss';
+import '@/shared/scss/index.scss';
 import { init } from './app';
 
 init();

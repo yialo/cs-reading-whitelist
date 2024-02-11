@@ -1,4 +1,4 @@
-@use "@/scss/utils";
+@use '@/shared/scss/utils';
 
 .root {
   display: flex;
@@ -72,7 +72,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       width: $arrow-semiWidth * 2;
       height: $arrow-height;
       border-style: solid;
@@ -81,7 +81,7 @@
     }
 
     &::after {
-      content: "";
+      content: '';
       width: 12px;
       height: 20px;
       background-color: var(--color_arrow);

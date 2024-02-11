@@ -1,4 +1,4 @@
-@use "@/scss/utils";
+@use '@/shared/scss/utils';
 
 .root_series {
   --size_triangle: 16px;
@@ -33,7 +33,7 @@
 }
 
 .link {
-  composes: link from "@/scss/scaffold.scss";
+  composes: link from '@/shared/scss/scaffold.scss';
 }
 
 .seriesButton {
@@ -46,7 +46,7 @@
   cursor: pointer;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: calc(50% - var(--size_halfTriangle));
     left: var(--size_halfTriangle);
@@ -62,7 +62,7 @@
 }
 
 .seriesList {
-  composes: list from "@/scss/scaffold.scss";
+  composes: list from '@/shared/scss/scaffold.scss';
   display: grid;
   row-gap: 8px;
   margin-block-start: 8px;
@@ -76,7 +76,7 @@
     // TODO: add abstraction for more precise size and position calculation
     $size: 6px;
 
-    content: "";
+    content: '';
     position: absolute;
     width: $size;
     height: $size;
@@ -93,7 +93,7 @@
 }
 
 .tags {
-  composes: list from "@/scss/scaffold.scss";
+  composes: list from '@/shared/scss/scaffold.scss';
   display: inline;
   font-style: italic;
 }

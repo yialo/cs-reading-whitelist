@@ -1,4 +1,4 @@
-@use "@/scss/utils";
+@use '@/shared/scss/utils';
 
 .root {
   display: flex;
@@ -25,7 +25,7 @@
 }
 
 .headline {
-  composes: headline from "@/scss/scaffold.scss";
+  composes: headline from '@/shared/scss/scaffold.scss';
 }
 
 .subjects {

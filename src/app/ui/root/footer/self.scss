@@ -1,4 +1,4 @@
-@use "@/scss/utils";
+@use '@/shared/scss/utils';
 
 .root {
   padding: 16px var(--size_paddingX);
@@ -6,11 +6,11 @@
 }
 
 .link {
-  composes: link from "@/scss/scaffold.scss";
+  composes: link from '@/shared/scss/scaffold.scss';
 }
 
 .list {
-  composes: list from "@/scss/scaffold.scss";
+  composes: list from '@/shared/scss/scaffold.scss';
 
   display: grid;
   justify-content: center;
