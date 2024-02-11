@@ -90,7 +90,7 @@
     "webpack-dev-server": "4.15.1"
   },
   "engines": {
-    "node": "18 || 20"
+    "node": "20"
   },
   "author": "Aleksei Arro <polsck@gmail.com>",
   "repository": {
