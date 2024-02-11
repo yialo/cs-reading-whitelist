@@ -58,8 +58,10 @@ export const SeriesSubjectsItem: React.FC<
         >
           {caption}
         </span>
+
         <SubjectsItemAppendix {...{ lang, legend, tags }} />
       </div>
+
       {isExpanded && (
         <ul className={style.seriesList}>
           {series.map(
