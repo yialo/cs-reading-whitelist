@@ -1,12 +1,16 @@
 import * as React from 'react';
+import { useStrictContext } from '@/shared/hooks';
 
 type ThemeName = 'light' | 'dark';
 type ThemeDispatch = React.Dispatch<React.SetStateAction<ThemeName>>;
 
 const ThemeStateContext = React.createContext<ThemeName | undefined>(undefined);
+ThemeStateContext.displayName = 'ThemeStateContext';
+
 const ThemeUpdaterContext = React.createContext<ThemeDispatch | undefined>(
   undefined,
 );
+ThemeUpdaterContext.displayName = 'ThemeUpdaterContext';
 
 const THEME_LS_KEY = 'ui-theme';
 
@@ -37,11 +41,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 };
 
 export const useHasDarkTheme = () => {
-  const theme = React.useContext(ThemeStateContext);
-
-  if (theme === undefined) {
-    throw new Error('useThemeState must be used within a ThemeProvider');
-  }
+  const theme = useStrictContext(ThemeStateContext);
 
   React.useEffect(() => {
     localStorage.setItem(THEME_LS_KEY, theme);
@@ -51,11 +51,7 @@ export const useHasDarkTheme = () => {
 };
 
 export const useThemeToggle = () => {
-  const setTheme = React.useContext(ThemeUpdaterContext);
-
-  if (setTheme === undefined) {
-    throw new Error('useThemeToggle must be used within a ThemeProvider');
-  }
+  const setTheme = useStrictContext(ThemeUpdaterContext);
 
   const toggleTheme = React.useCallback(() => {
     setTheme((prevTheme: ThemeName) =>
