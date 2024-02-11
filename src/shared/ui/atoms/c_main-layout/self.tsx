@@ -1,9 +1,7 @@
 import style from './self.scss';
 
-interface MainLayoutProps {
+export const MainLayout: React.FC<{
   children: React.ReactNode;
-}
-
-export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+}> = ({ children }) => {
   return <main className={style.root}>{children}</main>;
 };
