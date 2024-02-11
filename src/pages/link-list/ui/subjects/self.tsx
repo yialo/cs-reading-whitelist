@@ -1,9 +1,9 @@
-import cn from 'clsx';
 import type { Subject } from '@/entities/subject';
+import { cn } from '@/shared/lib/cn';
 import { MainButton } from '@/shared/ui';
 import type { WithClassName } from '@/shared/ui';
 import { SubjectsFallbackMessage } from './fallback-message';
-import { renderSubjectsItem } from './item';
+import { SeriesSubjectsItem, SingleSubjectsItem, isSeries } from './item';
 import style from './style.scss';
 
 interface Props extends WithClassName {
@@ -31,12 +31,28 @@ export const Subjects: React.FC<Props> = ({
   return (
     <div className={cn(style.root, className)}>
       <ul className={style.list}>
-        {list.map((subject, i, arr) =>
-          renderSubjectsItem({
-            className: style[i === arr.length - 1 ? 'item_last' : 'item'],
-            subject,
-          }),
-        )}
+        {list.map((subject, i, arr) => {
+          const itemClassName =
+            style[i === arr.length - 1 ? 'item_last' : 'item'];
+
+          if (isSeries(subject)) {
+            return (
+              <SeriesSubjectsItem
+                key={subject.caption}
+                className={itemClassName}
+                subject={subject}
+              />
+            );
+          }
+
+          return (
+            <SingleSubjectsItem
+              key={subject.caption}
+              className={itemClassName}
+              subject={subject}
+            />
+          );
+        })}
       </ul>
       {!isLastPage && (
         <MainButton className={style.button} onClick={onShowMoreClick}>

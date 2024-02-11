@@ -1,5 +1,5 @@
 import * as React from 'react';
-import cn from 'clsx';
+import { cn } from '@/shared/lib/cn';
 import { Button, Select, TextInput } from '@/shared/ui';
 import type { WithClassName } from '@/shared/ui';
 import { FILTER, SORTING, type TFilter, type TSorting } from '../../config';

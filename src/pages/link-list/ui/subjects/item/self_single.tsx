@@ -3,11 +3,11 @@ import type { WithClassName } from '@/shared/ui';
 import { SubjectsItemAppendix } from './appendix';
 import { SubjectsItemLink } from './link';
 
-interface Props extends WithClassName {
-  subject: SingleSublect;
-}
-
-export const SingleSubjectsItem: React.FC<Props> = ({ className, subject }) => {
+export const SingleSubjectsItem: React.FC<
+  WithClassName & {
+    subject: SingleSublect;
+  }
+> = ({ className, subject }) => {
   const { caption, lang, legend, tags, url } = subject;
 
   return (

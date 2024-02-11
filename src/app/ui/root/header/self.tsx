@@ -1,9 +1,9 @@
 import * as React from 'react';
-import cn from 'clsx';
 import { debounce } from 'lodash-es';
 import { createPortal } from 'react-dom';
 import { ThemeToggle } from '@/features/toggle-theme';
 import { DOM_ID } from '@/shared/config';
+import { cn } from '@/shared/lib/cn';
 import { Button, useHasDarkTheme } from '@/shared/ui';
 import type { WithClassName } from '@/shared/ui';
 import { AppNavMenu } from './nav-menu';

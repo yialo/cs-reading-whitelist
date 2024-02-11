@@ -1,4 +1,4 @@
-import cn from 'clsx';
+import { cn } from '@/shared/lib/cn';
 import style from './style.scss';
 
 interface Props {

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import cn from 'clsx';
 import { KEYBOARD_KEY } from '@/shared/config';
+import { cn } from '@/shared/lib/cn';
 import type { WithClassName } from '@/shared/ui';
 import { Button } from '../../atoms';
 import style from './style.scss';

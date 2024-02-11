@@ -1,5 +1,5 @@
 import * as React from 'react';
-import cn from 'clsx';
+import { cn } from '@/shared/lib/cn';
 import style from './style.scss';
 
 export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
