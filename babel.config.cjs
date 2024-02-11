@@ -15,7 +15,7 @@ module.exports = {
     [
       '@babel/preset-env',
       {
-        corejs: '3.34',
+        corejs: '3.35',
         modules: process.env.BABEL_ENV === 'test' ? 'auto' : false,
         useBuiltIns: 'usage',
       },
