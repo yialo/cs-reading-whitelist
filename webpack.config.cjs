@@ -149,9 +149,6 @@ module.exports = (env = {}) => {
             {
               loader: 'sass-loader',
               options: {
-                sassOptions: {
-                  fiber: false,
-                },
                 sourceMap: true,
               },
             },
