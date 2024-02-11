@@ -30,10 +30,11 @@ export const Select: React.FC<Props> = ({
   const $toggleButtonRef = React.useRef<HTMLButtonElement>(null);
 
   React.useEffect(() => {
-    const handleClick = (event: MouseEvent) => {
+    const handleClickOutside = (event: MouseEvent) => {
       if (
         !$toggleButtonRef.current ||
-        $toggleButtonRef.current.contains(event.target as Node)
+        !(event.target instanceof Node) ||
+        $toggleButtonRef.current.contains(event.target)
       ) {
         return;
       }
@@ -41,10 +42,10 @@ export const Select: React.FC<Props> = ({
       setIsExpanded(false);
     };
 
-    document.addEventListener('click', handleClick);
+    document.addEventListener('click', handleClickOutside);
 
     return () => {
-      document.removeEventListener('click', handleClick);
+      document.removeEventListener('click', handleClickOutside);
     };
   }, []);
 
