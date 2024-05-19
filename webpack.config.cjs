@@ -122,6 +122,7 @@ module.exports = (env = {}) => {
                   localIdentName: isProduction
                     ? '[hash:base64]'
                     : '[path][local]',
+                  namedExport: false,
                 },
                 esModule: true,
                 importLoaders: 2,
