@@ -1,5 +1,6 @@
 # Todo list
 
+- [build] Fix `serve` npm script
 - Add `useTransition` to text input
 - [feat] Save search query in search param
 - Add extended favicon set
