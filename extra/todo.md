@@ -1,5 +1,6 @@
 # Todo list
 
+- [style] Replace prettier plugin for imports
 - [build] Fix `serve` npm script
 - Add `useTransition` to text input
 - [feat] Save search query in search param
