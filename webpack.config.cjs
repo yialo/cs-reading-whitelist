@@ -20,7 +20,7 @@ const PATH = {
   SRC: path.join(__dirname, 'src'),
   DIST: path.join(__dirname, 'dist'),
   STATIC_JSON: path.join(__dirname, 'src/static/json'),
-  CSS_MODULES_IDENT_CONTEXT: path.join(__dirname, 'src/ts'),
+  CSS_MODULES_IDENT_CONTEXT: path.join(__dirname, 'src'),
 };
 
 const SERVER_DEFAULTS = {
@@ -111,12 +111,20 @@ module.exports = (env = {}) => {
           test: /\.s?css$/,
           use: [
             CssExtractPlugin.loader,
+            isDevelopment
+              ? {
+                  loader: '@teamsupercell/typings-for-css-modules-loader',
+                  options: {
+                    disableLocalsExport: true,
+                  },
+                }
+              : null,
             {
               loader: 'css-loader',
               options: {
                 modules: {
                   exportGlobals: true,
-                  exportLocalsConvention: 'asIs',
+                  exportLocalsConvention: 'as-is',
                   exportOnlyLocals: false,
                   localIdentContext: PATH.CSS_MODULES_IDENT_CONTEXT,
                   localIdentName: isProduction
@@ -144,7 +152,7 @@ module.exports = (env = {}) => {
                 sourceMap: true,
               },
             },
-          ],
+          ].filter(Boolean),
         };
 
         /** @returns {import('webpack').RuleSetRule} */
