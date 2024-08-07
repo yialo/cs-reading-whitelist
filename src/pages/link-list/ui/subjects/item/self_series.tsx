@@ -43,7 +43,7 @@ export const SeriesSubjectsItem: React.FC<
         [style.isExpanded!]: isExpanded,
       })}
     >
-      <div className={style.series}>
+      <div>
         <span
           className={style.seriesButton}
           role="button"

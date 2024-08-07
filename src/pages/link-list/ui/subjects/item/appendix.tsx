@@ -2,13 +2,13 @@ import { cn } from '@/shared/lib/cn';
 import style from './style.scss';
 
 export const SubjectsItemAppendix: React.FC<{
-  lang: string | undefined;
+  lang: 'en' | 'ru' | undefined;
   legend: string | undefined;
   tags: string[] | undefined;
-}> = ({ lang = '', legend = '', tags = [] }) => {
+}> = ({ lang, legend = '', tags = [] }) => {
   return (
     <>
-      {Boolean(lang) && (
+      {!!lang && (
         <>
           {' '}
           <span className={cn(style[`langBadge_${lang}`])}>{lang}</span>

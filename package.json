@@ -50,6 +50,7 @@
     "@babel/preset-typescript": "7.24.7",
     "@babel/runtime-corejs3": "7.24.7",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.15",
+    "@teamsupercell/typings-for-css-modules-loader": "2.5.2",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@types/jest": "29.5.12",
     "@types/lodash-es": "4.17.12",
@@ -95,5 +96,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yialo/cs-reading-whitelist.git"
-  }
+  },
+  "packageManager": "npm@10.8.2+sha512.c7f0088c520a46596b85c6f8f1da943400199748a0f7ea8cb8df75469668dc26f6fb3ba26df87e2884a5ebe91557292d0f3db7d0929cdb4f14910c3032ac81fb"
 }
