@@ -40,6 +40,7 @@ module.exports = (env = {}) => {
     target,
     write,
     open: shouldOpen = false,
+    local = false,
   } = env;
 
   process.env.BABEL_ENV = target;
@@ -51,7 +52,14 @@ module.exports = (env = {}) => {
   const assetHash = isProduction ? '.[contenthash]' : '';
 
   dotEnv.config({
-    path: path.join(__dirname, `.env.${isProfiling ? 'profiling' : target}`),
+    path: path.join(
+      __dirname,
+      `.env.${(() => {
+        if (isProfiling) return 'profiling';
+        if (local) return 'development';
+        return target;
+      })()}`,
+    ),
   });
 
   const stats = {
