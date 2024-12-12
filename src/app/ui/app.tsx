@@ -1,7 +1,9 @@
 import { Provider as ReduxProvider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router';
+
 import { configureStore } from '@/app/store';
 import { ThemeProvider } from '@/shared/ui';
+
 import { ErrorBoundary } from './error-boundary';
 import { Root } from './root';
 

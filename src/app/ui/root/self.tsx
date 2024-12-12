@@ -1,9 +1,11 @@
 import * as React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router';
+
 import { DOM_ID } from '@/shared/config';
 import { usePrevious } from '@/shared/hooks';
 import { cn } from '@/shared/lib/cn';
 import { useHasDarkTheme } from '@/shared/ui';
+
 import { RootFooter } from './footer';
 import { RootHeader } from './header';
 import { PageSwitcher } from './page-switcher';
