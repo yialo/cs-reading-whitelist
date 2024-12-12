@@ -12,4 +12,11 @@ module.exports = {
     './docs/**',
     './node_modules/**',
   ],
+  reports: {
+    reportInvalidScopeDisables: true,
+    reportNeedlessDisables: true,
+  },
+  customSyntax: 'postcss-scss',
+  plugins: ['stylelint-scss'],
+  rules: {},
 };

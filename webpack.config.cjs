@@ -9,7 +9,6 @@ const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const dotEnv = require('dotenv');
-const TsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const CssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -303,16 +302,6 @@ module.exports = (env = {}) => {
           __GLOBAL_ENV_VARIABLE__PUBLIC_PATH__: JSON.stringify(
             process.env.PUBLIC_PATH,
           ),
-        }),
-        new TsCheckerWebpackPlugin({
-          async: isDevelopment,
-          typescript: {
-            configFile: path.join(__dirname, 'tsconfig.json'),
-            diagnosticOptions: {
-              semantic: true,
-              syntactic: true,
-            },
-          },
         }),
       ];
 
