@@ -1,24 +1,23 @@
 import * as React from 'react';
+
 import { cn } from '@/shared/lib/cn';
 import type { WithClassName } from '@/shared/ui';
+
 import { Button } from '../../atoms';
 import style from './style.scss';
 
-interface TextPropsWithoutForwardedRef extends WithClassName {
+type Props = WithClassName & {
+  ref?: React.Ref<HTMLInputElement>;
   inputMode: React.HTMLAttributes<HTMLInputElement>['inputMode'];
   legend: string;
   tipChar?: string | undefined;
   value: string;
   onChange: (value: string) => void;
-}
+};
 
-interface Props extends TextPropsWithoutForwardedRef {
-  forwardedRef: React.ForwardedRef<HTMLInputElement>;
-}
-
-const TextInput: React.FC<Props> = ({
+export const TextInput: React.FC<Props> = ({
   className,
-  forwardedRef,
+  ref,
   inputMode,
   legend,
   tipChar,
@@ -42,7 +41,7 @@ const TextInput: React.FC<Props> = ({
 
       <label className={style.label} aria-label={legend}>
         <input
-          ref={forwardedRef}
+          ref={ref}
           className={cn(style.field, {
             [style.field_adjacent_left!]: hasTipChar,
             [style.field_adjacent_right!]: hasClearButton,
@@ -61,8 +60,8 @@ const TextInput: React.FC<Props> = ({
           onClick={() => {
             onChange('');
 
-            if (forwardedRef && typeof forwardedRef !== 'function') {
-              forwardedRef.current?.focus();
+            if (ref && typeof ref !== 'function') {
+              ref.current?.focus();
             }
           }}
         />
@@ -70,10 +69,3 @@ const TextInput: React.FC<Props> = ({
     </div>
   );
 };
-
-export const TextInputWithForwardedRef = React.forwardRef<
-  HTMLInputElement,
-  TextPropsWithoutForwardedRef
->((props, ref) => <TextInput {...props} forwardedRef={ref} />);
-
-TextInputWithForwardedRef.displayName = 'ForwardRef(TextInput)';
