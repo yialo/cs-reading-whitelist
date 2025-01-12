@@ -4,7 +4,7 @@ export const useStrictContext = <V>(
   Context: React.Context<V>,
   contextName?: string,
 ) => {
-  const value = React.useContext(Context);
+  const value = React.use(Context);
 
   if (value === undefined) {
     throw new Error(
