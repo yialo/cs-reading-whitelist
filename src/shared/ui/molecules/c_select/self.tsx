@@ -1,7 +1,9 @@
 import * as React from 'react';
+
 import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
 import type { WithClassName } from '@/shared/ui';
+
 import { Button } from '../../atoms';
 import style from './style.scss';
 
@@ -15,7 +17,7 @@ export const Select: React.FC<
 > = ({ className, dict, tip, value, onChange }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
-  const $toggleButtonRef = React.useRef<HTMLButtonElement>(null);
+  const toggleButtonRef = React.useRef<HTMLButtonElement>(null);
 
   const tipId = React.useId();
   const toggleButtonId = React.useId();
@@ -23,9 +25,9 @@ export const Select: React.FC<
   React.useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
-        !$toggleButtonRef.current ||
+        !toggleButtonRef.current ||
         !(event.target instanceof Node) ||
-        $toggleButtonRef.current.contains(event.target)
+        toggleButtonRef.current.contains(event.target)
       ) {
         return;
       }
@@ -87,7 +89,7 @@ export const Select: React.FC<
 
       <div className={style.body}>
         <Button
-          ref={$toggleButtonRef}
+          ref={toggleButtonRef}
           className={cn(style.toggleButton, {
             [style.toggleButton_hasPopup!]: isExpanded,
           })}
@@ -122,7 +124,7 @@ export const Select: React.FC<
                     onClick={() => {
                       setIsExpanded(false);
                       onChange(name);
-                      $toggleButtonRef.current?.focus();
+                      toggleButtonRef.current?.focus();
                     }}
                     onKeyDown={(event) => {
                       if (event.key === KEYBOARD_KEY.ESCAPE) {

@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import { useStrictContext } from '@/shared/hooks';
 
 type Theme = 'light' | 'dark';
@@ -35,11 +36,9 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = React.useState(getInitialTheme);
 
   return (
-    <ThemeStateContext.Provider value={theme}>
-      <ThemeUpdaterContext.Provider value={setTheme}>
-        {children}
-      </ThemeUpdaterContext.Provider>
-    </ThemeStateContext.Provider>
+    <ThemeStateContext value={theme}>
+      <ThemeUpdaterContext value={setTheme}>{children}</ThemeUpdaterContext>
+    </ThemeStateContext>
   );
 };
 

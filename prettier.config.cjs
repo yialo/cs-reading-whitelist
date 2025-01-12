@@ -18,5 +18,5 @@ module.exports = {
   ],
   importOrderSeparation: false,
   importOrderSortSpecifiers: true,
-  importOrderTypeScriptVersion: '5.7.2',
+  importOrderTypeScriptVersion: '5.7.3',
 };
