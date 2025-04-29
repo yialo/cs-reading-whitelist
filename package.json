@@ -52,7 +52,7 @@
     "@babel/preset-typescript": "7.27.0",
     "@babel/runtime-corejs3": "7.27.0",
     "@ianvs/prettier-plugin-sort-imports": "4.4.1",
-    "@pmmmwh/react-refresh-webpack-plugin": "0.5.15",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.6.0",
     "@teamsupercell/typings-for-css-modules-loader": "2.5.2",
     "@types/jest": "29.5.14",
     "@types/lodash-es": "4.17.12",
