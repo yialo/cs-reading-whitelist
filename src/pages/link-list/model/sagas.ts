@@ -1,5 +1,7 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
+
 import type { Subject } from '@/entities/subject';
+
 import { linkListSlice } from './slice';
 
 type LinkListApiResponsePayload = {

@@ -1,5 +1,6 @@
 import type { SingleSublect } from '@/entities/subject';
 import type { WithClassName } from '@/shared/ui';
+
 import { SubjectsItemAppendix } from './appendix';
 import { SubjectsItemLink } from './link';
 

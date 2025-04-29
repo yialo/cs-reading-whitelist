@@ -1,6 +1,8 @@
 import * as React from 'react';
 import * as ReactDomClient from 'react-dom/client';
+
 import { DOM_ID } from '@/shared/config';
+
 import { App } from './app';
 
 export const init = () => {

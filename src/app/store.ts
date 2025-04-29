@@ -1,6 +1,7 @@
 import { configureStore as configureStoreViaRtk } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
 import { all, call } from 'redux-saga/effects';
+
 import { watchFetchLinkList } from '@/pages/link-list/model/sagas';
 import { linkListSlice } from '@/pages/link-list/model/slice';
 import { ENV_MODE } from '@/shared/config';

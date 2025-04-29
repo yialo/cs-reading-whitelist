@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 import style from './self.scss';
 
 interface AppFooterLink {
@@ -6,18 +8,9 @@ interface AppFooterLink {
 }
 
 const FOOTER_LINKS: AppFooterLink[] = [
-  {
-    legend: 'GitHub',
-    url: 'https://github.com/yialo/cs-reading-whitelist',
-  },
-  {
-    legend: 'Twitter',
-    url: 'https://twitter.com/xarroalex',
-  },
-  {
-    legend: 'CodeSandbox',
-    url: 'https://codesandbox.io/u/yialo/sandboxes',
-  },
+  { legend: 'GitHub', url: 'https://github.com/yialo/cs-reading-whitelist' },
+  { legend: 'Twitter', url: 'https://twitter.com/xarroalex' },
+  { legend: 'CodeSandbox', url: 'https://codesandbox.io/u/yialo/sandboxes' },
   {
     legend: 'CodePen',
     url: 'https://codepen.io/yialo/pens/public?grid_type=list',

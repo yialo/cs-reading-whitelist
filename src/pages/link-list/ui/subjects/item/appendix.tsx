@@ -1,4 +1,5 @@
 import { cn } from '@/shared/lib/cn';
+
 import style from './style.scss';
 
 export const SubjectsItemAppendix: React.FC<{

@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
+
 import type { SeriesSubject } from '@/entities/subject';
 import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
 import { includes } from '@/shared/lib/typing';
 import type { WithClassName } from '@/shared/ui';
+
 import { linkListSlice } from '../../../model/slice';
 import { SubjectsItemAppendix } from './appendix';
 import { SubjectsItemLink } from './link';

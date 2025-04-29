@@ -1,7 +1,8 @@
 import * as React from 'react';
+
 import { cn } from '@/shared/lib/cn';
-import { Button, Select, TextInput } from '@/shared/ui';
-import type { WithClassName } from '@/shared/ui';
+import { Button, Select, TextInput, type WithClassName } from '@/shared/ui';
+
 import { FILTER, SORTING, type TFilter, type TSorting } from '../../config';
 import { ControlBarAmountMeter } from './amount-meter';
 import style from './style.scss';

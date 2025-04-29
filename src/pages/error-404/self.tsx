@@ -1,4 +1,5 @@
 import { MainLayout } from '@/shared/ui';
+
 import style from './self.scss';
 
 export const Error404Page: React.FC = () => {

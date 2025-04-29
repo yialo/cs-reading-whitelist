@@ -1,5 +1,6 @@
 import { cn } from '@/shared/lib/cn';
 import type { WithClassName } from '@/shared/ui';
+
 import style from './style.scss';
 
 export const Preloader: React.FC<WithClassName> = ({ className }) => {

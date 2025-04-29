@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { debounce } from 'lodash-es';
 import { createPortal } from 'react-dom';
+
 import { ThemeToggle } from '@/features/toggle-theme';
 import { DOM_ID } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
-import { Button, useHasDarkTheme } from '@/shared/ui';
-import type { WithClassName } from '@/shared/ui';
+import { Button, useHasDarkTheme, type WithClassName } from '@/shared/ui';
+
 import { AppNavMenu } from './nav-menu';
 import style from './self.scss';
 

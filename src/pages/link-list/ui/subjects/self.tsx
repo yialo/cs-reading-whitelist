@@ -1,9 +1,9 @@
 import type { Subject } from '@/entities/subject';
 import { cn } from '@/shared/lib/cn';
-import { MainButton } from '@/shared/ui';
-import type { WithClassName } from '@/shared/ui';
+import { MainButton, type WithClassName } from '@/shared/ui';
+
 import { SubjectsFallbackMessage } from './fallback-message';
-import { SeriesSubjectsItem, SingleSubjectsItem, isSeries } from './item';
+import { isSeries, SeriesSubjectsItem, SingleSubjectsItem } from './item';
 import style from './style.scss';
 
 export const Subjects: React.FC<

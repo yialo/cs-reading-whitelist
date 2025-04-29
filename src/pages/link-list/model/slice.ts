@@ -1,19 +1,21 @@
 import {
-  type PayloadAction,
   createSelector,
   createSlice,
+  type PayloadAction,
 } from '@reduxjs/toolkit';
+
 import type { Subject } from '@/entities/subject';
 import { PROCESS } from '@/shared/config';
 import { generateRtkSliceId } from '@/shared/lib/redux';
+
 import {
   FILTER,
   LIST_PAGE_SIZE,
   SORTING,
+  type LinkListState,
   type TFilter,
   type TSorting,
 } from '../config';
-import type { LinkListState } from '../config';
 
 const INITIAL_PAGE = 1;
 

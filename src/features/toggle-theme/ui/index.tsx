@@ -1,6 +1,11 @@
 import { cn } from '@/shared/lib/cn';
-import { MainButton, useHasDarkTheme, useThemeToggle } from '@/shared/ui';
-import type { WithClassName } from '@/shared/ui';
+import {
+  MainButton,
+  useHasDarkTheme,
+  useThemeToggle,
+  type WithClassName,
+} from '@/shared/ui';
+
 import style from './style.scss';
 
 export const ThemeToggle: React.FC<WithClassName> = ({ className }) => {
