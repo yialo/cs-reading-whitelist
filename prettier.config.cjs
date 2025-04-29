@@ -16,7 +16,5 @@ module.exports = {
     '',
     '^[.]',
   ],
-  importOrderSeparation: false,
-  importOrderSortSpecifiers: true,
   importOrderTypeScriptVersion: '5.8.3',
 };
