@@ -1,17 +1,16 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "baseUrl": "./src/",
-    "checkJs": true,
+    "checkJs": false,
     "esModuleInterop": true,
     "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "jsx": "preserve",
     "lib": ["DOM", "ES2021"],
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "preserve",
+    "moduleResolution": "bundler",
     "newLine": "lf",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
@@ -19,7 +18,7 @@
     "noImplicitReturns": true,
     "noUncheckedIndexedAccess": true,
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     },
     "strict": true,
     "target": "ES2015",
