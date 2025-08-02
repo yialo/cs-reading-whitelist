@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { cn } from '@/shared/lib/cn';
 import { Button } from '@/shared/ui/button';
-import { Select } from '@/shared/ui/select';
+import { Select_legacy } from '@/shared/ui/select';
 import { TextInput } from '@/shared/ui/text-input';
 import { WithClassName } from '@/shared/ui/types';
 
@@ -60,8 +60,7 @@ export const ControlBar: React.FC<
   return (
     <div className={cn(style.root, className)}>
       <div className={style.filter}>
-        <Select
-          className={className}
+        <Select_legacy
           tip="Искать по:"
           dict={FILTER_DICT}
           value={filterTarget}

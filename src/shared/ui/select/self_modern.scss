@@ -53,10 +53,8 @@
 .list {
   composes: list from '@/shared/scss/scaffold.scss';
 
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  width: 100%;
+  position-area: block-end span-inline-end;
+  inset-inline-end: anchor(start);
   border: 1px solid utils.$color-lightGray;
   border-block-start-style: none;
   background-color: white;

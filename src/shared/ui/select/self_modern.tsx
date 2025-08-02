@@ -14,11 +14,39 @@ export const Select: React.FC<{
   value: string;
   onChange: (newValue: string) => void;
 }> = ({ className, dict, tip, value, onChange }) => {
-  return (
-    <div>
-      <Button>{dict[value]}</Button>
+  const triggerId = React.useId();
+  const popoverId = React.useId();
 
-      <div popover="auto"></div>
+  return (
+    <div className={cn(style.root, className)}>
+      <span className={style.tip}>{tip}</span>
+
+      <div className={style.body}>
+        <Button
+          popoverTarget={popoverId}
+          style={
+            {
+              'anchor-name': `--bob`,
+            } as React.CSSProperties
+          }
+        >
+          {dict[value]}
+        </Button>
+
+        <div
+          popover="auto"
+          id={popoverId}
+          role="listbox"
+          className={style.list}
+          style={
+            {
+              'position-anchor': `--bob`,
+            } as React.CSSProperties
+          }
+        >
+          Popover
+        </div>
+      </div>
     </div>
   );
 };
