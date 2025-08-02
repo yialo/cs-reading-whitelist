@@ -1,5 +1,5 @@
-declare namespace StyleScssNamespace {
-  export interface IStyleScss {
+declare namespace SelfLegacyScssNamespace {
+  export interface ISelfLegacyScss {
     _button: string;
     body: string;
     list: string;
@@ -13,6 +13,6 @@ declare namespace StyleScssNamespace {
   }
 }
 
-declare const StyleScssModule: StyleScssNamespace.IStyleScss;
+declare const SelfLegacyScssModule: SelfLegacyScssNamespace.ISelfLegacyScss;
 
-export = StyleScssModule;
+export = SelfLegacyScssModule;

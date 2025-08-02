@@ -2,10 +2,10 @@ import * as React from 'react';
 
 import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
-import type { WithClassName } from '@/shared/ui';
+import { Button } from '@/shared/ui/button';
+import { WithClassName } from '@/shared/ui/types';
 
-import { Button } from '../../atoms';
-import style from './style.scss';
+import style from './self_legacy.scss';
 
 export const Select: React.FC<
   WithClassName & {

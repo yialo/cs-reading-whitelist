@@ -1,4 +1,4 @@
-import { MainLayout } from '@/shared/ui';
+import { MainLayout } from '@/shared/ui/main-layout';
 
 import style from './self.scss';
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { useStrictContext } from '@/shared/hooks';
+import { useStrictContext } from '@/shared/lib/react';
 
 type Theme = 'light' | 'dark';
 type ThemeDispatch = React.Dispatch<React.SetStateAction<Theme>>;

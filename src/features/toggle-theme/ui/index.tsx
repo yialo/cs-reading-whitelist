@@ -1,10 +1,7 @@
 import { cn } from '@/shared/lib/cn';
-import {
-  MainButton,
-  useHasDarkTheme,
-  useThemeToggle,
-  type WithClassName,
-} from '@/shared/ui';
+import { MainButton } from '@/shared/ui/button';
+import { useHasDarkTheme, useThemeToggle } from '@/shared/ui/theme';
+import { WithClassName } from '@/shared/ui/types';
 
 import style from './style.scss';
 

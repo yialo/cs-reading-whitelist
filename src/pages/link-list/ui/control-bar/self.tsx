@@ -1,7 +1,10 @@
 import * as React from 'react';
 
 import { cn } from '@/shared/lib/cn';
-import { Button, Select, TextInput, type WithClassName } from '@/shared/ui';
+import { Button } from '@/shared/ui/button';
+import { Select } from '@/shared/ui/select';
+import { TextInput } from '@/shared/ui/text-input';
+import { WithClassName } from '@/shared/ui/types';
 
 import { FILTER, SORTING, type TFilter, type TSorting } from '../../config';
 import { ControlBarAmountMeter } from './amount-meter';

@@ -5,7 +5,9 @@ import { createPortal } from 'react-dom';
 import { ThemeToggle } from '@/features/toggle-theme';
 import { DOM_ID } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
-import { Button, useHasDarkTheme, type WithClassName } from '@/shared/ui';
+import { Button } from '@/shared/ui/button';
+import { useHasDarkTheme } from '@/shared/ui/theme';
+import { WithClassName } from '@/shared/ui/types';
 
 import { AppNavMenu } from './nav-menu';
 import style from './self.scss';

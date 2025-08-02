@@ -2,7 +2,8 @@ import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { PROCESS } from '@/shared/config';
-import { MainLayout, Preloader } from '@/shared/ui';
+import { MainLayout } from '@/shared/ui/main-layout';
+import { Preloader } from '@/shared/ui/preloader';
 
 import { LIST_PAGE_SIZE, type TFilter, type TSorting } from '../../config';
 import { linkListSlice } from '../../model/slice';

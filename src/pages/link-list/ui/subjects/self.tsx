@@ -1,6 +1,7 @@
-import type { Subject } from '@/entities/subject';
+import { Subject } from '@/entities/subject';
 import { cn } from '@/shared/lib/cn';
-import { MainButton, type WithClassName } from '@/shared/ui';
+import { MainButton } from '@/shared/ui/button';
+import { WithClassName } from '@/shared/ui/types';
 
 import { SubjectsFallbackMessage } from './fallback-message';
 import { isSeries, SeriesSubjectsItem, SingleSubjectsItem } from './item';

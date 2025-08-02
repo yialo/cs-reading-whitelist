@@ -3,7 +3,7 @@ import { NavLink } from 'react-router';
 
 import { KEYBOARD_KEY, ROUTE, type Route } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
-import type { WithClassName } from '@/shared/ui';
+import { WithClassName } from '@/shared/ui/types';
 
 import { AppNavMenuIcon } from './icon';
 import style from './style.scss';

@@ -1,5 +1,5 @@
 import { cn } from '@/shared/lib/cn';
-import type { WithClassName } from '@/shared/ui';
+import { WithClassName } from '@/shared/ui/types';
 
 import style from './style.scss';
 

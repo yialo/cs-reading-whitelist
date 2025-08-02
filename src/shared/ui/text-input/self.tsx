@@ -1,9 +1,7 @@
-import * as React from 'react';
-
 import { cn } from '@/shared/lib/cn';
-import type { WithClassName } from '@/shared/ui';
+import { Button } from '@/shared/ui/button';
+import { WithClassName } from '@/shared/ui/types';
 
-import { Button } from '../../atoms';
 import style from './style.scss';
 
 type Props = WithClassName & {
