@@ -136,7 +136,7 @@ module.exports = (env = {}) => {
                   localIdentContext: PATH.CSS_MODULES_IDENT_CONTEXT,
                   localIdentName: isProduction
                     ? '[hash:base64]'
-                    : '[path][local]',
+                    : '[path][name]-[local]',
                   namedExport: false,
                 },
                 esModule: true,
