@@ -1,0 +1,65 @@
+@use '@/shared/scss/utils';
+
+.root {
+  display: flex;
+  align-items: center;
+}
+
+.tip {
+  margin-inline-end: 16px;
+  font-size: 18px;
+}
+
+.select {
+  appearance: base-select;
+
+  width: 144px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid utils.$color-lightGray;
+  border-radius: 2px;
+  padding: 0.5rem 1rem 0.625rem;
+  background-color: utils.$color-gray;
+
+  &::picker-icon {
+    content: '';
+    transform: translateY(5px);
+    flex-shrink: 0;
+    border-style: solid;
+    border-block-end-style: none;
+    border-width: 8px;
+    border-color: utils.$color-darkGray transparent;
+  }
+
+  &:open::picker-icon {
+    transform: rotate(0.5turn) translateY(3px);
+  }
+}
+
+.select::picker(select) {
+  appearance: base-select;
+
+  position-area: block-end span-inline-end;
+  inset-inline-start: anchor(start);
+  border: 1px solid utils.$color-lightGray;
+  border-block-start-style: none;
+  background-color: white;
+}
+
+.trigger {
+  flex-grow: 1;
+}
+
+.option {
+  padding-block: 4px;
+  padding-inline: 16px;
+  background-color: white;
+
+  &::checkmark {
+    content: none;
+  }
+
+  &:checked {
+    background-color: #cccccc;
+  }
+}

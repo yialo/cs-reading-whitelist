@@ -1,5 +1,5 @@
-declare namespace SelfModernScssNamespace {
-  export interface ISelfModernScss {
+declare namespace SelfModernCustomScssNamespace {
+  export interface ISelfModernCustomScss {
     _button: string;
     body: string;
     list: string;
@@ -13,6 +13,6 @@ declare namespace SelfModernScssNamespace {
   }
 }
 
-declare const SelfModernScssModule: SelfModernScssNamespace.ISelfModernScss;
+declare const SelfModernCustomScssModule: SelfModernCustomScssNamespace.ISelfModernCustomScss;
 
-export = SelfModernScssModule;
+export = SelfModernCustomScssModule;

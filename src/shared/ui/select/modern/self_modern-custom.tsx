@@ -5,7 +5,7 @@ import { cn } from '@/shared/lib/cn';
 import { Button } from '@/shared/ui/button';
 import { WithClassName } from '@/shared/ui/types';
 
-import style from './self_modern.scss';
+import style from './self_modern-custom.scss';
 
 export const Select: React.FC<{
   className?: string;
