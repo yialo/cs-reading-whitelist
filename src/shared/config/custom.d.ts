@@ -14,7 +14,7 @@ interface ObjectConstructor {
 }
 
 declare module '@type-utils' {
-  export type Values<O extends object> = O[keyof O];
+  export type $Values<O extends object> = O[keyof O];
 }
 
 declare module '*.scss' {

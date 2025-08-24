@@ -1,4 +1,4 @@
-import type { Values } from '@type-utils';
+import type { $Values } from '@type-utils';
 
 import type { Subject } from '@/entities/subject';
 import type { Process } from '@/shared/config';
@@ -11,14 +11,14 @@ export const FILTER = {
   URL: 'url',
 } as const;
 
-export type TFilter = Values<typeof FILTER>;
+export type TFilter = $Values<typeof FILTER>;
 
 export const SORTING = {
   NEW: 'new',
   OLD: 'old',
 } as const;
 
-export type TSorting = Values<typeof SORTING>;
+export type TSorting = $Values<typeof SORTING>;
 
 export interface LinkListState {
   list: Subject[];

@@ -1,4 +1,4 @@
-import type { Values } from '@type-utils';
+import type { $Values } from '@type-utils';
 
 export const ENV_MODE = {
   DEV: 'development',
@@ -20,13 +20,7 @@ export const PROCESS = {
   FAILURE: 'FAILURE',
 } as const;
 
-export type Process = Values<typeof PROCESS>;
-
-export const ROUTE = {
-  HOME: '/',
-} as const;
-
-export type Route = Values<typeof ROUTE>;
+export type Process = $Values<typeof PROCESS>;
 
 export const DOM_ID = {
   APP_ROOT: 'app-root',

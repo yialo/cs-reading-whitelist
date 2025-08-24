@@ -1,24 +1,29 @@
 import * as React from 'react';
 import { NavLink } from 'react-router';
 
-import { KEYBOARD_KEY, ROUTE, type Route } from '@/shared/config';
+import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
+import { APP_ROUTE, type AppRoute } from '@/shared/routing';
 import { WithClassName } from '@/shared/ui/types';
 
 import { AppNavMenuIcon } from './icon';
 import style from './style.scss';
 
-interface NavLink {
-  url: Route;
+type NavLink = {
+  url: AppRoute;
   label: string;
-}
+};
 
-const ROUTE_LIST: ReadonlyArray<NavLink> = [
+const ROUTE_LIST = [
   {
-    url: ROUTE.HOME,
+    url: APP_ROUTE.HOME,
     label: 'Reading',
   },
-] as const;
+  {
+    url: APP_ROUTE.STRINGER,
+    label: 'Stringer',
+  },
+] as const satisfies readonly NavLink[];
 
 export const AppNavMenu: React.FC<WithClassName> = ({ className }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
