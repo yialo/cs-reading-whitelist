@@ -66,6 +66,7 @@ export const LinkList: React.FC = () => {
             </div>
 
             <ControlBar
+              // @TODO refactor via slotting
               className={style.controlBar}
               filterTarget={filter}
               searchString={searchString}

@@ -6,7 +6,7 @@ const tsConfigMixin = {
     project: './tsconfig.json',
   },
   rules: {
-    // TODO: rethink after plugin update
+    // @TODO rethink after plugin update
     'react/jsx-filename-extension': [
       'error',
       {

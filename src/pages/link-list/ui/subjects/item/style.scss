@@ -73,7 +73,7 @@
   padding-inline-start: var(--size_paddingLeft);
 
   &::before {
-    // TODO: add abstraction for more precise size and position calculation
+    // @TODO add abstraction for more precise size and position calculation
     $size: 6px;
 
     content: '';

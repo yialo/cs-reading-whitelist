@@ -10,7 +10,7 @@ export interface SingleSublect extends SubjectBase {
   tags: string[];
 }
 
-// TODO: add generic type for cases of lang in all series or in each item
+// @TODO add generic type for cases of lang in all series or in each item
 export interface SubjectSeriesItem {
   caption: string;
   lang?: 'en' | 'ru';
