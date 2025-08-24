@@ -7,7 +7,6 @@ import { TextInput } from '@/shared/ui/text-input';
 import { WithClassName } from '@/shared/ui/types';
 
 import { FILTER, SORTING, type TFilter, type TSorting } from '../../config';
-import { ControlBarAmountMeter } from './amount-meter';
 import style from './style.scss';
 
 const FILTER_DICT = {
@@ -120,3 +119,23 @@ export const ControlBar: React.FC<
     </div>
   );
 };
+
+const ControlBarAmountMeter: React.FC<{
+  totalAmount: number;
+  visibleAmount: number;
+  isFiltered: boolean;
+}> = ({ totalAmount, visibleAmount, isFiltered }) => {
+  const isAllVisible = visibleAmount === totalAmount;
+
+  return (
+    <p className={style.amountMeter}>
+      {isAllVisible
+        ? `Всего ${totalAmount}, показаны все${isFiltered ? ' совпадения' : ''}`
+        : `Показано: ${visibleAmount} из ${totalAmount}${
+            isFiltered ? ' совпадений' : ''
+          }`}
+    </p>
+  );
+};
+
+ControlBarAmountMeter.displayName = 'ControlBar-AmountMeter';
