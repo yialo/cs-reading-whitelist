@@ -1,0 +1,40 @@
+@use '@/shared/scss/utils';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.fieldLabel {
+  font-size: 16px;
+}
+
+.fieldInput {
+  --border-width: 1px;
+  --border-radius: 2px;
+  --padding: 8px;
+  --font-size: 20px;
+  --line-height: 1;
+
+  --height: calc(
+    var(--font-size) * var(--line-height) +
+      (var(--padding) + var(--border-width)) * 2;
+  );
+
+  display: block;
+  width: 100%;
+  height: var(--height);
+  padding: var(--padding);
+  border: var(--border-width) solid utils.$color-lightGray;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  background-color: white;
+}

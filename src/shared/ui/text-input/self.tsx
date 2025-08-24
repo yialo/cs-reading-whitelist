@@ -1,22 +1,20 @@
 import { cn } from '@/shared/lib/cn';
 import { Button } from '@/shared/ui/button';
-import { WithClassName } from '@/shared/ui/types';
 
 import style from './style.scss';
 
-type Props = WithClassName & {
+export const TextInput: React.FC<{
+  className?: string;
   ref?: React.Ref<HTMLInputElement>;
-  inputMode: React.HTMLAttributes<HTMLInputElement>['inputMode'];
+  inputMode?: React.HTMLAttributes<HTMLInputElement>['inputMode'];
   legend: string;
   tipChar?: string | undefined;
   value: string;
   onChange: (value: string) => void;
-};
-
-export const TextInput: React.FC<Props> = ({
+}> = ({
   className,
   ref,
-  inputMode,
+  inputMode = 'text',
   legend,
   tipChar,
   value,

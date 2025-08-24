@@ -50,49 +50,49 @@ export const LinkList: React.FC = () => {
     }
   }, [process, dispatch]);
 
-  const renderContent = () => {
-    switch (process) {
-      case PROCESS.IDLE:
-      case PROCESS.LOADING:
-        return <Preloader className={style.preloader} />;
-
-      default:
-        return (
-          <>
-            <div className={style.header}>
-              <h1 className={style.headline}>
-                Полезные материалы по Computer Science
-              </h1>
-            </div>
-
-            <ControlBar
-              // @TODO refactor via slotting
-              className={style.controlBar}
-              filterTarget={filter}
-              searchString={searchString}
-              sortingTarget={sorting}
-              totalAmount={sortedAmount}
-              visibleAmount={visibleAmount}
-              onFilterToggle={handleFilterToggle}
-              onSearch={handleSearch}
-              onSortingToggle={handleSortingToggle}
-            />
-
-            <Subjects
-              className={style.subjects}
-              list={subjectList}
-              hasFetchError={!!error}
-              isLastPage={isLastPage}
-              onShowMoreClick={handleShowMoreClick}
-            />
-          </>
-        );
-    }
-  };
-
   return (
     <MainLayout>
-      <div className={style.root}>{renderContent()}</div>
+      <div className={style.root}>
+        {(() => {
+          switch (process) {
+            case PROCESS.IDLE:
+            case PROCESS.LOADING:
+              return <Preloader className={style.preloader} />;
+
+            default:
+              return (
+                <>
+                  <div className={style.header}>
+                    <h1 className={style.headline}>
+                      Полезные материалы по Computer Science
+                    </h1>
+                  </div>
+
+                  <ControlBar
+                    // @TODO refactor via slotting
+                    className={style.controlBar}
+                    filterTarget={filter}
+                    searchString={searchString}
+                    sortingTarget={sorting}
+                    totalAmount={sortedAmount}
+                    visibleAmount={visibleAmount}
+                    onFilterToggle={handleFilterToggle}
+                    onSearch={handleSearch}
+                    onSortingToggle={handleSortingToggle}
+                  />
+
+                  <Subjects
+                    className={style.subjects}
+                    list={subjectList}
+                    hasFetchError={!!error}
+                    isLastPage={isLastPage}
+                    onShowMoreClick={handleShowMoreClick}
+                  />
+                </>
+              );
+          }
+        })()}
+      </div>
     </MainLayout>
   );
 };
