@@ -67,7 +67,7 @@ export const AppNavMenu: React.FC<{ className?: string }> = ({ className }) => {
             <NavLink
               className={({ isActive }) =>
                 cn(style.link, {
-                  [style.link_active!]: isActive,
+                  [style.link_active]: isActive,
                 })
               }
               to={url}

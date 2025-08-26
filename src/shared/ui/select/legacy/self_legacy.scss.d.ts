@@ -1,7 +1,5 @@
 declare namespace SelfLegacyScssNamespace {
   export interface ISelfLegacyScss {
-    _button: string;
-    body: string;
     list: string;
     option: string;
     optionButton: string;

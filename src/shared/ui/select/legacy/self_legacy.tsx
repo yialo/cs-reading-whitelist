@@ -4,6 +4,7 @@ import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
 import { Button } from '@/shared/ui/button';
 import { Portal } from '@/shared/ui/portal';
+import { RadixPopover } from '@/shared/lib/radix-ui/popover';
 
 import style from './self_legacy.scss';
 
@@ -19,45 +20,20 @@ export const Select: React.FC<{
   const toggleButtonRef = React.useRef<HTMLButtonElement>(null);
 
   const tipId = React.useId();
-  const toggleButtonId = React.useId();
-
-  React.useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        !toggleButtonRef.current ||
-        !(event.target instanceof Node) ||
-        toggleButtonRef.current.contains(event.target)
-      ) {
-        return;
-      }
-
-      setIsExpanded(false);
-    };
-
-    document.addEventListener('click', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
-    };
-  }, []);
 
   const options = React.useMemo(() => Object.entries(dict), [dict]);
 
-  const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> = ({
+  const handleTriggerKeyDown: React.KeyboardEventHandler<HTMLButtonElement> = ({
     key,
   }) => {
-    if (!isExpanded) {
-      if (key === KEYBOARD_KEY.DOWN) {
-        setIsExpanded(true);
-        return;
-      }
+    if (!isExpanded && key === KEYBOARD_KEY.DOWN) {
+      setIsExpanded(true);
     }
+  };
 
-    if (key === KEYBOARD_KEY.ESCAPE) {
-      setIsExpanded(false);
-      return;
-    }
-
+  const handleOptionKeyDown: React.KeyboardEventHandler<HTMLButtonElement> = ({
+    key,
+  }) => {
     let shift = 0;
 
     if (key === KEYBOARD_KEY.DOWN) {
@@ -86,38 +62,21 @@ export const Select: React.FC<{
         {tip}
       </span>
 
-      <div className={style.body}>
-        <Button
-          ref={toggleButtonRef}
-          className={cn(style.toggleButton, {
-            [style.toggleButton_hasPopup!]: isExpanded,
-          })}
-          id={toggleButtonId}
-          aria-expanded={isExpanded}
-          aria-haspopup="listbox"
-          aria-labelledby={[tipId, toggleButtonId].join(' ')}
-          onClick={() => {
-            setIsExpanded((prev) => !prev);
-          }}
-          onKeyDown={handleKeyDown}
-        >
-          {dict[value]}
-        </Button>
-
-        <Portal open={isExpanded}>
-          <div
-            className={style.popover}
-            style={(() => {
-              const domRect = toggleButtonRef.current?.getBoundingClientRect();
-              if (!domRect) return {};
-
-              return {
-                top: domRect.bottom,
-                left: domRect.left,
-                minWidth: domRect.width,
-              };
-            })()}
+      <RadixPopover open={isExpanded} onOpenChange={setIsExpanded}>
+        <RadixPopover.Trigger asChild>
+          <Button
+            ref={toggleButtonRef}
+            className={cn(style.toggleButton, {
+              [style.toggleButton_hasPopup]: isExpanded,
+            })}
+            onKeyDown={handleTriggerKeyDown}
           >
+            {dict[value]}
+          </Button>
+        </RadixPopover.Trigger>
+
+        <RadixPopover.Portal>
+          <RadixPopover.Content align="start">
             <ul className={style.list} role="listbox">
               {options.map(([name, caption]) => {
                 const isSelected = name === value;
@@ -131,18 +90,14 @@ export const Select: React.FC<{
                   >
                     <Button
                       className={cn(style.optionButton, {
-                        [style.optionButton_selected!]: isSelected,
+                        [style.optionButton_selected]: isSelected,
                       })}
                       onClick={() => {
                         setIsExpanded(false);
                         onChange(name);
                         toggleButtonRef.current?.focus();
                       }}
-                      onKeyDown={(event) => {
-                        if (event.key === KEYBOARD_KEY.ESCAPE) {
-                          setIsExpanded(false);
-                        }
-                      }}
+                      onKeyDown={handleOptionKeyDown}
                     >
                       {caption}
                     </Button>
@@ -150,9 +105,9 @@ export const Select: React.FC<{
                 );
               })}
             </ul>
-          </div>
-        </Portal>
-      </div>
+          </RadixPopover.Content>
+        </RadixPopover.Portal>
+      </RadixPopover>
     </div>
   );
 };

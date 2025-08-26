@@ -79,8 +79,8 @@ export const RootHeader: React.FC<{ className?: string }> = ({ className }) => {
         <Button
           aria-label="Вернуться наверх"
           className={cn(style.goTopButton__inner, {
-            [style.goTopButton__inner_theme_dark!]: hasDarkTheme,
-            [style.goTopButton__inner_visible!]: isScrolledEnough,
+            [style.goTopButton__inner_theme_dark]: hasDarkTheme,
+            [style.goTopButton__inner_visible]: isScrolledEnough,
           })}
           disabled={!isScrolledEnough}
           onClick={() => {
@@ -98,7 +98,7 @@ export const RootHeader: React.FC<{ className?: string }> = ({ className }) => {
       className={cn(
         style.root,
         {
-          [style.root_translucent!]: isScrolledEnough,
+          [style.root_translucent]: isScrolledEnough,
         },
         className,
       )}

@@ -10,26 +10,14 @@
   font-size: 18px;
 }
 
-.body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 144px;
-}
-
-._button {
-  width: 100%;
-  padding: 0.5rem 1rem;
-}
-
 .toggleButton {
-  composes: _button;
-
   position: relative;
   display: flex;
   justify-content: space-between;
+  width: 144px;
   border: 1px solid utils.$color-lightGray;
   border-radius: 2px;
+  padding: 0.5rem 1rem;
   text-align: left;
   background-color: utils.$color-gray;
 
@@ -57,6 +45,7 @@
 .list {
   composes: list from '@/shared/scss/scaffold.scss';
 
+  min-width: var(--radix-popover-trigger-width);
   border: 1px solid utils.$color-lightGray;
   border-block-start-style: none;
   background-color: white;
@@ -67,8 +56,8 @@
 }
 
 .optionButton {
-  composes: _button;
-
+  width: 100%;
+  padding: 0.5rem 1rem;
   text-align: left;
   background-color: inherit;
 

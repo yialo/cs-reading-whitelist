@@ -39,8 +39,8 @@ export const TextInput: React.FC<{
         <input
           ref={ref}
           className={cn(style.field, {
-            [style.field_adjacent_left!]: hasTipChar,
-            [style.field_adjacent_right!]: hasClearButton,
+            [style.field_adjacent_left]: hasTipChar,
+            [style.field_adjacent_right]: hasClearButton,
           })}
           inputMode={inputMode}
           type="text"

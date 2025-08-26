@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { createPortal } from 'react-dom';
 
-export const Portal: React.FC<{ children: React.ReactNode; open: boolean }> = ({
-  children,
-  open,
-}) => {
+export const Portal: React.FC<{
+  children: React.ReactNode;
+  open: boolean;
+  onMountChange?: (open: boolean) => void;
+}> = ({ children, open, onMountChange }) => {
   const [portalContainer, setPortalContainer] =
     React.useState<HTMLElement | null>(null);
 
@@ -14,12 +15,14 @@ export const Portal: React.FC<{ children: React.ReactNode; open: boolean }> = ({
     const container = document.createElement('div');
     document.body.append(container);
     setPortalContainer(container);
+    onMountChange?.(true);
 
     return () => {
       container.remove();
       setPortalContainer(null);
+      onMountChange?.(false);
     };
-  }, [open]);
+  }, [open, setPortalContainer]);
 
   if (!open || !portalContainer) return null;
 

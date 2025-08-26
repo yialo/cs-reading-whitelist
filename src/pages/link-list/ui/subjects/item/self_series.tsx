@@ -42,7 +42,7 @@ export const SeriesSubjectsItem: React.FC<{
   return (
     <li
       className={cn(style.root_series, className, {
-        [style.isExpanded!]: isExpanded,
+        [style.isExpanded]: isExpanded,
       })}
     >
       <div>
