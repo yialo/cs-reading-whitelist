@@ -231,19 +231,7 @@ module.exports = (env = {}) => {
 
           new CssMinimizerPlugin({
             test: /\.css$/,
-            minify: CssMinimizerPlugin.cssnanoMinify,
-            minimizerOptions: {
-              preset: [
-                'default',
-                {
-                  cssDeclarationSorter: false,
-                  mergeLonghand: false,
-                  normalizeCharset: {
-                    add: true,
-                  },
-                },
-              ],
-            },
+            minify: CssMinimizerPlugin.lightningCssMinify,
           }),
         ];
       }
