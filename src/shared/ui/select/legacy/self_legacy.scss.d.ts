@@ -6,6 +6,7 @@ declare namespace SelfLegacyScssNamespace {
     option: string;
     optionButton: string;
     optionButton_selected: string;
+    popover: string;
     root: string;
     tip: string;
     toggleButton: string;

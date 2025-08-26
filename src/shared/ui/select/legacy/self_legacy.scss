@@ -36,7 +36,7 @@
   &::after {
     content: '';
     position: relative;
-    top: 5px;
+    transform: translateY(5px);
     border-style: solid;
     border-block-end-style: none;
     border-width: 8px;
@@ -45,18 +45,18 @@
 
   &_hasPopup {
     &::after {
-      transform: rotate(0.5turn);
+      transform: rotate(0.5turn) translateY(4px);
     }
   }
+}
+
+.popover {
+  position: absolute;
 }
 
 .list {
   composes: list from '@/shared/scss/scaffold.scss';
 
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  width: 100%;
   border: 1px solid utils.$color-lightGray;
   border-block-start-style: none;
   background-color: white;

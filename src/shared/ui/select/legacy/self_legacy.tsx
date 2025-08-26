@@ -3,6 +3,7 @@ import * as React from 'react';
 import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
 import { Button } from '@/shared/ui/button';
+import { Portal } from '@/shared/ui/portal';
 
 import style from './self_legacy.scss';
 
@@ -103,40 +104,54 @@ export const Select: React.FC<{
           {dict[value]}
         </Button>
 
-        {isExpanded && (
-          <ul className={style.list} role="listbox">
-            {options.map(([name, caption]) => {
-              const isSelected = name === value;
+        <Portal open={isExpanded}>
+          <div
+            className={style.popover}
+            style={(() => {
+              const domRect = toggleButtonRef.current?.getBoundingClientRect();
+              if (!domRect) return {};
 
-              return (
-                <li
-                  key={name}
-                  className={style.option}
-                  role="option"
-                  aria-selected={isSelected}
-                >
-                  <Button
-                    className={cn(style.optionButton, {
-                      [style.optionButton_selected!]: isSelected,
-                    })}
-                    onClick={() => {
-                      setIsExpanded(false);
-                      onChange(name);
-                      toggleButtonRef.current?.focus();
-                    }}
-                    onKeyDown={(event) => {
-                      if (event.key === KEYBOARD_KEY.ESCAPE) {
-                        setIsExpanded(false);
-                      }
-                    }}
+              return {
+                top: domRect.bottom,
+                left: domRect.left,
+                minWidth: domRect.width,
+              };
+            })()}
+          >
+            <ul className={style.list} role="listbox">
+              {options.map(([name, caption]) => {
+                const isSelected = name === value;
+
+                return (
+                  <li
+                    key={name}
+                    className={style.option}
+                    role="option"
+                    aria-selected={isSelected}
                   >
-                    {caption}
-                  </Button>
-                </li>
-              );
-            })}
-          </ul>
-        )}
+                    <Button
+                      className={cn(style.optionButton, {
+                        [style.optionButton_selected!]: isSelected,
+                      })}
+                      onClick={() => {
+                        setIsExpanded(false);
+                        onChange(name);
+                        toggleButtonRef.current?.focus();
+                      }}
+                      onKeyDown={(event) => {
+                        if (event.key === KEYBOARD_KEY.ESCAPE) {
+                          setIsExpanded(false);
+                        }
+                      }}
+                    >
+                      {caption}
+                    </Button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </Portal>
       </div>
     </div>
   );
