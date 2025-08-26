@@ -55,6 +55,7 @@
     "@babel/runtime-corejs3": "7.28.3",
     "@ianvs/prettier-plugin-sort-imports": "4.6.2",
     "@pmmmwh/react-refresh-webpack-plugin": "0.6.1",
+    "@prettier/plugin-oxc": "0.0.4",
     "@teamsupercell/typings-for-css-modules-loader": "2.5.2",
     "@types/jest": "30.0.0",
     "@types/lodash-es": "4.17.12",
