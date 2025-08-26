@@ -2,6 +2,7 @@
 
 module.exports = {
   plugins: [
+    '@prettier/plugin-oxc',
     '@awmottaz/prettier-plugin-void-html',
     '@ianvs/prettier-plugin-sort-imports',
   ],
