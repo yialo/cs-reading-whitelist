@@ -3,6 +3,7 @@ declare namespace IndexModuleScssNamespace {
     field: string;
     fieldInput: string;
     fieldLabel: string;
+    heading: string;
     root: string;
   }
 }

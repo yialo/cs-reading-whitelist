@@ -2,14 +2,13 @@ import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { PROCESS } from '@/shared/config';
-import { MainLayout } from '@/shared/ui/main-layout';
 import { Preloader } from '@/shared/ui/preloader';
 
 import { LIST_PAGE_SIZE, type TFilter, type TSorting } from '../../config';
 import { linkListSlice } from '../../model/slice';
 import { ControlBar } from '../control-bar';
 import { Subjects } from '../subjects';
-import style from './style.scss';
+import styles from './style.scss';
 
 export const LinkList: React.FC = () => {
   const process = useSelector(linkListSlice.selectors.process);
@@ -51,47 +50,45 @@ export const LinkList: React.FC = () => {
   }, [process, dispatch]);
 
   return (
-    <MainLayout>
-      <div className={style.root}>
-        {(() => {
-          switch (process) {
-            case PROCESS.IDLE:
-            case PROCESS.LOADING:
-              return <Preloader className={style.preloader} />;
+    <div className={styles.root}>
+      {(() => {
+        switch (process) {
+          case PROCESS.IDLE:
+          case PROCESS.LOADING:
+            return <Preloader className={styles.preloader} />;
 
-            default:
-              return (
-                <>
-                  <div className={style.header}>
-                    <h1 className={style.headline}>
-                      Полезные материалы по Computer Science
-                    </h1>
-                  </div>
+          default:
+            return (
+              <>
+                <div className={styles.header}>
+                  <h1 className={styles.headline}>
+                    Полезные материалы по Computer Science
+                  </h1>
+                </div>
 
-                  <ControlBar
-                    className={style.controlBar}
-                    filterTarget={filter}
-                    searchString={searchString}
-                    sortingTarget={sorting}
-                    totalAmount={sortedAmount}
-                    visibleAmount={visibleAmount}
-                    onFilterToggle={handleFilterToggle}
-                    onSearch={handleSearch}
-                    onSortingToggle={handleSortingToggle}
-                  />
+                <ControlBar
+                  className={styles.controlBar}
+                  filterTarget={filter}
+                  searchString={searchString}
+                  sortingTarget={sorting}
+                  totalAmount={sortedAmount}
+                  visibleAmount={visibleAmount}
+                  onFilterToggle={handleFilterToggle}
+                  onSearch={handleSearch}
+                  onSortingToggle={handleSortingToggle}
+                />
 
-                  <Subjects
-                    className={style.subjects}
-                    list={subjectList}
-                    hasFetchError={!!error}
-                    isLastPage={isLastPage}
-                    onShowMoreClick={handleShowMoreClick}
-                  />
-                </>
-              );
-          }
-        })()}
-      </div>
-    </MainLayout>
+                <Subjects
+                  className={styles.subjects}
+                  list={subjectList}
+                  hasFetchError={!!error}
+                  isLastPage={isLastPage}
+                  onShowMoreClick={handleShowMoreClick}
+                />
+              </>
+            );
+        }
+      })()}
+    </div>
   );
 };
