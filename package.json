@@ -24,7 +24,9 @@
     "test": "jest -c=./jest.config.cjs --passWithNoTests",
     "test:watch": "npm test -- --watch",
     "tsc": "tsc",
-    "tsc:watch": "tsc --watch"
+    "tsc:watch": "tsc --watch",
+    "tsgo": "tsgo",
+    "tsgo:watch": "tsgo --watch"
   },
   "browserslist": [
     "defaults",
@@ -58,7 +60,7 @@
     "@types/lodash-es": "4.17.12",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
-    "@typescript/native-preview": "7.0.0-dev.20250608.1",
+    "@typescript/native-preview": "7.0.0-dev.20250826.1",
     "autoprefixer": "10.4.21",
     "babel-jest": "29.7.0",
     "babel-loader": "10.0.0",
