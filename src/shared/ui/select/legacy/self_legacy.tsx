@@ -3,18 +3,16 @@ import * as React from 'react';
 import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
 import { Button } from '@/shared/ui/button';
-import { WithClassName } from '@/shared/ui/types';
 
 import style from './self_legacy.scss';
 
-export const Select: React.FC<
-  WithClassName & {
-    dict: Record<string, string>;
-    tip: React.ReactNode;
-    value: string;
-    onChange: (newValue: string) => void;
-  }
-> = ({ className, dict, tip, value, onChange }) => {
+export const Select: React.FC<{
+  className?: string;
+  dict: Record<string, string>;
+  tip: React.ReactNode;
+  value: string;
+  onChange: (newValue: string) => void;
+}> = ({ className, dict, tip, value, onChange }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const toggleButtonRef = React.useRef<HTMLButtonElement>(null);

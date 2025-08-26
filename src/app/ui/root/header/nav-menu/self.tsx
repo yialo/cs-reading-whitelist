@@ -4,7 +4,6 @@ import { NavLink } from 'react-router';
 import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
 import { APP_ROUTE, type AppRoute } from '@/shared/routing';
-import { WithClassName } from '@/shared/ui/types';
 
 import { AppNavMenuIcon } from './icon';
 import style from './style.scss';
@@ -25,7 +24,7 @@ const ROUTE_LIST = [
   },
 ] as const satisfies readonly NavLink[];
 
-export const AppNavMenu: React.FC<WithClassName> = ({ className }) => {
+export const AppNavMenu: React.FC<{ className?: string }> = ({ className }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleMenuExpansion = () => {

@@ -5,7 +5,6 @@ import type { SeriesSubject } from '@/entities/subject';
 import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
 import { includes } from '@/shared/lib/typing';
-import { WithClassName } from '@/shared/ui/types';
 
 import { linkListSlice } from '../../../model/slice';
 import { SubjectsItemAppendix } from './appendix';
@@ -14,9 +13,10 @@ import style from './style.scss';
 
 const BUTTON_KEYS = [KEYBOARD_KEY.ENTER, KEYBOARD_KEY.SPACE] as const;
 
-export const SeriesSubjectsItem: React.FC<
-  WithClassName & { subject: SeriesSubject }
-> = ({ className, subject }) => {
+export const SeriesSubjectsItem: React.FC<{
+  className?: string;
+  subject: SeriesSubject;
+}> = ({ className, subject }) => {
   const { caption, lang, legend, series, tags } = subject;
 
   const isEmptySearch = !!useSelector(linkListSlice.selectors.searchString);

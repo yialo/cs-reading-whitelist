@@ -1,14 +1,12 @@
 import { SingleSublect } from '@/entities/subject';
-import { WithClassName } from '@/shared/ui/types';
 
 import { SubjectsItemAppendix } from './appendix';
 import { SubjectsItemLink } from './link';
 
-export const SingleSubjectsItem: React.FC<
-  WithClassName & {
-    subject: SingleSublect;
-  }
-> = ({ className, subject }) => {
+export const SingleSubjectsItem: React.FC<{
+  className?: string;
+  subject: SingleSublect;
+}> = ({ className, subject }) => {
   const { caption, lang, legend, tags, url } = subject;
 
   return (

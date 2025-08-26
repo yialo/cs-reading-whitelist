@@ -4,7 +4,6 @@ import { cn } from '@/shared/lib/cn';
 import { Button } from '@/shared/ui/button';
 import { Select_legacy } from '@/shared/ui/select';
 import { TextInput } from '@/shared/ui/text-input';
-import { WithClassName } from '@/shared/ui/types';
 
 import { FILTER, SORTING, type TFilter, type TSorting } from '../../config';
 import style from './style.scss';
@@ -28,18 +27,17 @@ const TIP_CHAR_DICT = {
 
 const sortingGroupLabelId = 'sorting-group-label';
 
-export const ControlBar: React.FC<
-  WithClassName & {
-    filterTarget: TFilter;
-    searchString: string;
-    sortingTarget: TSorting;
-    totalAmount: number;
-    visibleAmount: number;
-    onFilterToggle: (filter: TFilter) => void;
-    onSearch: (value: string) => void;
-    onSortingToggle: (sorting: TSorting) => void;
-  }
-> = ({
+export const ControlBar: React.FC<{
+  className?: string;
+  filterTarget: TFilter;
+  searchString: string;
+  sortingTarget: TSorting;
+  totalAmount: number;
+  visibleAmount: number;
+  onFilterToggle: (filter: TFilter) => void;
+  onSearch: (value: string) => void;
+  onSortingToggle: (sorting: TSorting) => void;
+}> = ({
   className,
   filterTarget,
   searchString,

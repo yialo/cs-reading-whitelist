@@ -7,7 +7,6 @@ import { DOM_ID } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
 import { Button } from '@/shared/ui/button';
 import { useHasDarkTheme } from '@/shared/ui/theme';
-import { WithClassName } from '@/shared/ui/types';
 
 import { AppNavMenu } from './nav-menu';
 import style from './self.scss';
@@ -22,7 +21,7 @@ const GO_TOP_BUTTON_SHIFT = {
 
 const getAppRoot = () => document.querySelector(DOM_ID.APP_ROOT);
 
-export const RootHeader: React.FC<WithClassName> = ({ className }) => {
+export const RootHeader: React.FC<{ className?: string }> = ({ className }) => {
   const [isScrolledEnough, setIsScrolledEnough] = React.useState(false);
   const [goTopButtonBottomShift, setgoTopButtonBottomShift] = React.useState(
     GO_TOP_BUTTON_SHIFT.NORMAL,

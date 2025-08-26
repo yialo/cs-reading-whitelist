@@ -1,20 +1,18 @@
 import { Subject } from '@/entities/subject';
 import { cn } from '@/shared/lib/cn';
 import { MainButton } from '@/shared/ui/button';
-import { WithClassName } from '@/shared/ui/types';
 
 import { SubjectsFallbackMessage } from './fallback-message';
 import { isSeries, SeriesSubjectsItem, SingleSubjectsItem } from './item';
 import style from './style.scss';
 
-export const Subjects: React.FC<
-  WithClassName & {
-    list: Subject[];
-    hasFetchError: boolean;
-    isLastPage: boolean;
-    onShowMoreClick: () => void;
-  }
-> = ({ className, list, hasFetchError, isLastPage, onShowMoreClick }) => {
+export const Subjects: React.FC<{
+  className?: string;
+  list: Subject[];
+  hasFetchError: boolean;
+  isLastPage: boolean;
+  onShowMoreClick: () => void;
+}> = ({ className, list, hasFetchError, isLastPage, onShowMoreClick }) => {
   if (hasFetchError) {
     return <SubjectsFallbackMessage message="Ошибка загрузки" />;
   }
