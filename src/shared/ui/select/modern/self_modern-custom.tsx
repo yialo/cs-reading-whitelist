@@ -3,7 +3,6 @@ import * as React from 'react';
 import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
 import { Button } from '@/shared/ui/button';
-import { WithClassName } from '@/shared/ui/types';
 
 import style from './self_modern-custom.scss';
 
