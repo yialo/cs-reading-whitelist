@@ -1,11 +1,12 @@
 import * as React from 'react';
 
 import { useStrictContext } from '@/shared/lib/react';
+
 import {
-  ThemeStateContext,
   Theme,
-  ThemeUpdaterContext,
   THEME_LS_KEY,
+  ThemeStateContext,
+  ThemeUpdaterContext,
 } from './config';
 
 export const useHasDarkTheme = () => {

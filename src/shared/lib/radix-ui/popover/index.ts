@@ -1,11 +1,11 @@
 import {
   Popover,
   PopoverAnchor,
-  PopoverTrigger,
-  PopoverPortal,
-  PopoverContent,
   PopoverArrow,
   PopoverClose,
+  PopoverContent,
+  PopoverPortal,
+  PopoverTrigger,
 } from '@radix-ui/react-popover';
 
 Popover.displayName = 'RadixPopover';

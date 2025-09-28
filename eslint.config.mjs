@@ -1,12 +1,12 @@
-import globals from 'globals';
-import { defineConfig, globalIgnores } from 'eslint/config';
 import jsPlugin from '@eslint/js';
-import promisePlugin from 'eslint-plugin-promise';
-import prettierPluginRecommended from 'eslint-plugin-prettier/recommended';
-import reactPlugin from 'eslint-plugin-react';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
-import reactRefreshPlugin from 'eslint-plugin-react-refresh';
+import prettierPluginRecommended from 'eslint-plugin-prettier/recommended';
+import promisePlugin from 'eslint-plugin-promise';
+import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import reactRefreshPlugin from 'eslint-plugin-react-refresh';
+import { defineConfig, globalIgnores } from 'eslint/config';
+import globals from 'globals';
 import tsEslint from 'typescript-eslint';
 
 const jsTsInteropRules = {

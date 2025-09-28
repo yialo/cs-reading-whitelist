@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { createPortal } from 'react-dom';
+
 import { useStableEventHandler } from '@/shared/lib/react';
 
 export const Portal: React.FC<{

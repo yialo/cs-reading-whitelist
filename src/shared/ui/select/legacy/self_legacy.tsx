@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
+import { RadixPopover } from '@/shared/lib/radix-ui/popover';
 import { Button } from '@/shared/ui/button';
 import { Portal } from '@/shared/ui/portal';
-import { RadixPopover } from '@/shared/lib/radix-ui/popover';
 
 import style from './self_legacy.scss';
 

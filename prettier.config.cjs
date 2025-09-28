@@ -2,14 +2,16 @@
 
 module.exports = {
   plugins: [
-    '@prettier/plugin-oxc',
-    '@awmottaz/prettier-plugin-void-html',
-    '@ianvs/prettier-plugin-sort-imports',
+    require.resolve('@prettier/plugin-oxc'),
+    require.resolve('@awmottaz/prettier-plugin-void-html'),
+    require.resolve('@ianvs/prettier-plugin-sort-imports'),
   ],
   quoteProps: 'consistent',
   singleQuote: true,
   trailingComma: 'all',
   importOrder: [
+    '<BUILTIN_MODULES>',
+    '',
     '^(react|react-dom/.+)$',
     '<THIRD_PARTY_MODULES>',
     '',
