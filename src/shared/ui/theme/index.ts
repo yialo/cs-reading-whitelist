@@ -1,1 +1,2 @@
-export { ThemeProvider, useHasDarkTheme, useThemeToggle } from './self';
+export { ThemeProvider } from './provider';
+export { useHasDarkTheme, useThemeToggle } from './use-context';

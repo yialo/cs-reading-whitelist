@@ -1,11 +1,13 @@
 import * as React from 'react';
 
-export const usePrevious = <T>(value: T): T | undefined => {
+import { useIsomorphicLayoutEffect } from './use-isomorphic-layout-effect';
+
+export const usePrevious = <T>(value: T) => {
   const prevRef = React.useRef<T>(undefined);
 
-  React.useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     prevRef.current = value;
-  }, [value]);
+  });
 
   return prevRef.current;
 };
