@@ -1,6 +1,7 @@
 import jsPlugin from '@eslint/js';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import * as importXPlugin from 'eslint-plugin-import-x';
+import jestPlugin from 'eslint-plugin-jest';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import prettierPluginRecommended from 'eslint-plugin-prettier/recommended';
 import promisePlugin from 'eslint-plugin-promise';
@@ -70,16 +71,6 @@ export default defineConfig([
       ],
     },
   },
-  defineWithPrettierConfig({
-    name: 'tools/shared',
-    files: ['*.config.{cjs,mjs}'],
-    linterOptions: {
-      reportUnusedInlineConfigs: 'warn',
-    },
-    rules: {
-      'no-unused-vars': jsTsInteropRules['no-unused-vars'],
-    },
-  }),
   {
     name: 'tools/commonjs',
     files: ['*.config.cjs'],
@@ -99,7 +90,27 @@ export default defineConfig([
     },
   },
   defineWithPrettierConfig({
-    name: 'src',
+    name: 'tools/shared',
+    files: ['*.config.{cjs,mjs}'],
+    linterOptions: {
+      reportUnusedInlineConfigs: 'warn',
+    },
+    rules: {
+      'no-unused-vars': jsTsInteropRules['no-unused-vars'],
+    },
+  }),
+  {
+    name: 'src/jest',
+    files: ['src/**/*.spec.ts?(x)', 'src/**/*.test.ts?(x)'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
+    extends: [jestPlugin.configs['flat/recommended']],
+  },
+  defineWithPrettierConfig({
+    name: 'src/shared',
     files: ['src/**/*.ts?(x)'],
     extends: [
       tsEslint.configs.recommendedTypeChecked,
