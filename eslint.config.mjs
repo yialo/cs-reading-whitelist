@@ -1,4 +1,6 @@
 import jsPlugin from '@eslint/js';
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
+import * as importXPlugin from 'eslint-plugin-import-x';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import prettierPluginRecommended from 'eslint-plugin-prettier/recommended';
 import promisePlugin from 'eslint-plugin-promise';
@@ -37,11 +39,23 @@ export default defineConfig([
   {
     name: 'shared',
     files: ['**/*.{cjs,mjs,ts,tsx}'],
-    extends: [jsPlugin.configs.recommended],
+    languageOptions: {
+      ecmaVersion: 'latest',
+    },
+    extends: [
+      jsPlugin.configs.recommended,
+      importXPlugin.flatConfigs.recommended,
+    ],
     plugins: {
       promise: promisePlugin,
     },
     rules: {
+      'import-x/no-duplicates': [
+        'warn',
+        {
+          considerQueryString: true,
+        },
+      ],
       'promise/no-nesting': 'error',
       'promise/no-new-statics': 'error',
       'promise/no-return-in-finally': 'error',
@@ -120,7 +134,11 @@ export default defineConfig([
       'react/prop-types': 'off',
     },
     settings: {
-      react: {
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver(),
+        importXPlugin.createNodeResolver(),
+      ],
+      'react': {
         version: '19',
       },
     },
