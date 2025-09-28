@@ -1,2 +1,3 @@
 export { usePrevious } from './use-previous';
-export { useStrictContext } from './use-strict-context';
+export { createStrictContext, useStrictContext } from './strict-context';
+export { useStableEventHandler } from './use-stable-event-handler';

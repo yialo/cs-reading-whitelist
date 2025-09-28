@@ -1,5 +1,11 @@
 import * as React from 'react';
 
+export const createStrictContext = <C>(displayName: string) => {
+  const Context = React.createContext<C | undefined>(undefined);
+  Context.displayName = displayName;
+  return Context;
+};
+
 export const useStrictContext = <V>(
   Context: React.Context<V>,
   contextName?: string,

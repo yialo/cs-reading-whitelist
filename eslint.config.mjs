@@ -1,6 +1,7 @@
 import globals from 'globals';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import jsPlugin from '@eslint/js';
+import promisePlugin from 'eslint-plugin-promise';
 import prettierPluginRecommended from 'eslint-plugin-prettier/recommended';
 import reactPlugin from 'eslint-plugin-react';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
@@ -21,7 +22,7 @@ const jsTsInteropRules = {
   ],
 };
 
-const definePrettierConfig = (configObject) => {
+const defineWithPrettierConfig = (configObject) => {
   if (!configObject.extends) configObject.extends = [];
   configObject.extends.push(prettierPluginRecommended);
 
@@ -32,11 +33,20 @@ const definePrettierConfig = (configObject) => {
 };
 
 export default defineConfig([
-  globalIgnores(['/dist/', '/extra/']),
+  globalIgnores(['dist/', 'extra/']),
   {
     name: 'shared',
     files: ['**/*.{cjs,mjs,ts,tsx}'],
+    extends: [jsPlugin.configs.recommended],
+    plugins: {
+      promise: promisePlugin,
+    },
     rules: {
+      'promise/no-nesting': 'error',
+      'promise/no-new-statics': 'error',
+      'promise/no-return-in-finally': 'error',
+      'promise/no-return-wrap': 'error',
+      'promise/valid-params': 'error',
       'prefer-const': [
         'warn',
         {
@@ -46,16 +56,12 @@ export default defineConfig([
       ],
     },
   },
-  definePrettierConfig({
+  defineWithPrettierConfig({
     name: 'tools/shared',
     files: ['*.config.{cjs,mjs}'],
     linterOptions: {
       reportUnusedInlineConfigs: 'warn',
     },
-    plugins: {
-      js: jsPlugin,
-    },
-    extends: [jsPlugin.configs.recommended],
     rules: {
       'no-unused-vars': jsTsInteropRules['no-unused-vars'],
     },
@@ -78,11 +84,10 @@ export default defineConfig([
       },
     },
   },
-  definePrettierConfig({
+  defineWithPrettierConfig({
     name: 'src',
     files: ['src/**/*.ts?(x)'],
     extends: [
-      jsPlugin.configs.recommended,
       tsEslint.configs.recommendedTypeChecked,
       reactPlugin.configs.flat.recommended,
       reactPlugin.configs.flat['jsx-runtime'],
