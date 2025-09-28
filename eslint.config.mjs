@@ -62,13 +62,7 @@ export default defineConfig([
       'promise/no-return-in-finally': 'error',
       'promise/no-return-wrap': 'error',
       'promise/valid-params': 'error',
-      'prefer-const': [
-        'warn',
-        {
-          destructuring: 'any',
-          ignoreReadBeforeAssign: false,
-        },
-      ],
+      'prefer-const': 'warn',
     },
   },
   {
@@ -142,6 +136,12 @@ export default defineConfig([
         },
       ],
       'react/jsx-fragments': ['warn', 'syntax'],
+      'react/no-unstable-nested-components': [
+        'error',
+        {
+          allowAsProps: true,
+        },
+      ],
       'react/prop-types': 'off',
     },
     settings: {
