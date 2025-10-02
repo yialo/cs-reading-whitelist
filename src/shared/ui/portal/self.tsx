@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { createPortal } from 'react-dom';
 
-import { useStableEventHandler } from '@/shared/lib/react';
-
 export const Portal: React.FC<{
   children: React.ReactNode;
   open: boolean;
@@ -11,7 +9,7 @@ export const Portal: React.FC<{
   const [portalContainer, setPortalContainer] =
     React.useState<HTMLElement | null>(null);
 
-  const handleMountChange = useStableEventHandler(onMountChange);
+  const handleMountChange = React.useEffectEvent(onMountChange);
 
   React.useEffect(() => {
     if (!open) return;
@@ -26,7 +24,7 @@ export const Portal: React.FC<{
       setPortalContainer(null);
       handleMountChange(false);
     };
-  }, [open, setPortalContainer, handleMountChange]);
+  }, [open, setPortalContainer]);
 
   if (!open || !portalContainer) return null;
 
