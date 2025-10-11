@@ -76,7 +76,7 @@ export const Select: React.FC<{
         </RadixPopover.Trigger>
 
         <RadixPopover.Portal>
-          <RadixPopover.Content align="start">
+          <RadixPopover.Content align="start" className={style.popover}>
             <ul className={style.list} role="listbox">
               {options.map(([name, caption]) => {
                 const isSelected = name === value;
