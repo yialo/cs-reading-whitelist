@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import type { SeriesSubject } from '@/entities/subject';
 import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
+import { ReactActivity } from '@/shared/lib/react';
 import { includes } from '@/shared/lib/typing';
 
 import { linkListSlice } from '../../../model/slice';
@@ -64,7 +65,7 @@ export const SeriesSubjectsItem: React.FC<{
         <SubjectsItemAppendix {...{ lang, legend, tags }} />
       </div>
 
-      {isExpanded && (
+      <ReactActivity visible={isExpanded}>
         <ul className={style.seriesList}>
           {series.map(
             ({
@@ -85,7 +86,7 @@ export const SeriesSubjectsItem: React.FC<{
             ),
           )}
         </ul>
-      )}
+      </ReactActivity>
     </li>
   );
 };
