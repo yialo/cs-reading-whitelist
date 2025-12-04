@@ -1,6 +1,7 @@
 # Todo list
 
 - [build] Fix `serve` npm script
+- Enable stylelint rules
 - [feat] Save search query in search param
 - Add extended favicon set
 - Rename PROCESS's LOADING to FETCHING (look to Tanstack Query)
