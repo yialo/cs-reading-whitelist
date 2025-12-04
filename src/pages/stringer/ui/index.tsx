@@ -14,6 +14,11 @@ const StringerPage: React.FC = () => {
 
   const formattedString = stringToFormat.toLowerCase();
 
+  const inputRef = React.useRef<HTMLInputElement>(null);
+  React.useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
   return (
     <MainLayout>
       <title>{getPageHeadTitle('Stringer')}</title>
@@ -24,6 +29,7 @@ const StringerPage: React.FC = () => {
             Input
           </label>
           <input
+            ref={inputRef}
             id={inputId}
             className={cn(styles.fieldInput)}
             value={stringToFormat}
