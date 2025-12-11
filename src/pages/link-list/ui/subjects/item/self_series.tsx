@@ -20,25 +20,24 @@ export const SeriesSubjectsItem: React.FC<{
 }> = ({ className, subject }) => {
   const { caption, lang, legend, series, tags } = subject;
 
-  const isEmptySearch = !!useSelector(linkListSlice.selectors.searchString);
-  const [state, setState] = React.useState({ isExpanded: false });
-
-  const hasNoStateChangesYetRef = React.useRef(true);
-  const isExpanded = hasNoStateChangesYetRef.current
-    ? isEmptySearch
-    : state.isExpanded;
+  const isFilledSearch = !!useSelector(linkListSlice.selectors.searchString);
+  const [expansion, setExpansion] = React.useState({
+    isExpanded: isFilledSearch,
+    hasAlreadyChanged: false,
+  });
 
   const handleExpansion = () => {
-    if (hasNoStateChangesYetRef.current) {
-      setState({ isExpanded: !isEmptySearch });
-    } else {
-      setState((prev) => ({ isExpanded: !prev.isExpanded }));
-    }
-
-    if (hasNoStateChangesYetRef.current) {
-      hasNoStateChangesYetRef.current = false;
-    }
+    setExpansion((prev) => {
+      if (prev.hasAlreadyChanged) {
+        return { ...prev, isExpanded: !prev.isExpanded };
+      }
+      return { isExpanded: !isFilledSearch, hasAlreadyChanged: true };
+    });
   };
+
+  const isExpanded = expansion.hasAlreadyChanged
+    ? expansion.isExpanded
+    : isFilledSearch;
 
   return (
     <li

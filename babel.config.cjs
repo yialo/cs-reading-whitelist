@@ -27,6 +27,7 @@ module.exports = {
         development: process.env.BABEL_ENV === 'development',
       },
     ],
+    // ['babel-plugin-react-compiler'],
     [
       '@babel/preset-typescript',
       {

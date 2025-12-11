@@ -111,7 +111,7 @@ export default defineConfig([
       reactPlugin.configs.flat.recommended,
       reactPlugin.configs.flat['jsx-runtime'],
       reactRefreshPlugin.configs.recommended,
-      reactHooksPlugin.configs['recommended-latest'],
+      reactHooksPlugin.configs.flat['recommended-latest'],
       jsxA11yPlugin.flatConfigs.recommended,
     ],
     languageOptions: {

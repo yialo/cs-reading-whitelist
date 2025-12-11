@@ -29,16 +29,15 @@ export const RootHeader: React.FC<{ className?: string }> = ({ className }) => {
 
   const hasDarkTheme = useHasDarkTheme();
 
-  const goTopButtonContainerRef = React.useRef(document.createElement('div'));
+  const [goTopButtonContainer] = React.useState(document.createElement('div'));
 
   React.useEffect(() => {
-    const container = goTopButtonContainerRef.current;
-    document.body.appendChild(container);
+    document.body.appendChild(goTopButtonContainer);
 
     return () => {
-      document.body.removeChild(container);
+      document.body.removeChild(goTopButtonContainer);
     };
-  }, []);
+  }, [goTopButtonContainer]);
 
   React.useEffect(() => {
     const appRoot = getAppRoot();
@@ -90,7 +89,7 @@ export const RootHeader: React.FC<{ className?: string }> = ({ className }) => {
       </div>
     );
 
-    return createPortal(goTopButton, goTopButtonContainerRef.current);
+    return createPortal(goTopButton, goTopButtonContainer);
   };
 
   return (
