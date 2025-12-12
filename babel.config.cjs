@@ -9,6 +9,7 @@ module.exports = {
         corejs: 3,
       },
     ],
+    ['babel-plugin-react-compiler'],
     process.env.BABEL_ENV === 'development' && 'react-refresh/babel',
   ].filter(Boolean),
   presets: [
@@ -27,7 +28,6 @@ module.exports = {
         development: process.env.BABEL_ENV === 'development',
       },
     ],
-    // ['babel-plugin-react-compiler'],
     [
       '@babel/preset-typescript',
       {
