@@ -4,7 +4,6 @@ import { KEYBOARD_KEY } from '@/shared/config';
 import { cn } from '@/shared/lib/cn';
 import { RadixPopover } from '@/shared/lib/radix-ui/popover';
 import { Button } from '@/shared/ui/button';
-import { Portal } from '@/shared/ui/portal';
 
 import style from './self_legacy.scss';
 
