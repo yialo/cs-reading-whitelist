@@ -1,4 +1,4 @@
-import { Subject } from '@/entities/subject';
+import { type Subject } from '@/entities/subject';
 import { cn } from '@/shared/lib/cn';
 import { MainButton } from '@/shared/ui/button';
 

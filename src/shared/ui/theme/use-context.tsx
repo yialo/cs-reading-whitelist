@@ -3,10 +3,10 @@ import * as React from 'react';
 import { useStrictContext } from '@/shared/lib/react';
 
 import {
-  Theme,
   THEME_LS_KEY,
   ThemeStateContext,
   ThemeUpdaterContext,
+  type Theme,
 } from './config';
 
 export const useHasDarkTheme = () => {

@@ -1,10 +1,10 @@
 import * as React from 'react';
 
 import {
-  Theme,
   THEME_LS_KEY,
   ThemeStateContext,
   ThemeUpdaterContext,
+  type Theme,
 } from './config';
 
 export const ThemeProvider: React.FC<{

@@ -1,4 +1,4 @@
-import { SingleSublect } from '@/entities/subject';
+import { type SingleSublect } from '@/entities/subject';
 
 import { SubjectsItemAppendix } from './appendix';
 import { SubjectsItemLink } from './link';
