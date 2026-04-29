@@ -18,7 +18,8 @@
     },
     "strict": true,
     "target": "es2025",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "erasableSyntaxOnly": true
   },
   "include": ["./src/**/*"]
 }

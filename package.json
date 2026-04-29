@@ -25,8 +25,8 @@
     "stylelint": "stylelint ./src/**/*.scss",
     "test": "jest -c=./jest.config.cjs --passWithNoTests",
     "test:watch": "npm test -- --watch",
-    "tsc": "tsc",
-    "tsc:watch": "tsc --watch",
+    "tsc": "tsc --stableTypeOrdering",
+    "tsc:watch": "tsc --stableTypeOrdering --watch",
     "tsgo": "tsgo",
     "tsgo:watch": "tsgo --watch"
   },
