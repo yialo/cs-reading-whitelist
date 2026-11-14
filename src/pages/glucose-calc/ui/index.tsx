@@ -8,15 +8,15 @@ import { MainLayout } from '@/shared/ui/main-layout';
 import styles from './index.scss';
 
 const formSchema = z.object({
-  currentSugar: z.number(),
-  targerSugar: z.number().default(4.5),
+  currentSugar: z.string(),
+  targerSugar: z.string(),
 });
 type FormValues = z.infer<typeof formSchema>;
 
 const MMOL_L_DECREASE_PER_INSULIN_UNIT = 3;
 
 const calculateInsulinDosage = ({ currentSugar, targerSugar }: FormValues) => {
-  const delta = currentSugar - targerSugar;
+  const delta = Number(currentSugar) - Number(targerSugar);
   return (delta / MMOL_L_DECREASE_PER_INSULIN_UNIT).toFixed(1);
 };
 
