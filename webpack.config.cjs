@@ -309,6 +309,7 @@ module.exports = (env = {}) => {
         pluginList.push(
           new CircularDependencyPlugin({
             failOnError: true,
+            exclude: /zod/,
           }),
         );
       }

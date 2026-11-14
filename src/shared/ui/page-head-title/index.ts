@@ -1,3 +1,3 @@
-export const getPageHeadTitle = (pageTitle: string) => {
+export const buildPageHeadTitle = (pageTitle: string) => {
   return `${pageTitle} | cs-reading-whitelist`;
 };

@@ -1,0 +1,80 @@
+@use '@/shared/scss/utils';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: utils.$viewport-xs-max) {
+    margin-block-end: 16px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    margin-block-end: 32px;
+  }
+}
+
+.headline {
+  composes: headline from '@/shared/scss/scaffold.scss';
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.form__separator {
+  margin: 12px 0 8px;
+  border-style: none;
+  border-block-start: 1px solid var(--color_text);
+}
+
+.formField {
+  display: grid;
+  row-gap: 12px;
+}
+
+.formField__label {
+  @media (max-width: utils.$viewport-xs-max) {
+    font-size: 18px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    font-size: 24px;
+  }
+}
+
+.formField__input {
+  border: 1px solid utils.$color-lightGray;
+
+  @media (max-width: utils.$viewport-xs-max) {
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 24px;
+  }
+}
+
+.formField__output {
+  font-weight: 600;
+
+  @media (max-width: utils.$viewport-xs-max) {
+    font-size: 24px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    font-size: 32px;
+  }
+}
