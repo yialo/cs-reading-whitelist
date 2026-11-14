@@ -2,6 +2,11 @@ import style from './self.scss';
 
 export const MainLayout: React.FC<{
   children: React.ReactNode;
-}> = ({ children }) => {
-  return <main className={style.root}>{children}</main>;
+  lang?: string;
+}> = ({ children, lang }) => {
+  return (
+    <main lang={lang} className={style.root}>
+      {children}
+    </main>
+  );
 };
