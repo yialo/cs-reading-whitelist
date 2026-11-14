@@ -16,8 +16,13 @@ type FormValues = z.infer<typeof formSchema>;
 const MMOL_L_DECREASE_PER_INSULIN_UNIT = 3;
 
 const calculateInsulinDosage = ({ currentSugar, targerSugar }: FormValues) => {
-  const delta = Number(currentSugar) - Number(targerSugar);
+  const delta = parseSugarValue(currentSugar) - parseSugarValue(targerSugar);
   return (delta / MMOL_L_DECREASE_PER_INSULIN_UNIT).toFixed(1);
+};
+
+const parseSugarValue = (rawValue: string): number => {
+  const cleanedValue = rawValue.replace(',', '.');
+  return Number(cleanedValue);
 };
 
 const GlucoseCalcPage: React.FC = () => {
@@ -28,7 +33,7 @@ const GlucoseCalcPage: React.FC = () => {
   const form = useForm({
     defaultValues: {
       currentSugar: '',
-      targerSugar: '4.5',
+      targerSugar: '4,5',
     },
     resolver: zodResolver(formSchema),
   });
@@ -60,7 +65,7 @@ const GlucoseCalcPage: React.FC = () => {
               className={styles.formField__input}
               type="text"
               id={currentSugarFieldId}
-              inputMode="numeric"
+              inputMode="decimal"
               {...form.register('currentSugar')}
             />
           </div>
@@ -75,7 +80,7 @@ const GlucoseCalcPage: React.FC = () => {
             <input
               className={styles.formField__input}
               type="text"
-              inputMode="numeric"
+              inputMode="decimal"
               id={targetSugarFieldId}
               {...form.register('targerSugar')}
             />
