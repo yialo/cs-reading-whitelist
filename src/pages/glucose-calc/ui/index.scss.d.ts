@@ -4,6 +4,7 @@ declare namespace IndexScssNamespace {
     formField: string;
     formField__input: string;
     formField__label: string;
+    formField__output: string;
     form__separator: string;
     header: string;
     headline: string;

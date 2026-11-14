@@ -52,13 +52,29 @@
 }
 
 .formField__input {
+  border: 1px solid utils.$color-lightGray;
+
   @media (max-width: utils.$viewport-xs-max) {
-    padding: 6px;
+    border-radius: 4px;
+    padding: 12px;
     font-size: 18px;
   }
 
   @media (min-width: utils.$viewport-sm-min) {
-    padding: 8px;
+    border-radius: 8px;
+    padding: 16px;
     font-size: 24px;
+  }
+}
+
+.formField__output {
+  font-weight: 600;
+
+  @media (max-width: utils.$viewport-xs-max) {
+    font-size: 24px;
+  }
+
+  @media (min-width: utils.$viewport-sm-min) {
+    font-size: 32px;
   }
 }
